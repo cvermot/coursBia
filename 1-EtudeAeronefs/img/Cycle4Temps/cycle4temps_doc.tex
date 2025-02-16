@@ -1,0 +1,29 @@
+% Auteur original: Izaak Neutelings (March 2019)
+% Source : https://tikz.net/engine_combustion/
+% Inspiré de la création de Izaak Neutelings, j'ai essentiellement créé l'animation
+% Licence CC BY-SA 4.0
+\documentclass{report}
+
+\usepackage{animate}
+\usepackage{tikz}
+
+\begin{document}
+
+\input{ElementsMoteur.tex} %input à appeler une seule fois quand on souhaite insérer un moteur
+
+%\input{0-MoteurAnime.tex}
+
+\input{0-MoteurLegende.tex}
+
+\input{1-Admission.tex}
+
+\input{2-Compression.tex}
+
+\input{3-Explosion.tex}
+
+\input{4-Detente.tex}
+
+\input{5-Echappement.tex}
+
+
+\end{document}

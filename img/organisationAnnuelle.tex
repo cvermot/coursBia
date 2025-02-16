@@ -1,0 +1,38 @@
+\usetikzlibrary{timeline}
+	\noindent\begin{tikzpicture}[thick,scale=0.69, every node/.style={scale=0.69},timespan={}]
+     \fill[fill=gray!50, opacity=0.20, rounded corners=0.5cm] (12.4,-2.5) rectangle ++(7.6,6);
+     \draw[double,fill,line width=0.15mm] (16.2,-2.5) circle [radius=0.08];
+     \draw[line width=0.15mm] (16.2,-2.5) -- (16.2,-3.15) ;%node {Vol};
+     \draw (16.2,-3.5) node {\faPlaneDeparture~Vols};
+	
+	 \timeline[custom interval=true]{Sep, Oct, Nov, Déc, Jan, Fév, Mar, Avr, Mai, Jui}
+	 
+	 \begin{phases}
+	 %\initialphase{involvement degree=2.75cm,phase color=black}
+	 \phase{between week=1 and 1 in 0.1,involvement degree=2cm,phase color=black}
+	 \phase{between week=2 and 5 in 0.1,involvement degree=4.5cm,phase color=red!80}
+	 \phase{between week=4 and 6 in 0,involvement degree=4cm,phase color=blue!80}
+	 \phase{between week=6 and 8 in -0.2,involvement degree=4cm,phase color=green!80}
+	 \phase{between week=7 and 9 in 0.1,involvement degree=4cm,phase color=yellow!80}
+	 \phase{between week=8 and 9 in 0.5,involvement degree=2.25cm,phase color=orange!80}
+	 \phase{between week=9 and 10 in 0.6,involvement degree=2cm,phase color=black}
+	 
+	 \phase{between week=3 and 3 in 0.6,involvement degree=2cm,phase color=violet}
+	 \phase{between week=6 and 7 in 0.7,involvement degree=2cm,phase color=violet}
+      \phase{between week=10 and 10 in 1.0,involvement degree=2cm,phase color=violet}
+	%\phase{between week=1 and 2 in -0.5,involvement degree=2.25cm}	
+	\end{phases} 
+	
+	 \addmilestone{at=phase-1.90,direction=90:2.0cm,text={\faSchool~Rentrée},text options={above}}
+	 \addmilestone{at=phase-2.90,direction=90:2.0cm,text={\hyperlink{aeronef}{\faSpaceShuttle~ Étude des aéronefs et des engins spatiaux (11h)}},text options={above}}
+	 \addmilestone{at=phase-3.270,direction=270:1.5cm,text={\hyperlink{nav}{\faMap[regular]~Navigation, réglementation, sécurité des vols (9h)}},text options={below}}
+	 \addmilestone{at=phase-4.90,direction=90:1.5cm,text={\hyperlink{meteo}{\faCloudSun~Météorologie et aérologie (9h)}},text options={above}}
+	 \addmilestone{at=phase-5.270,direction=270:2.5cm,text={\hyperlink{aerodynamique}{\faPaperPlane[regular]~Aérodynamique, aérostatique et principes du vol (9h)}},text options={below}}
+	 \addmilestone{at=phase-6.90,direction=90:3.1cm,text={\hyperlink{histoire}{\faBook~Histoire et culture de l’aéronautique et du spatial (complement) (3h)}},text options={above}}
+	 \addmilestone{at=phase-7.270,direction=270:1.0cm,text={\faGraduationCap~BIA},text options={below}}
+	 
+	 \addmilestone{at=phase-8.270,direction=270:1.5cm,text={\faPlane~Visite aéroclub},text options={below}}
+	 \addmilestone{at=phase-9.90,direction=90:1.9cm,text={\faFighterJet~Vol simulé},text options={above}}
+      \addmilestone{at=phase-10.90,direction=90:1.9cm,text={\faRocket~(Micro-fusées)},text options={above}}
+	 
+	\end{tikzpicture}

@@ -1,0 +1,11 @@
+% EXHAUST STROKE
+\begin{tikzpicture}[scale=\echelleTikz]
+  \def\d{-40}
+  \engine{-190};
+  \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
+  \fill[\gas]
+    (VRo) to[out=60,in=-180] ++ (1.5,0.6) -- ($(VRo)+(1.5,1.3)$) to[out=180,in=60] (VRm) to[out=-270+\vr,in=-270+\vr] cycle;
+  \wall
+  \valveL{.1}
+  \valveR{.3}
+\end{tikzpicture}

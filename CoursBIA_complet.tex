@@ -1,0 +1,278 @@
+\documentclass[a4paper,12pt,oneside]{report} % définition des différents parametres. Le dernier peut-être de type report ou article (modifie le chapitrage)
+	\usepackage[french]{babel} %déclaration de la langue du document
+	\usepackage[utf8]{inputenc} %déclaration du jeu de caractéres à utiliser
+	\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry} %permet de modifier les marges
+	\usepackage{graphicx} %package nécessaire pour l'insertion d'images
+	\usepackage{graphics} %package nécessaire pour l'insertion d'images 
+	\usepackage{wrapfig} %package nécessaire pour l'insertion d'images
+	\usepackage{amsmath} %package mathématiques (fonction \dfrac notamment)
+	\usepackage{multicol} %package pour écire sur plusieurs colonnes
+	\usepackage{hyperref} %package pour ajouter des liens hypertextes dans le ficher de sortie
+	\usepackage{array} % meilleur gestion des tableaux
+	%\usepackage{textcomp}%pour avoir le symbole euro --> \texteuro
+	\usepackage[toc]{glossaries}
+	\usepackage{animate}
+	\usepackage{tikz}
+	\usepackage{rotating}
+	\usepackage{float}
+	%\usepackage{pdfpages}
+	%\usepackage{siunitx}
+	\usepackage{float}
+	\usepackage{xcolor}
+	\usepackage{color}
+	%\usepackage{colortbl}
+	\usepackage[notlot]{tocbibind}
+	\usepackage{etoc}
+	\usepackage{longtable}
+	\usepackage{textpos}
+	\usepackage{fontawesome5}
+	
+	\usepackage{phdthesis}
+	%\setlength{\parskip}{0.8ex}
+	
+	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
+	%\usepackage{fontspec}
+ 	%\setmainfont{OpenDyslexic}
+	
+	\newcolumntype{L}[1]{>{\raggedright}m{#1}}
+		
+	\title{Cours BIA} %titre du document
+	\author{Clément \textbf{Vermot-Desroches}} %auteurs du document
+	
+	\setlongtables
+	
+	\makeindex
+	\makeglossaries
+	%\glossarystyle{long3col}	
+	% pour personnaliser la façon dont sont imprimés les entrées du glossaire
+	\renewcommand{\glstextformat}[1]{\textsf{#1}}
+	%\renewcommand{\glstextformat}[1]{#1*}
+	%\renewcommand{\glstextformat}[1]{\color{blue!70!black}\bfseries#1}
+	
+	\input{1-EtudeAeronefs/glossaire.tex}
+	
+	%Numérotation des paragraphs
+	\renewcommand{\theparagraph}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}}
+	\renewcommand{\thesubparagraph}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}.\arabic{subparagraph}}
+	\setcounter{secnumdepth}{5}
+	
+	%%%% debut macro %%%%
+	\newenvironment{changemargin}[2]{\begin{list}{}{%
+	\setlength{\topsep}{0pt}%
+	\setlength{\leftmargin}{0pt}%
+	\setlength{\rightmargin}{0pt}%
+	\setlength{\listparindent}{\parindent}%
+	\setlength{\itemindent}{\parindent}%
+	\setlength{\parsep}{0pt plus 1pt}%
+	\addtolength{\leftmargin}{#1}%
+	\addtolength{\rightmargin}{#2}%
+	}\item }{\end{list}}
+	%%%% fin macro %%%%
+
+	
+	%page de garde
+%	\makeatletter
+%		\def\clap#1{\hbox to 0pt{\hss #1\hss}}%
+%		\def\ligne#1{%
+%		\hbox to \hsize{%
+%		\vbox{\centering #1}}}%
+%		\def\haut#1#2#3{%
+%		\hbox to \hsize{%
+%		\rlap{\vtop{\raggedright #1}}%
+%		\hss
+%		\clap{\vtop{\centering #2}}%
+%		\hss
+%		\llap{\vtop{\raggedleft #3}}}}%
+%		\def\bas#1#2#3{%
+%		\hbox to \hsize{%
+%		\rlap{\vbox{\raggedright #1}}%
+%		\hss
+%		\clap{\vbox{\centering #2}}%
+%		\hss
+%		\llap{\vbox{\raggedleft #3}}}}%
+%		\def\maketitle{%
+%		\thispagestyle{empty}\vbox to \vsize{%
+%		\haut{}{\@blurb}{}
+%		\vfill
+%		\vspace{1cm}
+%		\begin{flushleft}
+%		\usefont{OT1}{ptm}{m}{n}
+%		\huge \@title
+%		\end{flushleft}
+%		\par
+%		\hrule height 4pt
+%		\par
+%		\begin{flushright}
+%		\usefont{OT1}{phv}{m}{n}
+%		\Large \@author
+%		\par
+%		\end{flushright}
+%		\vspace{1cm}
+%		\vfill
+%		\vfill
+%		\bas{}{\@date}{}
+%		}%
+%		\cleardoublepage
+%		}
+%		\def\date#1{\def\@date{#1}}
+%		\def\author#1{\def\@author{#1}}
+%		\def\title#1{\def\@title{#1}}
+%		\def\location#1{\def\@location{#1}}
+%		\def\blurb#1{\def\@blurb{#1}}
+%		\date{Avril 2012 - version 1.0}
+%		\author{}
+%		\title{}
+%		
+%		\makeatother
+%		\title{Cours radioamateur - classe 2 \& 3}
+%		\author{F4HAJ}
+%		\includegraphics[scale=1]{./img/IC-7800.jpg}
+%		\blurb{%
+%			Test
+%		}%	
+	%fin page de garde
+		
+	
+	\begin{document}
+	
+	\begin{titlepage}
+		\begin{center} 
+			~
+			\vfill
+			\begin{flushleft}
+				\huge \textbf{Cours BIA}
+			\end{flushleft}
+			\par
+			\hrule height 4pt
+			\par
+			\begin{flushright}
+				\Large \textbf{Clément \textsc{Vermot-Desroches}}
+				\par
+			\end{flushright}
+			\vspace{2cm}
+			%\includegraphics[width=\textwidth]{./img/img_couverture.png} 
+			\vfill
+			\vfill
+		\end{center}
+			\begin{textblock*}{30mm}[0,0](-20mm,-25mm)
+				%\includegraphics[width=3cm]{./img/International_symbol.png} 
+			\end{textblock*}
+		\begin{center}
+			http://f4haj.net
+			
+			Février 2025 - version 0.1
+		\end{center} 
+	\end{titlepage} 	
+	
+
+	\tableofcontents
+	\newpage	
+	
+	\section{Préface}
+	\alert{test\\test\\test}
+	\info{test}
+	\question{test}
+	\histoire{test}
+
+	Todo
+
+	%Ce document était à la base un simple mémento destiné à mon usage propre en vue du passage des licences classe 2 et 3 d'opérateur du service amateur. Il est devenu, au fur et à mesure de mon apprentissage, un document résumant de façon synthétique (je pense), les principales notions nécessaires à la préparation de ces licences. Ce document m'a permis de préparer et de passer simultanément et avec succès les examens de législation et de technique, et ceci en seulement 2 mois de préparation.
+
+	%J'ai décidé de le diffuser car je trouve qu'il n'est pas facile de trouver sur Internet des cours à la fois complets et synthétiques pour la préparation de la licence radioamateur française.
+
+	%Je ne prétend pas que l'approche adoptée dans ce document conviendra à tout le monde. Ce document regroupe les principales notions et formules à connaitre. Il peut servir de base pour la préparation d'une licence ou encore de mémento pour le maintient des connaissances après l'obtention de la licence. Je continue de penser que l'adhésion à un radioclub demeure indispensable, ne serais-ce que pour donner un certaines synergie à cet apprentissage passionnant mais qui peut parfois paraître fastidieux. Par ailleurs, les informations et conseils que pourront vous fournir les membres d'un radioclub seront toujours utiles et bienvenus, y compris après l'obtention de la licence (conseil sur le matériel, le montage d'une antenne...).
+
+	%Enfin, ce document est destiné à évoluer. Je souhaite ajouter de nouvelles notions prochainement pour ceux qui souhaiteraient aller plus loin. Par ailleurs, je suis ouvert à toutes critiques ou commentaires constructifs concernant ce document, sur le fond comme sur la forme. N'hésitez donc pas à me contacter concernant toute erreur, omission, faute d'orthographe ou manque dans ce documents, à l'adresse contact@f4haj.net.
+	
+	\section{Organisation du cours sur l'année}
+	
+	\input{./img/organisationAnnuelle.tex}
+
+	\section{Licence}
+	Ce document est diffusé sous licence Creative Commons 4.0 by-nc-sa dont les termes sont disponibles sur le site CreativeCommons.org\footnote{Termes disponibles à cette adresse : \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}}. De façon synthétique, cette licence \textbf{vous autorise à redistribuer et à modifier ce document tant que vous le souhaitez tant que vous me citez en tant qu'auteur original} (un lien vers la version vous ayant servit de base est souhaité). En cas de diffusion de la version modifiée, vous avez l'obligation de la diffuser sous la même licence. Toute utilisation commerciale est en revanche proscrite. Si vous souhaitez \textbf{faire un usage dépassant le cadre de cette licence} (donc utilisation commerciale, diffusion sous une autre licence...),vous devez \textbf{impérativement obtenir mon autorisation expresse écrite}. Pour cela vous pouvez me contacter à l'adresse contact@f4haj. Je tiens par ailleurs à votre disposition le fichier source \LaTeX{} de ce document sur simple demande.
+	
+
+	\chapter{Étude des aéronefs et des engins spatiaux}
+
+\usetikzlibrary {backgrounds,mindmap}
+\begin{tikzpicture}
+  [root concept/.append style={concept color=blue!80,minimum size=2cm},
+   level 1 concept/.append style={sibling angle=180},
+   level 2 concept/.append style={sibling angle=120},
+   level 3 concept/.append style={sibling angle=90},
+   mindmap]
+  \node [concept] (aeronef) {Aéronef}
+    [clockwise from=0]
+    child[concept color=red] { node[concept] (aerodyne) {Aérodyne}
+    		[clockwise from=90]
+      child[concept color=green] { node[concept] {Voilure fixe} 
+      	[clockwise from=-180]
+      	child[concept color=yellow] { node[concept] {Avion} }
+      	child[concept color=yellow] { node[concept] {Planeur} }
+      	child[concept color=yellow] { node[concept] {Deltaplane} }
+      }
+      child[concept color=green] { node[concept] {Voilure tournante} 
+      	[clockwise from=45]
+      	child[concept color=yellow] { node[concept] {Hélico} }
+      	child[concept color=yellow] { node[concept] {Autogyre} }
+      }
+      child[concept color=green] { node[concept] {Deltaplane} }	
+      }
+    child[concept color=red] { node[concept] (aerostat) {Aérostat}}
+    ;
+\end{tikzpicture}	
+
+		\input{1-EtudeAeronefs/1-ClassificationAeronefs.tex}
+		\label{aeronef}
+		\input{1-EtudeAeronefs/2-GroupesMotopropulseurs.tex}
+		\input{1-EtudeAeronefs/3-StructuresMateriaux.tex}
+		\input{1-EtudeAeronefs/4-CommandesDeVol.tex}
+		\input{1-EtudeAeronefs/5-Instrumentation.tex}
+	
+	\chapter{Navigation, réglementation, sécurité des vols\label{nav}}
+		\input{2-Navigation/1-Navigation.tex}
+		\input{2-Navigation/2-Reglementation.tex}
+		\input{2-Navigation/3-SecuriteDesVols.tex}
+	
+	\chapter{Météorologie et aérologie}
+	\label{meteo}
+		\input{3-Meteo/1-Atmosphere.tex}
+		\input{3-Meteo/2-Nuages.tex}
+		\input{3-Meteo/3-Vents.tex}
+		\input{3-Meteo/4-MassesDAir.tex}
+		\input{3-Meteo/5-PhenomenesDangereux.tex}
+	
+	\chapter{Aérodynamique, aérostatique et principes du vol}
+	\label{aerodynamique}
+		\input{04-Aerodynamique/01-SustentationAile.tex}
+		\input{04-Aerodynamique/02-EtudeVolStabilise.tex}
+		\input{04-Aerodynamique/03-Aerostation.tex}
+		\input{04-Aerodynamique/04-VolSpatial.tex}
+	
+	\chapter{Histoire et culture de l'aéronautique et du spatial}
+	\label{histoire}
+		\input{05-Histoire/01-MytheALaRealite.tex}
+		\input{05-Histoire/02-PrecurseursAuxPionniers.tex}
+		\input{05-Histoire/03-EnjeuxMilitaires.tex}
+		\input{05-Histoire/04-EnjeuxEconomiques.tex}
+
+	
+%\chapter{Table des matières}
+	\setcounter{tocdepth}{5}
+	\tableofcontents
+	
+	\listoffigures
+	
+	\printglossaries
+
+%\chapter{Bibliographie}
+	\nocite{*}
+	\bibliographystyle{unsrt-fr}
+	\bibliography{biblio}
+
+	
+	
+	
+			
+	
+\end{document}
