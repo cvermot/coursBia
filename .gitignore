@@ -2,3 +2,12 @@
 *.aux
 *.log
 *.pdf
+*.bbl
+*.bcf
+*.blg
+*.glo
+*.idx
+*.ist
+*.lof
+*.out
+*.run.xml

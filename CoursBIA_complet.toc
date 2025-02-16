@@ -1,0 +1,93 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Table des mati\`eres}{1}{chapter*.1}%
+\contentsline {section}{\numberline {0.1}Préface}{3}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Organisation du cours sur l'année}{3}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Licence}{3}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Étude des aéronefs et des engins spatiaux}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Classification des aéronefs}{4}{section.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.0.1}Pourquoi classer les aéronefs ?}{5}{subsubsection.1.1.0.1}%
+\contentsline {subsection}{\numberline {1.1.1}Aérostats}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}Montgolfière}{5}{subsubsection.1.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.2}Ballon à gaz}{6}{subsubsection.1.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.1.3}Dirigeable}{6}{subsubsection.1.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.2}Aérodynes}{6}{subsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Avions}{6}{subsubsection.1.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Planeurs}{7}{subsubsection.1.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.1.2.3}Hélicoptères}{7}{subsubsection.1.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.1.2.4}Parapentes, deltaplanes}{7}{subsubsection.1.1.2.4}%
+\contentsline {subsection}{\numberline {1.1.3}Engins spatiaux}{7}{subsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.3.1}Lanceurs}{7}{subsubsection.1.1.3.1}%
+\contentsline {paragraph}{\numberline {1.1.3.1.1}Fusées}{7}{paragraph.1.1.3.1.1}%
+\contentsline {paragraph}{\numberline {1.1.3.1.2}Navettes spatiales}{7}{paragraph.1.1.3.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3.2}Engins spatiaux}{7}{subsubsection.1.1.3.2}%
+\contentsline {paragraph}{\numberline {1.1.3.2.1}Satellites}{7}{paragraph.1.1.3.2.1}%
+\contentsline {paragraph}{\numberline {1.1.3.2.2}Sondes}{7}{paragraph.1.1.3.2.2}%
+\contentsline {subsection}{\numberline {1.1.4}Les ULM}{7}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Les drones}{7}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Les groupes motopropulseurs}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Moteurs à pistons}{7}{subsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}Description du moteur à piston}{7}{subsubsection.1.2.1.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.2}Le cycle à 4 temps}{8}{subsubsection.1.2.1.2}%
+\contentsline {paragraph}{\numberline {1.2.1.2.1}Admission}{8}{paragraph.1.2.1.2.1}%
+\contentsline {paragraph}{\numberline {1.2.1.2.2}Compression}{9}{paragraph.1.2.1.2.2}%
+\contentsline {paragraph}{\numberline {1.2.1.2.3}Explosion-détente}{9}{paragraph.1.2.1.2.3}%
+\contentsline {paragraph}{\numberline {1.2.1.2.4}Échappement}{10}{paragraph.1.2.1.2.4}%
+\contentsline {paragraph}{\numberline {1.2.1.2.5}Cycle complet}{10}{paragraph.1.2.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.2}Motorisation électrique}{11}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Turbopropulseurs et turbomoteurs}{11}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Hélices et moteurs}{11}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Propulseurs à réaction}{11}{subsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.5.1}Turboréacteurs}{11}{subsubsection.1.2.5.1}%
+\contentsline {subsubsection}{\numberline {1.2.5.2}Statoréacteurs}{11}{subsubsection.1.2.5.2}%
+\contentsline {subsubsection}{\numberline {1.2.5.3}Moteurs fusées}{11}{subsubsection.1.2.5.3}%
+\contentsline {subsection}{\numberline {1.2.6}Contraintes liées au développement durable}{11}{subsection.1.2.6}%
+\contentsline {section}{\numberline {1.3}Structures et matériaux}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Les commandes de vol}{11}{section.1.4}%
+\contentsline {section}{\numberline {1.5}L'instrumentation de bord}{11}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Navigation, réglementation, sécurité des vols}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Navigation}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Les grands principes de navigation}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Les outils de navigation}{12}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Cartes aéronautiques}{12}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Aides à la navigation}{12}{subsubsection.2.1.2.2}%
+\contentsline {paragraph}{\numberline {2.1.2.2.1}Notions de base}{12}{paragraph.2.1.2.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2.2}Le VOR}{12}{paragraph.2.1.2.2.2}%
+\contentsline {subparagraph}{\numberline {2.1.2.2.2.1}Le VOR-DME}{12}{subparagraph.2.1.2.2.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2.3}L'ADF}{12}{paragraph.2.1.2.2.3}%
+\contentsline {paragraph}{\numberline {2.1.2.2.4}Le GPS}{12}{paragraph.2.1.2.2.4}%
+\contentsline {section}{\numberline {2.2}Réglementation aéronautique}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}L'organisation de l'espace aérien}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Titres aéronautiques}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Les organisations}{13}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Contrôle d'un aéronef}{13}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Sécurité des vols}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Gestion des risques}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Performances humaines et ses limites}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Prise de décision}{13}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}Météorologie et aérologie}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}L'atmospère}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Les nuages}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Les vents}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Les masses d'air et les fronts}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Les phénomènes dangereux pour le vol}{14}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Aérodynamique, aérostatique et principes du vol}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}La sustentation et l'aile}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Étude du vol stabilisé}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Vol plané}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Vol stabilisé}{15}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}L'aérostation}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Principe généraux}{15}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Le vol spatial}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Principe généraux}{15}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5}Histoire et culture de l'aéronautique et du spatial}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Du mythe à la réalité}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Des précurseurs aux pionniers}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Les enjeux militaires et les évolutions de l'aéronautique et du spatial}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Les enjeux économiques et les évolutions de l'aéronautique et du spatial}{16}{section.5.4}%
+\contentsline {chapter}{Table des mati\`eres}{17}{chapter*.2}%
+\contentsline {chapter}{Table des figures}{20}{chapter*.3}%
+\contentsline {chapter}{Bibliographie}{21}{chapter*.4}%
+\contentsline {section}{Livres}{21}{section*.5}%
+\contentsline {section}{Ressources en ligne}{21}{section*.5}%
+\contentsline {section}{Images}{21}{section*.5}%
