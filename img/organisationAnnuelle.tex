@@ -1,5 +1,7 @@
 \usetikzlibrary{timeline}
-	\noindent\begin{tikzpicture}[thick,scale=0.69, every node/.style={scale=0.69},timespan={}]
+\begin{figure}[H]
+\centering	
+	\begin{tikzpicture}[thick,scale=0.69, every node/.style={scale=0.69},timespan={}]
      \fill[fill=gray!50, opacity=0.20, rounded corners=0.5cm] (12.4,-2.5) rectangle ++(7.6,6);
      \draw[double,fill,line width=0.15mm] (16.2,-2.5) circle [radius=0.08];
      \draw[line width=0.15mm] (16.2,-2.5) -- (16.2,-3.15) ;%node {Vol};
@@ -24,11 +26,11 @@
 	\end{phases} 
 	
 	 \addmilestone{at=phase-1.90,direction=90:2.0cm,text={\faSchool~Rentrée},text options={above}}
-	 \addmilestone{at=phase-2.90,direction=90:2.0cm,text={\hyperlink{aeronef}{\faSpaceShuttle~ Étude des aéronefs et des engins spatiaux (11h)}},text options={above}}
-	 \addmilestone{at=phase-3.270,direction=270:1.5cm,text={\hyperlink{nav}{\faMap[regular]~Navigation, réglementation, sécurité des vols (9h)}},text options={below}}
-	 \addmilestone{at=phase-4.90,direction=90:1.5cm,text={\hyperlink{meteo}{\faCloudSun~Météorologie et aérologie (9h)}},text options={above}}
-	 \addmilestone{at=phase-5.270,direction=270:2.5cm,text={\hyperlink{aerodynamique}{\faPaperPlane[regular]~Aérodynamique, aérostatique et principes du vol (9h)}},text options={below}}
-	 \addmilestone{at=phase-6.90,direction=90:3.1cm,text={\hyperlink{histoire}{\faBook~Histoire et culture de l’aéronautique et du spatial (complement) (3h)}},text options={above}}
+	 \addmilestone{at=phase-2.90,direction=90:2.0cm,text={{\faSpaceShuttle~ Étude des aéronefs et des engins spatiaux (11h)}},text options={above}}
+	 \addmilestone{at=phase-3.270,direction=270:1.5cm,text={{\faMap[regular]~Navigation, réglementation, sécurité des vols (9h)}},text options={below}}
+	 \addmilestone{at=phase-4.90,direction=90:1.5cm,text={{\faCloudSun~Météorologie et aérologie (9h)}},text options={above}}
+	 \addmilestone{at=phase-5.270,direction=270:2.5cm,text={{\faPaperPlane[regular]~Aérodynamique, aérostatique et principes du vol (9h)}},text options={below}}
+	 \addmilestone{at=phase-6.90,direction=90:3.1cm,text={{\faBook~Histoire et culture de l’aéronautique et du spatial (complement) (3h)}},text options={above}}
 	 \addmilestone{at=phase-7.270,direction=270:1.0cm,text={\faGraduationCap~BIA},text options={below}}
 	 
 	 \addmilestone{at=phase-8.270,direction=270:1.5cm,text={\faPlane~Visite aéroclub},text options={below}}
@@ -36,3 +38,5 @@
       \addmilestone{at=phase-10.90,direction=90:1.9cm,text={\faRocket~(Micro-fusées)},text options={above}}
 	 
 	\end{tikzpicture}
+\caption{Organisation de l'année}
+\end{figure}

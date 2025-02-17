@@ -11,3 +11,7 @@
 *.lof
 *.out
 *.run.xml
+*.glg
+*.gls
+*.lot
+*.toc
