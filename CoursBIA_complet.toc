@@ -3,7 +3,8 @@
 \contentsline {chapter}{Table des mati\`eres}{1}{chapter*.1}%
 \contentsline {section}{\numberline {0.1}Préface}{3}{section.0.1}%
 \contentsline {section}{\numberline {0.2}Organisation du cours sur l'année}{3}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Licence}{3}{section.0.3}%
+\contentsline {section}{\numberline {0.3}Notations}{3}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Licence}{4}{section.0.4}%
 \contentsline {chapter}{\numberline {1}Étude des aéronefs et des engins spatiaux}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Classification des aéronefs}{5}{section.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.0.1}Pourquoi classer les aéronefs ?}{6}{subsubsection.1.1.0.1}%
@@ -14,7 +15,7 @@
 \contentsline {subsection}{\numberline {1.1.2}Aérodynes}{7}{subsection.1.1.2}%
 \contentsline {subsubsection}{\numberline {1.1.2.1}Aéronef à voilure fixe}{7}{subsubsection.1.1.2.1}%
 \contentsline {paragraph}{\numberline {1.1.2.1.1}Avions}{7}{paragraph.1.1.2.1.1}%
-\contentsline {paragraph}{\numberline {1.1.2.1.2}Planeurs}{7}{paragraph.1.1.2.1.2}%
+\contentsline {paragraph}{\numberline {1.1.2.1.2}Planeurs}{8}{paragraph.1.1.2.1.2}%
 \contentsline {subsubsection}{\numberline {1.1.2.2}Aéronef à voilure tournante}{8}{subsubsection.1.1.2.2}%
 \contentsline {paragraph}{\numberline {1.1.2.2.1}Hélicoptères}{8}{paragraph.1.1.2.2.1}%
 \contentsline {paragraph}{\numberline {1.1.2.2.2}Autogyre}{8}{paragraph.1.1.2.2.2}%
@@ -27,8 +28,9 @@
 \contentsline {subsubsection}{\numberline {1.1.3.2}Engins spatiaux}{8}{subsubsection.1.1.3.2}%
 \contentsline {paragraph}{\numberline {1.1.3.2.1}Satellites}{8}{paragraph.1.1.3.2.1}%
 \contentsline {paragraph}{\numberline {1.1.3.2.2}Sondes}{8}{paragraph.1.1.3.2.2}%
-\contentsline {subsection}{\numberline {1.1.4}Les ULM}{8}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Les drones}{10}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.4}Des grandes familles d'aéronefs}{8}{subsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.4.1}Les ULM}{8}{subsubsection.1.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.1.4.2}Les drones}{10}{subsubsection.1.1.4.2}%
 \contentsline {section}{\numberline {1.2}Les groupes motopropulseurs}{10}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Moteurs à pistons}{10}{subsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.1.1}Description du moteur à piston}{10}{subsubsection.1.2.1.1}%
