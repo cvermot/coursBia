@@ -15,3 +15,7 @@
 *.gls
 *.lot
 *.toc
+*.dpth
+*.md5
+*.auxlock
+*.toc
