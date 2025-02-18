@@ -13,6 +13,8 @@
 	\usepackage[toc]{glossaries}
 	\usepackage{animate}
 	\usepackage{tikz}
+	\usetikzlibrary{external} 
+	\tikzexternalize
 	\usepackage{rotating}
 	\usepackage{float}
 	%\usepackage{pdfpages}
@@ -148,7 +150,7 @@
 	
 
 	\chapter{Étude des aéronefs et des engins spatiaux}
-
+	\label{aeronef}
 \usetikzlibrary {backgrounds,mindmap}
 \begin{tikzpicture}
   [root concept/.append style={concept color=blue!80,minimum size=2cm},
@@ -178,7 +180,6 @@
 \end{tikzpicture}	
 
 		\input{01-EtudeAeronefs/01-ClassificationAeronefs.tex}
-		\label{aeronef}
 		\input{01-EtudeAeronefs/02-GroupesMotopropulseurs.tex}
 		\input{01-EtudeAeronefs/03-StructuresMateriaux.tex}
 		\input{01-EtudeAeronefs/04-CommandesDeVol.tex}
