@@ -1,19 +1,53 @@
 \input{01-EtudeAeronefs/img/instruments/instruments.tex}
 
 \section{L'instrumentation de bord}
-	\subsection{L'indicateur de vitesse}
+	Les instruments de bord permettent à l'équipage de contrôle l'ensemble du vol. On peut les regreouper en 3 grandes familles :
+	\begin{itemize}
+		\item \textbf{instruments de contrôle du vol} : ils permettent à l'équipage de contrôler les paramètres de base du vol : vitesses horizontale et verticale, attitude et altitude
+		\item \textbf{instruments de contrôle de l'appareil} : ils permettent à l'équipage de contrôler les systèmes de l'avion : compte-tour moteur, quantités de carburant restante et consommée, températures...
+		\item \textbf{instruments de navigation} : ils permettent à l'équipage de situer la position l'avion dans l'espace : boussole, compas, GPS, VOR, montre...
+	\end{itemize}
+	
+	\subsection{Les instruments de contrôle primaire du vol}
+	\subsubsection{L'indicateur de vitesse}
+	 L'\gls{anémomètre}, également appelé \gls{badin} est un instrument qui permet de mesurer la vitesse de l'avion par rapport à l'air. C'est l'un des instruments le plus important dans un avion. 
 
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
 		\badin{110}
 	\end{tikzpicture}
-	%\caption[\cite{tikz::instrumentsBase}]{Un "badin"}
-	%\caption{Un "badin" \cite{tikz::instrumentsBase}}
 	\legende{Un "badin"}{tikz::instrumentsBase}
 	\end{figure}
 	
-	\subsection{L'altimètre}
+	L'anémomètre comporte généralement au moins 3 arcs :
+	\begin{itemize}
+		\item un arc \textbf{vert} qui représente la vitesse d'utilisation normale de l'avion. Cet arc s'étend de la vitesse de décrochage en lisse à la \acrshort{vno} (\acrlong{vno} - vitesse d'utilisation normale), vitesse à ne pas dépasser en air turbulent
+		\item un arc \textbf{blanc} qui représente la vitesse d'utilisation de l'avion volets sortis. Cet arc s'étend de la vitesse de décrochage pleins volets à la \acrshort{vfe} (\acrlong{vfe} - vitesse volets sortis), vitesse à ne pas dépasser lorsque les volets sont sortis
+		\item un arc \textbf{jaune} qui représente les vitesses auxquelles il est possible de voler uniquement en air calme. Cet arc s'étend de la \acrshort{vno} à la \acrshort{vne} (\acrlong{vne} - vitesse à ne jamais dépasser). Cet arc est généralement terminé par un trait rouge qui rappelle la \acrshort{vne}.
+	\end{itemize}
+	
+	Sur les avions à trains rentrants, une quatrième vitesse est souvent représentée sur le badin : la \acrshort{vle} (\acrlong{vle} - vitesse maximale trains sortis).
+	
+	\alert{Un "badin" indique \textbf{toujours une vitesse par rapport à la masse d'air} dans laquelle évolue l'avion. Il ne faut pas confondre cette vitesse avec la vitesse sol que l'on peut obtenir grâce au GPS par exemple.}
+	
+	\paragraph{Le tube pitot}
+	L'anémomètre fonctionne grâce à un capteur appelé \gls{pitot} situé à l'extérieur de l'appareil. Sur les avions légers, ce capteur est généralement situé sous l'aile. Sur les avions de ligne, ce capteur est généralement situé sur la partie avant du fuselage. Ces positionnements permettent d'éloigner le pitot des influences aérodynamiques de surfaces portantes.
+	
+	
+	\begin{figure}[H]
+	\begin{minipage}[c]{0.5\linewidth}
+	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/tubePitotC172.jpg}
+	\legende{Tube pitot équipé de sa protection sur Cessna 172}{img:tubePitotC172}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{0.5\linewidth}
+	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/tubesPitotG6000.jpg}
+	\legende{Tubes pitot sur Bombardier Global 6000}{img:tubesPitotG6000}
+	\end{minipage}
+	\end{figure}
+	
+	\subsubsection{L'altimètre}
 	
 	\begin{figure}[H]	
 	\centering
@@ -23,7 +57,17 @@
 	\legende{Un altimètre}{tikz::instrumentsBase}
 	\end{figure}
 	
-	\subsection{L'horizon artificiel}
+	\subsubsection{Le variomètre}
+	
+	\begin{figure}[H]	
+	\centering
+	\begin{tikzpicture}
+	\vario{-500}
+	\end{tikzpicture}
+	\legende{Un variomètre}{tikz::instrumentsBase}
+	\end{figure}
+	
+	\subsubsection{L'horizon artificiel}
 	
 	\begin{figure}[H]	
 	\centering
@@ -33,7 +77,18 @@
 	\legende{Un horizon artificiel}{tikz::instrumentsBase}
 	\end{figure}
 	
-	\subsection{Le conservateur de cap}
+	\subsubsection{L'indicateur de virage}
+	
+	\begin{figure}[H]	
+	\centering
+	\begin{tikzpicture}
+		\indicateurVirage{0}{0}
+	\end{tikzpicture}
+	\legende{Un indicateur de virage}{tikz::instrumentsBase}
+	\end{figure}
+	
+	\subsection{Les instruments de navigation}
+	\subsubsection{Le conservateur de cap}
 	
 	\begin{figure}[H]	
 	\centering
@@ -44,23 +99,4 @@
 	\end{figure}
 	
 	
-	\subsection{L'indicateur de virage}
-	
-	\begin{figure}[H]	
-	\centering
-	\begin{tikzpicture}
-		\indicateurVirage{0}{0}
-	\end{tikzpicture}
-	\legende{Un indicateur de virage}{tikz::instrumentsBase}
-	\end{figure}
-	
-	
-	\subsection{Le variomètre}
-	
-	\begin{figure}[H]	
-	\centering
-	\begin{tikzpicture}
-	\vario{-500}
-	\end{tikzpicture}
-	\legende{Un variomètre}{tikz::instrumentsBase}
-	\end{figure}
+	\subsection{Les instruments de contrôle de la machine}
