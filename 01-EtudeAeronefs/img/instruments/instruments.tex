@@ -1,3 +1,6 @@
+%éléments communalisés
+\pgfdeclareimage{case}{01-EtudeAeronefs/img/instruments/alt/alt_case.pdf}
+
 \pgfdeclareimage{asiFace}{01-EtudeAeronefs/img/instruments/asi/asi_face.pdf}
 \pgfdeclareimage{asiHand}{01-EtudeAeronefs/img/instruments/asi/asi_hand.pdf}
 \pgfdeclareimage{asiCase}{01-EtudeAeronefs/img/instruments/asi/asi_case.pdf}
@@ -27,4 +30,117 @@
 \pgfdeclareimage{vsiCase}{01-EtudeAeronefs/img/instruments/vsi/vsi_case.pdf}
 \pgfdeclareimage{vsiHand}{01-EtudeAeronefs/img/instruments/vsi/vsi_hand.pdf}
 \pgfdeclareimage{vsiFace}{01-EtudeAeronefs/img/instruments/vsi/vsi_face.pdf}
+
+%altimètre
+%   -paramètre 1 : altitude en pieds
+%   -paramètre 2 : calage en pouces de mercure
+\def\alti#1#2{
+	\fill[transparent] (0,0) circle (3) ;
+	\node[rotate=(#2-28.0)*100] {\pgfbox[center,center]{\pgfuseimage{altFace1}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{altFace2}}};
+  	\node[rotate=-{(Mod(#1/10,10000))*(36/1000)}] {\pgfbox[center,center]{\pgfuseimage{altFace3}}};
+  	\node[rotate=-{(Mod(#1,1000))*(360/1000)}] {\pgfbox[center,center]{\pgfuseimage{altHand2}}};
+    	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
+    	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
+
+%consevateur de cap
+%   -paramètre 1 : cap en degrés
+\def\conservateurCap#1{
+	\fill[transparent] (0,0) circle (3) ;
+  	\node[rotate=#1] {\pgfbox[center,center]{\pgfuseimage{hiFace}}};
+    	\node {\pgfbox[center,center]{\pgfuseimage{hiCase}}};
+}
+
+%variomètre
+%   -paramètre 1 : taux de descente
+\def\vario#1{
+	\fill[transparent] (0,0) circle (3) ;
+  	\node {\pgfbox[center,center]{\pgfuseimage{vsiFace}}};
+   	\node[rotate=-(#1/2000)*172] {\pgfbox[center,center]{\pgfuseimage{vsiHand}}};
+    	%\node {\pgfbox[center,center]{\pgfuseimage{vsiCase}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
+
+%horizon
+%   -paramètre 1 : roulis
+%   -parametre 2 : tangage 
+\def\horizon#1#2{
+	\fill[transparent] (0,0) circle (3) ;
+	\node {\pgfbox[center,center]{\pgfuseimage{aiBack}}};
+  	\node[rotate=#1,yshift=-#2*1.25] {\pgfbox[center,center]{\pgfuseimage{aiFace}}};
+    	\node[rotate=#1] {\pgfbox[center,center]{\pgfuseimage{aiRing}}};
+    	\node {\pgfbox[center,center]{\pgfuseimage{aiCase}}};
+}
+
+%indicateur de virage
+%   -paramètre 1 : taux virage [-1;1] 
+%   -parametre 2 : postion bille [-1;1] 
+\def\indicateurVirage#1#2{
+	\fill[transparent] (0,0) circle (3) ;
+  	\node {\pgfbox[center,center]{\pgfuseimage{tcBack}}};
+    	\node {\pgfbox[center,center]{\pgfuseimage{tcFace1}}};
+    	\node {\pgfbox[center,center]{\pgfuseimage{tcFace2}}};
+    	%\node[xshift=#2*35,yshift=#2*4] {\pgfbox[center,center]{\pgfuseimage{tcBall}}};
+	\node[rotate around={#2*15:(0,3.7)}] {\pgfbox[center,center]{\pgfuseimage{tcBall}}};
+    	\node[rotate=#1*20] {\pgfbox[center,center]{\pgfuseimage{tcMark}}};
+    	%\node {\pgfbox[center,center]{\pgfuseimage{tcCase}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
+
+%badin
+%   -paramètre 1 : vitesse [0;200] 
+\def\badin#1{
+	\fill[transparent] (0,0) circle (3) ;
+  	\node {\pgfbox[center,center]{\pgfuseimage{asiFace}}};
+    	
+	%0 kts : 0°
+	%40 kts : 36°
+	%70 kts : 90°
+	%130 kts : 210°
+	%160 kts : 264°
+	%200 kts : 312°
+
+	%	Vitesse	Position aiguille	Angle/10 kts
+	%	0		0,00°	
+	%	40		36,00°		NA
+	%	50		54,00°		-18°
+	%	60		72,00°		-18°
+	%	70		90,00°		-18°
+	%	80		110,00°		-20°
+	%	90		130,00°		-20°
+	%	100		150,00°		-20°
+	%	110		170,00°		-20°
+	%	120		190,00°		-20°
+	%	130		210,00°		-20°
+	%	140		228,00°		-18°
+	%	150		246,00°		-18°
+	%	160		264,00°		-18°
+	%	200		312,00°		-12°
+
+	%Entre 0 et 40 kts
+	\ifnum#1<41
+	\node[rotate=-(((#1)/(40))*(36))] {\pgfbox[center,center]{\pgfuseimage{asiHand}}};
+	\fi 
+	%Entre 40 et 70 kts
+	\ifnum#1>40 \ifnum#1<71
+	\node[rotate=-(((#1-40)/(70-40))*(90-36))-36] {\pgfbox[center,center]{\pgfuseimage{asiHand}}};
+	\fi \fi
+	%Entre 71 et 130 kts
+	\ifnum#1>70 \ifnum#1<131
+	\node[rotate=-(((#1-70)/(130-70))*(210-90))-90] {\pgfbox[center,center]{\pgfuseimage{asiHand}}};
+	\fi \fi
+	%Entre 130 et 160 kts
+	\ifnum#1>130 \ifnum#1<161
+	\node[rotate=-(((#1-130)/(160-130))*(264-210))-210] {\pgfbox[center,center]{\pgfuseimage{asiHand}}};
+	\fi \fi
+	%Entre 160 et 200 kts
+	\ifnum#1>160
+	\node[rotate=-(((#1-160)/(200-160))*(312-264))-264] {\pgfbox[center,center]{\pgfuseimage{asiHand}}};
+	\fi
+
+    	%\node {\pgfbox[center,center]{\pgfuseimage{asiCase}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
 

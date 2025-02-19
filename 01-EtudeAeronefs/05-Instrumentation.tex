@@ -6,11 +6,11 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-	\fill[transparent] (0,0) circle (3) ;
-  	\node {\pgfbox[center,center]{\pgfuseimage{asiFace}}};
-    \node[rotate=-45] {\pgfbox[center,center]{\pgfuseimage{asiHand}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{asiCase}}};
+		\badin{110}
 	\end{tikzpicture}
+	%\caption[\cite{tikz::instrumentsBase}]{Un "badin"}
+	%\caption{Un "badin" \cite{tikz::instrumentsBase}}
+	\legende{Un "badin"}{tikz::instrumentsBase}
 	\end{figure}
 	
 	\subsection{L'altimètre}
@@ -18,14 +18,9 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-	\fill[transparent] (0,0) circle (3) ;
-	\node {\pgfbox[center,center]{\pgfuseimage{altFace1}}};
-	\node {\pgfbox[center,center]{\pgfuseimage{altFace2}}};
-  	\node {\pgfbox[center,center]{\pgfuseimage{altFace3}}};
-  	\node[rotate=-30] {\pgfbox[center,center]{\pgfuseimage{altHand2}}};
-    \node[rotate=-45] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
+		\alti{4500}{29.92}
 	\end{tikzpicture}
+	\legende{Un altimètre}{tikz::instrumentsBase}
 	\end{figure}
 	
 	\subsection{L'horizon artificiel}
@@ -33,12 +28,9 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-	\fill[transparent] (0,0) circle (3) ;
-	\node {\pgfbox[center,center]{\pgfuseimage{aiBack}}};
-  	\node[rotate=0] {\pgfbox[center,center]{\pgfuseimage{aiFace}}};
-    \node[rotate=0] {\pgfbox[center,center]{\pgfuseimage{aiRing}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{aiCase}}};
+		\horizon{0}{0}
 	\end{tikzpicture}
+	\legende{Un horizon artificiel}{tikz::instrumentsBase}
 	\end{figure}
 	
 	\subsection{Le conservateur de cap}
@@ -46,10 +38,9 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-	\fill[transparent] (0,0) circle (3) ;
-  	\node[rotate=0] {\pgfbox[center,center]{\pgfuseimage{hiFace}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{hiCase}}};
+		\conservateurCap{83}
 	\end{tikzpicture}
+	\legende{Un conservateur de cap}{tikz::instrumentsBase}
 	\end{figure}
 	
 	
@@ -58,14 +49,9 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-	\fill[transparent] (0,0) circle (3) ;
-  	\node {\pgfbox[center,center]{\pgfuseimage{tcBack}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{tcFace1}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{tcFace2}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{tcBall}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{tcMark}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{tcCase}}};
+		\indicateurVirage{0}{0}
 	\end{tikzpicture}
+	\legende{Un indicateur de virage}{tikz::instrumentsBase}
 	\end{figure}
 	
 	
@@ -74,9 +60,7 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-	\fill[transparent] (0,0) circle (3) ;
-  	\node {\pgfbox[center,center]{\pgfuseimage{vsiFace}}};
-    \node[rotate=0] {\pgfbox[center,center]{\pgfuseimage{vsiHand}}};
-    \node {\pgfbox[center,center]{\pgfuseimage{vsiCase}}};
+	\vario{-500}
 	\end{tikzpicture}
+	\legende{Un variomètre}{tikz::instrumentsBase}
 	\end{figure}

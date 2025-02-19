@@ -83,6 +83,12 @@
 	%%%% fin macro %%%%
 	
 	\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
+	%commande legende. Permet d'afficher le titre de la figure sous la figure
+	%et le titre de la figure plus la source dans biblio.
+	%2 parametres : 
+	%    -titre de la figure
+	%    -source (tag de la biblio)
+	\newcommand{\legende}[2]{\caption[#1 (\cite{#2})]{#1}}
 		
 	
 	\begin{document}
