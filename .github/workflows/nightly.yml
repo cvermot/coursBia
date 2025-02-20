@@ -1,7 +1,7 @@
 name: Compilation LaTeX - Nigthly
-on: [push]
-#  schedule:
-#    - cron: "37 3 * * *" #A 3h37 tous les jours
+on: #[push]
+  schedule:
+    - cron: "37 3 * * *" #A 3h37 tous les jours
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
         tag_name: "${{ env.NOW }}"
         release_name: "${{ env.NOW }}"
         draft: true
-        prerelease: false
+        prerelease: true
 
     - uses: actions/upload-release-asset@v1.0.1
       env:
