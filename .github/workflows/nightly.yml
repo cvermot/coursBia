@@ -22,7 +22,7 @@ jobs:
         tag_name: "${{ env.NOW }}"
         release_name: "${{ env.NOW }}"
         draft: true
-        prerelease: true
+        prerelease: false
 
     - uses: actions/upload-release-asset@v1.0.1
       env:
