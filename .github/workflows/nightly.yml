@@ -1,14 +1,16 @@
 name: Compilation LaTeX - Nigthly
 on: [push]
+#  schedule:
+#    - cron: "37 3 * * *" #A 3h37 tous les jours
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-    - name: set env
-      run: echo "NOW=nightly$(date +'%Y.%m.%d')" >> $GITHUB_ENV
-    - name: Set up Git repository
+    - name: Setting up environment
+      run: echo "NOW=nightly-$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+    - name: Setting up Git repository
       uses: actions/checkout@v4
-    - name: Compile LaTeX document
+    - name: Producing LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
         root_file: CoursBIA_complet.tex
@@ -22,7 +24,7 @@ jobs:
         tag_name: "${{ env.NOW }}"
         release_name: "${{ env.NOW }}"
         draft: true
-        prerelease: true
+        prerelease: false
 
     - uses: actions/upload-release-asset@v1.0.1
       env:
