@@ -1,0 +1,40 @@
+name: Compilation LaTeX - Nigthly
+on: [push]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: set env
+    run: echo "NOW=nightly$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+    - name: Set up Git repository
+       uses: actions/checkout@v4
+    - name: Compile LaTeX document
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: CoursBIA_complet.tex
+
+    - name: Create Draft Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: "${{ env.NOW }}"
+        release_name: "${{ env.NOW }}"
+        draft: true
+        prerelease: true
+
+    - uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./CoursBIA_complet.pdf
+        asset_name: CoursBIA_complet.pdf
+        asset_content_type: application/pdf
+
+    - uses: eregon/publish-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        release_id: ${{ steps.create_release.outputs.id }}
