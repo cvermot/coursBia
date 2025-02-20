@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: set env
-    run: echo "NOW=nightly$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+      run: echo "NOW=nightly$(date +'%Y.%m.%d')" >> $GITHUB_ENV
     - name: Set up Git repository
-       uses: actions/checkout@v4
+      uses: actions/checkout@v4
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
