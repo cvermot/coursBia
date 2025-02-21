@@ -20,3 +20,4 @@
 *.md5
 *.auxlock
 *.toc
+*.synctex(busy)
