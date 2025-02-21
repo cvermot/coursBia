@@ -8,7 +8,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-    - name: Setting up Git repository
+    - name: Set up Git repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
@@ -32,45 +32,26 @@ jobs:
           echo "has_commits=false" >> "$GITHUB_OUTPUT"
         fi
 
-    - name: Setting up environment
+    - name: Set up environment
       if: steps.check_commits.outputs.has_commits == 'true'
       run: |
         # Format: nightly-YYYY.MM.DD-HH.mm
         echo "NOW=nightly-$(date +'%Y.%m.%d-%H.%M')" >> $GITHUB_ENV
 
-    - name: Producing LaTeX document
+    - name: Produce LaTeX document
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
         root_file: CoursBIA_complet.tex
 
-    - name: Create Draft Release
+    - name: Create Release and Upload PDF
       if: steps.check_commits.outputs.has_commits == 'true'
-      id: create_release
-      uses: actions/create-release@v1
+      uses: softprops/action-gh-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: "${{ env.NOW }}"
-        release_name: "${{ env.NOW }}"
+        tag_name: ${{ env.NOW }}
+        name: ${{ env.NOW }}
         draft: true
         prerelease: true
-
-    - name: Upload des PDF
-      uses: actions/upload-release-asset@v1.0.1
-      if: steps.check_commits.outputs.has_commits == 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./CoursBIA_complet.pdf
-        asset_name: CoursBIA_complet.pdf
-        asset_content_type: application/pdf
-
-    - name: Publish release
-      uses: eregon/publish-release@v1
-      if: steps.check_commits.outputs.has_commits == 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        release_id: ${{ steps.create_release.outputs.id }}
+        files: CoursBIA_complet.pdf
