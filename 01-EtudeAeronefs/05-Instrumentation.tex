@@ -32,6 +32,7 @@
 	\alert{Un "badin" indique \textbf{toujours une vitesse par rapport à la masse d'air} dans laquelle évolue l'avion. Il ne faut pas confondre cette vitesse avec la vitesse sol que l'on peut obtenir grâce au GPS par exemple.}
 	
 	\paragraph{Le tube pitot}
+	
 	L'anémomètre fonctionne grâce à un capteur appelé \gls{pitot} situé à l'extérieur de l'appareil. Sur les avions légers, ce capteur est généralement situé sous l'aile. Sur les avions de ligne, ce capteur est généralement situé sur la partie avant du fuselage. Ces positionnements permettent d'éloigner le pitot des influences aérodynamiques de surfaces portantes.
 	
 	
@@ -49,6 +50,12 @@
 	
 	\subsubsection{L'altimètre}
 	
+	L'\gls{altimètre} est un instrument qui permet de mesurer l'altitude ou la hauteur par rapport à une référence (par exemple le niveau de la mer ou la hauteur de l'aérodrome). Il fonctionne en mesurant la pression atmosphérique. En effet, la pression atmosphérique diminue avec l'altitude. Mesurer cette pression permet donc de mesurer indirectement l'altitude. \\
+	
+	L'altimètre est équipé d'un bouton rotatif permettant à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
+	
+	\info{La pression atmosphérique est mesurée en hectopascal (hPa) en Europe et dans la plupart des pays. Elle est mesurée en pouces de mercure (inHg) aux États-Unis d'Amérique (pression moyenne au niveau de la mer : 1013,25 hPa = 29,92 inHg).}
+	
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
@@ -56,6 +63,8 @@
 	\end{tikzpicture}
 	\legende{Un altimètre}{tikz::instrumentsBase}
 	\end{figure}
+	
+	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
 	
 	\subsubsection{Le variomètre}
 	

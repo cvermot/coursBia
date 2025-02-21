@@ -44,10 +44,10 @@ jobs:
       with:
         root_file: CoursBIA_complet.tex
 
-    - name: Create Source Archive
-      if: steps.check_commits.outputs.has_commits == 'true'
-      run: |
-        git archive --format=zip -o coursBIA_sources.zip HEAD
+    #- name: Create Source Archive
+    #  if: steps.check_commits.outputs.has_commits == 'true'
+    #  run: |
+    #    git archive --format=zip -o coursBIA_sources.zip HEAD
 
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
