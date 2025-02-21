@@ -71,12 +71,14 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
 
 \subsection{Aérodynes}
 	\subsubsection{Aéronef à voilure fixe}
-		Les appareils à voilure fixe \anglais{fixed-wing aircraft}, également appelés aéroplanes sont des aéronefs dont la sustentation est assurée par des surfaces fixes (ailes). Ce type d'aéronef ne peut se maintenir en l'air que si un flux d'air suffisant existe sur ses ailes.
+		Les appareils à voilure fixe \anglais{fixed-wing aircraft}, également appelés aéroplanes sont des aéronefs dont la sustentation est assurée grâce à des phénomènes aérodynamiques sur des surfaces fixes (ailes). Ce type d'aéronef ne peut se maintenir en l'air que si un flux d'air suffisant existe sur ses surfaces portantes.
 
 		\paragraph{Avions}
-		La mise en mouvement de l'avion \anglais{airplane} grâce à ses moteurs. \\
+		La mise en mouvement de l'avion \anglais{airplane} est assuré par son ou ses moteurs. \\
 		
-		Il existe une très grande diversité de modèles d'avions, variables en taille, conception et usages.
+		Il existe une très grande diversité de modèles d'avions, variables en taille, vitesse, conception et usages. \\
+		
+		\histoire{En France, Clément Ader aurait fait voler son Éole dès 1890, mais il n'existe pas de preuve formelle que cet appareil était effectivement quitté le sol. \\ \\  Le premier vol attesté d'un aérodyne à moteur a été réalisé par les frères Wright en 1903 aux États-Unis. C'est cette date qui est officiellement retenue comme celle du premier vol d'un avion.}
 	
 		\paragraph{Planeurs}
 		Le planeur \anglais{glider} est un aérodyne dépourvu de moyens de propulsion. Il est donc dépendant de moyens annexes (remorqueur, treuil) pour sa mise en l'air. \\
@@ -85,8 +87,11 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
 		
 		\info{Il existe également des modèles de planeurs équipés de moteurs. Appelés motoplaneurs, ces planeurs peuvent généralement décoller de façon autonome.}
 		
+		\histoire{Le premier aérodyne à avoir volé est un planeur. Ce vol historique a été réalisé en 1891 par 	\textbf{Otto Lilienthal}.}
+		
 	\subsubsection{Aéronef à voilure tournante}
 	Les appareils à voilure tournante \anglais{rotary-wing aircraft}, également appelés aérogires, sont des aéronefs dont la sustentation est assurée par la rotation d'un ou plusieurs rotors.
+	
 		\paragraph{Hélicoptères}
 		L'hélicoptère \anglais{helicopter} est un aérodyne dont la sustentation est assurée grâce à un rotor entrainé par un moteur.
 		
@@ -97,11 +102,37 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
 		\paragraph{Autogire}
 		L'autogire \anglais{autogyro} est un aérodyne dont la sustentation est assurée grâce à un rotor entrainé par le vent relatif. Les autogires doivent donc dispose d'un mode de propulsion (typiquement une hélice entrainée par un moteur à pistons) qui assure la propulsion de l'appareil sur le plan horizontal.
 		
-		\histoire{L'autogire a été inventé avant l'hélicoptère. Le premier vol d'un autogire a été effectué en 1923, contre 1939 pour le premier vol réellement contrôlé pour un hélicoptère.}
+		\histoire{L'autogire à précédé l'hélicoptère. Le premier vol d'un autogire a été effectué en 1923, contre 1936 pour le premier vol réellement contrôlé pour un hélicoptère.}
+		
 		\paragraph{Convertible}
+		Les convertibles \anglais{tiltrotor } sont en quelque sort des hybrides entre des appareils à voilure tournante et des appareils à voilure fixe.
+		
+		Grâce à des systèmes qui permettent à leurs rotors de basculer d'une position verticale à une position horizontale, ces appareils cherchent à combiner les avantages de l'hélicoptère (vol stationnaire, décollage et atterrissage verticaux) à ceux des appareils à voilure fixe (vitesse de croisière). Cela se fait cependant au prix d'une complexité technique qui rend l'exploitation de ces appareils couteuse et délicate.
+		
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.4\textwidth]{01-EtudeAeronefs/img/tiltrotor.jpg}
+  	\legende{Un convertible : le V22 Osprey}{img:tiltrotor}
+	\end{figure}	
 		
 	\subsubsection{Aéronef à voilure souple}
 	Les aéronefs à voilure souple \anglais{flexible wings} regroupent des aéronefs dont la voilure est généralement gonflée par l'air : parapente, paramoteur, parachute sportif moderne... Les deltaplanes rentrent également dans cette catégorie.
+	
+	\info{Le parachute, dans sa version initiale (coupole), se trouve à a limite de la définition d'un aéronef. En effet, ce type de parachute ne produit pas de portance (uniquement de la traînée) et sa capacité de manœuvre est très limitée.}
+	
+	\begin{figure}[H]
+	\begin{minipage}[c]{0.35\linewidth}
+	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/paraMili.jpg}
+	\legende{Un parachute coupole}{img:paraMili}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{0.35\linewidth}
+	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/paraSport.jpg}
+	\legende{Un parachute sportif moderne}{img:paraSport}
+	\end{minipage}
+	\end{figure}
+	
+	\histoire{André-Jacques \textbf{Garnerin}, un ingénieur français, effectue le premier saut réussi en parachute en 1797, en sautant depuis un ballon au dessus de Paris.}
 	
 \subsection{Engins spatiaux}
 	\subsubsection{Lanceurs}
