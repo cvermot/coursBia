@@ -44,7 +44,12 @@ jobs:
       with:
         root_file: CoursBIA_complet.tex
 
-    - name: Create Release and Upload PDF
+    - name: Create Source Archive
+      if: steps.check_commits.outputs.has_commits == 'true'
+      run: |
+        git archive --format=zip -o coursBIA_sources.zip HEAD
+
+    - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: softprops/action-gh-release@v1
       env:
@@ -54,4 +59,7 @@ jobs:
         name: ${{ env.NOW }}
         draft: true
         prerelease: true
-        files: CoursBIA_complet.pdf
+        files: |
+          CoursBIA_complet.pdf
+          coursBIA_sources.zip
+        generate_release_notes: true
