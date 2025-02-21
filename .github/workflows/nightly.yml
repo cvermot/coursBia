@@ -57,7 +57,7 @@ jobs:
       with:
         tag_name: ${{ env.NOW }}
         name: ${{ env.NOW }}
-        draft: true
+        draft: false
         prerelease: true
         files: |
           CoursBIA_complet.pdf
