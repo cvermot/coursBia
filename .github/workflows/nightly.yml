@@ -1,21 +1,46 @@
 name: Compilation LaTeX - Nigthly
-on: #[push]
-  schedule:
-    - cron: "37 3 * * *" #A 3h37 tous les jours
+on: [push]
+#  schedule:
+#    - cron: "37 3 * * *" #A 3h37 tous les jours
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-    - name: Setting up environment
-      run: echo "NOW=nightly-$(date +'%Y.%m.%d')" >> $GITHUB_ENV
     - name: Setting up Git repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Check for commits from yesterday
+      id: check_commits
+      run: |
+        # Définir les dates de début et fin pour hier (en UTC)
+        START_DATE=$(date -u -d "yesterday 00:00:00" +"%Y-%m-%dT%H:%M:%S")
+        END_DATE=$(date -u -d "yesterday 23:59:59" +"%Y-%m-%dT%H:%M:%S")
+        
+        # Compter les commits d'hier
+        COMMIT_COUNT=$(git log --after="$START_DATE" --before="$END_DATE" --oneline | wc -l)
+        
+        if [ $COMMIT_COUNT -gt 0 ]; then
+          echo "has_commits=true" >> $GITHUB_OUTPUT
+          echo "There were $COMMIT_COUNT commit(s) yesterday"
+        else
+          echo "has_commits=false" >> $GITHUB_OUTPUT
+          echo "No commit yesterday"
+        fi
+
+    - name: Setting up environment
+      if: steps.check_commits.outputs.has_commits == 'true'
+      run: echo "NOW=nightly-test-$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+
     - name: Producing LaTeX document
+      if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
         root_file: CoursBIA_complet.tex
 
     - name: Create Draft Release
+      if: steps.check_commits.outputs.has_commits == 'true'
       id: create_release
       uses: actions/create-release@v1
       env:
@@ -26,7 +51,9 @@ jobs:
         draft: true
         prerelease: true
 
-    - uses: actions/upload-release-asset@v1.0.1
+    - name: Upload des PDF
+      uses: actions/upload-release-asset@v1.0.1
+      if: steps.check_commits.outputs.has_commits == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -35,7 +62,9 @@ jobs:
         asset_name: CoursBIA_complet.pdf
         asset_content_type: application/pdf
 
-    - uses: eregon/publish-release@v1
+    - name: Publish release
+      uses: eregon/publish-release@v1
+      if: steps.check_commits.outputs.has_commits == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
