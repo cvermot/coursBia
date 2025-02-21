@@ -1,3 +1,31 @@
+%\usetikzlibrary {backgrounds,mindmap}
+%\begin{tikzpicture}
+%  [root concept/.append style={concept color=blue!80,minimum size=2cm},
+%   level 1 concept/.append style={sibling angle=180},
+%   level 2 concept/.append style={sibling angle=120},
+%   level 3 concept/.append style={sibling angle=90},
+%   mindmap]
+%  \node [concept] (aeronef) {Aéronef}
+%    [clockwise from=0]
+%    child[concept color=red] { node[concept] (aerodyne) {Aérodyne}
+%    		[clockwise from=90]
+%      child[concept color=green] { node[concept] {Voilure fixe} 
+%      	[clockwise from=-180]
+%      	child[concept color=yellow] { node[concept] {Avion} }
+%      	child[concept color=yellow] { node[concept] {Planeur} }
+%      	child[concept color=yellow] { node[concept] {Deltaplane} }
+%      }
+%      child[concept color=green] { node[concept] {Voilure tournante} 
+%      	[clockwise from=45]
+%      	child[concept color=yellow] { node[concept] {Hélico} }
+%      	child[concept color=yellow] { node[concept] {Autogyre} }
+%      }
+%      child[concept color=green] { node[concept] {Deltaplane} }	
+%      }
+%    child[concept color=red] { node[concept] (aerostat) {Aérostat}}
+%    ;
+%\end{tikzpicture}
+
 \section{Classification des aéronefs}
 Un \gls{aéronef} \anglais{aircraft} est un appareil capable de s'élever et de se mouvoir au sein de l'atmosphère terrestre. On divise les aéronefs en 2 grandes familles :
 \begin{itemize}

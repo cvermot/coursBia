@@ -136,8 +136,7 @@
 
 	Ce document vise à apporter les connaissances de base nécessaires au passage de l'examen BIA. A date (\today), ce document est en cours de rédaction et doit être considéré comme partiel.
 
-	Enfin, ce document est destiné à évoluer. Par ailleurs, je suis ouvert à toutes critiques ou commentaires constructifs concernant ce document, sur le fond comme sur la forme. N'hésitez donc pas à me contacter concernant toute erreur, omission, faute d'orthographe ou manque dans ce documents, à l'adresse \url{https://github.com/cvermot/coursBia}.
-	
+	Enfin, ce document est destiné à évoluer. Par ailleurs, je suis ouvert à toutes critiques ou commentaires constructifs concernant ce document, sur le fond comme sur la forme. N'hésitez donc pas à me contacter concernant toute erreur, omission, faute d'orthographe ou manque dans ce documents, préférentiellement via la page \href{https://github.com/cvermot/coursBia/discussions}{Discussions} du projet \href{https://github.com/cvermot/coursBia}{GitHub} de ce cours : \url{https://github.com/cvermot/coursBia}. Alternativement, vous pouvez également me contacter via l'adresse suivante : bia@vermot.net.
 	
 	\section{Organisation du cours sur l'année}
 	
@@ -156,39 +155,13 @@
 	\info{Info complémentaire}
 
 	\section{Licence}
-	Ce document est diffusé sous licence Creative Commons 4.0 by-nc-sa dont les termes sont disponibles sur le site CreativeCommons.org\footnote{Termes disponibles à cette adresse : \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}}. De façon synthétique, cette licence \textbf{vous autorise à redistribuer et à modifier ce document tant que vous le souhaitez tant que vous me citez en tant qu'auteur original} (un lien vers la version vous ayant servit de base est souhaité). En cas de diffusion de la version modifiée, vous avez l'obligation de la diffuser sous la même licence. Toute utilisation commerciale est en revanche proscrite. Si vous souhaitez \textbf{faire un usage dépassant le cadre de cette licence} (donc utilisation commerciale, diffusion sous une autre licence...),vous devez \textbf{impérativement obtenir mon autorisation expresse écrite}. Pour cela vous pouvez me contacter à l'adresse contact@f4haj. Je tiens par ailleurs à votre disposition le fichier source \LaTeX{} de ce document sur simple demande.
+	Ce document est diffusé sous licence Creative Commons 4.0 by-nc-sa dont les termes sont disponibles sur le site CreativeCommons.org\footnote{Termes disponibles à cette adresse : \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}}. De façon synthétique, cette licence \textbf{vous autorise à redistribuer et à modifier ce document comme que vous le souhaitez tant que vous me citez en tant qu'auteur original} (un lien vers la version vous ayant servi de base est souhaité). En cas de diffusion de la version modifiée, vous avez l'obligation de la diffuser sous la même licence. Toute utilisation commerciale est en revanche proscrite. 
+	
+	Si vous souhaitez \textbf{faire un usage dépassant le cadre de cette licence} (donc utilisation commerciale, diffusion sous une autre licence...),vous devez \textbf{impérativement obtenir mon autorisation expresse écrite}. Pour cela vous pouvez me contacter à l'adresse bia@vermot.net. Je tiens par ailleurs à votre disposition le fichier source \LaTeX{} de ce document sur simple demande.
 	
 
 	\chapter{Étude des aéronefs et des engins spatiaux}
 	\label{aeronef}
-\usetikzlibrary {backgrounds,mindmap}
-\begin{tikzpicture}
-  [root concept/.append style={concept color=blue!80,minimum size=2cm},
-   level 1 concept/.append style={sibling angle=180},
-   level 2 concept/.append style={sibling angle=120},
-   level 3 concept/.append style={sibling angle=90},
-   mindmap]
-  \node [concept] (aeronef) {Aéronef}
-    [clockwise from=0]
-    child[concept color=red] { node[concept] (aerodyne) {Aérodyne}
-    		[clockwise from=90]
-      child[concept color=green] { node[concept] {Voilure fixe} 
-      	[clockwise from=-180]
-      	child[concept color=yellow] { node[concept] {Avion} }
-      	child[concept color=yellow] { node[concept] {Planeur} }
-      	child[concept color=yellow] { node[concept] {Deltaplane} }
-      }
-      child[concept color=green] { node[concept] {Voilure tournante} 
-      	[clockwise from=45]
-      	child[concept color=yellow] { node[concept] {Hélico} }
-      	child[concept color=yellow] { node[concept] {Autogyre} }
-      }
-      child[concept color=green] { node[concept] {Deltaplane} }	
-      }
-    child[concept color=red] { node[concept] (aerostat) {Aérostat}}
-    ;
-\end{tikzpicture}	
-
 		\input{01-EtudeAeronefs/01-ClassificationAeronefs.tex}
 		\input{01-EtudeAeronefs/02-GroupesMotopropulseurs.tex}
 		\input{01-EtudeAeronefs/03-StructuresMateriaux.tex}

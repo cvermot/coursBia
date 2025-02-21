@@ -1,11 +1,11 @@
 \input{01-EtudeAeronefs/img/instruments/instruments.tex}
 
 \section{L'instrumentation de bord}
-	Les instruments de bord permettent à l'équipage de contrôle l'ensemble du vol. On peut les regreouper en 3 grandes familles :
+	Les instruments de bord permettent à l'équipage de contrôler l'ensemble du vol. On peut les regrouper en 3 grandes familles :
 	\begin{itemize}
 		\item \textbf{instruments de contrôle du vol} : ils permettent à l'équipage de contrôler les paramètres de base du vol : vitesses horizontale et verticale, attitude et altitude
 		\item \textbf{instruments de contrôle de l'appareil} : ils permettent à l'équipage de contrôler les systèmes de l'avion : compte-tour moteur, quantités de carburant restante et consommée, températures...
-		\item \textbf{instruments de navigation} : ils permettent à l'équipage de situer la position l'avion dans l'espace : boussole, compas, GPS, VOR, montre...
+		\item \textbf{instruments de navigation} : ils permettent à l'équipage de situer la position de l'avion dans l'espace : boussole, compas, GPS, VOR, montre...
 	\end{itemize}
 	
 	\subsection{Les instruments de contrôle primaire du vol}
@@ -20,6 +20,8 @@
 	\legende{Un "badin"}{tikz::instrumentsBase}
 	\end{figure}
 	
+	\histoire{L'anémomètre qui équipe nos avions a été inventé en 1911 par l'ingénieur Raoul Badin, qui à donc donné son nom à cet instrument.}
+	
 	L'anémomètre comporte généralement au moins 3 arcs :
 	\begin{itemize}
 		\item un arc \textbf{vert} qui représente la vitesse d'utilisation normale de l'avion. Cet arc s'étend de la vitesse de décrochage en lisse à la \acrshort{vno} (\acrlong{vno} - vitesse d'utilisation normale), vitesse à ne pas dépasser en air turbulent
@@ -29,32 +31,34 @@
 	
 	Sur les avions à trains rentrants, une quatrième vitesse est souvent représentée sur le badin : la \acrshort{vle} (\acrlong{vle} - vitesse maximale trains sortis).
 	
+	Dans la plupart des avions, le badin est gradué en nœuds. La vitesse limite de chaque extrémité des arcs est bien sur propre à chaque type d'avion.
+	
 	\alert{Un "badin" indique \textbf{toujours une vitesse par rapport à la masse d'air} dans laquelle évolue l'avion. Il ne faut pas confondre cette vitesse avec la vitesse sol que l'on peut obtenir grâce au GPS par exemple.}
 	
-	\paragraph{Le tube pitot}
+	\paragraph{Le tube Pitot}
 	
-	L'anémomètre fonctionne grâce à un capteur appelé \gls{pitot} situé à l'extérieur de l'appareil. Sur les avions légers, ce capteur est généralement situé sous l'aile. Sur les avions de ligne, ce capteur est généralement situé sur la partie avant du fuselage. Ces positionnements permettent d'éloigner le pitot des influences aérodynamiques de surfaces portantes.
+	L'anémomètre fonctionne grâce à un capteur appelé \gls{pitot} situé à l'extérieur de l'appareil. Sur les avions légers, ce capteur est habituellement situé sous l'aile. Sur les avions de ligne, ce capteur est généralement situé sur la partie avant du fuselage. Ces positionnements permettent d'éloigner le Pitot des influences aérodynamiques de surfaces portantes.
+	
+	Le tube Pitot est une sonde très importante pour le pilotage des aéronefs. C'est pourquoi ce capteur est généralement protégé lorsque l'aéronef est au sol, en mettant dessus un étui communément appelé \textit{flamme}. Lors de la pré-vol, on retire l'étui et on vérifie l'absence d'obstruction. Sur beaucoup d'avion, le tube Pitot peut également être chauffé pour empêcher la formation de glace nuisible à son fonctionnement.
+	
+	\histoire{Le tube Pitot a été inventé en 1732 par le physicien français Henri Pitot.}
 	
 	
 	\begin{figure}[H]
 	\begin{minipage}[c]{0.5\linewidth}
 	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/tubePitotC172.jpg}
-	\legende{Tube pitot équipé de sa protection sur Cessna 172}{img:tubePitotC172}
+	\legende{Tube Pitot équipé de sa protection sur Cessna 172}{img:tubePitotC172}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[c]{0.5\linewidth}
 	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/tubesPitotG6000.jpg}
-	\legende{Tubes pitot sur Bombardier Global 6000}{img:tubesPitotG6000}
+	\legende{Tubes Pitot sur Bombardier Global 6000}{img:tubesPitotG6000}
 	\end{minipage}
 	\end{figure}
 	
 	\subsubsection{L'altimètre}
 	
 	L'\gls{altimètre} est un instrument qui permet de mesurer l'altitude ou la hauteur par rapport à une référence (par exemple le niveau de la mer ou la hauteur de l'aérodrome). Il fonctionne en mesurant la pression atmosphérique. En effet, la pression atmosphérique diminue avec l'altitude. Mesurer cette pression permet donc de mesurer indirectement l'altitude. \\
-	
-	L'altimètre est équipé d'un bouton rotatif permettant à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
-	
-	\info{La pression atmosphérique est mesurée en hectopascal (hPa) en Europe et dans la plupart des pays. Elle est mesurée en pouces de mercure (inHg) aux États-Unis d'Amérique (pression moyenne au niveau de la mer : 1013,25 hPa = 29,92 inHg).}
 	
 	\begin{figure}[H]	
 	\centering
@@ -65,6 +69,24 @@
 	\end{figure}
 	
 	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
+	
+	\paragraph{Calage altimétrique}
+	On a vu que l'altimètre mesure l'altitude en mesurant une pression. La valeur de cette pression varie selon le lieu et le temps. 
+	
+	L'altimètre est donc équipé d'un bouton rotatif qui permet à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
+	
+	\info{La pression atmosphérique est mesurée en hectopascal (hPa) en Europe et dans la plupart des pays. Elle est mesurée en pouces de mercure (inHg) aux États-Unis d'Amérique (pression moyenne au niveau de la mer : 1013,25~hPa = 29,92~inHg).}
+	
+	Il existe 3 principales références en altimétrie :
+	\begin{itemize}
+		\item le \acrshort{qnh}
+		\item le \acrshort{qfe}
+		\item le calage standard 1013,25~hPa
+	\end{itemize}
+	
+	\subparagraph{Le calage au QNH}
+	\subparagraph{Le calage au QFE}
+	\subparagraph{Le calage à la pression standard}
 	
 	\subsubsection{Le variomètre}
 	
