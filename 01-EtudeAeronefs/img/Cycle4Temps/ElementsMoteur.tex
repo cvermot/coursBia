@@ -46,7 +46,7 @@
   \coordinate (VRo) at ($(TR)!.2!(S)$);
   \coordinate (VR)  at ($(TR)!.4!(S)$);
   \coordinate (VRm) at ($(TR)!.6!(S)$);
-  \getangle{\c}{CS}{P}
+  \getangle{\ca}{CS}{P}
   \getangle{\vl}{VLo}{VLm}
   \getangle{\vr}{VRo}{VRm}
   
@@ -59,8 +59,8 @@
     ($(CS)+(-90+#1:\Rb)$) arc (-90+#1:90+#1:\Rb) to[out=180+#1,in=90+#1,looseness=.8] cycle;
   
   % ROD
-  \draw[thick,mydarkblue,top color=blue!30!black!50,bottom color=blue!30!black!20,shading angle=\c]
-    (CS) ++ (\c-\b:\Rb) arc (\c-\b:-360+\c+\b:\Rb) -- ($(P)+(\c+90:\Rc)$) -- ($(P)+(\c-90:\Rc)$) -- cycle;
+  \draw[thick,mydarkblue,top color=blue!30!black!50,bottom color=blue!30!black!20,shading angle=\ca]
+    (CS) ++ (\ca-\b:\Rb) arc (\ca-\b:-360+\ca+\b:\Rb) -- ($(P)+(\ca+90:\Rc)$) -- ($(P)+(\ca-90:\Rc)$) -- cycle;
   
   % PISTON
   \draw[mydarkblue,thick,top color=blue!20!black!30,bottom color=blue!20!black!30,middle color=blue!5,shading angle=90]
