@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
+      - name: Check encoding
+        run: file -i CoursBIA_complet.tex
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
