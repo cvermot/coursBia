@@ -10,6 +10,8 @@ jobs:
         run: file -i CoursBIA_complet.tex
       - name: Define regional parameters to fr_FR
         run: echo "LANG=fr_FR.UTF-8" >> $GITHUB_ENV
+      - name: Vérifier l'encodage hexadécimal
+        run: od -x CoursBIA_complet.tex | grep "c3 a7"
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
