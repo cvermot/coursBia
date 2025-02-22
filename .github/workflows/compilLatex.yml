@@ -8,6 +8,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Check encoding
         run: file -i CoursBIA_complet.tex
+      - name: Define regional parameters to fr_FR
+        run: echo "LANG=fr_FR.UTF-8" >> $GITHUB_ENV
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
