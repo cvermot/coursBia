@@ -1,77 +1,105 @@
+% Définition des couleurs de base
+\definecolor{gazFroid}{RGB}{173,216,230}     % Bleu clair
+\definecolor{gazChaud}{RGB}{255,0,0}         % Rouge
+\definecolor{gazExplosion}{RGB}{255,255,0}   % Jaune
+\definecolor{gazBrule}{RGB}{128,128,128}     % Gris
+
+% Définition des couleurs de base
+\definecolor{gazFroid}{RGB}{173,216,230}     % Bleu clair
+\definecolor{gazChaud}{RGB}{255,0,0}         % Rouge
+\definecolor{gazExplosion}{RGB}{255,255,0}   % Jaune
+\definecolor{gazBrule}{RGB}{128,128,128}     % Gris
+
+% Définition de la couleur des gaz en fonction de l'angle
+\newcommand{\setGasColor}[1]{%
+    \def\angle{#1}%
+    % De gris à bleu (-90 à -30)
+    \ifnum\angle<-30
+        \def\gas{gazBrule!\the\numexpr100-(((\angle+90)*100)/60)\relax!gazFroid}%
+    \else
+        % Bleu constant (-30 à 90)
+        \ifnum\angle<90
+            \def\gas{gazFroid}%
+        \else
+            % De bleu vers rouge (90 à 270)
+            \ifnum\angle<270
+                \def\gas{gazFroid!\the\numexpr100-((\angle-90)*100/180)\relax!gazChaud}%
+            \else
+                % De rouge vers jaune (270 à 300)
+                \ifnum\angle<300
+                    \def\gas{gazChaud!\the\numexpr((\angle-270)*100/30)\relax!gazExplosion}%
+                \else
+                    % De jaune vers gris (300 à 450)
+                    \ifnum\angle<450
+                        \def\gas{gazExplosion!\the\numexpr100-((\angle-300)*100/150)\relax!gazBrule}%
+                    \else
+                        % Gris constant (450 à 630)
+                        \def\gas{gazBrule}%
+                    \fi
+                \fi
+            \fi
+        \fi
+    \fi
+}
+
 \begin{animateinline}[autoplay,loop,controls]{60}
- \multiframe{360}{i=-90+2}{
+ \multiframe{360}{i=-90+2}{%
     \begin{tikzpicture}
-	  \coordinate (boiteLegende1) at (0,8.5);
-    	  \coordinate (boiteLegende2) at (0,9);
+    \setGasColor{\i}%
+      \coordinate (boiteLegende1) at (0,8.5);
+      \coordinate (boiteLegende2) at (0,9);
       \node[rectangle,minimum width=2cm] [fit = (boiteLegende1) (boiteLegende2)] (legende) {};    
     
-      %\def\d{-10}
-      \engine{-\i};
-      %\draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
-      %\valveL{.1}
-      %\valveR{.1}
-
-	% INTAKE STROKE
-	\ifnum\i>-92 \ifnum\i<-88 
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Admission}};
-		\valveL{.2}
-  		\valveR{.1} ;
-	\fi \fi 
-	\ifnum\i>-90 \ifnum\i<90 
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Admission}};
-		\fill[\gas]
-    		(VLo) to[out=110,in=0] ++ (-1.5,0.6) -- ($(VLo)+(-1.5,1.3)$) to[out=0,in=110] (VLm) to[out=\vl-90,in=\vl-90] cycle;
-  		\wall
-		\valveL{.3}
-  		\valveR{.1} ;
-	\fi \fi
-	\ifnum\i>88 \ifnum\i<92 
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Admission}};
-		\valveL{.2}
-  		\valveR{.1} ;
-	\fi \fi 
-	% COMPRESSION STROKE
-	\ifnum\i>90 \ifnum\i<272 
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Compression}};
-		\valveL{.1}
-  		\valveR{.1} ;
-	\fi \fi 
-	% POWER STROKE
-	\ifnum\i>270 \ifnum\i<452 
-		\node[align=center,font=\Large] at (legende.center) {\textbf{Explosion-détente}};
-		\valveL{.1}
-  		\valveR{.1} ;
-	\fi \fi
-	% EXHAUST STROKE
-	\ifnum\i>450 \ifnum\i<454
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Echappement}};
-		\valveL{.1}
-  		\valveR{.2} ;
-	\fi \fi
-	\ifnum\i>452 \ifnum\i<630
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Echappement}};
-		\fill[\gas]
-    		(VRo) to[out=60,in=-180] ++ (1.5,0.6) -- ($(VRo)+(1.5,1.3)$) to[out=180,in=60] (VRm) to[out=-270+\vr,in=-270+\vr] cycle;
-  		\wall 
-		\valveL{.1}
-  		\valveR{.3} ;
-	\fi \fi
-	\ifnum\i>630 \ifnum\i<632
-	    \node[align=center,font=\Large] at (legende.center) {\textbf{Echappement}};
-		\valveL{.1}
-  		\valveR{.2} ;
-	\fi \fi
-
-	% IGNITION
-	\ifnum\i>268 \ifnum\i<280 
-		\draw[very thin,yellow!70!black,fill=yellow,shift={(X)}]
-    		( -15:.20) -- ( -30:.40) -- ( -40:.25) -- ( -50:.40) --
-    		( -60:.22) -- ( -70:.40) -- ( -80:.20) -- ( -90:.45) --
-    		(-100:.24) -- (-110:.40) -- (-120:.25) -- (-130:.40) --
-   	 	(-140:.20) -- (-150:.45) -- (-165:.20) to[out=40,in=140] cycle; 
-	\fi \fi 
-
+      \engine{-\i}
       
+      % INTAKE STROKE
+      \ifnum\i>-92 \ifnum\i<-88 
+          \node[align=center,font=\Large] at (legende.center) {\textbf{Admission}};
+          \valveL{.2}
+          \valveR{.1};
+      \fi \fi 
+      \ifnum\i>-90 \ifnum\i<90 
+          \node[align=center,font=\Large] at (legende.center) {\textbf{Admission}};
+          \setGasColor{\i}%
+          \fill[\gas, opacity=0.5]
+              (VLo) to[out=110,in=0] ++ (-1.5,0.6) -- ($(VLo)+(-1.5,1.3)$) to[out=0,in=110] (VLm) to[out=\vl+5,in=\vl-47] cycle;
+          \wall
+          \valveL{.3}
+          \valveR{.1};
+      \fi \fi
+      
+      % COMPRESSION STROKE
+      \ifnum\i>90 \ifnum\i<272 
+          \node[align=center,font=\Large] at (legende.center) {\textbf{Compression}};
+          \valveL{.1}
+          \valveR{.1};
+      \fi \fi 
+      
+      % POWER STROKE
+      \ifnum\i>270 \ifnum\i<452 
+          \node[align=center,font=\Large] at (legende.center) {\textbf{Explosion-détente}};
+          \valveL{.1}
+          \valveR{.1};
+      \fi \fi
+      
+      % EXHAUST STROKE
+      \ifnum\i>452 \ifnum\i<630
+          \node[align=center,font=\Large] at (legende.center) {\textbf{Echappement}};
+          \fill[\gas, opacity=0.5]
+              (VRo) to[out=60,in=-180] ++ (1.5,0.6) -- ($(VRo)+(1.5,1.3)$) to[out=180,in=60] (VRm) to[out=-220+\vr,in=-180+\vr] cycle;
+          \wall 
+          \valveL{.1}
+          \valveR{.3};
+      \fi \fi
+      
+      % IGNITION
+      \ifnum\i>268 \ifnum\i<280 
+          \draw[very thin,yellow!70!black,fill=yellow,shift={(X)}]
+              ( -15:.20) -- ( -30:.40) -- ( -40:.25) -- ( -50:.40) --
+              ( -60:.22) -- ( -70:.40) -- ( -80:.20) -- ( -90:.45) --
+              (-100:.24) -- (-110:.40) -- (-120:.25) -- (-130:.40) --
+              (-140:.20) -- (-150:.45) -- (-165:.20) to[out=40,in=140] cycle; 
+      \fi \fi 
     \end{tikzpicture}
   }
 \end{animateinline}
