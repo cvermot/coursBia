@@ -1,6 +1,7 @@
 % IGNITION
 \def\gas{blue!50}
-\begin{tikzpicture}[scale=\echelleTikz]
+\resizebox{\echelleTikz\width}{\echelleTikz\height}{
+\begin{tikzpicture}
   \def\d{40}
   \engine{90};
   \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
@@ -12,3 +13,4 @@
     (-100:.24) -- (-110:.40) -- (-120:.25) -- (-130:.40) --
     (-140:.20) -- (-150:.45) -- (-165:.20) to[out=40,in=140] cycle;
 \end{tikzpicture}
+}

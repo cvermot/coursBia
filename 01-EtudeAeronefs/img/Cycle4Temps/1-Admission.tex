@@ -1,6 +1,7 @@
 % INTAKE STROKE
 \def\gas{blue!50}
-\begin{tikzpicture}[scale=\echelleTikz]
+\resizebox{\echelleTikz\width}{\echelleTikz\height}{
+\begin{tikzpicture}
   \def\d{-60}
   \engine{10};
   %\draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
@@ -11,3 +12,4 @@
   \valveR{.1};
   
 \end{tikzpicture}
+}

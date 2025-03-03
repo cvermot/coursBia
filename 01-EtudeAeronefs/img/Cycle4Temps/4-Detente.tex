@@ -1,7 +1,8 @@
 % POWER STROKE
 %\def\gas{red!10}
 \def\gas{blue!50}
-\begin{tikzpicture}[scale=\echelleTikz]
+\resizebox{\echelleTikz\width}{\echelleTikz\height}{
+\begin{tikzpicture}
   \def\d{-60}
   \engine{10};
   \draw[vector] (\d:.6*\R) arc (\d:\d-80:.55*\R);
@@ -9,3 +10,4 @@
   \valveL{.1}
   \valveR{.1}
 \end{tikzpicture}
+}
