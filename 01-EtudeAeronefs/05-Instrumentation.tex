@@ -31,7 +31,7 @@
 	
 	Sur les avions à trains rentrants, une quatrième vitesse est souvent représentée sur le badin : la \acrshort{vle} (\acrlong{vle} - vitesse maximale trains sortis).
 	
-	Dans la plupart des avions, le badin est gradué en nœuds. La vitesse limite de chaque extrémité des arcs est bien sur propre à chaque type d'avion.
+	Dans la plupart des avions, le badin est gradué en nœuds (kt). La vitesse limite de chaque extrémité des arcs est bien sur propre à chaque type d'avion.
 	
 	\alert{Un "badin" indique \textbf{toujours une vitesse par rapport à la masse d'air} dans laquelle évolue l'avion. Il ne faut pas confondre cette vitesse avec la vitesse sol que l'on peut obtenir grâce au GPS par exemple.}
 	
@@ -60,6 +60,11 @@
 	
 	L'\gls{altimètre} \anglais{altimeter} est un instrument qui permet de mesurer l'altitude ou la hauteur par rapport à une référence (par exemple le niveau de la mer ou la hauteur de l'aérodrome). Il fonctionne en mesurant la pression atmosphérique. En effet, la pression atmosphérique diminue avec l'altitude. Mesurer cette pression permet donc de mesurer indirectement l'altitude. \\
 	
+	Les altimètres sont généralement gradués en pieds\footnote{font exception à cette règle : \begin{itemize}
+	\item la Russie
+	\item les vélivoles (planeurs)
+	\end{itemize} qui expriment leurs altitudes et hauteurs en mètres.}.
+	
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
@@ -71,7 +76,7 @@
 	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
 	
 	\paragraph{Calage altimétrique}
-	On a vu que l'altimètre mesure l'altitude en mesurant une pression. La valeur de cette pression varie selon le lieu et le temps. 
+	On a vu que l'altimètre mesure l'altitude en mesurant une pression. La valeur de cette pression varie selon le lieu et le temps.
 	
 	L'altimètre est donc équipé d'un bouton rotatif qui permet à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
 	
@@ -92,11 +97,13 @@
 	\subparagraph{Le calage au QFE}
 	Le calage au QFE permet à l'équipage de connaitre sa hauteur par rapport au sol. A ce calage, l'altimètre affiche 0 pieds lorsque l'avion est au sol.
 	
+	\info{De nos jours, ce calage est très rarement utilisé.}
+	
 	\subparagraph{Le calage à la pression standard}
 	Ce calage est utilisé exclusivement en vol au delà d'une altitude dite de transition (TA, en France généralement 5000~pieds). Pour passer au calage standard, on affiche 1013.25 hPa (la pression moyenne au  niveau de la mer) dans la fenêtre de pression de l'altimètre. Dans ce cas, l'altimètre affichera un niveau de vol (\anglais{flight level} (FL), qui correspond à l'altitude en centaines de pieds (FL55 = 5500~pieds).
 	
 	\subsubsection{Le variomètre}
-	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale d'un aéronef.
+	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale (montée/descente) d'un aéronef. Cette vitesse est exprimée en pieds/minutes.
 	
 	\begin{figure}[H]	
 	\centering

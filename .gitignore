@@ -2,7 +2,8 @@
 *.aux
 *.log
 *.pdf
-!/01-EtudeAeronefs/img/instruments/*/*.pdf
+!/01-EtudeAeronefs/img/*/*/*.pdf
+!/01-EtudeAeronefs/img/*/*.pdf
 *.bbl
 *.bcf
 *.blg
