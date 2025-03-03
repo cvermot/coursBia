@@ -1,7 +1,7 @@
 \input{01-EtudeAeronefs/img/instruments/instruments.tex}
 
 \section{L'instrumentation de bord}
-	Les instruments de bord permettent à l'équipage de contrôler l'ensemble du vol. On peut les regrouper en 3 grandes familles :
+	Les instruments de bord \anglais{flight instruments} permettent à l'équipage de contrôler l'ensemble du vol. On peut les regrouper en 3 grandes familles :
 	\begin{itemize}
 		\item \textbf{instruments de contrôle du vol} : ils permettent à l'équipage de contrôler les paramètres de base du vol : vitesses horizontale et verticale, attitude et altitude
 		\item \textbf{instruments de contrôle de l'appareil} : ils permettent à l'équipage de contrôler les systèmes de l'avion : compte-tour moteur, quantités de carburant restante et consommée, températures...
@@ -10,7 +10,7 @@
 	
 	\subsection{Les instruments de contrôle primaire du vol}
 	\subsubsection{L'indicateur de vitesse}
-	 L'\gls{anémomètre}, également appelé \gls{badin} est un instrument qui permet de mesurer la vitesse de l'avion par rapport à l'air. C'est l'un des instruments le plus important dans un avion. 
+	 L'\gls{anémomètre} \anglais{anemometers}, également appelé \gls{badin} est un instrument qui permet de mesurer la vitesse de l'avion par rapport à l'air. C'est l'un des instruments le plus important dans un avion. 
 
 	\begin{figure}[H]	
 	\centering
@@ -58,7 +58,7 @@
 	
 	\subsubsection{L'altimètre}
 	
-	L'\gls{altimètre} est un instrument qui permet de mesurer l'altitude ou la hauteur par rapport à une référence (par exemple le niveau de la mer ou la hauteur de l'aérodrome). Il fonctionne en mesurant la pression atmosphérique. En effet, la pression atmosphérique diminue avec l'altitude. Mesurer cette pression permet donc de mesurer indirectement l'altitude. \\
+	L'\gls{altimètre} \anglais{altimeter} est un instrument qui permet de mesurer l'altitude ou la hauteur par rapport à une référence (par exemple le niveau de la mer ou la hauteur de l'aérodrome). Il fonctionne en mesurant la pression atmosphérique. En effet, la pression atmosphérique diminue avec l'altitude. Mesurer cette pression permet donc de mesurer indirectement l'altitude. \\
 	
 	\begin{figure}[H]	
 	\centering
@@ -89,7 +89,7 @@
 	\subparagraph{Le calage à la pression standard}
 	
 	\subsubsection{Le variomètre}
-	Le variomètre \anglais{variometer} est un instrument qui indique la vitesse verticale d'un aéronef.
+	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale d'un aéronef.
 	
 	\begin{figure}[H]	
 	\centering
@@ -104,6 +104,7 @@
 	\info{Le variomètre ne peut afficher une vitesse réellement instantanée : il y a un léger délais entre la variation de vitesse verticale et son affichage sur le variomètre.}
 	
 	\subsubsection{L'horizon artificiel}
+	L'\gls{horizon artificiel} \anglais{attitude indicator} est un appareil qui affiche l'inclinaison et l'assiette d'un aéronef. L'horizon artificiel permet de piloter l'aéronef lorsqu'il évolue sans visibilité, dans un nuage, par exemple.
 	
 	\begin{figure}[H]	
 	\centering
@@ -114,6 +115,9 @@
 	\end{figure}
 	
 	\subsubsection{L'indicateur de virage}
+	L'\gls{indicateur de virage} \anglais{turn and slip indicator}, également appelé bille-aiguille, est un instrument qui permet de visualiser l'inclinaison d'un aéronef ainsi que de contrôler le dérapage (lacet).
+	
+	La fonction d'indication d'inclinaison est complémentaire de celle de l'horizon artificiel et peut-être utilisée cas de défaillance de l'horizon.
 	
 	\begin{figure}[H]	
 	\centering
@@ -123,8 +127,21 @@
 	\legende{Un indicateur de virage}{tikz::instrumentsBase}
 	\end{figure}
 	
+	\info{Cet appareil affiche en réalité un taux de virage. Lorsque la maquette de l'avion est alignée avec l'un des 2 repères du pourtour de l'instrument, l'aéronef effectue un tour complet (360°) en 2 minutes. Ce taux est appelée "taux standard".}
+	
 	\subsection{Les instruments de navigation}
+	\subsubsection{Le compas magnétique}	
+	Le \gls{compas magnétique} \anglais{magnetic compass}, également appelé \gls{boussole} utilise le champ magnétique terrestre pour fournir un cap à l'équipage.
+	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.4\textwidth]{01-EtudeAeronefs/img/compas.jpg}
+  	\legende{Un compas magnétique}{img:compas}
+	\end{figure}	
+	
 	\subsubsection{Le conservateur de cap}
+	
+	Le \gls{conservateur de cap} \anglais{Heading indicator}, également appelé directionnel, est un instrument gyroscopique qui permet d'afficher le cap suivi par l'aéronef. Il s'utilise en complément de la boussole et offre un confort d'usage supérieur à celle ci. En effet, la boussole est peut devenir difficilement lisible en cas turbulences ou de vibrations, car son indication sera instable. On recale le conservateur de cap sur boussole dans les phases de vol stables.
 	
 	\begin{figure}[H]	
 	\centering
@@ -134,12 +151,48 @@
 	\legende{Un conservateur de cap}{tikz::instrumentsBase}
 	\end{figure}
 	
+	\subsubsection{Les instruments de radionavigation}
+	\info{L'utilisation pratique des instruments de navigation sera abordée dans le chapitre dédié à la navigation. Ces instruments ne seront donc que brièvement décrits ici.}
 	
 	\subsection{Les instruments de contrôle de la machine}
 	
+	\subsection{Conception des planches de bord}
+	Il n'existe pas de normalisation des la disposition des instruments dans un cockpit. Cependant, on retrouve dans la majorité des cockpits une disposition standard "en T" des instruments de navigation de base : anémomètre, horizon artificiel et altimètre sur une ligne, et conservateur de cap sous l'horizon artificiel.
+	
+	\begin{figure}[H]	
+	\centering
+	\resizebox{0.5\width}{0.5\height}{
+		\dessinerTdB{vitesse=120, 
+		altitude=4500,
+		calageAltitude=29.92,
+		vz = -300,
+		cap = 180,
+		assiette = -12,
+		inclinaison = 23,
+		derapage = 0.5,
+    		virage = 0.75,
+		afficherT=true}
+	}
+	\legende{Disposition typique d'une planche de bord}{tikz::plancheDeBord}
+	\end{figure}
+	
+	Cette disposition type est issue de l'expérience et permet au pilote d'avoir un circuit visuel confortable dans toutes les phases de vol.
+	
 	\subsection{Le glass cockpit}
 	
-	De plus en plus d'avions sont équipés d'avionique dite "\gls{glasscockpit}". Ce type d'avionique vise à regrouper l'ensemble des instrument sur un ou plusieurs écrans qui occupent alors la majeure partie de l'espace de la planche de bord. \\
+	De plus en plus d'avions sont équipés d'avionique dite "\gls{glasscockpit}". Ce type d'avionique vise à regrouper l'ensemble des instrument sur un ou plusieurs écrans qui occupent alors la majeure partie de l'espace de la planche de bord.
+	
+	\begin{figure}[H]
+	\begin{minipage}[c]{0.5\linewidth}
+	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/A350Cockpit.jpg}
+	\legende{Airbus A350}{img:A350Cockpit}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{0.5\linewidth}
+	\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/C172glassCockpit.jpg}
+	\legende{Cessna 172 glass cockpit}{img:C172glassCockpit}
+	\end{minipage}
+	\end{figure}
 	
 	On retrouve donc sur un affichage synthétique et unifié de l'ensemble des instruments classiques.
 	
@@ -156,5 +209,3 @@
 	\end{figure}
 	
 	\info{Les systèmes \gls{glasscockpit} sont désignés par l'acronyme \acrshort{efis} (système d'instruments de vol électronique \anglais{\acrlong{efis}}). Le pilote doit disposer de la qualification EFIS pour piloter un avion glass cockpit.}
-	
-	\subsection{Conception des planches de bord}

@@ -144,3 +144,86 @@
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
 }
 
+% Définir les clés pour les paramètres
+\pgfkeys{
+    /tdb/.is family,
+    /tdb,
+    vitesse/.store in = \tdbVitesse,
+    altitude/.store in = \tdbAltitude,
+    calageAltitude/.store in = \tdbCalageAltitude,
+    vz/.store in = \tdbVz,
+    cap/.store in = \tdbCap,
+    assiette/.store in = \tdbAssiette,
+    inclinaison/.store in = \tdbInclinaison,
+    derapage/.store in = \tdbDerapage,
+    virage/.store in = \tdbVirage,
+    afficherT/.store in = \tdbAfficherT,
+    vitesse = 0,
+    altitude = 0,
+    vz = 0,
+    cap = 0,
+    assiette = 0,
+    inclinaison = 0,
+    derapage = 0,
+    virage = 0,
+    calageAltitude = 30,
+    afficherT = false,
+}
+
+% Nouvelle commande pour dessiner la planche de bord
+\newcommand{\dessinerTdB}[1]{
+    \pgfkeys{/tdb, #1}
+
+    \begin{tikzpicture}
+        % Définir les coordonnées des sommets de la planche de bord
+        \coordinate (A) at (-5, 3.5);
+        \coordinate (B) at (19, 3.5);
+        \coordinate (C) at (19, -10.5);
+        \coordinate (D) at (-5, -10.5);
+
+        % Dessiner le polygone avec le coin supérieur gauche arrondi
+        \fill[gray, rounded corners=3cm] (D) -- (A) -- (B) -- (C) -- cycle ;
+
+        % Dessiner le polygone rouge si showredpolygon est vrai
+        \ifthenelse{\equal{\tdbAfficherT}{true}}{
+            \coordinate (T1) at (-3.2, 3.2);
+            \coordinate (T2) at (17.2, 3.2);
+            \coordinate (T3) at (17.2, -3.5);  
+            \coordinate (T4) at (10.4, -3.5);
+            \coordinate (T5) at (10.4, -10.2);
+            \coordinate (T6) at (3.6, -10.2);
+            \coordinate (T7) at (3.6, -3.5); 	
+            \coordinate (T8) at (-3.2, -3.5); 
+            \draw[line width=5pt, red] (T1) -- (T2) -- (T3) -- (T4) -- (T5) -- (T6) -- (T7) -- (T8) -- cycle  ;
+        }{}
+
+        % Placer les instruments
+        \begin{scope}[xshift=0cm, yshift=0cm]
+            \badin{\tdbVitesse}
+        \end{scope}
+        
+        \begin{scope}[xshift=7cm, yshift=0cm]
+            \horizon{\tdbInclinaison}{\tdbAssiette}
+        \end{scope}
+        
+        \begin{scope}[xshift=14cm, yshift=0cm]
+            \alti{\tdbAltitude}{\tdbCalageAltitude}
+        \end{scope}
+        
+        \begin{scope}[xshift=0cm, yshift=-7cm]
+            \indicateurVirage{\tdbVirage}{\tdbDerapage}
+        \end{scope}
+        
+        \begin{scope}[xshift=7cm, yshift=-7cm]
+            \conservateurCap{\tdbCap}
+        \end{scope}
+        
+        \begin{scope}[xshift=14cm, yshift=-7cm]
+            \vario{\tdbVz}
+        \end{scope}
+
+        %\draw (B) grid (D);    
+        
+    \end{tikzpicture}
+}
+
