@@ -23,7 +23,7 @@
 	\usepackage{pgfkeys}
 	\usepackage{rotating}
 	\usepackage{float}
-	%\usepackage{pdfpages}
+	\usepackage{pdfpages}
 	%\usepackage{siunitx}
 	\usepackage{float}
 	\usepackage{xcolor}
@@ -39,7 +39,8 @@
 	
 	\usepackage[
     backend=biber,
-    style=authoryear-icomp,
+    %style=authoryear-icomp,
+    style=numeric,
     sortlocale=fr_FR,
     natbib=true,
     url=true, 
@@ -47,7 +48,7 @@
     eprint=true
 ]{biblatex}
 	\addbibresource{01-EtudeAeronefs/biblio.bib}
-	
+	\addbibresource{Annexes/biblio.bib}
 	
 	\usepackage{phdthesis}
 	%\setlength{\parskip}{0.8ex}
@@ -97,7 +98,7 @@
 	%2 parametres : 
 	%    -titre de la figure
 	%    -source (tag de la biblio)
-	\newcommand{\legende}[2]{\caption[#1 (\cite{#2})]{#1}}
+	\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
 	\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}~siècle}
 		
 	
@@ -219,6 +220,9 @@
 	\chapter{Des questions pour pousser la réflexion !}
 	\section{Étude des aéronefs}
 	\question{"Le parachute est-il un aéronef ? Pourquoi ?" (en parlant du parachute coupole)}
+	
+	\chapter{Extraits de documents}
+	\input{Annexes/cartesOaci.tex}
 
 	
 %\chapter{Table des matières}
