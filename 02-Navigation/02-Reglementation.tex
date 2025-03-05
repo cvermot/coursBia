@@ -12,21 +12,108 @@
 	Afin de permettre aux aéronefs d'évoluer en toute sécurité, l'espace aérien a été divisé en différents espaces, qui présentent chacun des conditions d'accès spécifiques et des services associés.
 		
 		\subsubsection{Les classes d'espaces aériens}
-		Au niveau mondial, l'OACI à définit 7 \glspl{classe d'espace aérien}, nommées par des lettres de A (classe présentant le plus de contraintes) à G (classe présentant le moins de contraintes). Dans ce chapitre, nous allons voir quelles sont les différences entre ces classes.
+		Au niveau mondial, l'OACI a défini 7 \glspl{classe d'espace aérien}, nommées par des lettres de A (classe présentant le plus de contraintes) à G (classe présentant le moins de contraintes). Dans ce chapitre, nous allons voir quelles sont les différences entre ces classes.
 		
-		\paragraph{Classe A}
+		La connaissance des règles qui régissent les espaces aérien est primordiale car les pilotes doivent impérativement avoir conscience à chaque instant du service qu'ils peuvent attendre des services de contrôle avec lequel ils sont en contact.\\
 		
-		\paragraph{Classe B}
+		Les espaces peuvent-être actifs en permanence ou seulement à certains horaires. Quand ils ne sont pas actifs, les espaces sont généralement déclassés en espace de classe G. Les horaires d'activation se trouvent dans l'\acrshort{aip}. \\
 		
-		\paragraph{Classe C}
+		On peut subdiviser ces 7 espaces en 2 sous groupes : \textbf{les espaces contrôlés} (de A à E) et \textbf{les espaces non contrôlés} (F et G). \\
 		
-		\paragraph{Classe D}\label{classeD}
+		Selon la classe d'espace ou l'on se trouve, les services rendus diffèrent. Voici les principaux services qui peuvent être rendus :
+		\begin{itemize}
+			\item Contrôle - séparation de trafic : avec ce service, c'est au contrôle que revient la charge de séparer les différents aéronefs pour éviter tout risque de collision. Pour cela, le contrôleur dispose généralement de radars qui lui permettent de localiser précisément les différents appareils sous sa responsabilité
+			\item Contrôle - information de circulation : avec ce service, le contrôleur informe les commandants de bord de la présence d'autres aéronefs. C'est ensuite aux commandants de bord d'assurer la séparation (généralement visuelle) à partir des informations communiquées par le contrôle
+			\item Information et alerte : ce service consiste pour le contrôle à fournir des informations de position des aéronefs dont le contrôleur à connaissance. A la demande des pilotes, le contrôle peut également fournir des informations météorologiques, des informations sur les aérodromes ou encore fournir de l'aide (et déclencher les secours) en cas de situation de détresse.
+		\end{itemize}
 		
-		\paragraph{Classe E}
+		\paragraph{Espaces contrôlés}
+		Dans les espaces contrôlés, le contact radio est obligatoire (avec une exception pour les vols VFR en classe E), et la pénétration est soumise à une \textbf{clearance} du contrôleur. Ces espaces sont placés sous l'autorité d'un contrôleur aérien, qui est chargé d'assurer l'efficacité et la sécurité du trafic dans sa zone.
 		
-		\paragraph{Classe F}
+		Dans ces espaces, les conditions météorologiques de vol à vue (\acrshort{vmc}) sont :
+		\begin{itemize}
+		\item distance par rapport aux nuages : 1500 mètres horizontalement et 300 mètres (1000 ft) verticalement ;
+		\item visibilité 8 km au-dessus du FL 100 et 5 km au-dessous du FL 100. 
+		\end{itemize}
 		
-		\paragraph{Classe G}
+		\subparagraph{Classe A}
+		Cette classe d'espace est interdite aux VFR. Seuls les vols IFR y sont admis et le contrôle assure la séparation entre ces vols.
+		
+		\info{En France, les seules classes A se trouvent en région parisienne.}
+		
+		La vitesse n'y est pas limitée (grâce à la séparation garantie par le contrôle).
+		
+		\subparagraph{Classe B}
+		Tous les types de vol (IFR et VFR) sont autorisés en espace de classe B. Le contrôle assure la séparation de tous les aéronefs.
+		
+		\info{Cette classe d'espace n'existe pas en France.}
+		
+		La vitesse n'y est pas limitée (grâce à la séparation garantie par le contrôle).
+		
+		\subparagraph{Classe C}
+		Tous les types de vol (IFR et VFR) sont autorisés en espace de classe C. Le contrôle assure :
+		\begin{itemize}
+		\item la séparation entre les vols IFR,
+		\item la séparation entre les vols IFR et les vols VFR,
+		\item l'information de trafic entre les vols VFR
+		\end{itemize}
+		
+		\info{En France cette classe est utilisée essentiellement pour les TMA.}
+		
+		La vitesse est limitée à 250 kt pour les VFR sous le niveau de vol 100, sauf autorisation du contrôle.
+		
+		\subparagraph{Classe D}\label{classeD}
+		Tous les types de vol (IFR et VFR) sont autorisés en espace de classe D. Le contrôle assure :
+		\begin{itemize}
+		\item la séparation entre les vols IFR,
+		\item la séparation entre les vols IFR et VFR spécial,
+		\item l'information de trafic entre les vols IFR et les vols VFR,
+		\item l'information de trafic entre les vols VFR
+		\end{itemize}
+		
+		\info{En France cette classe est utilisée essentiellement pour les CTR.}
+		
+		La vitesse est limitée à 250 kt pour tous les vols sous le niveau de vol 100, sauf autorisation du contrôle.
+		
+		\subparagraph{Classe E}
+		Tous les types de vol (IFR et VFR) sont autorisés en espace de classe E. Le contrôle assure :
+		\begin{itemize}
+		\item la séparation entre les vols IFR,
+		\item l'information de trafic entre les vols IFR et les vols VFR, si possible,
+		\item l'information de trafic entre les vols VFR, si possible
+		\end{itemize}
+		
+		\info{En France cette classe est utilisée essentiellement pour les TMA.}
+		
+		\info{Les espaces de classe E ont la particularité de faire cohabiter les vols IFR qui y sont contrôlés avec les vols VFR qui n'y sont pas contrôlés. Dans ces espaces, les commandants de bord des vols VFR ne sont pas soumis à obligation de contact radio ni d'obtention de \textit{clearance}. La séparation entre les vols IFR et VFR non connus du contrôle est donc assurée essentiellement via la règle du \textit{voir et éviter}.}
+		
+		La vitesse est limitée à 250 kt pour tous les vols sous le niveau de vol 100, sauf autorisation du contrôle.
+		
+		\paragraph{Espaces non contrôlés}
+		Dans ces espaces, le contact radio n'est pas obligatoire, pas plus que l'obtention de \textit{clearance}. La règle de base est donc le voir et éviter entre tous les types de vol.
+				
+				
+		La vitesse est limitée à 250 kt pour tous les vols sous le niveau de vol 100.
+		
+		Les conditions VMC dans ces espaces sont les suivants :
+		\begin{itemize}
+			\item hors des nuages
+			\item visibilité horizontale :
+			\begin{itemize}
+				\item 1,5 km pour une vitesse indiquée inférieur à 140 kt (800 m pour les hélicoptères)
+				\item 5 km pour une vitesse indiquée supérieur à 140 kt, limitée à 250 kt
+			\end{itemize}
+		\end{itemize}
+		
+		\subparagraph{Classe F}
+		Les vols IFR peuvent bénéficier d'un service consultatif qui assurera autant que possible l'espacement entre les vols IFR connus. 
+		
+		\info{Cette classe d'espace n'existe pas en France.}
+		
+		\subparagraph{Classe G}
+		Les seuls services rendus dans ces espaces est le service d'information et d'alertes.
+		
+		\info{Il s'agit de la classe d'espace par défaut, utilisée quand aucun autre espace n'est défini. La majorité de l'espace aérien français est de classe G.}
 		
 		\subsubsection{Les zones à statut particulier}
 			\paragraph{Les zones R}
@@ -37,7 +124,7 @@
 			\paragraph{Les zones D}
 			Les zone D sont des zones \textbf{D}angereuses. Leur pénétration n'est pas formellement interdite mais les activités qui s'y déroulent sont suffisamment risquées pour qu'il existe une nécessité d'avertir les navigateurs aériens. Pour ces zones, on dispose généralement d'un organisme à contacter par radio pour connaitre l'activité réelle.
 			
-			\alert{Il ne faut pas confondre les zones D avec les espaces aériens de classe D (cf \ref{classeD} page \pageref{classeD}}).
+			\alert{Il ne faut pas confondre les zones D avec les espaces aériens de classe D (cf \ref{classeD} page \pageref{classeD}).}
 			
 			Ces zones peuvent être actives en permanence ou seulement sur certaines tranches horaire.
 			
