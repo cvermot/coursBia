@@ -43,6 +43,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: CoursBIA_complet.tex
+        latexmk_use_lualatex: true
         args: -usepretex
 
     #- name: Create Source Archive
