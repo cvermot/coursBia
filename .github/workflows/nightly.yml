@@ -43,7 +43,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: CoursBIA_complet.tex
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex
+        args: -usepretex="\newcommand{\opendys}{}" -file-line-error -halt-on-error -interaction=nonstopmode -recorder
 
     #- name: Create Source Archive
     #  if: steps.check_commits.outputs.has_commits == 'true'
