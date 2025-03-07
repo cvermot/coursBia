@@ -104,7 +104,14 @@
 	
 	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
 	\usepackage{fontspec}
- 	\setmainfont{OpenDyslexic}
+ 	\setmainfont{OpenDyslexic-Regular}[
+    		Path = fonts/,  % Chemin du fichier de police (ici le dossier courant)
+    		Extension = .otf,  % Extension du fichier
+    		UprightFont = *,  % Utiliser ce fichier pour le texte normal
+    		BoldFont = OpenDyslexic-Bold,
+    		ItalicFont = OpenDyslexic-Italic,
+    		BoldItalicFont = OpenDyslexic-Bold-Italic
+	]
 	\renewcommand*{\glstextformat}[1]{\textbf{\fontspec{OpenDyslexic}#1}}	
 	
 	\begin{document}
