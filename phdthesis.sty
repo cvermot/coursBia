@@ -114,6 +114,7 @@
 %make boxes
 \RequirePackage{tikz}
 \newcommand{\createbox}[3]{ %texte color pictureFileName
+\smallskip
 \noindent   \begin{tikzpicture}
 \node[rectangle,draw=#2!80,rounded corners,thick,fill=#2!10]
 { \begin{minipage}{0.06\textwidth}{#3}\end{minipage} \begin{minipage}[l]{0.94\textwidth}
@@ -128,5 +129,6 @@
 \newcommand{\info}[1]{\createbox{#1}{darkspringgreen}{\textcolor{darkspringgreen}{\Huge\faInfoCircle}}}
 \newcommand{\histoire}[1]{\createbox{#1}{black}{\textcolor{black}{\Huge\faBook}}}
 \newcommand{\astuce}[1]{\createbox{#1}{violet}{\textcolor{violet}{\Huge\faLightbulb}}}
+\newcommand{\exemple}[1]{\createbox{#1}{orange}{\textcolor{orange}{\Huge\faSearch}}}
 %%
 %% End of file `phdthesis.sty`
