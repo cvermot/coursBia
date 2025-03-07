@@ -57,10 +57,6 @@
 	\usepackage{phdthesis}
 	%\setlength{\parskip}{0.8ex}
 	
-	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
-	%\usepackage{fontspec}
- 	%\setmainfont{OpenDyslexic}
-	
 	\newcolumntype{L}[1]{>{\raggedright}m{#1}}
 		
 	\title{Cours BIA} %titre du document
@@ -104,8 +100,12 @@
 	%    -titre de la figure
 	%    -source (tag de la biblio)
 	\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
-	\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}~siècle}
-		
+	\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}~siècle}	
+	
+	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
+	%\usepackage{fontspec}
+ 	%\setmainfont{OpenDyslexic}
+	%\renewcommand*{\glstextformat}[1]{\textbf{\fontspec{OpenDyslexic}#1}}	
 	
 	\begin{document}
 	
