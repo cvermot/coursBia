@@ -43,7 +43,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: CoursBIA_complet.tex
-        args: -g -usepretex="\newcommand{\opendys}{}"
+        args: -g -usepretex=\"\newcommand{\opendys}{}\"
 
     #- name: Create Source Archive
     #  if: steps.check_commits.outputs.has_commits == 'true'
