@@ -101,7 +101,9 @@
 	%    -source (tag de la biblio)
 	\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
 	\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}~siècle}	
-	
+
+%\newcommand{\opendys}{}
+\ifdefined\opendys 
 	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
 	\usepackage{fontspec}
  	\setmainfont{OpenDyslexic-Regular}[
@@ -119,7 +121,8 @@
     		BoldFont = OpenDyslexic-Bold,
     		ItalicFont = OpenDyslexic-Italic,
     		BoldItalicFont = OpenDyslexic-Bold-Italic
-	]#1}}	
+	]#1}}
+\fi	
 	
 	\begin{document}
 	
@@ -199,7 +202,7 @@
 	\chapter{Étude des aéronefs et des engins spatiaux}
 	\label{aeronef}
 		\input{01-EtudeAeronefs/01-ClassificationAeronefs.tex}
-		\input{01-EtudeAeronefs/02-GroupesMotopropulseurs.tex}
+		%\input{01-EtudeAeronefs/02-GroupesMotopropulseurs.tex}
 		\input{01-EtudeAeronefs/03-StructuresMateriaux.tex}
 		\input{01-EtudeAeronefs/04-CommandesDeVol.tex}
 		\input{01-EtudeAeronefs/05-Instrumentation.tex}
