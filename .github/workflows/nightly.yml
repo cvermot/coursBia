@@ -43,7 +43,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -usepretex
+        args: -usepretex="\newcommand{\opendys}{}"
         root_file: CoursBIA_complet.tex
 
     #- name: Create Source Archive
