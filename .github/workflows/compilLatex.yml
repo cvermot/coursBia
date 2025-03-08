@@ -12,7 +12,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           latexmk_use_lualatex: true
-          args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\newcommand{\opendys}{}"
+          args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}"
           root_file: CoursBIA_complet.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
