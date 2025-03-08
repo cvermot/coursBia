@@ -42,9 +42,9 @@ jobs:
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
-        root_file: CoursBIA_complet.tex
         latexmk_use_lualatex: true
         args: -usepretex
+        root_file: CoursBIA_complet.tex
 
     #- name: Create Source Archive
     #  if: steps.check_commits.outputs.has_commits == 'true'
