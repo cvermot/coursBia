@@ -38,18 +38,31 @@ jobs:
         # Format: nightly-YYYY.MM.DD-HH.mm
         echo "NOW=nightly-$(date +'%Y.%m.%d-%H.%M')" >> $GITHUB_ENV
 
-    - name: Produce LaTeX document
+    - name: Compile LaTeX document - OpenDyslexic font
+        uses: xu-cheng/latex-action@v3
+        with:
+          latexmk_use_lualatex: true
+          args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}"
+          root_file: CoursBIA_complet.tex
+
+    - name: Rename PDF file
+      id: rename
+      shell: bash
+      run: |
+        # Définir les dates de début et fin pour hier (en UTC)
+        mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
+
+    - name: Produce LaTeX document - default font
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
-        latexmk_use_lualatex: true
-        args: -usepretex="\newcommand{\opendys}{}"
         root_file: CoursBIA_complet.tex
 
     #- name: Create Source Archive
     #  if: steps.check_commits.outputs.has_commits == 'true'
     #  run: |
     #    git archive --format=zip -o coursBIA_sources.zip HEAD
+    
 
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -63,5 +76,6 @@ jobs:
         prerelease: true
         files: |
           CoursBIA_complet.pdf
+          CoursBIA_complet_OpenDyslexic.pdf
           coursBIA_sources.zip
         generate_release_notes: true
