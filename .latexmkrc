@@ -1,4 +1,4 @@
-$pdf_mode = 4; #Force PDF
+#$pdf_mode = 4; #Force PDF
 #$pdflatex = 'lualatex %O %S'; # Forcer LuaLaTeX
 
 add_cus_dep( 'acn', 'acr', 0, 'makeglossaries' );

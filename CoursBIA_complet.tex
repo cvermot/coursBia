@@ -102,7 +102,17 @@
 	\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
 	\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}~siècle}	
 
+%%%%%%%%%%%%%%%%%%%%Début paramétrage
+%==> le document est paramétrable, dans un certaine mesure.
+% Pour activer, les options voulues, décommenter la ligne de l'option considérée (ou la passer en paramètre au compilateur, par exemple avec latexmk '-usepretex="\\newcommand{\\opendys}{}"' pour l'option fonte OpenDyslexic
+
+%Produire le document avec la fonte OpenDyslexic
 %\newcommand{\opendys}{}
+
+%Produire le document avec les animations 
+%(désactivé par défaut pour accélerer la compilation au poste d'écriture)
+%\newcommand{\activeranimations}{}
+%%%%%%%%%%%%%%%%%%%%Fin paramétrage
 \ifdefined\opendys 
 	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
 	\usepackage{fontspec}

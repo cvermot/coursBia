@@ -42,8 +42,14 @@
     \fi
 }
 
+\ifdefined\activeranimations 
+\newcommand{\nbFramesMoteurAnime}{360}
+\else
+\newcommand{\nbFramesMoteurAnime}{1}
+\fi
+
 \begin{animateinline}[autoplay,loop,controls]{60}
- \multiframe{360}{i=-90+2}{%
+\multiframe{\nbFramesMoteurAnime}{i=-90+2}{%
     \begin{tikzpicture}
     \setGasColor{\i}%
       \coordinate (boiteLegende1) at (0,8.5);
