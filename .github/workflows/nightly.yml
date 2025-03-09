@@ -5,7 +5,7 @@ on:
   workflow_dispatch: # Permet le lancement manuel
 
 jobs:
-  Produce_prerelease_LaTeX_documents:
+  Produce_and_prerelease_LaTeX_documents:
     runs-on: ubuntu-latest
     steps:
     - name: Set up Git repository
@@ -42,7 +42,7 @@ jobs:
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
-        latexmk_use_lualatex: true
+        #latexmk_use_lualatex: true
         args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}"
         root_file: CoursBIA_complet.tex
 
@@ -52,6 +52,7 @@ jobs:
       run: |
         # Définir les dates de début et fin pour hier (en UTC)
         mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
+        echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf"
 
     - name: Produce LaTeX document - default font
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -59,12 +60,6 @@ jobs:
       with:
         args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
         root_file: CoursBIA_complet.tex
-
-    #- name: Create Source Archive
-    #  if: steps.check_commits.outputs.has_commits == 'true'
-    #  run: |
-    #    git archive --format=zip -o coursBIA_sources.zip HEAD
-    
 
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
