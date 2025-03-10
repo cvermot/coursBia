@@ -31,6 +31,14 @@
 \pgfdeclareimage{vsiHand}{01-EtudeAeronefs/img/instruments/vsi/vsi_hand.pdf}
 \pgfdeclareimage{vsiFace}{01-EtudeAeronefs/img/instruments/vsi/vsi_face.pdf}
 
+\pgfdeclareimage{ilsCase}{01-EtudeAeronefs/img/instruments/ils/ils_case.pdf}
+\pgfdeclareimage{ilsCaseFixed}{01-EtudeAeronefs/img/instruments/ils/ils_case_fixed.pdf}
+\pgfdeclareimage{ilsFace}{01-EtudeAeronefs/img/instruments/ils/ils_face.pdf}
+\pgfdeclareimage{ilsFlagGs}{01-EtudeAeronefs/img/instruments/ils/ils_flag_gs.pdf}
+\pgfdeclareimage{ilsFlagNav}{01-EtudeAeronefs/img/instruments/ils/ils_flag_nav.pdf}
+\pgfdeclareimage{ilsHandGs}{01-EtudeAeronefs/img/instruments/ils/ils_hand_gs.pdf}
+\pgfdeclareimage{ilsHanvNav}{01-EtudeAeronefs/img/instruments/ils/ils_hand_nav.pdf}
+
 %altimètre
 %   -paramètre 1 : altitude en pieds
 %   -paramètre 2 : calage en pouces de mercure
@@ -51,6 +59,21 @@
 	\fill[transparent] (0,0) circle (3) ;
   	\node[rotate=#1] {\pgfbox[center,center]{\pgfuseimage{hiFace}}};
     	\node {\pgfbox[center,center]{\pgfuseimage{hiCase}}};
+}
+
+%ILS
+%   -paramètre 1 : QDM en degrés
+%   -paramètre 2 : décallage horizontal
+%   -paramètre 3 : décallage vertical
+\def\ils#1#2#3{
+	\fill[transparent] (0,0) circle (3) ;
+		\node {\pgfbox[center,center]{\pgfuseimage{ilsCaseFixed}}};
+		\node {\pgfbox[center,center]{\pgfuseimage{ilsFlagGs}}};
+		\node {\pgfbox[center,center]{\pgfuseimage{ilsFlagNav}}};
+		\node[yshift=-#2*32] {\pgfbox[center,center]{\pgfuseimage{ilsHandGs}}};
+		\node[xshift=-#2*32] {\pgfbox[center,center]{\pgfuseimage{ilsHanvNav}}};
+		\node[rotate=#1] {\pgfbox[center,center]{\pgfuseimage{ilsFace}}};
+    	\node {\pgfbox[center,center]{\pgfuseimage{ilsCase}}};
 }
 
 %variomètre
