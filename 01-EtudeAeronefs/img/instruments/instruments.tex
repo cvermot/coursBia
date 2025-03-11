@@ -65,14 +65,34 @@
 %   -paramètre 1 : QDM en degrés
 %   -paramètre 2 : décallage horizontal
 %   -paramètre 3 : décallage vertical
-\def\ils#1#2#3{
+\pgfkeys{
+    /ilsparam/.is family,
+    /ilsparam,
+    qdm/.store in = \ilsQdm,
+    ecartLoc/.store in = \ilsEcartLoc,
+    ecartGlide/.store in = \ilsEcartGlide,
+    afficherFlagNav/.store in = \ilsAfficherFlagNav,
+    afficherFlagGs/.store in = \ilsAfficherFlagGs,
+    qdm = 0,
+    ecartLoc = 0,
+    ecartGlide = 0,
+    afficherFlagNav = false,
+    afficherFlagGs = false,
+}
+\newcommand{\ils}[1]{
+    \pgfkeys{/ilsparam, #1}
+%\def\ils#1#2#3{
 	\fill[transparent] (0,0) circle (3) ;
 		\node {\pgfbox[center,center]{\pgfuseimage{ilsCaseFixed}}};
-		\node {\pgfbox[center,center]{\pgfuseimage{ilsFlagGs}}};
-		\node {\pgfbox[center,center]{\pgfuseimage{ilsFlagNav}}};
-		\node[yshift=-#2*32] {\pgfbox[center,center]{\pgfuseimage{ilsHandGs}}};
-		\node[xshift=-#2*32] {\pgfbox[center,center]{\pgfuseimage{ilsHanvNav}}};
-		\node[rotate=#1] {\pgfbox[center,center]{\pgfuseimage{ilsFace}}};
+		\ifthenelse{\equal{\ilsAfficherFlagGs}{true}}{
+			\node {\pgfbox[center,center]{\pgfuseimage{ilsFlagGs}}};
+		}
+		\ifthenelse{\equal{\ilsAfficherFlagNav}{true}}{
+			\node {\pgfbox[center,center]{\pgfuseimage{ilsFlagNav}}};
+		}
+		\node[yshift=\ilsEcartGlide*31.75] {\pgfbox[center,center]{\pgfuseimage{ilsHandGs}}};
+		\node[xshift=\ilsEcartLoc*31.75] {\pgfbox[center,center]{\pgfuseimage{ilsHanvNav}}};
+		\node[rotate=\ilsQdm] {\pgfbox[center,center]{\pgfuseimage{ilsFace}}};
     	\node {\pgfbox[center,center]{\pgfuseimage{ilsCase}}};
 }
 
@@ -193,7 +213,7 @@
     afficherT = false,
 }
 
-% Nouvelle commande pour dessiner la planche de bord
+%Planche de bord
 \newcommand{\dessinerTdB}[1]{
     \pgfkeys{/tdb, #1}
 
