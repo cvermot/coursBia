@@ -105,7 +105,9 @@
 
 %%%%%%%%%%%%%%%%%%%%Début paramétrage
 %==> le document est paramétrable, dans un certaine mesure.
-% Pour activer, les options voulues, décommenter la ligne de l'option considérée (ou la passer en paramètre au compilateur, par exemple avec latexmk '-usepretex="\\newcommand{\\opendys}{}"' pour l'option fonte OpenDyslexic
+% Pour activer, les options voulues, décommenter la ligne de l'option considérée (ou la passer en paramètre au compilateur, par exemple avec
+%   latexmk -usepretex="\newcommand{\opendys}{}" 
+%pour l'option fonte OpenDyslexic
 
 %Produire le document avec la fonte OpenDyslexic
 %\newcommand{\opendys}{}
@@ -209,6 +211,23 @@
 	Ce document est diffusé sous licence Creative Commons 4.0 by-nc-sa dont les termes sont disponibles sur le site CreativeCommons.org\footnote{Termes disponibles à cette adresse : \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}}. De façon synthétique, cette licence \textbf{vous autorise à redistribuer et à modifier ce document comme que vous le souhaitez tant que vous me citez en tant qu'auteur original} (un lien vers la version vous ayant servi de base est souhaité). En cas de diffusion de la version modifiée, vous avez l'obligation de la diffuser sous la même licence. Toute utilisation commerciale est en revanche proscrite. 
 	
 	Si vous souhaitez \textbf{faire un usage dépassant le cadre de cette licence} (donc utilisation commerciale, diffusion sous une autre licence...),vous devez \textbf{impérativement obtenir mon autorisation expresse écrite}. Pour cela vous pouvez me contacter à l'adresse bia@vermot.net. Je tiens par ailleurs à votre disposition le fichier source \LaTeX{} de ce document sur simple demande.
+	
+	\section{Versions}
+	Ce document est disponible en plusieurs versions :
+	\begin{itemize}
+		\item Version classique\ifdefined\opendys\else (présente version)\fi,
+		\item Version avec police OpenDyslexic\ifdefined\opendys (présente version)\fi.
+	\end{itemize}
+	
+	
+	\ifdefined\opendys 
+	\section{Notes concernant la version avec police OpenDyslexic}
+	Cette version avec la police OpenDyslexic est fournie à titre expérimental, dans l'espoir qu'elle puisse rendre ce cours plus facilement accessible au public le plus large possible.
+
+	Cependant, la mise en page de cette version n'est pas vérifiée extensivement. Cette version peut donc présenter des défauts de mise en page.
+
+	A ce jour, l'effort est mis à sur la rédaction du cours. Le traitement des particularités de mise en page sera réalisé plus tard, une fois la complétude du cours atteinte.
+	\fi
 
 	\chapter{Étude des aéronefs et des engins spatiaux}
 	\label{aeronef}
