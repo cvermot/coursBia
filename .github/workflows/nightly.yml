@@ -47,10 +47,11 @@ jobs:
         root_file: CoursBIA_complet.tex
 
     - name: Rename PDF file
+      if: steps.check_commits.outputs.has_commits == 'true'
       id: rename
       shell: bash
       run: |
-        # Définir les dates de début et fin pour hier (en UTC)
+        # Renommer le fichier PDF avec font OpenDyslexic
         mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
         echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf"
 
