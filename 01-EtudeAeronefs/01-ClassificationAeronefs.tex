@@ -93,11 +93,11 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
 	Les appareils à voilure tournante \anglais{rotary-wing aircraft}, également appelés aérogires, sont des aéronefs dont la sustentation est assurée par la rotation d'un ou plusieurs rotors.
 	
 		\paragraph{Hélicoptères}
-		L'hélicoptère \anglais{helicopter} est un aérodyne dont la sustentation est assurée grâce à un rotor entrainé par un moteur.
+		L'hélicoptère \anglais{helicopter} est un aérodyne dont la sustentation est assurée exclusivement grâce à un rotor entrainé par un moteur.
 		
 		Les inventeurs qui ont cherché à concevoir les premières hélicoptères au début du \siecle{20} souhaitaient une machine dont l'usage serait plus souple que les appareils à voilure fixe, en permettant un décollage court voir vertical. \\
 		
-		\histoire{L'idée de la machine à voilure tournante n'est pas récente, puisque l'on dispose de dessins du Léonard de Vinci datés du \siecle{15} représentant des machines à voilures tournantes.}\\
+		\histoire{L'idée de la machine à voilure tournante n'est pas récente, puisque l'on dispose de dessins du Léonard de Vinci datés du \siecle{15} représentant des machines à voilures tournantes.}
 		
 	\begin{figure}[H]
   	\centering
@@ -105,15 +105,36 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
   	\legende{Un hélicoptère EC145}{img:helicoptereEC145}
 	\end{figure}	
 		
-		De part leur capacité à évoluer en stationnaire, les hélicoptères sont devenus indispensable pour de nombreuses missions : secours, héliportage, transport, épandage, lutte aérienne contre les incendies de foret, travaux sur des lignes électriques, prise de vues...
+		De part leur capacité à évoluer en stationnaire, les hélicoptères sont devenus indispensable pour de nombreuses missions : secours, héliportage, transport, épandage, lutte aérienne contre les incendies de foret, travaux sur des lignes électriques, prise de vues...\\
 		
-		\paragraph{Autogire}
-		L'autogire \anglais{autogyro} est un aérodyne dont la sustentation est assurée grâce à un rotor entrainé par le vent relatif. Les autogires doivent donc dispose d'un mode de propulsion (typiquement une hélice entrainée par un moteur à pistons) qui assure la propulsion de l'appareil sur le plan horizontal.
+		Les principales contreparties à cette souplesse d'usage sont une consommation énergétique supérieure (comparée à un avion) et une vitesse de croisière plus réduite (notamment limitée par le fait que les pales de l'hélicoptère ne doivent pas franchir le mur du son).
 		
-		\histoire{L'autogire à précédé l'hélicoptère. Le premier vol d'un autogire a été effectué en 1923 par l'ingénieur espagnol Juan de la Cierva, contre 1936 pour le premier vol réellement contrôlé pour un hélicoptère.}
+		\exemple{Le rotor de l'EC145 en illustration ci-dessus mesure 11 m de diamètre et tourne à 383 tours/minutes. Le bout des pales en rotation évolue donc à 795 km/h. La vitesse maximale de l'hélicoptère est de 278 km/h. La pale avançante évolue donc à plus de 1070 km/h lorsque l'hélicoptère vole à sa vitesse maximale.\footnote{Certificat de type de l'EC145/BK117 : https://www.easa.europa.eu/lt/downloads/7941/en}}
 		
-		\paragraph{Convertible}
-		Les convertibles \anglais{tiltrotor } sont en quelque sort des hybrides entre des appareils à voilure tournante et des appareils à voilure fixe.
+		Les hélicoptères conçus de façon traditionnelle (un seul rotor horizontal servant à la sustentation) sont toujours équipés d'un système anticouple. Il s'agit généralement d'un second rotor, positionné verticalement, appelé rotor anticouple. En effet, le couple moteur transmis au rotor de sustentation provoque naturellement une rotation en sens inverse de la cellule de l'hélicoptère. Le rotor anticouple contre ce mouvement.
+		
+		\paragraph{Hélicoptères multirotors}
+		Une des solutions pour éviter d'avoir recours à des systèmes anticouple est de concevoir des machines avec plusieurs rotors tournants dans des sens opposés. Les rotors peuvent être positionnés sur un même axe ou sur des axes séparés.
+		
+		\begin{center}
+		\begin{minipage}[c]{1.0\linewidth}
+		\begin{figure}[H]
+		\begin{minipage}[c]{0.5\linewidth}
+		\centering
+		\includegraphics[trim={0 20px 0 0},clip, width=0.95\linewidth]{01-EtudeAeronefs/img/KamowK32A.jpg}
+		\legende{Un hélicoptère multirotor coaxiaux : Kamov K32}{img:KamowK32A}
+		\end{minipage}
+		\begin{minipage}[c]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{01-EtudeAeronefs/img/CH-147F.jpg}
+		\legende{Un hélicoptère multirotor en tandem : Boeing CH-147F}{img:CH-147F}
+		\end{minipage}
+		\end{figure}
+		\end{minipage}
+		\end{center}
+		
+		\paragraph{Convertibles}
+		Les convertibles \anglais{tiltrotor} sont en quelque sort des hybrides entre des appareils à voilure tournante et des appareils à voilure fixe.
 		
 		Grâce à des systèmes qui permettent à leurs rotors de basculer d'une position verticale à une position horizontale, ces appareils cherchent à combiner les avantages de l'hélicoptère (vol stationnaire, décollage et atterrissage verticaux) à ceux des appareils à voilure fixe (vitesse de croisière). Cela se fait, cependant, au prix d'une complexité technique qui rend l'exploitation de ces appareils couteuse et délicate.
 		
@@ -123,11 +144,28 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
   	\legende{Un convertible : le V22 Osprey}{img:tiltrotor}
 	\end{figure}	
 		
+		\paragraph{Autogires}
+		L'autogire \anglais{autogyro} est un aérodyne dont la sustentation est assurée grâce à un rotor entrainé par le vent relatif. Les autogires doivent donc dispose d'un mode de propulsion (typiquement une hélice entrainée par un moteur à pistons) qui assure la propulsion de l'appareil sur le plan horizontal.
+		
+		\histoire{L'autogire à précédé l'hélicoptère. Le premier vol d'un autogire a été effectué en 1923 par l'ingénieur espagnol Juan de la Cierva, contre 1936 pour le premier vol réellement contrôlé pour un hélicoptère.}
+	
+	\paragraph{Girodynes}
+	Le girodyne \anglais{gyrodyne} est en quelque sorte un hybride entre un hélicoptère et un autogire. Le rotor prinicial est en effet entrainé par le moteur, trandis que la traction est obtenue par un ou plusieurs autres moteurs.
+	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.4\textwidth]{01-EtudeAeronefs/img/Eurocopter-X3.jpg}
+  	\legende{Un girodyne : l'Eurocopter X3}{img:Eurocopter-X3}
+	\end{figure}
+	
+	Cette configuration présente des avantages en terme de consommation (le plan de rotation du rotor de sustentation reste parallèle au déplacement, ce qui réduit la trainée) tout en conservant les possibilité de décollage et d'atterrissage vertical d'un hélicoptère.
+		
 	\subsubsection{Aéronef à voilure souple}
 	Les aéronefs à voilure souple \anglais{flexible wings} regroupent des aéronefs dont la voilure est généralement gonflée par l'air : parapente, paramoteur, parachute sportif moderne... Les deltaplanes rentrent également dans cette catégorie.
 	
 	\info{Le parachute, dans sa version initiale (coupole), se trouve à la limite de la définition d'un aéronef. En effet, ce type de parachute ne produit pas de portance (uniquement de la traînée) et sa capacité de manœuvre est très limitée.}
 	
+	\begin{center}
 	\begin{minipage}[c]{1.0\linewidth}
 	\begin{figure}[H]
 	\begin{minipage}[c]{0.5\linewidth}
@@ -142,6 +180,7 @@ Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont pr
 	\end{minipage}
 	\end{figure}
 	\end{minipage}
+	\end{center}
 	
 	\histoire{André-Jacques \textbf{Garnerin}, un ingénieur français, effectue le premier saut réussi en parachute en 1797, en sautant depuis un ballon au dessus de Paris.}
 	
@@ -232,7 +271,24 @@ Les drones sont des aéronefs pilotés à distance.
 
 Les drones peuvent être tout type d'aéronef : voilure tournante (typiquement multirotors), voilure fixe, aérostat... Les drones peuvent être libres ou captifs (retenus au sol par un câble).
 
-Il existe également une grande diversité dans les dimensions du drones. Cela va d'appareils mesurant quelques dizaines de centimètre de côté et quelques centaines de grammes à des machines de plusieurs tonnes et de grande envergure. \\
+Il existe également une grande diversité dans les dimensions du drones. Cela va d'appareils mesurant quelques dizaines de centimètre de côté et quelques centaines de grammes à des machines de plusieurs tonnes et de grande envergure.
+
+		\begin{center}
+		\begin{minipage}[c]{1.0\linewidth}
+		\begin{figure}[H]
+		\begin{minipage}[c]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{01-EtudeAeronefs/img/DJI-Air3.jpg}
+		\legende{Un drone multirotors, le DJI Air 3 (720~g, environ 40~cm d'envergure)}{img:DJI-Air3}
+		\end{minipage}
+		\begin{minipage}[c]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{01-EtudeAeronefs/img/nEUROn.jpg}
+		\legende{Le nEUROn de Dassault Aviation (7~tonnes, 12.5~m d'envergure)}{img:nEUROn}
+		\end{minipage}
+		\end{figure}
+		\end{minipage}
+		\end{center}
 
 Un système drone est toujours composé de systèmes au sol permettant le contrôle du drone ainsi que du drone lui même. Le drone doit comporter de nombreux systèmes pour assurer son autonomie énergétique, le contrôle de son attitude, le contrôle de sa trajectoire et le suivi de son plan de vol ou encore la liaison dans les 2 sens avec le système de pilotage à distance. 
 
