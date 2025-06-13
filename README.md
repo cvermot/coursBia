@@ -21,6 +21,13 @@ La compilation se fait avec un environement LaTeX standard, cependant il faut te
 A noter : dans certaines configurations, la compilation peut entrainer le dépassement de la mémoire allouée à TeX. Dans ce cas, le recours à LuaTeX permet généralement de contourner le problème.
 
 ### Compilation
+#### Compilation rapide
+Le projet est fourni avec un fichier de configuration latexmk. On peut compiler l'ensemble en tapant simplement :
+```
+latexmk
+```
+
+#### Compilation détaillée
 Les commandes à exécuter pour compiler le projet :
 
 ```
