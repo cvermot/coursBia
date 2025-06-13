@@ -24,7 +24,7 @@ A noter : dans certaines configurations, la compilation peut entrainer le dépas
 #### Compilation rapide
 Le projet est fourni avec un fichier de configuration latexmk. On peut compiler l'ensemble en tapant simplement :
 ```
-latexmk
+latexmk CoursBIA_complet.tex
 ```
 
 #### Compilation détaillée
