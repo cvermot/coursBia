@@ -43,3 +43,5 @@
 *.fls
 *.ilg
 *.ind
+*.nav
+*.snm
