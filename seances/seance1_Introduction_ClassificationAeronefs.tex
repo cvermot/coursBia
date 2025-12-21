@@ -1,0 +1,355 @@
+\documentclass[12pt,aspectratio=1610]{beamer}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{smartdiagram}
+\usepackage{awesomebox}
+\usepackage{tikz}
+\usepackage{tikzpeople}
+\usepackage{appendixnumberbeamer}
+%\usepackage{pictochrono}
+
+\usetheme{Warsaw}
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
+\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
+\newcommand{\histoire}[1]{\begin{awesomeblock}{2pt}{\faBook}{black!75}#1\end{awesomeblock}}
+
+\newcommand{\qmcBia}[7]{
+%1 : titre slide
+%2 : numéro de la bonne réponse
+%3 : Inititulé de la question
+%4, 5, 6, et 7 : propositions de réponse
+\begin{frame}{#1}
+\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+#3
+	\begin{enumerate}
+	\ifnum#2=1
+		\only<1>{\item #4}
+		\only<2>{\item \textbf{#4}}
+	\else
+		\item #4
+	\fi
+	\ifnum#2=2
+		\only<1>{\item #5}
+		\only<2>{\item \textbf{#5}}
+	\else
+		\item #5
+	\fi
+	\ifnum#2=3
+		\only<1>{\item #6}
+		\only<2>{\item \textbf{#6}}
+	\else
+		\item #6
+	\fi
+	\ifnum#2=4
+		\only<1>{\item #7}
+		\only<2>{\item \textbf{#7}}
+	\else
+		\item #7
+	\fi
+	\end{enumerate}
+	\pause
+\end{awesomeblock}
+\end{frame}
+}
+
+\title[Seance 1 - Introduction]{Seance 1 \\ Introduction \& Classification des aéronefs}
+\subtitle{BIA - Brevet d'Initiation Aéronautique}
+\author{Clément \textsc{Vermot-Desroches}}
+\institute{Collège Aliénor d'Aquitaine\\Martignas-sur-Jalle}
+%\date{\today}
+\date{18 décembre 2025}
+
+%\AtBeginSection[]
+%{
+%    \begin{frame}
+%        %\frametitle{Table of Contents}
+%        \tableofcontents[currentsection]
+%    \end{frame}
+%}
+
+\AtBeginSubsection[]
+{
+    \begin{frame}
+        %\frametitle{Table of Contents}
+        \tableofcontents[currentsection,currentsubsection]
+    \end{frame}
+}
+
+
+
+\begin{document}
+ \begin{frame}
+ \titlepage
+ \end{frame}
+ 
+ \begin{frame}
+ \tableofcontents
+ \end{frame}
+ 
+\section{Introduction}
+\begin{frame}{Qui sommes nous ? Tour de table}
+
+\begin{awesomeblock}{2pt}{\faChild}{black!75}
+Prénom
+
+Nom
+\end{awesomeblock}	
+
+\begin{awesomeblock}{2pt}{\faPlane}{black!75}
+Qu'est ce que je connais de l'aéronautique ?
+\end{awesomeblock}
+
+\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+Pourquoi suis-je la ?
+\end{awesomeblock}
+
+\end{frame}
+
+\begin{frame}{Ce que j'attends de vous cette année}
+\begin{itemize}
+  \item De la curiosité
+  \item N'ayez pas peur de vous tromper !
+  \item Pas de travail personnel obligatoire...
+  \item ... mais si vous travaillez un peu de votre côté, vous augmentez vos chances d'obtenir le BIA et de l'avoir avec une mention
+  \begin{itemize}
+  	\item si vous avez des questions suite à des choses que vous aurez étudié de votre côté : posez les !
+  \end{itemize}
+\end{itemize}
+
+Programme dense car nous démarrons en cours d'année
+
+\importantbox{N'hésitez pas à poser toutes vos questions pendant le cours}
+\end{frame}
+
+
+\section{Classification des aéronefs}
+\begin{frame}{Activité de groupe}
+
+\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+Pouvez vous me citer un maximum de machines volantes ?
+\end{awesomeblock}
+\pause 
+\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+Comment peut ont regrouper ces différentes machines ?
+\end{awesomeblock}	
+\end{frame}
+
+
+
+
+\subsection{Pourquoi classer les aéronefs ?}
+\begin{frame}{Pourquoi classer les aéronefs ? - Définitions}
+
+Chaque type d'aéronef dispose de propriétés et de contraintes qui lui sont propres. La classification des aéronefs en grand groupes présentant des caractéristiques communes permet de leur associer aisément des notions réglementaires (licence de pilote nécessaire, minima météo, zone de vol autorisées...), techniques (fréquences et mode d'entretien, contraintes de conception) ou administratives (immatriculation, assurance...).
+
+Un aéronef \anglais{aircraft} est un appareil capable de s'élever et de se mouvoir au sein de l'atmosphère terrestre. On divise les aéronefs en 2 grandes familles :
+\begin{itemize}
+	\item les  aérostats \anglais{aerostat/lighter-than-air aircraft}, qui sont des appareils plus légers que l'air,
+	\item les  aérodynes \anglais{heavier-than-air aircraft}, qui sont plus lourds que l'air.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aérostats - la montgolfière \anglais{hot air balloon}}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+
+\begin{itemize}
+	\item aérostat gonflé à l'air chaud
+	\item composé d'un ballon (enveloppe) sous lequel est accroché une nacelle
+	\item un bruleur permet de chauffer l'air du ballon
+	\item déplacement soumis au vent
+\end{itemize}
+
+\only<2>{\histoire{Invention française : frères Montgolfier
+
+1783 : premier vol : un coq, un mouton et un canard puis Pilâtre de Rosier
+
+1785 : Jean-Pierre Blanchard traverse la Manche en ballon}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.95\textwidth]{../01-EtudeAeronefs/img/montgolfiere.jpg}
+  	\legende{2 ballons}{img:montgolfiere}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+
+
+\begin{frame}{Aérostats - le ballon à gaz \anglais{gas balloon}}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+
+\begin{itemize}
+	\item ballon est gonflé avec un gaz plus léger que l'air (hydrogène ou hélium)
+	\item autonomie de vol importante
+\end{itemize}
+
+\only<2>{\histoire{Invention du français Jean Charles, en 1783}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.80\textwidth]{../01-EtudeAeronefs/img/ballonAGaz.jpg}
+  	\legende{Un ballon à l'hélium moderne}{img:ballonAGaz}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+	
+\begin{frame}{Aérostats - le dirigeable \anglais{airship}}
+
+\begin{columns}
+\begin{column}{0.65\textwidth}
+
+\begin{itemize}
+	\item ballon à gaz équipé d'un système propulsif
+	\item gonflé à l'hydrogène puis l'hélium
+	\item corrige le principale défaut des ballons : leur non dirigeabilité
+\end{itemize}
+
+\only<2>{\histoire{L'ingénieur français Henri Giffard fit voler le premier dirigeable en 1852.}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.95\textwidth]{../01-EtudeAeronefs/img/dirigeable.jpg}
+  	\legende{Un dirigeable moderne}{img:dirigeable}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+
+\begin{frame}{Aérodynes - Voilure fixe - Avion \anglais{airplane}}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+\begin{itemize}
+	\item la portance est assuré par le flux d'air sur les surfaces portantes de l'avion (aile \anglais{wing})
+	\item la portance n'existe qu'avec une vitesse de l'air suffisante
+	\item sur un avion, la mise en mouvement est assurée par un ou plusieurs moteurs 
+\end{itemize}
+
+\only<2>{\histoire{Le premier vol d'un avion a été réalise en 1903 par les frères Wright, aux États-Unis}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.95\textwidth]{../01-EtudeAeronefs/img/cessna172.jpg}
+  	\legende{Un avion Cessna 172}{img:cessna172}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+
+\begin{frame}{Aérodynes - Voilure fixe - Planeur \anglais{glider}}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+\begin{itemize}
+	\item aérodyne dépourvu de moyens de propulsion
+	\item mise en l'air grâce à un remorqueur ou un treuil
+	\item une fois en vol peut monter grâce aux courants atmosphériques
+\end{itemize}
+
+\only<2>{\histoire{Premier vol d'un planeur en 1891 par l'allemand \textbf{Otto Lilienthal}, en partant d'une colline}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.95\textwidth]{../01-EtudeAeronefs/img/planeur.jpg}
+  	\legende{Un planeur}{img:planeur}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+
+\begin{frame}{}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+\begin{itemize}
+	\item 
+	\item 
+	\item 
+	\item 
+\end{itemize}
+
+\only<2>{\histoire{}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.95\textwidth]{../01-EtudeAeronefs/img/montgolfiere.jpg}
+  	\legende{2 ballons}{img:montgolfiere}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+
+\begin{frame}{}
+\begin{columns}
+\begin{column}{0.65\textwidth}
+\begin{itemize}
+	\item 
+	\item 
+	\item 
+	\item 
+\end{itemize}
+
+\only<2>{\histoire{}}
+
+\end{column}
+\begin{column}{0.35\textwidth}	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.95\textwidth]{../01-EtudeAeronefs/img/montgolfiere.jpg}
+  	\legende{2 ballons}{img:montgolfiere}
+	\end{figure}	
+\end{column}
+\end{columns}
+\pause 
+\end{frame}
+
+\subsection{Questions}
+\qmcBia{Étude des aéronefs}
+{1}{Tout appareil capable de s'élever et de circuler dans l'espace aérien :}
+{est un aéronef}
+{subit des forces aérodynamiques}
+{possède obligatoirement un moteur}
+{est piloté depuis l'intérieur de son cockpit}
+
+\qmcBia{Étude des aéronefs}
+{3}{Un aéronef qui, en croisière, voit son rotor entraîné par le vent relatif est :}
+{un convertible}
+{un girodyne}
+{un autogire}
+{un hélicoptère}
+
+\qmcBia{Histoire}
+{2}{En 1783, le premier vol d’un ballon à air chaud est rendu possible grâce au travail des frères :}
+{Wright}
+{Montgolfier}
+{Caudron}
+{Voisin}
+
+
+\end{document}
+
