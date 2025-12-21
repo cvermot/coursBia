@@ -17,16 +17,9 @@ jobs:
           args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
           root_file: CoursBIA_complet.tex
           
-      - name: Compile LaTeX document - Seance 1 beamer
-        uses: xu-cheng/latex-action@v4
-        with:
-          #latexmk_use_lualatex: true
-          root_file: seances/seance1_Introduction_ClassificationAeronefs.tex
       
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: |
-            CoursBIA_complet.pdf
-            seances/seance1_Introduction_ClassificationAeronefs.pdf
+          path: CoursBIA_complet.pdf
