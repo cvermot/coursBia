@@ -1,0 +1,82 @@
+\documentclass[12pt,aspectratio=1610]{beamer}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{smartdiagram}
+\usepackage{tikz}
+\usepackage{tikzpeople}
+\usepackage{appendixnumberbeamer}
+\usepackage[labelformat=empty]{caption}
+%\usepackage{pictochrono}
+\usepackage{fontawesome5}
+\usepackage{awesomebox}
+
+\usetheme{Warsaw}
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
+\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
+\newcommand{\histoire}[1]{\begin{awesomeblock}{2pt}{\faBook}{black!75}#1\end{awesomeblock}}
+
+\newcommand{\qmcBia}[7]{
+%1 : titre slide
+%2 : numéro de la bonne réponse
+%3 : Inititulé de la question
+%4, 5, 6, et 7 : propositions de réponse
+\begin{frame}{#1}
+\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+#3
+	\begin{enumerate}
+	\ifnum#2=1
+		\only<1>{\item #4}
+		\only<2>{\item \textbf{#4}}
+	\else
+		\item #4
+	\fi
+	\ifnum#2=2
+		\only<1>{\item #5}
+		\only<2>{\item \textbf{#5}}
+	\else
+		\item #5
+	\fi
+	\ifnum#2=3
+		\only<1>{\item #6}
+		\only<2>{\item \textbf{#6}}
+	\else
+		\item #6
+	\fi
+	\ifnum#2=4
+		\only<1>{\item #7}
+		\only<2>{\item \textbf{#7}}
+	\else
+		\item #7
+	\fi
+	\end{enumerate}
+	\pause
+\end{awesomeblock}
+\end{frame}
+}
+
+\subtitle{BIA - Brevet d'Initiation Aéronautique}
+\author{Clément \textsc{Vermot-Desroches}}
+\institute{Collège Aliénor d'Aquitaine\\Martignas-sur-Jalle}
+\date{\today}
+
+%\AtBeginSection[]
+%{
+%    \begin{frame}
+%        %\frametitle{Table of Contents}
+%        \tableofcontents[currentsection]
+%    \end{frame}
+%}
+
+\AtBeginSubsection[]
+{
+    \begin{frame}
+        %\frametitle{Table of Contents}
+        \tableofcontents[currentsection,currentsubsection]
+    \end{frame}
+}

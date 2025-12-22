@@ -18,6 +18,7 @@ jobs:
           root_file: | 
             CoursBIA_complet.tex
             seance1_Introduction_ClassificationAeronefs.tex
+            seance2_StructureAvionMotorisation.tex
       
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
@@ -26,4 +27,5 @@ jobs:
           path:  |
             CoursBIA_complet.pdf
             seance1_Introduction_ClassificationAeronefs.pdf
+            seance2_StructureAvionMotorisation.pdf
             
