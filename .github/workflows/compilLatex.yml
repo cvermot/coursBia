@@ -15,8 +15,9 @@ jobs:
         with:
           #latexmk_use_lualatex: true
           args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
-          root_file: CoursBIA_complet.tex
-          
+          root_file: | 
+            CoursBIA_complet.tex
+            seances/seance1_Introduction_ClassificationAeronefs.tex
       
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
