@@ -60,7 +60,9 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
-        root_file: CoursBIA_complet.tex
+        root_file: | 
+            CoursBIA_complet.tex
+            seance1_Introduction_ClassificationAeronefs.tex
 
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -75,5 +77,6 @@ jobs:
         files: |
           CoursBIA_complet.pdf
           CoursBIA_complet_OpenDyslexic.pdf
+          seance1_Introduction_ClassificationAeronefs.pdf
           coursBIA_sources.zip
         generate_release_notes: true
