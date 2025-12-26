@@ -66,6 +66,9 @@
 	
 	\setlongtables
 	
+	%\newglossary{anglais}{Termes anglais}	
+	\newglossary[tlg]{anglais}{tld}{tdn}{Termes anglais}
+	
 	\makeindex
 	\makeglossaries
 	%\glossarystyle{long3col}	
@@ -97,7 +100,14 @@
 	}\item }{\end{list}}
 	%%%% fin macro %%%%
 	
-	\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
+	%\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
+	\newcommand{\anglais}[2][]{(\textit{\color{blue}#2})
+		\newglossaryentry{anglais:test}{type=anglais, name=#2, description=#1}}
+	%\newcommand{\anglais}[2][]{\newglossaryentry{anglais:#2}{
+    %type=anglais,
+    %name={#2}, 
+    %description={#1}
+%}(\textit{\color{blue}#2})}
 	%commande legende. Permet d'afficher le titre de la figure sous la figure
 	%et le titre de la figure plus la source dans biblio.
 	%2 parametres : 
@@ -305,7 +315,9 @@
 	
 	\listoftables
 	
-	\printglossaries
+	\printglossary[type=anglais]
+	\printglossary
+	%\printglossaries
 
 %\chapter{Bibliographie}
 	\nocite{*}
