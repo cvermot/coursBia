@@ -100,9 +100,9 @@
 	}\item }{\end{list}}
 	%%%% fin macro %%%%
 	
-	%\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
-	\newcommand{\anglais}[2][]{(\textit{\color{blue}#2})
-		\newglossaryentry{anglais:test}{type=anglais, name=#2, description=#1}}
+	\newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
+	%\newcommand{\anglais}[2][]{(\textit{\color{blue}#2})
+	%	\newglossaryentry{{#2}}{type=anglais, name={#2}, description={#1}}}
 	%\newcommand{\anglais}[2][]{\newglossaryentry{anglais:#2}{
     %type=anglais,
     %name={#2}, 
@@ -186,11 +186,6 @@
 	\newpage	
 	
 	\section{Préface}
-	%\alert{test}
-	%\info{test}
-	%\question{test}
-	%\histoire{test}
-
 	Ce document vise à apporter les connaissances de base nécessaires au passage de l'examen BIA. A date (\today), ce document est en cours de rédaction et doit être considéré comme partiel.
 
 	Enfin, ce document est destiné à évoluer. Par ailleurs, je suis ouvert à toutes critiques ou commentaires constructifs concernant ce document, sur le fond comme sur la forme. N'hésitez donc pas à me contacter concernant toute erreur, omission, faute d'orthographe ou manque dans ce documents, préférentiellement via la page \href{https://github.com/cvermot/coursBia/discussions}{Discussions} du projet \href{https://github.com/cvermot/coursBia}{GitHub}\footnote{\url{https://github.com/cvermot/coursBia}} de ce cours (la création d'une discussion nécessite un compte sur GitHub). Alternativement, vous pouvez également me contacter via l'adresse suivante : bia@vermot.net.
@@ -315,9 +310,10 @@
 	
 	\listoftables
 	
-	\printglossary[type=anglais]
-	\printglossary
-	%\printglossaries
+	%\printglossary*[type=anglais]
+	%\printglossary
+	%\glsaddall
+	\printglossaries
 
 %\chapter{Bibliographie}
 	\nocite{*}

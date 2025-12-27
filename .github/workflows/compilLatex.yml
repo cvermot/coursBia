@@ -16,6 +16,8 @@ jobs:
           #latexmk_use_lualatex: true
           args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
           root_file: | 
+            01-EtudeAeronefs/img/Cycle4Temps/0-MoteurLegende_doc.tex
+            01-EtudeAeronefs/img/Cycle4Temps/0-MoteurLegendeFlechesSeulement_doc.tex
             CoursBIA_complet.tex
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
