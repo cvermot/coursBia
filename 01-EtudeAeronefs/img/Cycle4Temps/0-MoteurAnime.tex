@@ -42,11 +42,11 @@
     \fi
 }
 
-\ifdefined\activeranimations 
+%\ifdefined\activeranimations 
 \newcommand{\nbFramesMoteurAnime}{360}
-\else
-\newcommand{\nbFramesMoteurAnime}{1}
-\fi
+%\else
+%\newcommand{\nbFramesMoteurAnime}{1}
+%\fi
 
 \begin{animateinline}[autoplay,loop,controls]{60}
 \multiframe{\nbFramesMoteurAnime}{i=-90+2}{%
@@ -75,7 +75,7 @@
       \fi \fi
       
       % COMPRESSION STROKE
-      \ifnum\i>90 \ifnum\i<272 
+      \ifnum\i>89 \ifnum\i<272 
           \node[align=center,font=\Large] at (legende.center) {\textbf{Compression}};
           \valveL{.1}
           \valveR{.1};
@@ -89,7 +89,7 @@
       \fi \fi
       
       % EXHAUST STROKE
-      \ifnum\i>452 \ifnum\i<630
+      \ifnum\i>451 \ifnum\i<630
           \node[align=center,font=\Large] at (legende.center) {\textbf{Echappement}};
           \fill[\gas, opacity=0.5]
               (VRo) to[out=60,in=-180] ++ (1.5,0.6) -- ($(VRo)+(1.5,1.3)$) to[out=180,in=60] (VRm) to[out=-220+\vr,in=-180+\vr] cycle;
