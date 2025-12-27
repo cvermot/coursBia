@@ -10,14 +10,23 @@ jobs:
       - name: Check encoding
         run: file -i CoursBIA_complet.tex
         
-      - name: Compile LaTeX document
+        
+      - name: Compile LaTeX artifacts
+        uses: xu-cheng/latex-action@v3
+        with:
+          #latexmk_use_lualatex: true
+          working_directory: 01-EtudeAeronefs/img/Cycle4Temps/
+          args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
+          root_file: | 
+            0-MoteurLegende_doc.tex
+            0-MoteurLegendeFlechesSeulement_doc.tex
+        
+      - name: Compile LaTeX documents
         uses: xu-cheng/latex-action@v3
         with:
           #latexmk_use_lualatex: true
           args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
           root_file: | 
-            01-EtudeAeronefs/img/Cycle4Temps/0-MoteurLegende_doc.tex
-            01-EtudeAeronefs/img/Cycle4Temps/0-MoteurLegendeFlechesSeulement_doc.tex
             CoursBIA_complet.tex
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
