@@ -1,4 +1,8 @@
+\ifdefined\activerhandout 
+\documentclass[12pt,aspectratio=1610,handout]{beamer}
+\else
 \documentclass[12pt,aspectratio=1610]{beamer}
+\fi
 
 %\usepackage[french]{babel} %=> erreur avec les tikz du moteur
 \usepackage[T1]{fontenc}
@@ -21,6 +25,12 @@
 \newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
 \newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
 \newcommand{\histoire}[1]{\begin{awesomeblock}{2pt}{\faBook}{black!75}#1\end{awesomeblock}}
+\newcommand{\info}[1]{\begin{awesomeblock}{2pt}{\faInfoCircle}{black!75}#1\end{awesomeblock}}
+\newcommand{\question}[1]{\begin{awesomeblock}{2pt}{\faQuestionCircle}{black!75}#1\end{awesomeblock}}
+\newcommand{\alerte}[1]{\begin{awesomeblock}{2pt}{\faExclamationCircle}{black!75}#1\end{awesomeblock}}
+\newcommand{\astuce}[1]{\begin{awesomeblock}{2pt}{\faLightbulb}{black!75}#1\end{awesomeblock}}
+\newcommand{\exemple}[1]{\begin{awesomeblock}{2pt}{\faSearch}{black!75}#1\end{awesomeblock}}
+\newcommand{\definitionAConnaitre}[1]{\begin{awesomeblock}{2pt}{\faCog}{black!75}#1\end{awesomeblock}}
 
 \newcommand{\qmcBia}[7]{
 %1 : titre slide

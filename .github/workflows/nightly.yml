@@ -45,6 +45,15 @@ jobs:
         #latexmk_use_lualatex: true
         args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}"
         root_file: CoursBIA_complet.tex
+        
+    - name: Produce LaTeX document - beamer handout
+      if: steps.check_commits.outputs.has_commits == 'true'
+      uses: xu-cheng/latex-action@v3
+      with:
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activerhandout}{}"
+        root_file: | 
+            seance1_Introduction_ClassificationAeronefs.tex
+            seance2_StructureAvionMotorisation.tex
 
     - name: Rename PDF file
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -53,7 +62,9 @@ jobs:
       run: |
         # Renommer le fichier PDF avec font OpenDyslexic
         mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
-        echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf"
+        echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf
+        mv seance1_Introduction_ClassificationAeronefs.pdf seance1_Introduction_ClassificationAeronefs_handout.pdf
+        mv seance2_StructureAvionMotorisation.pdf seance2_StructureAvionMotorisation_handout.pdf"
 
     - name: Produce LaTeX document - default font
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -79,6 +90,8 @@ jobs:
           CoursBIA_complet.pdf
           CoursBIA_complet_OpenDyslexic.pdf
           seance1_Introduction_ClassificationAeronefs.pdf
+          seance1_Introduction_ClassificationAeronefs_handout.pdf
           seance2_StructureAvionMotorisation.pdf
+          seance2_StructureAvionMotorisation_handout.pdf
           coursBIA_sources.zip
         generate_release_notes: true

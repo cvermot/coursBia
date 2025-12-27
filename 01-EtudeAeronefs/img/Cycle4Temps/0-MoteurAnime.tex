@@ -42,11 +42,11 @@
     \fi
 }
 
-%\ifdefined\activeranimations 
+\ifdefined\activeranimations 
 \newcommand{\nbFramesMoteurAnime}{360}
-%\else
-%\newcommand{\nbFramesMoteurAnime}{1}
-%\fi
+\else
+\newcommand{\nbFramesMoteurAnime}{1}
+\fi
 
 \begin{animateinline}[autoplay,loop,controls]{60}
 \multiframe{\nbFramesMoteurAnime}{i=-90+2}{%

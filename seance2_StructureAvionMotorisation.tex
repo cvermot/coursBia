@@ -34,9 +34,14 @@
  \end{frame}
  
  \subsection{Le cycle à 4 temps}
- \begin{frame}{Admissions}
+ \begin{frame}{Admission}
  \begin{columns}
  \begin{column}{0.65\textwidth}
+ 	\only<2>{\begin{itemize}
+ 		\item La soupape d'admission est ouverte
+ 		\item Le piston descend
+ 		\item Le mélange air-carburant est aspiré dans le cylindre
+ 	\end{itemize}}
  \end{column}
  \begin{column}{0.35\textwidth}
  \begin{figure}[H]
@@ -48,9 +53,76 @@
 		\end{figure}
  \end{column}
  \end{columns}
+ \pause
  \end{frame} 
  
- \begin{frame}
+ \begin{frame}{Compression}
+ \begin{columns}
+ \begin{column}{0.35\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\renewcommand{\echelleTikz}{0.5}
+  		\scalebox{1.2}{\begin{minipage}{3cm}
+		\input{01-EtudeAeronefs/img/Cycle4Temps/2-Compression.tex}
+		\end{minipage}	}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.65\textwidth}
+ 	\only<2>{\begin{itemize}
+ 		\item Les soupapes sont fermées
+ 		\item Le piston remonte
+ 		\item Le mélange est compressé dans le cylindre.
+ 	\end{itemize}}
+ \end{column}
+ \end{columns}
+ \pause
+ \end{frame} 
+ 
+  \begin{frame}{Explosion-détente}
+ \begin{columns}
+ \begin{column}{0.65\textwidth}
+ 	\only<2>{\begin{itemize}
+ 		\item Les soupapes sont fermées
+ 		\item La bougie produit une étincelle quand le piston est au point haut
+ 		\item Le piston est repoussé vers le bas par l'explosion
+ 	\end{itemize}
+ 	\info{Le temps d'explosion-détente est le seul temps qui produit de l'énergie}}
+ \end{column}
+ \begin{column}{0.35\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\renewcommand{\echelleTikz}{0.5}
+  		\scalebox{1.2}{\begin{minipage}{3cm}
+		\input{01-EtudeAeronefs/img/Cycle4Temps/3-Explosion.tex}
+		\end{minipage}	}	
+		\end{figure}
+ \end{column}
+ \end{columns}
+ \pause
+ \end{frame} 
+ 
+ \begin{frame}{Échappement}
+ \begin{columns}
+ \begin{column}{0.35\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\renewcommand{\echelleTikz}{0.5}
+  		\scalebox{1.2}{\begin{minipage}{3cm}
+		\input{01-EtudeAeronefs/img/Cycle4Temps/5-Echappement.tex}
+		\end{minipage}	}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.65\textwidth}
+ 	\only<2>{\begin{itemize}
+ 		\item La soupape d'échappement s'ouvre
+ 		\item La remontée du cylindre chasse les gaz brulés
+ 	\end{itemize}}
+ \end{column}
+ \end{columns}
+ \pause
+ \end{frame}
+ 
+ \begin{frame}{Cycle complet}
  \begin{figure}[H]
   		\centering
   		\renewcommand{\echelleTikz}{0.5}
