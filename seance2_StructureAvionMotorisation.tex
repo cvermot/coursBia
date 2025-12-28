@@ -1,8 +1,11 @@
 \input{commun/presentations.tex}
+\input{commun/video.tex}
 
 \input{01-EtudeAeronefs/img/Cycle4Temps/ElementsMoteur.tex}
 
 \title[Séance 2 - Constitution aérodyne]{Séance 2 \\ Structure avion \& Motorisation}
+
+\usepackage{animate}
 
 \begin{document}
  \begin{frame}
@@ -81,12 +84,13 @@
   \begin{frame}{Explosion-détente}
  \begin{columns}
  \begin{column}{0.65\textwidth}
- 	\only<2>{\begin{itemize}
+ 	\only<2-4>{\begin{itemize}
  		\item Les soupapes sont fermées
  		\item La bougie produit une étincelle quand le piston est au point haut
  		\item Le piston est repoussé vers le bas par l'explosion
  	\end{itemize}
- 	\info{Le temps d'explosion-détente est le seul temps qui produit de l'énergie}}
+ 	\only<3-4>{\info{Le temps d'explosion-détente est le seul temps qui produit de l'énergie}}
+ 	\only<4>{\alerte{Un moteur d'avion est généralement équipé de 2 bougies par cylindre pour augmenter la sécurité}}}
  \end{column}
  \begin{column}{0.35\textwidth}
  \begin{figure}[H]
@@ -98,6 +102,8 @@
 		\end{figure}
  \end{column}
  \end{columns}
+ \pause
+ \pause
  \pause
  \end{frame} 
  
@@ -115,7 +121,7 @@
  \begin{column}{0.65\textwidth}
  	\only<2>{\begin{itemize}
  		\item La soupape d'échappement s'ouvre
- 		\item La remontée du cylindre chasse les gaz brulés
+ 		\item La remontée du cylindre chasse les gaz brulés du piston
  	\end{itemize}}
  \end{column}
  \end{columns}
@@ -126,7 +132,7 @@
  \begin{figure}[H]
   		\centering
   		\renewcommand{\echelleTikz}{0.5}
-  		\scalebox{.7}{\begin{minipage}{3cm}
+  		\scalebox{.6}{\begin{minipage}{3cm}
 		\input{01-EtudeAeronefs/img/Cycle4Temps/0-MoteurAnime.tex}
 		\end{minipage}	}	
 		\end{figure}	
@@ -135,8 +141,44 @@
  
  \subsection{Différentes dispositions de cylindres}
  \begin{frame}{Les dispositions de cylindres}
+ Afin d'augmenter la puissance des moteurs et d'améliorer la régularité de fonctionnement, les concepteurs des moteurs on rapidement multiplié le nombre de cylindres de leurs moteurs.
+ 
+ \question{Connaissez vous des dispositions de cylindres ?}
  
  \end{frame}
+ 
+ \begin{frame}{Les principales disposition de cylindres}
+ 
+ \begin{figure}[H]
+  	%\includegraphics[scale=0.7]{01-EtudeAeronefs/img/5cylindresEtoile.png}
+  	%\animategraphics[controls,scale=0.3,loop]{20}{01-EtudeAeronefs/img/5cylindresEtoile/}{00001}{00331}
+  	
+  	\scalebox{.3}{\embedvideo*{\includegraphics[page=1, scale=1]{01-EtudeAeronefs/img/5cylindresEtoile}}{01-EtudeAeronefs/img/video/5cylindresEtoile.mp4}}
+  	
+	\end{figure}
+ 
+ \end{frame}
+ 
+ \qmcBia{Étude des aéronefs}
+{3}{Dans un moteur à 4 temps, la compression intervient après :}
+{la combustion}
+{la détente}
+{l'admission}
+{l'échappement}
+
+ \qmcBia{Étude des aéronefs}
+{2}{Durant un cycle de fonctionnement d'un moteur à pistons (4 temps), le seul temps où le piston monte du point mort bas au point mort haut avec les soupapes fermées est le temps :}
+{d'admission}
+{de compression}
+{de combustion-détente}
+{d'échappement}
+
+\qmcBia{Étude des aéronefs}
+{3}{Sur un avion certifié, un moteur à pistons contenant 4 cylindres est pourvu au total de :}
+{2 bougies d'allumage}
+{4 bougies d'allumage}
+{8 bougies d'allumage}
+{0 bougie d'allumage}
  
  
 \end{document}
