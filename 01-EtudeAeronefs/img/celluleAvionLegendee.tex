@@ -1,0 +1,63 @@
+% Source de l'image : https://en.wikipedia.org/wiki/Airframe#/media/File:RV-14_Cutaway_TD_-_small.jpg
+% Ajout des flèches pour l'illustration
+% Licence CC BY-SA 4.0
+\documentclass{standalone}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+
+
+\begin{document}
+
+\usetikzlibrary{calc,fit,backgrounds}
+\tikzset{>=latex} % for LaTeX arrow head
+\colorlet{mydarkblue}{blue!30!black}
+\tikzstyle{arrow}=[<-,very thick,mydarkblue]
+\tikzstyle{vector}=[->,line width=2,green!50!black]
+\definecolor{fond}{HTML}{fdfdff}
+\begin{tikzpicture}[background rectangle/.style={fill=fond!100}, show background rectangle]
+\node[inner sep=0pt] (cellule) at (0,0)
+    {\includegraphics[width=1.0\textwidth]{celluleAvion.jpg}};
+    %{\includegraphics[width=1.0\textwidth]{01-EtudeAeronefs/img/celluleAvion.jpg}};
+    
+    %\draw[arrow] (0,0) ++ (-.2,.2) --++ (-3,-1.5)
+    %node[below left=-2,align=right,scale=1.4] {reférence};
+    
+    \draw[arrow] (-3,1) ++ (-.2,.2) --++ (-3,-1.5)
+    node[below left=-2,align=right,scale=1.4] {moteur};
+    
+    \draw[arrow] (-4.4,2) ++ (-.2,.2) --++ (-2,-1)
+    node[below left=-2,align=right,scale=1.4] {hélice};
+    
+    \draw[arrow] (-0.8,-1.6) ++ (-.2,.2) --++ (-3,-1.5)
+    node[below left=-2,align=right,scale=1.4] {train d'atterissage};
+    
+    \draw[arrow] (3.8,3.5) ++ (-.2,.2) --++ (-1,1.5)
+    node[above left=-2,align=right,scale=1.4] {dérive};
+    
+    \draw[arrow] (-1,2.2) ++ (-.2,.2) --++ (-1,1.5)
+    node[above left=-2,align=right,scale=1.4] {cockpit};
+    
+    \draw[arrow] (1,2.2) ++ (-.2,.2) --++ (-2,3)
+    node[above left=-2,align=right,scale=1.4] {fuselage};
+    
+    \draw[arrow] (4.3,3.5) ++ (-.2,.2) --++ (3,-1.5)
+    node[below right=-2,align=right,scale=1.4] {gouverne de\\[-2pt]direction};
+    
+    \draw[arrow] (5,1.7) ++ (-.2,.2) --++ (2.25,-1.125)
+    node[below right=-2,align=right,scale=1.4] {gouverne de\\[-2pt]profondeur};
+    
+    \draw[arrow] (1,0.2) ++ (-.2,.2) --++ (3,0)
+    node[below right=-2,align=right,scale=1.4] {volet};
+    
+    \draw[arrow] (3.5,-1.2) ++ (-.2,.2) --++ (3,0)
+    node[below right=-2,align=right,scale=1.4] {aileron};
+    
+    \draw[arrow] (2.2,-1.5) ++ (-.2,.2) --++ (-6,-3)
+    node[below left=-2,align=right,scale=1.4] {aile};
+    
+    %\draw (-8,-8) grid (8,8);
+
+\end{tikzpicture}
+
+\end{document}
