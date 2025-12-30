@@ -20,11 +20,23 @@
 \usepackage{fontawesome5}
 \usepackage{awesomebox}
 
+\usepackage[
+    backend=biber,
+    %style=authoryear-icomp,
+    style=numeric,
+    %style=ieee,
+    sortlocale=fr_FR,
+    natbib=true,
+    url=true, 
+    doi=true,
+    eprint=true
+]{biblatex}
+
 \usetheme{Warsaw}
 \setbeamertemplate{page number in head/foot}[totalframenumber]
 
 \newcommand{\anglais}[1]{(\textit{\color{blue}#1})}
-\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
+\newcommand{\legende}[2]{\caption{#1\ifdefined\activerbibliobeamer \cite{#2}\fi}}
 \newcommand{\histoire}[1]{\begin{awesomeblock}{2pt}{\faBook}{black!75}#1\end{awesomeblock}}
 \newcommand{\info}[1]{\begin{awesomeblock}{2pt}{\faInfoCircle}{black!75}#1\end{awesomeblock}}
 \newcommand{\question}[1]{\begin{awesomeblock}{2pt}{\faQuestionCircle}{black!75}#1\end{awesomeblock}}

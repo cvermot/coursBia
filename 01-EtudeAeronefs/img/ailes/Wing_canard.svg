@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="260"
+   height="220"
+   style="fill-rule:evenodd"
+   viewBox="0 0 600 600"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="wing canard.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   inkscape:window-height="953"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   showgrid="false"
+   inkscape:zoom="2.0969374"
+   inkscape:cx="84.832008"
+   inkscape:cy="113.5162"
+   inkscape:window-x="0"
+   inkscape:window-y="48"
+   inkscape:current-layer="svg2"
+   showguides="true"
+   inkscape:guide-bbox="true"
+   inkscape:document-units="pt" />
+ <defs
+   id="defs4"><inkscape:perspective
+   sodipodi:type="inkscape:persp3d"
+   inkscape:vp_x="0 : 300 : 1"
+   inkscape:vp_y="0 : 1000 : 0"
+   inkscape:vp_z="600 : 300 : 1"
+   inkscape:persp3d-origin="300 : 200 : 1"
+   id="perspective19" />
+  <style
+   type="text/css"
+   id="style6">
+   
+    .str0 {stroke:#1F1A17;stroke-width:0.9}
+    .fil0 {fill:#0093DD}
+    .fil1 {fill:white}
+   
+  </style>
+ 
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  
+  
+  
+ </defs>
+ <path
+   style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.81818199;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   d="M 301.73995,95.130405 L 155.56951,200.8804 L 155.56951,245.78665 L 301.73995,197.2554 L 447.56951,245.78665 L 447.56951,200.8804 L 301.73995,95.130405 z"
+   id="polygon10"
+   sodipodi:nodetypes="ccccccc" /><path
+   style="fill:#ffffff;stroke:#1f1a17;stroke-width:6.81818199;stroke-miterlimit:4;stroke-dasharray:none"
+   d="M -27.052132,516.01324 L 301.25,319.361 L 630.19116,516.01324 L 630.19116,579.83686 L 301.25,462.57809 L -27.052132,579.83686 L -27.052132,516.01324 z"
+   id="polygon12"
+   sodipodi:nodetypes="ccccccc" /><path
+   style="fill:#ffffff;stroke:#1f1a17;stroke-width:4.09090909;stroke-miterlimit:4;stroke-dasharray:none"
+   id="path14"
+   d="M 269.06142,171.65241 C 268.3521,63.29577 291.66779,17.155197 301.58096,17.211301 C 311.81658,17.264255 334.97595,64.241323 334.45283,175.28381 L 335.01192,385.35277 C 335.17739,447.53422 323.90311,545.91753 318.99644,578.52958 L 283.58706,578.52958 C 278.41814,545.11689 267.85289,447.41081 268.13068,385.90475 L 269.06142,171.65241 z"
+   class="fil1 str0"
+   sodipodi:nodetypes="cscscccc" />
+<path
+   style="fill:#ffffff;fill-rule:evenodd;stroke:#1f1a17;stroke-width:4.09090909;stroke-miterlimit:4;stroke-dasharray:none"
+   id="path2387"
+   d="M 293.69751,471.59526 C 293.52575,443.30792 299.17176,431.26258 301.57229,431.27723 C 304.05089,431.29104 309.65905,443.55477 309.53237,472.54326 L 309.66776,527.38337 C 309.70783,543.6163 306.97771,569.30002 305.78954,577.81364 L 297.21497,577.81364 C 295.96329,569.091 293.40486,543.58409 293.47213,527.52746 L 293.69751,471.59526 z"
+   class="fil1 str0"
+   sodipodi:nodetypes="cscscccc" /></svg>

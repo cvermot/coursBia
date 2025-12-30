@@ -1,6 +1,8 @@
 \input{commun/presentations.tex}
 \input{commun/video.tex}
 
+\addbibresource{01-EtudeAeronefs/biblio.bib}
+
 \input{01-EtudeAeronefs/img/Cycle4Temps/ElementsMoteur.tex}
 
 \title[Séance 2 - Constitution aérodyne]{Séance 2 \\ Structure avion \& Motorisation}
@@ -26,8 +28,170 @@
  \end{frame}
  
  \subsection{Différents dispositions de cellules}
- \begin{frame}{Différentes configurations}
+ \begin{frame}{Différentes configurations d'ailes : les multiplans}
+ 	Au début de l'aviation, on multiplie les ailes pour augmenter la portance et la rigidité. On parle de l'air des multiplans (par opposition aux monoplans).
+ 	
+ \begin{columns}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Biplane_wire.pdf}
+  		\legende{Biplan}{wing:Biplane-wire}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Triplane.pdf}
+  		\legende{Triplan}{wing:Triplane}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Quadruplane.pdf}
+  		\legende{Quandriplan}{wing:Quadruplane}	
+		\end{figure}
+ \end{column}
+ \end{columns}
  
+ \begin{columns}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.8\textwidth]{05-Histoire/img/wrightFlyer.jpg}
+  		\legende{Le Wright Flyer}{img:wrightFlyer}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.8\textwidth]{05-Histoire/img/sopwithTriplane.jpg}
+  		\legende{Sopwith Triplane}{img:sopwithTriplane}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{05-Histoire/img/bessonH5.jpg}
+  		\legende{Besson H5}{img:bessonH5}	
+		\end{figure}
+ \end{column}
+ \end{columns}
+ 
+ \end{frame}
+ 
+ \begin{frame}{Différentes configurations d'ailes : le dièdre}
+	Le dièdre est angle formé par le plan de chaque aile et le plan horizontal . Il peut-être positif, nul ou négatif. Le dièdre a un impact sur la stabilité.
+ 
+ \begin{columns}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Monoplane_dihedral.pdf}
+  		\legende{Dièdre positif}{wing:Monoplane-dihedral}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Monoplane_mid.pdf}
+  		\legende{Dièdre nul}{wing:Monoplane-mid}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Monoplane_anhedral.pdf}
+  		\legende{Dièdre négatif}{wing:Monoplane-anhedral}	
+		\end{figure}
+ \end{column}
+ \end{columns}
+ 
+ \end{frame}
+ 
+ \begin{frame}{Différentes configurations d'ailes : différentes configurations}
+	Il existe de nombreuses formes d'ailes. En voici quelques unes.
+ 
+ \begin{columns}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Wing_constant.pdf}
+  		\legende{Aile rectangulaire}{wing:Wing-constant}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Wing_swept.pdf}
+  		\legende{Aile en flèche}{wing:Wing-swept}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Wing_elliptical.pdf}
+  		\legende{Aile elliptique}{wing:Wing-elliptical}	
+		\end{figure}
+ \end{column}
+ \end{columns}
+ \end{frame}
+ 
+ \begin{frame}{Différentes configurations d'ailes : différentes configurations}
+	Il existe de nombreuses formes d'ailes. En voici quelques unes.
+ 
+ \begin{columns}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Wing_tailless_delta.pdf}
+  		\legende{Aile delta}{wing:Wing-tailless-delta}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Wing_ogival_delta.pdf}
+  		\legende{Aile gothique}{wing:Wing-ogival-delta}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/ailes/Wing_canard.pdf}
+  		\legende{Configuration canard}{wing:Wing-canard}	
+		\end{figure}
+ \end{column}
+ \end{columns}
+ \end{frame}
+ 
+ \begin{frame}{Différentes configurations d'ailes : différentes configurations}
+	Il existe de nombreuses formes d'ailes. En voici quelques unes.
+ 
+ \begin{columns}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/mirage2000.jpg}
+  		\legende{Aile delta : chasseur}{img:mirage2000}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/concorde.jpg}
+  		\legende{Aile gothique : Concorde}{img:concorde}	
+		\end{figure}
+ \end{column}
+ \begin{column}{0.33\textwidth}
+ \begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/rutanLongEz.jpg}
+  		\legende{Canard : Long EZ}{img:rutanLongEz}	
+		\end{figure}
+ \end{column}
+ \end{columns}
  \end{frame}
  
  \section{Le moteur 4 temps}
@@ -138,8 +302,15 @@
   		\scalebox{.6}{\begin{minipage}{3cm}
 		\input{01-EtudeAeronefs/img/Cycle4Temps/0-MoteurAnime.tex}
 		\end{minipage}	}	
-		\end{figure}	
-		
+		\end{figure}		
+ \end{frame}
+ 
+ \begin{frame}{Système d'allumage}
+ 
+ \end{frame}
+ 
+ \begin{frame}{Carburateur}
+ 
  \end{frame}
  
  \subsection{Différentes dispositions de cylindres}
@@ -153,17 +324,15 @@
  \begin{frame}{Les principales disposition de cylindres - moteur en ligne}
 	\begin{figure}[H]
   	\scalebox{.3}{\embedvideo*{\includegraphics[page=1, scale=1]{01-EtudeAeronefs/img/flat4}}{01-EtudeAeronefs/img/video/flat4.mp4}}
+  	\legende{Moteur à plat 4 cylindres}{video:flat4}
 	\end{figure}
 \end{frame}
  
  \begin{frame}{Les principales disposition de cylindres - étoile}
  
  \begin{figure}[H]
-  	%\includegraphics[scale=0.7]{01-EtudeAeronefs/img/5cylindresEtoile.png}
-  	%\animategraphics[controls,scale=0.3,loop]{20}{01-EtudeAeronefs/img/5cylindresEtoile/}{00001}{00331}
-  	
-  	\scalebox{.3}{\embedvideo*{\includegraphics[page=1, scale=1]{01-EtudeAeronefs/img/5cylindresEtoile}}{01-EtudeAeronefs/img/video/9cylindresEtoile.mp4}}
-  	
+  	\scalebox{.3}{\embedvideo*{\includegraphics[page=1, scale=1]{01-EtudeAeronefs/img/9cylindresEtoile}}{01-EtudeAeronefs/img/video/9cylindresEtoile.mp4}}
+  	\legende{Moteur en étoile 9 cylindres}{video:9CylindresEtoile}
 	\end{figure}
 	\end{frame}
 	
@@ -201,5 +370,6 @@
 {8 bougies d'allumage}
 {0 bougie d'allumage}
  
+\input{commun/beamerSlidesBiblio.tex} 
  
 \end{document}
