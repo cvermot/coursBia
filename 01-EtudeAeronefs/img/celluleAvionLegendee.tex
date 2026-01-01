@@ -6,6 +6,7 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 
+\newcommand{\afficherTexte}{}
 
 \begin{document}
 
@@ -24,37 +25,37 @@
     %node[below left=-2,align=right,scale=1.4] {reférence};
     
     \draw[arrow] (-3,1) ++ (-.2,.2) --++ (-3,-1.5)
-    node[below left=-2,align=right,scale=1.4] {moteur};
+    node[below left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte moteur\fi};
     
     \draw[arrow] (-4.4,2) ++ (-.2,.2) --++ (-2,-1)
-    node[below left=-2,align=right,scale=1.4] {hélice};
+    node[below left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte hélice\fi};
     
     \draw[arrow] (-0.8,-1.6) ++ (-.2,.2) --++ (-3,-1.5)
-    node[below left=-2,align=right,scale=1.4] {train d'atterissage};
+    node[below left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte train d'atterissage\fi};
     
     \draw[arrow] (3.8,3.5) ++ (-.2,.2) --++ (-1,1.5)
-    node[above left=-2,align=right,scale=1.4] {dérive};
+    node[above left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte dérive\fi};
     
     \draw[arrow] (-1,2.2) ++ (-.2,.2) --++ (-1,1.5)
-    node[above left=-2,align=right,scale=1.4] {cockpit};
+    node[above left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte cockpit\fi};
     
     \draw[arrow] (1,2.2) ++ (-.2,.2) --++ (-2,3)
-    node[above left=-2,align=right,scale=1.4] {fuselage};
+    node[above left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte fuselage\fi};
     
     \draw[arrow] (4.3,3.5) ++ (-.2,.2) --++ (3,-1.5)
-    node[below right=-2,align=right,scale=1.4] {gouverne de\\[-2pt]direction};
+    node[below right=-2,align=right,scale=1.4] {\ifdefined\afficherTexte gouverne de\\[-2pt]direction\fi};
     
     \draw[arrow] (5,1.7) ++ (-.2,.2) --++ (2.25,-1.125)
-    node[below right=-2,align=right,scale=1.4] {gouverne de\\[-2pt]profondeur};
+    node[below right=-2,align=right,scale=1.4] {\ifdefined\afficherTexte gouverne de\\[-2pt]profondeur\fi};
     
     \draw[arrow] (1,0.2) ++ (-.2,.2) --++ (3,0)
-    node[below right=-2,align=right,scale=1.4] {volet};
+    node[below right=-2,align=right,scale=1.4] {\ifdefined\afficherTexte volet\fi};
     
     \draw[arrow] (3.5,-1.2) ++ (-.2,.2) --++ (3,0)
-    node[below right=-2,align=right,scale=1.4] {aileron};
+    node[below right=-2,align=right,scale=1.4] {\ifdefined\afficherTexte aileron\fi};
     
     \draw[arrow] (2.2,-1.5) ++ (-.2,.2) --++ (-6,-3)
-    node[below left=-2,align=right,scale=1.4] {aile};
+    node[below left=-2,align=right,scale=1.4] {\ifdefined\afficherTexte aile\fi};
     
     %\draw (-8,-8) grid (8,8);
 
