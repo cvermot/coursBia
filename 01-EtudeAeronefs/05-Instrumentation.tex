@@ -35,6 +35,12 @@
 	
 	\alert{Un "badin" indique \textbf{toujours une vitesse par rapport à la masse d'air} dans laquelle évolue l'avion. Il ne faut pas confondre cette vitesse avec la vitesse sol que l'on peut obtenir grâce au GPS par exemple.}
 	
+	\begin{figure}[H]
+  		\centering
+    		\includegraphics[width=0.5\textwidth]{01-EtudeAeronefs/img/instruments/schemaBadin.pdf}
+  		\legende{Principe de fonctionnement d'un anémomètre}{img:schemaBadin}
+	\end{figure}	
+	
 	\paragraph{Le tube Pitot}
 	
 	L'anémomètre fonctionne grâce à un capteur appelé \gls{pitot} situé à l'extérieur de l'appareil. Sur les avions légers, ce capteur est habituellement situé sous l'aile. Sur les avions de ligne, ce capteur est généralement situé sur la partie avant du fuselage. Ces positionnements permettent d'éloigner le Pitot des influences aérodynamiques de surfaces portantes.
@@ -79,6 +85,12 @@
 	
 	L'altimètre est donc équipé d'un bouton rotatif qui permet à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
 	
+	\begin{figure}[H]
+  		\centering
+    		\includegraphics[width=0.5\textwidth]{01-EtudeAeronefs/img/instruments/schemaAltimetre.pdf}
+  		\legende{Principe de fonctionnement d'un altimètre}{img:schemaAltimetre}
+	\end{figure}	
+	
 	\info{La pression atmosphérique est mesurée en hectopascal (hPa) en Europe et dans la plupart des pays. Elle est mesurée en pouces de mercure (inHg) aux États-Unis d'Amérique (pression moyenne au niveau de la mer : 1013,25~hPa = 29,92~inHg).}
 	
 	Il existe 3 principales références en altimétrie :
@@ -99,7 +111,7 @@
 	\info{De nos jours, ce calage est très rarement utilisé.}
 	
 	\subparagraph{Le calage à la pression standard}
-	Ce calage est utilisé exclusivement en vol au delà d'une altitude dite de transition (TA, en France généralement 5000~pieds). Pour passer au calage standard, on affiche 1013.25 hPa (la pression moyenne au  niveau de la mer) dans la fenêtre de pression de l'altimètre. Dans ce cas, l'altimètre affichera un niveau de vol (\anglais{flight level} (FL), qui correspond à l'altitude en centaines de pieds (FL55 = 5500~pieds).
+	Ce calage est utilisé exclusivement en vol au delà d'une altitude dite de transition (TA, en France généralement 5000~pieds). Pour passer au calage standard, on affiche 1013.25 hPa (la pression moyenne au  niveau de la mer) dans la fenêtre de pression de l'altimètre. Dans ce cas, l'altimètre affichera un niveau de vol \anglais{flight level} (FL), qui correspond à l'altitude en centaines de pieds (FL55 = 5500~pieds).
 	
 	\subsubsection{Le variomètre}
 	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale (montée/descente) d'un aéronef. Cette vitesse est exprimée en pieds/minutes.
@@ -114,6 +126,12 @@
 	
 	Le variomètre mesure les variations de pression atmosphériques. Pour cela, il est équipé d'une capsule analogue à celle que l'on trouve dans un altimètre. Cette capsule est reliée à la sonde de pression statique. Cet ensemble est scellé dans un compartiment équipé d'un dispositif de fuite calibré. 
 	
+	\begin{figure}[H]
+  		\centering
+    		\includegraphics[width=0.5\textwidth]{01-EtudeAeronefs/img/instruments/schemaVario.pdf}
+  		\legende{Principe de fonctionnement d'un variomètre}{img:schemaVario}
+	\end{figure}	
+	
 	\info{Le variomètre ne peut afficher une vitesse réellement instantanée : il y a un léger délais entre la variation de vitesse verticale et son affichage sur le variomètre.}
 	
 	\subsubsection{L'horizon artificiel}
@@ -125,6 +143,12 @@
 		\horizon{0}{0}
 	\end{tikzpicture}
 	\legende{Un horizon artificiel}{tikz::instrumentsBase}
+	\end{figure}
+	
+	\begin{figure}[H]
+  		\centering
+    		\includegraphics[width=0.5\textwidth]{01-EtudeAeronefs/img/instruments/schemaHorizon.pdf}
+  		\legende{Principe de fonctionnement d'un horizon artificiel}{img:schemaHorizon}
 	\end{figure}
 	
 	\subsubsection{L'indicateur de virage}
