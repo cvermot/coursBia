@@ -31,7 +31,7 @@ jobs:
             CoursBIA_complet.tex
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
-            seance3_HelicesTurbomoteurs.tex
+            seance3_CommandesDeVol.tex
       
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
@@ -41,5 +41,5 @@ jobs:
             CoursBIA_complet.pdf
             seance1_Introduction_ClassificationAeronefs.pdf
             seance2_StructureAvionMotorisation.pdf
-            seance3_HelicesTurbomoteurs.pdf
+            seance3_CommandesDeVol.pdf
             
