@@ -20,6 +20,7 @@
 !/Annexes/img/*/*/*.pdf
 !/Annexes/img/*/*.pdf
 !/Annexes/img/*.pdf
+!/imgPresentations/*.pdf
 *.bbl
 *.bcf
 *.blg
