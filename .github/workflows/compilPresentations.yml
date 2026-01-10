@@ -19,7 +19,8 @@ jobs:
           root_file: | 
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
-            seance3_CommandesDeVol.tex
+            seance3_BaseAerodynamique.tex
+            seance4_CommandesDeVol.tex
       
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
@@ -28,5 +29,6 @@ jobs:
           path:  |
             seance1_Introduction_ClassificationAeronefs.pdf
             seance2_StructureAvionMotorisation.pdf
-            seance3_CommandesDeVol.pdf
+            seance3_BaseAerodynamique.pdf
+            seance4_CommandesDeVol.pdf
             

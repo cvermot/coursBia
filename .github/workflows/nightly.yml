@@ -54,7 +54,8 @@ jobs:
         root_file: | 
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
-            seance3_CommandesDeVol.tex
+            seance3_BaseAerodynamique.tex
+            seance4_CommandesDeVol.tex
 
     - name: Rename PDF files
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -68,8 +69,10 @@ jobs:
         echo "seance1_Introduction_ClassificationAeronefs.pdf renamed to seance1_Introduction_ClassificationAeronefs_handout.pdf"
         mv seance2_StructureAvionMotorisation.pdf seance2_StructureAvionMotorisation_handout.pdf
         echo "seance2_StructureAvionMotorisation.pdf renamed to seance2_StructureAvionMotorisation_handout.pdf"
-        mv seance3_CommandesDeVol.pdf seance3_CommandesDeVol_handout.pdf
-        echo "seance3_CommandesDeVol.pdf renamed to seance3_CommandesDeVol_handout.pdf"
+        mv seance3_BaseAerodynamique.pdf seance3_BaseAerodynamique_handout.pdf
+        echo "seance3_BaseAerodynamique.pdf renamed to seance3_BaseAerodynamique_handout.pdf"
+        mv seance4_CommandesDeVol.pdf seance4_CommandesDeVol_handout.pdf
+        echo "seance4_CommandesDeVol.pdf renamed to seance4_CommandesDeVol_handout.pdf"
 
     - name: Produce LaTeX documents - default font
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -80,7 +83,8 @@ jobs:
             CoursBIA_complet.tex
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
-            seance3_CommandesDeVol.tex
+            seance3_BaseAerodynamique.tex
+            seance4_CommandesDeVol.tex
 
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -99,7 +103,9 @@ jobs:
           seance1_Introduction_ClassificationAeronefs_handout.pdf
           seance2_StructureAvionMotorisation.pdf
           seance2_StructureAvionMotorisation_handout.pdf
-          seance3_CommandesDeVol.pdf
-          seance3_CommandesDeVol_handout.pdf
+          seance3_BaseAerodynamique.pdf
+          seance3_BaseAerodynamique_handout.pdf
+          seance4_CommandesDeVol.pdf
+          seance4_CommandesDeVol_handout.pdf
           coursBIA_sources.zip
         generate_release_notes: true
