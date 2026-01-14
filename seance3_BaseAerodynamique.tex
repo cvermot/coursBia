@@ -1,4 +1,5 @@
 \input{commun/presentations.tex}
+\input{commun/video.tex}
 
 \title[Séance 3 - Aérodynamique]{Séance 3 \\ Aérodynamique}
 
@@ -11,7 +12,8 @@
  \tableofcontents
  \end{frame}
  
- \section{La portance}
+ \section{Portance et trainée}
+ \subsection{La portance}
 	\begin{frame}{Portance - Question}
 	
 	\question{On passe la main par la fenêtre d'une voiture en mouvement. Quels effets peut-on ressentir ?}
@@ -50,8 +52,25 @@
 	
 	\begin{frame}{Relation incidence/portance}
 		\begin{figure}[H]
-  			\includegraphics[scale=0.48]{04-Aerodynamique/img/courbePortance.pdf}
-  			\legende{Courbe de la portance en fonction de l'incidence}{img:courbePortance}	
+  			\includegraphics[scale=0.80]{04-Aerodynamique/img/portanceTraineeFinesse_portance.pdf}
+  			\legende{Courbe de la portance en fonction de l'incidence}{img:portanceTraineeFinesse}	
+		\end{figure}
+	\end{frame}
+	
+	\subsection{La trainée}
+	\begin{frame}{Trainée}
+	En physique, un phénomène souhaité est souvent accompagné d'un ou plusieurs phénomènes parasites, indésirable.
+	
+	\pause
+	
+	En aérodynamique, la portance s'accompagne d'une force qui va résister à l'avancement de l'aéronef : la trainé.
+	
+	\end{frame}
+	
+	\begin{frame}{Relation incidence/trainée}
+		\begin{figure}[H]
+  			\includegraphics[scale=0.80]{04-Aerodynamique/img/portanceTraineeFinesse_trainee.pdf}
+  			\legende{Courbe de la trainée en fonction de l'incidence}{img:portanceTraineeFinesse}	
 		\end{figure}
 	\end{frame}
 	
@@ -96,6 +115,52 @@
 	
 	\end{frame}
 	
+	\begin{frame}{Comment expliquer ces tourbillons ?}
+	\begin{figure}[H]
+	\only<1>{\scalebox{.35}{\includegraphics[page=1, scale=0.4]{04-Aerodynamique/img/vortex}}
+	\legende{Vortex}{img:vortex}}
+  	\only<2>{\scalebox{.35}{\embedvideo*{\includegraphics[page=1, scale=0.4]{04-Aerodynamique/img/vortex}}{04-Aerodynamique/img/vortex.ogv}}
+  	\legende{Vortex}{video:vortex}}
+	\end{figure}
+
+	\pause
+	\end{frame}
+	
+	\begin{frame}{Tourbillons marginaux}
+	\begin{columns}
+ 	\begin{column}{0.4\textwidth}
+		\begin{figure}[H]
+  			\includegraphics[width=1.0\textwidth]{04-Aerodynamique/img/vortexSchema.pdf}
+  			\legende{Création de vortex}{img:vortexSchema}	
+		\end{figure}
+	\end{column}	
+ 	\begin{column}{0.6\textwidth}
+	Les tourbillons marginaux sont crées par "l'aspiration" de l'air en surpression de l'intrados vers l'air en dépression sur l'extrados
+	\pause
+ 	Pour les réduire, on peut :
+ 		\begin{itemize}
+ 			\item augmenter l'allongement de l'aile (planeur, avions de ligne)
+ 			\pause
+ 			\item ajouter des winglets en bout d'aile
+ 		\end{itemize}
+ 	\end{column}
+ 	\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Tourbillons marginaux}
+		\begin{figure}[H]
+  			\includegraphics[width=0.75\textwidth]{04-Aerodynamique/img/Falcon7XWinglet.jpg}
+  			\legende{Falcon 7X avec winglets}{img:Falcon7XWinglet}	
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Finesse}
+		\begin{figure}[H]
+  			\includegraphics[scale=0.80]{04-Aerodynamique/img/portanceTraineeFinesse.pdf}
+  			\legende{Courbe de la finesse de l'incidence}{img:portanceTraineeFinesse}	
+		\end{figure}
+	\end{frame}
+	
 	\begin{frame}{Polaire d'une aile}
 	\begin{columns}
  	\begin{column}{0.4\textwidth}
@@ -115,10 +180,13 @@
  			\item $D$ : portance $C_z$ maximale
  			\item $E$ : décrochage
  		\end{itemize}
+ 	\pause
+ 	\alerte{Le décrochage se fait toujours à la même incidence}
  	\end{column}
  	\end{columns}
 	\end{frame}
 	
+	\section{Les dispositifs hypersustentateurs}
 	\begin{frame}{Les dispositifs hypersustentateurs}
 	On a vu que pour augmenter la portance, un pilote pourrait agir :
 	\begin{itemize}
@@ -127,10 +195,84 @@
 	\end{itemize}
 	
 	\question{Ne pourrait-on pas agir sur la forme ou la surface de l'aile ?}
+	\pause
+	\question{Pourquoi chercher à modifier ces 2 paramètres ?}
 	
 	\end{frame}
 	
-	\begin{frame}{Les volets}
+	\begin{frame}{Becs et volets}
+	\begin{figure}[H]
+  			\includegraphics[width=0.75\textwidth]{04-Aerodynamique/img/voletsBecs.jpg}
+  			\legende{Volets et becs sur un A318}{img:voletsBecs}	
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Différents types dispositifs hypersustentateurs}
+	\begin{columns}
+ 	\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+  			\includegraphics[width=1.0\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletsDeCourbure.pdf}
+  			\legende{Volets de courbure}{img:voletsDeCourbure}	
+		\end{figure}
+	\end{column}	
+ 	\begin{column}{0.5\textwidth}
+		Augmente la courbure, donc le Cz
+ 	\end{column}
+ 	\end{columns}
+ 	\pause
+ 	\begin{columns}
+ 	\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+  			\includegraphics[width=1.0\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletDIntrados.pdf}
+  			\legende{Volets d'intrados}{img:voletDIntrados}	
+		\end{figure}
+	\end{column}	
+ 	\begin{column}{0.5\textwidth}
+		Augmente la courbure, donc le Cz. Augmente énormément la trainée
+ 	\end{column}
+ 	\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Différents types dispositifs hypersustentateurs}
+	\begin{columns}
+ 	\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+  			\includegraphics[width=1.0\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletFowler.pdf}
+  			\legende{Volets Fowler}{img:voletFowler}	
+		\end{figure}
+	\end{column}	
+ 	\begin{column}{0.5\textwidth}
+		Augmente la surface de l'aile
+ 	\end{column}
+ 	\end{columns}
+ 	\pause
+ 	\begin{columns}
+ 	\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+  			\includegraphics[width=1.0\textwidth]{04-Aerodynamique/img/hypersustentateurs/becs.pdf}
+  			\legende{Becs de bord d'attaque}{img:becs}	
+		\end{figure}
+	\end{column}	
+ 	\begin{column}{0.5\textwidth}
+		Augmente la surface de l'aile
+ 	\end{column}
+ 	\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Les dispositifs hypersustentateurs}
+	
+	\question{Pourquoi a t'on rendu ces dispositifs mobiles ?}
+	\pause
+	
+	\begin{itemize}
+		\item Toute augmentation de la portance d'une aile se fait au prix de l'augmentation de la trainée
+		\pause
+		\item On veut pouvoir voler lentement à certaines phases du vol
+		\pause
+		\item Mais rapidement en croisière, en limitant la consommation de carburant
+	\end{itemize}
+	\pause
+	$\Rightarrow$ les dispositifs hypersustenteurs sont utilisés uniquement quand on veux voler plus lentement
 	
 	\end{frame}
  
