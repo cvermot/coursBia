@@ -7,6 +7,11 @@ on:
 jobs:
   Produce_and_prerelease_LaTeX_documents:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+      attestations: write
+      
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
