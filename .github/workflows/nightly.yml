@@ -91,11 +91,6 @@ jobs:
             seance3_BaseAerodynamique.tex
             seance4_CommandesDeVol.tex
 
-    - name: Attest
-      uses: actions/attest-build-provenance@v3
-      with:
-          subject-path: '${{ github.workspace }}/*.pdf'
-
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: softprops/action-gh-release@v1
@@ -119,3 +114,8 @@ jobs:
           seance4_CommandesDeVol_handout.pdf
           coursBIA_sources.zip
         generate_release_notes: true
+
+    - name: Attest
+      uses: actions/attest-build-provenance@v3
+      with:
+          subject-path: '${{ github.workspace }}/*.pdf'
