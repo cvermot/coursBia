@@ -116,6 +116,7 @@ jobs:
         generate_release_notes: true
 
     - name: Attest
+      if: steps.check_commits.outputs.has_commits == 'true'
       uses: actions/attest-build-provenance@v3
       with:
           subject-path: '${{ github.workspace }}/*.pdf'
