@@ -45,42 +45,92 @@
 \newcommand{\exemple}[1]{\begin{awesomeblock}{2pt}{\faSearch}{black!75}#1\end{awesomeblock}}
 \newcommand{\definitionAConnaitre}[1]{\begin{awesomeblock}{2pt}{\faCog}{black!75}#1\end{awesomeblock}}
 
-\newcommand{\qmcBia}[7]{
+%\newcommand{\qmcBia}[8]{
+%%1 : titre slide
+%%2 : numéro de la bonne réponse
+%%3 : Inititulé de la question
+%%4, 5, 6, et 7 : propositions de réponse
+%%8 : explication
+%\begin{frame}{#1}
+%\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+%#3
+%	\begin{enumerate}
+%	\ifnum#2=1
+%		\only<1>{\item #4}
+%		\only<2>{\item \textbf{#4}}
+%	\else
+%		\item #4
+%	\fi
+%	\ifnum#2=2
+%		\only<1>{\item #5}
+%		\only<2>{\item \textbf{#5}}
+%	\else
+%		\item #5
+%	\fi
+%	\ifnum#2=3
+%		\only<1>{\item #6}
+%		\only<2>{\item \textbf{#6}}
+%	\else
+%		\item #6
+%	\fi
+%	\ifnum#2=4
+%		\only<1>{\item #7}
+%		\only<2>{\item \textbf{#7}}
+%	\else
+%		\item #7
+%	\fi
+%	\end{enumerate}
+%	\pause
+%\end{awesomeblock}
+%#8
+%\end{frame}
+%}
+
+\newcommand{\qmcBia}[8]{
 %1 : titre slide
 %2 : numéro de la bonne réponse
 %3 : Inititulé de la question
 %4, 5, 6, et 7 : propositions de réponse
+%8 : explication
+\begin{frame}{#1}
+\begin{awesomeblock}{2pt}{\faQuestion}{black!75}
+#3
+	\begin{enumerate}
+	\item #4
+	\item #5
+	\item #6
+	\item #7
+	\end{enumerate}
+\end{awesomeblock}
+\end{frame}
+
 \begin{frame}{#1}
 \begin{awesomeblock}{2pt}{\faQuestion}{black!75}
 #3
 	\begin{enumerate}
 	\ifnum#2=1
-		\only<1>{\item #4}
-		\only<2>{\item \textbf{#4}}
+		\item \textbf{#4}
 	\else
 		\item #4
 	\fi
 	\ifnum#2=2
-		\only<1>{\item #5}
-		\only<2>{\item \textbf{#5}}
+		\item \textbf{#5}
 	\else
 		\item #5
 	\fi
 	\ifnum#2=3
-		\only<1>{\item #6}
-		\only<2>{\item \textbf{#6}}
+		\item \textbf{#6}
 	\else
 		\item #6
 	\fi
 	\ifnum#2=4
-		\only<1>{\item #7}
-		\only<2>{\item \textbf{#7}}
+		\item \textbf{#7}
 	\else
 		\item #7
 	\fi
 	\end{enumerate}
-	\pause
 \end{awesomeblock}
+#8
 \end{frame}
 }
 
