@@ -279,25 +279,67 @@
 	
 	\subsection{Propulseurs à réaction}
 		\subsubsection{Turboréacteurs}
+		Le turboréacteur est un système de propulsion qui produit une poussée grâce à l'accélération d'un flux d'air entre l'entrée et la sortie du réacteur.
+		
+		Un réacteur simple est composé :
+		\begin{itemize}
+			\item d'une entrée d'air
+			\item d'un compresseur \anglais{compressor} dont le rôle est de comprimer l'air qui rentre dans le réacteur
+			\item d'une chambre de combustion \anglais{combustion chamber} dans lequel le carburant est injecté pour être brulé
+			\item d'une turbine \anglais{turbine} dont le rôle est de récupérer une partie de l'énergie produite par la combustion
+			\item d'une tuyère \anglais{nozzle}, dont le rôle est de canaliser les gaz de combustion, et d'optimiser la poussée.
+		\end{itemize}
 		\begin{figure}[H]
   		\centering
     		\includegraphics[width=0.75\textwidth]{01-EtudeAeronefs/img/turbomachines/turboreacteur-schema.pdf}
-  		\legende{Schéma de fonctionnement d'un turboréacteurs simple flux}{img:turboreacteur-schema}
-		\end{figure}			
+  		\legende{Schéma de fonctionnement d'un turboréacteur}{img:turboreacteur-schema}
+		\end{figure}		
+		
+		L'air admis dans le réacteur est d'abord comprimé par le compresseur, ce qui augmente sa pression et sa température. Le carburant, injecté dans la chambre de combustion, s'enflamme alors spontanément, ce qui provoque une augmentation du volume, de la température et de la vitesse des gaz au sein du réacteur. Ces gaz, éjectés vers l'arrière passent alors au travers de la turbine. Celle ci prélève une partie de l'énergie de gaz pour permettre l'entrainement, via un arbre de transmission, du compresseur à l'entrée du réacteur. Enfin, les gaz sont éjectés à haute vitesse par la tuyère, ce qui produit la poussée qui propulse l'aéronef.
+		
+		Les réacteurs utilisent généralement comme carburant du kérosène, dit Jet A1. %TODO voir si on parle ici de l'intrêt du JetA1 pour l'aviation : sécurité par haut point éclair, point de congélation bas...
 		
 		\paragraph{Réacteur simple flux}
+		Le réacteur simple  flux est la version la plus simple du turboréacteur. Dans cette configuration, l'ensemble du flux d'air traverse la chambre de combustion et l'ensemble du réacteur.
 		\begin{figure}[H]
   		\centering
     		\includegraphics[width=0.75\textwidth]{01-EtudeAeronefs/img/turbomachines/turboreacteur-simpleFlux.pdf}
   		\legende{Schéma d'un turboréacteur simple corps simple flux}{img:turboreacteur-simpleFlux}
 		\end{figure}	
+		
+		Ce type de réacteur est simple mais très bruyant, et sa consommation de carburant est élevée.
+		\paragraph{Réacteur double corps}
+		Pour augmenter l'efficacité des réacteurs, les ingénieurs ont souhaité augmenter le taux de compression dans le réacteur. Pour cela, ils ont ajouté un ensemble compresseur-turbine. Ainsi, le réacteur double corps est composé :
+		\begin{itemize}
+			\item d'un compresseur dit basse pression, 
+			\item suivi d'un compresseur haute pression,
+			\item de la chambre de combustion,
+			\item d'une turbine haute pression,
+			\item d'une turbine basse pression.
+		\end{itemize}	
+		Les axes des 2 ensembles compresseur-turbine sont concentriques : l'axe basse pression passe dans l'axe haute pression.
 	
 		\paragraph{Réacteur double flux}
+		Dans ce type de réacteur, on sépare le flux en 2 parties :
+		\begin{itemize}
+			\item le flux primaire qui traverse le réacteur,
+			\item le flux secondaire, qui contourne le réacteur.
+		\end{itemize}
+		Dans ce type de réacteur, le flux secondaire est mis en mouvement par une grande hélice carénée à l'avant du réacteur : la soufflante \anglais{fan}, elle même entrainée via l'arbre de turbine.	
+		
 		\begin{figure}[H]
   		\centering
     		\includegraphics[width=0.75\textwidth]{01-EtudeAeronefs/img/turbomachines/turboreacteur-doubeFlux.pdf}
   		\legende{Schéma d'un turboréacteur double corps double flux}{img:turboreacteur-doubeFlux}
 		\end{figure}	
+		
+		Dans un réacteur double flux, la majorité de la poussée (environ 80~\%) est produite par le flux secondaire.
+		
+		Ce type de réacteur est bien plus économique en carburant qu'un simple flux et est bien plus silencieux.
+		
+		Un réacteur double flux est toujours composé d'un réacteur double corps, car la soufflante est entrainée par l'axe du compresseur basse pression.
+		
+		%TODO taux de dilution
 		
 		\subsubsection{Statoréacteurs}
 		Le statoréacteur \anglais{ramjet} est un système de propulsion qui produit sa poussée grâce à la combustion du kérosène dans un tube sans aucune pièce mobile (d'où le préfixe \textit{stato}). Sans aucune pièce mobile, c'est le propulseur le plus simple.
