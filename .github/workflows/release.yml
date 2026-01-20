@@ -1,4 +1,4 @@
-name: Compilation LaTeX - Nigthly
+name: Compilation LaTeX - Release
 on: 
   workflow_dispatch: # Permet le lancement manuel
 
