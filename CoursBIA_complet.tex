@@ -191,7 +191,10 @@
 
 	Enfin, ce document est destiné à évoluer. Par ailleurs, je suis ouvert à toutes critiques ou commentaires constructifs concernant ce document, sur le fond comme sur la forme. N'hésitez donc pas à me contacter concernant toute erreur, omission, faute d'orthographe ou manque dans ce documents, préférentiellement via la page \href{https://github.com/cvermot/coursBia/discussions}{Discussions} du projet \href{https://github.com/cvermot/coursBia}{GitHub}\footnote{\url{https://github.com/cvermot/coursBia}} de ce cours (la création d'une discussion nécessite un compte sur GitHub). Alternativement, vous pouvez également me contacter via l'adresse suivante : bia@vermot.net.
 	
+	\ifdefined\activerrelease 
+	\else
 	\section{Organisation du cours sur l'année}
+	\fi
 	
 	\input{./img/organisationAnnuelle.tex}
 	
@@ -257,6 +260,8 @@
 		\input{02-Navigation/02-Reglementation.tex}
 		\input{02-Navigation/03-SecuriteDesVols.tex}
 	
+	\ifdefined\activerrelease 
+	\else
 	\chapter{Météorologie et aérologie}
 	\label{meteo}
 		\input{03-Meteo/01-Atmosphere.tex}
@@ -264,6 +269,7 @@
 		\input{03-Meteo/03-Vents.tex}
 		\input{03-Meteo/04-MassesDAir.tex}
 		\input{03-Meteo/05-PhenomenesDangereux.tex}
+	\fi
 	
 	\chapter{Aérodynamique, aérostatique et principes du vol}
 	\label{aerodynamique}
@@ -273,14 +279,19 @@
 		\input{04-Aerodynamique/03-Aerostation.tex}
 		\input{04-Aerodynamique/04-VolSpatial.tex}
 	
+	\ifdefined\activerrelease 
+	\else
 	\chapter{Histoire et culture de l'aéronautique et du spatial}
 	\label{histoire}
 		\input{05-Histoire/01-MytheALaRealite.tex}
 		\input{05-Histoire/02-PrecurseursAuxPionniers.tex}
 		\input{05-Histoire/03-EnjeuxMilitaires.tex}
 		\input{05-Histoire/04-EnjeuxEconomiques.tex}
+	\fi
 		
 	\appendix
+	\ifdefined\activerrelease 
+	\else
 	\chapter{Dossier de vol}	
 		\section{Log de navigation}
 		\section{Masse et centrage}
@@ -288,23 +299,26 @@
 			\subsection{TEMSI}
 			\subsection{WINTEM}
 			\subsection{TAF et METAR}
+	\fi
 	
 	\chapter{Fiches pratiques}
-	\input{Annexes/tableauDesUnites.tex}
+		\input{Annexes/tableauDesUnites.tex}
 	
-	\section{L'alphabet radio international}
-	\input{Annexes/tableauAlphabetRadio.tex}
+		\input{Annexes/tableauAlphabetRadio.tex}
 	
+	\ifdefined\activerrelease 
+	\else
 	\chapter{Des questions pour pousser la réflexion !}
-	\section{Étude des aéronefs}
-	\question{"Le parachute est-il un aéronef ? Pourquoi ?" (en parlant du parachute coupole)}
+		\section{Étude des aéronefs}
+		\question{"Le parachute est-il un aéronef ? Pourquoi ?" (en parlant du parachute coupole)}
+	\fi
 	
 	\chapter{Extraits de documents}
-	\input{Annexes/cartesOaci.tex}
+		\input{Annexes/cartesOaci.tex}
 
 	
 %\chapter{Table des matières}
-	\setcounter{tocdepth}{5}
+	\setcounter{tocdepth}{7}
 	\tableofcontents
 	
 	\listoffigures

@@ -1,0 +1,94 @@
+name: Compilation LaTeX - Nigthly
+on: 
+  workflow_dispatch: # Permet le lancement manuel
+
+jobs:
+  Produce_and_Release_LaTeX_documents:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      attestations: write
+      
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up environment
+      run: |
+        # Format: release-YYYY.MM.DD-HH.mm
+        echo "NOW=release-$(date +'%Y.%m.%d-%H.%M')" >> $GITHUB_ENV
+
+    - name: Compile LaTeX document - OpenDyslexic font
+      uses: xu-cheng/latex-action@v3
+      with:
+        #latexmk_use_lualatex: true
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerrelease}{}"
+        root_file: CoursBIA_complet.tex
+        
+    - name: Produce LaTeX documents - beamer handout
+      uses: xu-cheng/latex-action@v3
+      with:
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
+        root_file: | 
+            seance1_Introduction_ClassificationAeronefs.tex
+            seance2_StructureAvionMotorisation.tex
+            seance3_BaseAerodynamique.tex
+            seance4_CommandesDeVol.tex
+
+    - name: Rename PDF files
+      id: rename
+      shell: bash
+      run: |
+        # Renommer le fichier PDF avec font OpenDyslexic
+        mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
+        echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf"
+        mv seance1_Introduction_ClassificationAeronefs.pdf seance1_Introduction_ClassificationAeronefs_handout.pdf
+        echo "seance1_Introduction_ClassificationAeronefs.pdf renamed to seance1_Introduction_ClassificationAeronefs_handout.pdf"
+        mv seance2_StructureAvionMotorisation.pdf seance2_StructureAvionMotorisation_handout.pdf
+        echo "seance2_StructureAvionMotorisation.pdf renamed to seance2_StructureAvionMotorisation_handout.pdf"
+        mv seance3_BaseAerodynamique.pdf seance3_BaseAerodynamique_handout.pdf
+        echo "seance3_BaseAerodynamique.pdf renamed to seance3_BaseAerodynamique_handout.pdf"
+        mv seance4_CommandesDeVol.pdf seance4_CommandesDeVol_handout.pdf
+        echo "seance4_CommandesDeVol.pdf renamed to seance4_CommandesDeVol_handout.pdf"
+
+    - name: Produce LaTeX documents - default font
+      uses: xu-cheng/latex-action@v3
+      with:
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\activerrelease}{}"
+        root_file: | 
+            CoursBIA_complet.tex
+            seance1_Introduction_ClassificationAeronefs.tex
+            seance2_StructureAvionMotorisation.tex
+            seance3_BaseAerodynamique.tex
+            seance4_CommandesDeVol.tex
+
+    - name: Create Release and Upload Assets
+      uses: softprops/action-gh-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.NOW }}
+        name: ${{ env.NOW }}
+        draft: false
+        prerelease: false
+        files: |
+          CoursBIA_complet.pdf
+          CoursBIA_complet_OpenDyslexic.pdf
+          seance1_Introduction_ClassificationAeronefs.pdf
+          seance1_Introduction_ClassificationAeronefs_handout.pdf
+          seance2_StructureAvionMotorisation.pdf
+          seance2_StructureAvionMotorisation_handout.pdf
+          seance3_BaseAerodynamique.pdf
+          seance3_BaseAerodynamique_handout.pdf
+          seance4_CommandesDeVol.pdf
+          seance4_CommandesDeVol_handout.pdf
+          coursBIA_sources.zip
+        generate_release_notes: true
+
+    - name: Attest
+      uses: actions/attest-build-provenance@v3
+      with:
+          subject-path: '${{ github.workspace }}/*.pdf'
