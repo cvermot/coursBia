@@ -3,10 +3,24 @@
 ## Supports présentés en séance
 
 ### Séance 1 : Introduction
+- Classification des aéronefs
+  
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs_handout.pdf)
 
 ### Séance 2 : Structure aérodyne et motorisation
+- Structure générale d'un avion
+- Cycles 4 temps
+- Moteur à explosion, réacteur
+  
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation_handout.pdf)
 
 ### Séance 3 : Bases d'aérodynamique
+- Portance
+- Trainée
+- Polaire d'une aile
+  
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique_handout.pdf
+)
 
 ## Cours
 
