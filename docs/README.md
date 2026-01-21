@@ -4,6 +4,7 @@
 - Classification des aéronefs
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs_handout.pdf)
+
 [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
 ## Séance 2 : Structure aérodyne et motorisation
@@ -13,10 +14,15 @@
 - Réacteur
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation_handout.pdf)
+
 [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
+
 [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
+
 [Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
+
 [Vidéo : le turboréacteur](https://www.youtube.com/watch?v=2iM9k16aekw&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=57&pp=iAQB0gcJCYcKAYcqIYzv) / [Complément : Démarrage d'un turboréacteur](https://www.youtube.com/watch?v=SzPEMw_LhR8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=56&pp=iAQB)
+
 [Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
 
 ## Séance 3 : Bases d'aérodynamique
