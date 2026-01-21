@@ -10,7 +10,8 @@
 ### Séance 2 : Structure aérodyne et motorisation
 - Structure générale d'un avion
 - Cycles 4 temps
-- Moteur à explosion, réacteur
+- Moteur à explosion
+- Réacteur
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation_handout.pdf)
 
