@@ -1,3 +1,4 @@
 theme: jekyll-theme-leap-day
-title: "Brevet d'Initiation Aéronautique (BIA)"
-description: "Ressources et diaporamas des séances"
+title: Brevet d'Initiation Aéronautique (BIA)
+description: Ressources et diaporamas des séances
+show_downloads: false
