@@ -34,7 +34,7 @@
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique.pdf
 )
 
-[Simulation : la polaire](./polaireAile.html)
+[Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
 
 [Vidéo : la sustentation](https://www.youtube.com/watch?v=0b9NqYUM0M4&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=52&pp=iAQB)
 
@@ -65,6 +65,8 @@ Les ressources suivantes permettent de compléter le cours et de préparer l'exa
 # A propos
 
 ## Licence
-Les documents présentés ici sont publiés sous licence Creative Common CC-BY-SA 4.0
+Les documents présentés ici sont publiés sous licence Creative Common CC-BY-SA 4.0, pour les documents produits dans le dépot.
 
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Les autres documents restent la propriété de leurs auteurs orignaux
