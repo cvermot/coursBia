@@ -25,6 +25,7 @@
 
 [Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
 
+[Vidéo : statoréacteur, pulsoréacteur](https://www.youtube.com/watch?v=6Q-0b2OnQZ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=5&pp=iAQB0gcJCYcKAYcqIYzv)
 ## Séance 3 : Bases d'aérodynamique
 - Portance
 - Trainée
@@ -33,7 +34,21 @@
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique_handout.pdf
 )
 
-[La polaire](./polaireAile.html)
+[Simulation : la polaire](./polaireAile.html)
+
+[Vidéo : la sustentation](https://www.youtube.com/watch?v=0b9NqYUM0M4&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=52&pp=iAQB)
+
+[Vidéo : étude de l'air en mouvement autour d'un objet](https://www.youtube.com/watch?v=hJaDxiKBEk0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=51&pp=iAQB)
+
+[Vidéo : profil de l'aile](https://www.youtube.com/watch?v=W-fp0Vj62RU&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=50&pp=iAQB0gcJCYcKAYcqIYzv)
+
+[Vidéo : écoulement de l'air autour d'une aile infinie](https://www.youtube.com/watch?v=lQFVt1US2DE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=49&pp=iAQB)
+
+[Vidéo : écoulement de l'air autour d'une aile réelle](https://www.youtube.com/watch?v=auBvjmC2emI&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=48&pp=iAQB)
+
+[Vidéo : la polaire](https://www.youtube.com/watch?v=jVIlY4SFK40&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=46&pp=iAQB)
+
+[Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
 
 # Cours
 
