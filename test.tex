@@ -2,6 +2,7 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{animate}
 
 
 
@@ -15,4 +16,30 @@ Test test test Test test test Test test test Test test test Test test test Test 
   		
 		\end{figure}
 	Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test Test test test 
+	
+	
+\input{01-EtudeAeronefs/img/instruments/instruments.tex}
+
+\begin{figure}[H]	
+	\centering
+	\altiAnimReglageQnhHpa{360}{1500}{970}{1035}
+	\end{figure}
+	
+	\begin{figure}[H]	
+	\centering
+	\begin{tikzpicture}
+		\alti{1500}{29.3}
+	\end{tikzpicture}
+	\end{figure}
+	
+	\begin{figure}[H]	
+	\centering
+	\begin{tikzpicture}
+		\altiHpa{1500}{1013}
+	\end{tikzpicture}
+	\end{figure}
+	
+	
+
+	
 \end{document}

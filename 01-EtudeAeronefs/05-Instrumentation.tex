@@ -73,9 +73,9 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-		\alti{4500}{29.92}
+		\altiHpa{4500}{1015}
 	\end{tikzpicture}
-	\legende{Un altimètre}{tikz:instrumentsBase}
+	\legende{Un altimètre, calé à 1015~hPa}{tikz:instrumentsBase}
 	\end{figure}
 	
 	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
@@ -99,6 +99,14 @@
 		\item le \acrshort{qfe}
 		\item le calage standard 1013,25~hPa
 	\end{itemize}
+	
+	\astuce{Quand on augmente la valeur du QNH affichée dans la fenêtre de réglage, l'altitude indiquée par l'altimètre augmente. \\ Dans l'exemple ci-dessus, le pilote passe le réglage de 970 à 1035~hPa.\begin{figure}[H]	
+	\centering
+	\altiAnimReglageQnhHpa{360}{1500}{970}{1035}
+	\legende{Effet du réglage du QNH}{img:schemaAltimetre}
+	\end{figure}}
+	
+	
 	
 	\subparagraph{Le calage au QNH}
 	Le calage au QNH indique une hauteur par rapport au niveau moyen de la mer. Avec ce calage, lorsque l'avion est au sol, l'altimètre affiche l'altitude du terrain.
@@ -178,7 +186,7 @@
 	
 	\subsubsection{Le conservateur de cap}
 	
-	Le \gls{conservateur de cap} \anglais{Heading indicator}, également appelé directionnel, est un instrument gyroscopique qui permet d'afficher le cap suivi par l'aéronef. Il s'utilise en complément de la boussole et offre un confort d'usage supérieur à celle ci. En effet, la boussole est peut devenir difficilement lisible en cas turbulences ou de vibrations, car son indication sera instable. On recale le conservateur de cap sur boussole dans les phases de vol stables.
+	Le \gls{conservateur de cap} \anglais{heading indicator}, également appelé directionnel, est un instrument gyroscopique qui permet d'afficher le cap suivi par l'aéronef. Il s'utilise en complément de la boussole et offre un confort d'usage supérieur à celle ci. En effet, la boussole est peut devenir difficilement lisible en cas turbulences ou de vibrations, car son indication sera instable. On recale le conservateur de cap sur boussole dans les phases de vol stables.
 	
 	\begin{figure}[H]	
 	\centering
@@ -218,7 +226,7 @@
 	\resizebox{0.5\width}{0.5\height}{
 		\dessinerTdB{vitesse=120, 
 		altitude=4500,
-		calageAltitude=29.92,
+		calageAltitude=1013,
 		vz = -300,
 		cap = 180,
 		assiette = -12,

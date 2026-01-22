@@ -7,6 +7,7 @@
 
 \pgfdeclareimage{altCase}{01-EtudeAeronefs/img/instruments/alt/alt_case.pdf}
 \pgfdeclareimage{altFace1}{01-EtudeAeronefs/img/instruments/alt/alt_face_1.pdf}
+\pgfdeclareimage{altFaceHpa1}{01-EtudeAeronefs/img/instruments/alt/alt_face_hpa_1.pdf}
 \pgfdeclareimage{altFace2}{01-EtudeAeronefs/img/instruments/alt/alt_face_2.pdf}
 \pgfdeclareimage{altFace3}{01-EtudeAeronefs/img/instruments/alt/alt_face_3.pdf}
 \pgfdeclareimage{altHand1}{01-EtudeAeronefs/img/instruments/alt/alt_hand_1.pdf}
@@ -51,6 +52,75 @@
     	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
     	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
+
+%altimètre
+%   -paramètre 1 : altitude en pieds
+%   -paramètre 2 : calage en hPa
+\def\altiHpa#1#2{
+	\fill[transparent] (0,0) circle (3) ;
+	\node[rotate=(#2-925)/(1105-925)*360] {\pgfbox[center,center]{\pgfuseimage{altFaceHpa1}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{altFace2}}};
+  	\node[rotate=-{(Mod(#1/10,10000))*(36/1000)}] {\pgfbox[center,center]{\pgfuseimage{altFace3}}};
+  	\node[rotate=-{(Mod(#1,1000))*(360/1000)}] {\pgfbox[center,center]{\pgfuseimage{altHand2}}};
+    	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
+    	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
+
+
+%altimètre
+%   -paramètre 1 : nombre de frames
+%   -paramètre 2 : altitude de départ
+%   -parametre 3 : pression de départ
+%	-paramètre 4 : pression d'arrivée
+\def\altiAnimReglageQnhHg#1#2#3#4{
+	\ifdefined\activeranimations 
+	\newcommand{\nbFramesAnime}{#1}
+	\else
+	\newcommand{\nbFramesAnime}{1}
+	\fi
+
+	%\newcommand{\nbFramesAnime}{#1}
+	\newcommand{\piedsParUniteDePression}{876.37} % 1 inHg = 876,37 pieds
+	\newcommand{\altiDebut}{#2}
+	\newcommand{\pressionDebut}{#3}
+	\newcommand{\pressionFin}{#4}
+	\newcommand{\pasPression}{(\pressionFin-\pressionDebut)/\nbFramesAnime}
+	\begin{animateinline}[autoplay,loop,controls]{60}
+	\multiframe{\nbFramesAnime}{i=0+1}{%
+	\begin{tikzpicture}
+		\alti{(\altiDebut+(\pasPression*\i*\piedsParUniteDePression))}{(\pressionDebut+\pasPression*\i)};
+	\end{tikzpicture}
+	}
+	\end{animateinline}
+}
+
+%altimètre
+%   -paramètre 1 : nombre de frames
+%   -paramètre 2 : altitude de départ
+%   -parametre 3 : pression de départ
+%	-paramètre 4 : pression d'arrivée
+\def\altiAnimReglageQnhHpa#1#2#3#4{
+	\ifdefined\activeranimations 
+	\newcommand{\nbFramesAnime}{#1}
+	\else
+	\newcommand{\nbFramesAnime}{1}
+	\fi
+
+	%\newcommand{\nbFramesAnime}{#1}
+	\newcommand{\piedsParUniteDePression}{28} % 1 hPa = 28 pieds
+	\newcommand{\altiDebut}{#2}
+	\newcommand{\pressionDebut}{#3}
+	\newcommand{\pressionFin}{#4}
+	\newcommand{\pasPression}{(\pressionFin-\pressionDebut)/\nbFramesAnime}
+	\begin{animateinline}[autoplay,loop,controls]{60}
+	\multiframe{\nbFramesAnime}{i=0+1}{%
+	\begin{tikzpicture}
+		\altiHpa{(\altiDebut+(\pasPression*\i*\piedsParUniteDePression))}{(\pressionDebut+\pasPression*\i)};
+	\end{tikzpicture}
+	}
+	\end{animateinline}
 }
 
 %consevateur de cap
@@ -250,7 +320,7 @@
         \end{scope}
         
         \begin{scope}[xshift=14cm, yshift=0cm]
-            \alti{\tdbAltitude}{\tdbCalageAltitude}
+            \altiHpa{\tdbAltitude}{\tdbCalageAltitude}
         \end{scope}
         
         \begin{scope}[xshift=0cm, yshift=-7cm]
