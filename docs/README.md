@@ -3,7 +3,7 @@
 ## Séance 1 : Introduction
 - Classification des aéronefs
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs_handout.pdf)
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs.pdf)
 
 [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
@@ -13,7 +13,7 @@
 - Moteur à explosion
 - Réacteur
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation_handout.pdf)
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation.pdf)
 
 [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
 
@@ -31,7 +31,7 @@
 - Trainée
 - Polaire d'une aile
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique_handout.pdf
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique.pdf
 )
 
 [Simulation : la polaire](./polaireAile.html)
