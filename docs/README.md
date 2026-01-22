@@ -33,6 +33,8 @@
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique_handout.pdf
 )
 
+[La polaire](./polaireAile.html)
+
 # Cours
 
 # Ressources externes
