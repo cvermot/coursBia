@@ -109,15 +109,15 @@
     #banner #logo {
         order: 1;
         min-width: 30px;
-        min-height: 30px;
+        min-height: 40px;
     }
 
     .navbar {
         order: 2;
         width: 100%;
         margin-left: 0 !important;
-        gap: 10px !important;
-        padding-top: 5px !important;
+        gap: 3px !important;
+        padding-top: 2px !important;
     }
 
     .menu-item .button {
