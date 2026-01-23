@@ -96,3 +96,51 @@
 .menu-item:hover .submenu {
     display: block;
 }
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    #banner {
+        flex-wrap: wrap !important;
+        padding: 5px 10px !important;
+        height: auto !important;
+        min-height: 35px !important;
+    }
+
+    #banner #logo {
+        order: 1;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    .navbar {
+        order: 2;
+        width: 100%;
+        margin-left: 0 !important;
+        gap: 10px !important;
+        padding-top: 5px !important;
+    }
+
+    .menu-item .button {
+        padding: 3px 8px !important;
+        font-size: 12px !important;
+    }
+
+    .submenu {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        padding: 5px 8px !important;
+    }
+
+    .navbar {
+        gap: 8px !important;
+    }
+
+    .menu-item .button {
+        padding: 2px 6px !important;
+        font-size: 11px !important;
+    }
+}
