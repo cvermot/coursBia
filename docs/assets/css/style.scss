@@ -103,21 +103,22 @@
         flex-wrap: wrap !important;
         padding: 5px 10px !important;
         height: auto !important;
-        min-height: 35px !important;
+        min-height: 45px !important;
+        gap: 0px !important;
     }
 
     #banner #logo {
         order: 1;
         min-width: 30px;
-        min-height: 40px;
+        min-height: 30px;
     }
 
     .navbar {
         order: 2;
         width: 100%;
         margin-left: 0 !important;
-        gap: 3px !important;
-        padding-top: 2px !important;
+        gap: 10px !important;
+        padding-top: 5px !important;
     }
 
     .menu-item .button {
