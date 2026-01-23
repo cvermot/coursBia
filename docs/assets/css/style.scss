@@ -3,11 +3,6 @@
 
 @import 'jekyll-theme-leap-day';
 
-header {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
 #banner {
     background:#66ccff !important;
     border: 1px solid #99ddff;
@@ -18,8 +13,6 @@ header {
     padding: 2px 20px !important;
     height: 45px !important;
     min-height: auto !important;
-    position: relative !important;
-    margin-top: -5px !important;
 }
 
 #banner #logo{
@@ -107,40 +100,44 @@ header {
 /* Responsive pour mobile */
 @media (max-width: 768px) {
     #banner {
-        justify-content: center !important;
+        flex-wrap: wrap !important;
         padding: 5px 10px !important;
         height: auto !important;
         min-height: 40px !important;
-        margin-top: 0 !important;
+        gap: 0px !important;
     }
 
     #banner #logo {
-        display: none;
+        order: 1;
+        min-width: 30px;
+        min-height: 30px;
     }
 
     .navbar {
+        order: 2;
+        width: 100%;
         margin-left: 0 !important;
-        gap: 12px !important;
+        gap: 10px !important;
+        padding-top: 5px !important;
     }
 
     .menu-item .button {
-        padding: 6px 14px !important;
-        font-size: 13px !important;
+        padding: 3px 8px !important;
+        font-size: 12px !important;
     }
 
     .submenu {
-        min-width: 160px;
+        min-width: 150px;
     }
 }
 
 @media (max-width: 480px) {
     #banner {
         padding: 5px 8px !important;
-        min-height: 45px !important;
     }
 
     .navbar {
-        gap: 10px !important;
+        gap: 8px !important;
     }
 
     .menu-item .button {
