@@ -17,11 +17,21 @@
 @keyframes slideDown {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-15px);
     }
 }
 /* Navigation déroulante */
@@ -78,10 +88,6 @@
     left: 0;
     border-radius: 4px;
     margin: 5px 0 0 0 !important;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none;
 }
 
 .submenu a {
@@ -98,18 +104,15 @@
     border-radius: 4px;
 }
 
-/* Afficher le submenu au survol du menu-item avec délai de fermeture */
+/* Afficher le submenu au survol avec animation */
 .menu-item:hover .submenu {
     display: block;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+    animation: slideDown 1.0s ease forwards;
 }
-.menu-item {
-    transition: none;
-}
-.submenu {
-    transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease 0.2s;
+
+/* Masquer le submenu avec délai quand on quitte le menu-item */
+.menu-item .submenu {
+    animation: slideUp 1.0s ease forwards 0.5s;
 }
 
 /* STYLES UNIQUEMENT POUR PC - > 768px */
