@@ -1,5 +1,11 @@
 name: Compilation LaTeX - Cours complet
-on: [push]
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
 jobs:
   Produce_LaTeX_document:
     runs-on: ubuntu-latest
