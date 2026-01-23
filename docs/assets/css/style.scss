@@ -107,12 +107,12 @@
 /* Afficher le submenu au survol avec animation */
 .menu-item:hover .submenu {
     display: block;
-    animation: slideDown 1.0s ease forwards;
+    animation: slideDown 0.5s ease forwards;
 }
 
 /* Masquer le submenu avec délai quand on quitte le menu-item */
 .menu-item .submenu {
-    animation: slideUp 1.0s ease forwards 0.5s;
+    animation: slideUp 0.5s ease forwards 0.5s;
 }
 
 /* STYLES UNIQUEMENT POUR PC - > 768px */
