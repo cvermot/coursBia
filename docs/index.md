@@ -63,11 +63,11 @@ Les ressources suivantes permettent de compléter le cours et de préparer l'exa
 - [Annales-BIA](https://annales-bia.fr/) : historique des QCM des examens BIA depuis 1996. Les QCM depuis 2015 sont particulièrement intéressants car conformes au programme en vigeur.
 
 # A propos
-Pour toute question ou suggestion, vous pouvez me contacter à l'adresse : <object class="email" width="33" height="24" data="./assets/css/biaVermot.svg" type="image/svg+xml"></object>
+Pour toute question ou suggestion, vous pouvez me contacter à l'adresse : <img src="./assets/images/biaVermot.svg" alt="email, contactez moi" width="80"/>
 
 ## Licence
 Les documents présentés ici sont publiés sous licence Creative Common CC-BY-SA 4.0, pour les documents produits dans le dépot.
 
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Les autres documents restent la propriété de leurs auteurs orignaux
+Les autres documents restent la propriété de leurs auteurs originaux
