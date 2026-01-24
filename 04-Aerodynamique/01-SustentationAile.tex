@@ -46,6 +46,14 @@ Toute aile est composée de plusieurs parties distinctes :
 	\begin{center}
 		\huge{$Z = \dfrac{1}{2}\rho S V^2 Cz$}
 	\end{center}
+	
+	avec : \begin{itemize}
+	\item $\rho$ : densité de l'air en $kg/m^3$ ($\sim 1,2~kg/m^3$),
+	\item $S$ : surface de l'aile en $m^2$,
+	\item $V$ : vitesse en $m/s$,
+	\item $Cz$ : coefficient de portance (sans unité), valeur liée à la forme de l'aile et à l'incidence.
+	\end{itemize}
+	
 
 \subsection{La trainée}
 \begin{figure}[H]
@@ -58,6 +66,15 @@ Toute aile est composée de plusieurs parties distinctes :
 	\begin{center}
 		\huge{$X = \dfrac{1}{2}\rho S V^2 Cx$}
 	\end{center}
+	
+	\begin{itemize}
+	\item $\rho$ : densité de l'air en $kg/m^3$ ($\sim 1,2~kg/m^3$),
+	\item $S$ : surface de l'aile en $m^2$,
+	\item $V$ : vitesse en $m/s$,
+	\item $Cx$ : coefficient de trainée (sans unité), valeur liée à la forme de l'aile et à l'incidence.
+	\end{itemize}
+	
+	On constate que l'expression de la portance et de la trainée sont identiques au facteur $Cx$ et $Cz$ près. La portance et la trainée évoluent donc pendant le vol de la même façon.
 	
 \subsection{Finesse}
 
@@ -80,19 +97,38 @@ Obtenue en traçant la portance $C_z$ en fonction de la trainée $C_x$. On peut 
 
 \subsection{Dispositifs hypersustentateurs et destructeurs de portance}
 	\subsubsection{Dispositifs hypersustentateurs}
-		\paragraph{Volets}
+	Lors des phases d'atterrissage et de décollage, il est souhaitable de pouvoir évoluer à la vitesse la plus faible possible.	On peut obtenir cela grâce à une plus grande surface d'aile, ou concevoir l'aile pour augmenter son $Cz$. Mais, comme on l'a vu, toute augmentation du coefficient de portance ou de la surface de l'aile se fait au prix d'une augmentation de la trainée, indésirable en croisière (réduction des performances de montée, de vitesse maximale, augmentation de la consommation...).
+	
+	La solution consiste à modifier ces 2 paramètres (surface, $Cs$) uniquement quand on souhaite pouvoir voler moins vite. Cela est obtenu grâce aux dispositifs hypersustentateurs, qui sont de 2 types : \begin{itemize}
+	\item volets \anglais{flaps}, situés sur ou à proximité du bord de fuite,
+	\item becs \anglais{slats}, situés sur le bord d'attaque.
+	\end{itemize}
+	
+	Ces dispositifs sont actionnés (par l'équipage, ou dans certains cas, automatiquement) pour le décollage, sont rentrés durant la montée, puis sont ressortis en vue de l'atterrissage. Sur la plupart des appareils, il est possible de sélectionner plusieurs "niveaux" de sortie de ces dispositifs. Ils sont généralement sortis de façon plus importante pour l'atterrissage, phase ou l'augmentation de la trainée est moins problématique (au décollage, la trainée grève les performances de montée).
+	
+	La commande est transmise à ces surfaces par un jeu de tringles, ou sont motorisés par des systèmes électriques ou hydrauliques. \\
+	
+	\definition{Lorsqu'un appareil a tous ses dispositifs hypersustentateurs rentrés, on dit qu'il est en  \textbf{\gls{configuration lisse}}.}
+	
+		\paragraph{\Gls{volet}s}
+			\subparagraph{Volets de courbure}
+			Le type le plus simple sont les volets de courbure. Ces volets modifient le profil de l'aile en augmentant la courbure de l'aile à proximité du bord de fuite. Ces volets augmentent sensiblement le coefficient de portance, mais aussi la trainée.
 		\begin{figure}[H]
 			\centering
   			\includegraphics[width=0.4\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletsDeCourbure.pdf}
   			\legende{Volets de courbure}{img:voletsDeCourbure}	
 		\end{figure}
 		
+			\subparagraph{Volets d'intrados}
+		Les volets d'intrados sont moins fréquemment utilisés sur les avions modernes. Ils augmentent la portance mais également la trainée dans des proportions très importantes. Ce type de volet est souvent assimilé à des servofreins. 
 		\begin{figure}[H]
 			\centering
   			\includegraphics[width=0.4\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletDIntrados.pdf}
   			\legende{Volets d'intrados}{img:voletDIntrados}	
 		\end{figure}
 		
+			\subparagraph{Volets Fowler}
+			Le volet Fowler (du nom de son inventeur américain Harlan Fowler) se déploie sur le bord de fuite. Il augmente donc la portance en influant sur la surface de l'aile.
 		\begin{figure}[H]
 			\centering
   			\includegraphics[width=0.4\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletFowler.pdf}
@@ -105,7 +141,8 @@ Obtenue en traçant la portance $C_z$ en fonction de la trainée $C_x$. On peut 
   			\legende{Volets Fowler}{img:voletFowlerAFente}	
 		\end{figure}
 		
-		\paragraph{Becs}
+		\paragraph{\Gls{bec}s}
+		Les becs de bord d'attaque sont des surfaces qui sortent à l'avant de l'aile. Ils augmente la surface de l'aile.
 		\begin{figure}[H]
 			\centering
   			\includegraphics[width=0.4\textwidth]{04-Aerodynamique/img/hypersustentateurs/becs.pdf}
