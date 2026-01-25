@@ -75,21 +75,23 @@
 	\begin{tikzpicture}
 		\altiHpa{4500}{1015}
 	\end{tikzpicture}
-	\legende{Un altimètre, calé à 1015~hPa}{tikz:instrumentsBase}
+	\legende{Un altimètre, calé à 1015~hPa et affichant 4500 pieds}{tikz:instrumentsBase}
 	\end{figure}
 	
-	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
+	\paragraph{Lecture de l'altimètre}
 	
-	\paragraph{Calage altimétrique}
-	On a vu que l'altimètre mesure l'altitude en mesurant une pression. La valeur de cette pression varie selon le lieu et le temps.
-	
-	L'altimètre est donc équipé d'un bouton rotatif qui permet à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
+	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la capsule \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
 	
 	\begin{figure}[H]
   		\centering
     		\includegraphics[width=0.5\textwidth]{01-EtudeAeronefs/img/instruments/schemaAltimetre.pdf}
   		\legende{Principe de fonctionnement d'un altimètre}{img:schemaAltimetre}
 	\end{figure}	
+	
+	\paragraph{Calage altimétrique}
+	On a vu que l'altimètre mesure l'altitude en mesurant une pression. A une altitude donnée, la valeur de cette pression varie selon le lieu et le temps.
+	
+	L'altimètre est donc équipé d'un bouton rotatif qui permet à l'équipage de modifier la pression de référence. Cette référence est affichée dans une petite fenêtre de l'instrument. La pression de référence est soit communiquée par le contrôle aérien, soit déterminée au sol par le pilote à un point de référence (typiquement : altitude de l'aérodrome).
 	
 	\info{La pression atmosphérique est mesurée en hectopascal (hPa) en Europe et dans la plupart des pays. Elle est mesurée en pouces de mercure (inHg) aux États-Unis d'Amérique (pression moyenne au niveau de la mer : 1013,25~hPa = 29,92~inHg).}
 	
@@ -106,8 +108,6 @@
 	\legende{Effet du réglage du QNH}{img:schemaAltimetre}
 	\end{figure}}
 	
-	
-	
 	\subparagraph{Le calage au QNH}
 	Le calage au QNH indique une hauteur par rapport au niveau moyen de la mer. Avec ce calage, lorsque l'avion est au sol, l'altimètre affiche l'altitude du terrain.
 	
@@ -122,14 +122,14 @@
 	Ce calage est utilisé exclusivement en vol au delà d'une altitude dite de transition (TA, en France généralement 5000~pieds). Pour passer au calage standard, on affiche 1013.25 hPa (la pression moyenne au  niveau de la mer) dans la fenêtre de pression de l'altimètre. Dans ce cas, l'altimètre affichera un niveau de vol \anglais{flight level} (FL), qui correspond à l'altitude en centaines de pieds (FL55 = 5500~pieds).
 	
 	\subsubsection{Le variomètre}
-	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale (montée/descente) d'un aéronef. Cette vitesse est exprimée en pieds/minutes.
+	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale (montée/descente) d'un aéronef. Cette vitesse est exprimée en pieds/minutes (ft/min)\footnote{Sauf en planeur et en Russie, qui utilisent le mètre/minute}.
 	
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
 		\vario{-500}
 	\end{tikzpicture}
-	\legende{Un variomètre}{tikz:instrumentsBase}
+	\legende{Un variomètre affichant -500 ft/min}{tikz:instrumentsBase}
 	\end{figure}
 	
 	Le variomètre mesure les variations de pression atmosphériques. Pour cela, il est équipé d'une capsule analogue à celle que l'on trouve dans un altimètre. Cette capsule est reliée à la sonde de pression statique. Cet ensemble est scellé dans un compartiment équipé d'un dispositif de fuite calibré. 
@@ -139,6 +139,8 @@
     		\includegraphics[width=0.5\textwidth]{01-EtudeAeronefs/img/instruments/schemaVario.pdf}
   		\legende{Principe de fonctionnement d'un variomètre}{img:schemaVario}
 	\end{figure}	
+	
+	Quand l'altitude de l'aéronef varie, la pression statique fait varier l'épaisseur de la capsule. Cette variation met en mouvement l'aiguille qui indique le taux de montée/descente. Comme l'instrument est équipé d'un dispositif de fuite calibrée, la pression dans l'instrument (et donc autour de la capsule) a tendance à revenir à l'équilibre avec la pression statique. Tant que la variation d'altitude (et donc de pression statique) est maintenue, l'aiguille du variomètre indiquera à une valeur différente de 0. Si la variation d'altitude s'arrête, la pression dans l'instrument finira pas redevenir égale à la pression statique (grâce à la fuite calibrée), ce qui remettra l'indication à 0.
 	
 	\info{Le variomètre ne peut afficher une vitesse réellement instantanée : il y a un léger délais entre la variation de vitesse verticale et son affichage sur le variomètre.}
 	
