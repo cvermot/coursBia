@@ -236,6 +236,19 @@
 	
 	Les différentes versions sont disponibles en téléchargement sur la page \href{https://github.com/cvermot/coursBia/releases/latest}{GitHub du cours}\footnote{\url{https://github.com/cvermot/coursBia/releases/latest}}.
 	
+	\section{Note sur les animations}
+	Ce document comporte plusieurs éléments graphiques animés. Ces illustrations animées sont reconnaissables au jeux de bouton suivants, présents sous l'image :
+	\begin{figure}[H]	
+	\centering
+	\begin{animateinline}[autoplay,loop,controls]{1}
+	\multiframe{1}{i=0+1}{%
+	\begin{tikzpicture}
+	\node (dummy) at (0,0){};
+	\end{tikzpicture}}
+	\end{animateinline}
+	\end{figure}
+	
+	Ces animations ne sont pas supportées par tous les lecteurs PDF. En particulier, les lecteurs intégrés aux navigateurs (Chrome, Firefox, Edge...) ne prennent généralement pas en charge cette lecture. Le fonctionnement des animations à été vérifiée sur les lecteurs Adobe Acrobat Reader ainsi que Foxit Reader.
 	
 	\ifdefined\opendys 
 	\section{Notes concernant la version avec police OpenDyslexic}

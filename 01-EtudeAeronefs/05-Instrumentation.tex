@@ -79,6 +79,13 @@
 	\end{figure}
 	
 	\paragraph{Lecture de l'altimètre}
+	L'altimètre se lit à la façon d'une horloge : l'aiguille longue et fine représente les centaines de pieds, tandis que l'aiguille courte et épaisse représente le milliers de pieds. Sur la plupart des altimètres, une aiguille plus fine permet de décompter les dizaines de milliers de pieds.
+	
+	\begin{figure}[H]	
+	\centering
+	\altiHpaAnimChangementAlti{720}{0}{16000}{980}
+	\legende{Montée d'une altitude de 0 à 16\,000 pieds}{img:schemaAltimetre}
+	\end{figure}
 	
 	\paragraph{Fonctionnement} La pièce qui effectue la mesure dans un altimètre est la capsule \gls{anéroïde}. Il s'agit d'une capsule métallique étanche et conçue pour pouvoir être déformée par la pression atmosphérique. La mesure de cette déformation est ensuite amplifiée pour être affichée sur le cadran de l'altimètre.
 	
@@ -147,6 +154,30 @@
 	\subsubsection{L'horizon artificiel}
 	L'\gls{horizon artificiel} \anglais{attitude indicator} est un appareil qui affiche l'inclinaison et l'assiette d'un aéronef. L'horizon artificiel permet de piloter l'aéronef lorsqu'il évolue sans visibilité, dans un nuage, par exemple.
 	
+%\begin{table}[H]
+%  \centering
+%  \begin{tabular}{c c}
+%    \begin{minipage}{.45\textwidth}
+%      \begin{figure}[H]
+%  		\centering
+%  		\begin{tikzpicture}
+%			\horizon{0}{0}
+%		\end{tikzpicture}
+%		\legende{Un horizon artificiel}{tikz:instrumentsBase}		
+%		\end{figure}
+%    \end{minipage}
+%    &
+%    \begin{minipage}{.55\textwidth}
+%      \begin{figure}[H]
+%  		\centering
+%    		\includegraphics[width=1.0\textwidth]{01-EtudeAeronefs/img/instruments/schemaHorizon.pdf}
+%  		\legende{Principe de fonctionnement d'un horizon artificiel}{img:schemaHorizon}
+%	  \end{figure}
+%    \end{minipage} 
+%  \end{tabular}
+%  %\caption{}
+%\end{table}
+	
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
@@ -161,8 +192,69 @@
   		\legende{Principe de fonctionnement d'un horizon artificiel}{img:schemaHorizon}
 	\end{figure}
 	
+		\paragraph{Lecture de l'horizon artificiel}
+		Sur l'horizon artificiel, la maquette qui représente l'avion est fixe :
+		\begin{figure}[H]
+  		\centering
+    		\includegraphics[width=0.2\textwidth]{01-EtudeAeronefs/img/instruments/ai/maquette.pdf}
+  		\legende{Maquette de l'avion sur l'horizon artificiel}{img:instrumentsBase}
+		\end{figure}
+		
+		
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c}
+    \begin{minipage}{.49\textwidth}
+      \begin{figure}[H]
+  		\centering
+  		\begin{tikzpicture}
+		\horizon{0}{10}
+		\end{tikzpicture}
+  				\legende{Assiette de montée, 10°}{tikz:instrumentsBase}		
+		\end{figure}
+    \end{minipage}
+    &
+    \begin{minipage}{.49\textwidth}
+      \begin{figure}[H]
+  		\centering
+  		\begin{tikzpicture}
+		\horizon{0}{-10}
+		\end{tikzpicture}
+  				\legende{Assiette de descente, -10°}{tikz:instrumentsBase}			
+		\end{figure}
+    \end{minipage} 
+  \end{tabular}
+  %\caption{}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c}
+    \begin{minipage}{.49\textwidth}
+      \begin{figure}[H]
+  		\centering
+  		\begin{tikzpicture}
+		\horizon{-30}{0}
+		\end{tikzpicture}
+  				\legende{Inclinaison à gauche, 30°}{tikz:instrumentsBase}			
+		\end{figure}
+    \end{minipage} 
+    &
+    \begin{minipage}{.49\textwidth}
+      \begin{figure}[H]
+  		\centering
+  		\begin{tikzpicture}
+		\horizon{30}{0}
+		\end{tikzpicture}
+  				\legende{Inclinaison à droite, 30°}{tikz:instrumentsBase}		
+		\end{figure}
+    \end{minipage}
+  \end{tabular}
+  %\caption{}
+\end{table}
+	
 	\subsubsection{L'indicateur de virage}
-	L'\gls{indicateur de virage} \anglais{turn and slip indicator}, également appelé bille-aiguille, est un instrument qui permet de visualiser l'inclinaison d'un aéronef ainsi que de contrôler le dérapage (lacet).
+	L'\gls{indicateur de virage} \anglais{turn coordinator}, également appelé bille-aiguille, est un instrument qui permet de visualiser l'inclinaison d'un aéronef ainsi que de contrôler le dérapage (lacet).
 	
 	La fonction d'indication d'inclinaison est complémentaire de celle de l'horizon artificiel et peut-être utilisée cas de défaillance de l'horizon.
 	
@@ -193,9 +285,9 @@
 	\begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}
-		\conservateurCap{83}
+		\conservateurCap{85}
 	\end{tikzpicture}
-	\legende{Un conservateur de cap}{tikz:instrumentsBase}
+	\legende{Un conservateur de cap indiquant un cap à 85°}{tikz:instrumentsBase}
 	\end{figure}
 	
 	\subsubsection{Les instruments de radionavigation}

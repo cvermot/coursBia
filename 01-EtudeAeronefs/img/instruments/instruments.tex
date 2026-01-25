@@ -96,7 +96,7 @@
 	\end{animateinline}
 }
 
-%altimètre
+%altimètre en réglage du QNH
 %   -paramètre 1 : nombre de frames
 %   -paramètre 2 : altitude de départ
 %   -parametre 3 : pression de départ
@@ -114,10 +114,35 @@
 	\newcommand{\pressionDebut}{#3}
 	\newcommand{\pressionFin}{#4}
 	\newcommand{\pasPression}{(\pressionFin-\pressionDebut)/\nbFramesAnime}
-	\begin{animateinline}[autoplay,loop,controls]{60}
+	\begin{animateinline}[autoplay,loop,controls]{20}
 	\multiframe{\nbFramesAnime}{i=0+1}{%
 	\begin{tikzpicture}
 		\altiHpa{(\altiDebut+(\pasPression*\i*\piedsParUniteDePression))}{(\pressionDebut+\pasPression*\i)};
+	\end{tikzpicture}
+	}
+	\end{animateinline}
+}
+
+%altimètre en réglage du QNH
+%   -paramètre 1 : nombre de frames
+%   -paramètre 2 : altitude de départ
+%   -parametre 3 : altitude d'arrivée
+%   -parametre 4 : QNH séléctionné
+\def\altiHpaAnimChangementAlti#1#2#3#4{
+	\ifdefined\activeranimations 
+	\newcommand{\nbFramesAnime}{#1}
+	\else
+	\newcommand{\nbFramesAnime}{1}
+	\fi
+
+	%\newcommand{\nbFramesAnime}{#1}
+	\newcommand{\altiDebut}{#2}
+	\newcommand{\altiFin}{#3}
+	\newcommand{\pasAlti}{(\altiFin-\altiDebut)/\nbFramesAnime}
+	\begin{animateinline}[autoplay,loop,controls]{20}
+	\multiframe{\nbFramesAnime}{i=0+1}{%
+	\begin{tikzpicture}
+		\altiHpa{(\altiDebut+(\pasAlti*\i))}{#4};
 	\end{tikzpicture}
 	}
 	\end{animateinline}
