@@ -5,7 +5,8 @@
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs.pdf)
 
-### Ressources supplémentaires
+Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
+
 - [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
 ## Séance 2 : Structure aérodyne et motorisation
@@ -16,7 +17,7 @@
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation.pdf)
 
-### Ressources supplémentaires
+Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
 - [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
 - [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
 - [Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
@@ -32,7 +33,7 @@
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique.pdf
 )
 
-### Ressources supplémentaires
+Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
 - [Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
 - [Simulation : construction de la polaire à partir du Cx et du Cz](./polaireCxCz.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-construction-de-la-polaire))
 - [Vidéo : la sustentation](https://www.youtube.com/watch?v=0b9NqYUM0M4&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=52&pp=iAQB)
@@ -44,7 +45,7 @@
 - [Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
 
 ## Séance 4 : Commandes de vol
-### Ressources supplémentaires
+Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
 - [Simulation : stabilité et centrage](./centrage.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-le-role-du-plan-horizontal-sur-un-aeronef-le-centrage-et-la))
 
 # Cours

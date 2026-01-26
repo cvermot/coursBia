@@ -61,6 +61,7 @@ jobs:
             seance2_StructureAvionMotorisation.tex
             seance3_BaseAerodynamique.tex
             seance4_CommandesDeVol.tex
+            seance5_Atmosphere.tex
 
     - name: Rename PDF files
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -78,6 +79,8 @@ jobs:
         echo "seance3_BaseAerodynamique.pdf renamed to seance3_BaseAerodynamique_handout.pdf"
         mv seance4_CommandesDeVol.pdf seance4_CommandesDeVol_handout.pdf
         echo "seance4_CommandesDeVol.pdf renamed to seance4_CommandesDeVol_handout.pdf"
+        mv seance5_Atmosphere.pdf seance5_Atmosphere_handout.pdf
+        echo "seance5_Atmosphere.pdf renamed to seance5_Atmosphere_handout.pdf"
 
     - name: Produce LaTeX documents - default font
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -90,6 +93,7 @@ jobs:
             seance2_StructureAvionMotorisation.tex
             seance3_BaseAerodynamique.tex
             seance4_CommandesDeVol.tex
+            seance5_Atmosphere.tex
 
     - name: Create Release and Upload Assets
       if: steps.check_commits.outputs.has_commits == 'true'
@@ -112,6 +116,8 @@ jobs:
           seance3_BaseAerodynamique_handout.pdf
           seance4_CommandesDeVol.pdf
           seance4_CommandesDeVol_handout.pdf
+          seance5_Atmosphere.pdf
+          seance5_Atmosphere_handout.pdf
           coursBIA_sources.zip
         generate_release_notes: true
 

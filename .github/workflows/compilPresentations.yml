@@ -21,6 +21,7 @@ jobs:
             seance2_StructureAvionMotorisation.tex
             seance3_BaseAerodynamique.tex
             seance4_CommandesDeVol.tex
+            seance5_Atmosphere.tex
       
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
@@ -31,4 +32,5 @@ jobs:
             seance2_StructureAvionMotorisation.pdf
             seance3_BaseAerodynamique.pdf
             seance4_CommandesDeVol.pdf
+            seance5_Atmosphere.pdf
             

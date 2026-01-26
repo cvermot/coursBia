@@ -181,18 +181,40 @@ Obtenue en traçant la portance $C_z$ en fonction de la trainée $C_x$. On peut 
 	\end{figure}
 	
 \subsection{Stabilité}
+	Sur un aéronef, il existe 2 points d'application des forces dont l'importance est capitale :
+	\begin{itemize}
+		\item le centre de gravité : c'est la que s'applique le poids,
+		\item le foyer ou centre de portance : c'est le point ou s'applique le portance qui s'oppose au poids.
+	\end{itemize}
+	
+	Le foyer a une position fixe : le vecteur qui représente la portance s'applique toujours en un même point.
+	
+	Le centre de gravité lui, a une position variable. En fonction de la masse de l'aéronef, le centre de gravité avance ou recule sur l'axe longitudinal de l'appareil. \\
+	
+	C'est la différence de position entre ces 2 centres qui rend l'avion pilotable, grâce aux forces aérodynamiques de déportance qui s'exercent sur la gouverne de profondeur. \\
+	
+	Il faut donc voir un aéronef comme une balance dont le pivot serait le foyer et dont chaque plateau serait représenté par le centre de gravité d'une part, et le point d'application de la déportance de la gouverne de profondeur d'autre part.
+	
+	En agissant sur la valeur de la déportance, le pilote peut donc faire varier l'assiette de l'avion.
+	
 	\begin{figure}[H]
 		\centering
   		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/centrage.pdf}
   		\legende{Centrage}{img:centrage}	
 	\end{figure}
 	
+	On perçoit bien que la position du centre de gravité, qui est modifiable en changeant la position des masses dans l'aéronef, est un paramètre vital pour la capacité à contrôler l'assiette de l'aéronef : si le centre de gravité est trop en avant, la capacité de déportance de la gouverne de profondeur sera dépassée, et l'avion piquera du nez. A l'inverse, si le centre de gravité est trop en arrière (mais toujours en avant du foyer), une faible variation de l'effort de déportance de la gouverne de profondeur aura un effet important sur l'assiette (faible bras de levier entre le centre de gravité et de foyer). \\
+	
+	On comprend aussi que le vol est impossible si le centre de gravité se retrouve, de façon extrême, à l'arrière du foyer. Dans un tel cas, l'un des plateau de la balance sera toujours vide, toutes les forces orientées vers le bas se concentrant du même côté du pivot.
+	
 	\href{\urlSite /centrage.html}{Cette activité en ligne}\footnote{\urlSite /centrage.html} permet d'expérimenter l'impact du centrage et du calage de la gouverne de profondeur sur l'attitude de l'aéronef.
 	\begin{figure}[H]
 		\centering
   		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/centrageGgb.pdf}
-  		\legende{Activité Geogabra}{img:centrageGgb}	
+  		\legende{Activité Geogabra : centrage}{img:centrageGgb}	
 	\end{figure}
+	
+	\alert{Un centre de gravité en avant augmente la stabilité mais réduit la maniabilité. \\Un centre de gravité en arrière réduit la stabilité mais augmente la maniabilité.}
 	
 	
 	
