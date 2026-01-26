@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
    width="456.50134"
    height="2688.2856"
    id="svg1901"
    sodipodi:version="0.32"
-   inkscape:version="0.45"
-   sodipodi:docname="Atmosphere layers-fr.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="couchesAtmosphere.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   sodipodi:docbase="C:\Documents and Settings\moi\Bureau"
-   sodipodi:modified="true">
+   sodipodi:modified="true"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata160">
     <rdf:RDF>
@@ -31,8 +31,8 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     inkscape:window-height="712"
-     inkscape:window-width="1024"
+     inkscape:window-height="1294"
+     inkscape:window-width="2240"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      guidetolerance="10.0"
@@ -44,11 +44,15 @@
      id="base"
      showgrid="false"
      inkscape:zoom="0.79330634"
-     inkscape:cx="187.52953"
-     inkscape:cy="1915.7899"
-     inkscape:window-x="-4"
-     inkscape:window-y="-4"
-     inkscape:current-layer="svg1901" />
+     inkscape:cx="187.19124"
+     inkscape:cy="2318.7764"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:current-layer="svg1901"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:window-maximized="1" />
   <defs
      id="defs1903">
     <linearGradient
@@ -154,10 +158,10 @@
        gradientTransform="translate(76.373089,-78.346667)" />
     <filter
        id="filter3459"
-       height="1.2679588"
-       y="-0.1339794"
-       width="1.3112814"
-       x="-0.15564071">
+       height="1.2910032"
+       y="-0.13921442"
+       width="1.3662688"
+       x="-0.1841658">
       <feGaussianBlur
          id="feGaussianBlur3461"
          stdDeviation="15.471427"
@@ -192,9 +196,9 @@
     <filter
        id="filter3763"
        height="1.4194124"
-       y="-0.2097062"
+       y="-0.20970621"
        width="1.2802618"
-       x="-0.14013088">
+       x="-0.14013089">
       <feGaussianBlur
          id="feGaussianBlur3765"
          stdDeviation="12.401201"
@@ -220,9 +224,9 @@
     <filter
        id="filter3877"
        height="1.6357021"
-       y="-0.31785107"
+       y="-0.31785106"
        width="1.2510991"
-       x="-0.12554954">
+       x="-0.12554953">
       <feGaussianBlur
          id="feGaussianBlur3879"
          stdDeviation="9.6803458"
@@ -300,53 +304,58 @@
     <text
        x="-254.97687"
        y="16.78759"
-       transform="matrix(0,-1,1,0,0,0)"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       transform="rotate(-90)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text2246"
        xml:space="preserve"><tspan
          x="-254.97687"
          y="16.78759"
-         id="tspan2248">Exosphère</tspan></text>
+         id="tspan2248"
+         style="font-family:sans-serif">Exosphère</tspan></text>
     <text
        x="-1098.9769"
        y="16.78759"
-       transform="matrix(0,-1,1,0,0,0)"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       transform="rotate(-90)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text2250"
        xml:space="preserve"><tspan
          x="-1098.9769"
          y="16.78759"
-         id="tspan2252">Thermosphère</tspan></text>
+         id="tspan2252"
+         style="font-family:sans-serif">Thermosphère</tspan></text>
     <text
        x="-1946.9769"
        y="16.78759"
-       transform="matrix(0,-1,1,0,0,0)"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       transform="rotate(-90)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text2254"
        xml:space="preserve"><tspan
          x="-1946.9769"
          y="16.78759"
-         id="tspan2256">Mesosphère</tspan></text>
+         id="tspan2256"
+         style="font-family:sans-serif">Mesosphère</tspan></text>
     <text
        x="-2272.9771"
        y="16.78759"
-       transform="matrix(0,-1,1,0,0,0)"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       transform="rotate(-90)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text2258"
        xml:space="preserve"><tspan
          x="-2272.9771"
          y="16.78759"
-         id="tspan2260">Stratosphère</tspan></text>
+         id="tspan2260"
+         style="font-family:sans-serif">Stratosphère</tspan></text>
     <text
        x="-2566.9771"
        y="16.78759"
-       transform="matrix(0,-1,1,0,0,0)"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       transform="rotate(-90)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text2262"
        xml:space="preserve"><tspan
          x="-2566.9771"
          y="16.78759"
-         id="tspan2264">Troposphère</tspan></text>
+         id="tspan2264"
+         style="font-family:sans-serif">Troposphère</tspan></text>
     <path
        d="M 187.3833,993.50221 C 201.14144,991.94979 226.24767,981.30959 226.02163,963.70271 C 224.05802,942.96478 243.58223,938.9542 251.52798,939.71159"
        transform="translate(-23.857147,-90.352104)"
@@ -365,93 +374,103 @@
     <text
        x="37.600193"
        y="-53.441376"
-       style="font-size:32px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text2349"
        xml:space="preserve"><tspan
          x="37.600193"
          y="-53.441376"
-         id="tspan2351">10 000 km</tspan></text>
+         id="tspan2351"
+         style="font-family:sans-serif">10 000 km</tspan></text>
     <text
        x="37.600193"
        y="410.55862"
-       style="font-size:32px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3322"
        xml:space="preserve"><tspan
          x="37.600193"
          y="410.55862"
-         id="tspan3324">690 km</tspan></text>
+         id="tspan3324"
+         style="font-family:sans-serif">690 km</tspan></text>
     <text
        x="37.600193"
        y="1692.5586"
-       style="font-size:32px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3326"
        xml:space="preserve"><tspan
          x="37.600193"
          y="1692.5586"
-         id="tspan3328">85 km</tspan></text>
+         id="tspan3328"
+         style="font-family:sans-serif">85 km</tspan></text>
     <text
        x="41.600193"
        y="2022.5586"
-       style="font-size:32px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3330"
        xml:space="preserve"><tspan
          x="41.600193"
          y="2022.5586"
-         id="tspan3332">50 km</tspan></text>
+         id="tspan3332"
+         style="font-family:sans-serif">50 km</tspan></text>
     <text
        x="41.600193"
        y="2340.5586"
-       style="font-size:32px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3334"
        xml:space="preserve"><tspan
          x="41.600193"
          y="2340.5586"
-         id="tspan3336">6 – 20 km</tspan></text>
+         id="tspan3336"
+         style="font-family:sans-serif">10 km</tspan></text>
     <text
        x="50.171623"
        y="2579.1299"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3338"
        xml:space="preserve"><tspan
          x="50.171623"
          y="2579.1299"
-         id="tspan3340">Mont Everest</tspan></text>
+         id="tspan3340"
+         style="font-family:sans-serif">Mont Everest</tspan></text>
     <text
        x="140.17163"
        y="2121.9871"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3342"
        xml:space="preserve"><tspan
          x="140.17163"
          y="2121.9871"
-         id="tspan3344">Ballon météo</tspan></text>
+         id="tspan3344"
+         style="font-family:sans-serif">Ballon météo</tspan></text>
     <text
        x="77.314491"
        y="1834.8442"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3348"
        xml:space="preserve"><tspan
          x="77.314491"
          y="1834.8442"
-         id="tspan3352">Météores</tspan></text>
+         id="tspan3352"
+         style="font-family:sans-serif">Météores</tspan></text>
     <text
        x="281.60022"
        y="1469.13"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3356"
        xml:space="preserve"><tspan
          x="281.60022"
          y="1469.13"
-         id="tspan3358">Aurore</tspan></text>
+         id="tspan3358"
+         style="font-family:sans-serif">Aurore</tspan></text>
     <text
        x="201.60022"
        y="1005.13"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3360"
        xml:space="preserve"><tspan
          x="201.60022"
          y="1005.13"
-         id="tspan3362">Navette</tspan></text>
+         id="tspan3362"
+         style="font-family:sans-serif">Navette</tspan></text>
     <path
        d="M 441.68048,376.35555 L -56.29187,376.35555"
        style="opacity:1;color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -783,21 +802,23 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:sans"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="61.136536"
      y="1643.9224"
-     id="text2331"
-     sodipodi:linespacing="100%"><tspan
+     id="text2331"><tspan
        sodipodi:role="line"
        id="tspan2333"
        x="61.136536"
-       y="1643.9224">100 km</tspan><tspan
+       y="1643.9224"
+       style="font-size:32px;line-height:1">100 km</tspan><tspan
        sodipodi:role="line"
        x="61.136536"
        y="1675.9224"
-       id="tspan2339">(Ligne de</tspan><tspan
+       id="tspan2339"
+       style="font-size:32px;line-height:1">(Ligne de</tspan><tspan
        sodipodi:role="line"
        x="61.136536"
        y="1707.9224"
-       id="tspan2337">Kármán)</tspan></text>
+       id="tspan2337"
+       style="font-size:32px;line-height:1">Kármán)</tspan></text>
 </svg>
