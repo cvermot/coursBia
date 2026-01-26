@@ -5,7 +5,8 @@
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs.pdf)
 
-[Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
+### Ressources supplémentaires
+- [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
 ## Séance 2 : Structure aérodyne et motorisation
 - Structure générale d'un avion
@@ -15,17 +16,14 @@
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation.pdf)
 
-[Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
+### Ressources supplémentaires
+- [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
+- [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
+- [Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
+- [Vidéo : le turboréacteur](https://www.youtube.com/watch?v=2iM9k16aekw&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=57&pp=iAQB0gcJCYcKAYcqIYzv) / [Complément : Démarrage d'un turboréacteur](https://www.youtube.com/watch?v=SzPEMw_LhR8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=56&pp=iAQB)
+- [Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
+- [Vidéo : statoréacteur, pulsoréacteur](https://www.youtube.com/watch?v=6Q-0b2OnQZ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=5&pp=iAQB0gcJCYcKAYcqIYzv)
 
-[Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
-
-[Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
-
-[Vidéo : le turboréacteur](https://www.youtube.com/watch?v=2iM9k16aekw&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=57&pp=iAQB0gcJCYcKAYcqIYzv) / [Complément : Démarrage d'un turboréacteur](https://www.youtube.com/watch?v=SzPEMw_LhR8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=56&pp=iAQB)
-
-[Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
-
-[Vidéo : statoréacteur, pulsoréacteur](https://www.youtube.com/watch?v=6Q-0b2OnQZ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=5&pp=iAQB0gcJCYcKAYcqIYzv)
 ## Séance 3 : Bases d'aérodynamique
 - Portance
 - Trainée
@@ -34,21 +32,20 @@
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique.pdf
 )
 
-[Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
+### Ressources supplémentaires
+- [Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
+- [Simulation : construction de la polaire à partir du Cx et du Cz](./polaireCxCz.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-construction-de-la-polaire))
+- [Vidéo : la sustentation](https://www.youtube.com/watch?v=0b9NqYUM0M4&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=52&pp=iAQB)
+- [Vidéo : étude de l'air en mouvement autour d'un objet](https://www.youtube.com/watch?v=hJaDxiKBEk0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=51&pp=iAQB)
+- [Vidéo : profil de l'aile](https://www.youtube.com/watch?v=W-fp0Vj62RU&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=50&pp=iAQB0gcJCYcKAYcqIYzv)
+- [Vidéo : écoulement de l'air autour d'une aile infinie](https://www.youtube.com/watch?v=lQFVt1US2DE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=49&pp=iAQB)
+- [Vidéo : écoulement de l'air autour d'une aile réelle](https://www.youtube.com/watch?v=auBvjmC2emI&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=48&pp=iAQB)
+- [Vidéo : la polaire](https://www.youtube.com/watch?v=jVIlY4SFK40&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=46&pp=iAQB)
+- [Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
 
-[Vidéo : la sustentation](https://www.youtube.com/watch?v=0b9NqYUM0M4&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=52&pp=iAQB)
-
-[Vidéo : étude de l'air en mouvement autour d'un objet](https://www.youtube.com/watch?v=hJaDxiKBEk0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=51&pp=iAQB)
-
-[Vidéo : profil de l'aile](https://www.youtube.com/watch?v=W-fp0Vj62RU&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=50&pp=iAQB0gcJCYcKAYcqIYzv)
-
-[Vidéo : écoulement de l'air autour d'une aile infinie](https://www.youtube.com/watch?v=lQFVt1US2DE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=49&pp=iAQB)
-
-[Vidéo : écoulement de l'air autour d'une aile réelle](https://www.youtube.com/watch?v=auBvjmC2emI&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=48&pp=iAQB)
-
-[Vidéo : la polaire](https://www.youtube.com/watch?v=jVIlY4SFK40&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=46&pp=iAQB)
-
-[Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
+## Séance 4 : Commandes de vol
+### Ressources supplémentaires
+- [Simulation : stabilité et centrage](./centrage.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-le-role-du-plan-horizontal-sur-un-aeronef-le-centrage-et-la))
 
 # Cours
 
