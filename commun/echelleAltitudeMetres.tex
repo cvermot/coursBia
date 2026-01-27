@@ -5,20 +5,17 @@
 
 %\begin{document}
 
-\pgfdeclareimage{montagne}{03-Meteo/img/montagne.pdf}
+\pgfdeclareimage{montagne}{commun/img/montagne.pdf}
 
-\begin{tikzpicture}[x=1cm,y=1cm, scale=0.6, every node/.style={scale=0.6}] % 1 unité = 1 km = 1000 m
+\newcommand{\echelleAltitudeMetres}[2]{
+%\begin{tikzpicture}[x=1cm,y=1cm, scale=0.6, every node/.style={scale=0.6}] % 1 unité = 1 km = 1000 m
 
 % --------- paramètres (modifiables) ----------
-\def\maxkm{10}            % hauteur totale en km (10 = 10000 m)
-\def\everest{8.85}        % sommet approximatif en km
-\def\pointeralt{5.5}        % position curseur en km (5 = 5000 m)
+\def\maxkm{#1}            % hauteur totale en km (10 = 10000 m)
+\def\pointeralt{#2}      % position curseur en km (5 = 5000 m)
 \def\pointerside{right}   % 'left' ou 'right' (placement du curseur)
-\def\snowline{6.6}        % altitude de la limite neige (en km)
 % limites horizontales de la montagne (choisis des valeurs <= -1.6 pour ne pas empiéter sur l'axe)
 \def\positionMontagne{-4.9}      % bord gauche de la base
-\def\mountLeft{-7.0}      % bord gauche de la base
-\def\mountRight{-1.8}     % bord droit de la base (plus négatif = plus à gauche)
 % ---------------------------------------------
 
 % configuration curseur selon côté
@@ -31,6 +28,9 @@
   \def\labelanchor{east}%
   \def\xshift{-6pt}%
 }
+
+% cadre optionnel pour cadrer
+	\draw[gray!0] (\positionMontagne,0) rectangle (2.5,\maxkm+0.3);
 
 % Axe vertical (altitude)
 \draw[line width=0.6pt] (0,0) -- (0,\maxkm+0.3);
@@ -52,7 +52,8 @@
   \pgfmathtruncatemacro{\pointerm}{\pointeralt*1000}
   \node[anchor=\labelanchor, xshift=\xshift] at (\pointerx,\pointeralt) {\small \pointerm\ m};
 \end{scope} 
+}
 
 
-\end{tikzpicture}
+%\end{tikzpicture}
 %\end{document}

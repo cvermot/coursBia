@@ -1,4 +1,6 @@
 \input{commun/presentations.tex}
+\input{03-Meteo/img/barometreTorricelli.tex}
+\input{commun/echelleAltitudeMetres.tex}
 
 \title[Séance 5 - Atmosphère]{Séance 5 \\ Atmosphère}
 
@@ -49,6 +51,14 @@
 	\end{frame}	
 	
 	\begin{frame}{La pression atmosphérique}
+	Toute l'air au dessus de nous est soumise à la gravité terrestre. Elle à donc un poids.
+	
+	\begin{figure}
+	\begin{tikzpicture}
+	\barometreTorricelli{760} 
+	\end{tikzpicture}
+	\legende{Baromètre de Torricelli au mercure, au niveau de la mer}{img:barometreTorricelli}
+	\end{figure}
 	
 	\end{frame}
 	
@@ -64,6 +74,38 @@
 				\item $\ang{-0.65}C$ tous les $100~m$ (soit $\ang{-2}C$ tous les $1000~ft$), jusqu'à la tropopause
 				\item $-1~hPa$ tous les $8,5~m$ (soit $-1~hPa$ tous les $28~ft$)
 			\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+	
+	\begin{figure}[H]
+		\ifdefined\activeranimations 
+		\newcommand{\nbFramesAltitude}{101}
+		\else
+		\newcommand{\nbFramesAltitude}{100}
+		\fi
+		
+		%760 mmHg à 0 m
+		%200 mmHg à 10 000 m
+		%=> 560 mmHg entre les 2, soit, pour 100 frames, 5.6
+		%\newcommand{\altToMmHg}{((760-200)/\nbFramesAltitude)}
+		%\newcommand{\altToMmHg}{0.2}
+		
+		\centering
+		\begin{animateinline}[controls,loop]{12}
+		    \multiframe{\nbFramesAltitude}{i=0+1}{
+			\begin{tikzpicture}[x=1cm,y=1cm, scale=0.7, every node/.style={scale=0.7}]
+				\echelleAltitudeMetres{10}{\i/10}
+			\end{tikzpicture}
+			\begin{tikzpicture}[scale=1.5, every node/.style={scale=1.5}]
+				%\FPeval{\asoustraire}{clip(\i*\altToMmHg)}
+				\FPeval{\result}{round((760-\i*5.6),0)}
+				\barometreTorricelli{\result}		
+			\end{tikzpicture}
+			}
+		\end{animateinline}
+	\end{figure}
+	
 	\end{frame}
 
  

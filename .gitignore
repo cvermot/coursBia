@@ -21,6 +21,7 @@
 !/Annexes/img/*/*.pdf
 !/Annexes/img/*.pdf
 !/imgPresentations/*.pdf
+!/commun/img/*.pdf
 *.bbl
 *.bcf
 *.blg

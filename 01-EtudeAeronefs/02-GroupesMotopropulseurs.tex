@@ -191,11 +191,27 @@
 	\paragraph{Moteur à piston rotatif}
 	Le moteur à piston rotatif, ou moteur Wankel, est un moteur dont le piston est constitué d'un rotor qui tourne dans une chambre fixe. L'intérêt principal de ce moteur est sa relative simplicité puisque l'admission est l'échappement se passent de soupapes.
 	
+	%\begin{figure}[H]
+  	%	\centering
+    	%	\includegraphics[width=0.3\textwidth]{01-EtudeAeronefs/img/rotatif.png}
+  	%	\legende{Moteur rotatif}{video:rotatif}
+	%\end{figure}	
+	
+	\input{01-EtudeAeronefs/img/moteurWankel.tex}
 	\begin{figure}[H]
-  		\centering
-    		\includegraphics[width=0.3\textwidth]{01-EtudeAeronefs/img/rotatif.png}
-  		\legende{Moteur rotatif}{video:rotatif}
-	\end{figure}	
+		\ifdefined\activeranimations 
+		\newcommand{\nbFramesMoteurWankel}{72}
+		\else
+		\newcommand{\nbFramesMoteurWankel}{1}
+		\fi
+		
+		\centering
+		\begin{animateinline}[controls,loop]{12}
+		    \multiframe{\nbFramesMoteurWankel}{ixb=0+15}{
+		    \Wankel{\ixb}}
+		\end{animateinline}
+		\legende{Moteur rotatif}{tikz:schemaWenkel}
+	\end{figure}
 	
 	\subsubsection{Système d'allumage}
 	Dans un moteur à explosion commandée (moteur à essence), l'explosion ne se produit que si le mélange est allumé par l'étincelle de la bougie.
