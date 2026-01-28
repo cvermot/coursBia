@@ -47,6 +47,8 @@ jobs:
     needs: check-commits
     if: needs.check-commits.outputs.has_commits == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         include:
