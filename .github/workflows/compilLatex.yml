@@ -7,49 +7,51 @@ on:
     paths-ignore:
       - 'docs/**'
 jobs:
-  Produce_LaTeX_document:
+  compile:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tex_file:
+          - CoursBIA_complet.tex
+          - seance1_Introduction_ClassificationAeronefs.tex
+          - seance2_StructureAvionMotorisation.tex
+          - seance3_BaseAerodynamique.tex
+          - seance4_CommandesDeVol.tex
+          - seance5_Atmosphere.tex
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-        
+
       - name: Check encoding
-        run: file -i CoursBIA_complet.tex
-        
-        
-      #- name: Compile LaTeX artifacts
-      #  uses: xu-cheng/latex-action@v3
-      #  with:
-      #    #latexmk_use_lualatex: true
-      #    working_directory: 01-EtudeAeronefs/img/Cycle4Temps/
-      #    work_in_root_file_dir: 01-EtudeAeronefs/img/Cycle4Temps/
-      #    args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
-      #    root_file: | 
-      #      0-MoteurLegende_doc.tex
-      #      0-MoteurLegendeFlechesSeulement_doc.tex
-        
-      - name: Compile LaTeX documents
+        run: file -i ${{ matrix.tex_file }}
+
+      - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          #latexmk_use_lualatex: true
-          args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
-          root_file: | 
-            CoursBIA_complet.tex
-            seance1_Introduction_ClassificationAeronefs.tex
-            seance2_StructureAvionMotorisation.tex
-            seance3_BaseAerodynamique.tex
-            seance4_CommandesDeVol.tex
-            seance5_Atmosphere.tex
-      
+          args: >-
+            -file-line-error -halt-on-error -interaction=nonstopmode
+            -recorder
+            -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
+          root_file: ${{ matrix.tex_file }}
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
+          name: PDF-${{ matrix.tex_file }}
+          path: "*.pdf"
+
+  upload:
+    runs-on: ubuntu-latest
+    needs: compile
+    steps:
+      - name: Download all PDFs
+        uses: actions/download-artifact@v4
+        with:
+          pattern: PDF-*
+          merge-multiple: true
+
+      - name: Upload all PDFs
+        uses: actions/upload-artifact@v4
+        with:
           name: PDF
-          path:  |
-            CoursBIA_complet.pdf
-            seance1_Introduction_ClassificationAeronefs.pdf
-            seance2_StructureAvionMotorisation.pdf
-            seance3_BaseAerodynamique.pdf
-            seance4_CommandesDeVol.pdf
-            seance5_Atmosphere.pdf
-            
+          path: "*.pdf"
