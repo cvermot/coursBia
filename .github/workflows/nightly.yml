@@ -57,64 +57,76 @@ jobs:
             variant: OpenDyslexic
             pretex: "\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}"
             output_name: CoursBIA_complet_OpenDyslexic.pdf
+            jobname: CoursBIA_complet_OpenDyslexic
           
           # CoursBIA_complet - Standard
           - file: CoursBIA_complet.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: CoursBIA_complet.pdf
+            jobname: CoursBIA_complet
           
           # Séances - Handout
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: handout
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance1_Introduction_ClassificationAeronefs_handout.pdf
+            jobname: seance1_Introduction_ClassificationAeronefs_handout
           
           - file: seance2_StructureAvionMotorisation.tex
             variant: handout
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance2_StructureAvionMotorisation_handout.pdf
+            jobname: seance2_StructureAvionMotorisation_handout
           
           - file: seance3_BaseAerodynamique.tex
             variant: handout
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance3_BaseAerodynamique_handout.pdf
+            jobname: seance3_BaseAerodynamique_handout
           
           - file: seance4_CommandesDeVol.tex
             variant: handout
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance4_CommandesDeVol_handout.pdf
+            jobname: seance4_CommandesDeVol_handout
           
           - file: seance5_Atmosphere.tex
             variant: handout
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance5_Atmosphere_handout.pdf
+            jobname: seance5_Atmosphere_handout
           
           # Séances - Standard
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance1_Introduction_ClassificationAeronefs.pdf
+            jobname: seance1_Introduction_ClassificationAeronefs
           
           - file: seance2_StructureAvionMotorisation.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance2_StructureAvionMotorisation.pdf
+            jobname: seance2_StructureAvionMotorisation
           
           - file: seance3_BaseAerodynamique.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance3_BaseAerodynamique.pdf
+            jobname: seance3_BaseAerodynamique
           
           - file: seance4_CommandesDeVol.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance4_CommandesDeVol.pdf
+            jobname: seance4_CommandesDeVol
           
           - file: seance5_Atmosphere.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance5_Atmosphere.pdf
+            jobname: seance5_Atmosphere
       
     steps:
     - name: Set up Git repository
@@ -125,27 +137,13 @@ jobs:
       env:
         PRETEX_COMMANDS: ${{ matrix.pretex }}
       with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="$PRETEX_COMMANDS"
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -jobname=${{ matrix.jobname }} -usepretex="$PRETEX_COMMANDS"
         root_file: ${{ matrix.file }}
-    
-    - name: Rename PDF file
-      shell: bash
-      run: |
-        # Extraire le nom de base du fichier (sans .tex)
-        BASE_NAME="${{ matrix.file }}"
-        BASE_NAME="${BASE_NAME%.tex}"
-        OUTPUT_NAME="${{ matrix.output_name }}"
-        
-        # Renommer le PDF si nécessaire
-        if [ "$BASE_NAME.pdf" != "$OUTPUT_NAME" ]; then
-          mv "$BASE_NAME.pdf" "$OUTPUT_NAME"
-          echo "Renamed $BASE_NAME.pdf to $OUTPUT_NAME"
-        fi
     
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4.4.3
       with:
-        name: pdf-${{ matrix.variant }}-${{ hashFiles(format('{0}-{1}', matrix.file, matrix.variant)) }}
+        name: ${{ matrix.output_name }}
         path: ${{ matrix.output_name }}
         retention-days: 1
 
@@ -166,7 +164,7 @@ jobs:
       uses: actions/download-artifact@v4.1.3
       with:
         path: artifacts
-        pattern: pdf-*
+        pattern: "*.pdf"
         merge-multiple: true
     
     - name: List downloaded files
