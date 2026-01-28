@@ -27,7 +27,7 @@ jobs:
         # Compter les commits d'hier
         COMMIT_COUNT=$(git log --after="$START_DATE" --before="$END_DATE" --oneline | wc -l)
         
-        if [ $COMMIT_COUNT -gt 0 ]; then
+        if [ "$COMMIT_COUNT" -gt 0 ]; then
           echo "There were $COMMIT_COUNT commit(s) yesterday"
           echo "has_commits=true" >> "$GITHUB_OUTPUT"
         else
@@ -132,8 +132,10 @@ jobs:
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
+      env:
+        PRETEX_COMMANDS: ${{ matrix.pretex }}
       with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="${{ matrix.pretex }}"
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="$PRETEX_COMMANDS"
         root_file: ${{ matrix.file }}
     
     - name: Rename PDF file
@@ -142,11 +144,12 @@ jobs:
         # Extraire le nom de base du fichier (sans .tex)
         BASE_NAME="${{ matrix.file }}"
         BASE_NAME="${BASE_NAME%.tex}"
+        OUTPUT_NAME="${{ matrix.output_name }}"
         
         # Renommer le PDF si nécessaire
-        if [ "$BASE_NAME.pdf" != "${{ matrix.output_name }}" ]; then
-          mv "$BASE_NAME.pdf" "${{ matrix.output_name }}"
-          echo "Renamed $BASE_NAME.pdf to ${{ matrix.output_name }}"
+        if [ "$BASE_NAME.pdf" != "$OUTPUT_NAME" ]; then
+          mv "$BASE_NAME.pdf" "$OUTPUT_NAME"
+          echo "Renamed $BASE_NAME.pdf to $OUTPUT_NAME"
         fi
     
     - name: Upload PDF artifact
@@ -183,11 +186,11 @@ jobs:
     
     - name: Move PDF files to workspace
       run: |
-        mv artifacts/*.pdf .
-        ls -lah *.pdf
+        mv artifacts/*.pdf . || true
+        ls -lah ./*.pdf
     
     - name: Create Release and Upload Assets
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
