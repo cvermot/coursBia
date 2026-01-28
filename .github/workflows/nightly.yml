@@ -1,4 +1,4 @@
-name: Compilation LaTeX - Nigthly
+name: Compilation LaTeX - Nightly
 on: 
   schedule:
     - cron: "37 3 * * *" #A 3h37 tous les jours
@@ -23,7 +23,6 @@ jobs:
         # Définir les dates de début et fin pour hier (en UTC)
         START_DATE=$(date -u -d "yesterday 00:00:00" +"%Y-%m-%dT%H:%M:%S")
         END_DATE=$(date -u -d "yesterday 23:59:59" +"%Y-%m-%dT%H:%M:%S")
-        
         # Compter les commits d'hier
         COMMIT_COUNT=$(git log --after="$START_DATE" --before="$END_DATE" --oneline | wc -l)
         
@@ -39,7 +38,6 @@ jobs:
       id: set_tag
       if: steps.check_commits.outputs.has_commits == 'true'
       run: |
-        # Format: nightly-YYYY.MM.DD-HH.mm
         RELEASE_TAG="nightly-$(date +'%Y.%m.%d-%H.%M')"
         echo "release_tag=$RELEASE_TAG" >> "$GITHUB_OUTPUT"
 
@@ -64,7 +62,7 @@ jobs:
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: CoursBIA_complet.pdf
           
-          # Séances - Handout
+          # Séances - Handout variants
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: handout
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
@@ -90,7 +88,7 @@ jobs:
             pretex: "\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance5_Atmosphere_handout.pdf
           
-          # Séances - Standard
+          # Séances - Standard variants
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
@@ -115,17 +113,15 @@ jobs:
             variant: standard
             pretex: "\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
             output_name: seance5_Atmosphere.pdf
-      
+       
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
-      env:
-        PRETEX_COMMANDS: ${{ matrix.pretex }}
       with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="$PRETEX_COMMANDS"
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="${{ matrix.pretex }}"
         root_file: ${{ matrix.file }}
     
     - name: Rename PDF file
@@ -145,7 +141,7 @@ jobs:
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4.4.3
       with:
-        name: pdf-${{ matrix.variant }}-${{ hashFiles(format('{0}-{1}', matrix.file, matrix.variant)) }}
+        name: ${{ matrix.output_name }}
         path: ${{ matrix.output_name }}
         retention-days: 1
 
@@ -166,23 +162,11 @@ jobs:
       uses: actions/download-artifact@v4.1.3
       with:
         path: artifacts
-        pattern: pdf-*
-        merge-multiple: true
-    
-    - name: List downloaded files
-      run: |
-        echo "Downloaded files:"
-        ls -lah artifacts/
     
     - name: Move PDF files to workspace
       run: |
-        if [ -d artifacts ] && [ "$(ls -A artifacts/*.pdf 2>/dev/null)" ]; then
-          mv artifacts/*.pdf .
-          ls -lah ./*.pdf
-        else
-          echo "Error: No PDF files found in artifacts directory"
-          exit 1
-        fi
+        find artifacts -name "*.pdf" -exec mv {} . \;
+        ls -lah ./*.pdf
     
     - name: Create Release and Upload Assets
       uses: softprops/action-gh-release@v2
@@ -206,7 +190,6 @@ jobs:
           seance4_CommandesDeVol_handout.pdf
           seance5_Atmosphere.pdf
           seance5_Atmosphere_handout.pdf
-          coursBIA_sources.zip
         generate_release_notes: true
 
     - name: Attest
