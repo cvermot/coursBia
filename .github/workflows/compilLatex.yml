@@ -34,11 +34,15 @@ jobs:
             -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
           root_file: ${{ matrix.tex_file }}
 
+      - name: Get PDF filename
+        id: pdf_name
+        run: echo "pdf_file=$(basename ${{ matrix.tex_file }} .tex).pdf" >> $GITHUB_OUTPUT
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: PDF-${{ matrix.tex_file }}
-          path: "*.pdf"
+          name: PDF-${{ steps.pdf_name.outputs.pdf_file }}
+          path: ${{ steps.pdf_name.outputs.pdf_file }}
 
   upload:
     runs-on: ubuntu-latest
