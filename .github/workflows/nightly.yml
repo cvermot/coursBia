@@ -54,56 +54,44 @@ jobs:
           # CoursBIA_complet.tex variants
           - file: CoursBIA_complet.tex
             variant: OpenDys
-            output_name: CoursBIA_complet_OpenDyslexic.pdf
-            jobname: CoursBIA_complet
+            jobname: CoursBIA_complet_OpenDyslexic
           - file: CoursBIA_complet.tex
             variant: Standard
-            output_name: CoursBIA_complet.pdf
             jobname: CoursBIA_complet
           # seance1 variants
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Handout
-            output_name: seance1_Introduction_ClassificationAeronefs_handout.pdf
-            jobname: seance1_Introduction_ClassificationAeronefs
+            jobname: seance1_Introduction_ClassificationAeronefs_handout
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Standard
-            output_name: seance1_Introduction_ClassificationAeronefs.pdf
             jobname: seance1_Introduction_ClassificationAeronefs
           # seance2 variants
           - file: seance2_StructureAvionMotorisation.tex
             variant: Handout
-            output_name: seance2_StructureAvionMotorisation_handout.pdf
-            jobname: seance2_StructureAvionMotorisation
+            jobname: seance2_StructureAvionMotorisation_handout
           - file: seance2_StructureAvionMotorisation.tex
             variant: Standard
-            output_name: seance2_StructureAvionMotorisation.pdf
             jobname: seance2_StructureAvionMotorisation
           # seance3 variants
           - file: seance3_BaseAerodynamique.tex
             variant: Handout
-            output_name: seance3_BaseAerodynamique_handout.pdf
-            jobname: seance3_BaseAerodynamique
+            jobname: seance3_BaseAerodynamique_handout
           - file: seance3_BaseAerodynamique.tex
             variant: Standard
-            output_name: seance3_BaseAerodynamique.pdf
             jobname: seance3_BaseAerodynamique
           # seance4 variants
           - file: seance4_CommandesDeVol.tex
             variant: Handout
-            output_name: seance4_CommandesDeVol_handout.pdf
-            jobname: seance4_CommandesDeVol
+            jobname: seance4_CommandesDeVol_handout
           - file: seance4_CommandesDeVol.tex
             variant: Standard
-            output_name: seance4_CommandesDeVol.pdf
             jobname: seance4_CommandesDeVol
           # seance5 variants
           - file: seance5_Atmosphere.tex
             variant: Handout
-            output_name: seance5_Atmosphere_handout.pdf
-            jobname: seance5_Atmosphere
+            jobname: seance5_Atmosphere_handout
           - file: seance5_Atmosphere.tex
             variant: Standard
-            output_name: seance5_Atmosphere.pdf
             jobname: seance5_Atmosphere
     steps:
     - name: Set up Git repository
@@ -112,21 +100,14 @@ jobs:
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
-        args: -r .latexmkrc.${{ matrix.variant }} -jobname=${{ matrix.jobname }}_${{ matrix.variant }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -r .latexmkrc.${{ matrix.variant }} -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: ${{ matrix.file }}
-
-    - name: Rename PDF to final output name
-      shell: bash
-      run: |
-        # Rename the generated PDF to the expected output name
-        mv ${{ matrix.jobname }}_${{ matrix.variant }}.pdf ${{ matrix.output_name }}
-        echo "${{ matrix.jobname }}_${{ matrix.variant }}.pdf renamed to ${{ matrix.output_name }}"
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
-        name: PDF-${{ matrix.output_name }}
-        path: ${{ matrix.output_name }}
+        name: PDF-${{ matrix.jobname }}.pdf
+        path: ${{ matrix.jobname }}.pdf
 
   release:
     needs: [check_commits, compile]
