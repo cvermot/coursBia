@@ -111,9 +111,9 @@ jobs:
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
-      env:
-        INPUT_PRE_COMPILE: echo "${{ matrix.pretex }}" > custom.tex && echo '\\input{custom.tex}'
       with:
+        pre_compile: echo "${{ matrix.pretex }}" > custom.tex && echo '\\input{custom.tex}'
+        latexmk_use_lualatex: true
         args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: ${{ matrix.file }}
 
