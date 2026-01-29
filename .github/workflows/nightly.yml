@@ -5,13 +5,11 @@ on:
   workflow_dispatch: # Permet le lancement manuel
 
 jobs:
-  Produce_and_prerelease_LaTeX_documents:
+  check_commits:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
-      attestations: write
-      
+    outputs:
+      has_commits: ${{ steps.check_commits.outputs.has_commits }}
+      tag_name: ${{ steps.set_env.outputs.tag_name }}
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
@@ -38,71 +36,127 @@ jobs:
         fi
 
     - name: Set up environment
+      id: set_env
       if: steps.check_commits.outputs.has_commits == 'true'
       run: |
         # Format: nightly-YYYY.MM.DD-HH.mm
-        echo "NOW=nightly-$(date +'%Y.%m.%d-%H.%M')" >> $GITHUB_ENV
+        echo "tag_name=nightly-$(date +'%Y.%m.%d-%H.%M')" >> "$GITHUB_OUTPUT"
 
-    - name: Compile LaTeX document - OpenDyslexic font
-      if: steps.check_commits.outputs.has_commits == 'true'
-      uses: xu-cheng/latex-action@v3
-      with:
-        #latexmk_use_lualatex: true
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}"
-        root_file: CoursBIA_complet.tex
-        
-    - name: Produce LaTeX documents - beamer handout
-      if: steps.check_commits.outputs.has_commits == 'true'
-      uses: xu-cheng/latex-action@v3
-      with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
-        root_file: | 
-            seance1_Introduction_ClassificationAeronefs.tex
-            seance2_StructureAvionMotorisation.tex
-            seance3_BaseAerodynamique.tex
-            seance4_CommandesDeVol.tex
-            seance5_Atmosphere.tex
+  compile:
+    needs: check_commits
+    if: needs.check_commits.outputs.has_commits == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        include:
+          # CoursBIA_complet.tex variants
+          - file: CoursBIA_complet.tex
+            variant: OpenDys
+            output_name: CoursBIA_complet_OpenDyslexic.pdf
+            jobname: CoursBIA_complet
+          - file: CoursBIA_complet.tex
+            variant: Standard
+            output_name: CoursBIA_complet.pdf
+            jobname: CoursBIA_complet
+          # seance1 variants
+          - file: seance1_Introduction_ClassificationAeronefs.tex
+            variant: Handout
+            output_name: seance1_Introduction_ClassificationAeronefs_handout.pdf
+            jobname: seance1_Introduction_ClassificationAeronefs
+          - file: seance1_Introduction_ClassificationAeronefs.tex
+            variant: Standard
+            output_name: seance1_Introduction_ClassificationAeronefs.pdf
+            jobname: seance1_Introduction_ClassificationAeronefs
+          # seance2 variants
+          - file: seance2_StructureAvionMotorisation.tex
+            variant: Handout
+            output_name: seance2_StructureAvionMotorisation_handout.pdf
+            jobname: seance2_StructureAvionMotorisation
+          - file: seance2_StructureAvionMotorisation.tex
+            variant: Standard
+            output_name: seance2_StructureAvionMotorisation.pdf
+            jobname: seance2_StructureAvionMotorisation
+          # seance3 variants
+          - file: seance3_BaseAerodynamique.tex
+            variant: Handout
+            output_name: seance3_BaseAerodynamique_handout.pdf
+            jobname: seance3_BaseAerodynamique
+          - file: seance3_BaseAerodynamique.tex
+            variant: Standard
+            output_name: seance3_BaseAerodynamique.pdf
+            jobname: seance3_BaseAerodynamique
+          # seance4 variants
+          - file: seance4_CommandesDeVol.tex
+            variant: Handout
+            output_name: seance4_CommandesDeVol_handout.pdf
+            jobname: seance4_CommandesDeVol
+          - file: seance4_CommandesDeVol.tex
+            variant: Standard
+            output_name: seance4_CommandesDeVol.pdf
+            jobname: seance4_CommandesDeVol
+          # seance5 variants
+          - file: seance5_Atmosphere.tex
+            variant: Handout
+            output_name: seance5_Atmosphere_handout.pdf
+            jobname: seance5_Atmosphere
+          - file: seance5_Atmosphere.tex
+            variant: Standard
+            output_name: seance5_Atmosphere.pdf
+            jobname: seance5_Atmosphere
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v4
 
-    - name: Rename PDF files
-      if: steps.check_commits.outputs.has_commits == 'true'
-      id: rename
+    - name: Select variant-specific latexmkrc
       shell: bash
       run: |
-        # Renommer le fichier PDF avec font OpenDyslexic
-        mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
-        echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf"
-        mv seance1_Introduction_ClassificationAeronefs.pdf seance1_Introduction_ClassificationAeronefs_handout.pdf
-        echo "seance1_Introduction_ClassificationAeronefs.pdf renamed to seance1_Introduction_ClassificationAeronefs_handout.pdf"
-        mv seance2_StructureAvionMotorisation.pdf seance2_StructureAvionMotorisation_handout.pdf
-        echo "seance2_StructureAvionMotorisation.pdf renamed to seance2_StructureAvionMotorisation_handout.pdf"
-        mv seance3_BaseAerodynamique.pdf seance3_BaseAerodynamique_handout.pdf
-        echo "seance3_BaseAerodynamique.pdf renamed to seance3_BaseAerodynamique_handout.pdf"
-        mv seance4_CommandesDeVol.pdf seance4_CommandesDeVol_handout.pdf
-        echo "seance4_CommandesDeVol.pdf renamed to seance4_CommandesDeVol_handout.pdf"
-        mv seance5_Atmosphere.pdf seance5_Atmosphere_handout.pdf
-        echo "seance5_Atmosphere.pdf renamed to seance5_Atmosphere_handout.pdf"
+        # Copy the variant-specific latexmkrc to .latexmkrc
+        cp .latexmkrc.${{ matrix.variant }} .latexmkrc
+        echo "Using .latexmkrc.${{ matrix.variant }} for variant ${{ matrix.variant }}"
 
-    - name: Produce LaTeX documents - default font
-      if: steps.check_commits.outputs.has_commits == 'true'
+    - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
-        root_file: | 
-            CoursBIA_complet.tex
-            seance1_Introduction_ClassificationAeronefs.tex
-            seance2_StructureAvionMotorisation.tex
-            seance3_BaseAerodynamique.tex
-            seance4_CommandesDeVol.tex
-            seance5_Atmosphere.tex
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        root_file: ${{ matrix.file }}
+
+    - name: Rename PDF to output name
+      shell: bash
+      run: |
+        # Rename the generated PDF to the expected output name
+        mv ${{ matrix.jobname }}.pdf ${{ matrix.output_name }}
+        echo "${{ matrix.jobname }}.pdf renamed to ${{ matrix.output_name }}"
+
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: PDF-${{ matrix.output_name }}
+        path: ${{ matrix.output_name }}
+
+  release:
+    needs: [check_commits, compile]
+    if: needs.check_commits.outputs.has_commits == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      attestations: write
+    steps:
+    - name: Download all PDFs
+      uses: actions/download-artifact@v4.1.3
+      with:
+        pattern: PDF-*
+        merge-multiple: true
 
     - name: Create Release and Upload Assets
-      if: steps.check_commits.outputs.has_commits == 'true'
       uses: softprops/action-gh-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.NOW }}
-        name: ${{ env.NOW }}
+        tag_name: ${{ needs.check_commits.outputs.tag_name }}
+        name: ${{ needs.check_commits.outputs.tag_name }}
         draft: false
         prerelease: true
         files: |
@@ -122,7 +176,6 @@ jobs:
         generate_release_notes: true
 
     - name: Attest
-      if: steps.check_commits.outputs.has_commits == 'true'
       uses: actions/attest-build-provenance@v3
       with:
           subject-path: '${{ github.workspace }}/*.pdf'
