@@ -3,4 +3,4 @@ do './.latexmkrc';
 
 # Handout variant configuration
 #$lualatex = 'lualatex %O -usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %S';
-set_tex_cmds( '-usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %O %S' ); 
+set_tex_cmds( '%O %S -usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"' ); 
