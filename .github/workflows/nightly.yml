@@ -115,10 +115,10 @@ jobs:
         TEMP_FILE="temp_${{ matrix.jobname }}.tex"
         
         # Write pretex commands to temporary file
-        echo "${{ matrix.pretex }}" > "$TEMP_FILE"
+        echo '${{ matrix.pretex }}' > "$TEMP_FILE"
         
         # Append the original file content
-        echo "\\input{${{ matrix.file }}}" >> "$TEMP_FILE"
+        echo '\\input{${{ matrix.file }}}' >> "$TEMP_FILE"
         
         echo "Created temporary file: $TEMP_FILE"
 
