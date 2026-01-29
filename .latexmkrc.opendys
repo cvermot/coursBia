@@ -1,0 +1,6 @@
+# Variant-specific configuration for OpenDyslexic font
+# Load base configuration
+do './.latexmkrc';
+
+# Define preamble for OpenDyslexic variant
+$preamble = '\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}';

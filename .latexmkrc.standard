@@ -1,0 +1,6 @@
+# Variant-specific configuration for standard variant
+# Load base configuration
+do './.latexmkrc';
+
+# Define preamble for standard variant
+$preamble = '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}';
