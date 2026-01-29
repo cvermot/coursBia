@@ -1,0 +1,6 @@
+# Load base configuration
+do './.latexmkrc';
+
+# Handout variant configuration
+$lualatex = 'lualatex %O -usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %S';
+
