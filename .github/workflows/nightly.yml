@@ -48,14 +48,14 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         #latexmk_use_lualatex: true
-        args: -f .latexmkrc.opendys -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -r .latexmkrc.opendys -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: CoursBIA_complet.tex
         
     - name: Produce LaTeX documents - beamer handout
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
-        args: -f .latexmkrc.handout -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -r .latexmkrc.handout -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: | 
             seance1_Introduction_ClassificationAeronefs.tex
             seance2_StructureAvionMotorisation.tex
@@ -86,7 +86,7 @@ jobs:
       if: steps.check_commits.outputs.has_commits == 'true'
       uses: xu-cheng/latex-action@v3
       with:
-        args: -f .latexmkrc.standard -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -r .latexmkrc.standard -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: | 
             CoursBIA_complet.tex
             seance1_Introduction_ClassificationAeronefs.tex
