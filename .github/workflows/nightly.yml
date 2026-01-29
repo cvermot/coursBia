@@ -55,52 +55,66 @@ jobs:
           - file: CoursBIA_complet.tex
             variant: OpenDys
             jobname: CoursBIA_complet_OpenDyslexic
+            pretex: '\newcommand{\opendys}{}\newcommand{\activeranimations}{}'
           - file: CoursBIA_complet.tex
             variant: Standard
             jobname: CoursBIA_complet
+            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           # seance1 variants
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Handout
             jobname: seance1_Introduction_ClassificationAeronefs_handout
+            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Standard
             jobname: seance1_Introduction_ClassificationAeronefs
+            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           # seance2 variants
           - file: seance2_StructureAvionMotorisation.tex
             variant: Handout
             jobname: seance2_StructureAvionMotorisation_handout
+            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           - file: seance2_StructureAvionMotorisation.tex
             variant: Standard
             jobname: seance2_StructureAvionMotorisation
+            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           # seance3 variants
           - file: seance3_BaseAerodynamique.tex
             variant: Handout
             jobname: seance3_BaseAerodynamique_handout
+            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           - file: seance3_BaseAerodynamique.tex
             variant: Standard
             jobname: seance3_BaseAerodynamique
+            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           # seance4 variants
           - file: seance4_CommandesDeVol.tex
             variant: Handout
             jobname: seance4_CommandesDeVol_handout
+            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           - file: seance4_CommandesDeVol.tex
             variant: Standard
             jobname: seance4_CommandesDeVol
+            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           # seance5 variants
           - file: seance5_Atmosphere.tex
             variant: Handout
             jobname: seance5_Atmosphere_handout
+            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
           - file: seance5_Atmosphere.tex
             variant: Standard
             jobname: seance5_Atmosphere
+            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
+      env:
+        INPUT_PRE_COMPILE: echo "${{ matrix.pretex }}" > custom.tex && echo '\\input{custom.tex}'
       with:
-        args: -r .latexmkrc.${{ matrix.variant }} -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: ${{ matrix.file }}
 
     - name: Upload PDF artifact
