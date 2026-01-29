@@ -112,15 +112,15 @@ jobs:
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
-        args: -r .latexmkrc.${{ matrix.variant }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -r .latexmkrc.${{ matrix.variant }} -jobname=${{ matrix.jobname }}_${{ matrix.variant }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: ${{ matrix.file }}
 
-    - name: Rename PDF to output name
+    - name: Rename PDF to final output name
       shell: bash
       run: |
         # Rename the generated PDF to the expected output name
-        mv ${{ matrix.jobname }}.pdf ${{ matrix.output_name }}
-        echo "${{ matrix.jobname }}.pdf renamed to ${{ matrix.output_name }}"
+        mv ${{ matrix.jobname }}_${{ matrix.variant }}.pdf ${{ matrix.output_name }}
+        echo "${{ matrix.jobname }}_${{ matrix.variant }}.pdf renamed to ${{ matrix.output_name }}"
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
