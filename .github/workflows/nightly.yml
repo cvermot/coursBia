@@ -1,4 +1,4 @@
-name: Compilation LaTeX - Nigthly
+name: Compilation LaTeX - Nightly
 on: 
   schedule:
     - cron: "37 3 * * *" #A 3h37 tous les jours
@@ -20,7 +20,7 @@ jobs:
       id: check_commits
       shell: bash
       run: |
-        # Définir les dates de début et fin pour hier (en UTC)
+        # Définir les dates de début et de fin pour hier (en UTC)
         START_DATE=$(date -u -d "yesterday 00:00:00" +"%Y-%m-%dT%H:%M:%S")
         END_DATE=$(date -u -d "yesterday 23:59:59" +"%Y-%m-%dT%H:%M:%S")
         
@@ -172,7 +172,6 @@ jobs:
           seance4_CommandesDeVol_handout.pdf
           seance5_Atmosphere.pdf
           seance5_Atmosphere_handout.pdf
-          coursBIA_sources.zip
         generate_release_notes: true
 
     - name: Attest

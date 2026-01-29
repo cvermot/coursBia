@@ -1,5 +1,4 @@
-$pdf_mode = 4; #Force PDF
-#$pdflatex = 'lualatex %O %S'; # Forcer LuaLaTeX
+$pdf_mode = 1; #Force PDF via pdflatex
 
 # OpenDyslexic variant configuration
 $latex = 'latex %O -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}" %S';
