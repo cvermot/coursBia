@@ -113,7 +113,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -jobname=${{ matrix.jobname }} -r .latexmkrc.${{ matrix.variant }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder -r .latexmkrc.${{ matrix.variant }}
         root_file: ${{ matrix.file }}
 
     - name: Upload PDF artifact
