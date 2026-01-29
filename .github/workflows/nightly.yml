@@ -109,17 +109,10 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
-    - name: Select variant-specific latexmkrc
-      shell: bash
-      run: |
-        # Copy the variant-specific latexmkrc to .latexmkrc
-        cp .latexmkrc.${{ matrix.variant }} .latexmkrc
-        echo "Using .latexmkrc.${{ matrix.variant }} for variant ${{ matrix.variant }}"
-
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder
+        args: -r .latexmkrc.${{ matrix.variant }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
         root_file: ${{ matrix.file }}
 
     - name: Rename PDF to output name
