@@ -64,85 +64,63 @@ jobs:
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Handout
             jobname: seance1_Introduction_ClassificationAeronefs_handout
-            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Standard
             jobname: seance1_Introduction_ClassificationAeronefs
-            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           # seance2 variants
           - file: seance2_StructureAvionMotorisation.tex
             variant: Handout
             jobname: seance2_StructureAvionMotorisation_handout
-            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           - file: seance2_StructureAvionMotorisation.tex
             variant: Standard
             jobname: seance2_StructureAvionMotorisation
-            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           # seance3 variants
           - file: seance3_BaseAerodynamique.tex
             variant: Handout
             jobname: seance3_BaseAerodynamique_handout
-            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           - file: seance3_BaseAerodynamique.tex
             variant: Standard
             jobname: seance3_BaseAerodynamique
-            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           # seance4 variants
           - file: seance4_CommandesDeVol.tex
             variant: Handout
             jobname: seance4_CommandesDeVol_handout
-            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           - file: seance4_CommandesDeVol.tex
             variant: Standard
             jobname: seance4_CommandesDeVol
-            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           # seance5 variants
           - file: seance5_Atmosphere.tex
             variant: Handout
             jobname: seance5_Atmosphere_handout
-            pretex: '\newcommand{\activerhandout}{}\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           - file: seance5_Atmosphere.tex
             variant: Standard
             jobname: seance5_Atmosphere
-            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
-
-    - name: Create temporary LaTeX file with variant-specific pretex
-      run: |
-        # Create temporary file name
-        TEMP_FILE="temp_${{ matrix.jobname }}.tex"
-        
-        # Write pretex commands to temporary file
-        echo '${{ matrix.pretex }}' > "$TEMP_FILE"
-        
-        # Append the original file content
-        echo '\\input{${{ matrix.file }}}' >> "$TEMP_FILE"
-        
-        echo "Created temporary file: $TEMP_FILE"
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
-        root_file: temp_${{ matrix.jobname }}.tex
+        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="{{ matrix.pretex }}"
+        root_file: ${{ matrix.file }}
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
         name: PDF-${{ matrix.jobname }}.pdf
         path: ${{ matrix.jobname }}.pdf
-
-    - name: Cleanup temporary file
-      if: always()
-      run: |
-        TEMP_FILE="temp_${{ matrix.jobname }}.tex"
-        if [ -f "$TEMP_FILE" ]; then
-          rm "$TEMP_FILE"
-          echo "Removed temporary file: $TEMP_FILE"
-        fi
 
   release:
     needs: [check_commits, compile]
