@@ -55,11 +55,11 @@ jobs:
           - file: CoursBIA_complet.tex
             variant: OpenDys
             jobname: CoursBIA_complet_OpenDyslexic
-            pretex: '\newcommand{\opendys}{}\newcommand{\activeranimations}{}'
+            pretex: '\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}'
           - file: CoursBIA_complet.tex
             variant: Standard
             jobname: CoursBIA_complet
-            pretex: '\newcommand{\activeranimations}{}\newcommand{\activerbibliobeamer}{}'
+            pretex: '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}'
           # seance1 variants
           - file: seance1_Introduction_ClassificationAeronefs.tex
             variant: Handout
