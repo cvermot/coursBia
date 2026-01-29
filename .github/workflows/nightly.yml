@@ -109,19 +109,40 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
+    - name: Create temporary LaTeX file with variant-specific pretex
+      run: |
+        # Create temporary file name
+        TEMP_FILE="temp_${{ matrix.jobname }}.tex"
+        
+        # Write pretex commands to temporary file
+        echo "${{ matrix.pretex }}" > "$TEMP_FILE"
+        
+        # Append the original file content
+        echo "\\input{${{ matrix.file }}}" >> "$TEMP_FILE"
+        
+        echo "Created temporary file: $TEMP_FILE"
+
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v3
       with:
-        pre_compile: echo "${{ matrix.pretex }}" > custom.tex && echo '\\input{custom.tex}'
         latexmk_use_lualatex: true
         args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder
-        root_file: ${{ matrix.file }}
+        root_file: temp_${{ matrix.jobname }}.tex
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
         name: PDF-${{ matrix.jobname }}.pdf
         path: ${{ matrix.jobname }}.pdf
+
+    - name: Cleanup temporary file
+      if: always()
+      run: |
+        TEMP_FILE="temp_${{ matrix.jobname }}.tex"
+        if [ -f "$TEMP_FILE" ]; then
+          rm "$TEMP_FILE"
+          echo "Removed temporary file: $TEMP_FILE"
+        fi
 
   release:
     needs: [check_commits, compile]
