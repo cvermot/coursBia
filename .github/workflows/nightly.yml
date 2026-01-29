@@ -146,6 +146,7 @@ jobs:
           seance4_CommandesDeVol_handout.pdf
           seance5_Atmosphere.pdf
           seance5_Atmosphere_handout.pdf
+          coursBIA_sources.zip
         generate_release_notes: true
 
     - name: Attest
