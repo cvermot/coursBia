@@ -2,6 +2,5 @@
 do './.latexmkrc';
 
 # Standard variant configuration
-$latex = 'latex %O -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %S';
-$pdflatex = 'pdflatex %O -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %S';
+$lualatex = 'lualatex %O -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %S';
 

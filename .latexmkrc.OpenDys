@@ -2,6 +2,5 @@
 do './.latexmkrc';
 
 # OpenDyslexic variant configuration
-$latex = 'latex %O -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}" %S';
-$pdflatex = 'pdflatex %O -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}" %S';
+$lualatex = 'lualatex %O -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}" %S';
 
