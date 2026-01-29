@@ -2,5 +2,7 @@
 # Load base configuration
 do './.latexmkrc';
 
-# Define preamble for standard variant
-$preamble = '\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}';
+# Set pretex option for pdflatex
+$pdflatex = 'pdflatex -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %O %S';
+$lualatex = 'lualatex -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %O %S';
+$xelatex = 'xelatex -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %O %S';
