@@ -52,3 +52,5 @@
 01-EtudeAeronefs/img/Cycle4Temps/cycle4temps_doc.pdf
 *.tlg
 *.tld
+# Temporary files created by nightly workflow
+temp_*.tex
