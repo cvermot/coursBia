@@ -55,6 +55,7 @@ jobs:
       - name: Load matrix from JSON
         id: set-matrix
         run: |
+          set -e
           matrix=$(cat matrix.json | jq -c .)
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
 
@@ -123,13 +124,14 @@ jobs:
     - name: Generate file list
       id: generate-files
       run: |
+        set -e
         # Read matrix.json and generate the file list
         FILES=""
         
         # Loop through each item in the matrix
         for row in $(cat matrix.json | jq -c '.include[]'); do
-          file=$(echo $row | jq -r '.file')
-          variantFileName=$(echo $row | jq -r '.variantFileName')
+          file=$(echo "$row" | jq -r '.file')
+          variantFileName=$(echo "$row" | jq -r '.variantFileName')
           
           FILES="${FILES}${file}.pdf"$'\n'
           FILES="${FILES}${variantFileName}.pdf"$'\n'
