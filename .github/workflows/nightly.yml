@@ -96,7 +96,10 @@ jobs:
       run: |
         # Rename the PDF from first pass to the variant filename
         # The auxiliary files (.aux, .toc, .bbl, etc.) remain with the base filename for reuse
-        mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
+        # Only rename if the filenames are different (skip for standard variants where file == variantFileName)
+        if [ "${{ matrix.file }}" != "${{ matrix.variantFileName }}" ]; then
+          mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
+        fi
 
     - name: Second pass - Compile with common parameters
       uses: xu-cheng/latex-action@v3
