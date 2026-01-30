@@ -18,12 +18,12 @@ jobs:
           # Format: release-YYYY.MM.DD-HH.mm
           echo "tag_name=release-$(date +'%Y.%m.%d-%H.%M')" >> "$GITHUB_OUTPUT"
 
-      - name: Load matrix from JSON
+      - name: Load matrix from JSON and filter presentations
         id: set-matrix
         run: |
           set -e
-          # Load all files from matrix
-          matrix=$(cat matrix.json | jq -c '{include: .files}')
+          # Filter only files with toRelease: true
+          matrix=$(cat matrix.json | jq -c '{include: [.files[] | select(.toRelease == true)]}')
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
 
   compile:
