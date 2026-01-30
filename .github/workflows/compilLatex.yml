@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check encoding
-        run: file -i ${{ matrix.tex_file }}
+        run: file -i ${{ matrix.file }}
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
