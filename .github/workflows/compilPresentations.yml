@@ -1,36 +1,47 @@
 name: Compilation LaTeX - Présentations
-on: 
+on:
   workflow_dispatch: # Permet le lancement manuel
+
 jobs:
-  Produce_LaTeX_document:
+  load_matrix:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Load matrix from JSON and filter presentations
+        id: set-matrix
+        run: |
+          set -e
+          # Filter only files with presentation: true
+          matrix=$(cat matrix.json | jq -c '{include: [.files[] | select(.presentation == true)]}')
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+  Produce_LaTeX_document:
+    needs: load_matrix
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.load_matrix.outputs.matrix) }}
+
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-        
+
       - name: Check encoding
-        run: file -i CoursBIA_complet.tex
-        
-      - name: Compile LaTeX presentations
+        run: file -i ${{ matrix.file }}.tex
+
+      - name: Compile LaTeX presentation
         uses: xu-cheng/latex-action@v4
         with:
           #latexmk_use_lualatex: true
           args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"
-          root_file: | 
-            seance1_Introduction_ClassificationAeronefs.tex
-            seance2_StructureAvionMotorisation.tex
-            seance3_BaseAerodynamique.tex
-            seance4_CommandesDeVol.tex
-            seance5_Atmosphere.tex
-      
+          root_file: ${{ matrix.file }}.tex
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
-          path:  |
-            seance1_Introduction_ClassificationAeronefs.pdf
-            seance2_StructureAvionMotorisation.pdf
-            seance3_BaseAerodynamique.pdf
-            seance4_CommandesDeVol.pdf
-            seance5_Atmosphere.pdf
-            
+          name: PDF-${{ matrix.file }}.pdf
+          path: ${{ matrix.file }}.pdf
+

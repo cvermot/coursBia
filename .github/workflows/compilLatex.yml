@@ -19,7 +19,7 @@ jobs:
         id: set-matrix
         run: |
           set -e
-          matrix=$(cat matrix.json | jq -c .)
+          matrix=$(cat matrix.json | jq -c '{include: .files}')
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
   compile:
     needs: [load_matrix]
@@ -28,7 +28,7 @@ jobs:
       contents: read
     strategy:
       matrix: ${{ fromJson(needs.load_matrix.outputs.matrix) }}
-    
+
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
