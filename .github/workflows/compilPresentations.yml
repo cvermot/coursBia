@@ -12,7 +12,7 @@ jobs:
         run: file -i CoursBIA_complet.tex
         
       - name: Compile LaTeX presentations
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           #latexmk_use_lualatex: true
           args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}"

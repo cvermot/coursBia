@@ -1,7 +1,0 @@
-# Load base configuration
-do './.latexmkrc';
-
-# Standard variant configuration
-#$lualatex = 'lualatex %O -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %S';
-set_tex_cmds( '-usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}" %O %S' ); 
-

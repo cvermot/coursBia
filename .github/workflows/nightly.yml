@@ -100,7 +100,7 @@ jobs:
         args: >-
             -file-line-error -halt-on-error -interaction=nonstopmode
             -recorder
-            -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
+            -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
         root_file: ${{ matrix.file }}.tex
 
     - name: Upload PDF artifact - second pass

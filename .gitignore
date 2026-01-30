@@ -54,3 +54,4 @@
 *.tld
 # Temporary files created by nightly workflow
 temp_*.tex
+*.dvi
