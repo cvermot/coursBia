@@ -1,5 +1,5 @@
 name: Compilation LaTeX - Nightly
-on: 
+on:
   schedule:
     - cron: "37 3 * * *" #A 3h37 tous les jours
   workflow_dispatch: # Permet le lancement manuel
@@ -23,10 +23,10 @@ jobs:
         # Définir les dates de début et de fin pour hier (en UTC)
         START_DATE=$(date -u -d "yesterday 00:00:00" +"%Y-%m-%dT%H:%M:%S")
         END_DATE=$(date -u -d "yesterday 23:59:59" +"%Y-%m-%dT%H:%M:%S")
-        
+
         # Compter les commits d'hier
         COMMIT_COUNT=$(git log --after="$START_DATE" --before="$END_DATE" --oneline | wc -l)
-        
+
         if [ $COMMIT_COUNT -gt 0 ]; then
           echo "There were $COMMIT_COUNT commit(s) yesterday"
           echo "has_commits=true" >> "$GITHUB_OUTPUT"
@@ -51,12 +51,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Load matrix from JSON
         id: set-matrix
         run: |
           set -e
-          matrix=$(cat matrix.json | jq -c .)
+          matrix=$(cat matrix.json | jq -c '{include: .files}')
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
 
   compile:
@@ -67,7 +67,7 @@ jobs:
       contents: read
     strategy:
       matrix: ${{ fromJson(needs.load_matrix.outputs.matrix) }}
-    
+
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
@@ -86,7 +86,7 @@ jobs:
       run: |
         # Rename the PDF from first pass to the variant filename
         mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
-    
+
     - name: Upload PDF artifact - first pass
       uses: actions/upload-artifact@v4
       with:
@@ -120,31 +120,31 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    
+
     - name: Generate file list
       id: generate-files
       run: |
         set -e
         # Read matrix.json and generate the file list
         FILES=""
-        
+
         # Loop through each item in the matrix
-        for row in $(cat matrix.json | jq -c '.include[]'); do
+        for row in $(cat matrix.json | jq -c '.files[]'); do
           file=$(echo "$row" | jq -r '.file')
           variantFileName=$(echo "$row" | jq -r '.variantFileName')
-          
+
           FILES="${FILES}${file}.pdf"$'\n'
           FILES="${FILES}${variantFileName}.pdf"$'\n'
         done
-        
+
         # Add the sources zip
         FILES="${FILES}coursBIA_sources.zip"
-        
+
         # Save to output
         echo "files<<EOF" >> "$GITHUB_OUTPUT"
         echo "$FILES" >> "$GITHUB_OUTPUT"
         echo "EOF" >> "$GITHUB_OUTPUT"
-    
+
     - name: Download all PDFs
       uses: actions/download-artifact@v4.1.3
       with:

@@ -1,91 +1,127 @@
 name: Compilation LaTeX - Release
-on: 
+on:
   workflow_dispatch: # Permet le lancement manuel
 
 jobs:
-  Produce_and_Release_LaTeX_documents:
+  load_matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      tag_name: ${{ steps.set_env.outputs.tag_name }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up environment
+        id: set_env
+        run: |
+          # Format: release-YYYY.MM.DD-HH.mm
+          echo "tag_name=release-$(date +'%Y.%m.%d-%H.%M')" >> "$GITHUB_OUTPUT"
+
+      - name: Load matrix from JSON
+        id: set-matrix
+        run: |
+          set -e
+          # Load all files from matrix
+          matrix=$(cat matrix.json | jq -c '{include: .files}')
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+  compile:
+    needs: load_matrix
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      matrix: ${{ fromJson(needs.load_matrix.outputs.matrix) }}
+
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v4
+
+    - name: First pass - Compile variant (OpenDyslexic for CoursBIA_complet, handout for presentations)
+      uses: xu-cheng/latex-action@v4
+      with:
+        #latexmk_use_lualatex: true
+        args: |
+          -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerrelease}{}\\newcommand{\\activerhandout}{}\\newcommand{\\activerbibliobeamer}{}"
+        root_file: ${{ matrix.file }}.tex
+
+    - name: Rename first pass PDF to variant filename
+      run: |
+        # Rename the PDF from first pass to the variant filename
+        mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
+
+    - name: Upload PDF artifact - first pass
+      uses: actions/upload-artifact@v4
+      with:
+        name: PDF-${{ matrix.variantFileName }}.pdf
+        path: ${{ matrix.variantFileName }}.pdf
+
+    - name: Second pass - Compile standard version
+      uses: xu-cheng/latex-action@v4
+      with:
+        #latexmk_use_lualatex: true
+        args: |
+          -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\activerrelease}{}"
+        root_file: ${{ matrix.file }}.tex
+
+    - name: Upload PDF artifact - second pass
+      uses: actions/upload-artifact@v4
+      with:
+        name: PDF-${{ matrix.file }}.pdf
+        path: ${{ matrix.file }}.pdf
+
+  release:
+    needs: [load_matrix, compile]
     runs-on: ubuntu-latest
     permissions:
       id-token: write
       contents: write
       attestations: write
-      
     steps:
-    - name: Set up Git repository
+    - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
 
-    - name: Set up environment
+    - name: Generate file list for release
+      id: generate-files
       run: |
-        # Format: release-YYYY.MM.DD-HH.mm
-        echo "NOW=release-$(date +'%Y.%m.%d-%H.%M')" >> $GITHUB_ENV
+        set -e
+        # Read matrix.json and generate the file list for files with toRelease: true
+        FILES=""
 
-    - name: Compile LaTeX document - OpenDyslexic font
-      uses: xu-cheng/latex-action@v4
-      with:
-        #latexmk_use_lualatex: true
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerrelease}{}"
-        root_file: CoursBIA_complet.tex
-        
-    - name: Produce LaTeX documents - beamer handout
-      uses: xu-cheng/latex-action@v3
-      with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
-        root_file: | 
-            seance1_Introduction_ClassificationAeronefs.tex
-            seance2_StructureAvionMotorisation.tex
-            seance3_BaseAerodynamique.tex
-            seance4_CommandesDeVol.tex
+        # Loop through each item in the matrix and filter by toRelease
+        for row in $(cat matrix.json | jq -c '.files[] | select(.toRelease == true)'); do
+          file=$(echo "$row" | jq -r '.file')
+          variantFileName=$(echo "$row" | jq -r '.variantFileName')
 
-    - name: Rename PDF files
-      id: rename
-      shell: bash
-      run: |
-        # Renommer le fichier PDF avec font OpenDyslexic
-        mv CoursBIA_complet.pdf CoursBIA_complet_OpenDyslexic.pdf
-        echo "CoursBIA_complet.pdf renamed to CoursBIA_complet_OpenDyslexic.pdf"
-        mv seance1_Introduction_ClassificationAeronefs.pdf seance1_Introduction_ClassificationAeronefs_handout.pdf
-        echo "seance1_Introduction_ClassificationAeronefs.pdf renamed to seance1_Introduction_ClassificationAeronefs_handout.pdf"
-        mv seance2_StructureAvionMotorisation.pdf seance2_StructureAvionMotorisation_handout.pdf
-        echo "seance2_StructureAvionMotorisation.pdf renamed to seance2_StructureAvionMotorisation_handout.pdf"
-        mv seance3_BaseAerodynamique.pdf seance3_BaseAerodynamique_handout.pdf
-        echo "seance3_BaseAerodynamique.pdf renamed to seance3_BaseAerodynamique_handout.pdf"
-        mv seance4_CommandesDeVol.pdf seance4_CommandesDeVol_handout.pdf
-        echo "seance4_CommandesDeVol.pdf renamed to seance4_CommandesDeVol_handout.pdf"
+          FILES="${FILES}${file}.pdf"$'\n'
+          FILES="${FILES}${variantFileName}.pdf"$'\n'
+        done
 
-    - name: Produce LaTeX documents - default font
-      uses: xu-cheng/latex-action@v3
+        # Add the sources zip
+        FILES="${FILES}coursBIA_sources.zip"
+
+        # Save to output
+        echo "files<<EOF" >> "$GITHUB_OUTPUT"
+        echo "$FILES" >> "$GITHUB_OUTPUT"
+        echo "EOF" >> "$GITHUB_OUTPUT"
+
+    - name: Download all PDFs
+      uses: actions/download-artifact@v4.1.3
       with:
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\activerrelease}{}"
-        root_file: | 
-            CoursBIA_complet.tex
-            seance1_Introduction_ClassificationAeronefs.tex
-            seance2_StructureAvionMotorisation.tex
-            seance3_BaseAerodynamique.tex
-            seance4_CommandesDeVol.tex
+        pattern: PDF-*
+        merge-multiple: true
 
     - name: Create Release and Upload Assets
       uses: softprops/action-gh-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.NOW }}
-        name: ${{ env.NOW }}
+        tag_name: ${{ needs.load_matrix.outputs.tag_name }}
+        name: ${{ needs.load_matrix.outputs.tag_name }}
         draft: false
         prerelease: false
-        files: |
-          CoursBIA_complet.pdf
-          CoursBIA_complet_OpenDyslexic.pdf
-          seance1_Introduction_ClassificationAeronefs.pdf
-          seance1_Introduction_ClassificationAeronefs_handout.pdf
-          seance2_StructureAvionMotorisation.pdf
-          seance2_StructureAvionMotorisation_handout.pdf
-          seance3_BaseAerodynamique.pdf
-          seance3_BaseAerodynamique_handout.pdf
-          seance4_CommandesDeVol.pdf
-          seance4_CommandesDeVol_handout.pdf
-          coursBIA_sources.zip
+        files: ${{ steps.generate-files.outputs.files }}
         generate_release_notes: true
 
     - name: Attest
