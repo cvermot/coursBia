@@ -1,0 +1,28 @@
+{
+  "include": [
+    {
+      "file": "CoursBIA_complet",
+      "variantFileName": "CoursBIA_complet_OpenDyslexic"
+    },
+    {
+      "file": "seance1_Introduction_ClassificationAeronefs",
+      "variantFileName": "seance1_Introduction_ClassificationAeronefs_handout"
+    },
+    {
+      "file": "seance2_StructureAvionMotorisation",
+      "variantFileName": "seance2_StructureAvionMotorisation_handout"
+    },
+    {
+      "file": "seance3_BaseAerodynamique",
+      "variantFileName": "seance3_BaseAerodynamique_handout"
+    },
+    {
+      "file": "seance4_CommandesDeVol",
+      "variantFileName": "seance4_CommandesDeVol_handout"
+    },
+    {
+      "file": "seance5_Atmosphere",
+      "variantFileName": "seance5_Atmosphere_handout"
+    }
+  ]
+}
