@@ -51,60 +51,36 @@ jobs:
     strategy:
       matrix:
         include:
-          # CoursBIA_complet.tex variants
-          - file: CoursBIA_complet.tex
-            variant: OpenDys
-            jobname: CoursBIA_complet_OpenDyslexic
-            pretex: '"\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}"'
-          - file: CoursBIA_complet.tex
-            variant: Standard
-            jobname: CoursBIA_complet
-            pretex: '"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+          # CoursBIA_complet variants
+          - file: CoursBIA_complet
+            variantFileName: CoursBIA_complet_OpenDyslexic
+          - file: CoursBIA_complet
+            variantFileName: CoursBIA_complet
           # seance1 variants
-          - file: seance1_Introduction_ClassificationAeronefs.tex
-            variant: Handout
-            jobname: seance1_Introduction_ClassificationAeronefs_handout
-            pretex: '"\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
-          - file: seance1_Introduction_ClassificationAeronefs.tex
-            variant: Standard
-            jobname: seance1_Introduction_ClassificationAeronefs
-            pretex: '"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+          - file: seance1_Introduction_ClassificationAeronefs
+            variantFileName: seance1_Introduction_ClassificationAeronefs_handout
+          - file: seance1_Introduction_ClassificationAeronefs
+            variantFileName: seance1_Introduction_ClassificationAeronefs
           # seance2 variants
-          - file: seance2_StructureAvionMotorisation.tex
-            variant: Handout
-            jobname: seance2_StructureAvionMotorisation_handout
-            pretex: '"\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
-          - file: seance2_StructureAvionMotorisation.tex
-            variant: Standard
-            jobname: seance2_StructureAvionMotorisation
-            pretex: '"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+          - file: seance2_StructureAvionMotorisation
+            variantFileName: seance2_StructureAvionMotorisation_handout
+          - file: seance2_StructureAvionMotorisation
+            variantFileName: seance2_StructureAvionMotorisation
           # seance3 variants
-          - file: seance3_BaseAerodynamique.tex
-            variant: Handout
-            jobname: seance3_BaseAerodynamique_handout
-            pretex: '"\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
-          - file: seance3_BaseAerodynamique.tex
-            variant: Standard
-            jobname: seance3_BaseAerodynamique
-            pretex: '"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+          - file: seance3_BaseAerodynamique
+            variantFileName: seance3_BaseAerodynamique_handout
+          - file: seance3_BaseAerodynamique
+            variantFileName: seance3_BaseAerodynamique
           # seance4 variants
-          - file: seance4_CommandesDeVol.tex
-            variant: Handout
-            jobname: seance4_CommandesDeVol_handout
-            pretex: '"\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
-          - file: seance4_CommandesDeVol.tex
-            variant: Standard
-            jobname: seance4_CommandesDeVol
-            pretex: '"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+          - file: seance4_CommandesDeVol
+            variantFileName: seance4_CommandesDeVol_handout
+          - file: seance4_CommandesDeVol
+            variantFileName: seance4_CommandesDeVol
           # seance5 variants
-          - file: seance5_Atmosphere.tex
-            variant: Handout
-            jobname: seance5_Atmosphere_handout
-            pretex: '"\\newcommand{\\activerhandout}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
-          - file: seance5_Atmosphere.tex
-            variant: Standard
-            jobname: seance5_Atmosphere
-            pretex: '"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+          - file: seance5_Atmosphere
+            variantFileName: seance5_Atmosphere_handout
+          - file: seance5_Atmosphere
+            variantFileName: seance5_Atmosphere
     steps:
     - name: Set up Git repository
       uses: actions/checkout@v4
@@ -113,27 +89,27 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex='"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\opendys}{}\\newcommand{\\activerhandout}{}"'
-        root_file: ${{ matrix.file }}
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex='"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\opendys}{}\\newcommand{\\activerhandout}{}"'
+        root_file: ${{ matrix.file }}.tex
 
-    - name: Rename first pass PDF to preserve auxiliary files
+    - name: Rename first pass PDF to variant filename
       run: |
-        # Rename the PDF from first pass to preserve it
-        # The auxiliary files (.aux, .toc, .bbl, etc.) remain with jobname for reuse
-        mv ${{ matrix.jobname }}.pdf ${{ matrix.jobname }}_first_pass.pdf
+        # Rename the PDF from first pass to the variant filename
+        # The auxiliary files (.aux, .toc, .bbl, etc.) remain with the base filename for reuse
+        mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
 
-    - name: Second pass - Compile with variant-specific parameters
+    - name: Second pass - Compile with common parameters
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex=${{ matrix.pretex }}
-        root_file: ${{ matrix.file }}
+        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex='"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+        root_file: ${{ matrix.file }}.tex
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
-        name: PDF-${{ matrix.jobname }}.pdf
-        path: ${{ matrix.jobname }}.pdf
+        name: PDF-${{ matrix.variantFileName }}.pdf
+        path: ${{ matrix.variantFileName }}.pdf
 
   release:
     needs: [check_commits, compile]
