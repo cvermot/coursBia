@@ -90,7 +90,7 @@ jobs:
     - name: Upload PDF artifact - first pass
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ matrix.variantFileName }}.pdf
+        name: PDF-${{ matrix.variantFileName }}.pdf
         path: ${{ matrix.variantFileName }}.pdf
 
     - name: Second pass - Compile with common parameters
@@ -106,7 +106,7 @@ jobs:
     - name: Upload PDF artifact - second pass
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ matrix.file }}.pdf
+        name: PDF-${{ matrix.file }}.pdf
         path: ${{ matrix.file }}.pdf
 
   release:
@@ -148,7 +148,7 @@ jobs:
     - name: Download all PDFs
       uses: actions/download-artifact@v4.1.3
       with:
-        pattern: *.pdf
+        pattern: PDF-*
         merge-multiple: true
 
     - name: Create Release and Upload Assets
