@@ -72,7 +72,10 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex='"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\opendys}{}\\newcommand{\\activerhandout}{}"'
+        args: >-
+            -file-line-error -halt-on-error -interaction=nonstopmode
+            -recorder
+            -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\opendys}{}\\newcommand{\\activerhandout}{}"
         root_file: ${{ matrix.file }}.tex
 
     - name: Rename first pass PDF to variant filename
@@ -84,7 +87,10 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
-        args: -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex='"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"'
+        args: >-
+            -file-line-error -halt-on-error -interaction=nonstopmode
+            -recorder
+            -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
         root_file: ${{ matrix.file }}.tex
 
     - name: Upload PDF artifact
