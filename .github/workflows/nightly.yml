@@ -109,7 +109,20 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
-    - name: Compile LaTeX document
+    - name: First pass - Compile with all parameters to generate auxiliary files
+      uses: xu-cheng/latex-action@v3
+      with:
+        latexmk_use_lualatex: true
+        args: -jobname=${{ matrix.jobname }} -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex='"\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\opendys}{}\\newcommand{\\activerhandout}{}"'
+        root_file: ${{ matrix.file }}
+
+    - name: Rename first pass PDF to preserve auxiliary files
+      run: |
+        # Rename the PDF from first pass to preserve it
+        # The auxiliary files (.aux, .toc, .bbl, etc.) remain with jobname for reuse
+        mv ${{ matrix.jobname }}.pdf ${{ matrix.jobname }}_first_pass.pdf
+
+    - name: Second pass - Compile with variant-specific parameters
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
