@@ -68,7 +68,7 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
-    - name: First pass - Compile with all parameters to generate auxiliary files
+    - name: First pass - Compile with all parameters
       uses: xu-cheng/latex-action@v3
       with:
         latexmk_use_lualatex: true
@@ -78,10 +78,16 @@ jobs:
             -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\opendys}{}\\newcommand{\\activerhandout}{}"
         root_file: ${{ matrix.file }}.tex
 
-    - name: Rename first pass PDF to variant filename
-      run: |
-        # Rename the PDF from first pass to the variant filename
-        mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
+    #- name: Rename first pass PDF to variant filename
+    #  run: |
+    #    # Rename the PDF from first pass to the variant filename
+    #    mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
+    
+    - name: Upload PDF artifact - first pass
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ matrix.file }}.pdf
+        path: ${{ matrix.variantFileName }}.pdf
 
     - name: Second pass - Compile with common parameters
       uses: xu-cheng/latex-action@v3
@@ -93,11 +99,11 @@ jobs:
             -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
         root_file: ${{ matrix.file }}.tex
 
-    - name: Upload PDF artifact
+    - name: Upload PDF artifact - second pass
       uses: actions/upload-artifact@v4
       with:
-        name: PDF-${{ matrix.variantFileName }}.pdf
-        path: ${{ matrix.variantFileName }}.pdf
+        name: ${{ matrix.file }}.pdf
+        path: ${{ matrix.file }}.pdf
 
   release:
     needs: [check_commits, compile]
