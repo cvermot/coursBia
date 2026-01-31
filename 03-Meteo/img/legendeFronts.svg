@@ -7,7 +7,8 @@
    width="313.93732"
    height="182.45599"
    viewBox="0 0 313.93732 182.45599"
-   sodipodi:docname="14_phak_ch12.pdf"
+   sodipodi:docname="legendeFronts.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -50,7 +51,16 @@
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1">
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.7760118"
+     inkscape:cx="259.36489"
+     inkscape:cy="83.393017"
+     inkscape:window-width="2240"
+     inkscape:window-height="1294"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1">
     <inkscape:page
        x="0"
        y="0"
@@ -66,168 +76,136 @@
      inkscape:label="19"
      transform="translate(-97.266135,-59.733472)">
     <g
-       id="g3">
+       opacity="0.100006"
+       id="g7"
+       clip-path="url(#clipPath7)"
+       transform="matrix(1.0004132,0,0,0.64913195,-0.1050385,48.74844)">
       <g
-         id="group-MC0">
-        <g
-           opacity="0.100006"
-           id="g7"
-           clip-path="url(#clipPath7)">
-          <g
-             clip-path="url(#clipPath5)"
-             id="g6">
-            <path
-               d="m 0,0 c 0,-1.574 -1.273,-2.848 -2.846,-2.848 h -229.26 c -1.57,0 -2.847,1.274 -2.847,2.848 v 130.646 c 0,1.575 1.277,2.848 2.847,2.848 h 229.26 c 1.573,0 2.846,-1.273 2.846,-2.848 z"
-               style="fill:#abd2e5;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               transform="matrix(1.3333333,0,0,-1.3333333,410.87013,238.0588)"
-               clip-path="url(#clipPath4)"
-               id="path6" />
-          </g>
-        </g>
+         clip-path="url(#clipPath5)"
+         id="g6">
         <path
-           id="path8"
            d="m 0,0 c 0,-1.574 -1.273,-2.848 -2.846,-2.848 h -229.26 c -1.57,0 -2.847,1.274 -2.847,2.848 v 130.646 c 0,1.575 1.277,2.848 2.847,2.848 h 229.26 c 1.573,0 2.846,-1.273 2.846,-2.848 z"
-           style="fill:none;stroke:#507282;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,410.87013,238.0588)" />
-        <text
-           id="text8"
-           xml:space="preserve"
-           transform="matrix(1.3333333,0,0,1.3333333,107.38453,75.474667)"><tspan
-             id="tspan8"
-             style="font-variant:normal;font-weight:700;font-stretch:normal;font-size:8px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="0">Symbols for surface fronts and other significant lines </tspan><tspan
-             id="tspan9"
-             style="font-variant:normal;font-weight:700;font-stretch:normal;font-size:8px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="9.6000004">shown on the surface analysis chart</tspan></text>
-        <text
-           id="text9"
-           xml:space="preserve"
-           transform="matrix(1.3333333,0,0,1.3333333,107.38453,213.02587)"><tspan
-             id="tspan10"
-             style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="0">* Note: Fronts may be black and white or color depending on their </tspan><tspan
-             id="tspan11"
-             style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="8.0024996">source. Also, fronts shown in color code do not necessarily show </tspan><tspan
-             id="tspan12"
-             style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="16.004999">frontal symbols.</tspan></text>
-        <path
-           id="path12"
-           d="M 0,0 H 106.923"
-           style="fill:none;stroke:#783a90;stroke-width:0.945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,114.12987,189.22427)" />
-        <path
-           id="path13"
-           d="M 0,0 C 0,0 0,7.559 7.369,7.559 15.52,7.559 15.05,0 15.05,0"
-           style="fill:#783a90;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,124.5824,189.22427)" />
-        <path
-           id="path14"
-           d="M 0,0 7.526,8.818 14.892,0 Z"
-           style="fill:#783a90;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,174.54333,189.22427)" />
-        <path
-           id="path15"
-           d="M 0,0 C 0,0 0,7.559 7.368,7.559 15.522,7.559 15.05,0 15.05,0"
-           style="fill:#783a90;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,221.36693,189.4352)" />
-        <path
-           id="path16"
-           d="M 0,0 H 40.138"
-           style="fill:none;stroke:#0061aa;stroke-width:0.945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,157.60773,156.7464)" />
-        <path
-           id="path17"
-           d="M 0,0 H 33.707"
-           style="fill:none;stroke:#ed1b2f;stroke-width:0.945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,114.12987,156.7464)" />
-        <path
-           id="path18"
-           d="M 0,0 H 35.668"
-           style="fill:none;stroke:#ed1b2f;stroke-width:0.945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,209.66053,156.7464)" />
-        <path
-           id="path19"
-           d="M 0,0 7.368,-9.135 14.579,0 Z"
-           style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,174.96067,156.95733)" />
-        <path
-           id="path20"
-           d="m 0,0 c 0,0 0,7.719 7.526,7.719 7.369,0 7.839,-7.561 7.839,-7.561"
-           style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,123.84867,156.85307)" />
-        <path
-           id="path21"
-           d="m 0,0 c 0,0 0,7.719 7.526,7.719 7.369,0 7.839,-7.561 7.839,-7.561"
-           style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,221.4704,156.85307)" />
-        <path
-           id="path22"
-           d="M 0,0 H 106.829"
-           style="fill:none;stroke:#0061aa;stroke-width:0.945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,114.12987,127.07173)" />
-        <path
-           id="path23"
-           d="M 0,0 7.368,-9.137 14.581,0 Z"
-           style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,127.16373,127.28013)" />
-        <path
-           id="path24"
-           d="M 0,0 7.369,-9.135 14.582,0 Z"
-           style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,175.13773,127.38693)" />
-        <path
-           id="path25"
-           d="M 0,0 7.368,-9.135 14.581,0 Z"
-           style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,223.63387,127.38693)" />
-        <path
-           id="path26"
-           d="M 0,0 H 107.238"
-           style="fill:none;stroke:#ed1b2f;stroke-width:0.945;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           transform="matrix(1.3333333,0,0,-1.3333333,114.12987,109.40907)" />
-        <path
-           id="path27"
-           d="m 0,0 c 0,0 0,7.719 7.526,7.719 7.369,0 7.839,-7.561 7.839,-7.561"
-           style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,125.20933,109.40907)" />
-        <path
-           id="path28"
-           d="m 0,0 c 0,0 0,7.719 7.524,7.719 7.371,0 7.839,-7.561 7.839,-7.561"
-           style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,170.78093,109.40907)" />
-        <path
-           id="path29"
-           d="m 0,0 c 0,0 0,7.719 7.526,7.719 7.369,0 7.839,-7.561 7.839,-7.561"
-           style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1.3333333,0,0,-1.3333333,220.73867,109.40907)" />
-        <text
-           id="text29"
-           xml:space="preserve"
-           transform="matrix(1.3333333,0,0,1.3333333,269.27387,109.01707)"><tspan
-             id="tspan29"
-             style="font-variant:normal;font-weight:700;font-stretch:normal;font-size:8px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="0">Warm front (red)*</tspan><tspan
-             id="tspan30"
-             style="font-variant:normal;font-weight:700;font-stretch:normal;font-size:8px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="20">Cold front (blue)*</tspan><tspan
-             id="tspan31"
-             style="font-variant:normal;font-weight:700;font-stretch:normal;font-size:8px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="40">Stationary front (red/blue)*</tspan><tspan
-             id="tspan32"
-             style="font-variant:normal;font-weight:700;font-stretch:normal;font-size:8px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             x="0"
-             y="60">Occluded front (purple)*</tspan></text>
+           style="fill:#abd2e5;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1.3333333,0,0,-1.3333333,410.87013,238.0588)"
+           clip-path="url(#clipPath4)"
+           id="path6" />
       </g>
     </g>
+    <path
+       id="path8"
+       d="m 410.93484,203.28002 c 0,1.36231 -1.69803,2.46496 -3.79624,2.46496 H 101.33233 c -2.094204,0 -3.797575,-1.10265 -3.797575,-2.46496 V 90.204693 c 0,-1.363177 1.703371,-2.464971 3.797575,-2.464971 H 407.1386 c 2.09821,0 3.79624,1.101794 3.79624,2.464971 z"
+       style="fill:none;stroke:#507282;stroke-width:0.537237;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path12"
+       d="m 114.12987,189.22427 h 142.564"
+       style="fill:none;stroke:#783a90;stroke-width:1.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path13"
+       d="m 124.5824,189.22427 c 0,0 0,-10.07867 9.82533,-10.07867 10.868,0 10.24134,10.07867 10.24134,10.07867"
+       style="fill:#783a90;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path14"
+       d="m 174.54333,189.22427 10.03467,-11.75733 9.82133,11.75733 z"
+       style="fill:#783a90;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path15"
+       d="m 221.36693,189.4352 c 0,0 0,-10.07867 9.824,-10.07867 10.872,0 10.24267,10.07867 10.24267,10.07867"
+       style="fill:#783a90;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path16"
+       d="m 157.60773,156.7464 h 53.51733"
+       style="fill:none;stroke:#0061aa;stroke-width:1.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path17"
+       d="m 114.12987,156.7464 h 44.94267"
+       style="fill:none;stroke:#ed1b2f;stroke-width:1.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path18"
+       d="m 209.66053,156.7464 h 47.55733"
+       style="fill:none;stroke:#ed1b2f;stroke-width:1.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path19"
+       d="m 174.96067,156.95733 9.824,12.18 9.61467,-12.18 z"
+       style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path20"
+       d="m 123.84867,156.85307 c 0,0 0,-10.292 10.03467,-10.292 9.82533,0 10.452,10.08133 10.452,10.08133"
+       style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path21"
+       d="m 221.4704,156.85307 c 0,0 0,-10.292 10.03467,-10.292 9.82533,0 10.452,10.08133 10.452,10.08133"
+       style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path22"
+       d="M 114.12987,127.07173 H 256.56853"
+       style="fill:none;stroke:#0061aa;stroke-width:1.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path23"
+       d="m 127.16373,127.28013 9.824,12.18267 9.61733,-12.18267 z"
+       style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path24"
+       d="m 175.13773,127.38693 9.82533,12.18 9.61734,-12.18 z"
+       style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path25"
+       d="m 223.63387,127.38693 9.824,12.18 9.61733,-12.18 z"
+       style="fill:#0061aa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path26"
+       d="m 114.12987,109.40907 h 142.984"
+       style="fill:none;stroke:#ed1b2f;stroke-width:1.26;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path27"
+       d="m 125.20933,109.40907 c 0,0 0,-10.292 10.03467,-10.292 9.82533,0 10.452,10.08133 10.452,10.08133"
+       style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path28"
+       d="m 170.78093,109.40907 c 0,0 0,-10.292 10.032,-10.292 9.828,0 10.452,10.08133 10.452,10.08133"
+       style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <path
+       id="path29"
+       d="m 220.73867,109.40907 c 0,0 0,-10.292 10.03467,-10.292 9.82533,0 10.452,10.08133 10.452,10.08133"
+       style="fill:#ed1b2f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:12px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;stroke-width:2.58683"
+       x="265.8533"
+       y="108.17664"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="265.8533"
+         y="108.17664">Front chaud</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:12px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;stroke-width:2.58683"
+       x="265.8533"
+       y="136.16289"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         x="265.8533"
+         y="136.16289">Front froid</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:12px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;stroke-width:2.58683"
+       x="265.8533"
+       y="162.92746"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         x="265.8533"
+         y="162.92746">Front quasi-stationnaire</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:12px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;stroke-width:2.58683"
+       x="265.8533"
+       y="191.99184"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         x="265.8533"
+         y="191.99184">Front occlus</tspan></text>
   </g>
 </svg>
