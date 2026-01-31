@@ -11,7 +11,7 @@ Travail en cours.
 ## Génération LaTeX
 Le cours est produit avec l'outil LaTeX.
 
-La compilation se fait avec un environement LaTeX standard, cependant il faut tenir compte des paramètres suivants :
+La compilation se fait avec un environnement LaTeX standard, cependant il faut tenir compte des paramètres suivants :
 - pour améliorer la vitesse de compilation sur la machine de développement, il est possible de réaliser la compilation en mode externe :
   - Si ce mode reste actif, la compilation initiale sera très longue, mais les suivantes plus rapides
   - Il faut impérativement passer l'option `-shell-escape` à votre compilateur LaTeX
