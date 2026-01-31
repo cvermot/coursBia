@@ -1,6 +1,6 @@
 # Cours BIA
 [![Compilation LaTeX - Cours complet](https://github.com/cvermot/coursBia/actions/workflows/compilLatex.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/compilLatex.yml)
-[![Compilation LaTeX - Nigthly](https://github.com/cvermot/coursBia/actions/workflows/nightly.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/nightly.yml)
+[![Compilation LaTeX - Nightly](https://github.com/cvermot/coursBia/actions/workflows/nightly.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/nightly.yml)
 
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
