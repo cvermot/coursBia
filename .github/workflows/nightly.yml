@@ -61,6 +61,7 @@ jobs:
 
   compile:
     needs: [check_commits, load_matrix]
+    name: Compilation ${{ matrix.file }}
     if: needs.check_commits.outputs.has_commits == 'true'
     runs-on: ubuntu-latest
     permissions:
