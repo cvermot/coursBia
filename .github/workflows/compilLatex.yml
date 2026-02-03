@@ -23,6 +23,7 @@ jobs:
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
   compile:
     needs: [load_matrix]
+    name: Compilation ${{ matrix.file }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
