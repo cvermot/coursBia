@@ -5,7 +5,7 @@
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs.pdf)
 
-Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
+Voici quelques ressources supplémentaires qui illustrent et approfondissent les notions vues durant cette séance : 
 
 - [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
@@ -17,7 +17,7 @@ Voici quelques ressources supplémentaires qui illustent et approfondissent les 
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation.pdf)
 
-Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
+Voici quelques ressources supplémentaires qui illustrent et approfondissent les notions vues durant cette séance : 
 - [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
 - [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
 - [Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
@@ -27,13 +27,13 @@ Voici quelques ressources supplémentaires qui illustent et approfondissent les 
 
 ## Séance 3 : Bases d'aérodynamique
 - Portance
-- Trainée
+- Traînée
 - Polaire d'une aile
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique.pdf
 )
 
-Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
+Voici quelques ressources supplémentaires qui illustrent et approfondissent les notions vues durant cette séance : 
 - [Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
 - [Simulation : construction de la polaire à partir du Cx et du Cz](./polaireCxCz.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-construction-de-la-polaire))
 - [Vidéo : la sustentation](https://www.youtube.com/watch?v=0b9NqYUM0M4&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=52&pp=iAQB)
@@ -45,7 +45,7 @@ Voici quelques ressources supplémentaires qui illustent et approfondissent les 
 - [Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
 
 ## Séance 4 : Commandes de vol
-Voici quelques ressources supplémentaires qui illustent et approfondissent les notions vues durant cette séance : 
+Voici quelques ressources supplémentaires qui illustrent et approfondissent les notions vues durant cette séance : 
 - [Simulation : stabilité et centrage](./centrage.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-le-role-du-plan-horizontal-sur-un-aeronef-le-centrage-et-la))
 
 # Cours
@@ -53,19 +53,19 @@ Voici quelques ressources supplémentaires qui illustent et approfondissent les 
 # Ressources externes
 ## Apprendre
 Les ressources suivantes permettent de compléter le cours et de préparer l'examen :
-- [Chaine YouTube Canal-BIA](https://www.youtube.com/playlist?list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK) : vidéo de "cours" sur les différents thèmes du BIA
+- [Chaine YouTube Canal-BIA](https://www.youtube.com/playlist?list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK) : vidéos de "cours" sur les différents thèmes du BIA
 - [Initiation à l'aéronautique](https://www.cepadues.com/livres/pilotage-aeronautique/avion/bia-brevet-d-initiation-aeronautique/1721-initiation-a-l-aeronautique-preparer-le-bia-12e-edition-9782383951445.html?srsltid=AfmBOor7odukzI1SP7E6B2-rc32NbJ-0qAEPxxO2yUrpKywYNZjcuvMD), éditions Cépaduès : le livre de référence qui couvre l'ensemble du programme. Disponible en commande dans toutes les librairies.
 - [Manuel du BIA proposé par l'académie de Toulouse](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/pedagogiques/11286/11286-bia-2021-vf1-copie.pdf)
 
 ## Réviser
-- [Annales-BIA](https://annales-bia.fr/) : historique des QCM des examens BIA depuis 1996. Les QCM depuis 2015 sont particulièrement intéressants car conformes au programme en vigeur.
+- [Annales-BIA](https://annales-bia.fr/) : historique des QCM des examens BIA depuis 1996. Les QCM depuis 2015 sont particulièrement intéressants car conformes au programme en vigueur.
 
-# A propos
+# À propos
 Pour toute question ou suggestion, vous pouvez me contacter à l'adresse : <img src="./assets/images/biaVermot.svg" alt="email, contactez moi" width="80"/>
 
 ## Licence
-Les documents présentés ici sont publiés sous licence Creative Common CC-BY-SA 4.0, pour les documents produits dans le dépot.
+Les documents présentés ici sont publiés sous licence Creative Common CC-BY-SA 4.0, pour les documents produits dans le dépôt.
 
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Les autres documents restent la propriété de leurs auteurs originaux
+Les autres documents restent la propriété de leurs auteurs originaux.
