@@ -38,7 +38,7 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
-    - name: First pass - Compile variant (OpenDyslexic for CoursBIA_complet, handout for presentations)
+    - name: Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
       with:
         #latexmk_use_lualatex: true
@@ -57,7 +57,7 @@ jobs:
         name: PDF-${{ matrix.variantFileName }}.pdf
         path: ${{ matrix.variantFileName }}.pdf
 
-    - name: Second pass - Compile standard version
+    - name: Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
       with:
         #latexmk_use_lualatex: true

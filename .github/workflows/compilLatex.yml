@@ -36,7 +36,7 @@ jobs:
       - name: Check encoding
         run: file -i ${{ matrix.file }}
 
-      - name: Compile LaTeX document
+      - name: Compilation ${{ matrix.file }}
         uses: xu-cheng/latex-action@v4
         with:
           args: >-

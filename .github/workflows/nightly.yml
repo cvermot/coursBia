@@ -72,7 +72,7 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
 
-    - name: First pass - Compile with all parameters
+    - name: Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
       with:
         latexmk_use_lualatex: true
@@ -93,7 +93,7 @@ jobs:
         name: PDF-${{ matrix.variantFileName }}.pdf
         path: ${{ matrix.variantFileName }}.pdf
 
-    - name: Second pass - Compile with common parameters
+    - name: Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
       with:
         latexmk_use_lualatex: true
