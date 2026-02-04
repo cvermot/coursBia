@@ -32,7 +32,7 @@ jobs:
       - name: Check encoding
         run: file -i ${{ matrix.file }}.tex
 
-      - name: Compile LaTeX presentation
+      - name: Compilation ${{ matrix.file }}
         uses: xu-cheng/latex-action@v4
         with:
           #latexmk_use_lualatex: true
