@@ -118,17 +118,109 @@
  		\end{columns}
 	\end{frame}
 	
+	\begin{frame}{Altimètre - lecture}
+	\begin{figure}[H]
+		\ifdefined\activeranimations 
+		\newcommand{\nbFramesAltitude}{160}
+		\else
+		\newcommand{\nbFramesAltitude}{1}
+		\fi
+		
+		\centering
+		\begin{animateinline}[controls,loop]{16}
+		    \multiframe{\nbFramesAltitude}{i=0+10}{
+			\begin{tikzpicture}[x=1cm,y=1cm, scale=0.7, every node/.style={scale=0.7}]
+				\echelleAltitudeMetres{10}{\i/100*0.3048}
+			\end{tikzpicture}
+			\begin{tikzpicture}
+				\altiHpa{\i*10}{1013}		
+			\end{tikzpicture}
+			}
+		\end{animateinline}
+	\end{figure}
+	
+	\end{frame}
+	
+	
+	\begin{frame}{Variomètre}
+ 		\begin{columns}
+ 		\begin{column}{0.45\textwidth}
+		\begin{figure}[H]	
+		\centering
+			\begin{tikzpicture}
+				\vario{-500}
+			\end{tikzpicture}
+			\legende{Un variomètre affichant -500 ft/min}{tikz:instrumentsBase}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.55\textwidth}
+ 			Indique la vitesse verticale
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Variomètre - fonctionnement}
+		\begin{columns}
+ 		\begin{column}{0.58\textwidth}
+		\begin{figure}
+			% [trim={left bottom right top},clip]
+			\includegraphics[width=1\linewidth]{01-EtudeAeronefs/img/instruments/schemaVario.pdf}
+			\legende{Fonctionnement d'un badin}{img:schemaVario}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.42\textwidth}
+		
+		\end{column}
+		\end{columns}
+	\end{frame}	
+	
+	
+	\begin{frame}{Variomètre}
+ 		\begin{columns}
+ 		\begin{column}{0.45\textwidth}
+		\begin{figure}[H]	
+		\centering
+		\begin{tikzpicture}
+			\horizon{0}{0}
+		\end{tikzpicture}
+		\legende{Un horizon artificiel}{tikz:instrumentsBase}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.55\textwidth}
+ 			
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}
+	
+	
 	
  
 \appendix 
 \section{QCM}
-\qmcBia{Météo}
-{1}{Les deux principaux composants de l'air sec sont :}
-{le diazote et le dioxygène}
-{l'oxygène et le gaz carbonique}
-{l'azote et l'hélium}
-{l'oxygène et l'hydrogène} 
+\qmcBia{Étude des aéronefs et des engins spatiaux}
+{1}{Parmi ces instruments, celui qui utilise un gyroscope est :}
+{l'horizon artificiel}
+{le compas magnétique}
+{l'anémomètre}
+{le tachymètre} 
 {}
+
+\qmcBia{Étude des aéronefs et des engins spatiaux}
+{4}{Pour indiquer l'altitude, l'altimètre utilise : }
+{la différence entre la pression totale et la pression dynamique}
+{la pression totale}
+{la pression dynamique}
+{la pression statique} 
+{}
+
+\qmcBia{Étude des aéronefs et des engins spatiaux}
+{2}{Quel est le principal défaut du variomètre ?}
+{Il manque de précision notamment en virage}
+{De par sa conception, il ne peut pas donner une information en instantané, il faut une phase de vol stabilisée}
+{Il nécessite un recalage qui est fonction du QNH local}
+{Il est perturbé lors du passage en vol IMC (dans les nuages)} 
+{}
+
  
 \input{commun/beamerSlidesBiblio.tex} 
  
