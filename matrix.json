@@ -36,5 +36,11 @@
       "presentation": true,
       "toRelease": false
     }
+	{
+      "file": "seance6_InstrumentsDeBord",
+      "variantFileName": "seance6_InstrumentsDeBord_handout",
+      "presentation": true,
+      "toRelease": false
+    }
   ]
 }

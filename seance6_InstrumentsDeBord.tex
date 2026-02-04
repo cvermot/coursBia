@@ -1,0 +1,135 @@
+\input{commun/presentations.tex}
+\input{01-EtudeAeronefs/img/instruments/instruments.tex}
+\input{commun/echelleAltitudeMetres.tex}
+
+\title[Séance 6 - Instruments]{Séance 6 \\ Instruments de bord}
+
+\begin{document}
+ \begin{frame}
+ \titlepage
+ \end{frame}
+ 
+ \begin{frame}
+ \tableofcontents
+ \end{frame}
+ 
+ \section{Les instruments de bord}
+	\begin{frame}{Instruments de bord, pourquoi ?}
+	\question{Quelles informations sont nécessaires pour piloter un avion ?}
+	\end{frame}	 
+	
+	\begin{frame}{Instruments de bord, pourquoi ?}
+		\begin{figure}
+			% [trim={left bottom right top},clip]
+			\includegraphics[width=0.93\linewidth,trim={0 3cm 0 9cm},clip]{01-EtudeAeronefs/img/DR400plancheDeBord.jpg}
+			\legende{Cockpit de DR400}{img:DR400plancheDeBord}
+		\end{figure}	
+	\end{frame}	 
+
+ 	\begin{frame}{Anémomètre}
+ 		\begin{columns}
+ 		\begin{column}{0.45\textwidth}
+		\begin{figure}	
+		\centering
+			\begin{tikzpicture}
+				\badin{110}
+			\end{tikzpicture}
+		\legende{Un "badin"}{tikz:instrumentsBase}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.55\textwidth}
+ 			Indique la vitesse
+ 			
+ 			Les arcs représentent différentes vitesses :
+ 			\begin{itemize}
+ 				\item arc blanc : vitesse avec volets sortis (VFE, Velotcity Flaps Extended)
+ 				\item arc vert : vitesse en air turbulent (VNO, Velocity Normal Operating)
+ 				\item arc jaune : vitesse en air calme
+ 				\item trait rouge : vitesse à ne jamais dépasse (VNE, Velocty Never Exced)
+ 			\end{itemize}
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}	
+	
+	\begin{frame}{Anémomètre - fonctionnement}
+		\begin{columns}
+ 		\begin{column}{0.58\textwidth}
+		\begin{figure}
+			% [trim={left bottom right top},clip]
+			\includegraphics[width=1\linewidth]{01-EtudeAeronefs/img/instruments/schemaBadin.pdf}
+			\legende{Fonctionnement d'un badin}{img:schemaBadin}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.42\textwidth}
+		\pause
+		\histoire{L'anémomètre qui équipe nos avions a été inventé en 1911 par l'ingénieur français Raoul Badin, qui a donc donné son nom à cet instrument.}
+		
+		\histoire{Le tube Pitot a été inventé en 1732 par le physicien français Henri Pitot.}
+		\end{column}
+		\end{columns}
+	\end{frame}	
+	
+	\begin{frame}{Anémomètre - mesure}
+		\begin{figure}
+			% [trim={left bottom right top},clip]
+			\includegraphics[width=0.8\linewidth]{01-EtudeAeronefs/img/tubesPitotG6000}
+			\legende{Pitot sur le fuselage d'un avion}{img:tubesPitotG6000}
+		\end{figure}	
+	\end{frame}
+	\begin{frame}{Anémomètre - mesure}
+		\begin{figure}
+			% [trim={left bottom right top},clip]
+			\includegraphics[width=0.8\linewidth]{01-EtudeAeronefs/img/tubePitotC172}
+			\legende{Pitot sur un Cessna 172}{img:tubePitotC172}
+		\end{figure}	
+	\end{frame}
+	
+	
+	\begin{frame}{Altimètre}
+ 		\begin{columns}
+ 		\begin{column}{0.45\textwidth}
+		\begin{figure}	
+		\centering
+			\begin{tikzpicture}
+				\altiHpa{4500}{1015}
+			\end{tikzpicture}
+		\legende{Un altimètre}{tikz:instrumentsBase}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.55\textwidth}
+ 			Indique l'altitude
+ 			
+ 			Le "calage" de l'altimètre est modifiable pour permettre de prendre en compte la variabilité de la pression atmosphérique dans le temps et dans l'espace
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Altimètre - réglage du calage}
+ 		\begin{columns}
+ 		\begin{column}{0.45\textwidth}
+		\begin{figure}	
+			\altiAnimReglageQnhHpa{360}{1500}{970}{1035}
+			\legende{Effet du réglage du QNH}{img:schemaAltimetre}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.55\textwidth}
+ 			
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}
+	
+	
+ 
+\appendix 
+\section{QCM}
+\qmcBia{Météo}
+{1}{Les deux principaux composants de l'air sec sont :}
+{le diazote et le dioxygène}
+{l'oxygène et le gaz carbonique}
+{l'azote et l'hélium}
+{l'oxygène et l'hydrogène} 
+{}
+ 
+\input{commun/beamerSlidesBiblio.tex} 
+ 
+\end{document}
