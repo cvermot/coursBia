@@ -55,6 +55,9 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 
 # Cours
 
+## Histoire
+[Cette frise chronologique](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQpziSx6DY9NLxldx55-WNCgafX8OYs1XLyDbkpa3kRWNCnPB6y3ivKcjEG8N7cALtehugZ7MG9yt71&font=Default&lang=fr&hash_bookmark=true&initial_zoom=2&width=100%25&height=650#event-premier-vol-dun-avion) donne des repères utiles pour la partie histoire. Cette frise est encore en cours d'élabloration et sera completée durant l'année.
+
 # Ressources externes
 ## Apprendre
 Les ressources suivantes permettent de compléter le cours et de préparer l'examen :
