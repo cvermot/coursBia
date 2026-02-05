@@ -4,7 +4,7 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 ## Séance 1 : Introduction
 - Classification des aéronefs
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs.pdf) 
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs_handout.pdf) 
 
 - [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
@@ -14,7 +14,7 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - Moteur à explosion
 - Réacteur
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation.pdf)
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance2_StructureAvionMotorisation_handout.pdf)
 
 - [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
 - [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
@@ -28,7 +28,7 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - Traînée
 - Polaire d'une aile
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique.pdf
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique_handout.pdf
 )
 
 - [Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
@@ -42,8 +42,16 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
 
 ## Séance 4 : Commandes de vol
+- Les axes (roulis, tangage, lacet)
+- Les commandes vol (ailerons, profondeur, gouverne de direction)
+- Stabilité/centrage
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance4_CommandesDeVol_handout.pdf
 
 - [Simulation : stabilité et centrage](./centrage.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-le-role-du-plan-horizontal-sur-un-aeronef-le-centrage-et-la))
+- [Vidéo : les commandes de vol](https://www.youtube.com/watch?v=a1QV0qPpj6k&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=44&pp=iAQB)
+- [Vidéo : stabilité autour de l'axe du roulis : rôle du dièdre](https://www.youtube.com/watch?v=ARK5lMWQR7I&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=24&pp=iAQB)
+
 
 # Cours
 
