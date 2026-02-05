@@ -46,7 +46,7 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - Les commandes vol (ailerons, profondeur, gouverne de direction)
 - Stabilité/centrage
 
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance4_CommandesDeVol_handout.pdf
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance4_CommandesDeVol_handout.pdf)
 
 - [Simulation : stabilité et centrage](./centrage.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-le-role-du-plan-horizontal-sur-un-aeronef-le-centrage-et-la))
 - [Vidéo : les commandes de vol](https://www.youtube.com/watch?v=a1QV0qPpj6k&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=44&pp=iAQB)
