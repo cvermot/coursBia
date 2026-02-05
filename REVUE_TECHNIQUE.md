@@ -26,9 +26,9 @@ Ce document présente une révision technique approfondie des sections complét�
    - **Problème** : "composé d'un ballon" → grammaticalement incorrect (féminin)
    - **Correction** : "Elle est composée d'un ballon" → "Elle est constituée d'une enveloppe"
 
-2. **Ligne 149** - Précision sur les aérogires :
-   - **Problème** : Le terme "aérogyres" est une appellation ancienne, peu utilisée aujourd'hui
-   - **Suggestion** : Préciser que ce terme est moins courant que "voilure tournante"
+2. **Ligne 148** - Précision sur les aérogires :
+   - **Problème** : Le terme "aérogires" (ligne 148) est une appellation ancienne et peu utilisée aujourd'hui
+   - **Suggestion** : Préciser que ce terme est moins courant que "appareils à voilure tournante"
 
 3. **Ligne 167** - Calcul vitesse bout de pale EC145 :
    - **À vérifier** : Le calcul donne 1070 km/h pour la pale avançante. C'est correct mais proche de Mach 1. Il faudrait préciser que c'est une des limites du design des hélicoptères.
