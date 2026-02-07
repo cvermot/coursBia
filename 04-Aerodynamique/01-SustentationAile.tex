@@ -78,47 +78,56 @@ Toute aile est composée de plusieurs parties distinctes :
 	
 	avec :
 	\begin{itemize}
-		\item $b$ : l'envergure de l'aile en  $m$
+		\item $b$ : l'envergure de l'aile en $m$
 		\item $S$ : la surface portante en $m^2$
 	\end{itemize}
 	
-	Le planeur EB29 existe avec 3 envergures différentes, et permet d'illustrer l'impact de l'allongement sur les traînée, en étudiant la valeur de la finesse (voir paragraphe \ref{chap:aero:finesse} \nameref{chap:aero:finesse}).
 
 	
-	\begin{table}[H]
+	\exemple{Le planeur EB29 existe avec 3 envergures différentes, et permet d'illustrer l'impact de l'allongement sur les traînée, en étudiant la valeur de la finesse (voir paragraphe \ref{chap:aero:finesse} \nameref{chap:aero:finesse}).
+    \begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		Envergure & Surface alaire & Allongement & Finesse max \\ 
 		\hline
 		\hline
-		$25,3 m$ & $15,4 m^2$ & $41,6$ & $63$ \\
+		$25,3~m$ & $15,4~m^2$ & $41,6$ & $63$ \\
 		\hline
-		$28,3 m$ & $16,5 m^2$ & $48,5$ & $66$ \\
+		$28,3~m$ & $16,5~m^2$ & $48,5$ & $66$ \\
 		\hline
-		$29,3 m$ & $16,8 m^2$ & $51,1$ & $68$ \\
+		$29,3~m$ & $16,8~m^2$ & $51,1$ & $68$ \\
 		\hline
 	\end{tabular}
-	\caption{Impact de l'allongement sur la trainée, et donc la finesse, pour les 3 versions du planeur EB39}
-	\end{table}
+	\legende{Impact de l'allongement sur la trainée, et donc la finesse, pour les 3 versions du planeur EB29}{tbl:FinesseEb29}
+	\end{table}}
 	
 
 \subsection{La portance}
-Sur un aérondyne, on cherche à générer avec l'aile une force orientée vers le haut donc opposée au poids. Cette force est nommée portance.
+Sur un aérondyne, on cherche à générer avec l'aile une force orientée vers le haut, donc opposée au poids. Cette force est nommée portance.
 
 On s'intéresse dans le graphique ci dessous à la valeur de la portance en fonction de l'incidence de l'aile. Cela permet d'extraire un coefficient nommé $C_z$.
 
-\begin{figure}[H]
+\info{Les valeurs de $C_z$ sont obtenues de façon expérimentale en soufflerie.}
+
+   \begin{figure}[H]
 		\centering
   		\includegraphics[width=0.65\textwidth]{04-Aerodynamique/img/portanceTraineeFinesse_portance.pdf}
   		\legende{Portance en fonction de l'angle d'incidence de l'aile}{img:portanceTraineeFinesse}
 	\end{figure}	
 	
-	On constate sur ce graphique que la valeur du coefficient de portance augmente avec l'incidence pour atteindre une valeur maximale après laquelle il chute rapidement.
+	On constate sur ce graphique que la valeur du coefficient de portance augmente avec l'incidence pour atteindre une valeur maximale après laquelle il chute rapidement. Cette chute rapide est liée au décollement des filets d'air, et donc à la force de portance qui s'applique sur une surface réduite de l'extrados. Une fois la totalité des filets décollés, la portance devient nulle : on a atteint l'incidence de décrochage.	
 	
-	\info{Les valeurs de $C_z$ sont obtenues de façon expérimentale en soufflerie.}
+	\info{Sur la plupart des profils d'aile, le coefficient de portance maximum est obtenu entre 20 et 25° d'incidence.}
 	
-	\info{Sur la plupart des profils d'aile, le coefficient de portance maximum est obtenu entre 20 et 25° d'incidence. }
+	\subsubsection{Décrochage}
+	%TODO
+	
+	\begin{figure}[H]
+		\centering
+  		\includegraphics[width=0.6\textwidth]{04-Aerodynamique/img/portanceDecrochage.pdf}
+  		\legende{Filets d'air sur une aile jusqu'au décrochage}{img:portanceDecrochage}
+	\end{figure}	
 
 \subsubsection{Expression algébrique de la portance}
 	\begin{center}
@@ -170,7 +179,7 @@ Il s'agit en quelque sorte d'un coefficient qui indique l'efficacité d'une aile
 
 En pratique, la finesse peut également se calculer de façon expérimentale en vol, pour un aérodyne complet. Moteur coupé, la finesse  correspond au rapport de la distance parcourue sur l'altitude perdue. Par exemple, un appareil qui parcours $4,5~km$ en perdant $500~m$ d'altitude aura une finesse de $\dfrac{4,5}{0,5} = 9$. Cette finesse "totale" prend en compte la trainée induite par l'aile mais également toutes les autres trainées qui s'appliquent sur l'aéronef : trainée de frottement, trainé de forme ou encore trainée d'onde (lors de l'approche du vol supersonique).
 
-\begin{table}[H]
+\exemple{\begin{table}[H]
 	\centering
 	\begin{tabular}{|l|c|}
 		\hline
@@ -189,11 +198,13 @@ En pratique, la finesse peut également se calculer de façon expérimentale en 
 		\hline
 		Planeur école & 40 à 50 \\
 		\hline
-		Planeur de compétition (EB29) & 60 \\
+		Planeur de compétition (EB29) & 60 à 70 \\
+		\hline
+		Navette spatiale & \begin{tabular}{@{}c@{}}1 en hypseronique \\ 2 en supersonique \\ 4.5 en subsonique\end{tabular} \\
 		\hline
 	\end{tabular}
 	\caption{Quelques valeurs de finesse typique}
-	\end{table}
+	\end{table}}
 	
 
 \subsection{Polaire d'une aile}
@@ -216,7 +227,7 @@ Obtenue en traçant la portance $C_z$ en fonction de la traînée $C_x$. On peut
 
 \subsection{Dispositifs hypersustentateurs et destructeurs de portance}\label{chap:aero:hyperHypoSutentateurs}
 	\subsubsection{Dispositifs hypersustentateurs}
-	Lors des phases d'atterrissage et de décollage, il est souhaitable de pouvoir évoluer à la vitesse la plus faible possible.	On peut obtenir cela grâce à une plus grande surface d'aile, ou concevoir l'aile pour augmenter son $Cz$. Mais, comme on l'a vu, toute augmentation du coefficient de portance ou de la surface de l'aile se fait au prix d'une augmentation de la traînée, indésirable en croisière (réduction des performances de montée, de vitesse maximale, augmentation de la consommation...).
+	Lors des phases d'atterrissage et de décollage, il est souhaitable de pouvoir évoluer à la vitesse la plus faible possible.	On peut obtenir cela grâce à une plus grande surface d'aile, ou concevoir l'aile pour augmenter son $C_z$. Mais, comme on l'a vu, toute augmentation du coefficient de portance ou de la surface de l'aile se fait au prix d'une augmentation de la traînée, indésirable en croisière (réduction des performances de montée, de vitesse maximale, augmentation de la consommation...).
 	
 	La solution consiste à modifier ces 2 paramètres (surface, $C_z$) uniquement quand on souhaite pouvoir voler moins vite. Cela est obtenu grâce aux dispositifs hypersustentateurs, qui sont de 2 types : \begin{itemize}
 	\item volets \anglais{flaps}, situés sur ou à proximité du bord de fuite,
@@ -251,11 +262,11 @@ Obtenue en traçant la portance $C_z$ en fonction de la traînée $C_x$. On peut
 		\begin{figure}[H]
 			\centering
   			\includegraphics[width=0.4\textwidth]{04-Aerodynamique/img/hypersustentateurs/voletFowler.pdf}
-  			\legende{Volets Fowler}{img:voletFowler}	
+  			\legende{Volets à fente}{img:voletFowler}	
 		\end{figure}
 		
 			\subparagraph{Volets Fowler}
-			Le volet Fowler (du nom de son inventeur américain Harlan Fowler) combine le volet à fente et le volet de cambrure. Il se déploie sur le bord de fuite puis s'abaisse vers le bas. Il augmente donc la portance en modifiant la surface de l'aile puis la cambrure (donc le $Cz$).
+			Le volet Fowler (du nom de son inventeur américain Harlan Fowler) combine le volet à fente et le volet de cambrure. Il se déploie sur le bord de fuite puis s'abaisse vers le bas. Il augmente donc la portance en modifiant la surface de l'aile puis la cambrure (donc le $C_z$).
 		
 		\begin{figure}[H]
 			\centering
@@ -268,7 +279,7 @@ Obtenue en traçant la portance $C_z$ en fonction de la traînée $C_x$. On peut
 		\begin{figure}[H]
 			\centering
   			\includegraphics[width=0.4\textwidth]{04-Aerodynamique/img/hypersustentateurs/becs.pdf}
-  			\legende{Bacs de bord d'attaque}{img:becs}	
+  			\legende{Becs de bord d'attaque}{img:becs}	
 		\end{figure}
 		
 	\subsubsection{Les aérofreins}
