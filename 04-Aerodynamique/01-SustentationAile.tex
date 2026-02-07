@@ -33,53 +33,171 @@ Toute aile est composée de plusieurs parties distinctes :
   		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/pressionProfilSelonAngleAttaque4deg.pdf}
   		\legende{La pression autour d'une aile}{img:pressionProfilSelonAngleAttaque}
 	\end{figure}	
+	
+	\subsubsection{Tourbillons marginaux}
+	On a vu que l'extrados était le siège d'une dépression tandis que l'on retrouve une surpression sur l'intrados. Le saumon se trouve donc être l'interface entre une zone de surpression et une zone de dépression. Naturellement, l'air va chercher à rejoindre la zone de moindre pression, en contournant le saumon. Cela provoque un phénomène appelé tourbillon marginal ou vortex.
+	\begin{center}
+		\begin{minipage}[c]{1.0\linewidth}
+		\begin{figure}[H]
+		\begin{minipage}[c]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{04-Aerodynamique/img/vortexSchema.pdf}
+		\legende{Schéma de la création d'un vortex}{img:vortexSchema}
+		\end{minipage}
+		\begin{minipage}[c]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{04-Aerodynamique/img/vortex.jpg}
+		\legende{Mise en évidence d'un tourbillon marginal gâce à un fumigène}{img:vortex}
+		\end{minipage}
+		\end{figure}
+		\end{minipage}
+	\end{center}	
+	
+	Ce phénomène est indésirable car il produit une trainée, qui va donc diminuer la performance de l'aéronef (augmentation de la consommation et réduction de la vitesse pour un aéronef propulsé, augmentation du taux de descente en l'absence de moteur...). Pour limiter la production de ces tourbillons, on installe parfois des dispositifs appelés \textit{winglets} en bout d'aile. Ils constituent une sorte de barrière entre l'intrados et l'extrados.
+	
+	\begin{figure}[H]
+  	\centering
+    \includegraphics[width=0.6\textwidth]{04-Aerodynamique/img/Falcon7XWinglet}
+  	\legende{Winglets en bout d'ailes d'un Falcon 7X}{img:Falcon7XWinglet}
+	\end{figure}	
+	
+	\info{L'intensité des tourbillons marginaux produit par un aérodyne est directement proportionnelle à son poids.}
+	
+	\alert{Les tourbillons marginaux constituent une menace : un aéronef léger qui traverserait les tourbillons d'un aéronef plus lourd pour être retourné ou se casser en raison de la violence de ces phénomènes. Pour cette raison, le contrôle aérien assure une séparation entre 2 aéronefs qui se suivent lorsque le suivant est d'une catégorie de masse inférieure.}
+	
+	\subsubsection{Allongement d'une aile}
+	On a vu que les tourbillons marginaux se formaient en bout d'aile. Si on imagine une aile (fictive) infinie, il n'y aurait pas de saumon pour faire l'interface entre l'intrados et l'extrados, et donc pas de formation de tourbillon marginal !
+	
+	Pour réduire les tourbillons marginaux, on peut donc augmenter l'allongement d'une aile, c'est à dire le rapport qu'il existe entre la corde de profil moyenne et la longueur de l'aile. Plus une aile est allongée, moins elle génère de tourbillons marginaux et donc de trainée liée à ce phénomène. Cela explique pourquoi les planeurs performants, mais aussi les avions de ligne (pour lesquels on veut minimiser les sources de trainée) ont des ailes très longues.
+	
+	L'allongement d'une aile $\lambda$ (sans unité) se calcule avec la formule suivante :
+	
+	 \begin{center}
+		\huge{$\lambda = \dfrac{b^2}{S}$}
+	\end{center}
+	
+	avec :
+	\begin{itemize}
+		\item $b$ : l'envergure de l'aile en  $m$
+		\item $S$ : la surface portante en $m^2$
+	\end{itemize}
+	
+	Le planeur EB29 existe avec 3 envergures différentes, et permet d'illustrer l'impact de l'allongement sur les traînée, en étudiant la valeur de la finesse (voir paragraphe \ref{chap:aero:finesse} \nameref{chap:aero:finesse}).
 
+	
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Envergure & Surface alaire & Allongement & Finesse max \\ 
+		\hline
+		\hline
+		$25,3 m$ & $15,4 m^2$ & $41,6$ & $63$ \\
+		\hline
+		$28,3 m$ & $16,5 m^2$ & $48,5$ & $66$ \\
+		\hline
+		$29,3 m$ & $16,8 m^2$ & $51,1$ & $68$ \\
+		\hline
+	\end{tabular}
+	\caption{Impact de l'allongement sur la trainée, et donc la finesse, pour les 3 versions du planeur EB39}
+	\end{table}
+	
 
 \subsection{La portance}
+Sur un aérondyne, on cherche à générer avec l'aile une force orientée vers le haut donc opposée au poids. Cette force est nommée portance.
+
+On s'intéresse dans le graphique ci dessous à la valeur de la portance en fonction de l'incidence de l'aile. Cela permet d'extraire un coefficient nommé $C_z$.
+
 \begin{figure}[H]
 		\centering
   		\includegraphics[width=0.65\textwidth]{04-Aerodynamique/img/portanceTraineeFinesse_portance.pdf}
   		\legende{Portance en fonction de l'angle d'incidence de l'aile}{img:portanceTraineeFinesse}
 	\end{figure}	
+	
+	On constate sur ce graphique que la valeur du coefficient de portance augmente avec l'incidence pour atteindre une valeur maximale après laquelle il chute rapidement.
+	
+	\info{Les valeurs de $C_z$ sont obtenues de façon expérimentale en soufflerie.}
+	
+	\info{Sur la plupart des profils d'aile, le coefficient de portance maximum est obtenu entre 20 et 25° d'incidence. }
 
 \subsubsection{Expression algébrique de la portance}
 	\begin{center}
-		\huge{$Z = \dfrac{1}{2}\rho S V^2 Cz$}
+		\huge{$Z = \dfrac{1}{2}\rho S V^2 C_z$}
 	\end{center}
 	
 	avec : \begin{itemize}
+	\item $Z$ : valeur de la portance en $N$ (newtons)
 	\item $\rho$ : densité de l'air en $kg/m^3$ ($\sim 1,2~kg/m^3$),
 	\item $S$ : surface de l'aile en $m^2$,
 	\item $V$ : vitesse en $m/s$,
-	\item $Cz$ : coefficient de portance (sans unité), valeur liée à la forme de l'aile et à l'incidence.
+	\item $C_z$ : coefficient de portance (sans unité), valeur liée à la forme de l'aile et à l'incidence.
 	\end{itemize}
 	
 
 \subsection{La traînée}\label{chap:aero:trainee}
+En physique, les phénomènes désirés s'accompagnent généralement de phénomènes indésirables. La trainée n'échappe pas à cette règle, et elle s'accompagne toujours d'un phénomène qui s'oppose à l'avancée de l'aile dans la masse d'air : la trainée induite (sous entendu induite par la portance).
+
+Comme pour la portance, on s'intéresse à la valeur d'un coefficient qui caractérise la trainée, le $C_x$, en fonction de l'incidence de l'aile.
 \begin{figure}[H]
 		\centering
   		\includegraphics[width=0.65\textwidth]{04-Aerodynamique/img/portanceTraineeFinesse_trainee.pdf}
   		\legende{Trainée en fonction de l'angle d'incidence de l'aile}{img:portanceTraineeFinesse}
 	\end{figure}	
+	
+	On constate sur le graphique ci dessus que la trainée augmente de façon continue avec l'augmentation de l'incidence de l'aile.
 
 \subsubsection{Expression algébrique de la traînée}
+	Il est possible d'exprimer la valeur de la trainée par une formule suivante :
+
 	\begin{center}
-		\huge{$X = \dfrac{1}{2}\rho S V^2 Cx$}
+		\huge{$X = \dfrac{1}{2}\rho S V^2 C_x$}
 	\end{center}
 	
 	\begin{itemize}
+	\item $X$ : trainée en $N$ (newtons)
 	\item $\rho$ : densité de l'air en $kg/m^3$ ($\sim 1,2~kg/m^3$),
 	\item $S$ : surface de l'aile en $m^2$,
 	\item $V$ : vitesse en $m/s$,
-	\item $Cx$ : coefficient de traînée (sans unité), valeur liée à la forme de l'aile et à l'incidence.
+	\item $C_x$ : coefficient de traînée (sans unité), valeur liée à la forme de l'aile et à l'incidence.
 	\end{itemize}
 	
 	On constate que l'expression de la portance et de la traînée sont identiques au facteur $Cx$ et $Cz$ près. La portance et la traînée évoluent donc pendant le vol de la même façon.
 	
-\subsection{Finesse}
+\subsection{La finesse}\label{chap:aero:finesse}
+La finesse exprime le rapport entre la portance et la traînée. Il est possible de calculer la finesse pour n'importe quelle incidence d'une aile en calculant le rapport $\dfrac{C_z}{C_x}$.
+
+Il s'agit en quelque sorte d'un coefficient qui indique l'efficacité d'une aile, et par extension, d'un aérodyne.
+
+En pratique, la finesse peut également se calculer de façon expérimentale en vol, pour un aérodyne complet. Moteur coupé, la finesse  correspond au rapport de la distance parcourue sur l'altitude perdue. Par exemple, un appareil qui parcours $4,5~km$ en perdant $500~m$ d'altitude aura une finesse de $\dfrac{4,5}{0,5} = 9$. Cette finesse "totale" prend en compte la trainée induite par l'aile mais également toutes les autres trainées qui s'appliquent sur l'aéronef : trainée de frottement, trainé de forme ou encore trainée d'onde (lors de l'approche du vol supersonique).
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|c|}
+		\hline
+		Appareil & Finesse \\
+		\hline
+		\hline
+		Avion léger (DR400) & 9 \\
+		\hline
+		Avion de chasse (Rafale) & 5 \\
+		\hline
+		Avion de ligne (A330) & 30 \\
+		\hline
+		Parapente & 8 à 10 \\
+		\hline
+		Deltaplane & 15 \\
+		\hline
+		Planeur école & 40 à 50 \\
+		\hline
+		Planeur de compétition (EB29) & 60 \\
+		\hline
+	\end{tabular}
+	\caption{Quelques valeurs de finesse typique}
+	\end{table}
+	
 
 \subsection{Polaire d'une aile}
-Il est possible de tracer sur un graphique la portance (Cz) en fonction de la traînée (Cx) (voir également \href{\urlSite /polaireCxCz.html}{cette activité en ligne}\footnote{\urlSite /polaireCxCz.html} qui illustre la construction de la polaire).
+Il est possible de tracer sur un graphique la portance ($C_z$) en fonction de la traînée ($C_x$) (voir également \href{\urlSite /polaireCxCz.html}{cette activité en ligne}\footnote{\urlSite /polaireCxCz.html} qui illustre la construction de la polaire).
 
 \begin{figure}[H]
 		\centering
@@ -100,7 +218,7 @@ Obtenue en traçant la portance $C_z$ en fonction de la traînée $C_x$. On peut
 	\subsubsection{Dispositifs hypersustentateurs}
 	Lors des phases d'atterrissage et de décollage, il est souhaitable de pouvoir évoluer à la vitesse la plus faible possible.	On peut obtenir cela grâce à une plus grande surface d'aile, ou concevoir l'aile pour augmenter son $Cz$. Mais, comme on l'a vu, toute augmentation du coefficient de portance ou de la surface de l'aile se fait au prix d'une augmentation de la traînée, indésirable en croisière (réduction des performances de montée, de vitesse maximale, augmentation de la consommation...).
 	
-	La solution consiste à modifier ces 2 paramètres (surface, $Cs$) uniquement quand on souhaite pouvoir voler moins vite. Cela est obtenu grâce aux dispositifs hypersustentateurs, qui sont de 2 types : \begin{itemize}
+	La solution consiste à modifier ces 2 paramètres (surface, $C_z$) uniquement quand on souhaite pouvoir voler moins vite. Cela est obtenu grâce aux dispositifs hypersustentateurs, qui sont de 2 types : \begin{itemize}
 	\item volets \anglais{flaps}, situés sur ou à proximité du bord de fuite,
 	\item becs \anglais{slats}, situés sur le bord d'attaque.
 	\end{itemize}
