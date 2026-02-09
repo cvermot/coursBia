@@ -121,6 +121,7 @@ On s'intéresse dans le graphique ci dessous à la valeur de la portance en fonc
 	\info{Sur la plupart des profils d'aile, le coefficient de portance maximum est obtenu entre 20 et 25° d'incidence.}
 	
 	\subsubsection{Décrochage}
+	Le décrochage correspond à la baisse brutale de la portance générée par l'aile. Au moment du décrochage, la portance devient pratiquement nulle.
 	%TODO
 	
 	\begin{figure}[H]
@@ -128,6 +129,8 @@ On s'intéresse dans le graphique ci dessous à la valeur de la portance en fonc
   		\includegraphics[width=0.6\textwidth]{04-Aerodynamique/img/portanceDecrochage.pdf}
   		\legende{Filets d'air sur une aile jusqu'au décrochage}{img:portanceDecrochage}
 	\end{figure}	
+	
+	\alert{Le décrochage est causé par l'atteinte de l'incidence maximale du profil. Au dessus de l'incidence de décrochage, une aile ne porte plus quelque soit la vitesse.}
 
 \subsubsection{Expression algébrique de la portance}
 	\begin{center}
@@ -171,6 +174,21 @@ Comme pour la portance, on s'intéresse à la valeur d'un coefficient qui caract
 	\end{itemize}
 	
 	On constate que l'expression de la portance et de la traînée sont identiques au facteur $Cx$ et $Cz$ près. La portance et la traînée évoluent donc pendant le vol de la même façon.
+	
+	\subsubsection{Trainée totale}
+	La trainée induite par l'aile n'est pas la seule composante de trainée qui freine l'aérodyne. Il faut ajouter à cette trainée des trainées dites \textit{parasites} issues des frottements de l'air sur les composants de la cellule : fuselage, nacelles moteur...
+	
+	\begin{figure}[H]
+		\centering
+	\begin{tikzpicture}[font=\sffamily]
+ 		\path[3d pie chart/.cd,radius=4cm,h=1.5cm,alpha0=45,
+ 		colors={"green","yellow","blue","violet","teal","pink"}] 
+ 		pic{3d pie chart={5/Composants de l'aile,18/Fuselage,18/Traînée de frottement de la forme,4/Nacelles moteur,11/Empennage,44/Traînée induite}};
+	\end{tikzpicture}
+	\legende{Répartition des composantes de la trainée totale (avion de ligne, vitesse de croisière)}{img:traineeTotale}
+	\end{figure}	
+	
+	Compte tenu de l'importance relative des traînées parasites par rapport à la traînée induite, les bureaux d'études s'attachent à minimiser au maximum les trainées parasites en travaillant l'aérodynamisme de l'ensemble des composants de la cellule.
 	
 \subsection{La finesse}\label{chap:aero:finesse}
 La finesse exprime le rapport entre la portance et la traînée. Il est possible de calculer la finesse pour n'importe quelle incidence d'une aile en calculant le rapport $\dfrac{C_z}{C_x}$.
