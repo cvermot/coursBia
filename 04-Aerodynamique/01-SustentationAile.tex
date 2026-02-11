@@ -175,7 +175,7 @@ Comme pour la portance, on s'intéresse à la valeur d'un coefficient qui caract
 	
 	On constate que l'expression de la portance et de la traînée sont identiques au facteur $Cx$ et $Cz$ près. La portance et la traînée évoluent donc pendant le vol de la même façon.
 	
-	\subsubsection{Trainée totale}
+	\subsubsection{Trainée totale}\label{chap:aero:traineeTotale}
 	La trainée induite par l'aile n'est pas la seule composante de trainée qui freine l'aérodyne. Il faut ajouter à cette trainée des trainées dites \textit{parasites} issues des frottements de l'air sur les composants de la cellule : fuselage, nacelles moteur...
 	
 	\begin{figure}[H]
@@ -246,6 +246,15 @@ Obtenue en traçant la portance $C_z$ en fonction de la traînée $C_x$. On peut
  			\item $D$ : portance $C_z$ maximale
  			\item $E$ : décrochage
  		\end{itemize}
+ 		
+ 		\subsubsection{Polaire avion complet}
+ 		Comme indiqué dans \ref{chap:aero:traineeTotale} \nameref{chap:aero:traineeTotale}, des traînées parasites s'ajoutent aux traînées induites par l'aile. On peut tracer la polaire qui prend en compte ces 2 types de trainées. Il en résulte une polaire translatée vers la droite. La valeur de la translation est d'autant plus importante que les trainées parasites le sont par rapport à la trainée induite.
+ 		
+ 		\begin{figure}[H]
+		\centering
+  		\includegraphics[width=0.95\textwidth]{04-Aerodynamique/img/polaireAvion.pdf}
+  		\legende{Conséquence de la prise en compte de la trainée totale sur la polaire}{img:polaireAvion}
+		\end{figure}
 
 \subsection{Dispositifs hypersustentateurs et destructeurs de portance}\label{chap:aero:hyperHypoSutentateurs}
 	\subsubsection{Dispositifs hypersustentateurs}
