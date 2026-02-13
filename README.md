@@ -38,3 +38,19 @@ pdflatex -shell-escape CoursBIA_complet.tex
 pdflatex -shell-escape CoursBIA_complet.tex
 ```
 
+## Utilitaires Python
+
+Le dépôt contient des utilitaires Python pour le traitement de données :
+
+### Suppression des caractères Unicode d'espacement
+
+Pour supprimer le caractère `\u2002` (EN SPACE) et d'autres espaces Unicode dans des chaînes de caractères :
+
+```bash
+python3 example_simple.py          # Exemple simple
+python3 remove_unicode_spaces.py   # Démonstration complète
+python3 test_remove_unicode_spaces.py  # Tests unitaires
+```
+
+Voir le [guide de suppression des espaces Unicode](UNICODE_SPACES_GUIDE.md) pour plus de détails.
+
