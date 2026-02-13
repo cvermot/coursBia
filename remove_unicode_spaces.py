@@ -9,6 +9,20 @@ Example usage:
     python3 remove_unicode_spaces.py
 """
 
+import re
+
+# Module-level constant for Unicode spacing characters
+UNICODE_SPACES = [
+    '\u2002',  # EN SPACE
+    '\u2003',  # EM SPACE
+    '\u2009',  # THIN SPACE
+    '\u200A',  # HAIR SPACE
+    '\u202F',  # NARROW NO-BREAK SPACE
+]
+
+# Compiled regex pattern for efficient replacement
+_UNICODE_SPACES_PATTERN = re.compile('|'.join(re.escape(s) for s in UNICODE_SPACES))
+
 
 def remove_en_space(text):
     """
@@ -45,18 +59,7 @@ def remove_all_unicode_spaces(text):
     Returns:
         str: String with Unicode spacing characters removed
     """
-    unicode_spaces = [
-        '\u2002',  # EN SPACE
-        '\u2003',  # EM SPACE
-        '\u2009',  # THIN SPACE
-        '\u200A',  # HAIR SPACE
-        '\u202F',  # NARROW NO-BREAK SPACE
-    ]
-    
-    for space in unicode_spaces:
-        text = text.replace(space, '')
-    
-    return text
+    return _UNICODE_SPACES_PATTERN.sub('', text)
 
 
 def normalize_spaces(text, replacement=' '):
@@ -70,18 +73,7 @@ def normalize_spaces(text, replacement=' '):
     Returns:
         str: String with Unicode spacing characters replaced
     """
-    unicode_spaces = [
-        '\u2002',  # EN SPACE
-        '\u2003',  # EM SPACE
-        '\u2009',  # THIN SPACE
-        '\u200A',  # HAIR SPACE
-        '\u202F',  # NARROW NO-BREAK SPACE
-    ]
-    
-    for space in unicode_spaces:
-        text = text.replace(space, replacement)
-    
-    return text
+    return _UNICODE_SPACES_PATTERN.sub(replacement, text)
 
 
 if __name__ == '__main__':
