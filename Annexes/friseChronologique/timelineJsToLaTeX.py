@@ -99,7 +99,7 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
     with open('FriseBIA.csv', newline='', encoding='UTF-8') as csvfile:
         frise = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in frise:
-            time.sleep(0.2)
+            time.sleep(0.1)
             print(row['Year'] + " " + row['Headline'])
             if row['Type'] == "era":
                 friseLaTeX.write("\\section{"+row['Headline']+"}\n")
@@ -118,6 +118,10 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
                     friseLaTeX.write("            \\end{figure}\n")
                 if row['Group'] == "Les femmes de l'air":
                     friseLaTeX.write("            \n            \\centering\\Huge\\faFemale\n")
+                if row['Icone'] != "":
+                    listeIcone = row['Icone'].split(",")
+                    for icone in listeIcone:
+                        friseLaTeX.write("            \n            \\centering\\Huge"+icone+"\n")
                 friseLaTeX.write("        \\end{minipage}\n")
                 friseLaTeX.write("    &\n")
                 friseLaTeX.write("        \\begin{minipage}{.65\\textwidth}\n")
