@@ -117,11 +117,11 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
                     friseLaTeX.write("                \\includegraphics[width=1.0\\linewidth]{Annexes/friseChronologique/"+drapeau+"}\n")
                     friseLaTeX.write("            \\end{figure}\n")
                 if row['Group'] == "Les femmes de l'air":
-                    friseLaTeX.write("            \n            \\centering\\Huge\\faFemale\n")
+                    friseLaTeX.write("            \n            \\centering\\mdiFemale\n")
                 if row['Icone'] != "":
                     listeIcone = row['Icone'].split(",")
                     for icone in listeIcone:
-                        friseLaTeX.write("            \n            \\centering\\Huge"+icone+"\n")
+                        friseLaTeX.write("            \n            \\centering"+icone+"\n")
                 friseLaTeX.write("        \\end{minipage}\n")
                 friseLaTeX.write("    &\n")
                 friseLaTeX.write("        \\begin{minipage}{.65\\textwidth}\n")

@@ -140,26 +140,7 @@
 %(désactivé par défaut pour accélerer la compilation au poste d'écriture)
 %\newcommand{\activeranimations}{}
 %%%%%%%%%%%%%%%%%%%%Fin paramétrage
-\ifdefined\opendys 
-	%Utilisation de la police OpenDyslexic => compiler avec LuaLaTeX
-	\usepackage{fontspec}
- 	\setmainfont{OpenDyslexic-Regular}[
-    		Path = fonts/,  % Chemin du fichier de police
-    		Extension = .otf,  % Extension du fichier
-    		UprightFont = OpenDyslexic-Regular,  % Utiliser ce fichier pour le texte normal
-    		BoldFont = OpenDyslexic-Bold,
-    		ItalicFont = OpenDyslexic-Italic,
-    		BoldItalicFont = OpenDyslexic-Bold-Italic
-	]
-	\renewcommand*{\glstextformat}[1]{\textbf{\fontspec{OpenDyslexic-Regular}[
-    		Path = fonts/,  % Chemin du fichier de police
-    		Extension = .otf,  % Extension du fichier
-    		UprightFont = OpenDyslexic-Regular,  % Utiliser ce fichier pour le texte normal
-    		BoldFont = OpenDyslexic-Bold,
-    		ItalicFont = OpenDyslexic-Italic,
-    		BoldItalicFont = OpenDyslexic-Bold-Italic
-	]#1}}
-\fi	
+\input{fonts/fonts.tex}
 	
 	\begin{document}
 	
@@ -196,7 +177,7 @@
 	\tableofcontents
 	\newpage	
 	
-	\section{Préface}
+	\section{Préface}	
 	Ce document vise à apporter les connaissances de base nécessaires au passage de l'examen BIA. A date (\today), ce document est en cours de rédaction et doit être considéré comme partiel.
 
 	Enfin, ce document est destiné à évoluer. Par ailleurs, je suis ouvert à toutes critiques ou commentaires constructifs concernant ce document, sur le fond comme sur la forme. N'hésitez donc pas à me contacter concernant toute erreur, omission, faute d'orthographe ou manque dans ce document, préférentiellement via la page \href{https://github.com/cvermot/coursBia/discussions}{Discussions} du projet \href{https://github.com/cvermot/coursBia}{GitHub}\footnote{\url{https://github.com/cvermot/coursBia}} de ce cours (la création d'une discussion nécessite un compte sur GitHub). Alternativement, vous pouvez également me contacter via l'adresse suivante : bia@vermot.net.
@@ -337,6 +318,9 @@
 	
 	\chapter{Frise chronologique}
 		Les évenément présentés ici sont également disponibles de façon visuelle et interactive \href{http://brevet.initiation.aero/friseChronologique.html}{en ligne sur la frise chronologique}\footnote{\url{http://brevet.initiation.aero/friseChronologique.html}}.
+		
+		\input{Annexes/friseChronologique/legendeLogo.tex}
+		
 		\input{Annexes/friseChronologique/frise.tex}
 	
 	\chapter{Extraits de documents}

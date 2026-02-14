@@ -1,0 +1,40 @@
+%Utilisation de police personalisée => compiler avec LuaLaTeX
+\ifluatex
+\usepackage{fontspec,iftex}
+\ifdefined\opendys 
+	%Utilisation de la police OpenDyslexic
+ 	\setmainfont{OpenDyslexic-Regular}[
+    		Path = fonts/,  % Chemin du fichier de police
+    		Extension = .otf,  % Extension du fichier
+    		UprightFont = OpenDyslexic-Regular,  % Utiliser ce fichier pour le texte normal
+    		BoldFont = OpenDyslexic-Bold,
+    		ItalicFont = OpenDyslexic-Italic,
+    		BoldItalicFont = OpenDyslexic-Bold-Italic
+	]
+	\renewcommand*{\glstextformat}[1]{\textbf{\fontspec{OpenDyslexic-Regular}[
+    		Path = fonts/,  % Chemin du fichier de police
+    		Extension = .otf,  % Extension du fichier
+    		UprightFont = OpenDyslexic-Regular,  % Utiliser ce fichier pour le texte normal
+    		BoldFont = OpenDyslexic-Bold,
+    		ItalicFont = OpenDyslexic-Italic,
+    		BoldItalicFont = OpenDyslexic-Bold-Italic
+	]#1}}
+\fi	
+
+\newfontfamily\MaterialDesignIcons{Material Design Icons}[
+  Path = fonts/,
+  Extension = .ttf,
+  UprightFont = materialdesignicons-webfont,
+  Renderer = OpenType
+]
+\DeclareTextFontCommand{\texticon}{\MaterialDesignIcons}
+\fi
+
+\newcommand{\mdiAirBalloon}{\Huge\ifluatex\texticon{ ^^^^^^0f001c }\else\faQuestion\fi\normalsize}
+\newcommand{\mdiParachute}{\Huge\ifluatex\texticon{ ^^^^^^0f0cb4 }\else\faQuestion\fi\normalsize}
+\newcommand{\mdiRocket}{\Huge\ifluatex\texticon{ ^^^^^^0f14de }\else\faRocket\fi\normalsize}
+\newcommand{\mdiBrevet}{\Huge\ifluatex\texticon{ ^^^^^^0f1188 }\else\faCertificate\fi\normalsize}
+\newcommand{\mdiTrophy}{\Huge\ifluatex\texticon{ ^^^^^^0f0538 }\else\faTrophy\fi\normalsize}
+\newcommand{\mdiMilitaire}{\Huge\ifluatex\texticon{ ^^^^^^0f0787 }\else\faShield\fi\normalsize}
+\newcommand{\mdiFemale}{\Huge\ifluatex\texticon{ ^^^^^^0f029c }\else\faFemale\fi\normalsize}
+\newcommand{\mdiGreen}{\Huge\ifluatex\texticon{ ^^^^^^0f032a }\else\faLeaf\fi\normalsize}
