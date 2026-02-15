@@ -5,12 +5,16 @@ import os
 import json
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF
+from datetime import date
 
 import re
 cleanHtmlRe = re.compile('<.*?>')
 
 from PIL import Image
 size = 1280, 1280
+
+import locale
+locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
 
 #py -m pip install requests svglib reportlab Image
 nbErreurs = 0
@@ -125,7 +129,12 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
                 friseLaTeX.write("        \\end{minipage}\n")
                 friseLaTeX.write("    &\n")
                 friseLaTeX.write("        \\begin{minipage}{.65\\textwidth}\n")
-                friseLaTeX.write("            \\textbf{"+row['Year']+"} - \\textbf{"+row['Headline']+"}\n")
+                dateTexte = row['Year']
+                if row['Month'] != "" and row['Day'] != "":
+                    dateTmp = date(int(row['Year']),int(row['Month']),int(row['Day']))
+                    #dateTexte = format_date(dateTmp, locale='fr_FR')
+                    dateTexte = dateTmp.strftime("%d %B %Y")
+                friseLaTeX.write("            \\textbf{"+dateTexte+"} - \\textbf{"+row['Headline']+"}\n")
                 friseLaTeX.write("            \n            ")
                 friseLaTeX.write(row['Text']+"\n")
                 if image != "":
