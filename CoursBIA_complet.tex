@@ -6,8 +6,7 @@
 	\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry} %permet de modifier les marges
 	\usepackage{graphicx} %package nécessaire pour l'insertion d'images
 	\usepackage{graphics} %package nécessaire pour l'insertion d'images 
-	\usepackage{wrapfig} %package nécessaire pour l'insertion d'images
-	\usepackage{amsmath} %package mathématiques (fonction \dfrac notamment)
+	\usepackage{wrapfig} %package nécessaire pour l'insertion d'images2	\usepackage{amsmath} %package mathématiques (fonction \dfrac notamment)
 	\usepackage{multicol} %package pour écrire sur plusieurs colonnes
 	\usepackage{hyperref} %package pour ajouter des liens hypertextes dans le fichier de sortie
 	\hypersetup{%
@@ -26,6 +25,7 @@
 	\usepackage{float}
 	\usepackage{pdfpages}
 	\usepackage{float}
+	\usepackage{caption}
 	\usepackage{subcaption}
 	\usepackage{color}
 	\usepackage{tocbibind}
@@ -125,6 +125,7 @@
 	%    -titre de la figure
 	%    -source (tag de la biblio)
 	\newcommand{\legende}[2]{\caption[#1 (Source : \cite{#2})]{#1}}
+	\newcommand{\refDrapeau}[2]{\caption[#1 (Source : \cite{#2})]{}}
 	\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}~siècle}	
 
 %%%%%%%%%%%%%%%%%%%%Début paramétrage
