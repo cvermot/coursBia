@@ -110,13 +110,14 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
                 friseLaTeX.write(row['Text']+"\n")
             elif row['Type'] == "":
                 drapeau = telechargerImage(row['Media Thumbnail']);
-                image = telechargerImage(row['Media']);
+                image = telechargerImage(row['Media'])
                 friseLaTeX.write("\\begin{table}[H]\n")
                 friseLaTeX.write("    \\centering\n")
                 friseLaTeX.write("    \\begin{tabular}{c l c}\n")
                 friseLaTeX.write("        \\begin{minipage}{.075\\textwidth}\n")
                 if drapeau != "":
                     friseLaTeX.write("            \\begin{figure}[H]\n")
+                    friseLaTeX.write("            \\setlength{\\belowcaptionskip}{-40pt}\n")
                     friseLaTeX.write("                \\centering\n")
                     friseLaTeX.write("                \\includegraphics[width=1.0\\linewidth]{Annexes/friseChronologique/"+drapeau+"}\n")
                     friseLaTeX.write("                \\captionsetup{labelformat=empty}\\refDrapeau{"+drapeau.split("/")[-1].replace("Flag_of","Drapeau").replace("_"," ").replace(".pdf","")+"}{frise:"+drapeau.split("/")[-1]+"}\n")
