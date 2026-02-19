@@ -150,6 +150,10 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
                     friseLaTeX.write("            \\begin{figure}[H]\n")
                     friseLaTeX.write("                \\legende{"+row['Media Caption']+"}{frise:"+image.split("/")[-1]+"}\n")
                     friseLaTeX.write("            \\end{figure}\n")
+                elif row['Alt Media'] != "":
+                    friseLaTeX.write("            \\begin{figure}[H]\n")
+                    friseLaTeX.write("                \\legende{"+row['Media Caption']+"}{frise:"+row['Alt Media']+"}\n")
+                    friseLaTeX.write("            \\end{figure}\n")
                 friseLaTeX.write("        \\end{minipage}\n")
                 friseLaTeX.write("    &\n")
                 friseLaTeX.write("        \\begin{minipage}{.275\\textwidth}\n")
@@ -157,6 +161,8 @@ with open("frise.tex", "w", encoding='UTF-8') as friseLaTeX:
                 friseLaTeX.write("                \\centering\n")
                 if image != "":
                     friseLaTeX.write("                \\includegraphics[width=1.0\\linewidth]{Annexes/friseChronologique/"+image+"}\n")
+                elif row['Alt Media'] != "":
+                    friseLaTeX.write("                \\includegraphics[width=1.0\\linewidth]{Annexes/friseChronologique/extraitsVideo/"+row['Alt Media']+"}\n")
                 else:
                     friseLaTeX.write("                \\includegraphics[width=1.0\\linewidth]{Annexes/friseChronologique/vide.pdf}\n")
                 friseLaTeX.write("            \\end{figure}\n")
