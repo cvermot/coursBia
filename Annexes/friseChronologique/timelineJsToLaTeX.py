@@ -43,12 +43,20 @@ def telechargerImage(url):
             infosWikimedia = json.loads(reponseUrlWikimedia.text)
             infoMedia = infosWikimedia["query"]["pages"]
             auteur = "Inconnu"
+            licence = "Inconnu"
+            description = ""
+            date = "2026"
+            infoMediaTrouve = False
             for keys in infoMedia:
-                licence = infoMedia[keys]["imageinfo"][0]["extmetadata"]["LicenseShortName"]["value"]
-                date = (infoMedia[keys]["imageinfo"][0]["extmetadata"]["DateTime"]["value"].split(" "))[0]
-                description = cleanHtml(infoMedia[keys]["imageinfo"][0]["extmetadata"]["ImageDescription"]["value"])
-                if "Artist" in infoMedia[keys]["imageinfo"][0]["extmetadata"]:
-                    auteur = cleanHtml(infoMedia[keys]["imageinfo"][0]["extmetadata"]["Artist"]["value"])
+                if "imageinfo" in infoMedia[keys]:
+                    infoMediaTrouve = True
+                    licence = infoMedia[keys]["imageinfo"][0]["extmetadata"]["LicenseShortName"]["value"]
+                    date = (infoMedia[keys]["imageinfo"][0]["extmetadata"]["DateTime"]["value"].split(" "))[0]
+                    description = cleanHtml(infoMedia[keys]["imageinfo"][0]["extmetadata"]["ImageDescription"]["value"])
+                    if "Artist" in infoMedia[keys]["imageinfo"][0]["extmetadata"]:
+                        auteur = cleanHtml(infoMedia[keys]["imageinfo"][0]["extmetadata"]["Artist"]["value"])
+            if not infoMediaTrouve:
+                print("    Impossible de télécharger les infos de crédits pour " + noms[-1] +". Utilisation d'informations génériques.")
         else:
             print("    Erreur de téléchargements crédits")
             return ""
