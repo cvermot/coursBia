@@ -138,7 +138,99 @@
 			}
 		\end{animateinline}
 	\end{figure}
+	\end{frame}
 	
+	\begin{frame}{Altimètre - réglage au QFE}
+ 		\begin{columns}
+ 		\begin{column}{0.78\textwidth}
+		\begin{figure}	
+		\centering
+			\includegraphics[width=1\linewidth]{02-Navigation/img/altimetrieQnh1000hPa.pdf}
+			\legende{Réglage au QFE}{img:altimetrieQnh1000hPa}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.22\textwidth}
+ 			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{3500}{893}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{0}{893}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{0}{1000}
+			\end{tikzpicture}
+			
+			~
+			
+			~
+			
+			~
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Altimètre - réglage au QNH}
+ 		\begin{columns}
+ 		\begin{column}{0.78\textwidth}
+		\begin{figure}	
+		\centering
+			\includegraphics[width=1\linewidth]{02-Navigation/img/altimetrieQnh1000hPa.pdf}
+			\legende{Réglage au QNH}{img:altimetrieQnh1000hPa}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.22\textwidth}
+ 			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{6500}{1000}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{3000}{1000}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{0}{1000}
+			\end{tikzpicture}
+			
+			~
+			
+			~
+			
+			~
+ 		\end{column}
+ 		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Altimètre - réglage pression standard (1013,25 hPa)}
+ 		\begin{columns}
+ 		\begin{column}{0.78\textwidth}
+		\begin{figure}	
+		\centering
+			\includegraphics[width=1\linewidth]{02-Navigation/img/altimetrieQnh1000hPaAvecStd.pdf}
+			\legende{Réglage au 1013.25 hPa}{img:altimetrieQnh1000hPaAvecStd}
+		\end{figure}
+		\end{column}
+ 		\begin{column}{0.22\textwidth}
+ 			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{6871}{1013.25}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{3371}{1013.25}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.4, every node/.style={scale=0.4}]
+				\altiHpa{371}{1013.25}
+			\end{tikzpicture}
+			
+			~
+			
+			~
+			
+			~
+ 		\end{column}
+ 		\end{columns}
 	\end{frame}
 	
 	
@@ -154,7 +246,7 @@
 		\end{figure}
 		\end{column}
  		\begin{column}{0.55\textwidth}
- 			Indique la vitesse verticale
+ 			Indique la vitesse verticale (montée/descente)
  		\end{column}
  		\end{columns}
 	\end{frame}
@@ -175,7 +267,7 @@
 	\end{frame}	
 	
 	
-	\begin{frame}{Variomètre}
+	\begin{frame}{L'horizon artificiel}
  		\begin{columns}
  		\begin{column}{0.45\textwidth}
 		\begin{figure}[H]	
@@ -187,6 +279,12 @@
 		\end{figure}
 		\end{column}
  		\begin{column}{0.55\textwidth}
+ 		
+ 		Indique l'assiette et l'inclinaison
+ 		
+ 		Fonctionne grâce à des gyroscopes
+ 		
+ 		Permet de voler dans les nuages
  			
  		\end{column}
  		\end{columns}

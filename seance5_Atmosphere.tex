@@ -39,9 +39,11 @@
 		\hline
 	\end{tabular}
 	\caption{Composition de l'atmosphère terrestre}
-	\end{table}
+	\end{table}\pause
 	
 	L'air de l'atmosphère contient de la vapeur d'eau en quantité variable
+	
+	Rappel : la vapeur d'eau est un gaz incolore et inodore.
 	\end{frame}
 	
 	\begin{frame}{Quantité d'eau que peu contenir l'air, selon la température}
@@ -50,6 +52,12 @@
 			\includegraphics[width=0.80\linewidth]{03-Meteo/img/graphHumiditeSelonTemperature.pdf}
 			\legende{Schéma indiquant la quantité d'eau que l'air peut stocker en fonction de la température}{img:graphHumiditeSelonTemperature}
 		\end{figure}	
+	\end{frame}
+	
+	\begin{frame}{Composition de l'atmosphère : influence de la quantité de vapeur d'eau}
+		Lorsque la quantité de vapeur d'eau atteint 100\% de la quantité d'eau que peut contenir une masse d'air à une température donnée, l'eau en quantité excédentaire se condense : des micro gouttelettes se forment dans l'air. L'humidité devient apparente sous forme de nuages (en altitude) ou de brumes et brouillards (proches du sol).
+		
+		Pour une proportion d'eau fixée dans l'atmosphère, la température à laquelle la saturation est atteinte est appelé \textbf{point de rosée}.
 	\end{frame}
 
  	\begin{frame}{Les couches de l'atmosphère terrestre}
@@ -61,13 +69,15 @@
 			\end{figure}	
 		\end{column}
  		\begin{column}{0.6\textwidth}
- 			On s'intéressera surtout à la troposphère, zone où évoluent les aéronefs et où se déroulent l'essentiel des phénomènes climatiques.
+ 			On s'intéressera surtout à la troposphère, zone où évoluent la plupart des aéronefs et où se déroulent l'essentiel des phénomènes climatiques.\pause
+ 			
+ 			L'altitude de la tropopause varie selon la latitude : 9 km au pôle et 17 km à l'équateur. A nos latitudes, la tropopause est à environ 11 km d'altitude, il y fait -56\textdegree C.
  		\end{column}
  		\end{columns}
 	\end{frame}	
 	
 	\begin{frame}{La pression atmosphérique}
-	Tout l'air au dessus de nous est soumis à la gravité terrestre. Il a donc un poids.
+	Toute la masse d'air au dessus de nous est soumis à la gravité terrestre. Il a donc un poids (au niveau de la mer : $1,225 kg/m^3$)
 	
 	\begin{figure}
 	\begin{tikzpicture}
@@ -182,8 +192,14 @@
 	
 	\begin{frame}{Front froid~~~~\includegraphics[width=0.3\linewidth]{03-Meteo/img/legendeFrontFroid.pdf}}
 		\begin{figure}[H]
-			\includegraphics[width=.3\linewidth]{03-Meteo/img/frontFroid.pdf}
+			\includegraphics[width=.5\linewidth]{03-Meteo/img/frontFroid.pdf}
 		\end{figure}	
+		
+		L'air froid pousse l'air chaud, plus léger.
+		
+		A l'interface, l'humidité dans l'air chaud  se condense et forme des nuages développés verticalement : les précipitations sont brèves mais intenses.
+		
+			Après le passage du front froid, la traîne s'installe :  une zone de temps instable qui se forme à l'arrière d'un front froid. Elle est caractérisée par une visibilité variable et des averses intermittentes.
 	\end{frame}
 
 	\begin{frame}{Front chaud~~~~\includegraphics[width=0.3\linewidth]{03-Meteo/img/legendeFrontChaud.pdf}}
@@ -193,11 +209,30 @@
 		\end{figure}	
 	\end{frame}
 	
+	\begin{frame}{Front chaud~~~~\includegraphics[width=0.3\linewidth]{03-Meteo/img/legendeFrontChaud.pdf}}
+		\begin{figure}[H]
+			\includegraphics[width=0.5\linewidth]{03-Meteo/img/frontChaud.pdf}
+		\end{figure}	
+		
+		L'air chaud arrive sur l'air froid, plus dense. Il n'arrive pas à le pousser donc passe au dessus. La vapeur d'eau contenue dans le cet air chaud se condense au contact de l'air plus froid.
+		
+		Le début du front chaud est caractérisé par des nuages de haute altitude. Avec l'avancée du front, la base des nuages descend progressivement, on trouve des précipitations puis des nuages qui peuvent aller jusqu'au sol.
+	\end{frame}
+	
 	\begin{frame}{Front occlus~~~~\includegraphics[width=0.3\linewidth]{03-Meteo/img/legendeFrontOcclus.pdf}}
 		\begin{figure}[H]
 			\includegraphics[width=1\linewidth]{03-Meteo/img/frontOcclus.pdf}
 			\legende{Coupe d'un front occlus}{img:frontOcclus}
 		\end{figure}	
+	\end{frame}
+	
+	\begin{frame}{Front occlus~~~~\includegraphics[width=0.3\linewidth]{03-Meteo/img/legendeFrontOcclus.pdf}}
+		\begin{figure}[H]
+			\includegraphics[width=0.5\linewidth]{03-Meteo/img/frontOcclus.pdf}
+			\legende{Coupe d'un front occlus}{img:frontOcclus}
+		\end{figure}	
+		
+		Un front est occlus quand le un front froid rattrape un front chaud.
 	\end{frame}
  
 \appendix 
@@ -243,12 +278,36 @@
 {}
 
 \qmcBia{Météo}
-{4}{Une information sur une carte stipule l'ISO 0°C au FL80. Vous devez voler au FL60. En considérant le gradient standard, quelle est la bonne affirmation ?}
-{Le vol se fera à +4 °C}
-{Le vol se fera à -4 °C}
-{Le vol se fera à -2 °C}
-{Le vol se fera à +2 °C} 
-{FL80 = 8000 pieds, FL60 = 6000 pieds \\ On vole 2000 pieds sous l'isotherme 0°, et on sait que l'on perd 2° par 1000 pieds, donc on sera 4°C plus chaud qu'au FL80}
+{4}{Une information sur une carte stipule l'iso 0\textdegree C au FL80. Vous devez voler au FL60. En considérant le gradient standard, quelle est la bonne affirmation ?}
+{Le vol se fera à +4\textdegree C}
+{Le vol se fera à -4\textdegree C}
+{Le vol se fera à -2\textdegree C}
+{Le vol se fera à +2\textdegree C} 
+{FL80 = 8000 pieds, FL60 = 6000 pieds \\ On vole 2000 pieds sous l'isotherme 0\textdegree C, et on sait que l'on perd 2\textdegree C par 1000 pieds, donc on sera 4\textdegree C plus chaud qu'au FL80}
+
+\qmcBia{Météo}
+{2}{À la latitude de Paris, l'altitude et la température moyennes de la tropopause (atmosphère standard) sont :}
+{7 km d'altitude et -45\textdegree C}
+{11 km d'altitude et -56\textdegree C}
+{17 km d'altitude et -45\textdegree C}
+{11 km d'altitude et -80\textdegree C} 
+{}
+
+\qmcBia{Météo}
+{3}{En atmosphère standard, la masse volumique de l'air est de :}
+{1225 $kg/m^3$}
+{1,225 $g/m^3$}
+{1,225 $kg/m^3$}
+{122,5 $g/m^3$} 
+{}
+
+\qmcBia{Météo}
+{3}{Dans un message aéronautique, le groupe de température indique +12\textdegree C sous abri, et +4\textdegree C de point de rosée. On peut dire que :}
+{la masse d'air est à 100\% d'humidité}
+{la température maximale sera de +12\textdegree C et la minimale de +4\textdegree C}
+{la masse d'air serait saturée pour une température sous-abri de +4\textdegree C}
+{la masse d'air serait saturée pour une température sous-abri de +8\textdegree C} 
+{}
 
  
 \input{commun/beamerSlidesBiblio.tex} 

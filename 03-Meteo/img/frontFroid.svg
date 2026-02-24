@@ -9,6 +9,9 @@
    viewBox="0 0 648 258.73868"
    sodipodi:docname="frontFroid.svg"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="frontFroid.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1118,7 +1121,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.6419753"
-     inkscape:cx="351.1015"
+     inkscape:cx="350.79699"
      inkscape:cy="276.19173"
      inkscape:window-width="2240"
      inkscape:window-height="1294"
@@ -3716,33 +3719,33 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;fill-opacity:1;stroke-width:2.58683"
        x="349.93686"
-       y="305.86121"
+       y="304.58066"
        id="text3"><tspan
          sodipodi:role="line"
          id="tspan3"
          x="349.93686"
-         y="305.86121"
+         y="304.58066"
          style="font-size:9.33333px;letter-spacing:0px">300 km</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;fill-opacity:1;stroke-width:2.58683"
        x="491.21527"
-       y="305.85663"
+       y="304.57611"
        id="text4"><tspan
          sodipodi:role="line"
          id="tspan4"
          x="491.21527"
-         y="305.85663">600 km</tspan></text>
+         y="304.57611">600 km</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.33333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;fill-opacity:1;stroke-width:2.58683"
        x="632.52332"
-       y="305.84753"
+       y="304.56699"
        id="text5"><tspan
          sodipodi:role="line"
          id="tspan5"
          x="632.52332"
-         y="305.84753"
+         y="304.56699"
          style="font-size:9.33333px">900 km</tspan></text>
     <text
        xml:space="preserve"
