@@ -8,6 +8,7 @@
 \pgfdeclareimage{altCase}{01-EtudeAeronefs/img/instruments/alt/alt_case.pdf}
 \pgfdeclareimage{altFace1}{01-EtudeAeronefs/img/instruments/alt/alt_face_1.pdf}
 \pgfdeclareimage{altFaceHpa1}{01-EtudeAeronefs/img/instruments/alt/alt_face_hpa_1.pdf}
+\pgfdeclareimage{altFaceLowHpa1}{01-EtudeAeronefs/img/instruments/alt/alt_face_low_hpa_1.pdf}
 \pgfdeclareimage{altFace2}{01-EtudeAeronefs/img/instruments/alt/alt_face_2.pdf}
 \pgfdeclareimage{altFace3}{01-EtudeAeronefs/img/instruments/alt/alt_face_3.pdf}
 \pgfdeclareimage{altHand1}{01-EtudeAeronefs/img/instruments/alt/alt_hand_1.pdf}
@@ -40,7 +41,7 @@
 \pgfdeclareimage{ilsHandGs}{01-EtudeAeronefs/img/instruments/ils/ils_hand_gs.pdf}
 \pgfdeclareimage{ilsHanvNav}{01-EtudeAeronefs/img/instruments/ils/ils_hand_nav.pdf}
 
-%altimètre
+%altimètre inHg
 %   -paramètre 1 : altitude en pieds
 %   -paramètre 2 : calage en pouces de mercure
 \def\alti#1#2{
@@ -54,7 +55,7 @@
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
 }
 
-%altimètre
+%altimètre hPa (graduations 925-1105 hPa)
 %   -paramètre 1 : altitude en pieds
 %   -paramètre 2 : calage en hPa
 \def\altiHpa#1#2{
@@ -68,6 +69,19 @@
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
 }
 
+%altimètre hPa (graduations 875-1050 hPa)
+%   -paramètre 1 : altitude en pieds
+%   -paramètre 2 : calage en hPa
+\def\altiHpaLow#1#2{
+	\fill[transparent] (0,0) circle (3) ;
+	\node[rotate=(#2-925)/(1050-875)*360] {\pgfbox[center,center]{\pgfuseimage{altFaceLowHpa1}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{altFace2}}};
+  	\node[rotate=-{(Mod(#1/10,10000))*(36/1000)}] {\pgfbox[center,center]{\pgfuseimage{altFace3}}};
+  	\node[rotate=-{(Mod(#1,1000))*(360/1000)}] {\pgfbox[center,center]{\pgfuseimage{altHand2}}};
+    	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
+    	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
+	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+}
 
 %altimètre
 %   -paramètre 1 : nombre de frames
@@ -214,7 +228,7 @@
 
 %indicateur de virage
 %   -paramètre 1 : taux virage [-1;1] 
-%   -parametre 2 : postion bille [-1;1] 
+%   -parametre 2 : position bille [-1;1] 
 \def\indicateurVirage#1#2{
 	\fill[transparent] (0,0) circle (3) ;
   	\node {\pgfbox[center,center]{\pgfuseimage{tcBack}}};
