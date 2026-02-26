@@ -6,6 +6,8 @@
 \documentclass[12pt,aspectratio=1610]{beamer}
 \fi
 
+\input{commun/biblio.tex}
+
 %\usepackage[french]{babel} %=> erreur avec les tikz du moteur
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -28,18 +30,6 @@
 \usepackage{ifthen}
 \usepackage{fp}
 \usepackage{textcomp}
-
-\usepackage[
-    backend=biber,
-    %style=authoryear-icomp,
-    style=numeric,
-    %style=ieee,
-    sortlocale=fr_FR,
-    natbib=true,
-    url=true, 
-    doi=true,
-    eprint=true
-]{biblatex}
 
 \usetheme{Warsaw}
 \setbeamertemplate{page number in head/foot}[totalframenumber]
@@ -165,8 +155,3 @@
         \tableofcontents[currentsection,currentsubsection]
     \end{frame}
 }
-
-\addbibresource{commun/biblio.bib}
-\addbibresource{01-EtudeAeronefs/biblio.bib}
-\addbibresource{04-Aerodynamique/biblio.bib}
-\addbibresource{05-Histoire/biblio.bib}
