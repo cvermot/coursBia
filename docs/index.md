@@ -52,18 +52,39 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Vidéo : les commandes de vol](https://www.youtube.com/watch?v=a1QV0qPpj6k&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=44&pp=iAQB)
 - [Vidéo : stabilité autour de l'axe du roulis : rôle du dièdre](https://www.youtube.com/watch?v=ARK5lMWQR7I&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=24&pp=iAQB)
 
+## Séance 5 : Atmosphère
+- Composition et structure de l'atmopshère
+- Humidité de l'air
+- Fronts
 
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance5_Atmosphere_handout.pdf)
+
+- [Vidéo : l'atmopshère partie 1](https://www.youtube.com/watch?v=dT65uq2VTks&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=54)
+- [Vidéo : l'atmopshère partie 2](https://www.youtube.com/watch?v=HC_E1WTPJ7I&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=42)
+- [Vidéo : la formation des nuages](https://www.youtube.com/watch?v=QytVOC1VVOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=40)
+- [Vidéo : circulation générale des masses d'air, vents](https://www.youtube.com/watch?v=_BDx_DNW1WI&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=21)
+- [Vidéo : fronts et perturbations](https://www.youtube.com/watch?v=iK1nwo9ujWc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=19)
 # Cours
 
 ## Histoire
 [Cette frise chronologique](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQpziSx6DY9NLxldx55-WNCgafX8OYs1XLyDbkpa3kRWNCnPB6y3ivKcjEG8N7cALtehugZ7MG9yt71&font=Default&lang=fr&hash_bookmark=true&initial_zoom=2&width=100%25&height=650#event-premier-vol-dun-avion) donne des repères utiles pour la partie histoire. Cette frise est encore en cours d'élabloration et sera completée durant l'année.
 
 # Ressources externes
+
 ## Apprendre
 Les ressources suivantes permettent de compléter le cours et de préparer l'examen :
 - [Chaine YouTube Canal-BIA](https://www.youtube.com/playlist?list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK) : vidéos de "cours" sur les différents thèmes du BIA
 - [Initiation à l'aéronautique](https://www.cepadues.com/livres/pilotage-aeronautique/avion/bia-brevet-d-initiation-aeronautique/1721-initiation-a-l-aeronautique-preparer-le-bia-12e-edition-9782383951445.html?srsltid=AfmBOor7odukzI1SP7E6B2-rc32NbJ-0qAEPxxO2yUrpKywYNZjcuvMD), éditions Cépaduès : le livre de référence qui couvre l'ensemble du programme. Disponible en commande dans toutes les librairies.
 - [Manuel du BIA proposé par l'académie de Toulouse](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/pedagogiques/11286/11286-bia-2021-vf1-copie.pdf)
+
+### Cours de l'aéroclub de Montendre
+L'aéroclub de Montendre met à disposition ses cours BIA très bien conçus :
+- [Histoire](http://www.amsaquitaine.fr/wp-content/uploads/2025/01/1-Cours-Histoire.pdf)
+- [Météo](http://www.amsaquitaine.fr/wp-content/uploads/2025/01/2-Cours-Meteo.pdf)
+- [Aérodynamique](http://www.amsaquitaine.fr/wp-content/uploads/2025/01/4-Cours-Aerodynamique.pdf)
+- [Navigation, sécurité, réglementation](http://www.amsaquitaine.fr/wp-content/uploads/2025/01/3-Cours-NRS.pdf)
+- [Connaissance des aéronefs](http://www.amsaquitaine.fr/wp-content/uploads/2025/01/5-Cours-CDA.pdf)
+- [Anglais](http://www.amsaquitaine.fr/wp-content/uploads/2025/01/6-Cours-Anglais.pdf)
 
 ## Réviser
 - [Annales-BIA](https://annales-bia.fr/) : historique des QCM des examens BIA depuis 1996. Les QCM depuis 2015 sont particulièrement intéressants car conformes au programme en vigueur.
