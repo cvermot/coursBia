@@ -41,6 +41,12 @@
       "variantFileName": "seance6_InstrumentsDeBord_handout",
       "presentation": true,
       "toRelease": false
+    },
+    {
+      "file": "seance7_Aerodrome_ReglesDeVol",
+      "variantFileName": "seance7_Aerodrome_ReglesDeVol_handout",
+      "presentation": true,
+      "toRelease": false
     }
   ]
 }
