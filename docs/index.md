@@ -71,6 +71,8 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance7_Aerodrome_ReglesDeVol_handout.pdf)
 
+- [Vidéo : Aérodromes, tour de piste, cartes VAC](https://www.youtube.com/watch?v=eE7jrWVOmzE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=14&pp=iAQB)
+
 # Cours
 
 ## Histoire
