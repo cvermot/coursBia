@@ -65,6 +65,12 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Vidéo : circulation générale des masses d'air, vents](https://www.youtube.com/watch?v=_BDx_DNW1WI&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=21)
 - [Vidéo : fronts et perturbations](https://www.youtube.com/watch?v=iK1nwo9ujWc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=19)
 
+## Séance 6 : Aérodrome, règles de vol
+- Aérodorme, nommage de pistes
+- Règles de vol (IFR/VFR)
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance7_Aerodrome_ReglesDeVol_handout.pdf)
+
 # Cours
 
 ## Histoire
