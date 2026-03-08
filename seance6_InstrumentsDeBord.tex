@@ -28,16 +28,16 @@
 
  	\begin{frame}{Anémomètre}
  		\begin{columns}
- 		\begin{column}{0.45\textwidth}
+ 		\begin{column}{0.40\textwidth}
 		\begin{figure}	
 		\centering
 			\begin{tikzpicture}
 				\badin{110}
 			\end{tikzpicture}
-		\legende{Un "badin"}{tikz:instrumentsBase}
+		\legende{Un "badin" - graduation en n\oe uds (kt) - 1 kt = 1,852 km/h}{tikz:instrumentsBase}
 		\end{figure}
 		\end{column}
- 		\begin{column}{0.55\textwidth}
+ 		\begin{column}{0.60\textwidth}
  			Indique la vitesse
  			
  			Les arcs représentent différentes vitesses :
@@ -47,8 +47,11 @@
  				\item arc jaune : vitesse en air calme
  				\item trait rouge : vitesse à ne jamais dépasser (VNE, Velocity Never Exceeded)
  			\end{itemize}
+ 			\pause
+ 			\histoire{L'anémomètre qui équipe nos avions a été inventé en 1911 par l'ingénieur français Raoul Badin, qui a donc donné son nom à cet instrument.}
  		\end{column}
  		\end{columns}
+ 		
 	\end{frame}	
 	
 	\begin{frame}{Anémomètre - fonctionnement}
@@ -61,8 +64,8 @@
 		\end{figure}	
 		\end{column}
 		\begin{column}{0.42\textwidth}
+		L'anémomètre utilise la \textbf{pression dynamique} en provenance du \textbf{tube Pitot}, et la \textbf{pression statique} en provenance de la \textbf{prise de pression statique}.
 		\pause
-		\histoire{L'anémomètre qui équipe nos avions a été inventé en 1911 par l'ingénieur français Raoul Badin, qui a donc donné son nom à cet instrument.}
 		
 		\histoire{Le tube Pitot a été inventé en 1732 par le physicien français Henri Pitot.}
 		\end{column}
@@ -106,10 +109,17 @@
 	
 	\begin{frame}{Altimètre - fonctionnement}
 		\begin{columns}
-		\begin{column}{0.42\textwidth}
-		
+		\begin{column}{0.48\textwidth}
+		\begin{itemize}
+				\item L'altimètre mesure la pression atmosphérique (pression statique)
+				\item La mesure est prise par la prise statique
+			\end{itemize}
+			\begin{figure}
+				\includegraphics[width=0.8\linewidth]{01-EtudeAeronefs/img/StaticPort}
+				\legende{Prises statique, A330}{img:StaticPort}
+			\end{figure}	
 		\end{column}
- 		\begin{column}{0.58\textwidth}
+ 		\begin{column}{0.52\textwidth}
 		\begin{figure}
 			% [trim={left bottom right top},clip]
 			\includegraphics[width=1\linewidth]{01-EtudeAeronefs/img/instruments/schemaAltimetre.pdf}
@@ -119,7 +129,7 @@
 		\end{columns}
 	\end{frame}	
 	
-	\begin{frame}{Altimètre - réglage du calage}
+	\begin{frame}{Altimètre - réglage du calage altimétrique}
  		\begin{columns}
  		\begin{column}{0.45\textwidth}
 		\begin{figure}	
@@ -128,7 +138,7 @@
 		\end{figure}
 		\end{column}
  		\begin{column}{0.55\textwidth}
- 			
+ 			L'équipage peut régler l'altimètre pour prendre en compte la pression atmosphérique courante.
  		\end{column}
  		\end{columns}
 	\end{frame}
@@ -266,7 +276,11 @@
 	\begin{frame}{Variomètre - fonctionnement}
 		\begin{columns}
 		\begin{column}{0.42\textwidth}
-		
+			\begin{itemize}
+				\item Utilise la pression statique
+				\item Une \textbf{fuite calibrée} dans le boitier permet de donner un retard entre la pression dans le boitier de l'instrument et la pression statique mesurée
+				\item La mesure n'est pas instantanée (il y un délai entre la mise en montée/descente et l'affichage sur l'instrument).
+			\end{itemize}
 		\end{column}
  		\begin{column}{0.58\textwidth}
 		\begin{figure}

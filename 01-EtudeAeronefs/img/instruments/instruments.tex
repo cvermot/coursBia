@@ -13,6 +13,7 @@
 \pgfdeclareimage{altFace3}{01-EtudeAeronefs/img/instruments/alt/alt_face_3.pdf}
 \pgfdeclareimage{altHand1}{01-EtudeAeronefs/img/instruments/alt/alt_hand_1.pdf}
 \pgfdeclareimage{altHand2}{01-EtudeAeronefs/img/instruments/alt/alt_hand_2.pdf}
+\pgfdeclareimage{altButton}{01-EtudeAeronefs/img/instruments/alt/alt_button.pdf}
 
 \pgfdeclareimage{aiCase}{01-EtudeAeronefs/img/instruments/ai/ai_case.pdf}
 \pgfdeclareimage{aiFace}{01-EtudeAeronefs/img/instruments/ai/ai_face.pdf}
@@ -132,6 +133,7 @@
 	\multiframe{\nbFramesAnime}{i=0+1}{%
 	\begin{tikzpicture}
 		\altiHpa{(\altiDebut+(\pasPression*\i*\piedsParUniteDePression))}{(\pressionDebut+\pasPression*\i)};
+			\node[rotate={-5.5*\i}] at (-2.1,-2.1) {\pgfbox[center,center]{\pgfuseimage{altButton}}};
 	\end{tikzpicture}
 	}
 	\end{animateinline}
