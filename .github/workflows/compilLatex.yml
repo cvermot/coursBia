@@ -53,7 +53,7 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: PDF-${{ matrix.file }}.pdf
+          name: PDF-${{ matrix.file }}.zip
           path: ${{ matrix.file }}.pdf
 
   upload:
