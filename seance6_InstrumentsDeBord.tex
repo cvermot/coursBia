@@ -548,9 +548,47 @@
 {Il est perturbé lors du passage en vol IMC (dans les nuages)} 
 {}
 
+\section{Disposition en T}
+\begin{frame}{La disposition des instruments en "T" }
+	\begin{figure}[H]	
+	\centering
+	\resizebox{0.5\width}{0.5\height}{
+		\dessinerTdB{vitesse=120, 
+		altitude=4500,
+		calageAltitude=1013,
+		vz = -300,
+		cap = 180,
+		assiette = -12,
+		inclinaison = 23,
+		derapage = 0.5,
+    		virage = 0.75,
+		afficherT=true}
+	}
+	\legende{Disposition typique d'une planche de bord}{tikz:plancheDeBord}
+	\end{figure}
+\end{frame}
+
 \section{EFIS et glass cockpit}
 
-\begin{frame}{EFIS}
+\begin{frame}{EFIS : on passe de ça, ....}
+
+	\begin{columns}
+ 		\begin{column}{0.5\textwidth}
+			\begin{figure}[H]
+				\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/ConcordeCockpitSinsheim.jpg}
+				\legende{Concorde}{img:ConcordeCockpitSinsheim}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}[H]
+				\includegraphics[width=\linewidth]{01-EtudeAeronefs/img/C172CockpitClassic.jpg}
+				\legende{Cessna 172 classique}{img:C172CockpitClassic}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}	
+
+\begin{frame}{... à ça (EFIS - glass cockpit)}
 
 	\begin{columns}
  		\begin{column}{0.5\textwidth}
