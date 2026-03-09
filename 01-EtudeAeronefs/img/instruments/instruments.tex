@@ -14,6 +14,7 @@
 \pgfdeclareimage{altHand1}{01-EtudeAeronefs/img/instruments/alt/alt_hand_1.pdf}
 \pgfdeclareimage{altHand2}{01-EtudeAeronefs/img/instruments/alt/alt_hand_2.pdf}
 \pgfdeclareimage{altButton}{01-EtudeAeronefs/img/instruments/alt/alt_button.pdf}
+\def\boutonAltimetre{(-2.1,-2.1)}
 
 \pgfdeclareimage{aiCase}{01-EtudeAeronefs/img/instruments/ai/ai_case.pdf}
 \pgfdeclareimage{aiFace}{01-EtudeAeronefs/img/instruments/ai/ai_face.pdf}
@@ -54,6 +55,7 @@
     	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
     	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+	\node[rotate={-25*((#2-28.0)*100)}] at \boutonAltimetre {\pgfbox[center,center]{\pgfuseimage{altButton}}};
 }
 
 %altimètre hPa (graduations 925-1105 hPa)
@@ -68,20 +70,22 @@
     	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
     	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+	\node[rotate={-25*((#2-925)/(1105-925)*360)}] at \boutonAltimetre {\pgfbox[center,center]{\pgfuseimage{altButton}}};
 }
 
-%altimètre hPa (graduations 875-1050 hPa)
+%altimètre hPa (graduations 875-1055 hPa)
 %   -paramètre 1 : altitude en pieds
 %   -paramètre 2 : calage en hPa
 \def\altiHpaLow#1#2{
 	\fill[transparent] (0,0) circle (3) ;
-	\node[rotate=(#2-925)/(1050-875)*360] {\pgfbox[center,center]{\pgfuseimage{altFaceLowHpa1}}};
+	\node[rotate=(#2-925)/(1055-875)*360] {\pgfbox[center,center]{\pgfuseimage{altFaceLowHpa1}}};
 	\node {\pgfbox[center,center]{\pgfuseimage{altFace2}}};
   	\node[rotate=-{(Mod(#1/10,10000))*(36/1000)}] {\pgfbox[center,center]{\pgfuseimage{altFace3}}};
   	\node[rotate=-{(Mod(#1,1000))*(360/1000)}] {\pgfbox[center,center]{\pgfuseimage{altHand2}}};
     	\node[rotate=-{(Mod(#1,10000))*(360/10000)}] {\pgfbox[center,center]{\pgfuseimage{altHand1}}};
     	%\node {\pgfbox[center,center]{\pgfuseimage{altCase}}};
 	\node {\pgfbox[center,center]{\pgfuseimage{case}}};
+	\node[rotate={-25*((#2-925)/(1055-875)*360)}] at \boutonAltimetre {\pgfbox[center,center]{\pgfuseimage{altButton}}};
 }
 
 %altimètre
@@ -123,7 +127,6 @@
 	\newcommand{\nbFramesAnime}{1}
 	\fi
 
-	%\newcommand{\nbFramesAnime}{#1}
 	\newcommand{\piedsParUniteDePression}{28} % 1 hPa = 28 pieds
 	\newcommand{\altiDebut}{#2}
 	\newcommand{\pressionDebut}{#3}
@@ -133,7 +136,7 @@
 	\multiframe{\nbFramesAnime}{i=0+1}{%
 	\begin{tikzpicture}
 		\altiHpa{(\altiDebut+(\pasPression*\i*\piedsParUniteDePression))}{(\pressionDebut+\pasPression*\i)};
-			\node[rotate={-5.5*\i}] at (-2.1,-2.1) {\pgfbox[center,center]{\pgfuseimage{altButton}}};
+			%\node[rotate={-5.5*\i}] at \boutonAltimetre {\pgfbox[center,center]{\pgfuseimage{altButton}}};
 	\end{tikzpicture}
 	}
 	\end{animateinline}
