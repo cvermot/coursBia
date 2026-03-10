@@ -40,13 +40,25 @@
       "file": "seance6_InstrumentsDeBord",
       "variantFileName": "seance6_InstrumentsDeBord_handout",
       "presentation": true,
-      "toRelease": false
+      "toRelease": true
     },
     {
       "file": "seance7_Aerodrome_ReglesDeVol",
       "variantFileName": "seance7_Aerodrome_ReglesDeVol_handout",
       "presentation": true,
       "toRelease": true
+    },
+    {
+      "file": "seance8_CartographieNavigation",
+      "variantFileName": "seance8_CartographieNavigation_handout",
+      "presentation": true,
+      "toRelease": false
+    },
+    {
+      "file": "seance9_EspacesAeriensSecurite",
+      "variantFileName": "seance9_EspacesAeriensSecurite_handout",
+      "presentation": true,
+      "toRelease": false
     }
   ]
 }
