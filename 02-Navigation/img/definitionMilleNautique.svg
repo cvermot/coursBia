@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg2"
+   width="259.98026"
+   height="265.74249"
+   version="1.0"
+   sodipodi:docname="defintionMilleNautique.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="defintionMilleNautique.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2240"
+     inkscape:window-height="1294"
+     id="namedview31"
+     showgrid="false"
+     inkscape:zoom="1.7761555"
+     inkscape:cx="74.317817"
+     inkscape:cy="134.27878"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5">
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path3248"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3245"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+  </defs>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1.00880909;stroke-opacity:1"
+     d="m 239.9939,135.75451 c 0,60.44158 -49.05403,109.49559 -109.49559,109.49559 -60.441568,0 -109.495595,-49.05401 -109.495595,-109.49559 0,-60.441562 49.054027,-109.495589 109.495595,-109.495589 60.44156,0 109.49559,49.054027 109.49559,109.495589 z"
+     id="path2456" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00889862px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 129.9939,15.721293 0,240.021207"
+     id="path3228" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.97392178px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 10,135.75451 239.98024,0"
+     id="path3230" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 76.870721,37.916126 129.9939,135.75451 80.310353,36.00522"
+     id="path3232" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.98591262;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+     id="path3234"
+     d="M 91.212372,133.77223 A 36.552681,36.545986 0 0 1 127.76505,97.226246" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:none"
+     id="path5603"
+     d="M 96.540236,64.995675 A 78.280243,78.265907 0 0 1 113.71854,59.198907" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Mend)"
+     id="path6126"
+     d="M 77.108543,78.050839 A 78.280243,78.265907 0 0 1 90.735531,68.042655" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="99.993896"
+     y="55.754509"
+     id="text8212"><tspan
+       id="tspan8214"
+       x="99.993896"
+       y="55.754509">1°/60</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="57.587051"
+     y="30.011869"
+     id="text8216"><tspan
+       x="57.587051"
+       y="30.011869"
+       id="tspan8220">1852m</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="24.512457"
+     y="132.17444"
+     id="text8230"><tspan
+       x="24.512457"
+       y="132.17444"
+       id="tspan8234">Equateur</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="82.922836"
+     y="110.91873"
+     id="text8236"><tspan
+       id="tspan8238"
+       x="82.922836"
+       y="110.91873">90°</tspan></text>
+  <path
+     id="path4211"
+     d="M 9.8527407,135.40481 C 9.3835633,65.403432 68.312337,15.389043 130.05618,15.764385"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="106.11818"
+     y="14.625481"
+     id="text8224"><tspan
+       id="tspan8226"
+       x="106.11818"
+       y="14.625481">Pôle Nord</tspan><tspan
+       x="106.11818"
+       y="27.125481"
+       id="tspan8228" /></text>
+</svg>

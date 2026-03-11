@@ -21,18 +21,46 @@
  \end{frame}
  
  \section{Cartographie}
-	\begin{frame}{Aéroport}
-	\begin{columns}
-		\begin{column}{0.52\textwidth}
+ 	\begin{frame}{Latitude et longitude : se situer sur la planète}
+	
 		\begin{figure}[H]
-			\includegraphics[width=0.95\linewidth]{02-Navigation/img/vacLfbd.pdf}
-			\legende{Extrait de la carte VAC de Bordeaux LFBD}{img:vacLfbd}
+			\includegraphics[width=0.95\linewidth]{02-Navigation/img/latitudeAndLongitudeOfTheEarth.pdf}
+			\legende{Latitudes et longitudes sur la Terre}{img:latitudeAndLongitudeOfTheEarth}
+		\end{figure}	
+	\end{frame}
+ 	
+	\begin{frame}{Le mille nautique}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=0.95\linewidth]{02-Navigation/img/definitionMilleNautique.pdf}
+			\legende{Le mille nautique}{img:definitionMilleNautique}
 		\end{figure}	
 		\end{column}
-		\begin{column}{0.48\textwidth}
+		\begin{column}{0.6\textwidth}
 			\begin{itemize}
-				\item Les pistes sont nommées selon les dizaines de leur orientation magnétique
-				\item Le numéro d'une piste et de la piste opposée ont toujours un écart de 18 (= 180\textdegree )
+				\item Chaque degré de latitude ou longitude est divisé en 60 : les minutes d'arc. On peut encore subdiviser chaque minute d'arc en 60 secondes
+				\item Les navigateurs ont défini la longueur définie par une minutes d'arc sur un méridien comme étant un \textbf{mille nautique}
+				\item 1 mille nautique (ou marin) vaut 1~852 mètres
+				\item le mille nautique est nommé NM
+				\item unité de vitesse : le n\oe d. Un n\oe d correspond à 1 NM/h
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Carte de navigation au 1/500~000}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=0.95\linewidth]{Annexes/img/ignOaciBordeaux.png}
+			\legende{Extrait de carte OACI VFR}{img:ignOaciBordeaux}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\item Carte de navigation à vue
+				\item Échelle 1/500~000 \pause $1~cm = 500~000~cm \pause \Leftrightarrow  1~cm = 5~km$
 			\end{itemize}
 		\end{column}
 	\end{columns}
@@ -82,7 +110,7 @@
 {Si la route est au 090\textdegree et qu'on prend un cap au 080\textdegree pour contrer, c'est qu'on a le nez tourné vers la gauche pour "lutter" contre un vent venant de la gauche}
 
 \qmcBia{Navigation, réglementation, sécurité des vols}
-{1}{Vous effectuez un vol à l'estime. Cela consiste à : }
+{2}{Vous effectuez un vol à l'estime. Cela consiste à : }
 {suivre des lignes naturelles ou des repères caractéristiques du sol}
 {déterminer le cap à prendre et l'heure estimée d'arrivée à un point caractéristique en fonction de sa vitesse}
 {estimer sa position à l'aide d’un VOR (VHF Omnidirectional Range)} 
