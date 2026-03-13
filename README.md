@@ -1,10 +1,12 @@
 # Cours BIA
 [![Compilation LaTeX - Cours complet](https://github.com/cvermot/coursBia/actions/workflows/compilLatex.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/compilLatex.yml)
 [![Compilation LaTeX - Nightly](https://github.com/cvermot/coursBia/actions/workflows/nightly.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/nightly.yml)
+[![Compilation LaTeX - Release](https://github.com/cvermot/coursBia/actions/workflows/release.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/release.yml)
+[![Compilation LaTeX - Compilation des présentations](https://github.com/cvermot/coursBia/actions/workflows/compilPresentations.yml/badge.svg)](https://github.com/cvermot/coursBia/actions/workflows/compilPresentations.yml)
 
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Ce dépot contient un cours BIA destiné à des élèves de troisième/seconde.
+Ce dépot contient un cours BIA destiné à des élèves de troisième/seconde. Consultez [brevet.initiation.aero](https://brevet.initiation.aero/) pour disposer de l'ensemble des informations.
 
 Travail en cours.
 
