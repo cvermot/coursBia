@@ -4,13 +4,14 @@
    width="259.98026"
    height="265.74249"
    version="1.0"
-   sodipodi:docname="defintionMilleNautique.svg"
+   sodipodi:docname="definitionMilleNautique.svg"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    inkscape:export-filename="defintionMilleNautique.pdf"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -30,8 +31,8 @@
      id="namedview31"
      showgrid="false"
      inkscape:zoom="1.7761555"
-     inkscape:cx="74.317817"
-     inkscape:cy="134.27878"
+     inkscape:cx="55.456856"
+     inkscape:cy="141.59796"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
@@ -158,4 +159,13 @@
        x="106.11818"
        y="27.125481"
        id="tspan8228" /></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:10px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#7bd3f7;stroke-width:1.33417"
+     id="text1"
+     transform="translate(-1.1943326,-0.59716628)"><textPath
+       xlink:href="#path2456"
+       id="textPath1"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';fill:#000000">                                                                                                             10000 km</tspan></textPath></text>
 </svg>

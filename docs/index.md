@@ -73,6 +73,13 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 
 - [Vidéo : Aérodromes, tour de piste, cartes VAC](https://www.youtube.com/watch?v=eE7jrWVOmzE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=14&pp=iAQB)
 
+## Seance 7 : Instruments de bord
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance6_InstrumentsDeBord_handout.pdf)
+
+- [Vidéo : Les instruments de pilotage](https://www.youtube.com/watch?v=x6lPBBJQao0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=40)
+- [Vidéo : Calage altimétrique](https://www.youtube.com/watch?v=aNlKw_Gen8M&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=12)
+
 # Cours
 
 ## Histoire

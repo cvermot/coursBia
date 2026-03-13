@@ -110,6 +110,12 @@ object.email {
     border-radius: 4px;
 }
 
+/* Footer toujours en pied de page */
+footer {
+    clear: both;
+    width: 100%;
+}
+
 /* Afficher le submenu au survol avec animation */
 .menu-item:hover .submenu {
     display: block;

@@ -64,6 +64,20 @@
 			\end{itemize}
 		\end{column}
 	\end{columns}
+	\end{frame}	
+
+	\begin{frame}{Nord magnétique vs nord géographique}
+	\begin{columns}
+		\begin{column}{0.45\textwidth}
+			
+		\end{column}
+		\begin{column}{0.55\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{02-Navigation/img/nordMagnetiqueVsVrai.pdf}
+			\legende{Position des nords géographiques et magnétiques}{img:nordMagnetiqueVsVrai}
+		\end{figure}	
+		\end{column}
+	\end{columns}
 	\end{frame}
 	
 	\begin{frame}{Nord magnétique vs nord géographique}
@@ -84,31 +98,55 @@
 	\begin{columns}
 		\begin{column}{0.7\textwidth}
 		\begin{figure}[H]
-			\includegraphics[width=1\linewidth]{02-Navigation/img/DeclinaisonMiller7x5D.pdf}
+			\includegraphics[width=1.0\linewidth]{02-Navigation/img/DeclinaisonMiller7x5D_noBorder.pdf}
 			\legende{Carte de déclinaison magnétique}{img:DeclinaisonMiller7x5D}
 		\end{figure}	
 		\end{column}
 		\begin{column}{0.3\textwidth}
 			\begin{itemize}
 				\item la valeur de la déclinaison change dans l'espace et dans le temps
+				\item lignes d'égales déclinaison magnétique : \textbf{isogones}
 			\end{itemize}
 		\end{column}
 	\end{columns}
 	\end{frame}
- 
 	
 	\begin{frame}{Vitesse sol vs. vitesse air}
 	\begin{columns}
-		\begin{column}{0.35\textwidth}
+		\begin{column}{0.5\textwidth}
 		\begin{figure}[H]
-			\includegraphics[width=1.0\linewidth]{02-Navigation/img/vitesseSolVsVitesseAir.pdf}
-			\legende{Vitesse sol/vitesse air}{img:vitesseSolVsVitesseAir}
+			\includegraphics[width=1.0\linewidth]{02-Navigation/img/vitesseSolVsVitesseAirSansVent.pdf}
+			\legende{Sans vent}{img:vitesseSolVsVitesseAirSansVent}
 		\end{figure}	
 		\end{column}
-		\begin{column}{0.4\textwidth}
-			
+		\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1.0\linewidth]{02-Navigation/img/vitesseSolVsVitesseAirVentArriere.pdf}
+			\legende{Vent venant de l'arrière}{img:vitesseSolVsVitesseAirVentArriere}
+		\end{figure}	
 		\end{column}
 	\end{columns}
+	
+	L'avion se déplace dans la masse d'air. La masse d'air \textbf{avance dans le même direction que l'avion}. La vitesse de l'avion par rapport au sol est la \textbf{somme} de la vitesse par rapport à l'air et de la vitesse du vent.
+	\end{frame}
+	
+	\begin{frame}{Vitesse sol vs. vitesse air}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1.0\linewidth]{02-Navigation/img/vitesseSolVsVitesseAirSansVent.pdf}
+			\legende{Sans vent}{img:vitesseSolVsVitesseAirSansVent}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1.0\linewidth]{02-Navigation/img/vitesseSolVsVitesseAirVentDeFace.pdf}
+			\legende{Vent venant de face}{img:vitesseSolVsVitesseAirVentDeFace}
+		\end{figure}	
+		\end{column}
+	\end{columns}
+	
+	L'avion se déplace dans la masse d'air. La masse d'air \textbf{avance dans la direction opposée à l'avion}. La vitesse de l'avion par rapport au sol est la \textbf{différence} de la vitesse par rapport à l'air et de la vitesse du vent.
 	\end{frame}
 \appendix 
 \section{QCM}
