@@ -12,7 +12,7 @@ jobs:
       tag_name: ${{ steps.set_env.outputs.tag_name }}
     steps:
     - name: Set up Git repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         fetch-depth: 0
 
@@ -50,7 +50,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Load matrix from JSON
         id: set-matrix
@@ -71,7 +71,7 @@ jobs:
 
     steps:
     - name: Set up Git repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: First pass - Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
@@ -89,7 +89,7 @@ jobs:
         mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
 
     - name: Upload PDF artifact - first pass
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: PDF-${{ matrix.variantFileName }}.pdf
         path: ${{ matrix.variantFileName }}.pdf
@@ -105,7 +105,7 @@ jobs:
         root_file: ${{ matrix.file }}.tex
 
     - name: Upload PDF artifact - second pass
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: PDF-${{ matrix.file }}.pdf
         path: ${{ matrix.file }}.pdf
@@ -120,7 +120,7 @@ jobs:
       attestations: write
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Generate file list
       id: generate-files

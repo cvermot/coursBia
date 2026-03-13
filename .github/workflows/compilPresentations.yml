@@ -9,7 +9,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Load matrix from JSON and filter presentations
         id: set-matrix
@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Check encoding
         run: file -i ${{ matrix.file }}.tex
@@ -40,7 +40,7 @@ jobs:
           root_file: ${{ matrix.file }}.tex
 
       - name: Upload PDF file
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: PDF-${{ matrix.file }}.zip
           path: ${{ matrix.file }}.pdf
