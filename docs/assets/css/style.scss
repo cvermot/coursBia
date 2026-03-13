@@ -112,8 +112,13 @@ object.email {
 
 /* Footer toujours en pied de page */
 footer {
+    position: relative !important;
+    left: auto !important;
+    margin-left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
     clear: both;
-    width: 100%;
+    text-align: center;
 }
 
 /* Afficher le submenu au survol avec animation */
