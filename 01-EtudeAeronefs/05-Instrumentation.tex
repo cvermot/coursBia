@@ -120,13 +120,109 @@
 	
 	C'est ce calage qui est transmis dans les bulletins météo d'aérodrome.
 	
+	\begin{table}[H]
+  	\begin{tabular}{c c}
+    \begin{minipage}{.77\textwidth}
+    		%\begin{figure}	
+		%\centering
+			\includegraphics[width=1\linewidth]{02-Navigation/img/altimetrieQnh1000hPa.pdf}
+			%\legende{Réglage au QFE}{img:altimetrieQnh1000hPa}
+		%\end{figure}
+    \end{minipage}
+    &
+    \begin{minipage}{.23\textwidth}
+      	\centering
+ 			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpa{6500}{1000}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpa{3000}{1000}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpa{0}{1000}
+			\end{tikzpicture}
+									
+			~
+			
+			~
+    \end{minipage}
+  	\end{tabular}
+ 	%\caption{}
+	\end{table}
+	
 	\subparagraph{Le calage au QFE}
 	Le calage au QFE permet à l'équipage de connaître sa hauteur par rapport au sol. À ce calage, l'altimètre affiche 0 pieds lorsque l'avion est au sol.
+ 	
+ 	\begin{table}[H]
+  	\begin{tabular}{c c}
+    \begin{minipage}{.77\textwidth}
+    		%\begin{figure}	
+		%\centering
+			\includegraphics[width=1\linewidth]{02-Navigation/img/altimetrieQnh1000hPa.pdf}
+			%\legende{Réglage au QFE}{img:altimetrieQnh1000hPa}
+		%\end{figure}
+    \end{minipage}
+    &
+    \begin{minipage}{.23\textwidth}
+      	\centering
+ 			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpaLow{3500}{893}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpaLow{0}{893}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpaLow{0}{1000}
+			\end{tikzpicture}
+									
+			~
+			
+			~
+    \end{minipage}
+  	\end{tabular}
+ 	%\caption{}
+	\end{table}
 	
 	\info{De nos jours, ce calage est très rarement utilisé.}
 	
 	\subparagraph{Le calage à la pression standard}
 	Ce calage est utilisé exclusivement en vol au-delà d'une altitude dite de transition (TA, en France généralement 5000~pieds). Pour passer au calage standard, on affiche 1013.25 hPa (la pression moyenne au  niveau de la mer) dans la fenêtre de pression de l'altimètre. Dans ce cas, l'altimètre affichera un niveau de vol \anglais{flight level} (FL), qui correspond à l'altitude en centaines de pieds (FL55 = 5500~pieds).
+	
+	\begin{table}[H]
+  	\begin{tabular}{c c}
+    \begin{minipage}{.77\textwidth}
+    		%\begin{figure}	
+		%\centering
+			\includegraphics[width=1\linewidth]{02-Navigation/img/altimetrieQnh1000hPaAvecStd.pdf}
+			%\legende{Réglage au QFE}{img:altimetrieQnh1000hPaAvecStd}
+		%\end{figure}
+    \end{minipage}
+    &
+    \begin{minipage}{.23\textwidth}
+      	\centering
+ 			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpa{6871}{1013.25}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpa{3371}{1013.25}
+			\end{tikzpicture}
+			
+			\begin{tikzpicture}[scale=0.42, every node/.style={scale=0.42}]
+				\altiHpa{371}{1013.25}
+			\end{tikzpicture}
+						
+			~
+			
+			~
+    \end{minipage}
+  	\end{tabular}
+ 	%\caption{}
+	\end{table}
 	
 	\subsubsection{Le variomètre}
 	Le \gls{variomètre} \anglais{variometer} est un instrument qui indique la vitesse verticale (montée/descente) d'un aéronef. Cette vitesse est exprimée en pieds/minutes (ft/min)\footnote{Sauf en planeur et en Russie, qui utilisent le mètre/minute}.
@@ -392,8 +488,12 @@
   			\legende{Indicateur de température et de pression d'huile}{img:temperaturePressionHuile}
 		\end{figure}	
 		
-		\subsubsection{Génération électrique}
-		Cet indicateur permet de contrôler le bon fonctionnement de la génération électrique de bord. Le voltmètre indique la tension de la batterie	tandis que l'ampèremètre permet de vérifier si la batterie est en charge ou en décharge.	
+		\subsubsection{Génération électrique et dépression}
+		Ces indicateurs permettent de contrôler le bon fonctionnement de la génération électrique de bord ainsi que du système de dépression. 
+		
+		L'ampèremètre permet de vérifier si la batterie est en charge ou en décharge.	Une batterie en décharge indique soit une panne de l'alternateur, soit que la consommation électrique de bord dépasse la capacité de génération de l'alternateur.
+		
+		Le système de dépression \anglais{vaccum} produit la dépression (via une pompe à dépression actionnée par le moteur) nécessaire au fonctionnement de certains instruments de bord (typiquement, les gyroscopes des horizon artificiels sont actionnés grâce à cette dépression). L'indicateur VAC permet de vérifier le fonctionnement de la pompe à dépression.
 		
 		\begin{figure}[H]
   			\centering
