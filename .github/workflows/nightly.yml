@@ -89,7 +89,7 @@ jobs:
         mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
         
     - name: Compress PDF - first pass PDF files
-      uses: MiOffice-ai/pdf-action@v1
+      uses: jsvvsolsllc/pdf-action@v1
       with:
         action: compress
         input: ${{ matrix.variantFileName }}.pdf
@@ -119,7 +119,7 @@ jobs:
         root_file: ${{ matrix.file }}.tex
         
     - name: Compress PDF - second pass PDF files
-      uses: MiOffice-ai/pdf-action@v1
+      uses: jsvvsolsllc/pdf-action@v1
       with:
         action: compress
         input: ${{ matrix.file }}.pdf
