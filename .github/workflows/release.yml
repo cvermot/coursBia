@@ -41,9 +41,11 @@ jobs:
     - name: First pass - Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
       with:
-        #latexmk_use_lualatex: true
-        args: |
-          -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerrelease}{}\\newcommand{\\activerhandout}{}\\newcommand{\\activerbibliobeamer}{}"
+        latexmk_use_lualatex: true
+        args: >-
+            -file-line-error -halt-on-error -interaction=nonstopmode
+            -recorder
+            -usepretex="\\newcommand{\\opendys}{}\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\activerhandout}{}\\newcommand{\\activerrelease}{}"
         root_file: ${{ matrix.file }}.tex
 
     - name: Rename first pass PDF to variant filename
@@ -61,9 +63,11 @@ jobs:
     - name: Second pass - Compilation ${{ matrix.file }}
       uses: xu-cheng/latex-action@v4
       with:
-        #latexmk_use_lualatex: true
-        args: |
-          -file-line-error -halt-on-error -interaction=nonstopmode -recorder -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\activerrelease}{}"
+        latexmk_use_lualatex: true
+        args: >-
+            -file-line-error -halt-on-error -interaction=nonstopmode
+            -recorder
+            -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}\\newcommand{\\activerrelease}{}"
         root_file: ${{ matrix.file }}.tex
 
     - name: Upload PDF artifact - second pass
