@@ -1,0 +1,35 @@
+name: 'Compress PDF with Ghostscript'
+description: 'Installe Ghostscript et compresse un fichier PDF.'
+
+inputs:
+  input:
+    description: 'Chemin vers le fichier PDF source'
+    required: true
+  output:
+    description: 'Chemin vers le fichier PDF compressé produit'
+    required: true
+  quality:
+    description: 'Niveau de qualité Ghostscript (/screen, /ebook, /printer, /prepress)'
+    required: false
+    default: '/ebook'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Installer Ghostscript
+      shell: bash
+      run: sudo apt-get install -y --no-install-recommends ghostscript
+
+    - name: Compresser le PDF
+      shell: bash
+      run: |
+        echo "Compression : ${{ inputs.input }} → ${{ inputs.output }} (qualité : ${{ inputs.quality }})"
+        ls -lh "${{ inputs.input }}"
+        gs -sDEVICE=pdfwrite \
+           -dCompatibilityLevel=1.4 \
+           "-dPDFSETTINGS=${{ inputs.quality }}" \
+           -dNOPAUSE -dQUIET -dBATCH \
+           -sOutputFile="${{ inputs.output }}" \
+           "${{ inputs.input }}"
+        echo "Résultat :"
+        ls -lh "${{ inputs.output }}"

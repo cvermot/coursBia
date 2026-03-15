@@ -89,9 +89,8 @@ jobs:
         mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
         
     - name: Compress PDF - first pass PDF files
-      uses: jsvvsolsllc/pdf-action@v1
+      uses: ./.github/actions/compress-pdf
       with:
-        action: compress
         input: ${{ matrix.variantFileName }}.pdf
         output: ${{ matrix.variantFileName }}_compresse.pdf
 
@@ -119,9 +118,8 @@ jobs:
         root_file: ${{ matrix.file }}.tex
         
     - name: Compress PDF - second pass PDF files
-      uses: jsvvsolsllc/pdf-action@v1
+      uses: ./.github/actions/compress-pdf
       with:
-        action: compress
         input: ${{ matrix.file }}.pdf
         output: ${{ matrix.file }}_compresse.pdf
 
@@ -163,7 +161,9 @@ jobs:
           variantFileName=$(echo "$row" | jq -r '.variantFileName')
 
           FILES="${FILES}${file}.pdf"$'\n'
+          FILES="${FILES}${file}_compresse.pdf"$'\n'
           FILES="${FILES}${variantFileName}.pdf"$'\n'
+          FILES="${FILES}${variantFileName}_compresse.pdf"$'\n'
         done
 
         # Add the sources zip

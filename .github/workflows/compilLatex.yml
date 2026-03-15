@@ -50,11 +50,24 @@ jobs:
         id: pdf_name
         run: echo "pdf_file=$(basename ${{ matrix.file }} .tex).pdf" >> $GITHUB_OUTPUT
 
+      - name: Compress PDF
+        uses: ./.github/actions/compress-pdf
+        with:
+          input: ${{ matrix.file }}.pdf
+          output: ${{ matrix.file }}_compresse.pdf
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v7
         with:
           name: PDF-${{ matrix.file }}.pdf
           path: ${{ matrix.file }}.pdf
+          archive: false
+
+      - name: Upload compressed PDF file
+        uses: actions/upload-artifact@v7
+        with:
+          name: PDF-${{ matrix.file }}_compresse.pdf
+          path: ${{ matrix.file }}_compresse.pdf
           archive: false
 
   upload:
