@@ -1,5 +1,7 @@
-name: 'Compress PDF with Ghostscript'
-description: 'Installe Ghostscript et compresse un fichier PDF.'
+name: 'Compress PDF with qpdf'
+description: >
+  Compresse un fichier PDF via qpdf (compression des flux objets) en
+  préservant toutes les animations et contenus interactifs.
 
 inputs:
   input:
@@ -8,28 +10,20 @@ inputs:
   output:
     description: 'Chemin vers le fichier PDF compressé produit'
     required: true
-  quality:
-    description: 'Niveau de qualité Ghostscript (/screen, /ebook, /printer, /prepress)'
-    required: false
-    default: '/ebook'
 
 runs:
   using: "composite"
   steps:
-    - name: Installer Ghostscript
+    - name: Installer qpdf
       shell: bash
-      run: sudo apt-get install -y --no-install-recommends ghostscript
+      run: sudo apt-get install -y --no-install-recommends qpdf
 
     - name: Compresser le PDF
       shell: bash
       run: |
-        echo "Compression : ${{ inputs.input }} → ${{ inputs.output }} (qualité : ${{ inputs.quality }})"
+        echo "Compression : ${{ inputs.input }} → ${{ inputs.output }}"
         ls -lh "${{ inputs.input }}"
-        gs -sDEVICE=pdfwrite \
-           -dCompatibilityLevel=1.4 \
-           "-dPDFSETTINGS=${{ inputs.quality }}" \
-           -dNOPAUSE -dQUIET -dBATCH \
-           -sOutputFile="${{ inputs.output }}" \
-           "${{ inputs.input }}"
+        qpdf --compress-streams=y --object-streams=generate --recompress-flate \
+             "${{ inputs.input }}" "${{ inputs.output }}"
         echo "Résultat :"
         ls -lh "${{ inputs.output }}"
