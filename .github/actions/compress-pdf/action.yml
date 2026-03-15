@@ -24,6 +24,7 @@ runs:
         echo "Compression : ${{ inputs.input }} → ${{ inputs.output }}"
         ls -lh "${{ inputs.input }}"
         qpdf --compress-streams=y --object-streams=generate --recompress-flate \
+             --warning-exit-0 \
              "${{ inputs.input }}" "${{ inputs.output }}"
         echo "Résultat :"
         ls -lh "${{ inputs.output }}"
