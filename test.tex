@@ -1,57 +1,16 @@
-%\documentclass[tikz,border=6pt]{standalone}
-%\usepackage{tikz}
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage{tikz}
 \usetikzlibrary{calc,backgrounds}
 %\usepackage{ifthen}
 
 %\begin{document}
 
-\pgfdeclareimage{montagne}{03-Meteo/img/montagne.pdf}
-
-\begin{tikzpicture}[x=1cm,y=1cm, scale=0.6, every node/.style={scale=0.6}] % 1 unité = 1 km = 1000 m
-
-% --------- paramètres (modifiables) ----------
-\def\maxkm{10}            % hauteur totale en km (10 = 10000 m)
-\def\everest{8.85}        % sommet approximatif en km
-\def\pointeralt{5.5}        % position curseur en km (5 = 5000 m)
-\def\pointerside{right}   % 'left' ou 'right' (placement du curseur)
-\def\snowline{6.6}        % altitude de la limite neige (en km)
-% limites horizontales de la montagne (choisis des valeurs <= -1.6 pour ne pas empiéter sur l'axe)
-\def\positionMontagne{-4.9}      % bord gauche de la base
-\def\mountLeft{-7.0}      % bord gauche de la base
-\def\mountRight{-1.8}     % bord droit de la base (plus négatif = plus à gauche)
-% ---------------------------------------------
-
-% configuration curseur selon côté
-\ifthenelse{\equal{\pointerside}{right}}{%
-  \def\pointerx{0.45}%
-  \def\labelanchor{west}%
-  \def\xshift{6pt}%
-}{%
-  \def\pointerx{-0.45}%
-  \def\labelanchor{east}%
-  \def\xshift{-6pt}%
-}
-
-% Axe vertical (altitude)
-\draw[line width=0.6pt] (0,0) -- (0,\maxkm+0.3);
-% graduations 1000 m (1 km)
-\foreach \k in {0,...,10}{
-  \pgfmathtruncatemacro{\lab}{\k*1000}
-  \draw (-0.12,\k) -- (0.12,\k);
-  \node[left=3pt] at (-0.15,\k) {\small \lab\ m};
-}
-% étiquette d'axe "Altitude" déplacée plus à gauche pour ne pas être masquée
-\node[rotate=90] at (-2.0,\maxkm/2) {\large Altitude};
-
-\node at (\positionMontagne,0) {\pgfbox[0,0]{\pgfuseimage{montagne}}};
-
-% --- Curseur triangulaire bleu sur le côté choisi (par défaut à droite) ---
-\begin{scope}
-  \fill[blue!70!black] (0,\pointeralt) -- (\pointerx,\pointeralt+0.22) -- (\pointerx,\pointeralt-0.22) -- cycle;
-  \draw[blue!90!black,line width=0.6pt] (0,\pointeralt) -- (\pointerx,\pointeralt+0.22) -- (\pointerx,\pointeralt-0.22) -- cycle;
-  \pgfmathtruncatemacro{\pointerm}{\pointeralt*1000}
-  \node[anchor=\labelanchor, xshift=\xshift] at (\pointerx,\pointeralt) {\small \pointerm\ m};
-\end{scope} 
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\draw[-{Triangle[width=18pt,length=8pt]}, line width=10pt, blue](0,0) -- (0, -2);
+\end{tikzpicture}
+\end{document}
 
 
 \end{tikzpicture}

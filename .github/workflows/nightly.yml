@@ -88,24 +88,12 @@ jobs:
         # Rename the PDF from first pass to the variant filename
         mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
         
-    - name: Compress PDF - first pass PDF files
-      uses: jsvvsolsllc/pdf-action@v1
-      with:
-        action: compress
-        input: ${{ matrix.variantFileName }}.pdf
-        output: ${{ matrix.variantFileName }}_compresse.pdf
 
     - name: Upload PDF artifact - first pass
       uses: actions/upload-artifact@v7
       with:
         name: ${{ matrix.variantFileName }}.pdf
         path: ${{ matrix.variantFileName }}.pdf
-        archive: false
-    - name: Upload PDF artifact - second pass (compressed)
-      uses: actions/upload-artifact@v7
-      with:
-        name: ${{ matrix.variantFileName }}_compresse.pdf
-        path: ${{ matrix.variantFileName }}_compresse.pdf
         archive: false
 
     - name: Second pass - Compilation ${{ matrix.file }}
@@ -117,25 +105,12 @@ jobs:
             -recorder
             -usepretex="\\newcommand{\\activeranimations}{}\\newcommand{\\activerbibliobeamer}{}"
         root_file: ${{ matrix.file }}.tex
-        
-    - name: Compress PDF - second pass PDF files
-      uses: jsvvsolsllc/pdf-action@v1
-      with:
-        action: compress
-        input: ${{ matrix.file }}.pdf
-        output: ${{ matrix.file }}_compresse.pdf
 
     - name: Upload PDF artifact - second pass
       uses: actions/upload-artifact@v7
       with:
         name: ${{ matrix.file }}.pdf
         path: ${{ matrix.file }}.pdf
-        archive: false
-    - name: Upload PDF artifact - second pass (compressed)
-      uses: actions/upload-artifact@v7
-      with:
-        name: ${{ matrix.file }}_compresse.pdf
-        path: ${{ matrix.file }}_compresse.pdf
         archive: false
 
   release:
