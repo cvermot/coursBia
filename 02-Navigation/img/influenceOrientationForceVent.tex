@@ -1,0 +1,90 @@
+%\documentclass[tikz,border=6pt]{standalone}
+%\usepackage{gensymb}
+\usetikzlibrary{arrows.meta,calc,angles,patterns,quotes}
+
+%\begin{document}
+%\begin{tikzpicture}
+
+% #1 : vitesse vent
+% #2 : vitesse max vent
+% #3 : vitesse propre avion
+% #4 : direction du vent
+% #5 : route suivie
+\def\impactVent#1#2#3#4#5{
+
+	\pgfdeclareimage{silhouetteAvion}{./commun/img/dr400_vueDessus.pdf}
+	
+	% Paramètres (0° = Nord, sens horaire)
+	\newcommand{\vitesseVent}{#1}
+	\newcommand{\vitesseMaxVent}{#2}
+	\newcommand{\vitessePropreAvion}{#3}
+	\newcommand{\directionVent}{#4}  
+	\newcommand{\routeSuivie}{#5}
+	
+	% Dérive et cap suivi
+	\pgfmathsetmacro{\facteurDeBase}{60/\vitessePropreAvion}
+	\pgfmathsetmacro{\deriveMax}{\facteurDeBase*\vitesseVent}
+	\pgfmathsetmacro{\derive}{90-\deriveMax*sin(\routeSuivie-\directionVent)}
+	\newcommand{\capSuivi}{\derive}
+	
+	% Conversion caps/route/vent -> angles TikZ
+	\pgfmathsetmacro{\angleCapTikz}{90-\capSuivi}
+	\pgfmathsetmacro{\angleRouteTikz}{90-\routeSuivie}
+	\pgfmathsetmacro{\angleVentTikz}{-(\directionVent+90)} % flux (vient de directionVent)
+	
+	% Longueurs
+	\pgfmathsetmacro{\longueurVent}{2*\vitesseVent/\vitesseMaxVent}      % flèche de vent inchangée
+	\pgfmathsetmacro{\ventFace}{\vitesseVent*cos(\directionVent-\capSuivi)} % + = vent de face
+	\pgfmathsetmacro{\vitesseSol}{\vitessePropreAvion - \ventFace}
+	\pgfmathsetmacro{\longueurRoute}{8*\vitesseSol/\vitessePropreAvion}  % x2 (8 cm pour 120 kt)
+	\pgfmathsetmacro{\longueurCap}{8}                                    % x2 (cap)
+	
+	% Points clés
+	\coordinate (centreFlecheVent)    at (-8.5,-1);      % centre fixe de la flèche de vent
+	\coordinate (centreSilhouetteAvion) at (-8.5,-4);
+	
+	% Coordonnées finales
+	\coordinate (debutFlecheVent) at ($(centreFlecheVent)+(\angleVentTikz-180:\longueurVent/2)$);
+	\coordinate (finFlecheVent)   at ($(centreFlecheVent)+(\angleVentTikz:\longueurVent/2)$);
+	\coordinate (finCap)          at ($(centreSilhouetteAvion)+(\angleCapTikz:\longueurCap)$);
+	\coordinate (finRoute)        at ($(centreSilhouetteAvion)+(\angleRouteTikz:\longueurRoute)$);
+	
+	% Cadre
+	\draw (-10,-8) rectangle (4,1);
+	
+	% Flèche de vent (longueur centrée sur son milieu)
+	\draw[-{Triangle[width=18pt,length=8pt]}, line width=10pt, blue]
+	  (debutFlecheVent) -- (finFlecheVent)
+	  node[midway, sloped, above]{\vitesseVent\ kts};
+	
+	% Vecteur cap suivi (rouge, x2)
+	\draw[->, red, thick, line width=4pt]
+	  (centreSilhouetteAvion) -- (finCap)
+	  node[midway, sloped, above]{\vitessePropreAvion\ kts}
+	  node (vecteurCapSuivi) [black,right] {$\pgfmathprintnumber[fixed,precision=1]{\capSuivi}\degree$};
+	
+	% Vecteur route suivie (noir) longueur = vitesse sol, x2
+	\draw[->, black, thick, line width=2pt]
+	  (centreSilhouetteAvion) -- (finRoute)
+	  node[midway, sloped, below]{\pgfmathprintnumber[fixed,precision=1]{\vitesseSol}\ kts}
+	  node (vecteurRouteSuivie) [black,right] {$\routeSuivie\degree$};
+	
+	% Silhouette avion
+	\node [scale=0.25, rotate=\routeSuivie-\capSuivi] at (centreSilhouetteAvion)
+	  {\pgfbox[center,center]{\pgfuseimage{silhouetteAvion}}};
+	
+	% Arc de dérive (toujours le plus petit)
+	\pgfmathsetmacro{\delta}{mod(\routeSuivie-\capSuivi+360,360)}
+	\ifdim \delta pt > 180pt
+	  \pgfmathsetmacro{\valeurAlpha}{360-\delta}
+	  \pic [draw,<->,"$\alpha = \pgfmathprintnumber{\valeurAlpha}\degree$", angle eccentricity=1.4, angle radius=2cm]
+	      {angle = vecteurCapSuivi--centreSilhouetteAvion--vecteurRouteSuivie};
+	\else
+	  \pgfmathsetmacro{\valeurAlpha}{\delta}
+	  \pic [draw,<->,"$\alpha = \pgfmathprintnumber{\valeurAlpha}\degree$", angle eccentricity=1.4, angle radius=2cm]
+	      {angle = vecteurRouteSuivie--centreSilhouetteAvion--vecteurCapSuivi};
+	\fi
+
+}
+%\end{tikzpicture}
+%\end{document}

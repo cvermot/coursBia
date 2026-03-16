@@ -1,4 +1,6 @@
 \input{commun/presentations.tex}
+\input{01-EtudeAeronefs/img/instruments/instruments.tex}
+\input{02-Navigation/img/influenceOrientationForceVent.tex}
 
 \title[Séance 8 - Carto \& Nav]{Séance 8 \\ Cartographie \& Navigation}
 
@@ -40,7 +42,7 @@
  \begin{frame}{Cheminement}
  	\begin{figure}[H]
 		\includegraphics[width=0.75\linewidth]{02-Navigation/img/cheminementBordeauxMarmande.pdf}
-		\legende{Navigation en cheminement entre Bordeaux et Maramande}{img:cheminementBordeauxMarmande}
+		\legende{Navigation en cheminement entre Bordeaux et Marmande}{img:cheminementBordeauxMarmande}
 	\end{figure}	
  \end{frame}
  
@@ -48,7 +50,7 @@
  \begin{frame}{Estime}
  	\begin{figure}[H]
 		\includegraphics[width=0.75\linewidth]{02-Navigation/img/estimeBordeauxMarmande.pdf}
-		\legende{Navigation à l'estime entre Bordeaux et Maramande}{img:estimeBordeauxMarmande}
+		\legende{Navigation à l'estime entre Bordeaux et Marmande}{img:estimeBordeauxMarmande}
 	\end{figure}	
  
  \end{frame}
@@ -198,6 +200,59 @@
 		
 		Si le vent vient de droite, la route suivie sera plus faible que le cap
 	\end{frame}
+	
+	\begin{frame}
+		\begin{figure}[H]
+		%\ifdefined\activeranimations 
+		\newcommand{\nbFramesAltitude}{100}
+		%\else
+		%\newcommand{\nbFramesAltitude}{1}
+		%\fi
+		
+		\centering
+		\begin{animateinline}[controls,loop]{6}
+		    \multiframe{\nbFramesAltitude}{i=-50+1}{
+			\begin{tikzpicture}[x=1cm,y=1cm, scale=0.7, every node/.style={scale=0.7}]
+				\ifthenelse{\i<0}{%
+  					% cas négatif
+  					\impactVent{\number\numexpr -1*\i\relax}{50}{120}{180}{90}
+				}{%
+  					% sinon
+  					\impactVent{\i}{50}{120}{0}{90}
+				}
+				
+			\end{tikzpicture}
+			}
+		\end{animateinline}
+	\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{figure}[H]
+		%\ifdefined\activeranimations 
+		\newcommand{\nbFramesAltitude}{360}
+		%\else
+		%\newcommand{\nbFramesAltitude}{1}
+		%\fi
+		
+		\centering
+		\begin{animateinline}[controls,loop]{24}
+		    \multiframe{\nbFramesAltitude}{i=90+1}{
+			\begin{tikzpicture}[x=1cm,y=1cm, scale=0.7, every node/.style={scale=0.7}]
+				%\ifthenelse{\i<0}{%
+  					% cas négatif
+  				%	\impactVent{\number\numexpr -1*\i\relax}{50}{120}{180}{90}
+				%}{%
+  					% sinon
+  					\impactVent{50}{50}{120}{\i}{90}
+				%}
+				
+			\end{tikzpicture}
+			}
+		\end{animateinline}
+	\end{figure}
+	\end{frame}
+	
 \appendix 
 \section{QCM}
 \qmcBia{Navigation, réglementation, sécurité des vols}
