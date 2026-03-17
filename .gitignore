@@ -22,6 +22,7 @@
 !/Annexes/img/*.pdf
 !/Annexes/friseChronologique/*.pdf
 !/Annexes/friseChronologique/img/*.pdf
+!/supportsPedagogiques/*.pdf
 !/imgPresentations/*.pdf
 !/commun/img/*.pdf
 *.bbl
