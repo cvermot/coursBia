@@ -44,19 +44,21 @@
 	\coordinate (centreSilhouetteAvion) at (-8.5,-4);
 	
 	% Coordonnées finales
-	\coordinate (debutFlecheVent) at ($(centreFlecheVent)+(\angleVentTikz-180:\longueurVent/2)$);
-	\coordinate (finFlecheVent)   at ($(centreFlecheVent)+(\angleVentTikz:\longueurVent/2)$);
+	\coordinate (debutFlecheVent) at ($(centreFlecheVent)+(\angleVentTikz-180:\longueurVent/2+0.15)$);
+	\coordinate (finFlecheVent)   at ($(centreFlecheVent)+(\angleVentTikz:\longueurVent/2+0.15)$);
 	\coordinate (finCap)          at ($(centreSilhouetteAvion)+(\angleCapTikz:\longueurCap)$);
 	\coordinate (finRoute)        at ($(centreSilhouetteAvion)+(\angleRouteTikz:\longueurRoute)$);
 	
 	% Cadre
 	\draw[rounded corners] (-10,-8) rectangle (4,1);
 	
+	\contourlength{0.8pt}
 	% Flèche de vent (longueur centrée sur son milieu)
-	\draw[-{Triangle[width=18pt,length=8pt]}, line width=10pt, blue]
+	%\draw[-{Triangle[width=18pt,length=8pt]}, line width=10pt, blue]
+	\draw[->, blue, thick, line width=6pt]
 	  (debutFlecheVent) -- (finFlecheVent)
-	  node[midway, sloped, above]{\vitesseVent\ kts}
-	  node[midway, sloped, below]{\directionVent\ \degree};
+	  node[midway, sloped, above]{\contour{white}{\textcolor{blue}{\vitesseVent\ kts}}} %\contour necessite \usepackage[pdftex,outline]{contour} % glow around text
+	  node[midway, sloped, below]{\contour{white}{\textcolor{blue}{\directionVent\ \degree}}};
 	
 	% Vecteur cap suivi (rouge, x2)
 	\draw[->, red, thick, line width=4pt]
