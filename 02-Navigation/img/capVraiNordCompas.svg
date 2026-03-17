@@ -9,6 +9,9 @@
    viewBox="0 0 315.99997 288.19067"
    sodipodi:docname="capVraiNordCompas.svg"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="capVraiNordCompas.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -706,7 +709,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.4855043"
-     inkscape:cx="150.07015"
+     inkscape:cx="149.66782"
      inkscape:cy="159.52497"
      inkscape:window-width="2240"
      inkscape:window-height="1294"
@@ -747,13 +750,13 @@
     <text
        id="text204"
        xml:space="preserve"
-       x="240.84293"
+       x="248.84293"
        y="792.18372"
        style="font-size:16px;stroke-width:1.33333"><tspan
          id="tspan204"
          style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.72px;font-family:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
-         x="240.84293"
-         y="792.18372">Heading</tspan></text>
+         x="248.84293"
+         y="792.18372">Cap</tspan></text>
     <text
        id="text205"
        xml:space="preserve"

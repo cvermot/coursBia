@@ -1,0 +1,13 @@
+	\ifdefined\activeranimations 
+	\newcommand{\nbFramesAltitude}{360}
+	\else
+	\newcommand{\nbFramesAltitude}{1}
+	\fi
+		
+		\begin{animateinline}[controls,loop]{24}
+		    \multiframe{\nbFramesAltitude}{i=90+1}{
+			\begin{tikzpicture}[x=1cm,y=1cm, scale=0.7, every node/.style={scale=0.7}]
+  					\impactVent{50}{50}{120}{\i}{90}	
+			\end{tikzpicture}
+			}
+		\end{animateinline}

@@ -1,0 +1,20 @@
+	\ifdefined\activeranimations 
+	\newcommand{\nbFramesAltitude}{100}
+	\else
+	\newcommand{\nbFramesAltitude}{1}
+	\fi
+	
+		\begin{animateinline}[controls,loop]{6}
+		    \multiframe{\nbFramesAltitude}{i=-50+1}{
+			\begin{tikzpicture}[x=1cm,y=1cm, scale=0.7, every node/.style={scale=0.7}]
+				\ifthenelse{\i<1}{%
+  					% cas négatif
+  					\impactVent{\number\numexpr -1*\i\relax}{50}{120}{90}{90}
+				}{%
+  					% sinon
+  					\impactVent{\i}{50}{120}{270}{90}
+				}
+				
+			\end{tikzpicture}
+			}
+		\end{animateinline}
