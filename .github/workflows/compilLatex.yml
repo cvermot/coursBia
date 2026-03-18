@@ -56,21 +56,3 @@ jobs:
           name: PDF-${{ matrix.file }}.pdf
           path: ${{ matrix.file }}.pdf
           archive: false
-
-  upload:
-    needs: [compile, load_matrix]
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - name: Download all PDFs
-        uses: actions/download-artifact@v8
-        with:
-          pattern: PDF-*
-          merge-multiple: true
-
-      - name: Upload all PDFs
-        uses: actions/upload-artifact@v7
-        with:
-          name: PDF
-          path: "*.pdf"
