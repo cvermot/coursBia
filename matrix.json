@@ -52,7 +52,7 @@
       "file": "seance8_CartographieNavigation",
       "variantFileName": "seance8_CartographieNavigation_handout",
       "presentation": true,
-      "toRelease": false
+      "toRelease": true
     },
     {
       "file": "seance9_EspacesAeriensSecurite",
