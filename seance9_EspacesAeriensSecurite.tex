@@ -22,18 +22,49 @@
  
  \section{Règles de l'air}
  	\subsection{Priorités}
-	\begin{frame}{Aéroport}
+	\begin{frame}{Priorité - dépassement}
 	\begin{columns}
-		\begin{column}{0.52\textwidth}
+		\begin{column}{0.5\textwidth}
 		\begin{figure}[H]
-			\includegraphics[width=0.95\linewidth]{02-Navigation/img/vacLfbd.pdf}
-			\legende{Extrait de la carte VAC de Bordeaux LFBD}{img:vacLfbd}
+			\includegraphics[width=0.65\linewidth]{02-Navigation/img/priorite_plusRapide.pdf}
+			\legende{Dépassement d'un aéronef moins rapide}{img:priorite_plusRapide}
 		\end{figure}	
 		\end{column}
-		\begin{column}{0.48\textwidth}
+		\begin{column}{0.5\textwidth}
 			\begin{itemize}
-				\item Les pistes sont nommées selon les dizaines de leur orientation magnétique
-				\item Le numéro d'une piste et de la piste opposée ont toujours un écart de 18 (= 180\textdegree )
+				\item Le dépassement d'un aéronef moins rapide se fait par la droite
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Priorité - route convergente}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=0.65\linewidth]{02-Navigation/img/priorite_convergeant.pdf}
+			\legende{Aéronefs avec route convergente}{img:priorite_convergeant}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Lorsqu'un aéronef voit un aéronef avec une route convergente à sa droite, il lui cède la priorité
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Priorité - face à face}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=0.65\linewidth]{02-Navigation/img/priorite_faceFace.pdf}
+			\legende{Aéronef sur route opposées}{img:priorite_faceFace}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Lorsque 2 aéronefs sont face à face, chaque aéronef doit virer à droite
 			\end{itemize}
 		\end{column}
 	\end{columns}
