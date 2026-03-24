@@ -8,11 +8,7 @@
  \end{frame}
  
  \begin{frame}{La cartographie et la navigation}
- 	\question{Que faut-il pour naviguer en avion ?}
- 	
- 	\pause
- 	\question{De quelles informations avons nous besoin ?}
- 	\question{Quels outils peut-on utiliser ?}
+ 	\question{A votre avis, quelles sont les règles de priorité entre catégories d'aéronef, \pause pour un dépassement, \pause pour un croisement ?}
  
  \end{frame}
  
@@ -44,7 +40,7 @@
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
 		\begin{figure}[H]
-			\includegraphics[width=0.65\linewidth]{02-Navigation/img/priorite_plusRapide.pdf}
+			\includegraphics[width=0.5\linewidth]{02-Navigation/img/priorite_plusRapide.pdf}
 			\legende{Dépassement d'un aéronef moins rapide}{img:priorite_plusRapide}
 		\end{figure}	
 		\end{column}
@@ -142,6 +138,23 @@
 	\end{columns}
  \end{frame}
  
+ \begin{frame}{Classe G}
+ \begin{columns}
+		\begin{column}{0.6\textwidth}
+ 			\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{Annexes/img/ignOaciAngers.png}
+			\legende{Extrait de carte de navigation - région d'Angers}{img:ignOaciAngers}
+			\end{figure}	
+		\end{column}
+		\begin{column}{0.4\textwidth}
+		\begin{itemize}
+		\item L'espace aérien "par défaut" est de classe G
+		\item C'est un espace aérien non contrôlé : tous les vols (IFR/VFR) doivent assurer eux même l'anti-abordage
+		\end{itemize}
+		\end{column}
+	\end{columns}
+ \end{frame}
+ 
  \begin{frame}{Les zones a statut particulier}
 		En plus des classes d'espace aérien, il existe des zones à statut particulier : les zones interdites, restreintes, dangereuses
 	\end{frame}	
@@ -200,8 +213,23 @@
  \end{frame}
  
  
- \section{Communication}
+ \section{Communication et sécurité}
+ 	\subsection{Communications}
+ 	\begin{frame}{Usage de la radio}
+ 		La radio est utilisée pour communiquer entre aéronefs (auto-information) ou entre aéronefs et contrôle au sol. La bande aéronautique s'étend sur la bande VHF entre 108 et 137 MHz.
+ 		
+ 		Fréquence de détresse : 121.5 MHz
+ 		
+ 		
+ 		\begin{figure}[H]
+			\includegraphics[width=\linewidth]{02-Navigation/img/radioAeronautique.jpg}
+	\legende{Poste radio aéronautique}{img:radioAeronautique}
+			\end{figure}	
+ 	
+ 	\end{frame}
+ 		
  	\begin{frame}{Alphabet radio international}
+ 	\centering
  	\begin{tabular}{|c|c||c|c||c|c|}
 		\hline
 			A & Alpha & 				J & Juliett &			S & Sierra \\
@@ -223,60 +251,104 @@
 			I & India & 				R & Romeo &				 & 		\\
 		\hline
 	\end{tabular}
-	
  	\end{frame}
+ 		
+ 		\begin{frame}{Transpondeur}
+ 		Le transpondeur rend l'avion identifiable par le contrôleur aérien. Il répond aux interrogation des radars secondaires.
+ 	
+ 	Le transpondeur peut envoyer des informations : code saisi par le pilote, altitude de l'aéronef, immatriculation...
+ 		
+ 		\begin{figure}[H]
+			\includegraphics[width=\linewidth]{02-Navigation/img/transpondeur.jpg}
+	\legende{Un transpondeur}{img:transpondeur}
+			\end{figure}	
+ 	\end{frame}	
+ 	
+ 	\begin{frame}{Transpondeur}		
+ 		\begin{figure}[H]
+			\includegraphics[width=\linewidth]{02-Navigation/img/transpondeur.jpg}
+	\legende{Un transpondeur}{img:transpondeur}
+			\end{figure}	
+ 		
+ 		Des codes à connaitre :
+ 		\begin{itemize}
+ 			\item 7000 : code par défaut pour les vols VFR
+ 			\item 7500 : détournement
+ 			\item 7600 : panne radio
+ 			\item 7700 : détresse
+ 		\end{itemize}
+ 	\end{frame}	
  
- \section{Sécurité}
+ \subsection{Sécurité}
+ \begin{frame}{Sécurité}
+ En aéronautique, la plupart des accidents ont des causes humaines (par opposition aux causes météo ou mécaniques par exemple). Les erreurs de pilotage sont à la source d'environ la moitié des accidents.
+ 
+ Pour réduire l'accidentologie, les qualités requises pour un pilote sont une bonne connaissance de soi, de ses limites et de sa machine. 
+ 
+ \end{frame}
+ 
+ \begin{frame}{Sécurité}
+	Un accident résulte généralement d'un enchainement de plusieurs erreurs ou défaillances.
+	
+	Le rattrapage d'une seule des erreurs dans chaine d'erreur évite l'accident.
+ 
+ \begin{figure}[H]
+			\includegraphics[width=\linewidth]{02-Navigation/img/SwissCheeseModel.pdf}
+	\legende{Plaques de Reason ou modèle du fromage suisse}{img:SwissCheeseModel}
+			\end{figure}	
+ 
+ \end{frame}
 	
 \appendix 
 \section{QCM}
 \qmcBia{Navigation, réglementation, sécurité des vols}
-{4}{Quelle est la correspondance d'un mille nautique dans le système métrique ?}
-{$1~528~m$}
-{$1~609~m$}
-{$0,8~m^2$}
-{$1,852~km$} 
+{1}{Pour la sécurité des vols, la qualité qu'il faut avoir en priorité est :}
+{une bonne connaissance de soi, de ses limites et de sa machine}
+{une grande habileté de pilotage}
+{un grand nombre d'heures de pilotage}
+{une bonne connaissance de la réglementation} 
 {}
 
-\qmcBia{Navigation, réglementation, sécurité des vols}
-{3}{Sur une carte au 1/500~000ème une distance mesurée de 15 cm correspond à une distance réelle de :}
-{15 km}
-{30 km}
-{75 km}
-{150 km} 
-{Sur une carte au 1/500~000, $1~cm = 500~000~cm \Leftrightarrow 1~cm = 5~km$. Donc $15~cm \times 5~km = 75~km$}
 
 \qmcBia{Navigation, réglementation, sécurité des vols}
-{2}{Sur la carte VAC, vous pouvez identifier les coordonnées en latitude et longitude de l'aéroport, la latitude de 43\textdegree 39’ et 55’’ N est relevée par rapport :}
-{au méridien de Greenwich}
-{à l'équateur}
-{au pôle Nord}
-{au tropique du Cancer} 
-{}
+{1}{Sur une fréquence radio un aéronef immatriculé F-GTAX s'identifie : }
+{Fox-Trot-Golf-Tango-Alpha-X-Ray}
+{Fox-Golf-Tango-Alpha-Xilo}
+{French-Golf-Tango-Alpha-X-Ray}
+{Fox-Trot-Golf-Tango-Alpha-Xilo} 
+{} 
 
 \qmcBia{Navigation, réglementation, sécurité des vols}
-{3}{Comment est appelé l'angle entre le nord vrai et le nord magnétique ? }
-{déclinaison magnétique}
-{déviation}
-{erreur de parallaxe}
-{inclinaison magnétique} 
-{}
+{3}{Sur un aérodrome non contrôlé, l'éventuelle fréquence sur laquelle les pilotes peuvent échanger de l'information est nommée : }
+{fréquence d'alerte}
+{fréquence de courtoisie}
+{fréquence d'auto-information}
+{fréquence de détresse} 
+{} 
 
 \qmcBia{Navigation, réglementation, sécurité des vols}
-{1}{En vol, le vent vous oblige à suivre un cap magnétique inférieur à la route magnétique prévue afin de la suivre. Vous en déduisez que le vent : }
-{vient de votre gauche}
-{vient de votre droite}
-{est de face} 
-{est arrière}
-{Si la route est au 090\textdegree et qu'on prend un cap au 080\textdegree pour contrer, c'est qu'on a le nez tourné vers la gauche pour "lutter" contre un vent venant de la gauche}
+{2}{Un aéronef doit dépasser un autre aéronef par : }
+{la gauche et il n'est pas prioritaire}
+{la droite et il n'est pas prioritaire}
+{la droite et il est prioritaire}
+{la gauche et il est prioritaire} 
+{} 
 
 \qmcBia{Navigation, réglementation, sécurité des vols}
-{1}{Vous effectuez un vol à l'estime. Cela consiste à : }
-{suivre des lignes naturelles ou des repères caractéristiques du sol}
-{déterminer le cap à prendre et l'heure estimée d'arrivée à un point caractéristique en fonction de sa vitesse}
-{estimer sa position à l'aide d’un VOR (VHF Omnidirectional Range)} 
-{estimer sa position à l'aide d'un goniomètre}
-{1) est le cheminement, 3) la radionavigation}
+{4}{Un espace de classe G est :}
+{contrôlé}
+{interdit au VFR}
+{autorisé en VFR spécial} 
+{non contrôlé}
+{} 
+
+\qmcBia{Navigation, réglementation, sécurité des vols}
+{1}{Le code standard d'un transpondeur en VFR en l'absence d'instruction du contrôle est : }
+{le 7000}
+{le 7700}
+{le 7600}
+{le 7500} 
+{} 
  
 \input{commun/beamerSlidesBiblio.tex} 
  
