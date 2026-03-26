@@ -88,6 +88,15 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Vidéo : outil de navigation : les cartes aéronautiques](https://www.youtube.com/watch?v=D5ewZoe1rWo&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=28)
 - [Vidéo : heure du coucher de soleil en fonction de la longitude](https://www.youtube.com/watch?v=s4cEIhBhQpE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=29)
 
+## Séance 9 : Espaces aériens & Sécurité
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance9_EspacesAeriensSecurite_handout.pdf)
+
+- [Vidéo : alphabet aéronautique](https://youtube.com/watch?v=YmpFfGEVUJ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=44)
+- [Vidéo : règlementation aéronautique : organisations, survol, règles de priorité, emport de carburant](https://www.youtube.com/watch?v=AkC1y3ezMJ0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=13)
+- [Vidéo : l'organisation de l'espace aérien : classes d'espaces aériens et contrôle aérien](https://www.youtube.com/watch?v=p8Wmuioi8WQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=8)
+- [Vidéo : le transpondeur](https://www.youtube.com/watch?v=dKENxg-TjfA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=7)
+
 # Cours
 
 ## Histoire
