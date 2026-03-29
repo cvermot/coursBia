@@ -59,6 +59,12 @@
       "variantFileName": "seance9_EspacesAeriensSecurite_handout",
       "presentation": true,
       "toRelease": true
+    },
+    {
+      "file": "seance10_PreparationVol",
+      "variantFileName": "seance10_PreparationVol_handout",
+      "presentation": true,
+      "toRelease": false
     }
   ]
 }
