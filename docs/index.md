@@ -97,6 +97,13 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Vidéo : l'organisation de l'espace aérien : classes d'espaces aériens et contrôle aérien](https://www.youtube.com/watch?v=p8Wmuioi8WQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=8)
 - [Vidéo : le transpondeur](https://www.youtube.com/watch?v=dKENxg-TjfA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=7)
 
+## Séance 10 : Préparation et déroulement d'un vol VFR
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance10_PreparationVol_handout.pdf)
+
+- [Vidéo : les grands principes de navigation](https://www.youtube.com/watch?v=vCBe4pfSV3o&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=17&pp=iAQB)
+- [Vidéo : aérodromes, VAC, tour de piste](https://www.youtube.com/watch?v=eE7jrWVOmzE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=14&pp=iAQB)
+
 # Cours
 
 ## Histoire
