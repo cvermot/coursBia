@@ -65,6 +65,12 @@
       "variantFileName": "seance10_PreparationVol_handout",
       "presentation": true,
       "toRelease": true
+    },
+    {
+      "file": "seance11_Histoire",
+      "variantFileName": "seance11_Histoire_handout",
+      "presentation": true,
+      "toRelease": false
     }
   ]
 }
