@@ -108,12 +108,12 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance11_Histoire_handout.pdf)
 
-- [Frise chronologique] (https://brevet.initiation.aero/friseChronologique.html)
-- [Video : histoire : trois approches du vol] (https://www.youtube.com/watch?v=fyZq4BrKVLg&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=54)
-- [Video : histoire : histoire d'une arme 1914-1918] (https://www.youtube.com/watch?v=6q4Mn8xjG0s&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=24)
-- [Video : histoire : la bataille d'Angleterre, un tournant décisif] (https://www.youtube.com/watch?v=t3WYjA1FE4I&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=23)
-- [Video : histoire : Pearl Harbor, le rôle décisif de l'aéronautique navale] (https://www.youtube.com/watch?v=zHF5Fa5b0yc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=20)
-- [Video : histoire : les défis de l'espace] (https://www.youtube.com/watch?v=zB_-syELS_M&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=17)
+- [Frise chronologique](https://brevet.initiation.aero/friseChronologique.html)
+- [Video : histoire : trois approches du vol](https://www.youtube.com/watch?v=fyZq4BrKVLg&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=54)
+- [Video : histoire : histoire d'une arme 1914-1918](https://www.youtube.com/watch?v=6q4Mn8xjG0s&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=24)
+- [Video : histoire : la bataille d'Angleterre, un tournant décisif](https://www.youtube.com/watch?v=t3WYjA1FE4I&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=23)
+- [Video : histoire : Pearl Harbor, le rôle décisif de l'aéronautique navale](https://www.youtube.com/watch?v=zHF5Fa5b0yc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=20)
+- [Video : histoire : les défis de l'espace](https://www.youtube.com/watch?v=zB_-syELS_M&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=17)
 
 # Cours
 
