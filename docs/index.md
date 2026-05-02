@@ -104,10 +104,22 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Vidéo : les grands principes de navigation](https://www.youtube.com/watch?v=vCBe4pfSV3o&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=17&pp=iAQB)
 - [Vidéo : aérodromes, VAC, tour de piste](https://www.youtube.com/watch?v=eE7jrWVOmzE&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=14&pp=iAQB)
 
+## Séance 11 : Histoire
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance11_Histoire_handout.pdf)
+
+- [Frise chronologique] (https://brevet.initiation.aero/friseChronologique.html)
+- [Video : histoire : trois approches du vol] (https://www.youtube.com/watch?v=fyZq4BrKVLg&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=54)
+- [Video : histoire : histoire d'une arme 1914-1918] (https://www.youtube.com/watch?v=6q4Mn8xjG0s&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=24)
+- [Video : histoire : la bataille d'Angleterre, un tournant décisif] (https://www.youtube.com/watch?v=t3WYjA1FE4I&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=23)
+- [Video : histoire : Pearl Harbor, le rôle décisif de l'aéronautique navale] (https://www.youtube.com/watch?v=zHF5Fa5b0yc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=20)
+- [Video : histoire : les défis de l'espace] (https://www.youtube.com/watch?v=zB_-syELS_M&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=17)
+
 # Cours
 
 ## Histoire
 [Cette frise chronologique](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQpziSx6DY9NLxldx55-WNCgafX8OYs1XLyDbkpa3kRWNCnPB6y3ivKcjEG8N7cALtehugZ7MG9yt71&font=Default&lang=fr&hash_bookmark=true&initial_zoom=2&width=100%25&height=650#event-premier-vol-dun-avion) donne des repères utiles pour la partie histoire. 
+
 
 # Ressources externes
 
