@@ -71,6 +71,12 @@
       "variantFileName": "seance11_Histoire_handout",
       "presentation": true,
       "toRelease": true
+    },
+    {
+      "file": "seance12_EtudeVolStabilise",
+      "variantFileName": "seance12_EtudeVolStabilise_handout",
+      "presentation": true,
+      "toRelease": false
     }
   ]
 }
