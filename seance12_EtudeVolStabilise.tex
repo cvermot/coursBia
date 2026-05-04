@@ -20,6 +20,15 @@
  \end{frame}
  
  \section{Le vol stabilisé}
+ 	\begin{frame}{Le vol stabilisé : définition}
+ 	Le vol est dit stabilisé quand les paramètres de vitesse (horizontale \& verticale) sont stables. \newline
+ 	
+ 	 L'aéronef suit alors un mouvement rectiligne uniforme (la trajectoire est une droite et la vitesse est constante). \newline
+ 	 
+ 	 Note : par simplification, on considérera pour cette séance que le poids et la portance s'appliquent au centre de gravité.
+ 	
+ 	\end{frame}
+ 	
  	\subsection{Vol stabilisé en palier}
  	\begin{frame}{Vol stabilisé en palier}
  	\begin{figure}[H]
@@ -31,9 +40,23 @@
  	
 	
 	\subsection{Vol stabilisé en montée ou descente}
+	\begin{frame}{Vol stabilisé en montée}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{04-Aerodynamique/img/forcesMontee}
+			\legende{Forces s'appliquant sur un vol stabilisé en montée}{img:forcesMontee}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.6\textwidth}
+			
+		\end{column}
+		\end{columns}
+
+	\end{frame}
 	
 	\section{Le facteur de charge}
-	\begin{frame}
+	\begin{frame}{Le facteur de charge}
 	\begin{columns}
 		\begin{column}{0.4\textwidth}
 		\begin{figure}[H]
@@ -47,6 +70,7 @@
 			Le facteur de charge est directement fonction de l'inclinaison, selon la formule $\dfrac{1}{cos(inclinaison)}$. \newline \pause
 			
 			Par conséquence, pour conserver le palier en virage, le pilote doit augmenter la portance par augmentation de la vitesse ou de l'incidence.
+		
 		\end{column}
 		\end{columns}
 		
@@ -59,6 +83,25 @@ Facteur de charge (G)                & 1 & 1,15 & 1,41 & 2 \\
 \hline
 \end{tabular}
 \end{table}
+	\end{frame}
+	
+	\begin{frame}{Le facteur de charge}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{04-Aerodynamique/img/virage60degres}
+			\legende{Facteur de charge à 60\degree}{img:virage60degres}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.6\textwidth}
+			Rappel : l'augmentation de la portance augmente également la trainée. Toute mise en virage sans augmentation de la traction provoquera donc une baisse de la vitesse, qui nécessitera elle même une augmentation de l'incidence pour conserver la portance.
+			
+			Pour cette raison, a basse vitesse, on réalise de préférence des virages à \textbf{vitesse constante} : on augmente la puissance en début de virage pour empêcher la diminution de la vitesse.
+		\end{column}
+		\end{columns}
+		
+		En montée, on aura une vitesse faible et on sera généralement à pleine puissance. On limite donc l'inclinaison (généralement 20\degree) pour éviter d'approcher de l'incidence de décrochage.
+
 	\end{frame}
 	
 	
@@ -87,15 +130,22 @@ Facteur de charge (G)                & 1 & 1,15 & 1,41 & 2 \\
 
 \end{frame}
 
-%\section{QCM}
-%\qmcBia{Navigation, réglementation, sécurité des vols}
-%{1}{Pour la sécurité des vols, la qualité qu'il faut avoir en priorité est :}
-%{une bonne connaissance de soi, de ses limites et de sa machine}
-%{une grande habileté de pilotage}
-%{un grand nombre d'heures de pilotage}
-%{une bonne connaissance de la réglementation} 
-%{}
+\section{QCM}
+\qmcBia{Aérodynamique, aérostatique et principes du vol}
+{2}{Pour un aéronef en montée rectiligne uniforme, la force de traction de l'hélice est fonction :}
+{uniquement de la traînée}
+{de la traînée, du poids et de l'angle de montée}
+{uniquement du poids et de la portance}
+{du poids et de l'angle de montée} 
+{}
 
+\qmcBia{Aérodynamique, aérostatique et principes du vol}
+{3}{En vol, le facteur de charge d'un avion :}
+{ne dépend que du poids de l'équipage et des bagages embarqués dans l'avion}
+{est supérieur à 1 quand l'avion est en montée}
+{augmente la vitesse de décrochage quand le facteur de charge augmente}
+{est le rapport entre la masse et la surface des ailes de l'avion} 
+{}
 
 
  
