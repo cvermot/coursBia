@@ -55,6 +55,21 @@
 
 	\end{frame}
 	
+	\begin{frame}{Vol stabilisé en descente}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{04-Aerodynamique/img/forcesDescente}
+			\legende{Forces s'appliquant sur un vol stabilisé en descente}{img:forcesDescente}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.6\textwidth}
+			
+		\end{column}
+		\end{columns}
+
+	\end{frame}
+	
 	\section{Le facteur de charge}
 	\begin{frame}{Le facteur de charge}
 	\begin{columns}
@@ -75,7 +90,7 @@
 		\end{columns}
 		
 	\begin{table}[]
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
 Inclinaison (\degree) & 0 & 30   & 45   & 60 \\
 \hline
@@ -104,6 +119,62 @@ Facteur de charge (G)                & 1 & 1,15 & 1,41 & 2 \\
 
 	\end{frame}
 	
+	\section{L'aérostation}
+	\begin{frame}{L'aérostation}
+	\begin{columns}
+		\begin{column}{0.27\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{04-Aerodynamique/img/montgolfiereArchimede}
+			\legende{}{img:montgolfiereArchimede}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.63\textwidth}
+			Une montgolfière vole grâce au \textbf{principe d'Archimède}. \pause
+			
+				"\textit{Tout corps plongé dans un fluide subit une force vers le haut égale au poids du fluide déplacé par ce corps.}"
+				
+
+		\end{column}
+		\end{columns}
+
+	\end{frame}
+
+	\begin{frame}{L'aérostation}
+	\begin{table}[]
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$T$ (\degree $C$) & 0 & 15   & 25   & 75 & 100 & 150 \\
+\hline
+$\rho$ ($kg \cdot m^3$) & 1,292 & 1,225 & 1,184 & 1,014 & 0,946 & 0,835 \\
+\hline
+\end{tabular}
+\end{table}
+	
+	\begin{columns}
+		\begin{column}{0.15\textwidth}
+		\begin{figure}[H]
+			\includegraphics[width=1\linewidth]{04-Aerodynamique/img/montgolfiereArchimede}
+			\legende{}{img:montgolfiereArchimede}
+		\end{figure}	
+		\end{column}
+		\begin{column}{0.85\textwidth}
+			
+		Calculer la capacité d'emport d'une montgolfière pesant 2943 N (300 kg), d'un volume de 2500~$m^3$, avec une température extérieure de 15~\degree$C$ et une température de l'air dans le ballon de 100~\degree$C$.
+		\pause		
+		
+		\begin{align}
+		F & = (\rho(_{T_{15}}) - \rho(_{T_{100}})) \times g \times V_{montgolfi\grave{e}re} \\
+		  & = (1,225 - 0,946) \times 9,81 \times 2500 \\
+		  & = 6 842,475
+		\end{align}
+		
+		La masse d'air déplacée vaut $6 842,475 N$ soit $697,5 kg$.
+		
+		La montgolfière peut emporter $697,5 - 300 = 397,5 kg$
+
+		\end{column}
+		\end{columns}
+	\end{frame}
 	
 \appendix 
 
