@@ -115,6 +115,14 @@ Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelque
 - [Video : histoire : Pearl Harbor, le rôle décisif de l'aéronautique navale](https://www.youtube.com/watch?v=zHF5Fa5b0yc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=20)
 - [Video : histoire : les défis de l'espace](https://www.youtube.com/watch?v=zB_-syELS_M&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=17)
 
+## Séance 12 : Le vol stabilisé
+
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance12_EtudeVolStabilise_handout.pdf)
+
+- [Vidéo : étude du vol stabilisé en ligne droite, palier, montée, descente](https://www.youtube.com/watch?v=FtvF_LV6yz0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=34)
+- [Vidéo : étude du vol stabilisé en ligne droite, le planeur et le vol plané](https://www.youtube.com/watch?v=bjy-9PQZE4Y&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=33)
+- [Vidéo : virage en palier, facteur de charge, centrifugation](https://www.youtube.com/watch?v=g-r-faj3_Fc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=31)
+
 # Cours
 
 ## Histoire
