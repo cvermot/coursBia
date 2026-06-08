@@ -28,13 +28,39 @@
 	
 	\subsection{Les grands principes de navigation}
 		\subsubsection{Navigation à l'estime et cheminement à vue}
+		\paragraph{La navigation à vue}
+		La technique de navigation à vue est la première la plus simple des techniques de navigation : on se sert de repères au sol pour déterminer un itinéraire entre 2 points. Le pilote utilise des repères naturels (lacs, rivières, cols ou sommets, vallées...) ou artificiels (villes, antennes, routes, voies ferrées...) pour se repérer. Le pilote navigue ainsi de proche en proche. Cette technique est très simple mais nécessite des cartes précises pour être pleinement utilisable. 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\linewidth]{02-Navigation/img/cheminementBordeauxMarmande.pdf}
+			\legende{Navigation en cheminement entre Bordeaux et Marmande en suivant une voie ferrée, puis une autoroute puis une voie ferrée.}{img:cheminementBordeauxMarmande}
+			\end{figure}	
+		
+		Il faut par ailleurs être ne mesure de voir le repère suivant une fois que l'on atteint un repère (le repère atteint est appelé \gls{point tournant}, car on effectuera souvent un virage pour rejoindre le point suivant s'il n'est pas situé exactement droit devant) pour poursuivre le vol. plus on vol bas, plus les repères devront dont être rapprochés, et une visibilité réduite peut imposer de multiplier le nombre de point de repère à identifier et à rejoindre, sauf à choisir des repères de type linéaires (suivre un trait de côte, une route, une rivière...).
+		
+		
+		
+		\paragraph{La navigation à l'estime}
+		Cette technique de navigation permet de naviguer entre 2 repères éloignés, sans nécessité de voir le repère suivant une fois le \gls{point tournant} atteint. Pour cela, le pilote calcule le cap à suivre et la distance le séparant du point suivant. Cette distance lui donne un temps de vol. Il suffit au pilote de voler au cap sur la durée calculée pour atteindre le point suivant.
+		
+		Il faut bien sur tenir compte du vent autant sur la durée que sur le cap suivi (cf \ref{chap:navigation:capRouteVent} \nameref{chap:navigation:capRouteVent}).
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\linewidth]{02-Navigation/img/estimeBordeauxMarmande.pdf}
+			\legende{Navigation à l'estime entre Bordeaux et Marmande en prenant les villes de Cestas et Langon en points tournants.}{img:estimeBordeauxMarmande}
+			\end{figure}	
+		
+		Cette technique nécessite de déterminer différents paramètres pour la direction à suivre : routes et caps. Ces notions seront détaillées dans le paragraphe suivant.
+		
 		
 		\subsubsection{Routes \& caps}
 		\paragraph{Route vraie}	
 		\paragraph{Route magnétique}	
 		\paragraph{Cap vrai}
 		\paragraph{Cap magnétique}
-		\paragraph{Cap et route : l'influence du vent}
+		\paragraph{Cap et route : l'influence du vent}\label{chap:navigation:capRouteVent}
 			\begin{figure}[H]
 			\centering
 			\input{02-Navigation/img/influenceOrientationForceVent/ventFaceForceVent.tex}
@@ -134,7 +160,9 @@
 			\paragraph{Notions de base}
 			
 			\paragraph{Le VOR}
-			Le \acrshort{vor} \anglais{\acrlong{vor}}
+			Le \acrshort{vor} \anglais{\acrlong{vor}} est une station émettrice au sol qui permet a un équipage de mesurer un relevement (= route à suivre pour rejoindre la balise) grâce à un récepteur situé dans le cockpit.
+			
+			%TODO QDM/QDR, ajout photo VOR
 			
 			\subparagraph{Le DME}
 			Le \acrshort{dme} \anglais{\acrlong{dme}} (souvent désigné VOR-DME car traditionnellement les DME sont couplés à un VOR)

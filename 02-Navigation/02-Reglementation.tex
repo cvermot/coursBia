@@ -252,3 +252,46 @@
 	\subsection{Titres aéronautiques}
 	
 	\subsection{Contrôle d'un aéronef}
+	
+	\subsection{La réglementation drone européenne}
+	La catégorie drone regroupe une grande diversité d'aéronefs, que cela soit par leur taille et masse (de quelques centaines de grammes à plusieurs tonnes), leur mode de sustentation (multirotor, aile volante...) ou de propulsion (électrique, moteur à explosion ou réacteur), leur mission ou encore la distance qu'ils peuvent couvrir (certains drones sont captifs, c'est-à-dire retenus au sol par un filin, tandis que d'autres peuvent parcourir des centaines voire milliers de kilomètres en toute autonomie).
+
+Le grand public peut désormais acquérir des drones très performants de quelques centaines de grammes pour quelques centaines d'euros. Il a donc fallu créer une réglementation qui permette d'opérer cette diversité d'appareils avec des contraintes proportionnées au risque induit par les caractéristiques du drone.
+
+Au sein de l'Union Européenne, une réglementation drone commune applicable aux 27 pays de l'UE (+ l'Islande, le Liechtenstein, la Norvège et la Suisse) a été mise en place par l'EASA et entrée en vigueur à partir de 2021. Cette réglementation regroupe l'exploitation des drones en 3 catégories en fonction du risque associé :
+
+\begin{itemize}
+	\item La catégorie ouverte : risque faible. Exploitation de drones légers (de 0 à 25 kg) en vol à vue directe du télépilote (VLOS), à proximité des personnes pour les drones les plus légers (jusqu'à 900 grammes avec peu de restrictions et 4 kg en gardant des distances de sécurité de quelques mètres). Les drones dont la masse est comprise entre 4 et 25 kg en catégorie ouverte doivent être exploités à plus de 150 m de toute personne, véhicule, habitation ou zone industrielle.
+	\item La catégorie spécifique : risque moyen. Exploitation de drone de masse intermédiaires (jusqu'à 25 kg) en vue directe du télépilote et à proximité des personnes (avec des dispositifs de sécurité tel qu'un parachute pour parer à une éventuelle défaillance du drone) ou hors vue.
+	\item La catégorie certifiée : risque fort. Exploitation de drone au-dessus du public, par exemple.
+\end{itemize}
+
+Pour piloter des drones dans chacune de ces catégories, le télépilote doit être titulaire d'une licence de télépilote correspondante à la catégorie dans laquelle il opère (sauf pour un drone de moins de 250 grammes, pour lesquels la réglementation ne fait que conseiller d'être titulaire de la licence de télépilote).
+
+La réglementation européenne classe les drone par catégorie (Cx avec x de 0 à 6), principalement sur la base de leur masse, catégorie de laquelle découle un scénario d'évolution.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Catégorie}} & \multicolumn{1}{c|}{\textbf{Scénario}} & \multicolumn{1}{c|}{\textbf{Drone}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Masse\\ maxi\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Licence}} & \multicolumn{1}{c|}{\textbf{Distance aux tiers}}                                                                                                                                          & \multicolumn{1}{c|}{\textbf{}} \\ \hline
+\multirow{5}{*}{Ouverte}                 & \multirow{2}{*}{A1}                    & C0                                  & 250 g                                                                              & \multirow{2}{*}{Open A1/A3}           & Survol possible                                                                                                                                                                           & \multirow{6}{*}{VLOS}          \\ \cline{3-4} \cline{6-6}
+                                         &                                        & C1                                  & 900 g                                                                              &                                       & \begin{tabular}[c]{@{}l@{}}Possible de façon \\ involontaire, doit \\ être évité\end{tabular}                                                                                             &                                \\ \cline{2-6}
+                                         & A2                                     & C2                                  & 4 kg                                                                               & Open A2                               & 5 m minium                                                                                                                                                                                &                                \\ \cline{2-6}
+                                         & \multirow{2}{*}{A3}                    & C3                                  & \multirow{2}{*}{25 kg}                                                             & \multirow{2}{*}{Open A1/A3}           & 150 m minimum                                                                                                                                                                             &                                \\ \cline{3-3} \cline{6-6}
+                                         &                                        & C4                                  &                                                                                    &                                       & \begin{tabular}[c]{@{}l@{}}150 m minimum\\ (aéromodelisme)\end{tabular}                                                                                                                   &                                \\ \cline{1-6}
+\multirow{2}{*}{Spécifique}              & STS-01                                 & C5                                  & 25 kg                                                                              & \multirow{2}{*}{CATS}                 & \begin{tabular}[c]{@{}l@{}}Zone tapon son tiers \\ entre 10 et 60 m selon \\ la masse du drone et la \\ hauteur d'évolution +\\ système d'interruption\\ de vol et parachute\end{tabular} &                                \\ \cline{2-4} \cline{6-7} 
+                                         & STS-02                                 & C6                                  & 25 kg                                                                              &                                       & \begin{tabular}[c]{@{}l@{}}Zone dont on peut \\ garantir raisonnablement \\ l'absence de tier\end{tabular}                                                                                & BVLOS                          \\ \hline
+\end{tabular}
+\end{table}
+
+En France, la licence de télépilote de drone Open A1/A3 peut se passer gratuitement sur Internet après une formation en ligne.
+
+La réglementation européenne prévoit que les drones évoluent au maximum jusqu'à 120 m (400 pieds) de hauteur au-dessus du sol. Ce choix d'altitude permet de garantir une séparation avec l'aviation habitée, qui n'évolue normalement pas en dessous de 500 pieds. Les exploitants de drone qui souhaiteraient dépasser 400 pieds de hauteur peuvent demander aux gestionnaires des espaces aériens la création d'un espace dédié, qui prendra généralement forme d'une zone R et dont l'existence sera portée à connaissance des équipages de vols habités via des NOTAM.
+
+Autour des aéroports, les hauteurs autorisée pour les drones sont plus réduites, afin de garantir la séparation entre les aéronefs en phase de décollage et d'atterrissage et les drones.
+
+Le télépilote d'un drone reste responsable à tout instant de l'anti-abordage de son aéronefs vis-à-vis des vols habités, et doit céder la priorité aux éventuels aéronefs habités dont la trajectoire interfèrerais avec celle de son drone (en effet, on est susceptible de croiser quand même des aéronefs sous les 500 pieds n'importe où : hélicoptères en mission de secours, vols militaires basse altitude, vol d'instruction en simulation de panne moteur...).
