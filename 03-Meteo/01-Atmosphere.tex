@@ -27,12 +27,20 @@
 	\end{table}
 	
 	\subsubsection{Capacité à contenir de l'humidité}
+	
+	L'atmosphère terrestre contient de la vapeur d'eau en quantité variable. Cependant, sa capacité à contenir de l'eau sous forme de vapeur n'est pas illimitée, et cette capacité varie en fonction la température : plus celle-ci est faible, moins l'air peut contenir de vapeur d'eau.
+	
+	\alert{La vapeur d'eau est un gaz inodore et incolore.}
+	
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.85\linewidth]{03-Meteo/img/graphHumiditeSelonTemperature.pdf}
 			\legende{Schéma indiquant la quantité d'eau que l'air peut stocker en fonction de la température}{img:graphHumiditeSelonTemperature}
 		\end{figure}	
+		
+		Pour une quantité de vapeur d'eau dans l'atmosphère, on peut donc déterminer une température à partir de laquelle on atteint la saturation. Cette valeur est appelée \textbf{point de rosée}. Si une masse d'air atteint sa température de point de rosée, elle sera saturée en vapeur d'eau, et la quantité de vapeur excédentaire se condensera en micro gouttelettes  qui resteront en suspension dans l'atmosphère. Il se forme alors des brumes et brouillards (au sol) et des nuages (en altitude).
 	
+	La valeur du point de rosée est donc très importante en aéronautique, et notamment pour le vol VFR car elle donne aux équipages une information sur le risque de formation de brumes et brouillards (si la température courante est proche du point de rosée, alors la formation de brouillard devient possible si l'atmosphère se refroidie).
 	
 	
 	\subsection{Structure}
@@ -48,10 +56,15 @@
 			
 			\astuce{On peut se souvenir de l'ordre des ces premières couches -de la plus haute à la plus basse- grâce à l'acronyme MST qui donne la lettre initiale de chacune d'elles.} 
 			
+	\subsection{Température}
+	Dans l'atmosphère, la température varie selon le lieu, l'heure et l'altitude.
+	
+	La température minimale d'une journée est généralement atteinte le matin, juste après le levé du soleil : l'absence de rayonnement solaire permet le refroidissement de l'atmosphère et il faut atteindre que le soleil soit suffisamment haut sur l'horizon pour que ses effets thermiques dépassent le refroidissement naturel de l'atmosphère.
+			
 	\subsection{La pression atmosphérique}
 	La colonne d'air qui se trouve au-dessus de nos têtes subit la gravité terrestre. Par conséquent, elle représente un poids, appelé pression atmosphérique.
 	
-	Cette pression peut être mise en évidence grâce à des baromètres, des dispositifs prévus pour mesurer la valeur de cette pression.
+	Cette pression peut être mise mesurée grâce à des baromètres, des dispositifs prévus pour mesurer la valeur de cette pression.
 	
 	Cette pression a été mise en évidence par le physicien italien Evangelista Torricelli au début du \siecle{17}. Le physicien remplit un tube en verre fermé d'un côté avec du mercure, puis le retourne dans une cuve elle aussi remplie de mercure. Dans le tube, le mercure descend et se stabilise à une hauteur de 760 mm.
 	
@@ -100,3 +113,18 @@
 		\end{animateinline}
 		\legende{Illustration de la montée en altitude sur le baromètre de Torricelli}{tikz:barometreTorricelliAltitude}
 	\end{figure}
+	
+	\subsection{L'atmosphère standard}
+	Les météorologues ont déterminé une atmosphère dite "standard" (ISA) qui représente la température et la pression moyenne qui règne au niveau de la mer sur la Terre.
+	
+	Cette atmosphère est définie comme suit :
+			\begin{itemize}
+				\item Température au niveau de la mer : $\ang{15}C$
+				\item Pression atmosphérique au niveau de la mer : $1013,25~hPa$
+			\end{itemize}
+			
+			Dans cette atmosphère standard, ces grandeurs évoluent comme suit :
+			\begin{itemize}
+				\item $\ang{-0.65}C$ tous les $100~m$ (soit $\ang{-2}C$ tous les $1000~ft$), jusqu'à la tropopause
+				\item $-1~hPa$ tous les $8,5~m$ (soit $-1~hPa$ tous les $28~ft$)
+			\end{itemize}
