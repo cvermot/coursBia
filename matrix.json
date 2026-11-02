@@ -7,6 +7,12 @@
       "toRelease": true
     },
     {
+      "file": "seance0_presentationParentsEtEleves",
+      "variantFileName": "seance0_presentationParentsEtEleves_handout",
+      "presentation": true,
+      "toRelease": true
+    },
+    {
       "file": "seance1_Introduction_ClassificationAeronefs",
       "variantFileName": "seance1_Introduction_ClassificationAeronefs_handout",
       "presentation": true,
