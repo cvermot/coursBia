@@ -10,7 +10,7 @@
       "file": "seance0_presentationParentsEtEleves",
       "variantFileName": "seance0_presentationParentsEtEleves_handout",
       "presentation": true,
-      "toRelease": true
+      "toRelease": false
     },
     {
       "file": "seance1_Introduction_ClassificationAeronefs",
