@@ -1,5 +1,5 @@
 # Supports des séances
-Pour chaque séance, le support proheté est disponible, auquel s'ajoute quelques ressources supplémentaires qui illustrent et approfondissent les notions vues durant la séance.
+Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelques ressources supplémentaires qui illustrent et approfondissent les notions vues durant la séance.
 
 ## Séance 1 : Introduction
 - Classification des aéronefs
