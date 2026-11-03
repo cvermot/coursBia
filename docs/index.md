@@ -8,7 +8,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 
 - [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
-!!!## Séance 2 : Structure aérodyne et motorisation
+<!--## Séance 2 : Structure aérodyne et motorisation
 - Structure générale d'un avion
 - Cycles 4 temps
 - Moteur à explosion
@@ -122,7 +122,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 - [Vidéo : étude du vol stabilisé en ligne droite, palier, montée, descente](https://www.youtube.com/watch?v=FtvF_LV6yz0&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=34)
 - [Vidéo : étude du vol stabilisé en ligne droite, le planeur et le vol plané](https://www.youtube.com/watch?v=bjy-9PQZE4Y&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=33)
 - [Vidéo : virage en palier, facteur de charge, centrifugation](https://www.youtube.com/watch?v=g-r-faj3_Fc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=31)
-!!!
+-->
 
 # Cours
 
