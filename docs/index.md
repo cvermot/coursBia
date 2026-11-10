@@ -4,7 +4,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 ## Séance 1 : Introduction
 - Classification des aéronefs
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance1_Introduction_ClassificationAeronefs_handout.pdf)
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance01_Introduction_ClassificationAeronefs_handout.pdf)
 
 [Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.1
 

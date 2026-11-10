@@ -7,20 +7,26 @@
       "toRelease": true
     },
     {
-      "file": "seance0_presentationParentsEtEleves",
-      "variantFileName": "seance0_presentationParentsEtEleves_handout",
+      "file": "seance00_presentationParentsEtEleves",
+      "variantFileName": "seance00_presentationParentsEtEleves_handout",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance1_Introduction_ClassificationAeronefs",
-      "variantFileName": "seance1_Introduction_ClassificationAeronefs_handout",
+      "file": "seance01_Introduction_ClassificationAeronefs",
+      "variantFileName": "seance01_Introduction_ClassificationAeronefs_handout",
       "presentation": true,
       "toRelease": true
     },
     {
-      "file": "seance2_StructureAvionMotorisation",
-      "variantFileName": "seance2_StructureAvionMotorisation_handout",
+      "file": "seance02_StructureAeronef",
+      "variantFileName": "seance02_StructureAeronef_handout",
+      "presentation": true,
+      "toRelease": false
+    },
+	{
+      "file": "seance03_Motorisation",
+      "variantFileName": "seance03_Motorisation_handout",
       "presentation": true,
       "toRelease": false
     },
