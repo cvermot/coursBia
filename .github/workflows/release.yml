@@ -49,15 +49,24 @@ jobs:
         root_file: ${{ matrix.file }}.tex
 
     - name: Rename first pass PDF to variant filename
+      id: rename-first-pass
+      env:
+        FILE: ${{ matrix.file }}
+        PRESENTATION: ${{ matrix.presentation }}
       run: |
-        # Rename the PDF from first pass to the variant filename
-        mv ${{ matrix.file }}.pdf ${{ matrix.variantFileName }}.pdf
+        if [ "$PRESENTATION" = "true" ]; then
+          variant="${FILE}_handout.pdf"
+        else
+          variant="${FILE}_OpenDyslexic.pdf"
+        fi
+        mv "${FILE}.pdf" "$variant"
+        echo "filename=$variant" >> "$GITHUB_OUTPUT"
 
     - name: Upload PDF artifact - first pass
       uses: actions/upload-artifact@v7
       with:
-        name: ${{ matrix.variantFileName }}.pdf
-        path: ${{ matrix.variantFileName }}.pdf
+        name: ${{ steps.rename-first-pass.outputs.filename }}
+        path: ${{ steps.rename-first-pass.outputs.filename }}
         archive: false
 
     - name: Second pass - Compilation ${{ matrix.file }}
@@ -99,7 +108,7 @@ jobs:
         # Loop through each item in the matrix and filter by toRelease
         for row in $(cat matrix.json | jq -c '.files[] | select(.toRelease == true)'); do
           file=$(echo "$row" | jq -r '.file')
-          variantFileName=$(echo "$row" | jq -r '.variantFileName')
+          variantFileName=$(echo "$row" | jq -r '.file + (if .presentation == true then "_handout" else "_OpenDyslexic" end)')
 
           FILES="${FILES}${file}.pdf"$'\n'
           FILES="${FILES}${variantFileName}.pdf"$'\n'
