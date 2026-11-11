@@ -2,91 +2,76 @@
   "files": [
     {
       "file": "CoursBIA_complet",
-      "variantFileName": "CoursBIA_complet_OpenDyslexic",
       "presentation": false,
       "toRelease": true
     },
     {
       "file": "seance00_presentationParentsEtEleves",
-      "variantFileName": "seance00_presentationParentsEtEleves_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance01_Introduction_ClassificationAeronefs",
-      "variantFileName": "seance01_Introduction_ClassificationAeronefs_handout",
       "presentation": true,
       "toRelease": true
     },
     {
       "file": "seance02_StructureAeronef",
-      "variantFileName": "seance02_StructureAeronef_handout",
       "presentation": true,
       "toRelease": false
     },
 	{
       "file": "seance03_Motorisation",
-      "variantFileName": "seance03_Motorisation_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance3_BaseAerodynamique",
-      "variantFileName": "seance3_BaseAerodynamique_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance4_CommandesDeVol",
-      "variantFileName": "seance4_CommandesDeVol_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance5_Atmosphere",
-      "variantFileName": "seance5_Atmosphere_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance6_InstrumentsDeBord",
-      "variantFileName": "seance6_InstrumentsDeBord_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance7_Aerodrome_ReglesDeVol",
-      "variantFileName": "seance7_Aerodrome_ReglesDeVol_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance8_CartographieNavigation",
-      "variantFileName": "seance8_CartographieNavigation_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance9_EspacesAeriensSecurite",
-      "variantFileName": "seance9_EspacesAeriensSecurite_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance10_PreparationVol",
-      "variantFileName": "seance10_PreparationVol_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance11_Histoire",
-      "variantFileName": "seance11_Histoire_handout",
       "presentation": true,
       "toRelease": false
     },
     {
       "file": "seance12_EtudeVolStabilise",
-      "variantFileName": "seance12_EtudeVolStabilise_handout",
       "presentation": true,
       "toRelease": false
     }
