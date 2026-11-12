@@ -18,7 +18,7 @@
     {
       "file": "seance02_StructureAeronef",
       "presentation": true,
-      "toRelease": false
+      "toRelease": true
     },
 	{
       "file": "seance03_Motorisation",
