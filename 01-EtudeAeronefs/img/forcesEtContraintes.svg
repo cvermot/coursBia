@@ -25,9 +25,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
-     inkscape:zoom="1.7710597"
-     inkscape:cx="238.84005"
-     inkscape:cy="289.9394"
+     inkscape:zoom="3.5421194"
+     inkscape:cx="190.84619"
+     inkscape:cy="355.01344"
      inkscape:window-width="2240"
      inkscape:window-height="1294"
      inkscape:window-x="-11"
@@ -58296,135 +58296,6 @@
     </g>
   </g>
   <g
-     clip-path="url(#clip-493)"
-     id="g10901"
-     transform="translate(-54.183592,-44.531251)">
-    <g
-       clip-path="url(#clip-494)"
-       id="g10900">
-      <g
-         fill="#221f1f"
-         fill-opacity="1"
-         id="g10899">
-        <use
-           xlink:href="#glyph-0-24"
-           x="127.3634"
-           y="366.91339"
-           id="use10877" />
-        <use
-           xlink:href="#glyph-0-5"
-           x="132.6994"
-           y="366.91339"
-           id="use10878" />
-        <use
-           xlink:href="#glyph-0-8"
-           x="137.1474"
-           y="366.91339"
-           id="use10879" />
-        <use
-           xlink:href="#glyph-0-15"
-           x="141.5954"
-           y="366.91339"
-           id="use10880" />
-        <use
-           xlink:href="#glyph-0-9"
-           x="143.8194"
-           y="366.91339"
-           id="use10881" />
-        <use
-           xlink:href="#glyph-0-6"
-           x="146.0434"
-           y="366.91339"
-           id="use10882" />
-        <use
-           xlink:href="#glyph-0-15"
-           x="150.0434"
-           y="366.91339"
-           id="use10883" />
-        <use
-           xlink:href="#glyph-0-4"
-           x="152.2674"
-           y="366.91339"
-           id="use10884" />
-        <use
-           xlink:href="#glyph-0-14"
-           x="154.9314"
-           y="366.91339"
-           id="use10885" />
-        <use
-           xlink:href="#glyph-0-25"
-           x="159.37939"
-           y="366.91339"
-           id="use10886" />
-        <use
-           xlink:href="#glyph-0-15"
-           x="163.37939"
-           y="366.91339"
-           id="use10887" />
-        <use
-           xlink:href="#glyph-0-14"
-           x="165.60339"
-           y="366.91339"
-           id="use10888" />
-        <use
-           xlink:href="#glyph-0-4"
-           x="170.05141"
-           y="366.91339"
-           id="use10889" />
-        <use
-           xlink:href="#glyph-0-18"
-           x="172.71539"
-           y="366.91339"
-           id="use10890" />
-        <use
-           xlink:href="#glyph-0-19"
-           x="177.16341"
-           y="366.91339"
-           id="use10891" />
-        <use
-           xlink:href="#glyph-0-9"
-           x="178.93941"
-           y="366.91339"
-           id="use10892" />
-        <use
-           xlink:href="#glyph-0-2"
-           x="181.16341"
-           y="366.91339"
-           id="use10893" />
-        <use
-           xlink:href="#glyph-0-5"
-           x="187.82739"
-           y="366.91339"
-           id="use10894" />
-        <use
-           xlink:href="#glyph-0-2"
-           x="192.27541"
-           y="366.91339"
-           id="use10895" />
-        <use
-           xlink:href="#glyph-0-12"
-           x="198.93941"
-           y="366.91339"
-           id="use10896" />
-        <use
-           xlink:href="#glyph-0-5"
-           x="203.38741"
-           y="366.91339"
-           id="use10897" />
-        <use
-           xlink:href="#glyph-0-4"
-           x="207.8354"
-           y="366.91339"
-           id="use10898" />
-        <use
-           xlink:href="#glyph-0-9"
-           x="210.4994"
-           y="366.91339"
-           id="use10899" />
-      </g>
-    </g>
-  </g>
-  <g
      clip-path="url(#clip-495)"
      id="g10903"
      transform="translate(-54.183592,-44.531251)">
@@ -59153,4 +59024,15 @@
        style="stroke-width:2.835"
        x="328.59555"
        y="322.3125">Cisaillement à l'intéieur du matériau</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:8px;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;fill:#000000;stroke-width:2.835"
+     x="67.21875"
+     y="322.30273"
+     id="text1"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       style="font-size:8px;stroke-width:2.835"
+       x="67.21875"
+       y="322.30273">Elément de structure tordu</tspan></text>
 </svg>
