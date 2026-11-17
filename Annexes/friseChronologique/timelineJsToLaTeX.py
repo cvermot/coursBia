@@ -68,8 +68,8 @@ def telechargerImage(url):
             print("    Erreur 429 sur URL " + url + ".")
             global nbErreurs
             nbErreurs = nbErreurs + 1
-            #time.sleep(5)
-            #reponse = requests.get(url, headers=headers)
+            time.sleep(5)
+            reponse = requests.get(url, headers=headers)
 
         if reponse.status_code == 200:
             with open(chemin, 'wb') as image:

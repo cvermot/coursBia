@@ -291,12 +291,92 @@
 	\info{L'air utilisé quand on active le réchauffage carburateur n'est pas filtré, contrairement à l'air froid. Il est donc déconseillé d'utiliser le réchauffage carburateur au sol, car cela augmente le risque que des contaminants soient ingérés par le moteur.}
 	
 	
-	\subsection{Motorisation électrique}
-
+	%TODO \subsection{Motorisation électrique}
 	
-	\subsection{Hélices et moteurs}
+	
+	\subsection{Hélices}
+	%TODO : chapitre à enrichire	
+	
+	Les hélices sont destinées à transmettre la puissance des moteurs pour mettre en mouvement les aéronefs. L'hélice propulse de l'air de l'avant vers l'arrière, et en réaction, l'aéronef est propulsé vers l'avant.
+	
+	\begin{figure}[H]
+  		 \centering
+    		 \includegraphics[width=0.8\textwidth]{01-EtudeAeronefs/img/heliceBois.pdf}
+  		 \legende{Une hélice en bois}{img:heliceBois}
+	\end{figure}	
+	
+	Les hélices sont réalisées en bois, en aluminium forgé ou en composites, un assemblage de plusieurs matériaux.
+	
+		Les pales sont constituées d'une succession de profils aérodynamiques, dont la section s'apparente à celles d'une aile. L'angle entre le plan dans lequel tourne l'hélice et la corde de profil est appelé calage.
+		
+		\begin{center}
+		\begin{minipage}[c]{1.0\linewidth}
+		\begin{figure}[H]
+		\begin{minipage}[c]{0.43\linewidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/heliceAerodynamique.pdf}
+  		\legende{Calage d'une hélice d'avion}{img:heliceAerodynamique}
+		\end{minipage}
+		\begin{minipage}[c]{0.57\linewidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{01-EtudeAeronefs/img/heliceAnglePale.pdf}
+  		\legende{Succession des profils le long d'une pale}{img:heliceAnglePale}
+		\end{minipage}
+		\end{figure}
+		\end{minipage}
+		\end{center}
+				
+		Si on s'intéresse à la vitesse de déplacement de plusieurs points sur une pale, on constate que la vitesse n'est pas égale en tout point de la pale : les points les plus éloignés tournent plus vite que ceux proches du moyeu : cela explique pourquoi le calage évolue tout au long de la pâle.
+		
+		\begin{figure}[H]
+  		    		\centering
+    		    		\includegraphics[width=0.55\textwidth]{01-EtudeAeronefs/img/heliceVitesseSection.pdf}
+  		    		\legende{Vitesse en 3 points d'une pale}{img:heliceVitesseSection}
+	      	\end{figure}	
+		\subsubsection{Calage d'une hélice}
+		L'angle que forme l'hélice avec l'axe de rotation détermine la quantité d'air que l'hélice envoie vers l'arrière. On appel cet angle le calage. 
+		
+		Sur une hélice monobloc, ce calage est fixe et déterminé à la fabrication. Il s'agit d'un compromis entre un calage faible, plus efficace au décollage, et un calage plus élevé, qui favorise la vitesse de croisière.
+		
+		Pour augmenter la performance d'une hélice, il existe des hélices dont le calage peut être modifié en vol : les hélices à calage variable. Ce système s'assimile aux vitesse d'une voiture ou d'un vélo.
+		
+		\begin{figure}[H]
+  		    		\centering
+    		    		\includegraphics[width=0.8\textwidth]{01-EtudeAeronefs/img/heliceCalagePale.pdf}
+  		    		\legende{Calages caractéristiques d'une hélice}{img:heliceCalagePale}
+	     \end{figure}
+	     
+	     Les hélices à calage fixe sont utilisées sur certains avions légers et sont généralisées sur les appareils de forte puissance, ainsi que les multimoteurs. Le pilotage du calage de l'hélice est soit contrôlée par le pilote, soit de façon automatique via des systèmes mécaniques ou électroniques.
+	     
+	     Les hélices à calage variable sont aussi appelées \textbf{hélices à vitesse constante}. En effet, on modifie l'angle de calage de façon à ce que l'effort exposé au moteur soit constant. Quand l'effort demandé est élevé, le calage est faible, et donc l'hélice est facilement entrainée par le moteur. Au fur et à mesure que l'avion accélère, la force nécessaire pour entrainer l'hélice diminue, ce qui a tendance à faire augmenter la vitesse rotation. L'augmentation du calage augmente l'effort nécessaire et provoque donc une baisse du régime de rotation de l'hélice. L'hélice conserve donc un régime constant généralement autour de 2500 tours minutes\footnote{Sur un avion équipé d'une hélice à calage fixe, le calage est généralement calculé pour permettre un régime de rotation de l'hélice proche du régime maximum aux vitesses de décollage. Une fois en croisière, on assure le maintien du régime hélice en dessous de son régime maximum en réduisant les gaz.}. \\
+	     
+	     On utilise donc un petit pas pour le décollage (faible vitesse), et un grand pas en croisière (vitesse élevée). Pour l'atterrissage, l'hélice est ramenée au petit pas, afin d'être dans une zone efficace en cas de remise de gaz.
+	     
+	     En cas de panne moteur, l'hélice est mise en drapeau : l'hélice fait face au vent relatif : cela permet de réduire la trainée provoquée par l'hélice. \\
+	     
+	     Un dernier mode de calage existe sur certains avions : le mode reverse. Dans ce mode, l'angle de calage est négatif, l'hélice n'est plus tractrice mais propulsive. Ce mode permet de faire ralentir l'avion ou d'augmenter le taux de descente en limitant la prise de vitesse. Sur certains avions, ce mode est également autorisé au sol pour permettre à l'avion de faire des marches arrières.
+		
 	
 	\subsection{Propulseurs à réaction}
+	Avec l'augmentation de la vitesse et de la masse des avions, les moteurs à explosion ont commencé à montrer leurs limites dès les années 1920. 
+	
+	Les pales posent problème quand cherche à approcher le mur du son. En effet, en bout de pale, la vitesse de rotation s'ajoute à la vitesse de déplacement de l'avion. Le bout de la pale approche, atteint ou dépasse le mur du son, créant des ondes choc qui réduisent leur efficacité.
+	
+	Le moteur à explosion présente également l'inconvénient majeur de voir sa puissance baisser au fur et à mesure que l'oxygène se raréfie durant la montée, même si ce phénomène est partiellement compensé par l'adjonction de turbos.
+	
+	Les ingénieurs se sont donc intéressés aux principe de la propulsion par réacteur dès les années 1920.
+	
+	\histoire{Le premier avion à avoir volé grâce à un turboréacteur est le Heinkel He-178, conçu grâce à l'ingénieur allemande  Hans von Ohain en collaboration avec l'ingénieur aéronautique Ernst Heinkel. \\ Par la suite, les allemands feront également voler le premier chasseur à réaction de l'histoire, le Messerschmitt Me 262.}
+	
+	 Depuis sa mise au point des turboréacteurs à la fin des années 1930, le réacteur s'est peu à peu imposé sur de très nombreux avions. C'est en effet un motorisation qui présente de nombreux avantages :
+  	\begin{itemize}
+  			\item Puissance
+  			\item Légèreté comparé à des moteurs à explosion et hélices de même puissance
+  			\item Très fiable (mouvement purement rotatif), engendre moins de vibrations
+  			\item Permet d'atteindre les très hautes vitesses
+  			\item Utilisation de kérosène, un carburant peu couteux et sur d'utilisation car difficilement inflammable
+  	\end{itemize}
+	
 		\subsubsection{Turboréacteurs}
 		Le turboréacteur \anglais{turbojet} est un système de propulsion qui produit une poussée grâce à l'accélération d'un flux d'air entre l'entrée et la sortie du réacteur.
 		
@@ -370,6 +450,8 @@
 		Les réacteurs les plus modernes peuvent atteindre un rapport de 10 pour 1, ce qui signifie que la quantité d'air qui passe autour du réacteur est 10 fois supérieure à celle qui passe dans la turbine. 
 		
 		\info{Ce type de réacteur à fort taux de dilution, utilisé sur A350 ou B777X peut ainsi aspirer 1.5 tonnes d'air par seconde.}
+		
+		%TODO un paragraphe sur les reverses ?
 		
 		\paragraph{Postcombustion}
 		La postcombustion \anglais{afterburner} ou réchauffe, est une technique utilisée pour augmenter la poussée d'un réacteur. Cette augmentation de poussée est obtenue par l'injection de carburant dans la tuyère, ce qui ré-enflamme les gaz à la sortie du réacteur.
