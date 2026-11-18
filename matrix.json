@@ -23,7 +23,7 @@
 	{
       "file": "seance03_Motorisation",
       "presentation": true,
-      "toRelease": false
+      "toRelease": true
     },
     {
       "file": "seance3_BaseAerodynamique",

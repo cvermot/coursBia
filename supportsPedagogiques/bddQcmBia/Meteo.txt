@@ -1,0 +1,1399 @@
+##BIA 2015##
+1 - Le nuage figurant sur la photographie ci-contre est un :
+A- cirrus
+B- nimbostratus
+C- stratus
+D- cumulonimbus
+
+2 - Une rue de nuages est une particularité météorologique que l'on rencontre :
+A- les jours où il n'y a pas de vent
+B- les jours où il y a du vent
+C- uniquement en montagne
+D- toujours parallèlement aux vallées
+
+3 - Le mistral est un vent qui souffle globalement :
+A- du nord vers le sud
+B- du sud vers le nord
+C- de l'est vers l'ouest
+D- de l'ouest vers l'est
+
+4 - La brise de mer est la plus forte :
+A- tôt le matin
+B- en milieu d'après midi
+C- en milieu de nuit
+D- en début de nuit
+
+5 - Le point de rosée est défini comme :
+A- l'emplacement de l'aéroport où les données météorologiques sont mesurées
+B- la température qui permet l'évaporation de la rosée
+C- la température à laquelle il faut refroidir un volume d'air pour qu'il y ait condensation
+D- l'heure à laquelle la rosée va commencer à se déposer
+
+6 - Un anticyclone est un phénomène météorologique où l'on rencontre généralement :
+A- du beau temps
+B- des vents pouvant atteindre voir dépasser 180 km/h
+C- des pressions très basses
+D- des nuages épais accompagnés de fortes turbulences
+
+7 - Le givre qui se dépose sur un aéronef durant un vol :
+A- ne survient que si l'aéronef est proche du sol
+B- n'est jamais dangereux, car il se dépose en couches très minces
+C- peut être un phénomène très dangereux
+D- ne survient que si l'aéronef vole à très haute altitude
+
+8 - Un avion vole dans l'hémisphère nord à basse altitude. Il se déplace d'une dépression vers un anticyclone. Le pilote constate que le vent :
+A- vient de la droite
+B- vient de la gauche
+C- augmente régulièrement
+D- vient de l'arrière
+
+9 - En atmosphère standard et en dessous de la tropopause, lorsque l'on s'élève de 1000 ft, la température de l'air :
+A- augmente de 2 degrés
+B- diminue de 2 degrés
+C- augmente de 6,5 degrés
+D- diminue de 6,5 degrés
+
+10 - Une pluie durable et continue durant plusieurs heures provient du type de nuage suivant :
+A- cirrocumulus
+B- cirrostratus
+C- altocumulus
+D- nimbostratus
+
+11 - Dans un régime dépressionnaire, on constate que le ciel de traîne :
+A- suit le front froid
+B- n'existe que l'été
+C- suit le front chaud
+D- précède le front froid
+
+12 - L'effet de fœhn est un phénomène météorologique que l'on rencontre :
+A- en bord de mer
+B- en plaine
+C- en montagne
+D- au dessus d'une forêt
+
+13 - La pression atmosphérique est générée par :
+A- les forces de Coriolis
+B- la rotation de la terre
+C- le poids de l'air qui est au-dessus
+D- la présence d'humidité dans l'air
+
+14 - Dans un régime dépressionnaire, la masse d'air chaud est associée à :
+A- un ciel de traîne
+B- des éclaircies
+C- de la pluie
+D- un ciel clair
+
+15 - La formation d'un nuage est associée à :
+A- un phénomène de condensation de la vapeur d'eau
+B- un phénomène de fusion
+C- un phénomène de surfusion
+D- un phénomène d'évaporation
+
+16 - Dans l'hémisphère nord, le phénomène météorologique représenté sur la figure ci-contre est : 
+A- un cyclone
+B- un anticyclone
+C- une tempête tropicale
+D- une zone dépressionnaire
+
+17 - Dans un cumulonimbus, on peut rencontrer des ascendances dont les valeurs maximales peuvent atteindre :
+A- Mach 1
+B- 1 à 3 m/s
+C- 150 à 200 m/s
+D- 20 à 40 m/s
+
+18 - La grêle est généralement associée à :
+A- un nimbostratus
+B- un altocumulus lenticulaire
+C- un cumulonimbus
+D- un cirrocumulus
+
+19 - La situation qui est la plus susceptible de générer du brouillard est :
+A- un air très sec et une forte pression
+B- une température supérieure au point de rosée et un vent fort
+C- une température égale ou inférieure au point de rosée
+D- une température largement supérieure au point de rosée et un vent faible
+
+20 - Un talweg désigne :
+A- une zone de plus basse pression atmosphérique que les régions environnantes
+B- une surpression devant une chaîne de montagnes
+C- une zone de ciel clair associée à l'effet de fœhn
+D- une zone où l'on trouve des entrées maritimes
+
+
+##BIA 2016##
+1 - L'appareil servant à mesurer la vitesse du vent au sol s'appelle :
+A- une girouette
+B- une rose des vents
+C- un baromètre
+D- un anémomètre
+
+2 - L'unité de pression utilisée dans le système international et en aéronautique est :
+A- le pascal
+B- le newton
+C- le joule
+D- le millimètre de mercure
+
+3 - La transformation de l'eau de l'état gazeux à l'état liquide s'appelle :
+A- la fusion
+B- la sublimation
+C- l'évaporation
+D- la condensation
+
+4 - Sur une carte météorologique, la représentation ci-dessous indique la présence : 
+A- d'une dorsale barométrique
+B- d'une dépression
+C- d'un front froid
+D- d'un front chaud
+
+5 - Un vent du 090/20 vient :
+A- de l'ouest à une vitesse de 20 kt
+B- de l'est à une vitesse de 20 kt
+C- de l'est à une vitesse de 20 km.h-1
+D- de l'ouest à une vitesse de 20 km.h-1
+
+6 - Dans l'atmosphère standard, la pression au niveau de la mer est :
+A- 1000 hPa
+B- 1013,25 hPa
+C- recalculée périodiquement par Météo France
+D- 1000 Pa par convention internationale pour faciliter les calculs
+
+7 - La surface atmosphérique se situant vers 11 000 m d'altitude est appelée :
+A- stratopause
+B- tropopause
+C- stratosphère
+D- planisphère
+
+8 - Dans les basses couches de l'atmosphère standard, le gradient de température en s'élevant en altitude est de :
+A- -2 °C par 1000 m
+B- -2 °C par 1000 ft
+C- +2 °C par 1000 m
+D- +2 °C par 1000 ft
+
+9 - Sur la carte ci-dessous, la flèche représentant la circulation du vent d'Autan est : 
+A- 1
+B- 2
+C- 3
+D- 4
+
+10 - On parle de brouillard lorsque la visibilité horizontale est inférieure à :
+A- 1 km
+B- 3 km
+C- 5 km
+D- 10 km
+
+11 - La pression atmosphérique est principalement due :
+A- au poids de la vapeur d'eau contenue dans l'air
+B- à la force du vent
+C- au poids de la masse d'air située au-dessus du lieu d'observation
+D- au rayonnement solaire
+
+12 - Un aérodrome se trouve à l'altitude de 2800 ft, l'écart de pression avec le niveau de la mer y est de :
+A- 20 hPa
+B- 50 hPa
+C- 100 hPa
+D- 200 hPa
+
+13 - L'occlusion est une zone :
+A- très nuageuse, pluvieuse avec un plafond bas
+B- toujours sans nuage
+C- fréquemment orageuse
+D- de très haute pression
+
+14 - L'orage est caractérisé par la présence de :
+A- cirrus
+B- stratus et stratocumulus
+C- nimbus et nimbostratus
+D- cumulonimbus
+
+15 - Les nuages sont classés en deux grandes catégories :
+A- les positifs et les négatifs
+B- les moutonneux et les filiformes
+C- les stratiformes et les cumuliformes
+D- les catabatiques et les adiabatiques
+
+16 - Le sens de rotation des vents dans l'hémisphère nord est :
+A- horaire dans un anticyclone
+B- anti-horaire dans un anticyclone
+C- identique à celui de l'hémisphère sud
+D- horaire dans une dépression
+
+17 - On appelle "traîne" une zone :
+A- s'étendant à l'avant d'un front froid
+B- s'étendant à l'arrière d'un front froid
+C- de fortes perturbations
+D- de grand calme
+
+18 - En montagne, un parapentiste rencontre les meilleures conditions pour du vol de pente :
+A- la nuit
+B- en début de matinée
+C- dans l'après-midi
+D- en fin de soirée
+
+19 - Quand le bulletin météorologique prévoit que le point de rosée et la température ambiante seront bientôt identiques, il faut s'attendre à :
+A- de la pluie
+B- de la neige
+C- du brouillard
+D- de la vapeur d'eau
+
+20 - Un pilote de vol libre ou de planeur souhaitant voler longtemps privilégie le vol sous :
+A- les stratus
+B- les cirrus
+C- les cumulus
+D- les alto-stratus
+
+##BIA 2017##
+1 - Les deux principaux composants de l'air sec sont :
+A- l'azote et l'oxygène
+B- l'oxygène et le gaz carbonique
+C- l'azote et l'hélium
+D- l'oxygène et l'hydrogène
+
+2 - Dans l'atmosphère standard, la température et la pression de 0 à 11 km d'altitude évoluent de la manière suivante :
+A- la température diminue, la pression augmente
+B- la température diminue et la pression reste constante
+C- la température et la pression sont constantes
+D- la température et la pression diminuent
+
+3 - Dans l'atmosphère standard, la température au niveau de la mer est de :
+A- 0 °C
+B- 10 °C
+C- 15 °C
+D- 20 °C
+
+4 - L'instrument utilisé pour mesurer la vitesse du vent en surface est :
+A- une girouette placée sur un pylône
+B- un anémomètre placé sur un pylône
+C- un ballon sonde
+D- un baromètre placé sur un pylône
+
+5 - Sur une carte de pression une ligne qui joint les points d'égale pression est nommée :
+A- une isotherme
+B- une isocline
+C- une isohypse
+D- une isobare
+
+6 - « marais barométrique » désigne :
+A- une zone où la pression varie peu
+B- une zone ou un axe de basses pressions
+C- une zone ou un axe de hautes pressions
+D- une zone où le gradient de pression est très élevé
+
+7 - Sur le schéma d'une perturbation présenté ci-dessous, le numéro qui correspond au secteur chaud est : 
+A- 1
+B- 2
+C- 3
+D- 4
+
+8 - Au niveau d'un front chaud :
+A- l'air chaud repousse l'air froid devant lui et passe au-dessus
+B- l'air froid repousse l'air chaud devant lui et passe au-dessus
+C- l'air froid repousse l'air chaud devant lui et passe au-dessous
+D- l'air chaud repousse l'air froid devant lui et passe au-dessous
+
+9 - Si un observateur se place face au vent dans l'hémisphère nord, la dépression et l'anticyclone se situent de la manière suivante :
+A- anticyclone sur sa droite, dépression sur sa gauche
+B- anticyclone devant lui, dépression derrière lui
+C- anticyclone sur sa gauche, dépression sur sa droite
+D- anticyclone derrière lui, dépression devant lui
+
+10 - Le phénomène rentrant le plus souvent en jeu dans la formation des nuages est :
+A- le refroidissement d'une masse d'air humide
+B- l'augmentation de la pression atmosphérique
+C- le réchauffement d'une masse d'air saturée
+D- l'assèchement d'une masse d'air humide
+
+11 - Le préfixe des nuages dont la base est la plus élevée est :
+A- alto
+B- strato
+C- cirro
+D- cumulo
+
+12 - Le nuage figurant sur la photo ci-dessous est un :
+A- cumulonimbus
+B- cumulus
+C- stratus
+D- altocumulus
+
+13 - Le phénomène météorologique observé sur la photo ci-dessous est : 
+A- du brouillard
+B- un orage
+C- un front chaud
+D- la convection
+
+14 - La grêle est un type de précipitation qui se forme dans :
+A- les stratus
+B- les nimbostratus
+C- les cumulonimbus
+D- les stratocumulus
+
+15 - Les courants de vent puissants que l'on rencontre à très haute altitude sont nommés :
+A- jet-stream
+B- jet-lag
+C- tornade
+D- rafale
+
+16 - La brise de pente (montante) se forme en région :
+A- côtière et de jour
+B- côtière et de nuit
+C- montagneuse et de nuit
+D- montagneuse et de jour
+
+17 - Sur la carte ci-dessous, la circulation du vent dénommé Mistral correspond à la flèche :
+A- 1
+B- 2
+C- 3
+D- 4
+
+18 - En plaine, dans les basses couches de l'atmosphère, les turbulences sont générées par :
+A- l'onde
+B- les trous d'air
+C- la convection
+D- le brouillard
+
+19 - Le principal danger induit par le brouillard sur le vol est :
+A- la formation de givrage possible en toutes saisons
+B- la turbulence associée
+C- la diminution de la visibilité
+D- le risque de foudroiement
+
+20 - Parmi les éléments suivants, une conséquence possible du givrage est :
+A- gain d'altitude
+B- altération des profils aérodynamiques
+C- amélioration des performances de l'aéronef
+D- diminution de la traînée
+
+##BIA 2018##
+1 - L'atmosphère est composée majoritairement :
+A- de dioxyde de carbone (CO2)
+B- de dioxygène (O2)
+C- de diazote (N2)
+D- d'argon (Ar)
+
+2 - La couche de l'atmosphère où se concentre la très grande majorité des phénomènes météorologiques est la :
+A- stratosphère
+B- troposphère
+C- mésosphère
+D- thermosphère
+
+3 - A la latitude de Paris, l'altitude et la température moyennes de la tropopause (atmosphère standard) sont :
+A- 7 km d'altitude et -45 °C
+B- 11 km d'altitude et -56 °C.
+C- 17 km d'altitude et -45 °C.
+D- 11 km d'altitude et -80 °C.
+
+4 - Le moyen le plus courant de mesure de la vitesse et de la direction du vent en altitude est :
+A- la girouette
+B- la manche à air
+C- l'anémomètre
+D- le ballon sonde
+
+5 - L'unité utilisée pour exprimer la vitesse du vent dans les messages et cartes météorologiques destinés à l'aéronautique (dossiers de vol) est :
+A- le nœud
+B- le kilomètre par heure
+C- le mètre par seconde
+D- le pied par minute
+
+6 - Le phénomène de transformation de l'eau de l'état liquide à l'état gazeux est la :
+A- sublimation
+B- condensation
+C- vaporisation
+D- fusion
+
+7 - La Terre reçoit l'énergie solaire émise par :
+A- rayonnement
+B- conduction
+C- convection
+D- advection
+
+8 - Le phénomène de convection est le plus intense :
+A- l'hiver, pendant l'après-midi
+B- l'hiver, pendant la nuit et tôt le matin
+C- l'été, pendant l'après-midi
+D- l'été, pendant la nuit et tôt le matin
+
+9 - Une vaste région où la pression est inférieure à 1015 hPa, et dont la pression minimale est située au centre s'appelle :
+A- une dorsale
+B- une dépression
+C- un thalweg
+D- un anticyclone
+
+10 - Sur la carte des champs de pression ci-contre, la pression atmosphérique la plus élevée règne sur la ligne isobare : 
+A- 1
+B- 2
+C- 3
+D- 4
+
+11 - Le mouvement relatif de deux masses d'air autour d'un front froid est :
+A- l'air froid contourne l'air chaud par les côtés
+B- l'air chaud repousse et soulève l'air froid
+C- l'air froid repousse et soulève l'air chaud
+D- l'air chaud repousse l'air froid et passe par-dessus
+
+12 - Les cirrus, les cirrostratus, les altostratus et les stratus sont tous :
+A- des nuages que l'on trouve dans l'étage supérieur de l'atmosphère
+B- constitués exclusivement de glace
+C- des nuages cumuliformes
+D- des nuages stables
+
+13 - Sur le schéma ci-contre représentant une perturbation, l'occlusion est repérée par le chiffre : 
+A- 1
+B- 2
+C- 3
+D- 4
+
+14 - Sur la photo ci-contre, prise à Paris-Orly au lever du jour après une nuit fraîche, sans nuages et sans vent, on observe un brouillard : 
+A- d'advection
+B- de rayonnement
+C- d'évaporation
+D- de convection
+
+15 - L'ordre de grandeur de l'extension verticale des cumulonimbus est :
+A- 100 mètres
+B- 1 000 mètres
+C- 10 000 mètres
+D- 100 kilomètres
+
+16 - La circulation du vent autour des centres de pression s'opère de souffle des :
+A- hautes pressions vers les basses pressions (perpendiculaire aux isobares)
+B- basses pressions vers les hautes pressions (perpendiculaire aux isobares)
+C- basses pressions vers les hautes pressions, dévié vers la gauche dans l'hémisphère nord par la force de Coriolis (tangent aux isobares)
+D- hautes pressions vers les basses pressions, dévié vers la droite dans l'hémisphère nord par la force de Coriolis (tangent aux isobares)
+
+17 - La Tramontane est :
+A- un vent qui souffle du secteur nord-ouest, entre les Pyrénées et le Massif Central
+B- l'assèchement de la masse d'air sous le vent d'un massif montagneux
+C- un vent qui souffle du nord vers le sud dans la vallée du Rhône
+D- une onde générée par la déviation d'un vent fort soufflant perpendiculairement à une chaîne montagneuse
+
+18 - La brise de mer :
+A- s'établit parallèlement aux côtes
+B- s'établit en milieu de matinée et cesse en fin d'après-midi
+C- a une intensité qui ne peut pas dépasser les 5 kt
+D- pénètre sur le continent sur une étendue de quelques dizaines de mètres à quelques centaines de mètres
+
+19 - Le type de nuage qui peut indiquer la présence de turbulences sévères est :
+A- l'altocumulus lenticularis (lenticulaires)
+B- le stratus
+C- le cirrus
+D- l'altostratus
+
+20 - Pour un aéronef en vol, le seul phénomène pouvant être la cause de tous ces dangers (réduction de visibilité, cisaillement de vent, dégâts à la structure, altération du profil aérodynamique, givrage) est :
+A- l'onde
+B- la turbulence
+C- les précipitations
+D- le brouillard
+
+##BIA 2019##
+
+J'arrive à l'aérodrome à 08h00 (heure locale) ce matin de novembre. Je constate que l'herbe est couverte de gouttelettes d'eau alors que les informations météo indiquent qu'aucune pluie n'a été observée pendant la nuit.
+
+Les questions 1, 2 et 3 sont associées à cet encadré.
+1 - Le phénomène observé est :
+A- la gelée blanche
+B- la rosée
+C- le brouillard
+D- la bruine
+
+2 - Il est possible de conclure que, au cours de cette nuit, au voisinage du sol :
+A- le taux d'humidité relative a atteint 100%
+B- la température est passée en dessous de 0 °C
+C- la pression a baissé en dessous de 1013 hPa
+D- le taux d’humidité relative a atteint 75%
+
+3 - Cette nuit, de la vapeur d'eau a subi un changement d'état qui se nomme :
+A- cristallisation
+B- évaporation
+C- condensation
+D- sublimation
+
+Herbe mouillée
+Un ballon sonde réalisé par des élèves dans un atelier scientifique mesure différents paramètres atmosphériques au cours de son ascension. A un instant donné on a relevé les paramètres suivants (photo de gauche).
+
+Les questions 4, 5, 6 et 7 sont associées à cet encadré.
+4 - D’une manière générale, lorsque le ballon sonde poursuit son ascension dans la troposphère :
+A- la pression et la température vont diminuer et la densité de l’air va augmenter
+B- la pression, la température et la densité de l’air vont diminuer
+C- la pression, la température et la densité de l’air vont augmenter
+D- la pression va augmenter alors que la température et la densité de l’air vont diminuer
+
+5 - A nos latitudes, le ballon sonde qui a pris la photo se trouve :
+A- dans la stratosphère
+B- dans la troposphère
+C- dans la mésosphère
+D- au niveau de la tropopause
+
+6 - Dans les conditions de l’atmosphère standard, 1000 m au-dessus du ballon (à 5000 m), il faut s’attendre à :
+A- une température de l’ordre de -7 °C
+B- une température de l’ordre de +6 °C
+C- une température de l’ordre de 0 °C
+D- une température de l’ordre de -20°C
+
+7 - A 4000 m, le capteur du ballon sonde relève une température de -1°C. Nous en concluons que l’atmosphère à 4000 m est :
+A- plus froide que l’atmosphère standard
+B- conforme à l’atmosphère standard
+C- plus chaude que l’atmosphère standard
+D- plus riche en dioxygène qu’au niveau du sol
+
+« Ces cartes sont fournies par Météofrance. Le TEMSI est une carte du TEMps SIgnificatif prévu à heure fixe, sur laquelle sont portés les phénomènes intéressant l’aéronautique et les masses nuageuses. Les bases/sommets des masses nuageuses sont donnés par rapport au niveau moyen de la mer (altitude) sur la carte TEMSI France et par rapport à la surface isobarique 1013 hPa (altitude-pression) sur la TEMSI EUROC ».
+
+Symboles du temps significatifCarte
+Carte à considérer dans son allure générale et ne considérant pas la valeur des indications qui sont illisibles. Seules les indications nécessaires aux questions 1.8, 1.9 et 1.10 sont lisibles.
+8 - En zoomant cette partie de la carte, on identifie la présence d'un : 
+A- front chaud
+B- front occlus
+C- front froid
+D- front stationnaire
+
+9 - Un front froid :
+A- avance plus vite qu’un front chaud
+B- avance à la même vitesse qu’un front chaud
+C- avance moins vite qu’un front chaud
+D- ne se déplace pas
+
+10 - En zoomant cette partie de la carte, la flèche représente : 
+A- le sens de déplacement d’une perturbation
+B- le sens d’un jet stream
+C- la position d’un front froid
+D- la position d’un front chaud
+
+11 - L’avion commercial qui effectue le trajet de X vers Y au FL 380 devra prévoir :
+A- plus de carburant que pour le trajet de Y vers X
+B- moins de carburant que pour le trajet de Y vers X
+C- la même quantité de carburant
+D- n’a pas à calculer sa quantité de carburant
+
+12 - Sur une carte TEMSI, parmi les 4 symboles ci-dessous, lequel n’est pas l’annonce d’un phénomène dangereux ?
+A- Symbole
+B- Symbole
+C- Symbole
+D- Symbole
+
+Carte
+13 - A l’aide de la carte ci-dessus, il est possible d’affirmer qu’il y a sur la Normandie :
+A- un anticyclone
+B- un thalweg
+C- un marais barométrique
+D- une dépression
+
+Carte
+Les questions 14, 15, 16, 17 et 18 sont associées à cet encadré.
+14 - Les courbes fermées représentent : 
+A- les lignes d’égale température
+B- les lignes d’égale pression
+C- les lignes d’égale humidité
+D- les lignes d’égal ensoleillement
+
+15 - L’anticyclone est situé dans la zone :
+A- 1
+B- 3
+C- 2
+D- 4
+
+16 - Sur la carte des isobares, la dépression est caractérisée par : 
+A- des isobares fermées dont les valeurs de pression augmentent du centre vers l’extérieur
+B- des isobares espacées et mal organisées
+C- un axe de hautes pressions
+D- des isobares fermées dont les valeurs de pression augmentent vers l’intérieur
+
+17 - Lorsque les isobares sont très serrées : 
+A- les vents sont de faible intensité
+B- les vents sont de forte intensité
+C- les vents sont perpendiculaires aux isobares
+D- l’intensité des vents est indépendante de la position relative des isobares
+
+18 - Le pilote qui va de 1 vers 2 aura : 
+A- du vent de face
+B- du vent de dos
+C- une dérive vers la gauche
+D- une dérive vers la droite
+
+Etude d’un message ATIS*Avant de mettre en route son aéronef, le pilote écoute l’ATIS (message enregistré par les contrôleurs aériens à une heure donnée). Ce message est émis par la tour de contrôle des aérodromes. Celui-ci lui communique un certain nombre de paramètres nécessaires à la sécurité du vol comme la ou les numéros des pistes en service, le vent, la nébulosité, la visibilité, la température, l’état des pistes, la pression atmosphèrique,...
+
+* ATIS : Automatic Terminal Information Service
+
+Retranscription d’un extrait d’un message ATIS :
+
+« Bonjour ici MONTPELLIER information Fox enregistrée à 09h15 UTC, (…) pistes en service 12 gauche, 12 droite (…) vent 110 degrés, 10 nœuds, visibilité supérieure à 10 km, (…) température 12, point de rosée 10, QNH 1024, fox écho 1023. »
+
+19 - Lorsqu’il va décoller, le pilote peut s’attendre à : 
+A- du vent de face
+B- du vent de dos
+C- du vent de travers droit
+D- une absence de vent
+
+20 - La température et le point de rosée fournis par l’ATIS permettent au pilote d’en conclure que : 
+A- l’air est sec car la température et le point de rosée sont très proches
+B- l’air est proche de la saturation car les deux températures sont très proches
+C- l’air ne sera pas saturé en-dessous de 5000 pieds
+D- le message ATIS ne me donne pas d’information sur l’humidité ambiante
+
+##BIA 2020##
+Herbe mouillée
+J'arrive à l'aérodrome à 08h00 (heure locale) ce matin de novembre. Je constate que l'herbe est couverte de gouttelettes d'eau alors que les informations météo indiquent qu'aucune pluie n'a été observée pendant la nuit.
+
+Les questions 1, 2 et 3 sont associées à cet encadré.
+1 - Le phénomène observé est :
+A- la gelée blanche
+B- la rosée
+C- le brouillard
+D- la bruine
+
+2 - Il est possible de conclure que, au cours de cette nuit, au voisinage du sol :
+A- le taux d'humidité relative a atteint 100%
+B- la température est passée en dessous de 0°C
+C- la pression a baissé en dessous de 1013 hPa
+D- le taux d’humidité relative a atteint 75%
+
+3 - Cette nuit, de la vapeur d'eau a subi un changement d'état qui se nomme :
+A- cristallisation
+B- évaporation
+C- condensation
+D- sublimation
+
+4 - Les instruments de mesure du vent en surface sont placés sur un pylône à 10 m :
+A- pour échapper aux dégradations animales
+B- pour éviter les effets de la couche de frottements de surface
+C- pour être représentatifs à l’échelle planétaire
+D- pour donner une information à un moment clef de l’atterrissage
+
+5 - Sur une carte de pression, une ligne qui joint les points d’égale pression est nommée :
+A- une isotherme
+B- une isocline
+C- une isophyse
+D- une isobare
+
+6 - L’expression « marais barométrique » désigne :
+A- une zone où la pression varie peu
+B- une zone ou un axe de basses pressions
+C- une zone ou un axe de hautes pressions
+D- une zone où le gradient de pression est très élevé
+
+7 - Sur le schéma d’une perturbation présenté ci-dessous, le numéro qui correspond au secteur chaud est : 
+A- 1
+B- 2
+C- 3
+D- 4
+
+8 - Au niveau d’un front chaud :
+A- l’air chaud repousse l’air froid devant lui et passe au-dessus
+B- l’air froid repousse l’air chaud devant lui et passe au-dessus
+C- l’air froid repousse l’air chaud devant lui et passe au-dessous
+D- l’air chaud repousse l’air froid devant lui et passe au-dessous
+
+9 - Si un observateur se place face au vent dans l’hémisphère nord, la dépression et l’anticyclone se situent de la manière suivante :
+A- anticyclone sur sa droite, dépression sur sa gauche
+B- anticyclone face à lui, dépression derrière lui
+C- anticyclone sur sa gauche, dépression sur sa droite
+D- anticyclone derrière lui, dépression face à lui
+
+10 - Le phénomène rentrant le plus souvent en jeu dans la formation des nuages est :
+A- le refroidissement d’une masse d’air humide par soulèvement
+B- l’augmentation de la pression atmosphérique
+C- le réchauffement d’une masse d’air saturée
+D- l’assèchement d’une masse d’air humide
+
+11 - Le préfixe des nuages dont la base est la plus élevée est :
+A- alto
+B- strato
+C- cirro
+D- cumulo
+
+12 - Le nuage figurant sur la photo ci-dessous est un : 
+A- cumulonimbus
+B- cumulus
+C- stratus
+D- altocumulus
+
+13 - Le phénomène météorologique observé sur la photo ci-dessous est : 
+A- du brouillard
+B- un orage
+C- un front chaud
+D- la convection
+
+14 - La grêle est un type de précipitation qui se forme dans :
+A- les stratus
+B- les altostratus
+C- les cumulonimbus
+D- les stratocumulus
+
+15 - Les courants de vent puissants que l’on rencontre à très haute altitude sont nommés :
+A- jet-stream
+B- jet-lag
+C- tornado
+D- rafale
+
+16 - La brise de pente (montante) se forme en région :
+A- côtière et de jour
+B- côtière et de nuit
+C- montagneuse et de nuit
+D- montagneuse et de jour
+
+17 - Sur la carte ci-dessous, la circulation du vent dénommé Mistral correspond à la flèche :
+A- 1
+B- 2
+C- 3
+D- 4
+
+18 - En plaine, dans les basses couches de l’atmosphère, des turbulences peuvent être générées par :
+A- le rayonnement
+B- les trous d'air
+C- la convection
+D- le brouillard
+
+19 - Le principal danger induit par le brouillard sur le vol est :
+A- la formation de givrage possible en toutes saisons
+B- la turbulence associée
+C- la diminution de la visibilité
+D- le risque de foudroiement
+
+20 - Parmi les éléments suivants, une conséquence possible du givrage est :
+A- gain d’altitude
+B- altération des profils aérodynamiques
+C- amélioration des performances de l’aéronef
+D- diminution de la traînée
+
+##BIA 2021##
+« Carte des fronts » Météo-France issue d’Aeroweb
+
+Carte des fronts
+Les questions 1.1, 1.2, 1.3 et 1.4 sont associées à cet encadré
+1 - La zone 1 sur la carte en illustration correspond à :
+A- un anticyclone
+B- un col
+C- un profond thalweg
+D- une dépression
+
+2 - Dans le secteur de la zone 2 sur la carte en illustration on peut dire que :
+A- le gradient horizontal de pression est faible
+B- les vents sont du Nord-Est
+C- les vents sont du Sud-Ouest modérés à forts
+D- les nuages sont absents
+
+3 - Le secteur de la zone 3 sur la carte en illustration correspond à :
+A- une traîne de Sud-Ouest
+B- les vents viennent du Nord-Est
+C- un secteur chaud
+D- un secteur occlus
+
+4 - On peut dire que la zone 4 est :
+A- très certainement nuageuse
+B- une zone de vent fort
+C- une dorsale
+D- l’anticyclone des Açores
+
+5 - Sur une carte de pression, une ligne qui joint les points d’égale pression est nommée :
+A- une isotherme
+B- une isocline
+C- une isophyse
+D- une isobare
+
+6 - Dans un message aéronautique, le groupe de température indique +12°C sous abri, et +4°C de point de rosée. On peut dire que :
+A- la masse d’air est à 100% d’humidité
+B- la température maximale sera de +12 °C et la minimale de +4 °C
+C- la masse d’air serait saturée pour une température sous-abri de +4 °C
+D- la masse d’air serait saturée pour une température sous-abri de +8 °C
+
+7 - Une information sur une carte stipule l’ISO 0°C au FL80. Vous devez voler au FL60. En considérant le gradient standard, quelle est la bonne affirmation :
+A- le vol se fera en conditions à +4 °C
+B- le vol se fera en conditions à -4 °C
+C- le vol se fera en conditions à -2 °C
+D- le vol se fera en conditions à +2 °C
+
+8 - Concernant la pression atmosphérique :
+A- elle est à l’origine du vent dans l’Atmosphère Standard Internationale
+B- elle varie plus rapidement en altitude que proche de la surface
+C- la valeur est de 1013 hPa partout sur la planète
+D- elle diminue rapidement avec l’altitude dans les basses couches de l’atmosphère
+
+9 - Un altimètre :
+A- affiche la vitesse d’un aéronef
+B- affiche la vitesse ascensionnelle d’un aéronef
+C- est un baromètre qui transforme la pression en altitude
+D- indique la hauteur par rapport à Paris
+
+10 - Pour un anticyclone dans l’hémisphère Sud, les vents s’organisent autour de lui de telle sorte :
+A- qu’ils tournent en sens inverse des aiguilles d’une montre
+B- qu’ils soufflent de façon concentrique vers le centre de l’anticyclone
+C- qu’ils tournent dans le sens des aiguilles d’une montre
+D- qu’ils se dirigent vers le pôle Sud
+
+11 - Une traine :
+A- est la partie sous le vent d’un cumulonimbus
+B- correspond à une précipitation qui n’atteint pas le sol
+C- est le nom donné aux perturbations qui avancent lentement
+D- est une zone de bonne visibilité entrecoupée d’averses à l’arrière d’un front froid
+
+12 - Le nuage figurant sur la photo ci-dessous est un : 
+A- cumulonimbus
+B- cumulus
+C- stratus
+D- altocumulus
+
+13 - Lorsque des cumulus sont annoncés, cela indique au pilote que :
+A- des orages sont systématiquement à prévoir
+B- des précipitations continues sont probables
+C- la masse d’air est instable
+D- la surface frontale est proche
+
+14 - Des nuages lenticulaires dans le ciel sont le signe :
+A- d’une forte instabilité
+B- de brouillard la nuit suivante
+C- d’une masse d’air assez sèche
+D- d’un vent fort perpendiculaire à un relief
+
+15 - Parmi ces listes de nuages, quelle est celle qui ne contient que des nuages instables :
+A- cumulus, cirrostratus, stratocumulus
+B- altostratus, cirrostratus, cumulonimbus
+C- stratus, altocumulus, cirrus
+D- altocumulus, cumulonimbus, cirrocumulus
+
+16 - La formation la plus commune du brouillard est due :
+A- au réchauffement nocturne de la masse d’air et sa condensation
+B- au rayonnement nocturne du sol et à la condensation de la vapeur d’eau
+C- à la marée barométrique qui détend l’atmosphère
+D- à la convection de fin de nuit qui déclenche une condensation adiabatique
+
+17 - Lorsque le vent est fort au sol :
+A- il y a peu de turbulences dans les basses couches de l’atmosphère
+B- le ciel va systématiquement se dégager
+C- il est nul en altitude
+D- des turbulences dues aux imperfections du sol et aux obstacles se développent en basses couches
+
+18 - Des mouvements aléatoires de petite échelle qui perturbent un flux d’air bien établi sont appelés :
+A- des cyclones
+B- du cisaillement et de la turbulence
+C- des ascendances
+D- des mouvements laminaires
+
+19 - Dans l’atmosphère, parmi les propositions ci-dessous, quelle est la plus faible température à laquelle on peut encore trouver de l’eau à l’état liquide :
+A- -10 °C
+B- 0 °C
+C- 10 °C
+D- 100 °C
+
+20 - La cellule d’un avion peut givrer :
+A- en vol mais pas au sol
+B- dans les nuages uniquement
+C- dans les nuages, et hors nuages
+D- dans un nuage composé exclusivement de cristaux de glace
+
+21 - Les courants de vent puissants que l’on rencontre à très haute altitude sont nommés :
+A- jet-stream
+B- jet-lag
+C- tornade
+D- rafale
+
+22 - En plaine, dans les basses couches de l’atmosphère, des turbulences peuvent être générées par :
+A- le rayonnement
+B- les trous d’air
+C- la convection
+D- le brouillard
+
+##BIA 2022##
+1 - Un front occlus est représenté sur les cartes météorologiques par :
+A- une ligne avec des demi-cercles accolés à elle
+B- une ligne avec des triangles accolés à elle
+C- une ligne avec une alternance de demi-cercles et de triangles
+D- une ligne avec des dessins de nuages accolés
+
+2 - Les nuages plus particulièrement recherchés pour pratiquer le vol à voile sont :
+A- les cumulonimbus
+B- les altos cirrus
+C- les cumulus
+D- les nimbostratus
+
+3 - La visibilité en cas de brume :
+A- est comprise entre 1 kilomètre et 30 secondes de vol
+B- est inférieur à 1 kilomètre
+C- est comprise entre 1 et 5 kilomètres
+D- peut aller de 0 à 5 kilomètres
+
+Le 14 Octobre 2019, la France est traversée d’ouest en est par une perturbation. L’un des fronts visibles sur la carte TEMSI ci-contre génère de fortes précipitations et des orages. Les questions suivantes se rapportent à ce front.
+
+Carte TEMSI
+Carte TEMSI
+
+Carte des précipitations
+Carte des précipitations
+
+Carte des impacts de foudre
+Carte des impacts de foudre
+
+Les questions 1.4, 1.5, 1.6, 1.7 et 1.8 sont associées à cet encadré
+4 - Sur la carte TEMSI, on peut lire une validité au 14/10/2019 15 UTC. Sachant que le 14 octobre 2019, la France était en « heure d’été », à quelle heure légale correspond cette prévision ?
+A- 13h
+B- 14h
+C- 16h
+D- 17h
+
+5 - Les fronts visibles sur la carte TEMSI sont des fronts :
+A- occlus
+B- froids
+C- chauds
+D- tièdes
+
+6 - Compte tenu des observations des précipitations et des impacts de foudre, on peut conclure que l’atmosphère au niveau du front étudié est :
+A- chaude
+B- stable
+C- instable
+D- froide
+
+7 - Au niveau du front étudié, on peut dire que :
+A- de l’air chaud passe au-dessus de l’air froid qui le précède
+B- de l’air froid passe au-dessus de l’air chaud qui le précède
+C- de l’air chaud passe en-dessous de l’air froid qui le précède
+D- de l’air froid passe en-dessous de l’air chaud qui le précède
+
+8 - Les orages observés se produisent :
+A- dans la zone chaude
+B- dans la traine, dite active
+C- dans la traine, dite inactive
+D- dans l’occlusion
+
+9 - La tropopause :
+A- se trouve généralement à une altitude plus élevée aux pôles qu’à l’équateur
+B- se trouve généralement à une altitude plus élevée à l’équateur qu’aux pôles
+C- est toujours située à la limite supérieure des nuages
+D- est toujours située à une altitude de 12000 mètres
+
+10 - En atmosphère standard, le gradient de température en s’élevant en altitude dans les basses couches est de :
+A- +2 °C par 1000 pieds
+B- -2 °C par 1000 pieds
+C- -2 °C par 1000 mètres
+D- +2 °C par 1000 mètres
+
+11 - Dans le dossier météorologique du pilote, on trouve un certain nombre de messages. Parmi eux le METAR est un message :
+A- d’observation du temps en un lieu donné
+B- de prévision du temps en un lieu donné
+C- de prévision du temps sous forme d’une carte
+D- d’observation du temps sous forme de carte
+
+12 - Le Mistral est un vent :
+A- du Sud sur Marseille
+B- du Sud-Ouest qui souffle sur le Languedoc
+C- du Nord-Ouest qui souffle sur le Languedoc
+D- du Nord qui souffle dans la vallée du Rhône
+
+13 - La brise de vallée descendante s’établit lorsque les versants montagneux :
+A- le jour, se réchauffent moins vite que les fonds des vallées
+B- le jour, se réchauffent plus vite que les fonds des vallées
+C- la nuit, se refroidissent plus vite que les fonds des vallées
+D- la nuit, se refroidissent moins vite que les fonds des vallées
+
+14 - Lorsque de la pluie surfondue touche le sol froid, il se forme :
+A- de la grêle
+B- du brouillard
+C- de la neige
+D- du verglas
+
+15 - Le vent dans l’hémisphère nord :
+A- vient de la gauche quand on se dirige de la dépression vers l’anticyclone
+B- vient de la droite quand on se dirige de l’anticyclone vers la dépression
+C- est plus fort quand les isobares sont rapprochés
+D- est moins fort lorsqu’il pleut
+
+16 - En plaine, les vélivoles profitent d'un phénomène météorologique pour gagner de l'altitude. Il s'agit des :
+A- brises de vallée
+B- ascendances
+C- des turbulences
+D- des cisaillements des couches d'air
+
+17 - En atmosphère standard, à 1000 ft, la température sera d’environ :
+A- 8,5 °C
+B- 13 °C
+C- 0 °C
+D- -3 °C
+
+18 - L’atmosphère est principalement composée :
+A- de dioxygène
+B- de diazote
+C- de gaz carbonique
+D- de vapeur d’eau
+
+19 - En atmosphère standard, la masse volumique de l’air est de :
+A- 1225 kg/m3
+B- 1,225 g/m3
+C- 1,225 kg/m3
+D- 122,5 g/m3
+
+20 - L’épaisseur de l’atmosphère (limite de Karman) est de :
+A- 100 km
+B- 10 000 km
+C- 100 000 km
+D- 30 km
+
+21 - Lorsque le vent est fort au sol :
+A- il y a peu de turbulences dans les basses couches de l’atmosphère
+B- le ciel va systématiquement se dégager
+C- il est nul en altitude
+D- des turbulences dues aux imperfections du sol et aux obstacles se développent en basses couches
+
+22 - Des mouvements aléatoires de petite échelle qui perturbent un flux d’air bien établi sont appelés :
+A- des cyclones
+B- du cisaillement et de la turbulence
+C- des ascendances
+D- des mouvements laminaires
+
+Météorologie et aérologie
+##BIA 2023##
+1 - Sur une carte de pressions telle que ci-dessous, quelle est l’affirmation exacte : 
+A- les isobares donnent une indication sur la force et la direction du vent en altitude
+B- les isobares donnent une indication sur la force et la direction du vent en basse couche (proche du sol et loin de tout relief)
+C- les isobares donnent une indication sur la force et la direction des courants jets
+D- les isohypses donnent une indication sur la force et la direction du vent au sol
+
+2 - Les cumulonimbus sont des nuages :
+A- stables et inoffensifs
+B- instables et dangereux qui peuvent provoquer des dégâts considérables à un aéronef
+C- qui sont la conséquence d’un vent fort en altitude
+D- en forme de cheveux d’anges, très haut dans le ciel
+
+3 - Concernant les précipitations relatives aux nuages, trouvez l’affirmation exacte :
+A- les cumulonimbus et les nuages convectifs produisent de la bruine
+B- les nimbostratus produisent des averses et de la grêle
+C- les stratus, altostratus et cirrostratus produisent de la neige
+D- les nimbostratus produisent plutôt une pluie fine ou de la neige et les cumulonimbus des averses et de la grêle
+
+4 - La brise de mer est la plus forte :
+A- tôt le matin
+B- en milieu d’après-midi
+C- en début de nuit
+D- en milieu de nuit
+
+5 - Le point de rosée est défini comme :
+A- l’emplacement de l’aéroport où les données météorologiques sont mesurées
+B- la température qui permet l’évaporation de la rosée
+C- la température à partir de laquelle la masse d’air considérée arrive à saturation (à pression constante)
+D- l’heure à laquelle la rosée va commencer à se déposer
+
+6 - Lors du passage d'une perturbation, depuis le sol, un observateur verra dans l'ordre :
+A- Air froid antérieur - Front chaud - Secteur chaud - Front froid - Traine
+B- Front chaud - Secteur chaud - Front froid - Traine - Air froid antérieur
+C- Secteur chaud - Front froid - Traine - Air froid antérieur - Front chaud
+D- Traine - Air froid antérieur - Front chaud - Secteur chaud - Front froid
+
+7 - La tranche d'atmosphère entre la troposphère et la stratosphère est appelée :
+A- stratopause
+B- tropopause
+C- stratosphère
+D- planisphère
+
+8 - Quelle est la température dans l'atmosphère standard à 10 000 ft ?
+A- 10 °C
+B- 0 °C
+C- -5 °C
+D- -17 °C
+
+9 - Le Mistral souffle :
+A- de l’est vers l’ouest
+B- de l’ouest vers l’est
+C- du sud vers le nord
+D- du nord vers le sud
+
+10 - On parle de brouillard lorsque la visibilité horizontale est inférieure à :
+A- 1 km
+B- 3 km
+C- 5 km
+D- 10 km
+
+11 - Quelle est la composition moyenne de l’atmosphère en volume :
+A- 78 % d’oxygène, 21 % d’oxyde de carbone et 1 % d’autres éléments
+B- 78 % d’oxyde de carbone, 21 % d’oxygène et 1 % d’autres éléments
+C- 78 % d’oxygène, 21 % d’azote et 1 % d’autres éléments
+D- 78 % d’azote, 21 % d’oxygène et 1 % d’autres éléments
+
+12 - Le nuage figurant sur la photo ci-dessous est un : 
+A- cumulonimbus
+B- cumulus
+C- stratus
+D- altocumulus
+
+13 - Le phénomène météorologique observé sur la photo ci-dessous est : 
+A- du brouillard
+B- un orage
+C- un front chaud
+D- la convection
+
+14 - Parmi les différentes couches de l'atmosphère, les phénomènes météorologiques (nuages, précicipations) ont lieu dans :
+A- la troposphère
+B- la stratosphère
+C- la mésosphère
+D- la thermosphère
+
+15 - Les courants de vent puissants que l’on rencontre à très haute altitude sont nommés :
+A- jet-stream
+B- jet-lag
+C- tornade
+D- rafale
+
+16 - Quelle est la pression atmosphérique standard au niveau de la mer :
+A- 101 325 hPa
+B- 101 325 Pa
+C- 1013,25 Pa
+D- 1013,25 Bar
+
+17 - La Tramontane est :
+A- un vent qui souffle du secteur nord-ouest, entre les Pyrénées et le Massif central
+B- ’assèchement de la masse d’air sous le vent d’un massif montagneux
+C- un vent qui souffle du nord vers le sud dans la vallée du Rhône
+D- une onde générée par la déviation d’un vent fort soufflant perpendiculairement à une chaîne montagneuse
+
+18 - La brise de vallée descendante s’établit :
+A- en milieu de matinée
+B- en début de soirée
+C- lorsqu’un vent dominant souffle perpendiculairement au relief
+D- lorsqu’une inversion de température est présente dans la masse d’air
+
+19 - Quel est le nuage qui a « une tête d’enclume » :
+A- l’altocumulus
+B- le stratonimbus
+C- le cumulonimbus
+D- le cirus
+
+20 - Pour un aéronef en vol, le seul nuage pouvant être la cause de tous ces dangers (réduction de visibilité, cisaillement de vent, dégâts à la structure, altération du profil aérodynamique, givrage, vents ascendants très forts, grêle) est :
+A- le nimbostratus
+B- le stratus
+C- le cumulonimbus
+D- le cirrocumulus
+
+##BIA 2024##
+1 - Une information sur une carte stipule l'ISO 0°C au FL80. Vous devez voler au FL60. En considérant le gradient standard, quelle est la bonne affirmation ?
+A- Le vol se fera en conditions à +4 °C
+B- Le vol se fera en conditions à -4 °C
+C- Le vol se fera en conditions à -2 °C
+D- Le vol se fera en conditions à +2 °C
+
+2 - L'occlusion est une zone :
+A- très nuageuse, pluvieuse avec un plafond bas
+B- toujours sans nuage
+C- déclenchant fréquemment des cyclones
+D- de très haute pression
+
+3 - Une structure frontale :
+A- est un système atmosphérique qui perturbe les instruments de bord
+B- est la rencontre inopinée en face à face avec un autre avion en vol
+C- est le soulèvement de l'air chaud au-dessus de l'air froid, ce qui crée des limites nuageuses plus ou moins actives
+D- génère la plupart du temps des vents de face
+
+4 - Sur la photo ci-contre, prise à Paris-Orly au lever du jour après une nuit fraîche, sans nuages et sans vent, on observe un brouillard :Brouillard
+A- d'advection.
+B- de rayonnement
+C- d'évaporation
+D- de convection
+
+5 - Le givrage cellule :
+A- est dû à un refroidissement progressif des structures de l'avion qui tend à bloquer les gouvernes
+B- est dû au vol dans des couches saturées en eau liquide à températures négatives
+C- est dû au dépôt de glace sur les ailes sous averses de grêle hors et dans les cumulonimbus
+D- est un phénomène qui renforce la rigidité de la structure en zones de turbulence
+
+6 - Les nuages plus particulièrement recherchés pour pratiquer le vol à voile sont :
+A- les cumulonimbus
+B- les altos cirrus
+C- les cumulus
+D- les nimbostratus
+
+7 - À la latitude de Paris, l'altitude et la température moyennes de la tropopause {atmosphère standard) sont :
+A- 7 km d'altitude et -45 °C
+B- 11 km d'altitude et -56 °C
+C- 17 km d'altitude et -45 °C
+D- 11 km d'altitude et -80 °C
+
+8 - En atmosphère standard, la masse volumique de l’air est de :
+A- 1225 kg/m3
+B- 1,225 g/m3
+C- 1,225 kg/m3
+D- 122,5 g/m3
+
+9 - La surface atmosphérique se situant vers 11 000 m d'altitude est appelée :
+A- stratopause
+B- tropopause
+C- stratosphère
+D- planisphère
+
+10 - Le préfixe des nuages dont la base est la plus élevée est :
+A- alto
+B- strato
+C- cirro
+D- cumulo
+
+11 - Les deux principaux composants de l'air sec sont :
+A- le diazote et le dioxygène
+B- l'oxygène et le gaz carbonique
+C- l'azote et l'hélium
+D- l'oxygène et l'hydrogène
+
+12 - Dans l'hémisphère nord, le phénomène météorologique représenté sur la figure ci- contre est :Schéma d'un phénomène météorologique
+A- un cyclone
+B- un anticyclone
+C- une tempête tropicale
+D- une zone dépressionnaire
+
+13 - Les instruments de mesure du vent en surface sont placés sur un pylône à 10 m :
+A- pour échapper aux dégradations animales
+B- pour éviter les effets de la couche de frottements de surface
+C- pour être représentatifs à l'échelle planétaire
+D- pour donner une information à un moment clef de l'atterrissage
+
+14 - Une masse d'air instable :
+A- est une masse d'air dont la masse nuageuse change sans cesse d'apparence
+B- est due à l’arrivée d'air humide et chaud sur une surface froide
+C- apparaît de façon marquée dans les inversions thermiques de basses couches
+D- est due à un soulèvement d'air chaud de basses couches
+
+15 - Les courants de vent puissants que l'on rencontre à très haute altitude sont nommés :
+A- jet-stream
+B- jet-lag
+C- tornade
+D- rafale
+
+16 - Dans un message aéronautique, le groupe de température indique +12 °C sous abri, et +4 °C de point de rosée. On peut dire que :
+A- la masse d'air est à 100 % d'humidité
+B- la température maximale sera de +12 °C et la minimale de +4 °C
+C- la masse d'air serait saturée pour une température sous-abri de +4 °C
+D- la masse d'air serait saturée pour une température sous-abri de +8 °C
+
+17 - Une traîne :
+A- est la partie sous le vent d'un cumulonimbus
+B- correspond à une précipitation qui n’atteint pas le sol
+C- est le nom donné aux perturbations qui avancent lentement
+D- est une zone de bonne visibilité entrecoupée d'averses à l'arrière d’un front froid
+
+18 - Le sens de rotation des vents dans l'hémisphère nord est :
+A- horaire dans un anticyclone
+B- anti-horaire dans un anticyclone
+C- identique à celui de l'hémisphère sud
+D- horaire dans une dépression
+
+19 - Le phénomène météorologique observé sur la photo ci-dessous est :Avions difficilement visibles
+A- du brouillard
+B- un orage
+C- un front chaud
+D- la convection
+
+20 - Lorsque des cumulus sont annoncés, cela indique au pilote que :
+A- des orages sont systématiquement à prévoir
+B- des précipitations continues sont probables
+C- la masse d'air est instable
+D- la surface frontale est proche
+
+##BIA 2025##
+1 - Une information sur une carte stipule l'ISO 0°C au FL80. Vous devez voler au FL60. En considérant le gradient standard, quelle est la bonne affirmation ? 
+A- Le vol se fera à +4 °C
+B- Le vol se fera à -4 °C
+C- Le vol se fera à -2 °C
+D- Le vol se fera à +2 °C
+
+2 - Les deux principaux composants de l'air sec sont : 
+A- le diazote et le dioxygène
+B- l'oxygène et le gaz carbonique
+C- l'azote et l'hélium
+D- l'oxygène et l'hydrogène
+
+3 - La transformation de l'eau de l'état gazeux à l'état liquide s'appelle : 
+A- la fusion
+B- la sublimation
+C- l'évaporation
+D- la condensation
+
+4 - Une trouée de Foehn : 
+A- est un endroit favorable à la pratique de la voltige aérienne
+B- est une trouée de ciel clair associée à l'apparition d'un Cumulonimbus qui capte toute l'humidité de l'air
+C- est une zone de ciel clair sous le vent d'un relief par suite d'asséchement de la masse d'air
+D- est une zone de ciel clair liée à de hautes pressions à l'arrière d'un massif montagneux
+
+5 - Parmi les éléments suivants, une conséquence possible du givrage est : 
+A- un gain d'altitude
+B- une altération des profils aérodynamiques
+C- une amélioration des performances de l'aéronef
+D- une diminution de la traînée
+
+6 - Lorsque le vent est fort au sol : 
+A- il y a peu de turbulences dans les basses couches de l'atmosphère
+B- le ciel va systématiquement se dégager
+C- il est nul en altitude
+D- des turbulences dues aux imperfections du sol et aux obstacles se développent en basses couches
+
+7 - Le mistral est un vent : 
+A- du sud sur Marseille
+B- du sud-ouest qui souffle sur le Languedoc
+C- du nord-ouest qui souffle sur le Languedoc
+D- du nord qui souffle dans la vallée du Rhône
+
+8 - « Marais barométrique » désigne : 
+A- une zone où la pression varie peu
+B- une zone ou un axe de basses pressions
+C- une zone ou un axe de hautes pressions
+D- une zone où le gradient de pression est très élevé
+
+9 - Sur la photo ci-dessous, prise à Paris-Orly au lever du jour après une nuit fraîche, sans nuages et sans vent, on observe un brouillard :Brouillard 
+A- d'advection
+B- de rayonnement
+C- d'évaporation
+D- de convection
+
+10 - Sur une carte de pression une ligne quijoint les points d'égale pression est nommée : 
+A- une isotherme
+B- une isocline
+C- une isophypse
+D- une isobare
+
+11 - Un front froid : 
+A- est une surface séparant un air froid en mouvement d'un air plus chaud qu'il soulève
+B- est l'arrivée d'un air froid sur une surface polaire glacée
+C- est l'arrivée d'un air froid et lourd qui stabilise la basse couche atmosphérique
+D- est généralement associé à des brises marines d'ouest
+
+12 - Les courants de vent puissants que l'on rencontre à très haute altitude sont nommés : 
+A- jet-stream
+B- jet-lag
+C- tornado
+D- Rafale
+
+13 - La couche de l'atmosphère où se concentrent les phénomènes météorologiques est la : 
+A- stratosphère
+B- troposphère
+C- mésosphère
+D- thermosphère
+
+14 - Le principal danger induit par le brouillard sur le vol est : 
+A- la formation de givrage possible en toutes saisons
+B- la turbulence associée
+C- la diminution de la visibilité
+D- le risque de foudroiement
+
+15 - Dans l'atmosphère standard, la température au niveau de la mer est de : 
+A- 0 °C
+B- 10 °C
+C- 15 °C
+D- 20 °C
+
+16 - À 4 000 m, le capteur du ballon sonde relève une température de -1°C. Nous en concluons que l'atmosphère à 4 000 m est : 
+A- plus froide que l'atmosphère standard
+B- conforme à l'atmosphère standard
+C- plus chaude que l'atmosphère standard
+D- plus riche en dioxygène qu'au niveau du sol
+
+17 - La brise de pente (montante) se forme en région : 
+A- montagneuse et de nuit
+B- côtière et de nuit
+C- montagneuse et de jour
+D- côtière et de jour
+
+18 - Je monte dans l'avion au matin. L'altimètre réglé sur le QNH hier soir indique une altitude supérieure à celle de l'aérodrome. 
+A- La pression sur l'aérodrome a baissé pendant la nuit
+B- La température a baissé sur l'aérodrome pendant la nuit
+C- La pression sur l'aérodrome a augmenté pendant la nuit
+D- L'altimètre est forcément devenu défectueux
+
+19 - Un vent du 090/20 vient : 
+A- de l'ouest à une vitesse de 20 kt
+B- de l'est à une vitesse de 20 kt
+C- de l'est à une vitesse de 20 km/h
+D- de l'ouest à une vitesse de 20 km/h
+
+20 - Sur des cartes TEMSI, on peut lire une validité au 14/10/2019 15 UTC. Sachant que le 14 octobre 2019, la France était en « heure d'été », à quelle heure légale correspond cette prévision ?Carte TEMSI 
+A- 13 h
+B- 14 h
+C- 16 h
+D- 17 h

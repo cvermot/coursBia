@@ -1,0 +1,1359 @@
+##BIA 2015##
+1 - Si l'on place un profil d'aile dans une soufflerie où l'écoulement s'effectue à vitesse constante (cf. figure 1), la portance provient : 
+A- d'une surpression sur l'intrados et sur l'extrados
+B- d'une surpression sur l'intrados et d'une dépression sur l'extrados
+C- d'une dépression sur l'intrados et sur l'extrados
+D- d'une dépression sur l'intrados et d'une surpression sur l'extrados
+
+2 - Sur la figure 1, le point A est appelé : 
+A- bord de fuite
+B- foyer
+C- bord d'attaque
+D- centre de poussée de l'aile
+
+3 - Par définition, la portance est la composante de la résultante aérodynamique : 
+A- parallèle à la direction du vent relatif
+B- parallèle à la corde de profil de l'aile
+C- perpendiculaire à la direction du vent relatif
+D- perpendiculaire à la corde de profil de l'aile
+
+4 - On appelle incidence ou angle d'attaque, l'angle formé par : 
+A- la corde de l'aile et l'horizon
+B- la direction du vent relatif et l'horizon
+C- la corde de l'aile et la direction du vent relatif
+D- la corde de l'aile et l'axe longitudinal de l'aéronef
+
+5 - Pour un aéronef en vol en palier stabilisé (vol horizontal stabilisé), quelle proposition est correcte ? 
+A- la portance est légèrement inférieure au poids
+B- la portance équilibre la traînée
+C- la portance et la traction sont identiques
+D- la portance équilibre le poids
+
+6 - Le facteur de charge est défini comme le rapport : 
+A- poids / traînée
+B- portance / traînée
+C- traînée / poids
+D- portance / poids
+
+7 - Le facteur de charge subi par un aéronef en virage : 
+A- diminue avec l'inclinaison
+B- est toujours égal à 2
+C- ne dépend que du type d'aéronef
+D- augmente avec l'inclinaison
+
+8 - En vol en palier stabilisé (vol horizontal stabilisé), la force de propulsion (traction hélice ou poussée réacteur) équilibre : 
+A- le poids
+B- la portance
+C- la traînée
+D- la résultante aérodynamique
+
+9 - Pour passer d'un vol rectiligne stabilisé à un virage horizontal stabilisé, il faut : 
+A- diminuer la portance
+B- diminuer la force de propulsion
+C- augmenter la portance
+D- augmenter le poids
+
+10 - Le décrochage d'une aile est lié : 
+A- uniquement à la vitesse du vent relatif
+B- à son incidence
+C- à la charge du profil
+D- à la valeur de la traînée
+
+11 - L'incidence est positive lorsque : 
+A- l'écoulement est parallèle à la corde du profil
+B- l'écoulement attaque le profil du côté de l'extrados
+C- l'écoulement attaque le profil du côté de l'intrados
+D- l'aéronef est en vol dos stabilisé
+
+12 - Dans un écoulement d'air, lorsque les particules d'air sont animées de la même vitesse et suivent des trajectoires rectilignes et parallèles entre elles, on dit que l'écoulement est : 
+A- tourbillonnant
+B- de couche limite
+C- turbulent
+D- laminaire
+
+13 - Sur la polaire représentée sur la figure 2, quel point représente l'incidence de portance maximale ? Polaire d'une aile
+A- le point A
+B- le point B
+C- le point C
+D- le point D
+
+14 - Sur la polaire présentée en figure 2, le point C correspond à : 
+A- la traînée minimale
+B- la finesse maximale
+C- la portance minimale
+D- la portance maximale
+
+15 - Les dispositifs hypersustentateurs, utilisés par exemple sur les avions de ligne, ont pour but : 
+A- de diminuer la portance à vitesse élevée (par exemple : pour une descente d'urgence)
+B- d'augmenter la vitesse de décrochage pour certaines manœuvres
+C- de diminuer la traînée pour certaines manœuvres
+D- de diminuer la vitesse de décrochage dans certaines phases de vol (par exemple : au décollage et à l'atterrissage)
+
+16 - Lorsqu'une aile approche l'incidence de décrochage, l'écoulement des filets d'air sur l'extrados devient : 
+A- turbulent au bord d'attaque et laminaire au bord de fuite
+B- tourbillonnaire dès le bord d'attaque, les filets d'air "décollent" de la surface de l'aile
+C- laminaire sur tout le profil
+D- laminaire sur les deux premiers tiers de l'aile, turbulent proche du bord de fuite
+
+17 - Pour un aéronef en montée rectiligne uniforme, la force de traction de l'hélice est fonction : 
+A- uniquement de la traînée
+B- de la traînée, du poids et de l'angle de montée
+C- uniquement du poids et de la portance
+D- du poids et de l'angle de montée
+
+18 - Pour une masse d'air donnée et à incidence fixée, si l'on multiplie par 2 la vitesse de l'air par rapport à un profil, la portance sera multipliée par : 
+A- 4
+B- 2
+C- 3
+D- 1, la portance ne dépendant pas de la vitesse relative
+
+19 - Le profil présenté sur la figure 3 est de type : Profil NACA 23012
+A- convexe concave (ou creux)
+B- biconvexe symétrique
+C- plan convexe
+D- biconvexe dissymétrique
+
+20 - Un planeur dont la finesse maximale est de 40 vole en ligne droite à sa vitesse de finesse maximale dans une masse d'air calme. Pour parcourir 20 km, combien d'altitude va-t-il perdre au minimum ? 
+A- 250 m
+B- 500 m
+C- 1000 m
+D- 2000 m
+
+##BIA 2016##
+1 - En vol en palier stabilisé : 
+A- la portance équilibre le poids
+B- la portance équilibre la traînée
+C- la portance équilibre la résultante aérodynamique
+D- la portance équilibre la force de propulsion
+
+2 - Le vent relatif : 
+A- est la composante du vent réel parallèle à la trajectoire
+B- est parallèle à la trajectoire, et de même sens que le déplacement de l'avion
+C- est parallèle à la trajectoire, mais de sens opposé au déplacement de l'avion
+D- est la composante du vent réel perpendiculaire à la trajectoire
+
+3 - Le pilotage de la sonde spatiale Philae nécessite : 
+A- une poussée permanente et l'exploitation de l'attraction des astres
+B- une poussée ponctuelle et l'exploitation de l'attraction des astres
+C- uniquement l'attraction des astres
+D- uniquement une poussée permanente
+
+4 - Sur le profil d'aile ci-dessous, l'extrados est représenté par la lettre : Profil d'aile
+A- A
+B- B
+C- C
+D- D
+
+5 - La distance de décollage augmente quand : 
+A- la pression et la température de l'atmosphère diminuent
+B- la pression et la température de l'atmosphère augmentent
+C- la pression atmosphérique diminue et la température de l'atmosphère augmente
+D- la pression atmosphérique augmente et la température de l'atmosphère diminue
+
+6 - La fonction principale des winglets est : 
+A- d'augmenter la traînée de l'aile
+B- de diminuer la vitesse
+C- de diminuer la portance de l'aile
+D- de diminuer la traînée induite
+
+7 - L'origine de la sustentation de l'aile résulte de l'apparition : 
+A- d'une dépression à l'extrados et à l'intrados
+B- d'une surpression à l'intrados et à l'extrados
+C- d'une dépression à l'extrados et d'une surpression à l'intrados
+D- d'une surpression à l'extrados et d'une dépression à l'intrados.
+
+8 - La portance est : 
+A- de direction perpendiculaire au vent relatif
+B- de direction perpendiculaire au poids
+C- de direction parallèle au vent relatif
+D- créée par le bord de fuite
+
+9 - La traînée : 
+A- diminue lorsque l'incidence augmente
+B- est indépendante de la vitesse
+C- augmente lorsque la vitesse diminue
+D- diminue lorsque la masse volumique de l'air diminue
+
+10 - Plus la finesse d'un planeur est élevée : 
+A- plus la distance qu'il peut parcourir est faible
+B- plus son poids est faible
+C- plus la distance qu'il peut parcourir est élevée
+D- plus sa traînée est importante
+
+11 - Le décollage d'un avion se fait toujours face au vent pour : 
+A- décoller sur une distance plus courte
+B- diminuer la portance
+C- éviter de dépasser la VNE
+D- diminuer la traînée
+
+12 - En phase d'atterrissage, le pilote sort les volets hypersustentateurs, l'objectif est : 
+A- de conserver la portance à vitesse réduite
+B- de réduire la portance et d'augmenter sa vitesse
+C- de diminuer la traînée
+D- d'augmenter la vitesse
+
+13 - La sustentation d'un aérostat est basée sur le principe : 
+A- d'Archimède
+B- de Bernouilli
+C- des vases communicants
+D- de l'effet Venturi
+
+14 - Le décrochage se produit toujours à : 
+A- la même assiette
+B- la même vitesse
+C- la même incidence
+D- la même inclinaison
+
+15 - Le centrage de l'aéronef a un effet majeur sur sa stabilité autour de son axe : 
+A- de gauchissement
+B- de roulis
+C- de tangage
+D- de lacet
+
+16 - Pour profiter de la vitesse d'entraînement de la base spatiale de Kourou, la direction du tir de lancement d'un satellite géostationnaire doit se faire : 
+A- vers le nord
+B- vers l'est
+C- vers le sud
+D- vers l'ouest
+
+17 - A incidence et puissance constantes, la mise en virage d'un avion entraîne : 
+A- une perte d'altitude
+B- un gain d'altitude
+C- un maintien de l'altitude
+D- une diminution de la vitesse
+
+18 - Sur la polaire de la figure 1, le point correspondant à la finesse maximale est : Figure 1 : Polaire 
+A- point A
+B- point B
+C- point C
+D- point D
+
+19 - Sur la polaire représentée en figure 1, le point D représente : 
+A- la traînée minimale
+B- la finesse maximale
+C- la portance maximale
+D- le point de décrochage
+
+20 - Lorsque la vitesse est doublée la portance est : 
+A- constante
+B- doublée
+C- divisée par deux
+D- quadruplée
+
+##BIA 2017##
+1 - Sur le profil de l'aile, la vitesse de l'écoulement de l'air : 
+A- est constante sur l'intrados et l'extrados
+B- diminue sur l'intrados et augmente sur l'extrados
+C- diminue sur l'extrados et augmente sur l'intrados
+D- diminue sur l'intrados et l'extrados
+
+2 - En vol normal, sur ce profil, l'écoulement entre le point A et le point T est : Profil d'aile
+A- tourbillonnaire
+B- turbulent
+C- de vitesse constante
+D- laminaire
+
+3 - La force parallèle, de même sens que le vent relatif Vr est : 
+A- la portance
+B- la traînée
+C- le poids
+D- la résultante aérodynamique
+
+4 - Si en vol la température extérieure augmente fortement, la portance : 
+A- augmente fortement
+B- reste constante
+C- augmente faiblement
+D- diminue
+
+5 - Les paramètres intervenant dans la formule de la portance sont : 
+A- la vitesse et la surface alaire de l'aile
+B- la masse volumique et le poids de l'avion
+C- le coefficient de portance et le poids des ailes
+D- la vitesse et le coefficient de traînée
+
+6 - Avec la polaire suivante, le Cz max est obtenu à : Polaire
+A- 1,3° d'incidence
+B- 4° de température
+C- 17° de température
+D- 17° d'incidence
+
+7 - Sur la figure suivante, l'angle Y représente : Avion
+A- l'angle de dièdre
+B- l'angle de flèche
+C- l'angle d'incidence
+D- l'angle de calage
+
+8 - L'angle de calage d'une aile est compris entre : 
+A- la corde de profil de l'aile et l'axe longitudinal de l'avion
+B- la corde de profil de l'aile et le vent relatif
+C- le plan de l'aile et l'horizontale
+D- le bord d'attaque et la perpendiculaire de l'axe avion
+
+9 - L'angle de pente est : 
+A- l'angle entre l'horizontale et l'axe longitudinal de l'avion
+B- l'angle entre la corde de profil de l'aile et le vent relatif
+C- l'angle affiché sur l'horizon artificiel du pilote
+D- l'angle entre l'horizontale et la trajectoire réelle de l'avion
+
+10 - L'air autour du profil de l'aile est : 
+A- en dépression sur l'extrados et en surpression sur l'intrados
+B- en surpression sur l'extrados et en dépression sur l'intrados
+C- en dépression sur l'extrados et l'intrados
+D- en surpression sur l'extrados et l'intrados
+
+11 - Lorsqu'un aéronef est en vol horizontal stabilisé : 
+A- la portance équilibre la traction et le poids équilibre la traînée
+B- la portance équilibre le poids et la traînée équilibre la traction
+C- la portance équilibre la traînée et le poids équilibre la traction
+D- toutes les forces sont différentes
+
+12 - Ce qui assure la plus grande stabilité d'un aéronef est : 
+A- le dièdre et la flèche positifs
+B- le dièdre négatif et la flèche nulle
+C- le dièdre et la flèche négatifs
+D- le dièdre positif et la flèche nulle
+
+13 - Pour passer en régime de montée stabilisée, le pilote doit : 
+A- réduire la puissance moteur
+B- tirer sur le manche et conserver la même puissance moteur
+C- tirer sur le manche et augmenter la puissance moteur
+D- pousser sur le manche et réduire la puissance moteur
+
+14 - En vol, si le pilote tire fortement sur le manche, le facteur de charge : 
+A- augmente
+B- diminue
+C- reste constant
+D- devient nul
+
+15 - À incidence et puissance constantes, la mise en virage d'un avion entraîne : 
+A- un maintien de l'altitude
+B- un gain d'altitude
+C- une perte d'altitude
+D- une diminution de la vitesse
+
+16 - Un planeur de finesse 50 vole en ligne droite à 2000 m d'altitude dans un air stable. La distance maximale qu'il peut parcourir sans ascendance est de : 
+A- 10 km
+B- 25 km
+C- 40 km
+D- 100 km
+
+17 - Lorsque la somme des forces qui s'appliquent à un ballon libre est nulle : 
+A- le ballon est en situation d'équilibre
+B- le ballon est en montée
+C- le ballon est en descente
+D- le ballon se dégonfle
+
+18 - En cas d'élévation de température extérieure, la force ascensionnelle d'un aérostat : 
+A- n'évolue pas
+B- augmente
+C- diminue
+D- dépend exclusivement du vent
+
+19 - En orbite circulaire à 36000 km, la durée d'une révolution (tour complet) d'un satellite est de : 
+A- 90 min
+B- 120 min
+C- 12 heures
+D- 24 heures
+
+20 - Le poids d'un satellite tournant autour d'un astre est : 
+A- compensé par sa force de portance
+B- compensé par sa force centrifuge
+C- compensé uniquement par ses moteurs fusées
+D- nul car il est en apesanteur
+
+##BIA 2018##
+1 - La vitesse de l'écoulement autour d'une aile : 
+A- augmente sur l'extrados et diminue sur l'intrados
+B- diminue sur l'extrados et diminue sur l'intrados
+C- diminue sur l'extrados et augmente sur l'intrados
+D- augmente sur l'extrados et augmente sur l'intrados
+
+2 - Au sein d'un écoulement fluide autour d'une aile, lorsque la vitesse de cet écoulement augmente, la pression statique : 
+A- augmente
+B- diminue
+C- est constante quelle que soit la variation de vitesse
+D- n'augmente que si la température augmente
+
+3 - L'origine de la sustentation résulte de l'apparition : 
+A- d'une surpression à l'extrados et d'une dépression à l'intrados
+B- d'une surpression à l'intrados et d'une dépression à l'extrados
+C- d'une dépression à l'extrados et à l'intrados
+D- d'une surpression à l'extrados et à l'intrados
+
+4 - La portance est : 
+A- la force générée par le moteur
+B- toujours égale et de direction opposée au poids de l'avion
+C- la composante de la force aérodynamique qui est perpendiculaire à la direction vent relatif
+D- la composante de la force aérodynamique qui est parallèle à la direction du vent relatif
+
+5 - L'angle d'incidence d'un profil est l'angle formé entre : 
+A- la corde du profil et l'horizontale
+B- l'axe longitudinal de l'avion et la direction du vent relatif
+C- la direction du vent relatif et l'horizontale
+D- la corde du profil et la direction du vent relatif
+
+6 - A vitesse constante, si on augmente l'incidence du profil : 
+A- la portance et la traînée augmentent
+B- la traînée diminue et la portance augmente
+C- la portance diminue
+D- la portance augmente et la traînée diminue
+
+7 - Un planeur vole en air calme à 144 km.h-1, son variomètre indique 0,8 m.s-1, sa finesse est de : 
+A- 50
+B- 180
+C- 10
+D- 0,02
+
+8 - La vitesse de décrochage d'un avion augmente quand : 
+A- la quantité de carburant dans les réservoirs diminue
+B- le facteur de charge diminue
+C- la masse de l'avion diminue
+D- le facteur de charge augmente
+
+9 - Lors d'une ressource, le facteur de charge : 
+A- augmente
+B- diminue et la vitesse de décrochage augmente
+C- reste constant
+D- diminue ainsi que la vitesse de décrochage
+
+10 - L'allongement d'une aile est : 
+A- le rapport envergure sur corde moyenne
+B- le rapport corde moyenne sur envergure
+C- fonction de l'épaisseur du profil
+D- faible sur les planeurs
+
+11 - La sortie des volets de bord de fuite provoque : 
+A- l'augmentation du coefficient de portance et du coefficient de traînée
+B- l'augmentation du coefficient de portance et la diminution du coefficient de traînée
+C- la diminution du coefficient de portance et la diminution du coefficient de traînée
+D- la diminution du coefficient de portance et l'augmentation du coefficient de traînée
+
+12 - La position du centre de gravité d'un avion a un effet important sur la stabilité et la maniabilité de l'avion, un centrage arrière rend l'avion : 
+A- peu maniable mais stable autour de l'axe de tangage
+B- instable autour de l'axe de lacet
+C- instable autour de l'axe de roulis
+D- maniable mais moins stable autour de l'axe de tangage
+
+13 - Le volume de l'enveloppe d'une montgolfière est de 10 000 m3, la masse volumique de l'air extérieur est de 1,225 kg.m-3 et la masse volumique de l'air chaud de 1,100 kg.m-3. La masse totale maximale de la montgolfière est de : 
+A- 1 250 kg
+B- 12 250 kg
+C- 11 000 kg
+D- 1 100 kg
+
+14 - Pendant un vol en montée rectiligne à vitesse constante : 
+A- la portance équilibre le poids
+B- la portance est supérieure au poids
+C- la portance est inférieure au poids
+D- le facteur de charge est supérieur à 1
+
+15 - Un ULM pendulaire est piloté : 
+A- en roulis et en tangage, par traction sur les suspentes
+B- en roulis seulement, par déplacement du centre de gravité
+C- en tangage seulement, par déplacement du centre de gravité
+D- en roulis et en tangage, par déplacement du centre de gravité
+
+16 - En virage en palier le facteur de charge augmente avec : 
+A- l'altitude
+B- l'inclinaison
+C- la masse de l'avion
+D- la vitesse
+
+17 - En montée, un avion subit un vent arrière qui aura pour conséquence : 
+A- une augmentation du taux de montée
+B- une diminution de la pente sol
+C- une augmentation de la pente sol
+D- une réduction du temps de montée
+
+18 - Le but principal des spoilers est de diminuer : 
+A- la traînée
+B- la vitesse d'atterrissage
+C- la portance de l'aile
+D- la portance et la traînée
+
+19 - Sur un hélicoptère, le vrillage d'une pale a pour but de tendre à : 
+A- augmenter la portance de la pale
+B- uniformiser la portance sur toute la longueur de la pale
+C- diminuer la traînée
+D- déplacer le centre de gravité de la pale
+
+20 - La base de lancement spatial de Kourou est située proche de l'équateur pour profiter : 
+A- d'une plus grande vitesse de rotation de la Terre
+B- d'un climat tempéré
+C- d'une pression atmosphérique faible
+D- d'un espace aérien réservé à cet usage
+Aérodynamique, aérostatique et principes du vol
+##BIA 2019##
+1 - La résistance de l’air sur un corps : 
+A- dépend de la surface du corps
+B- s’exprime en kilogrammes
+C- ne dépend pas de la surface du corps
+D- est proportionnelle au carré de la surface du corps
+
+2 - En montée rectiligne uniforme, la portance est : 
+A- inférieure au poids
+B- égale à la traînée
+C- supérieure au poids
+D- égale au poids
+
+3 - Le décrochage se produit toujours : 
+A- à la même incidence
+B- à la même inclinaison
+C- à la même vitesse
+D- en cas de panne moteur
+
+4 - Sur le profil d’aile ci-dessous, l’intrados est représenté par la lettre : Profil d'aile
+A- A
+B- B
+C- C
+D- D
+
+5 - Pour orienter l’avion autour de l’axe de tangage, il faut un déplacement : 
+A- de la gouverne de profondeur, commandée par le palonnier
+B- de la gouverne de profondeur, commandée par le manche
+C- des ailerons, commandés par le manche
+D- des ailerons, commandés par le palonnier
+
+6 - La distance de roulage nécessaire au décollage diminue lorsque : 
+A- l’altitude augmente
+B- la température augmente
+C- la composante de vent arrière augmente
+D- la température diminue
+
+7 - La corde d’un profil de l’aile est le segment qui joint : 
+A- l’emplanture à l’extrémité de l’aile
+B- les deux extrémités de l’aile
+C- le bord d’attaque au bord de fuite
+D- la partie la plus large entre l’intrados et l’extrados
+
+8 - La force de portance d’une aile est toujours perpendiculaire à : 
+A- la direction du vent relatif
+B- l’horizontale
+C- la corde du profil
+D- l’axe longitudinal de l’appareil
+
+9 - En soufflerie, si on multiplie par 3 la vitesse du vent relatif, la valeur de la portance est : 
+A- multipliée par 3
+B- multipliée par 9
+C- multipliée par 6
+D- multipliée par 12
+
+10 - Lorsqu’un aéronef est centré avant : 
+A- sa stabilité augmente
+B- sa maniabilité augmente
+C- sa maniabilité et sa stabilité ne sont pas modifiées
+D- sa stabilité diminue
+
+11 - En phase de décollage, le pilote sort les volets hypersustentateurs, l’effet sera : 
+A- d’augmenter la distance de décollage
+B- d’augmenter la portance
+C- d’augmenter la vitesse
+D- de diminuer la portance
+
+12 - La bonne association légende-croquis est : 
+A- profil en lisse Profil d'aile
+B- profil avec volet braqué Profil d'aile
+C- profil avec bec sorti Profil d'aile
+D- profil avec Fowler sorti Profil d'aile
+
+13 - Un avion vole initialement à vitesse et altitude constantes. Sans agir sur le manche, le pilote augmente la puissance à l’aide de la manette des gaz. Cette action entraîne : 
+A- uniquement une augmentation de vitesse
+B- une augmentation d’altitude
+C- une diminution d’altitude
+D- une augmentation de vitesse ou bien d’altitude, cela dépend du vent
+
+14 - La finesse maximale permet de : 
+A- rester en l’air le plus longtemps possible
+B- voler le plus vite possible
+C- parcourir la plus grande distance possible
+D- décoller le plus court possible
+
+15 - Le facteur ayant une influence sur la position du centre de gravité d’un aéronef est : 
+A- la vitesse
+B- l’inclinaison
+C- la trajectoire
+D- le niveau de carburant dans les réservoirs
+
+16 - Lors d’un virage à 60° d’inclinaison, à altitude constante, le poids apparent est : 
+A- égal au poids réel
+B- égal à 2 fois le poids réel
+C- égal à 1,15 fois le poids réel
+D- inférieur au poids réel
+
+17 - La traînée induite est une conséquence de : 
+A- l’interaction du fuselage et de l’aile
+B- la rotation de l’hélice
+C- la différente de pression entre l’intrados et l’extrados
+D- l’usage d’un train fixe
+
+18 - Sur la polaire ci-dessous, le point correspondant à la portance maximale est le point : Polaire
+A- A
+B- B
+C- C
+D- D
+
+19 - Pour un satellite, l’orbite géostationnaire permet : 
+A- de scanner le plus de surface possible du globe
+B- de rester au-dessus d’un point donné de la surface du globe
+C- d’effectuer plusieurs révolutions de la Terre en 24 heures
+D- d’entrer dans l’atmosphère
+
+20 - L’assistance gravitationnelle : 
+A- permet le retour du lanceur sur Terre
+B- est une ligne téléphonique entre l’ISS et la Terre en cas de besoin d’assistance
+C- est utilisée comme « moteur » afin d’accélérer les sondes lors de leurs voyages interstellaires
+D- est un propulseur
+
+##BIA 2020##
+1 - La résistance de l’air sur un corps : 
+A- dépend de la surface du corps
+B- s’exprime en kilogrammes
+C- ne dépend pas de la surface du corps
+D- est proportionnelle au carré de la surface du corps
+
+2 - En montée rectiligne uniforme, la portance est : 
+A- inférieure au poids
+B- égale à la traînée
+C- supérieure au poids
+D- égale au poids
+
+3 - Le décrochage se produit toujours : 
+A- à la même incidence
+B- à la même inclinaison
+C- à la même vitesse
+D- en cas de panne moteur
+
+4 - Sur le profil d’aile ci-dessous, l’intrados est représenté par la lettre : Profil d'aile
+A- A
+B- B
+C- C
+D- D
+
+5 - Pour orienter l’avion autour de l’axe de tangage, il faut un déplacement : 
+A- de la gouverne de profondeur, commandée par le palonnier
+B- de la gouverne de profondeur, commandée par le manche
+C- des ailerons, commandés par le manche
+D- des ailerons, commandés par le palonnier
+
+6 - En montée rectiligne à vitesse constante : 
+A- le facteur de charge est supérieur à 1
+B- le facteur de charge est égal à 1
+C- la portance est supérieure au poids
+D- la portance est inférieure au poids
+
+7 - En montée, le pilote d’avion affiche la pleine puissance, pour augmenter la vitesse indiquée, le pilote : 
+A- diminue l’assiette en poussant sur le manche
+B- diminue l’assiette en tirant sur le manche
+C- augmente l’assiette en poussant sur le manche
+D- augmente l’assiette en tirant sur le manche
+
+8 - En vol en palier, en cas de diminution de vitesse, pour maintenir une altitude constante, le pilote doit : 
+A- faire varier l’assiette à cabrer
+B- faire varier l’assiette à piquer
+C- ne rien faire
+D- adopter une incidence supérieure à l’assiette
+
+9 - La position du centre de gravité d’un avion a un effet important sur la stabilité et la maniabilité de l’avion, un centrage avant rend l’avion : 
+A- maniable mais moins stable autour de l’axe de tangage
+B- maniable et stable autour de l’axe de tangage
+C- peu maniable et moins stable autour de l’axe de tangage
+D- peu maniable mais stable autour de l’axe de tangage
+
+10 - Pour un avion léger, le décrochage se produit : 
+A- toujours à la même vitesse
+B- toujours à la même incidence
+C- quand la masse de l’aéronef diminue
+D- quand le facteur de charge diminue
+
+11 - En virage en palier, le facteur de charge augmente avec : 
+A- la masse de l’avion
+B- l’altitude
+C- l’inclinaison
+D- la vitesse
+
+12 - La photo ci-dessous indique : Horizon artificiel
+A- un virage à droite glissé qui nécessite une action sur le palonnier droit
+B- un virage à droite dérapé qui nécessite une action sur le palonnier gauche
+C- un virage à droite symétrique, qui ne nécessite pas d’action sur le palonnier
+D- un virage à gauche symétrique, qui ne nécessite pas d’action sur le palonnier
+
+13 - En descente rectiligne uniforme sans moteur : 
+A- la portance et le poids sont directement opposés
+B- la traînée et le poids sont directement opposés
+C- la composante du poids parallèle à la trajectoire s’oppose à la traînée pour l’équilibrer
+D- la composante du poids perpendiculaire à la trajectoire s’oppose à la traînée pour l’équilibrer
+
+14 - Le lacet inverse est dû à : 
+A- une portance plus importante de la demi aile située à l'intérieur du virage
+B- une traînée plus importante de la demi aile située à l'intérieur du virage
+C- une traînée plus importante du côté de l'aileron levé que du côté de l'aileron abaissé
+D- une traînée plus importante du côté de l'aileron abaissé que du côté de l'aileron levé
+
+15 - La finesse d’un aéronef peut s’exprimer par le rapport : 
+A- coefficient de traînée sur coefficient de portance
+B- vitesse verticale sur vitesse horizontale
+C- a distance parcourue en vol plané sur la hauteur perdue
+D- la hauteur perdue sur la distance parcourue en vol plané
+
+16 - La vitesse de finesse maximum d’un planeur : 
+A- reste constante quand charge alaire augmente (ballastage)
+B- augmente quand la charge alaire augmente
+C- augmente quand la charge alaire diminue
+D- diminue quand la portance augmente
+
+17 - En finale, le braquage des volets de courbure a pour conséquence : 
+A- une augmentation de la portance et une diminution de la traînée
+B- une augmentation de la portance et une augmentation de la traînée
+C- une diminution de la portance et une augmentation de la traînée
+D- une diminution de la portance et une diminution de la traînée
+
+18 - Le virage d’un ULM pendulaire est commandé : 
+A- par déplacement du centre de gravité du chariot
+B- par traction sur les suspentes
+C- par action sur le manche
+D- par action sur le palonnier
+
+19 - Le déplacement horizontal d’une montgolfière se fait : 
+A- au gré des vents
+B- grâce à la différence de température entre l’intérieur et l’extérieur de l’enveloppe
+C- grâce à la poussée d’Archimède
+D- en agissant sur la soupape qui bouche le sommet de l’enveloppe
+
+20 - Sur un hélicoptère à assiette nulle, la commande appelée levier de pas collectif permet de modifier l’incidence des pales du rotor, elle permet ainsi : 
+A- de contrôler les mouvements autour de l’axe de lacet
+B- de contrôler les mouvements autour de l’axe de tangage
+C- de modifier la portance pour le faire avancer ou reculer
+D- de modifier la portance pour le faire monter ou descendre
+
+##BIA 2021##
+1 - L’incidence est : 
+A- l’angle entre l’horizontale et l’axe de l’avion
+B- la distance maximale entre le bord d’attaque et le bord de fuite
+C- la distance entre deux nervures d’aile
+D- l’angle entre le vent relatif et la corde de l’aile
+
+2 - Pour calculer la distance de décollage d’un avion, il faut prendre en compte : 
+A- la masse de l’avion uniquement
+B- la température, l’altitude de l’aéroport, la masse de l’avion
+C- l'altitude de l’aéroport uniquement
+D- aucun de ces éléments
+
+3 - Sur la polaire ci-dessous ont été définis plusieurs points. Quel est le point correspondant à la finesse maximale ? Polaire
+A- A
+B- B
+C- C
+D- D
+
+4 - Le braquage des volets hypersustentateurs de bord de fuite : 
+A- augmente les coefficients Cz de portance et Cx de traînée
+B- augmente le coefficient Cz de portance et diminue le coefficient Cx de traînée
+C- diminue le coefficient Cz de portance et augmente le coefficient Cx de traînée
+D- diminue les coefficients Cz de portance et Cx de traînée
+
+5 - La traînée induite d’une aile : 
+A- diminue quand la portance augmente
+B- est une conséquence des différences de pression entre l’intrados et l’extrados
+C- augmente avec l’allongement
+D- est la conséquence de moucherons collés sur le bord d’attaque
+
+6 - La variation de l’assiette s’effectue autour de l’axe de : 
+A- roulis
+B- tangage
+C- lacet
+D- piste
+
+7 - Parmi les éléments suivants, celui qui a une influence sur la position du centre de gravité est : 
+A- la trajectoire (palier, montée, descente)
+B- la vitesse
+C- le niveau de carburant dans les réservoirs
+D- l’inclinaison
+
+8 - Pour tourner selon l’axe de tangage, je dois : 
+A- actionner le manche vers l’avant ou vers l’arrière
+B- actionner le manche vers la gauche ou vers la droite
+C- utiliser les palonniers
+D- changer le pas d’hélice
+
+9 - Le décrochage pour un profil d’aile précis arrive : 
+A- toujours à la même vitesse
+B- toujours à la même incidence
+C- toujours à la même pente
+D- toujours à la même assiette
+
+10 - Un avion en virage subit 2 g. Quel est son angle d’inclinaison ? 
+A- 40°
+B- 50°
+C- 60°
+D- 80°
+
+11 - Pour réaliser une mise en virage, on incline l’appareil en roulis. Il apparaît alors une rotation en lacet dans le sens opposé au sens du virage désiré. Ceci est dû : 
+A- au lacet induit
+B- au lacet inverse
+C- au roulis inverse
+D- au roulis induit
+
+12 - Comment le pilote peut-il corriger ce phénomène (2.11) ? 
+A- par une action sur le palonnier
+B- par une action à cabrer sur le manche
+C- par une action à piquer sur le manche
+D- en laissant faire
+
+13 - En descente rectiligne uniforme sans traction : 
+A- la portance et le poids sont directement opposés
+B- la traînée et le poids sont directement opposés
+C- la composante du poids parallèle à la trajectoire s’oppose à la traînée pour l’équilibrer
+D- la composante du poids perpendiculaire à la trajectoire s’oppose à la traînée pour l’équilibrer
+
+14 - Pour réduire la trainée induite, on peut : 
+A- diminuer l’allongement
+B- ajouter des becs de bord d’attaque
+C- ajouter des aérofreins
+D- ajouter des winglets
+
+15 - Un parachutiste en chute libre : 
+A- ira de plus en plus vite quelle que soit sa position pendant toute la durée de la chute libre
+B- atteindra une vitesse limite très tôt s’il est en position verticale
+C- atteindra une vitesse limite très tôt s’il est en position horizontale (à plat ventre)
+D- verra sa vitesse augmenter puis diminuer quelle que soit sa position
+
+16 - Une montgolfière se maintient à altitude constante. On peut alors affirmer que : 
+A- son poids est supérieur à sa poussée d'Archimède
+B- son poids est égal à sa poussée d'Archimède
+C- son poids est inférieur à sa poussée d'Archimède
+D- la force de trainée est égale au poids
+
+17 - Le profil d’une aile est lisse lorsque : 
+A- le bec et les volets sont rentrés
+B- le bec est rentré et les volets sont sortis
+C- le bec est sorti et les volets sont rentrés
+D- le bec et les volets sont sortis
+
+18 - On multiplie par 3 la vitesse de l’écoulement et on divise par 9 la surface d’une aile. La portance est : 
+A- multipliée par 9
+B- multipliée par 3
+C- inchangée
+D- multipliée par 81
+
+19 - En air calme, quelle est la distance horizontale qu’il est possible de parcourir avec une finesse de 30 si la hauteur est de 3 km : 
+A- 90 m
+B- 90 000 m
+C- 900 m
+D- 90 000 km
+
+20 - Certains avions sont équipés d’aérofreins qui ont pour but de modifier les coefficients Cx (trainée) et Cz (portance). Préciser leurs effets : 
+A- augmenter le Cx et le Cz
+B- diminuer le Cx et le Cz
+C- augmenter le Cx et diminuer le Cz
+D- diminuer le Cx et augmenter le Cz
+
+21 - Sur le profil d’aile ci-dessous, l’intrados est représenté par la lettre : Profil d'aile
+A- A
+B- B
+C- C
+D- D
+
+22 - La photo ci-dessous indique : Indicateur de virage
+A- un virage à droite qui nécessite une action sur le palonnier droit
+B- un virage à droite qui nécessite une action sur le palonnier gauche
+C- un virage à droite symétrique, qui ne nécessite pas d’action sur le palonnier
+D- un virage à gauche symétrique, qui ne nécessite pas d’action sur le palonnier
+
+##BIA 2022##Avion en papier
+Nous avons fabriqué un avion en papier et nous souhaitons étudier ses performances.
+
+Les questions 2.1, 2.2, 2.3 et 2.4 sont associées à cet encadré.
+1 - En vol plané à une hauteur d’un mètre, celui-ci parcourt une distance de 5 mètres avant de tomber à terre, le sol étant horizontal. Que vaut sa finesse lors de ce vol plané ? 
+A- 0,5
+B- 1
+C- 2
+D- 5
+
+2 - Quel est l’ordre de grandeur des finesses des avions et planeurs actuels ? 
+A- 1 à 70
+B- 30 à 40
+C- 1 à 10
+D- 50 à 100
+
+3 - L’avion ayant eu une tendance à piquer rapidement, on décide d’ajouter un peu de poids à l’arrière en scotchant une pièce le plus en arrière possible. Cela a pour effet : 
+A- d’avancer son centre de gravité, rendant son équilibre autour de l’axe de tangage moins stable
+B- de reculer son centre de gravité, rendant son équilibre autour de l’axe de tangage moins stable
+C- d’avancer son centre de gravité, rendant son équilibre autour de l’axe de tangage plus stable
+D- de reculer son centre de gravité, rendant son équilibre autour de l’axe de tangage plus stable
+
+4 - On souhaite développer un avion en papier ayant d’excellentes performances de plané. Pour cela, on fait appel à un laboratoire possédant une soufflerie. L’objectif des mesures réalisées est : 
+A- de déterminer la portance maximale
+B- d’obtenir une polaire
+C- de déterminer la trainée minimale
+D- de mesurer des pressions
+
+5 - Sur la demi-aile associée à l’aileron baissé, la portance : 
+A- ne varie pas, la traînée augmente
+B- augmente, la traînée augmente
+C- augmente, la traînée ne varie pas
+D- diminue, la traînée diminue
+
+6 - A tous paramètres identiques, quand un avion va deux fois plus vite sa portance : 
+A- triple
+B- quadruple
+C- double
+D- ne change pas
+
+7 - Le plus grand rapport Cz/Cx caractérise l’incidence de : 
+A- décrochage
+B- portance maximum
+C- traînée minimum
+D- finesse maximum
+
+8 - Certaines gouvernes génèrent la force nécessaire à la rotation en tangage, que modifient-elles ? 
+A- le roulis
+B- le centrage
+C- l’assiette
+D- le lacet
+
+9 - Le contrôle en tangage est obtenu en bougeant : 
+A- la gouverne de profondeur
+B- les ailerons
+C- les volets
+D- le palonnier
+
+10 - Pour réduire la traînée induite d’une aile, on peut : 
+A- augmenter l’allongement de l’aile
+B- diminuer l’allongement de l’aile
+C- augmenter la corde et diminuer l’envergure
+D- supprimer les winglets
+
+Schéma d'une soufflerie
+La question 2.11 est associée à cet encadré.
+11 - Le schéma ci-dessus représente : 
+A- une soufflerie de type Eiffel où 1 désigne le collecteur et 3 désigne la veine d’essai
+B- une soufflerie de type Eiffel où 2 désigne la veine d’essai et 3 le diffuseur
+C- une soufflerie de type Prandtl où 1 désigne le collecteur et 2 la veine d’essai
+D- une soufflerie de type Prandtl où 1 désigne le collecteur et 2 le diffuseur
+
+12 - Le tube Prandtl est réalisé avec 2 sondes, pour déterminer les pressions, dynamiques et statiques : 
+A- le tube extérieur s'ouvre perpendiculairement à l'écoulement du fluide et informe de la pression totale
+B- le tube intérieur s’ouvre parallèlement à l'écoulement du fluide, et est ouvert en son bout et informe de la pression statique
+C- le tube extérieur s'ouvre perpendiculairement à l'écoulement du fluide et informe de la pression statique
+D- le tube intérieur s’ouvre parallèlement à l'écoulement du fluide, et est ouvert en son bout et informe de la pression dynamique
+
+13 - Une hélice à pas variable réglée sur petit pas au décollage permet de : 
+A- diminuer la distance de décollage et la pente de montée
+B- augmenter la distance de décollage et diminuer la pente de montée
+C- diminuer la distance de décollage et augmenter la pente de montée
+D- augmenter la distance de décollage et la pente de montée
+
+14 - Trop de poids sur l’arrière de votre avion : 
+A- augmente la stabilité et la manœuvrabilité
+B- diminue la stabilité et la manœuvrabilité
+C- augmente la stabilité et diminue la manœuvrabilité
+D- diminue la stabilité et augmente la manœuvrabilité
+
+15 - Le fuselage de l’avion est générateur de : 
+A- traînée de forme et traînée de frottements
+B- traînée de frottements uniquement
+C- traînée induite uniquement
+D- traînée de forme uniquement
+
+16 - En virage symétrique en palier, le facteur de charge : 
+A- augmente si la vitesse augmente
+B- augmente si l’inclinaison augmente
+C- diminue si la vitesse augmente
+D- diminue si l’inclinaison augmente
+
+17 - Si la vitesse diminue, pour rester en palier, on doit : 
+A- augmenter l’incidence
+B- diminuer l’incidence
+C- sortir le train d’atterrissage
+D- se mettre en virage
+
+18 - Pendant un virage en palier à vitesse constante, le pilote doit : 
+A- augmenter l’incidence et la puissance
+B- diminuer l’incidence et la puissance
+C- augmenter l’incidence et diminuer la puissance
+D- diminuer l’incidence et augmenter la puissance
+
+19 - La marge statique est : 
+A- la distance entre le centre de gravité et le foyer de l’avion
+B- la quantité d’électricité statique qu’un avion peut supporter
+C- la place que l’avion en stationnement occupe sur le parking
+D- la bande située sur la gauche des pages du manuel de vol
+
+20 - La sortie des volets Fowler : 
+A- augmente la surface de l’aile et la vitesse de décrochage
+B- diminue la surface de l’aile et la vitesse de décrochage
+C- diminue la surface de l’aile et augmente la vitesse de décrochage
+D- augmente la surface de l’aile et diminue la vitesse de décrochage
+
+21 - Le décrochage pour un profil d’aile précis arrive : 
+A- toujours à la même vitesse
+B- toujours à la même incidence
+C- toujours à la même pente
+D- toujours à la même assiette
+
+22 - Un avion en virage subit 2 g. Quel est son angle d’inclinaison ? 
+A- 40°
+B- 50°
+C- 60°
+D- 80°
+
+##BIA 2023##
+1 - Quel est l’inconvénient majeur d’un triplan de type Albatros (l’avion du « Baron Rouge » von Richthofen au cours de la Première Guerre mondiale) ? 
+A- l’aile triple pesait trop lourd pour la motorisation
+B- le supplément de portance était négligeable
+C- le système de commandes était trop complexe
+D- la trainée induite était très importante
+
+2 - En observant du sol le lancement d’une fusée de Cap Kennedy (Floride), on constate que la trajectoire s’incurve vers l’Est. Pourquoi ? 
+A- C’est une illusion d’optique due à la température des gaz des moteurs fusées
+B- on bénéficie ainsi de la vitesse de rotation de la Terre d’Ouest en Est pour atteindre la vitesse de mise en orbite
+C- c’est pour la sécurité en cas d’incident au décollage. Les débris du lanceur retombent dans l’océan Atlantique
+D- on préserve ainsi la couche d’ozone au-dessus des États-Unis
+
+3 - Le décrochage d'un avion se produit toujours à la même : 
+A- incidence
+B- inclinaison
+C- vitesse
+D- assiette
+
+4 - Dans le cas d’un satellite géostationnaire, l’orbite est : 
+A- circulaire dans le plan de l’équateur
+B- elliptique dans un plan perpendiculaire à celui du plan de l’équateur
+C- elliptique avec la Lune comme l’un des foyers
+D- circulaire sous un plan à 45° par rapport au plan de l’équateur
+
+5 - Sous son ballon à air chaud, l’aérostier (le pilote) après son décollage, constate au GPS qu’à 200 m, le vent est du Nord pour 10 kt. Il l’annonce par radio à son coéquipier au sol pour venir le récupérer. Puis, ils perdent le contact radio. Après un vol prévu de 90 min, où ce dernier va-t-il le chercher ? 
+A- au Nord de l’aire de décollage à 15 km
+B- au Sud à environ 30 km
+C- à l’Ouest pour 30 km
+D- au Sud-Ouest à 20 km à cause de la rotation de la terre
+
+6 - Par définition, la portance est la composante de la résultante aérodynamique : 
+A- parallèle à la direction du vent relatif
+B- parallèle à la corde de profil de l'aile
+C- perpendiculaire à la direction du vent relatif
+D- perpendiculaire à la corde de profil de l'aile
+
+7 - On appelle incidence ou angle d'attaque, l'angle formé par : 
+A- la corde de l'aile et l'horizon
+B- la direction du vent relatif et l'horizon
+C- la corde de l'aile et la direction du vent relatif
+D- la corde de l'aile et l'axe longitudinal de l'aéronef
+
+8 - Pour un aéronef en vol en palier stabilisé (vol horizontal à vitesse constante), quelle proposition est correcte ? 
+A- la portance est légèrement inférieure au poids
+B- la portance équilibre la trainée
+C- la portance et la traction sont identiques
+D- la portance équilibre le poids
+
+9 - À propos du vent relatif, quelle est l’affirmation correcte ? 
+A- sa direction est indépendante de la trajectoire de l’avion
+B- il dépend du relief et est plus fort en zone montagneuse
+C- il est parallèle et de sens opposé à la trajectoire de l’avion
+D- il dépend de l’altitude de vol et de la température extérieure
+
+10 - La différence de vitesse d’écoulement de l’air entre l’extrados et l’intrados de l’aile a pour effet : 
+A- d'engendrer une différence de pression entre intrados et extrados qui contribue à créer la portance
+B- d’augmenter la pression au bord de fuite
+C- de ralentir l’avion
+D- est un phénomène parasite que l’on cherche à réduire
+
+11 - Que peut-on dire à propos de la position du centre de gravité de l’avion, elle : 
+A- ne dépend que de la forme de l’avion
+B- a un effet très important sur la stabilité et la manœuvrabilité de l’avion en vol
+C- se déplace par rapport à l’avion en fonction de l’incidence
+D- est l’endroit où s’applique la résultante aérodynamique
+
+12 - En vol, le facteur de charge d’un avion : 
+A- ne dépend que du poids de l’équipage et des bagages embarqués dans l’avion
+B- augmente la vitesse de décrochage quand le facteur de charge augmente
+C- est supérieur à 1 quand l’avion est en montée
+D- est le rapport entre la masse et la surface des ailes de l’avion
+
+13 - Lors d’un virage en palier symétrique, et par rapport au vol horizontal en palier : 
+A- le facteur de charge ne varie pas
+B- le facteur de charge est proportionnel à la vitesse de l’avion
+C- le facteur de charge est proportionnel à la masse de l’avion
+D- le facteur de charge ne dépend que de l’inclinaison de l’avion
+
+14 - La fonction principale des winglets en bouts d’ailes est : 
+A- d’augmenter la traînée
+B- de diminuer la vitesse
+C- de diminuer la portance
+D- de diminuer la traînée induite
+
+15 - Lorsque vous déplacez le manche d’un avion vers la droite : 
+A- l’aileron droit se lève et l’aileron gauche s’abaisse
+B- l’aileron droit s’abaisse et l’aileron gauche se lève
+C- les deux ailerons se lèvent
+D- les deux ailerons s’abaissent
+
+16 - En avion, pour tourner selon l’axe de tangage, je dois : 
+A- actionner le manche vers l’avant ou vers l’arrière
+B- actionner le manche vers la gauche ou vers la droite
+C- utiliser le palonnier
+D- changer le pas d’hélice
+
+17 - La formule « canard » correspond à : 
+A- un avion à ailes multiples
+B- un avion à empennage en V
+C- un avion à empennage avant
+D- un avion en toile qui vole mal
+
+18 - Lors d’un vol en palier stabilisé : 
+A- la portance s’oppose à la trainée
+B- la traction s’oppose à la pesanteur
+C- la portance s'oppose à la pesanteur
+D- la traction s’oppose à la portance
+
+19 - Un centrage avant permet : 
+A- de diminuer la stabilité mais augmenter la manœuvrabilité
+B- de diminuer la stabilité et la manœuvrabilité
+C- d’augmenter la stabilité mais de diminuer la manœuvrabilité
+D- d’augmenter la stabilité et la manœuvrabilité
+
+20 - Un planeur possède une finesse de 40. Il est à une altitude de 2000m et son terrain de destination se trouve à une altitude de 1000m et à 20km de sa position. En volant dans un air calme sans vent à la vitesse de finesse maximale, choisissez la bonne proposition : 
+A- il atteindra le terrain avec une hauteur de 500m
+B- il n'atteindra pas le terrain
+C- il atteindra le terrain à une hauteur nulle
+D- il atteindra le terrain avec une hauteur de 250m
+
+##BIA 2024##
+1 - La vitesse de décrochage d'un avion augmente quand : 
+A- la quantité de carburant dans les réservoirs diminue
+B- le facteur de charge diminue
+C- la masse de l'avion diminue
+D- le facteur de charge augmente
+
+2 - Le facteur de charge est défini comme le rapport : 
+A- poids / traînée
+B- portance / traînée
+C- traînée / poids
+D- portance / poids
+
+3 - Le poids d'un satellite tournant autour d'un astre est : 
+A- compensé par sa force de portance
+B- compensé par sa force centrifuge
+C- compensé uniquement par ses moteurs fusées
+D- nul car il est en apesanteur
+
+4 - En phase d'atterrissage, le pilote sort les volets hypersustentateurs. L'objectif est : 
+A- de conserver la portance à vitesse réduite
+B- de réduire la portance et d'augmenter sa vitesse
+C- de diminuer la traînée
+D- d'augmenter la vitesse
+
+5 - Les dispositifs hypersustentateurs ont pour but : 
+A- de diminuer la portance à vitesse élevée (par exemple : pour une descente d'urgence)
+B- d'augmenter la vitesse de décrochage pour certaines manœuvres
+C- de diminuer la traînée pour certaines manœuvres
+D- de diminuer la vitesse de décrochage dans certaines phases de vol (par exemple : au décollage et à l'atterrissage)
+
+6 - La distance de roulage nécessaire au décollage diminue lorsque : 
+A- l'altitude augmente
+B- la température augmente
+C- la composante de vent arrière augmente
+D- la température diminue
+
+7 - Par définition, la portance est la composante de la résultante aérodynamique : 
+A- parallèle à la direction du vent relatif
+B- parallèle à la corde de profil de l'aile
+C- perpendiculaire à la direction du vent relatif
+D- perpendiculaire à la corde de profil de l'aile
+
+8 - Le vent relatif : 
+A- est la composante du vent prévu parallèle à la trajectoire
+B- est parallèle à la trajectoire, et de même sens que le déplacement de l'avion
+C- est parallèle à la trajectoire, mais de sens opposé au déplacement de l'avion
+D- est la composante du vent réel perpendiculaire à la trajectoire
+
+9 - La force parallèle, de même sens que le vent relatif, est : 
+A- la portance
+B- la traînée
+C- le poids
+D- la résultante aérodynamique
+
+10 - En virage symétrique en palier, le facteur de charge : 
+A- augmente si la vitesse augmente
+B- augmente si l'inclinaison augmente
+C- diminue si la vitesse augmente
+D- diminue si l'inclinaison augmente
+
+11 - Sur un hélicoptère, le vrillage d'une pale a pour but de tendre à : 
+A- augmenter la portance de la pale
+B- uniformiser la portance sur toute la longueur de la pale
+C- diminuer la traînée
+D- déplacer le centre de gravité de la pale
+
+12 - Sur un hélicoptère à assiette nulle, la commande appelée levier de pas collectif permet de modifier l'incidence des pales du rotor. Elle permet ainsi : 
+A- de contrôler les mouvements autour de l'axe de lacet
+B- de contrôler les mouvements autour de l’axe de tangage
+C- de modifier la portance pour le faire avancer ou reculer
+D- de modifier la portance pour le faire monter ou descendre
+
+13 - L'angle de calage d'une aile est compris entre : 
+A- la corde de profil de l'aile et l'axe longitudinal de l'avion
+B- la corde de profil de l'aile et le vent relatif
+C- le plan de l'aile et l'horizontale
+D- le bord d'attaque et la perpendiculaire de l'axe avion
+
+14 - Plus la finesse d'un planeur est élevée : 
+A- plus la distance qu'il peut parcourir est faible
+B- plus son poids est faible
+C- plus la distance qu'il peut parcourir est élevée
+D- plus sa traînée est importante
+
+15 - Parmi les éléments suivants, celui qui a une influence sur la position du centre de gravité est : 
+A- la trajectoire (palier, montée, descente)
+B- la vitesse
+C- le niveau de carburant dans les réservoirs
+D- l'inclinaison
+
+16 - Le décollage d'un avion se fait toujours face au vent pour : 
+A- décoller sur une distance plus courte
+B- diminuer la portance
+C- éviter de dépasser la VNE
+D- diminuer la traînée
+
+17 - La traînée induite est une conséquence de : 
+A- l'interaction du fuselage et de l'aile
+B- la rotation de l’hélice
+C- la différence de pression entre l'intrados et l'extrados
+D- l'usage d'un train fixe
+
+18 - Trop de poids sur l'arrière de votre avion : 
+A- augmente la stabilité et la manœuvrabilité
+B- diminue la stabilité et la manœuvrabilité
+C- augmente la stabilité et diminue la manœuvrabilité
+D- diminue la stabilité et augmente la manœuvrabilité
+
+19 - La base de lancement spatial de Kourou est située proche de l'équateur pour profiter : 
+A- d'une plus grande vitesse de rotation de la Terre
+B- d'un climat tempéré
+C- d'une pression atmosphérique faible
+D- d'un espace aérien réservé à cet usage
+
+20 - La distance de décollage augmente quand : 
+A- la pression et la température de l'atmosphère diminuent
+B- la pression et la température de l'atmosphère augmentent
+C- la pression atmosphérique diminue et la température de l'atmosphère augmente
+D- la pression atmosphérique augmente et la température de l'atmosphère diminue*
+
+##BIA 2025##
+1 - Pour un aéronef en vol en palier stabilisé (vol horizontal stabilisé), quelle proposition est correcte ? 
+A- La portance est légèrement inférieure au poids
+B- La portance équilibre la traînée
+C- La portance et la traction sont identiques
+D- La portance équilibre le poids
+
+2 - Les dispositifs hypersustentateurs ont pour but : 
+A- de diminuer la portance à vitesse élevée (par exemple : pour une descente d'urgence)
+B- d'augmenter la vitesse de décrochage pour certaines manœuvres
+C- de diminuer la traînée pour certaines manœuvres
+D- de diminuer la vitesse de décrochage dans certaines phases de vol (par exemple : au décollage et à l'atterrissage)
+
+3 - Le facteur de charge subi par un aéronef en virage en palier : 
+A- diminue avec l'inclinaison
+B- est toujours égal à 2
+C- ne dépend que du type d'aéronef
+D- augmente avec l'inclinaison
+
+4 - Le profil d'une aile est lisse lorsque : 
+A- les becs de bord d'attaque et les volets sont rentrés
+B- les becs de bord d'attaque sont rentrés et les volets sont sortis
+C- les becs de bord d'attaque sont sortis et les volets sont rentrés
+D- les becs de bord d'attaque et les volets sont sortis
+
+5 - Pour calculer la distance de décollage d'un avion, il faut prendre en compte : 
+A- la masse de l'avion uniquement.
+B- la température, l'altitude de l'aéroport, la masse de l'avion
+C- l'altitude de l'aéroport uniquement
+D- aucun de ces éléments
+
+6 - La traînée induite est une conséquence de : 
+A- l'interaction du fuselage et de l'aile
+B- la rotation de l'hélice
+C- la différente de pression entre l'intrados et l'extrados
+D- l'usage d'un train fixe
+
+7 - L'incidence d'une aile est positive lorsque : 
+A- l'écoulement est parallèle à la corde du profil
+B- l'écoulement attaque le profil du côté de l'extrados
+C- l'écoulement attaque le profil du côté de l'intrados
+D- l'aéronef est en vol dos stabilisé
+
+8 - Lors d'une ressource, le facteur de charge : 
+A- augmente
+B- diminue et la vitesse de décrochage augmente
+C- reste constant
+D- diminue ainsi que la vitesse de décrochage
+
+9 - Ce qui assure la plus grande stabilité d'un aéronef est : 
+A- le dièdre et la flèche positifs
+B- le dièdre négatif et la flèche nulle
+C- le dièdre et la flèche négatifs
+D- le dièdre positif et la flèche nulle
+
+10 - L'angle d'incidence d'un profil est l'angle formé entre : 
+A- la corde du profil et l'horizontale
+B- l'axe longitudinal de l'avion et la direction du vent relatif
+C- la direction du vent relatif et I'horizontale
+D- la corde du profil et la direction du vent relatif
+
+11 - Lorsqu'un aéronef est centré avant : 
+A- sa stabilité augmente
+B- sa maniabilité augmente
+C- sa maniabilité et sa stabilité ne sont pas modifiées
+D- sa stabilité diminue
+
+12 - L'assistance gravitationnelle : 
+A- permet le retour du lanceur sur Terre
+B- est une ligne téléphonique entre l'ISS et la Terre en cas de besoin d'assistance
+C- est utilisée comme « moteur » afin d'accélérer les sondes lors de leurs voyages interstellaires
+D- est un propulseur
+
+13 - La corde de profil de l'aile est le segment qui joint : 
+A- l'emplanture à l'extrémité de l'aile
+B- les deux extrémités de l'aile
+C- le bord d'attaque au bord de fuite
+D- la partie la plus large entre l'intrados et l'extrados
+
+14 - L'origine de la sustentation de l'aile résulte de l'apparition : 
+A- d'une dépression à l'extrados et à l'intrados
+B- d'une surpression à l'intrados et à l'extrados
+C- d'une dépression à l'extrados et d'une surpression à l'intrados
+D- d'une surpression à l'extrados et d'une dépression à l'intrados
+
+15 - L'angle de pente est : 
+A- l'angle entre l'horizontale et l'axe longitudinal de l'avion
+B- l'angle entre la corde de profil de l'aile et le vent relatif
+C- l'angle affiché sur l'horizon artificiel du pilote
+D- l'angle entre l'horizontale et la trajectoire réelle de l'avion
+
+16 - En vol, si le pilote tire fortement sur le manche, le facteur de charge : 
+A- augmente
+B- diminue
+C- reste constant
+D- devient nul
+
+17 - Parmi les éléments suivants, celui qui a une influence sur la position du centre de gravité est : 
+A- la trajectoire (palier, montée, descente)
+B- la vitesse
+C- le niveau de carburant dans les réservoirs
+D- l'inclinaison
+
+18 - En soufflerie, si on multiplie par 3 la vitesse du vent relatif, la valeur de la portance est : 
+A- multipliée par 3
+B- multipliée par 9
+C- multipliée par 6
+D- multipliée par 12
+
+19 - Le réglage de l'hélice en plein petit pas au décollage a pour but de : 
+A- diminuer la distance de décollage et la pente de montée
+B- augmenter la distance de décollage et diminuer la pente de montée
+C- diminuer la distance de décollage et augmenter la pente de montée
+D- augmenter la distance de décollage et la pente de montée
+
+20 - Pour un aéronef en montée rectiligne uniforme, la force de traction de l'hélice est fonction : 
+A- uniquement de la traînée
+B- de la traînée, du poids et de l'angle de montée
+C- uniquement du poids et de la portance
+D- du poids et de l'angle de montée

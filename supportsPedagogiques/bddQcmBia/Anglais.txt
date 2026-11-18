@@ -1,0 +1,1386 @@
+##BIA 2015##
+1 - En anglais, quel est le terme employé pour désigner les ailerons ? 
+A- flaps
+B- wings
+C- gear
+D- ailerons
+
+2 - En anglais, quel est le terme employé pour désigner la gouverne de direction ? 
+A- flaps
+B- rudder
+C- tail
+D- direction system
+
+3 - En anglais, quel est le terme employé pour désigner les volets ? 
+A- winglets
+B- spoilers
+C- foilers
+D- flaps
+
+4 - En anglais, quel est le terme employé pour désigner les commandes de vol ? 
+A- flight control
+B- plane commands
+C- fly stuff
+D- flight commands
+
+5 - En anglais, quel est le terme employé pour désigner le train d'atterrissage ? 
+A- landing system
+B- landing wheels
+C- landing gear
+D- landing flaps
+
+6 - Dans un message météo, que signifie le sigle NSC ? 
+A- No Significant Clouds
+B- No Significant Ceilling
+C- Nimbus Stratus Cumulus
+D- No Stratus Crossing
+
+7 - Dans un message météo, que signifie le sigle CAT ? 
+A- Ceiling Around Tower
+B- Clear Air Turbulence
+C- Calm Air Temporary
+D- Cumulus Avoid Turbulence
+
+8 - Which force is used to overcome gravity for a plane in normal flight ? 
+A- drag
+B- weight
+C- thrust
+D- lift
+
+9 - Que signifie le sigle ILS ? 
+A- Information Light System
+B- Instrument Landing System
+C- Intense Light System
+D- Instrument Lighting System
+
+10 - Choose the good proposition for a glider : 
+A- c'est un dispositif d'atterrissage aux instruments
+B- c'est un homme volant
+C- c'est un planeur
+D- c'est un dispositif permettant d'empêcher le givrage du carburateur
+
+11 - The primary flight controls are : 
+A- ailerons, elevator and rudder
+B- flaps, spoilers and slats
+C- the captain and the first pilot
+D- the air controllers who work with primary radar
+
+12 - When I pull the stick : 
+A- the flaps move down
+B- the elevator moves down
+C- the spoilers are deployed
+D- the elevator moves up
+
+13 - Les 3 axes autour desquels un avion peut se mouvoir sont les axes de roulis, tangage et lacet. En anglais et dans l'ordre, il s'agit de : 
+A- pitch, yaw, roll
+B- roll, tangy, turn
+C- roll, pitch, yaw
+D- roll, hill, turn
+
+14 - L'étincelle de la bougie dans un moteur à pistons provient de la haute tension fournie par : 
+A- the battery
+B- the battery on start-up and then the alternator
+C- the starter motor
+D- the magnetos
+
+15 - L'anémomètre est appelé : 
+A- speedmaster
+B- tachymetre
+C- airspeed indicator
+D- anemospeedmeter
+
+16 - Que comprenez-vous dans ce message concernant une piste : « snow removal is in progress runway one seven » ? 
+A- la piste 17 est en cours de déneigement
+B- le déneigement de la piste 17 a fait des progrès
+C- la neige a progressé sa couverture de la piste 17
+D- la piste 17 est à présent déneigée
+
+17 - Le mot "ignition" fait référence au : 
+A- choix initial de votre cap lors de l'alignement sur la piste
+B- réglage initial de l'ordinateur de bord sur les gros porteurs ou plus simplement du pilote automatique sur les petits avions
+C- dispositif d'allumage du moteur
+D- dispositif d'augmentation de poussée d'un réacteur par injection de carburant dans la tuyère (postcombustion)
+
+18 - Concerning an airplane, choose the right answer. : 
+A- the stick changes the position of the ailerons and elevator
+B- the rudder pedals are connected to the wings
+C- when you pull back the control column the nose of the aircraft is lowered
+D- when you push forward the control column the nose of the aircraft rises
+
+19 - Le mot CREW désigne : 
+A- une pièce particulière d'un moteur à piston de type 4 temps
+B- l'équipage d'un appareil
+C- une pièce spécifique d'un hélicoptère
+D- une vis
+
+20 - Le co-pilote déclare "the gear warning light has come on green". Que doit comprendre le commandant de bord ? 
+A- le phare du train d'atterrissage s'est allumé en vert
+B- le feu du train droit est allumé en vert
+C- le voyant du train d'atterrissage étant devenu vert, le train est maintenant sorti
+D- le voyant d'alerte du train d'atterrissage étant allumé, il faut attendre qu'il passe au vert
+
+##BIA 2016##
+1 - "Décrochage" en anglais se dit : 
+A- spin
+B- stall
+C- fall
+D- roll
+
+2 - En anglais, le train d'atterrissage principal se nomme : 
+A- main landing gear
+B- gear box
+C- tail landing gear
+D- nose gear
+
+3 - En anglais le terme "runway" désigne : 
+A- un anneau de vitesse
+B- un passage rapide
+C- une piste
+D- une aire de dégagement
+
+4 - Un pilote annonce "a landing gear position light has turned red", cela signifie : 
+A- le phare du train d'atterrissage fonctionne
+B- la lumière du contrôle de la boîte de vitesses est passée au rouge
+C- le voyant du phare rouge est allumé
+D- le voyant du train est rouge
+
+5 - Le message radio suivant : "Air France one one six, please contact tower one one eight decimal one", signifie : 
+A- le vol Air France 118 doit contacter la tour sur la fréquence 116,1
+B- le vol Air France 116 doit contacter la tour sur la fréquence 118,1
+C- le vol Air France 116 doit contourner la tour au cap 118 dans une minute
+D- le vol Air France 116 a un contact avec la tour
+
+6 - On which axis will the rudder move the aircraft ? 
+A- pitching
+B- rolling
+C- rudding system
+D- yawing
+
+7 - En anglais le terme « Maximum Take Off Weight » signifie : 
+A- masse maximale à vide de l'avion
+B- masse maximale au décollage
+C- masse maximale embarquée par l'avion pour pouvoir décoller
+D- poids maximal supportable par la piste au moment du décollage
+
+8 - La traduction de « Aligné piste 25, prêt au décollage » s'écrit : 
+A- holding short runway two five, ready for take off
+B- clear for take off on runway two five
+C- straight runway two five clear for take off
+D- line up runway two five, ready for take off
+
+9 - En anglais, le terme employé pour désigner la gouverne de profondeur est : 
+A- rudder
+B- elevator
+C- flaps
+D- slats
+
+10 - Dans l'alphabet aéronautique international, la lettre "M" s'énonce : 
+A- monday
+B- mark
+C- mike
+D- maverick
+
+11 - Lorsque vous n'avez pas compris le message du contrôleur aérien vous dites : 
+A- roger
+B- will co
+C- say again
+D- no comment
+
+12 - Choose the good proposition for "glider" : 
+A- c'est un dispositif permettant d'empêcher le givrage du carburateur
+B- c'est un dispositif d'atterrissage aux instruments
+C- c'est une commande de vol
+D- c'est un planeur
+
+13 - The primary flight controls are : 
+A- ailerons. elevator and rudder
+B- the air controllers who work with primary radar
+C- flaps, spoilers and slats
+D- the captain and the first pilot
+
+14 - When I pull the stick : 
+A- the flaps move down
+B- the elevator moves down
+C- the spoilers are deployed
+D- the elevator moves up
+
+15 - L'anémomètre est appelé : 
+A- speedmaster
+B- airspeed indicator
+C- speedtachymeter
+D- vertical speed indicator
+
+16 - Un vent de travers se dit : 
+A- crosswind
+B- vertical gust
+C- contrails
+D- sidewind
+
+17 - Un message de la tour vous prévient d'un danger. Il comporte le mot "gust". Cela concerne : 
+A- des vols d'oiseaux
+B- un nuage de poussière
+C- des fortes précipitations
+D- des rafales de vent
+
+18 - "Vent de face" en anglais se dit : 
+A- gust wind
+B- windshield
+C- crosswind
+D- headwind
+
+19 - En entendant à la radio « Fox Bravo Mike — Please Maintain Holding point runway one one », vous comprenez : 
+A- le pilote du Fox Bravo Mike doit maintenir sa position au point d'arrêt de la piste 11
+B- Mike est félicité pour avoir su s'arrêter avant d'entrer sur la piste 11
+C- le pilote du Fox Bravo Mike doit revenir à sa position au point d'arrêt de la piste 11
+D- le pilote du Fox Bravo Mike doit maintenant s'arrêter à 11 m du point d'arrêt
+
+20 - Dans un message météo, vous lisez « BECMG ». Cela signifie : 
+A- Backup Emergency Cabin Magnifying Glass
+B- Blast Effect Check Main Gear
+C- BE Careful Major Gust
+D- BECoMinG
+
+##BIA 2017##
+1 - En anglais, la gouverne de profondeur est appelée : 
+A- flaps
+B- wing
+C- elevator
+D- rudder
+
+2 - En décrivant un aéronef, l'expression "tailwheel airplane" est employée pour signifier qu'il s'agit d'un avion : 
+A- à train rentrant
+B- avec moteur de queue
+C- à train classique
+D- tricycle
+
+3 - Les aérofreins sont appelés : 
+A- airflow controlers
+B- wingbrakes
+C- airbrakes
+D- windbrakes
+
+4 - When I pull the stick of an airplane backwards : 
+A- the left aileron moves up
+B- the left flap moves down
+C- the flaps and airbrakes move down
+D- the elevator moves up
+
+5 - À la radio l'indication « number one, clear to land, runway one one » émise par le contrôleur signifie : 
+A- numéro 1 autorisé à l'atterrissage sur la piste 11
+B- autorisé à l'atterrissage piste 1 ou 11
+C- autorisé à l'atterrissage piste 11, vous dégagerez par la sortie n°1
+D- autorisé au décollage piste 1 ou piste 11
+
+6 - En anglais, la poussée d'un moteur se dit : 
+A- pull
+B- drag
+C- thrust
+D- lift
+
+7 - Dans un message météo, le sigle CAVOK signifie : 
+A- capacity and visibility OK
+B- ceiling and visibility OK
+C- capacity and view OK
+D- cloud and view OK
+
+8 - On an airplane, the movement of the nose up or down is : 
+A- rolling
+B- pitching
+C- banking
+D- yawing
+
+9 - Un vent de face se dit : 
+A- headwind
+B- tailwind
+C- face gust
+D- ahead gust
+
+10 - An auxiliary power unit is : 
+A- a turbine engine that provides mechanical power for the accessory drive gear box
+B- a ram air turbine that delivers mechanical power for accessories gearbox
+C- an electric battery used in case of emergency
+D- a ram air turbine used in case of emergency
+
+11 - « Fox Victor Bravo, line up, clear for take-off runway three one left. » signifie : 
+A- Fox Victor Bravo, alignez-vous, autorisé à l'atterrissage, piste 31 gauche
+B- Fox Victor Bravo, alignez-vous, temps clair pour le décollage, piste 31 gauche
+C- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 droite
+D- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 gauche
+
+12 - « Leading edge » signifie : 
+A- bord d'attaque
+B- bord de fuite
+C- longeron
+D- lisse
+
+13 - « Trailing edge » signifie : 
+A- bord d'attaque
+B- bord de fuite
+C- dérive
+D- lisse
+
+14 - L'expression "prendre un cap" se dit : 
+A- to set a heading
+B- to fix a magnetic course
+C- to take a road
+D- to take a cap
+
+15 - L'expression « the flight controls » fait référence : 
+A- aux contrôles en vol des équipages
+B- aux contrôleurs aériens
+C- aux commandes de vol
+D- à la tour de contrôle
+
+16 - You can read "two thousands feet" on : 
+A- a voltmeter
+B- a tachometer
+C- an altimeter
+D- an airspeed indicator
+
+17 - Les « strobe lights » sont : 
+A- les feux de brouillard
+B- les feux d'atterrissage
+C- les feux de navigation
+D- les feux à éclat
+
+18 - La « True Air Speed », ou TAS, représente : 
+A- la vitesse au sol d'un avion
+B- la vitesse propre d'un avion
+C- la vitesse d'un avion par rapport aux nuages
+D- la vitesse de croisière d'un avion
+
+19 - La « Ground Speed », ou GS, représente : 
+A- a vitesse propre d'un aéronef
+B- la vitesse d'un aéronef par rapport aux nuages
+C- la vitesse de croisière d'un aéronef
+D- la vitesse sol d'un aéronef en vol
+
+20 - En Anglais un hydravion se nomme : 
+A- seaplane
+B- hydroplane
+C- floatting craft
+D- seacraft
+
+##BIA 2018##
+1 - The purpose of a trim tab is : 
+A- to roll the aircraft
+B- to set the landing gear down
+C- to reduce the force needed to move a control surface
+D- to communicate with the control tower
+
+2 - En anglais, les becs de bord d'attaque sont appelés : 
+A- flaps
+B- spoilers
+C- nats
+D- slats
+
+3 - The flight control which yaws an aircraft is : 
+A- the rudder
+B- the elevator
+C- the yoke
+D- the speed brakes
+
+4 - L'expression anglaise « Lack of awareness » signifie : 
+A- un lac autorisé aux hydravions
+B- une instruction de check-list
+C- une perte de connaissance liée à un manque d'oxygène
+D- l'absence de conscience d'une situation donnée
+
+5 - What factors must be present for a thunderstorm to form : 
+A- stable air
+B- unstable air
+C- fog
+D- rain
+
+6 - L'expression « Airworthiness Certificate » signifie : 
+A- licence radio
+B- certificat de navigabilité
+C- l'avion n'est pas en état de vol
+D- certificat de performances
+
+7 - La couverture nuageuse correspond au terme anglais « Overcast » est : 
+A- ciel clair
+B- ciel partiellement couvert
+C- ciel totalement couvert
+D- visibilité réduite
+
+8 - A piston is a technical term which refers to : 
+A- a turbine engine component
+B- an electrical device
+C- a navigational instrument
+D- a reciprocating engine component
+
+9 - L'expression: « Hold short runway 27 » signifie : 
+A- autorisation de traverser la piste 27
+B- remontez la piste 27
+C- maintenez position au point d'arrêt piste 27
+D- retournez au point de parking 27
+
+10 - En anglais, la gouverne de direction est appelée : 
+A- elevator
+B- rudder
+C- blubber
+D- flaps
+
+11 - Le terme anglais « Ramp » désigne : 
+A- la piste de décollage
+B- les cales de l'avion
+C- la piste d'atterrissage
+D- l'aire de trafic
+
+12 - Un deltaplane est appelé en anglais : 
+A- hang-glider
+B- glider
+C- paraglider
+D- glider-plane
+
+13 - Le variomètre est appelé en anglais : 
+A- airspeed indicator
+B- turn and bank indicator
+C- vertical speed indicator
+D- attitude indicator
+
+14 - Les tourbillons marginaux sont réduits par l'utilisation de : 
+A- tailets
+B- winglets
+C- slats
+D- stabilons
+
+15 - What would be the best definition for the spaceshuttle ? 
+A- a manned spacecraft that can glides to a landing
+B- a unmanned spacecraft that can be operated several times
+C- a spaceship that can take off like a conventional airplane
+D- an air carrier designed by the USA
+
+16 - Le terme « steerable nose wheel » désigne : 
+A- une roulette de nez fixe
+B- une roulette de queue orientable
+C- une roulette de nez orientable
+D- le pneu avant orientable
+
+17 - The red navigation light is located : 
+A- on the right wing
+B- on the left wing
+C- on the lower part of the fuselage
+D- on the engine cowling
+
+18 - A « sweptback wing aircraft » désigne un avion : 
+A- à ailes hautes
+B- à ailes basses
+C- équipé d'un plan canard
+D- à ailes en flèches
+
+19 - Le terme anglais « pitch » concernant une hélice fait référence à : 
+A- sa longueur
+B- son pas
+C- son mode de fixation au moyeu
+D- sa corde
+
+20 - Pendant un essai radio, la tour de contrôle vous répond: « Loud and clear ». Cela signifie que : 
+A- le volume de votre radio est trop élevé
+B- la tour de contrôle vous reçoit cinq sur cinq
+C- votre émission radio est hachée
+D- il est clair que votre radio ne fonctionne pas
+
+##BIA 2019##
+Les questions F.1, F.2, F.3 et F.4 font référence à l’image ci-dessous.
+Schéma légendé d'un avion
+1 - En anglais, le terme employé pour désigner le train d’atterrissage est : 
+A- landing system
+B- landing wheels
+C- landing flaps
+D- landing gear
+
+2 - Le terme anglais employé pour désigner la gouverne de direction est : 
+A- ailerons
+B- flaps
+C- wings
+D- rudder
+
+3 - Le terme anglais employé pour désigner la gouverne de profondeur est : 
+A- ailerons
+B- flaps
+C- elevator
+D- gear
+
+4 - En anglais, le terme "leading edge" désigne : 
+A- le bord d'attaque de l'aile
+B- le bord de fuite de l'aile
+C- la dérive
+D- la banderole tractée par l'aéronef
+
+5 - En anglais aéronautique, le terme "clearance" signifie : 
+A- nettoyage d’une piste
+B- autorisation
+C- ciel dégagé
+D- éclairage d’une piste
+
+6 - Le terme anglais employé pour désigner les dispositifs destructeurs de portance est : 
+A- flaps
+B- spoilers
+C- portance destroy system
+D- air breaks
+
+7 - En anglais, pour demander la priorité à l’atterrissage, il faut dire : 
+A- we request landing quickly
+B- we request landing priority
+C- we request to land in first
+D- we request emergency procedure
+
+8 - Le terme anglais « Maximum Take Off Weight » signifie : 
+A- masse maximale à vide de l'aéronef
+B- masse maximale au décollage de l'aéronef
+C- masse maximale utile de l'aéronef
+D- masse marchande maximale de l'aéronef
+
+9 - En anglais, l'expression "prêt au décollage, piste 12" se dit : 
+A- stand by to take off runway one two
+B- holding short take off runway twelve
+C- ready for take off runway one two
+D- clear for take off runway twelve
+
+10 - Il est fréquent que lors d'échanges avec les organismes de contrôle aérien, les membres d'équipage répondent "wilco", ceci signifie : 
+A- merci de changer de fréquence
+B- votre message a été compris et sera exécuté
+C- nous allons nous diriger vers le point de report WILCO (qui existe sur tous les aéroports internationaux)
+D- merci de répéter votre message
+
+11 - The message from the tower is "Maintain holding point alpha", means that : 
+A- you must wait for an alphajet
+B- you must stay at the holding point marked A
+C- you have to wait at the airport
+D- you have to move to the point alpha
+
+12 - Le terme anglais "airship" désigne principalement : 
+A- tout type d'aéronef
+B- les planeurs
+C- les ballons dirigeables
+D- les avions gros porteurs
+
+13 - If somebody uses the term "airliner", you can imagine : 
+A- a large aircraft intended for carrying passengers or cargo in commercial service
+B- a small aircraf intended for specific air route
+C- a kind of international airline company dedicated to commercial purpose
+D- a specific airline company named AIRLINER
+
+14 - Si vous n'avez pas compris le message d'un contrôleur aérien, votre réponse la plus appropriée est : 
+A- roger
+B- will comply
+C- no comment
+D- say again
+
+15 - “Primary flight controls” of airplane refer to : 
+A- the air controllers who work with primary radar
+B- flaps, spoilers and slats
+C- ailerons, elevator and rudder
+D- the captain and the first officer
+
+16 - When the pilot moves the stick to the right : 
+A- ailerons move
+B- elevator move
+C- flaps move down
+D- flaps move up
+
+17 - Pour désigner le vent de travers, il faut employer le terme : 
+A- back wind
+B- sidewind
+C- crosswind
+D- horizontal gust
+
+18 - En anglais, le terme elevator désigne : 
+A- une "pompe" dans le jargon des vélivoles
+B- la gouverne d'inclinaison
+C- la gouverne de profondeur
+D- la gouverne de direction
+
+19 - Si un contrôleur aérien vous dit "please squawk one zero two four", vous devez : 
+A- vous reportez à l'altitude de 1024 ft
+B- caler l'altimètre sur la pression de 1024 hPa
+C- afficher 1024 au transpondeur
+D- voler au-dessus de 1024 m
+
+20 - Pour des parachutistes, le terme anglais "drop zone" signifie : 
+A- la zone d'atterrissage des parachutistes
+B- l’endroit où il ne faut pas se poser
+C- l’atelier de pliage des parachutages
+D- la zone de poser de l'avion largueur
+
+##BIA 2020##
+1 - Dans un message météo, que signifie le terme CAVOK ? 
+A- Ceiling And Visibility OK
+B- Clear And Visibility OK
+C- Control And View OK
+D- Cockpit And Vision OK
+
+2 - En anglais, la poussée d'un réacteur se dit : 
+A- lift
+B- drag
+C- thrust
+D- pull
+
+3 - When I turn the control wheel to the left : 
+A- the left flap moves down
+B- the nose wheel turns to the left
+C- the left aileron moves up
+D- the vertical tail turns to the left
+
+4 - Traduire en français : « Fox Victor Bravo, line up, cleared for take-off runway 31 left. » 
+A- Fox Victor Bravo, alignez-vous, temps clair pour le décollage, piste 31 gauche
+B- Fox Victor Bravo, alignez-vous, autorisé à l'atterrissage, piste 31 gauche
+C- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 droite
+D- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 gauche
+
+5 - Les aérofreins sont appelés : 
+A- airflow controls
+B- airspeed controls
+C- airdrag system
+D- speedbrakes
+
+6 - Le terme anglais employé pour désigner les dispositifs destructeurs de portance est : 
+A- flaps
+B- spoilers
+C- portance destroy system
+D- air breaks
+
+7 - En anglais, pour demander la priorité à l’atterrissage, il faut dire : 
+A- we request landing quickly
+B- we request landing priority
+C- we request to land in first
+D- we request emergency procedure
+
+8 - Le terme anglais « Maximum Take Off Weight » signifie : 
+A- masse maximale à vide de l'aéronef
+B- masse maximale au décollage de l'aéronef
+C- masse maximale utile de l'aéronef
+D- masse marchande maximale de l'aéronef
+
+9 - En anglais, l'expression "prêt au décollage, piste 12" se dit : 
+A- stand by to take off runway one two
+B- holding short take off runway twelve
+C- ready for take off runway one two
+D- clear for take off runway twelve
+
+10 - Il est fréquent que lors d'échanges avec les organismes de contrôle aérien, les membres d'équipage répondent "wilco", ceci signifie : 
+A- merci de changer de fréquence
+B- votre message a été compris et sera exécuté
+C- nous allons nous diriger vers le point de report WILCO (qui existe sur tous les aéroports internationaux)
+D- merci de répéter votre message
+
+11 - L'expression « leading edge » signifie : 
+A- saumon d'extrémité d'aile
+B- bord d'attaque d'une aile
+C- bord de fuite d'une aile
+D- carénage d'emplanture d'une aile
+
+12 - Le terme « constant speed propeller » signifie : 
+A- une autorisation donnée par le contrôle aérien d'effectuer une montée à vitesse constante
+B- un turboréacteur à vitesse de rotation fixe
+C- une hélice à vitesse constante
+D- un dispositif permettant de conserver une même vitesse de vol en palier horizontal, en montée ou en descente
+
+13 - Le « vent de face » se dit : 
+A- headwind
+B- gust
+C- thrust
+D- windshield
+
+14 - En anglais, les commandes de vol se nomment : 
+A- the plane command
+B- the flying setup
+C- the flight controls
+D- wings and tail controls
+
+15 - Le signe VFR signifie : 
+A- Very Famous Runway
+B- Visual Flight Rules
+C- Visual Flight Runway
+D- Vertical Flight Radian
+
+16 - Le terme anglais qui désigne la manche à air est : 
+A- wind pipe
+B- windsock
+C- wind handle
+D- air sock
+
+17 - The aircraft which lands only on water is : 
+A- a seaplane
+B- a floating plane
+C- an amphibious aircraft
+D- a water plane
+
+18 - Traduire en français : « the gear position light has turned green » 
+A- le phare de train d'atterrissage fonctionne
+B- le feu de navigation droit est vert
+C- le voyant de position du train est passé au vert
+D- le voyant de boîte de transmission est au vert
+
+19 - Le sigle ILS signifie : 
+A- Intelligent Landing Safer
+B- Instrument Landing System
+C- Information Leading Service
+D- Increase Leading System
+
+20 - Traduire en anglais : « bougies d'allumage du moteur » 
+A- engine candles of ignition
+B- motor fan sparking plugs
+C- ignition motor candles
+D- engine spark plugs
+
+##BIA 2021##
+This is Paris Le Bourget information Mike recorded at 1 8 4 1 UTC Expected approach ILS 0 7, other procedure on prior request to approach
+[Trou 1] [Trou 2] 0 7
+[Trou 3] [Trou 2] 0 9
+Expect departure 4 Juliette
+[Trou 2] is damp
+Transition level 6 0
+Wind 0 3 0 degrees 8 knots
+Visibility 7 km
+[Trou 4] Broken 1800 feet - Overcast 4900 feet
+Temperature 3 degrees - [Trou 5] 1 degrees
+QNH 1 0 1 5
+Inform on initial contact that you have received information Mike
+
+Ici Paris le Bourget information Mike enregistrée à 18 41 UTC Approche prévue ILS 0 7 - Toute autre procédure est à demander au préalable à l'approche
+[Atterrissage] [piste] 0 7
+[Décollage] [piste] 0 9
+Itinéraire de départ prévu 4 Juliette
+[piste] humide
+Niveau de transition 6 0
+Vent 0 30 degrés 8 nœuds
+Visibilité 7 km
+[Nuages] Broken 1800 pieds - Overcast 4900 pieds
+Température 3 degrés - [Point de rosée] unité degré
+QNH unité 0 unité 5
+Confirmez Mike reçue au premier contact
+
+Voici le contenu d'un message météorologique diffusé par un ATIS en anglais. puis en français. Le texte en anglais présente des trous. numérotés de 1 à 5 qu'il faudra compléter dans les 5 prochaines questions. Lorsqu'un mot se retrouve plusieurs fois dans le texte. le trou porte le même numéro. Pour vous aider. les mots en français correspondant à des trous ont été encadrés de crochets et mis en gras.
+
+Les questions F.1 à F.5 sont associées à cet encadré.
+1 - Choisir le mot anglais permettant de compléter [Trou 1] 
+A- take-off
+B- fly-down
+C- landing
+D- taxiing
+
+2 - Choisir le mot anglais permettant de compléter [Trou 2] 
+A- runway
+B- taxiway
+C- airfield
+D- ramp
+
+3 - Choisir le mot anglais permettant de compléter [Trou 3] 
+A- fly-up
+B- climbing
+C- take-off
+D- take-on
+
+4 - Choisir le mot anglais permettant de compléter [Trou 4] 
+A- ceiling
+B- gust
+C- clouds
+D- glouds
+
+5 - Choisir le mot anglais permettant de compléter [Trou 5] 
+A- point of pink
+B- pink point
+C- point of dew
+D- dew point
+
+6 - Le terme permettant de désigner un vent de travers est : 
+A- back wind
+B- side wind
+C- crosswind
+D- horizontal gust
+
+7 - Le terme « take off weight » signifie : 
+A- masse maximale utile de l'avion
+B- masse maximale au décollage de l'aéronef
+C- masse marchande maximale de l'aéronef
+D- masse maximum à vide de l'aéronef
+
+8 - Le terme « aircraft » désigne : 
+A- tout type d'aéronef
+B- les avions gros porteurs
+C- les planeurs
+D- les ballons dirigeables
+
+9 - Pour des parachutistes, le terme « Drop zone » désigne : 
+A- la zone de poser de l'avion largueur
+B- ja zone où il ne faut pas se poser
+C- l'atelier de pliage des parachutes
+D- la zone d'atterrissage des parachutistes
+
+10 - Le terme « elevator » désigne : 
+A- la gouverne d'inclinaison
+B- la gouverne de profondeur
+C- la gouverne de direction
+D- une « pompe » dans le jargon des vélivoies
+
+11 - A reverser is : 
+A- une hélice à pas variable
+B- un Inverseur de poussée
+C- un refroidissement par air
+D- un hypersustentateur
+
+12 - Standard atmosphere air pressure at sea level is : 
+A- given each time by tower
+B- 1000 hPa everywhere
+C- 1013.25 hPa
+D- QNE pressure
+
+13 - Dans les messages aéronautiques, le code RASH signifie "rain shower" c'est-à-dire : 
+A- une averse de pluie
+B- une pluie fine qui se poursuit pendant des heures
+C- de la neige pendant des heures
+D- une averse de grêle
+
+14 - L'anémomètre est appelé 
+A- speedmaster
+B- airspeed indicator
+C- speedtachymeter
+D- vertical speed indicator
+
+15 - Un message de la tour vous prévient d'un danger. Il comporte le mot "gust". Cela concerne : 
+A- des vols d'oiseaux
+B- une nuage de poussière
+C- des fortes précipitations
+D- des rafales de vent
+
+16 - « Fox Victor Bravo, line up, clear for take-off runway three one left. » signifie : 
+A- Fox Victor Bravo, alignez-vous, autorisé à l'atterrissage, piste 31 gauche
+B- Fox Victor Bravo, alignez-vous, temps clair pour le décollage, piste 31 gauche
+C- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 droite
+D- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 gauche
+
+17 - Les « strobe lights » sont : 
+A- les feux de brouillard
+B- les feux d'atterrissage
+C- les feux de navigation
+D- les feux à éclat
+
+18 - L'expression : « Hold short runway 27 » signifie : 
+A- autorisation de traverser la piste 27
+B- remontez la piste 27
+C- maintenez position au point d'attente piste 27
+D- retournez au point de parking 27
+
+19 - Dans un message météo, le terme SCATTERED signifie : 
+A- aucun nuage
+B- nuages épars
+C- formations orageuses
+D- nuages soudés
+
+20 - When the pilot moves the stick to the right, 
+A- the ailerons move
+B- the elevator move
+C- the flaps move down
+D- the flaps move up
+
+21 - Le signe VFR signifie : 
+A- Very Famous Runway
+B- Visual Flight Rules
+C- Visual Flight Runway
+D- Verticat Flight Radian
+
+22 - Le terme anglais qui désigne la manche à air est : 
+A- wind pipe
+B- windsock
+C- wind handle
+D- air sock
+
+##BIA 2022##
+1 - Une seule de ces descriptions est correcte, laquelle ? 
+A- pulling the stick back makes the elevator go left
+B- pushing the stick makes the rudder move up
+C- pulling the stick makes the rudder move up
+D- the stick changes the position on the aileron and elevator
+
+2 - Sur un aéronef, l’anémomètre (ou Badin) est appelé : 
+A- cruisecontrol tachymeter
+B- windspeed indicator
+C- airspeed indicator
+D- anemospeedmeter
+
+3 - What is a drag ? A force that : 
+A- propels an airplane
+B- acts at a 90-degree angle to the airflow
+C- gives resistance
+D- mesures the gravity of an object
+
+4 - When the pilot pushes the stick forward, 
+A- the flaps move
+B- the rudder moves
+C- the ailerons move
+D- the elevator moves
+
+5 - Which force is used to compensate gravity ? 
+A- lift
+B- weight
+C- thrust
+D- drag
+
+6 - Message from air traffic controller : “Set heading 270°” – Que devez-vous faire ? 
+A- vous tournez la tête au cap 270°
+B- vous prenez le cap 270°
+C- vous irez si vous avez le temps au cap 270°
+D- vous maintenez le cap 135°
+
+7 - Le sigle ILS signifie : 
+A- Intelligent Landing Safer
+B- Instrument Landing System
+C- Information Leading Service
+D- Increase Leading System
+
+8 - Si la tour vous communique « F-CG clear to line up runway 28 » c’est que vous êtes : 
+A- au point d’attente
+B- sur la piste 28
+C- en vent arrière
+D- au parking
+
+9 - En anglais aéronautique, le terme "clearance" signifie : 
+A- nettoyage d’une piste
+B- autorisation
+C- ciel dégagé
+D- éclairage d’une piste
+
+10 - Le train d'atterrissage principal se nomme en anglais : 
+A- gear box
+B- main landing gear
+C- principal landing
+D- tail landing gear
+
+11 - Choisissez la bonne combinaison : Tête d'avion légendée
+A- 1• fuselage 2• landing gear 3• pitot tube
+B- 2• fuselage 1• landing gear 3• pitot tube
+C- 1• fuselage 3• landing gear 2• pitot tube
+D- 2• fuselage 3• landing gear 1• pitot tube
+
+12 - A plane flies because the air flows around : 
+A- the wings
+B- the motor
+C- the engine
+D- the flaps
+
+13 - Sur le circuit de piste proposé, l’avion référencé 1 se trouve en : Circuit de piste
+A- base leg
+B- headwind
+C- downwind
+D- crosswind
+
+14 - En anglais le terme « Maximum Take Off Weight » signifie : 
+A- masse maximale à vide de l’avion
+B- masse maximale au décollage
+C- masse maximale embarquée par l’avion pour pouvoir décoller
+D- poids maximal supportable par la piste au moment du décollage
+
+15 - Un vent de travers se dit : 
+A- crosswind
+B- vertical gust
+C- contrails
+D- sidewind
+
+16 - À la radio l’indication « number two, clear to land, runway two two » émise par le contrôleur signifie : 
+A- numéro 2 autorisé à l’atterrissage piste 22
+B- autorisé à l’atterrissage piste 2 ou 22
+C- autorisé à l’atterrissage piste 22, vous dégagerez par la sortie n°2
+D- autorisé au décollage piste 2 ou piste 22
+
+17 - L'expression "prendre un cap" se dit : 
+A- to set a heading
+B- to fix a magnetic course
+C- to take a road
+D- to take a cap
+
+18 - Pendant un essai radio, la tour de contrôle vous répond : « Loud and clear ». Cela signifie que : 
+A- le volume de votre radio est trop élevé
+B- la tour de contrôle vous reçoit cinq sur cinq
+C- votre émission radio est hachée
+D- il est clair que votre radio ne fonctionne pas
+
+19 - Le terme « steerable nose wheel » désigne : 
+A- une roulette de nez fixe
+B- une roulette de queue orientable
+C- une roulette de nez orientable
+D- le pneu avant orientable
+
+20 - “Primary flight controls” of airplane refers to : 
+A- the air controllers who work with primary radar
+B- flaps, spoilers and slats
+C- ailerons, elevator and rudder
+D- the captain and the first officer
+
+21 - Un message de la tour vous prévient d'un danger. Il comporte le mot "gust". Cela concerne : 
+A- des vols d'oiseaux
+B- une nuage de poussière
+C- des fortes précipitations
+D- des rafales de vent
+
+22 - Les « strobe lights » sont : 
+A- les feux de brouillard
+B- les feux d’atterrissage
+C- les feux de navigation
+D- les feux à éclat
+
+##BIA 2023##
+1 - En anglais, « vent de travers » se dit : 
+A- back wind
+B- side wind
+C- crosswind
+D- horizontal wind
+
+2 - Quel terme désigne le train d’atterrissage ? 
+A- landing wheels
+B- landing system
+C- landing gear
+D- landing flaps
+
+3 - En anglais, quel est le terme employé pour designer la gouverne de direction : 
+A- flaps
+B- rudder
+C- tail
+D- direction system
+
+4 - Quel terme désigne le générateur auxiliaire de puissance : 
+A- unit auxiliary power
+B- auxiliary power unit
+C- auxiliary power generator
+D- accessory power unit
+
+5 - Que signifie CAVOK : 
+A- ceiling and visibility OK
+B- communication and voice OK
+C- c’est l’immatriculation d’un avion
+D- conditions de vol défavorables
+
+6 - En anglais, la gouverne de profondeur est appelée : 
+A- flaps
+B- wing
+C- elevator
+D- rudder
+
+7 - Les aérofreins sont appelés : 
+A- airflow controlers
+B- wingbrakes
+C- airbrakes
+D- windbrakes
+
+8 - Le terme anglais employé pour désigner les dispositifs destructeurs de portance est : 
+A- flaps
+B- spoilers
+C- portance destroy system
+D- air breaks
+
+9 - Après votre atterrissage, vous roulez vers le parking lorsque le contrôle d’aérodrome vous annonce l’arrivée prochaine de : « dust storm ». Vous en déduisez : 
+A- l’arrivée prochaine d’un avion sanitaire prioritaire
+B- l’arrivée prochaine d’un véhicule spécialisé pour la décontamination de l’avion
+C- qu’une tempête de sable arrive sur l’aérodrome
+D- que certaines zones sont fermées dans l’aéroport
+
+10 - "Maintain holding point alpha" means that: 
+A- you must wait for an alphajet
+B- you must stay at the holding point marked A
+C- you have to wait at the airport
+D- you have to move to the point alpha
+
+11 - Le terme anglais "airship" désigne principalement : 
+A- tout type d'aéronef
+B- les planeurs
+C- les avions gros porteurs
+D- les ballons dirigeables
+
+12 - En anglais, la poussée d'un réacteur se dit : 
+A- lift
+B- drag
+C- thrust
+D- pull
+
+13 - En anglais, pour demander la priorité à l’atterrissage, il faut dire : 
+A- we request landing quickly
+B- we request landing priority
+C- we request to land in first
+D- we request emergency procedure
+
+14 - En parlant d’une piste, vous entendez : « snow removal in progress runway 28 ». Vous comprenez : 
+A- piste 28 en cours de déneigement
+B- progression de la neige piste 28
+C- il neige sur la piste 28
+D- la piste 28 est parfaitement dégagée
+
+15 - En anglais, le « vent de face » se dit : 
+A- headwind
+B- gust
+C- thrust
+D- windshield
+
+16 - Traduire en anglais : « bougies d'allumage du moteur » 
+A- engine candles of ignition
+B- motor fan sparking plugs
+C- ignition motor candles
+D- engine spark plugs
+
+17 - The Air Traffic Controler tells you to « Acknowledge ». That means you have to: 
+A- answer « Roger »
+B- answer « Wilco »
+C- see the edge of the taxiway
+D- readback the clearance
+
+18 - Le contrôleur vous demande de prendre le cap 090, il dit : 
+A- to take a cap 090
+B- to go to 090
+C- to set heading 090
+D- to direct 090
+
+19 - Pour des parachutistes, le terme anglais "drop zone" signifie : 
+A- la zone d'atterrissage
+B- l’endroit où il ne faut pas se poser
+C- l’atelier de pliage des parachutages
+D- la zone de poser de l'avion largueur
+
+20 - Un contrôleur utilise le terme « affirmative ». Cela signifie : 
+A- non
+B- continuez selon les conditions spécifiées
+C- c’est une erreur. Le terme exact est « affirm »
+D- c’est exact
+
+##BIA 2024##
+1 - Le terme anglais « airship » désigne principalement : 
+A- tout type d’aéronef
+B- les planeurs
+C- les ballons dirigeables
+D- les avions gros porteurs
+
+2 - En Anglais un hydravion se nomme : 
+A- seaplane
+B- hydroplane
+C- floatting craft
+D- seacraft
+
+3 - À la radio l’indication « number two, clear to land, runway two two » émise par le contrôleur signifie : 
+A- numéro 2 autorisé à l’atterrissage piste 22
+B- autorisé à l’atterrissage piste 2 ou 22
+C- autorisé à l’atterrissage piste 22, vous dégagerez par la sortie n°2
+D- autorisé au décollage piste 2 ou piste 22
+
+4 - Le variomètre est appelé en anglais : 
+A- airspeed indicator
+B- turn and bank indicator
+C- vertical speed indicator
+D- attitude indicator
+
+5 - En anglais le terme « runway » désigne : 
+A- un anneau de vitesse
+B- un passage rapide
+C- une piste
+D- taxiway
+
+6 - Le terme anglais « pitch » concernant une hélice fait référence à : 
+A- sa longueur
+B- son pas
+C- son mode de fixation au moyeu
+D- sa corde
+
+7 - Dans un message météo, que signifie le terme CAVOK ? 
+A- Ceiling And Visibility OK
+B- Clear And Visibility OK
+C- Control And View OK
+D- Cockpit And Vision OK
+
+8 - En entendant à la radio « Fox Bravo Mike — Please Maintain Holding point runway one one », vous comprenez : 
+A- le pilote du Fox Bravo Mike doit maintenir sa position au point d’attente de la piste 11
+B- Mike est félicité pour avoir su s’arrêter avant d’entrer sur la piste 11
+C- le pilote du Fox Bravo Mike doit revenir à sa position au point d’atttente de la piste 11
+D- le pilote du Fox Bravo Mike doit maintenant s’arrêter à 11 m du point d’attente
+
+9 - Sur quel axe la gouverne de profondeur fait-elle bouger l’avion ? 
+A- Pitching
+B- Rolling
+C- Rudding System
+D- Yawing
+
+10 - Si vous n’avez pas compris le message d’un contrôleur aérien, votre réponse la plus appropriée est : 
+A- rager
+B- will comply
+C- no comment
+D- say again
+
+11 - Sur quel instrument de bord vous pouvez lire « You can read “two thousands feet » ? 
+A- A voltmeter
+B- Atachometer
+C- An altimeter
+D- An airspeed indicator
+
+12 - « Vent de face » en anglais se dit : 
+A- gust wind
+B- windshield
+C- crosswind
+D- headwind
+
+13 - Le terme anglais « Ramp » désigne : 
+A- la piste de décollage
+B- les cales de l’avion
+C- la piste d’atterrissage
+D- l’aire de trafic
+
+14 - À quoi sert le « Trim Tab » ? 
+A- To roll the aircraft
+B- To set the landing gear down
+C- To reduce the force needed to move a control surface
+D- To communicate with the control tower
+
+15 - « Fox Victor Bravo, line up, clear for take-off runway three one left. » signifie : 
+A- Fox Victor Bravo, alignez-vous, autorisé à l’atterrissage, piste 31 gauche
+B- Fox Victor Bravo, alignez-vous, temps clair pour le décollage, piste 31 gauche
+C- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 droite
+D- Fox Victor Bravo, alignez-vous, autorisé au décollage, piste 31 gauche
+
+16 - En anglais, l’expression « prêt au décollage, piste 12 » se dit : 
+A- stand by to take off runway one two
+B- holding short take off runway twelve
+C- ready for take off runway one two
+D- clear for take off runway twelve
+
+17 - Les 3 axes autour desquels un avion peut se mouvoir sont les axes de roulis, tangage et lacet. En anglais et dans l’ordre, il s’agit de : 
+A- pitch, yaw, roll
+B- roll, tangy, tum
+C- roll, pitch, yaw
+D- roll, hill, turn
+
+18 - Le terme anglais qui désigne la manche à air est : 
+A- wind pipe
+B- windsock
+C- wind handle
+D- air sock
+
+19 - L’expression « prendre un cap » se dit : 
+A- to set a heading
+B- to fix a magnetic course
+C- to take a road
+D- to take a cap
+
+20 - L’expression : « Hold short runway 27 » signifie : 
+A- autorisation de traverser la piste 27
+B- remontez la piste 27
+C- maintenez position au point d’attente 27
+D- retournez au point de parking 27
+
+##BIA 2025##
+1 - Le signe VFR signifie : 
+A- Very Famous Runway
+B- Visual Flight Rules
+C- Visual Flight Runway
+D- Vertical Flight Radian
+
+2 - L'anémomètre est appelé : 
+A- speedmaster
+B- airspeed indicator
+C- speedtachymeter
+D- vertical speed indicator
+
+3 - Pendant un essai radio, la tour de contrôle vous répond : < Loud and clear ». Cela signifie que : 
+A- le volume de votre radio est trop élevé
+B- la tour de contrôle vous reçoit cinq sur cinq
+C- votre émission radio est hachée
+D- il est clair que votre radio ne fonctionne pas
+
+4 - Dans un message météo, que signifie le sigle NSC ? 
+A- No Significant Clouds
+B- No Significant Ceilling
+C- Nimbus Stratus Cumulus
+D- No Stratus Crossing
+
+5 - Dans un message météo, vous lisez << BECMG ». Cela signifie : 
+A- Backup Emergency Cabin Magnifying Glass
+B- Blast Effect Check Main Gear
+C- BE Careful Major Gust
+D- BECOMinG
+
+6 - A « sweptback wing aircraft » désigne un avion : 
+A- à ailes hautes
+B- à ailes basses
+C- équipé d'un plan canard
+D- à ailes en flèches
+
+7 - Le terme « constant speed propeller » signifie : 
+A- une autorisation donnée par le contrôle aérien d'effectuer une montée à vitesse constante
+B- un turboréacteur à vitesse de rotation fixe
+C- une hélice à vitesse constante
+D- un dispositif permettant de conserver une même vitesse de vol en palier horizontal, en montée ou en descente
+
+8 - Dans un message météo, que signifie le terme CAVOK ? 
+A- Ceiling And Visibility OK
+B- Clear And Visibility OK
+C- Control And View OK
+D- Cockpit And Vision OK
+
+9 - Le terme anglais employé pour désigner la gouverne de profondeur est : 
+A- ailerons
+B- flaps
+C- elevator
+D- gear
+
+10 - La couverture nuageuse correspondant au terme anglais « Overcast » est : 
+A- ciel clair
+B- ciel partiellement couvert
+C- ciel totalement couvert
+D- visibilité réduite
+
+11 - Le terme anglais « Maximum Take Off Weight » signifie : 
+A- masse maximale à vide de l'aéronef
+B- masse maximale au décollage de l'aéronef
+C- masse maximale utile de l'aéronef
+D- masse marchande maximale de l'aéronef
+
+12 - En anglais, l'expression "prêt au décollage, piste 12" se dit : 
+A- stand by to take off runway one two
+B- holding short take off runway twelve
+C- ready for take off runway one two
+D- clear for take off runway twelve
+
+13 - « Leading edge » signifie : 
+A- bord d'attaque
+B- bord de fuite
+C- langeron
+D- lisse
+
+14 - Le terme anglais « Ramp » désigne : 
+A- la piste de décollage
+B- l'aire de trafic
+C- la piste d'atterrissage
+D- les cales de l'avion
+
+15 - En anglais, la gouverne de direction est appelée : 
+A- elevator
+B- rudder
+C- blubber
+D- flaps
+
+16 - Sur quel axe la gouverne de profondeur fait-elle bouger l'avion ? 
+A- Pitching
+B- Rolling
+C- Rudding system
+D- Yawing
+
+17 - Les 3 axes autour desquels un avion peut se mouvoir sont les axes de roulis, tangage et lacet. En anglais et dans l'ordre, il s'agit de : 
+A- pitch, yaw, roll
+B- roll, tangy, tum
+C- roll pitch, yaw
+D- roll, hill, tum
+
+18 - Le train d'atterrissage principal se nomme en anglais : 
+A- gear box
+B- main landing gear
+C- principal landing
+D- tail landing gear
+
+19 - En anglais le terme "runway" désigne : 
+A- un anneau de vitesse
+B- un passage rapide
+C- une piste
+D- taxiway
+
+20 - Le terme anglais qui désigne la manche à air est : 
+A- wind pipe
+B- windsock
+C- wind handle
+D- air sock
+
