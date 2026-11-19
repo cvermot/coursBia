@@ -132,34 +132,69 @@
 	\begin{document}
 	
 	\begin{titlepage}
-		\begin{center} 
-			~
-			\vfill
-			\begin{flushleft}
-				\huge \textbf{Cours BIA}
-			\end{flushleft}
-			\par
-			\hrule height 4pt
-			\par
-			\begin{flushright}
-				\Large \textbf{Clément \textsc{Vermot-Desroches}}
-				\par
-			\end{flushright}
-			\vspace{2cm}
-			%\includegraphics[width=\textwidth]{./img/img_couverture.png} 
-			\vfill
-			\vfill
-		\end{center}
-			\begin{textblock*}{30mm}[0,0](-20mm,-25mm)
-				%\includegraphics[width=3cm]{./img/International_symbol.png} 
-			\end{textblock*}
-		\begin{center}
-			\urlSite
-			
-			\today~-~version~\input{./param/version.tex}
-		\end{center} 
-	\end{titlepage} 	
-	
+		\definecolor{couvertureMarine}{HTML}{12304A}
+		\definecolor{couvertureBleu}{HTML}{267C9D}
+		\definecolor{couvertureOr}{HTML}{E8A94A}
+		\definecolor{couvertureFond}{HTML}{F1F6F7}
+		\newcommand{\carteCouverture}[5]{%
+			\begin{scope}[shift={(current page.north west)},xshift=#1cm,yshift=-#2cm]
+				\fill[white,rounded corners=3mm] (0,0) rectangle (#3,-5.05);
+				\node[inner sep=0pt] at (#3/2,-2.08) {%
+					\includegraphics[width=\dimexpr#3cm-8mm\relax,height=3.55cm,keepaspectratio]{#4}};
+				\fill[couvertureBleu] (0.32,-4.42) rectangle (0.39,-4.08);
+				\node[anchor=west,inner sep=0pt,text=couvertureMarine]
+					at (0.52,-4.25) {\fontsize{10}{12}\selectfont\bfseries #5};
+			\end{scope}%
+		}
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[couvertureFond] (current page.south west) rectangle (current page.north east);
+			\begin{scope}[shift={(current page.north west)}]
+				\fill[couvertureMarine] (0,0) rectangle (21,-7.75);
+				\fill[couvertureBleu] (0,-7.75) rectangle (21,-7.87);
+				\fill[couvertureOr] (1.65,-1.55) rectangle (3.15,-1.64);
+				\node[anchor=north west,inner sep=0pt,text=white]
+					at (1.65,-1.95) {\fontsize{16}{19}\selectfont Brevet d'initiation aéronautique};
+				\node[anchor=north west,inner sep=0pt,text=white]
+					at (1.65,-2.95) {\fontsize{44}{50}\selectfont\bfseries Cours BIA};
+				\node[anchor=north west,inner sep=0pt,text=white]
+					at (1.65,-4.95) {\fontsize{15}{18}\selectfont Comprendre le ciel, explorer le vol};
+				\node[anchor=north west,inner sep=0pt,text=white]
+					at (1.65,-6.25) {\fontsize{13}{16}\selectfont Clément \textbf{Vermot-Desroches}};
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-8.55) {\fontsize{12}{15}\selectfont\bfseries Cinq regards sur l'aéronautique et le spatial};
+			\end{scope}
+			\carteCouverture{1.65}{9.35}{8.675}{01-EtudeAeronefs/img/structureHelicoptere.pdf}{Étude des aéronefs}
+			\carteCouverture{10.675}{9.35}{8.675}{02-Navigation/img/roseDesVents.pdf}{Navigation et sécurité}
+			\carteCouverture{1.65}{14.75}{5.667}{03-Meteo/img/frontFroid.pdf}{Météorologie}
+			\carteCouverture{7.667}{14.75}{5.667}{04-Aerodynamique/img/profilAile.pdf}{Aérodynamique}
+			\carteCouverture{13.684}{14.75}{5.666}{05-Histoire/img/wrightFlyer.jpg}{Histoire}
+			\begin{scope}[shift={(current page.north west)}]
+				\draw[couvertureBleu,line width=0.8pt] (1.65,-21.05) -- (19.35,-21.05);
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-21.5) {\fontsize{12}{15}\selectfont\bfseries De la découverte à la préparation du BIA};
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-22.3) {\fontsize{10}{14}\selectfont Un cours pour comprendre, apprendre et prendre son envol.};
+				\node[anchor=south west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-27.45) {\fontsize{10}{12}\selectfont \urlSite};
+				\node[anchor=south east,inner sep=0pt,text=couvertureMarine]
+					at (19.35,-27.45) {\fontsize{10}{12}\selectfont \today~-~version~\input{./param/version.tex}};
+			\end{scope}
+		\end{tikzpicture}
+		\null
+	\end{titlepage}
+
+	\begin{titlepage}
+		\null\vfill
+		\noindent\textbf{Illustrations de couverture}\par
+		\medskip
+		\noindent Étude des aéronefs : structure d'un hélicoptère \cite{img:structureHelicoptere}.\par
+		\noindent Navigation : rose des vents \cite{img:roseDesVents}.\par
+		\noindent Météorologie : coupe d'un front froid \cite{img:frontFroid}.\par
+		\noindent Aérodynamique : profil d'aile \cite{img:profilAile}.\par
+		\noindent Histoire : le Wright Flyer \cite{img:wrightFlyer}.\par
+		\medskip
+		\noindent Les sources et licences détaillées figurent dans la bibliographie.
+	\end{titlepage}
 
 	\tableofcontents
 	\newpage	
