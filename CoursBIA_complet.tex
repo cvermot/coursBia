@@ -384,5 +384,56 @@
 	\printbibliography[heading=subbibintoc,title={Ressources en ligne},type=online]
 	\printbibliography[heading=subbibintoc,title={Images},type=misc]
 	\printbibliography[heading=subbibintoc,title={Logiciels},type=proceedings]
-	
+
+	\definecolor{couvertureMarine}{HTML}{12304A}
+	\definecolor{couvertureBleu}{HTML}{267C9D}
+	\definecolor{couvertureOr}{HTML}{E8A94A}
+	\definecolor{couvertureFond}{HTML}{F1F6F7}
+	\begin{titlepage}
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[couvertureFond] (current page.south west) rectangle (current page.north east);
+			\begin{scope}[shift={(current page.north west)}]
+				\fill[couvertureMarine] (0,0) rectangle (21,-6.5);
+				\fill[couvertureBleu] (0,-6.5) rectangle (21,-6.62);
+				\fill[couvertureOr] (1.65,-1.55) rectangle (3.15,-1.64);
+				\node[anchor=north west,inner sep=0pt,text=white,text width=11.5cm,align=left]
+					at (1.65,-1.85) {\fontsize{22}{27}\selectfont\bfseries Le ciel, le vol,\\l'espace};
+				\node[anchor=north west,inner sep=0pt,text=white,text width=11.5cm,align=left]
+					at (1.65,-4.05) {\fontsize{11}{16}\selectfont
+						Découvrez l'aéronautique et préparez le BIA, du premier vol à l'espace.};
+				\node[anchor=center,inner sep=0pt,opacity=0.85]
+					at (17.2,-3.25) {\includegraphics[width=4.2cm]{02-Navigation/img/roseDesVents.pdf}};
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-7.55) {\fontsize{16}{20}\selectfont\bfseries Cinq thèmes pour prendre de la hauteur};
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine,text width=17.7cm,align=left]
+					at (1.65,-8.25) {\fontsize{11}{16}\selectfont
+						Des premiers aéronefs aux enjeux spatiaux, explorez les principes du vol, les outils de navigation et les phénomènes qui façonnent le ciel.};
+				\fill[white,rounded corners=3mm] (1.65,-11.05) rectangle (19.35,-20.35);
+				\foreach \numero/\theme/\y in {
+					01/Étude des aéronefs/-12.25,
+					02/Navigation et sécurité des vols/-13.85,
+					03/Météorologie et aérologie/-15.45,
+					04/Aérodynamique et principes du vol/-17.05,
+					05/Histoire et culture aéronautiques et spatiales/-18.65
+				}{
+					\node[anchor=west,inner sep=0pt,text=couvertureBleu]
+						at (2.15,\y) {\fontsize{12}{15}\selectfont\bfseries \numero};
+					\node[anchor=west,inner sep=0pt,text=couvertureMarine]
+						at (3.05,\y) {\fontsize{12}{15}\selectfont\bfseries \theme};
+					\fill[couvertureOr] (2.15,\y-0.42) rectangle (19.35,\y-0.45);
+				}
+				\draw[couvertureBleu,line width=0.8pt] (1.65,-22.15) -- (19.35,-22.15);
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-22.7) {\fontsize{11}{14}\selectfont\bfseries Clément Vermot-Desroches};
+				\node[anchor=north west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-23.45) {\fontsize{10}{13}\selectfont Retrouvez le cours et ses ressources sur};
+				\node[anchor=north west,inner sep=0pt,text=couvertureBleu]
+					at (1.65,-24.15) {\fontsize{11}{14}\selectfont\bfseries \urlSite};
+				\node[anchor=south west,inner sep=0pt,text=couvertureMarine]
+					at (1.65,-27.45) {\fontsize{9}{12}\selectfont Cours diffusé sous licence Creative Commons BY-NC-SA 4.0.};
+			\end{scope}
+		\end{tikzpicture}
+		\null
+	\end{titlepage}
+
 \end{document}
