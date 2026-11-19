@@ -20,12 +20,18 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 - [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
 - [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
 
-<!--
+## Séance 3 : Motorisations
+- Moteurs à explosion et cycle 4 temps
+- Turbomachines
+- Hélices
+  
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance03_Motorisation_handout.pdf)
+
 - [Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
 - [Vidéo : le turboréacteur](https://www.youtube.com/watch?v=2iM9k16aekw&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=57&pp=iAQB0gcJCYcKAYcqIYzv) / [Complément : Démarrage d'un turboréacteur](https://www.youtube.com/watch?v=SzPEMw_LhR8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=56&pp=iAQB)
 - [Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
 - [Vidéo : statoréacteur, pulsoréacteur](https://www.youtube.com/watch?v=6Q-0b2OnQZ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=5&pp=iAQB0gcJCYcKAYcqIYzv)
-
+<!--
 ## Séance 3 : Bases d'aérodynamique
 - Portance
 - Traînée
@@ -141,6 +147,7 @@ Les ressources suivantes permettent de compléter le cours et de préparer l'exa
 - [Initiation à l'aéronautique](https://www.cepadues.com/livres/pilotage-aeronautique/avion/bia-brevet-d-initiation-aeronautique/1721-initiation-a-l-aeronautique-preparer-le-bia-12e-edition-9782383951445.html?srsltid=AfmBOor7odukzI1SP7E6B2-rc32NbJ-0qAEPxxO2yUrpKywYNZjcuvMD), éditions Cépaduès : le livre de référence qui couvre l'ensemble du programme. Disponible en commande dans toutes les librairies.
 - [Manuel du BIA proposé par l'académie de Toulouse](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/pedagogiques/11286/11286-bia-2021-vf1-copie.pdf)
 - [Carte de navigation VFR à l'échelle 1/500000](https://www.geoportail.gouv.fr/carte?c=-0.17893881194542527,44.77643877845679&z=10&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-OACI::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
+-[Chaine YouTube AeroJeune BIA](https://www.youtube.com/@AeroJeune_BIA/) : chaque jour un ou 2 shorts pour apprendre sans même s'en rendre compte.
 
 ### Cours de l'aéroclub de Montendre
 L'aéroclub de Montendre met à disposition ses cours BIA très bien conçus :
