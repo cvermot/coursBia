@@ -1386,61 +1386,61 @@ Les questions F.1 à F.5 sont associées à cet encadré.
 
 
 ## BIA 2026 ##
-1. - En anglais, quel est le terme employé pour désigner la gouverne de direction?
+1. En anglais, quel est le terme employé pour désigner la gouverne de direction?
 * Flaps
 * Rudder
 * Tail
 * Direction system
 
-2. - Que comprenez-vous dans ce message concernant une piste : "snow removal is in progress runway one seven" ?
+2. Que comprenez-vous dans ce message concernant une piste : "snow removal is in progress runway one seven" ?
 * La piste 17 est en cours de déneigement
 * Le déneigement de la piste 17 a fait des progrès
 * La neige a progressé sa couverture de la piste 17
 * La piste 17 est à présent déneigée
 
-3. - En anglais le terme "runway" désigne:
+3. En anglais le terme "runway" désigne:
 * un anneau de vitesse
 * un passage rapide
 * une piste
 * taxiway
 
-4. - Le message radio suivant : "Air France one one six, please contact tower one one eight decimal one", signifie:
+4. Le message radio suivant : "Air France one one six, please contact tower one one eight decimal one", signifie:
 * le vol Air France 118 doit contacter la tour sur la fréquence 116,1
 * le vol Air France 116 doit contacter la tour sur la fréquence 118,1
 * le vol Air France 116 doit contourner la tour au cap 118 dans une minute
 * le vol Air France 116 a un contact avec la tour
 
-5. - La traduction de "Aligné piste 25, prêt au décollage" s'écrit:
+5. La traduction de "Aligné piste 25, prêt au décollage" s'écrit:
 * holding short runway two five, ready for take off
 * clear for take off on runway two five
 * straight runway two five clear for take off
 * lined up runway two five, ready for take off
 
-6. - Choose the good proposition for "glider":
+6. Choose the good proposition for "glider":
 * c'est un dispositif permettant d'empêcher le givrage du carburateur
 * c'est un dispositif d'atterrissage aux instruments
 * c'est une commande de vol
 * c'est un planeur
 
-7. - Les aérofreins sont appelés :
+7. Les aérofreins sont appelés :
 * airflow controlers
 * wingbrakes
 * airbrakes / spoilers
 * windbrakes
 
-8. - L'axe sur lequel l'avion monte ou descend s'appelle:
+8. L'axe sur lequel l'avion monte ou descend s'appelle:
 * rolling
 * pitching
 * banking
 * yawing
 
-9. - Les "strobe lights" sont:
+9. Les "strobe lights" sont:
 * les feux de brouillard
 * les feux d'atterrissage
 * les feux de navigation
 * les feux à éclat
 
-10. - L'anémomètre est appelé :
+10. L'anémomètre est appelé :
 * speedmaster
 * airspeed indicator
 * speedtachymeter
@@ -1452,50 +1452,50 @@ D vertical speed indicator
 * slats
 * stabilons
 
-12. - Le terme « steerable nose wheel » désigne :
+12. Le terme « steerable nose wheel » désigne :
 * une roulette de nez fixe
 * une roulette de queue orientable
 * une roulette de nez orientable
 * le pneu avant orientable
 
-13. - Le terme anglais employé pour désigner la gouverne de profondeur est :
+13. Le terme anglais employé pour désigner la gouverne de profondeur est :
 * ailerons
 * flaps
 * elevator
 * gear
 
-14. - En anglais aéronautique, le terme "clearance" signifie:
+14. En anglais aéronautique, le terme "clearance" signifie:
 * nettoyage d'une piste
 * autorisation
 * ciel dégagé
 * éclairage d'une piste
 
-15. - Il est fréquent que lors d'échanges avec les organismes de contrôle aérien, les membres d'équipage répondent "wilco", ceci signifie :
+15. Il est fréquent que lors d'échanges avec les organismes de contrôle aérien, les membres d'équipage répondent "wilco", ceci signifie :
 * merci de changer de fréquence
 * votre message a été compris et sera exécuté
 * nous allons nous diriger vers le point de report WILCO (qui existe sur tous les aéroports
 internationaux)
 * merci de répéter votre message
 
-16. - En anglais, l'expression "prêt au décollage, piste 12" se dit :
+16. En anglais, l'expression "prêt au décollage, piste 12" se dit :
 * stand by to take off runway one two
 * holding short take off runway twelve
 * ready for take off runway one two
 * clear for take off runway twelve
 
-17. - Le terme permettant de désigner un vent de travers est:
+17. Le terme permettant de désigner un vent de travers est:
 * back wind
 * side wind
 * crosswind
 * horizontal gust
 
-18. - En anglais le terme "Maximum Take Off Weight" signifie :
+18. En anglais le terme "Maximum Take Off Weight" signifie :
 * masse maximale à vide de l'avion
 * masse maximale au décollage
 * masse maximale embarquée par l'avion pour pouvoir décoller
 * poids maximal supportable par la piste au moment du décollage
 
-19.  - Les 3 axes autour desquels un avion peut se mouvoir sont les axes de roulis, tangage et lacet. En anglais et dans l'ordre, il s'agit de :
+19.  Les 3 axes autour desquels un avion peut se mouvoir sont les axes de roulis, tangage et lacet. En anglais et dans l'ordre, il s'agit de :
 * pitch, yaw, roll
 * roll, tangy, turn
 * roll, pitch, yaw

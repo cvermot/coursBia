@@ -1397,3 +1397,125 @@ Météorologie et aérologie
 * 14 h
 * 16 h
 * 17 h
+
+## BIA 2026 ##
+1. Le nuage figurant sur la photographie ci-contre est un :
+* cirrus
+* nimbostratus
+* stratus
+* cumulus
+
+2. Au niveau d'un front chaud :
+* l'air froid repousse l'air chaud devant lui et passe au-dessus
+* l'air froid repousse l'air chaud devant lui et passe en-dessous
+* l'air chaud repousse l'air froid devant lui et passe en-dessous
+* l'air chaud repousse l'air froid devant lui et passe au-dessus
+
+3. La grêle est généralement associée à :
+* un nimbostratus
+* un altocumulus lenticulaire
+* un cumulonimbus
+* un cirrocumulus
+
+4. La couche atmosphérique la plus basse est:
+* la thermosphère
+* la troposphère
+* la stratosphère
+* la planisphère
+
+5. On parle de brouillard lorsque la visibilité horizontale est inférieure à :
+* 1 km
+* 3 km
+* 5 km
+* 10 km
+
+6. Les nuages sont classés en deux grandes catégories :
+* les positifs et les négatifs
+* les moutonneux et les filiformes
+* les stratiformes et les cumuliformes
+* les catabatiques et les adiabatiques
+
+7. Quand le point de rosée et la température deviennent identiques, il faut s'attendre à :
+* de la pluie
+* de la neige
+* du brouillard
+* de la grêle
+
+8. Dans l'atmosphère standard, la pression au niveau de la mer est:
+* 1000 hPa
+* recalculée périodiquement par Météo France
+* 1013,25 hPa
+* 1000 hPa par convention internationale pour faciliter les calculs
+
+9. Le type de nuage qui peut indiquer la présence de turbulences sévères est:
+* l'altocumulus lenticulaire
+* le stratus
+* le cirrus
+* l'altostratus
+
+10. Sur la carte des isobares, la dépression est caractérisée par:
+* des isobares fermées dont les valeurs de pression augmentent du centre vers l'extérieur
+* des isobares espacées et mal organisées
+* un axe de hautes pressions
+* des isobares fermées dont les valeurs de pression augmentent vers l'intérieur
+
+11. Lorsque les isobares sont très serrées :
+* les vents sont de faible intensité
+* les vents sont de forte intensité
+* les vents sont perpendiculaires aux isobares
+* l'intensité des vents est indépendante de la position relative des isobares
+
+12. Le phénomène météorologique observé sur la photo ci-dessous est :
+* du brouillard
+* un orage
+* un front chaud
+* la convection
+
+13. La brise de pente montante se forme en région:
+* côtière et de jour
+* côtière et de nuit
+* montagneuse et de nuit
+* montagneuse et de jour
+
+14. Une information sur une carte stipule l'ISO 0°C au FL80. Vous devez voler au FL60. En considérant le gradient standard, quelle est la bonne affirmation?
+* Le vol se fera à +4 °C
+* Le vol se fera à -4 °C
+* Le vol se fera à -2 °C
+* Le vol se fera à +2 °C
+
+15. Lorsque la pluie est en surfusion, quelle est la plus faible température qu'elle puisse atteindre parmi les propositions suivantes?
+* -10 °C
+* 5 °C
+* 10 °C
+* 100 °C
+
+16. Lorsque le vent est fort au sol:
+* il y a peu de turbulences dans les basses couches de l'atmosphère
+* le ciel va systématiquement se dégager
+* il est nul en altitude
+* des turbulences dues aux imperfections du sol et aux obstacles se développent en basses couches
+
+17. Parmi ces nuages, quel est celui que l'on rencontre dans une atmosphère instable?
+* Cirrostratus
+* Altostratus
+* Stratus
+* Cumulonimbus
+
+18. Le halo visible sur cette photo :
+* est un phénomène lumineux dans les cirrostratus
+* est un phénomène lumineux parasite dangereux sur une verrière par ciel clair
+* apparait quand on est dos au soleil face à un rideau de pluie
+* apparait dans une perturbation nuageuse instable
+
+19. La condensation:
+* est la formation de gouttelettes d'eau par refroidissement et saturation
+* est une densification de l'air par compression dans les anticyclones
+* est la formation d'eau sur la structure de l'avion par réchauffement adiabatique
+* ne présente aucun risques en atmosphère standard
+
+20. Le givrage cellule: 
+* ne présente aucun risque
+* se produit lors d'un vol en air saturé à températures négatives
+* est dû au dépôt de glace sur les ailes sous averses de grêle dans les cumulonimbus
+* est un phénomène qui renforce la rigidité de la structure en zones de turbulence
+
