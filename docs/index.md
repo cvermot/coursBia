@@ -6,7 +6,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance01_Introduction_ClassificationAeronefs_handout.pdf)
 
-[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.1
+[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.1 <small class="maj-cours"></small>
 
 - [Vidéo : classification des aéronefs](https://www.youtube.com/watch?v=DBO3T6NNoYQ&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=64&t=594s&pp=iAQB0gcJCYcKAYcqIYzv)
 
@@ -17,7 +17,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance02_StructureAeronef_handout.pdf)
 
-[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.3
+[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.3 <small class="maj-cours"></small>
 
 - [Vidéo : les composantes d'un aéronef](https://www.youtube.com/watch?v=mHMeVZqYUSk&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=66)
 - [Vidéo : la voilure](https://www.youtube.com/watch?v=a6cVe0nIPlc&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=62&pp=iAQB)
@@ -29,7 +29,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
   
 [Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance03_Motorisation_handout.pdf)
 
-[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.2
+[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 1.2 <small class="maj-cours"></small>
 
 - [Vidéo : le moteur à pistons](https://www.youtube.com/watch?v=ABBgSI_4IOM&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=61&pp=iAQB0gcJCYcKAYcqIYzv)
 - [Vidéo : le turboréacteur](https://www.youtube.com/watch?v=2iM9k16aekw&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=57&pp=iAQB0gcJCYcKAYcqIYzv) / [Complément : Démarrage d'un turboréacteur](https://www.youtube.com/watch?v=SzPEMw_LhR8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=56&pp=iAQB)
@@ -174,3 +174,15 @@ Les documents présentés ici sont publiés sous licence Creative Common CC-BY-S
 [![Licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Les autres documents restent la propriété de leurs auteurs originaux.
+
+<script>
+fetch("https://api.github.com/repos/cvermot/coursBia/releases/latest")
+  .then(function (r) { return r.json(); })
+  .then(function (rel) {
+    var a = (rel.assets || []).find(function (x) { return x.name === "CoursBIA_complet.pdf"; });
+    var d = new Date(a ? a.updated_at : rel.published_at);
+    var txt = "(Dernière mise à jour le " + d.toLocaleDateString("fr-FR") + ")";
+    document.querySelectorAll(".maj-cours").forEach(function (e) { e.textContent = txt; });
+  })
+  .catch(function () {});
+</script>
