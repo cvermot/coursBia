@@ -35,6 +35,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 - [Vidéo : le turboréacteur](https://www.youtube.com/watch?v=2iM9k16aekw&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=57&pp=iAQB0gcJCYcKAYcqIYzv) / [Complément : Démarrage d'un turboréacteur](https://www.youtube.com/watch?v=SzPEMw_LhR8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=56&pp=iAQB)
 - [Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
 - [Vidéo : statoréacteur, pulsoréacteur](https://www.youtube.com/watch?v=6Q-0b2OnQZ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=5&pp=iAQB0gcJCYcKAYcqIYzv)
+
 <!--
 ## Séance 3 : Bases d'aérodynamique
 - Portance
