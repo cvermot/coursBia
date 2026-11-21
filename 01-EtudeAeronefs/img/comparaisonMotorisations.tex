@@ -144,11 +144,11 @@
         minimum height=2cm, minimum width=2.05cm,
         text width=1.9cm, align=center, inner sep=2pt}
 ]
-    \node[anchor=west, font=\bfseries] at (-0.85,2.45)
-        {Motorisation thermique à carburateur};
+    \node[anchor=west, align=left, font=\bfseries] at (-0.85,2.15)
+        {Motorisation thermique\\à carburateur};
 
     \boiteMotopropulseur{equipementSol}{station}{(0,0)}{fuelstation}
-        {Pompe à essence\\\textit{(au sol)}}
+        {Pompe\\à essence}
     \boiteMotopropulseur{element, fill=orange!20}{reservoir}{(2.65,0)}
         {reservoir}{Réservoir\\de carburant}
     \boiteMotopropulseur{element, fill=orange!10}{pompe}{(5.3,0)}
@@ -169,7 +169,7 @@
     \boiteMotopropulseur{instrument}{jauge}{(2.65,-2.15)}{gauge}
         {Jauge de\\carburant}
     \draw[mesure] (reservoir.south) -- (jauge.north);
-    \boiteMotopropulseur{instrument}{gaz}{(7.95,1.65)}{control}
+    \boiteMotopropulseur{instrument}{gaz}{(7.95,2.3)}{control}
         {Manette\\des gaz}
     \draw[commande] (gaz.south) -- (carburateur.north);
     \draw[carburant] (7.95,-1.35) node[below, text=black] {Air} -- (carburateur.south);
@@ -178,7 +178,7 @@
         {Motorisation électrique};
 
     \boiteMotopropulseur{equipementSol}{chargeur}{(0,-6)}{charger}
-        {Chargeur\\\textit{(au sol)}}
+        {Chargeur}
     \boiteMotopropulseur{element, fill=blue!20}{batterie}{(2.65,-6)}
         {battery}{Batterie}
     \boiteMotopropulseur{element, fill=blue!10}{controleur}{(7.95,-6)}
