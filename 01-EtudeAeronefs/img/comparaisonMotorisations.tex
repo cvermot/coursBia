@@ -123,15 +123,15 @@
 
 \newcommand{\boiteMotopropulseur}[5]{%
     \node[#1] (#2) at #3 {};
-    \pic[scale=0.48] at ([yshift=0.32cm]#2.center) {#4};
+    \pic[scale=0.48] at ([yshift=0.38cm]#2.center) {#4};
     \node[font=\scriptsize, text width=1.8cm, align=center, inner sep=0pt,
-        anchor=north] at ([yshift=-0.22cm]#2.center) {#5};
+        anchor=north] at ([yshift=-0.32cm]#2.center) {#5};
 }
 
 \begin{tikzpicture}[
     font=\small,
-    element/.style={draw, rounded corners=2pt, minimum height=1.7cm,
-        minimum width=1.95cm, text width=1.8cm, align=center, inner sep=2pt},
+    element/.style={draw, rounded corners=2pt, minimum height=2cm,
+        minimum width=2.05cm, text width=1.9cm, align=center, inner sep=2pt},
     carburant/.style={draw=orange!75!black, line width=1.4pt, ->},
     electrique/.style={draw=blue!70!black, line width=1.4pt, ->},
     mecanique/.style={draw=black!75, line width=1.4pt, ->},
@@ -141,10 +141,10 @@
     equipementSol/.style={element, fill=orange!8,
         pattern=north east lines, pattern color=orange!65!black},
     instrument/.style={draw, rounded corners=2pt, fill=white,
-        minimum height=1.7cm, minimum width=1.95cm,
-        text width=1.8cm, align=center, inner sep=2pt}
+        minimum height=2cm, minimum width=2.05cm,
+        text width=1.9cm, align=center, inner sep=2pt}
 ]
-    \node[anchor=west, font=\bfseries] at (-0.85,2.25)
+    \node[anchor=west, font=\bfseries] at (-0.85,2.45)
         {Motorisation thermique à carburateur};
 
     \boiteMotopropulseur{equipementSol}{station}{(0,0)}{fuelstation}
@@ -163,29 +163,29 @@
     \draw[transfertSol] (station.east) -- (reservoir.west);
     \draw[carburant] (reservoir.east) -- (pompe.west);
     \draw[carburant] (pompe.east) -- (carburateur.west);
-    \draw[carburant] (carburateur.east) -- node[above, font=\scriptsize] {mélange} (thermique.west);
+    \draw[carburant] (carburateur.east) -- (thermique.west);
     \draw[mecanique] (thermique.east) -- (heliceT.west);
 
-    \boiteMotopropulseur{instrument}{jauge}{(2.65,-1.55)}{gauge}
+    \boiteMotopropulseur{instrument}{jauge}{(2.65,-2.15)}{gauge}
         {Jauge de\\carburant}
     \draw[mesure] (reservoir.south) -- (jauge.north);
-    \boiteMotopropulseur{instrument}{gaz}{(7.95,1.3)}{control}
+    \boiteMotopropulseur{instrument}{gaz}{(7.95,1.65)}{control}
         {Manette\\des gaz}
     \draw[commande] (gaz.south) -- (carburateur.north);
     \draw[carburant] (7.95,-1.35) node[below, text=black] {Air} -- (carburateur.south);
 
-    \node[anchor=west, font=\bfseries] at (-0.85,-2.15)
+    \node[anchor=west, font=\bfseries] at (-0.85,-3.55)
         {Motorisation électrique};
 
-    \boiteMotopropulseur{equipementSol}{chargeur}{(0,-5.4)}{charger}
+    \boiteMotopropulseur{equipementSol}{chargeur}{(0,-6)}{charger}
         {Chargeur\\\textit{(au sol)}}
-    \boiteMotopropulseur{element, fill=blue!20}{batterie}{(2.65,-5.4)}
+    \boiteMotopropulseur{element, fill=blue!20}{batterie}{(2.65,-6)}
         {battery}{Batterie}
-    \boiteMotopropulseur{element, fill=blue!10}{controleur}{(7.95,-5.4)}
+    \boiteMotopropulseur{element, fill=blue!10}{controleur}{(7.95,-6)}
         {controller}{Contrôleur\\(variateur)}
-    \boiteMotopropulseur{element, fill=blue!20}{moteurE}{(10.6,-5.4)}
+    \boiteMotopropulseur{element, fill=blue!20}{moteurE}{(10.6,-6)}
         {electricmotor}{Moteur\\électrique}
-    \boiteMotopropulseur{element, fill=gray!10}{heliceE}{(13.25,-5.4)}
+    \boiteMotopropulseur{element, fill=gray!10}{heliceE}{(13.25,-6)}
         {propeller}{Hélice}
 
     \draw[transfertSol] (chargeur.east) -- (batterie.west);
@@ -193,24 +193,24 @@
     \draw[electrique] (controleur.east) -- (moteurE.west);
     \draw[mecanique] (moteurE.east) -- (heliceE.west);
 
-    \boiteMotopropulseur{instrument}{voltmetre}{(2.65,-6.95)}{gauge}
+    \boiteMotopropulseur{instrument}{voltmetre}{(2.65,-8.15)}{gauge}
         {Voltmètre}
     \draw[mesure] (batterie.south) -- (voltmetre.north);
-    \boiteMotopropulseur{instrument}{puissance}{(7.95,-3.4)}{control}
+    \boiteMotopropulseur{instrument}{puissance}{(7.95,-3.75)}{control}
         {Manette de\\puissance}
     \draw[commande] (puissance.south) -- (controleur.north);
 
-    \draw[carburant] (-0.85,-8.1) -- ++(0.7,0)
+    \draw[carburant] (-0.85,-9.5) -- ++(0.7,0)
         node[right, text=black] {Durites et tuyaux};
-    \draw[electrique] (3.15,-8.1) -- ++(0.7,0)
+    \draw[electrique] (3.15,-9.5) -- ++(0.7,0)
         node[right, text=black] {Câbles électriques};
-    \draw[mecanique] (7.4,-8.1) -- ++(0.7,0)
+    \draw[mecanique] (7.4,-9.5) -- ++(0.7,0)
         node[right, text=black] {Entraînement mécanique};
-    \draw[commande] (-0.85,-8.8) -- ++(0.7,0)
+    \draw[commande] (-0.85,-10.2) -- ++(0.7,0)
         node[right, text=black] {Commande};
-    \draw[mesure] (3.15,-8.8) -- ++(0.7,0)
+    \draw[mesure] (3.15,-10.2) -- ++(0.7,0)
         node[right, text=black] {Mesure};
     \node[draw, fill=orange!8, pattern=north east lines,
-        pattern color=orange!65!black, minimum size=0.25cm] at (7.55,-8.8) {};
-    \node[anchor=west] at (7.8,-8.8) {Équipement au sol};
+        pattern color=orange!65!black, minimum size=0.25cm] at (7.55,-10.2) {};
+    \node[anchor=west] at (7.8,-10.2) {Équipement au sol};
 \end{tikzpicture}
