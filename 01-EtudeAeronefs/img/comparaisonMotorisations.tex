@@ -29,14 +29,25 @@
             -- (0,-0.12) -- (-0.12,-0.12) -- cycle;
     }},
     pics/carburetor/.style={code={
-        \draw[iconLine, fill=white] (-0.62,0.18) -- (-0.30,0.08)
-            -- (-0.30,-0.08) -- (-0.62,-0.18);
-        \draw[iconLine, fill=white] (0.62,0.18) -- (0.30,0.08)
-            -- (0.30,-0.08) -- (0.62,-0.18);
-        \draw[iconLine] (-0.30,0.08) -- (0.30,0.08);
-        \draw[iconLine] (-0.30,-0.08) -- (0.30,-0.08);
-        \draw[iconLine, fill=white] (-0.20,-0.08) rectangle (0.20,-0.40);
-        \draw[iconLine] (0,-0.08) -- (0,0.12);
+        \draw[iconLine]
+            (-0.62,0.28) -- (-0.32,0.28)
+            .. controls (-0.18,0.28) and (-0.13,0.10) .. (0,0.10)
+            .. controls (0.13,0.10) and (0.18,0.28) .. (0.32,0.28)
+            -- (0.62,0.28);
+        \draw[iconLine]
+            (-0.62,-0.28) -- (-0.32,-0.28)
+            .. controls (-0.18,-0.28) and (-0.13,-0.10) .. (0,-0.10)
+            .. controls (0.13,-0.10) and (0.18,-0.28) .. (0.32,-0.28)
+            -- (0.62,-0.28);
+        \draw[iconLine] (-0.62,0.28) -- (-0.62,-0.28);
+        \draw[iconLine] (0.62,0.28) -- (0.62,-0.28);
+        \draw[iconLine] (-0.08,0.10) -- (0.08,-0.10);
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.22,-0.31) rectangle (0.22,-0.58);
+        \draw[iconLine] (0,-0.31) -- (0,-0.10);
+        \draw[iconLine] (-0.48,-0.28) -- (-0.48,-0.46)
+            -- (-0.22,-0.46);
+        \draw[iconLine] (0.48,0.28) -- (0.48,0.43);
     }},
     pics/engine/.style={code={
         \draw[iconLine, fill=white, rounded corners=1pt]
@@ -94,7 +105,10 @@
         \draw[iconLine] (-0.38,0) -- (-0.55,0);
         \draw[iconLine] (0.38,0) -- (0.62,0);
         \draw[iconLine] (0,0) circle (0.15);
-        \draw[iconLine] (-0.22,-0.22) -- (0.22,0.22);
+        \draw[iconLine] (0,0.15) -- (0,0.30);
+        \draw[iconLine] (0,-0.15) -- (0,-0.30);
+        \draw[iconLine] (0.15,0) -- (0.30,0);
+        \draw[iconLine] (-0.15,0) -- (-0.30,0);
     }},
     pics/charger/.style={code={
         \draw[iconLine, fill=white, rounded corners=1pt]
@@ -111,12 +125,12 @@
     \node[#1] (#2) at #3 {};
     \pic[scale=0.48] at ([yshift=0.32cm]#2.center) {#4};
     \node[font=\scriptsize, text width=1.8cm, align=center, inner sep=0pt,
-        anchor=south] at (#2.south) {#5};
+        anchor=north] at ([yshift=-0.22cm]#2.center) {#5};
 }
 
 \begin{tikzpicture}[
     font=\small,
-    element/.style={draw, rounded corners=2pt, minimum height=1.3cm,
+    element/.style={draw, rounded corners=2pt, minimum height=1.7cm,
         minimum width=1.95cm, text width=1.8cm, align=center, inner sep=2pt},
     carburant/.style={draw=orange!75!black, line width=1.4pt, ->},
     electrique/.style={draw=blue!70!black, line width=1.4pt, ->},
@@ -127,7 +141,7 @@
     equipementSol/.style={element, fill=orange!8,
         pattern=north east lines, pattern color=orange!65!black},
     instrument/.style={draw, rounded corners=2pt, fill=white,
-        minimum height=1.55cm, minimum width=1.95cm,
+        minimum height=1.7cm, minimum width=1.95cm,
         text width=1.8cm, align=center, inner sep=2pt}
 ]
     \node[anchor=west, font=\bfseries] at (-0.85,2.25)
@@ -160,7 +174,7 @@
     \draw[commande] (gaz.south) -- (carburateur.north);
     \draw[carburant] (7.95,-1.35) node[below, text=black] {Air} -- (carburateur.south);
 
-    \node[anchor=west, font=\bfseries] at (-0.85,-2.7)
+    \node[anchor=west, font=\bfseries] at (-0.85,-2.15)
         {Motorisation électrique};
 
     \boiteMotopropulseur{equipementSol}{chargeur}{(0,-5.4)}{charger}
@@ -182,9 +196,9 @@
     \boiteMotopropulseur{instrument}{voltmetre}{(2.65,-6.95)}{gauge}
         {Voltmètre}
     \draw[mesure] (batterie.south) -- (voltmetre.north);
-    \boiteMotopropulseur{instrument}{puissance}{(8.5,-3.65)}{control}
+    \boiteMotopropulseur{instrument}{puissance}{(7.95,-3.4)}{control}
         {Manette de\\puissance}
-    \draw[commande] (puissance.south west) -- (controleur.north east);
+    \draw[commande] (puissance.south) -- (controleur.north);
 
     \draw[carburant] (-0.85,-8.1) -- ++(0.7,0)
         node[right, text=black] {Durites et tuyaux};
