@@ -295,7 +295,16 @@
 	\info{L'air utilisé quand on active le réchauffage carburateur n'est pas filtré, contrairement à l'air froid. Il est donc déconseillé d'utiliser le réchauffage carburateur au sol, car cela augmente le risque que des contaminants soient ingérés par le moteur.}
 	
 	
-	%TODO \subsection{Motorisation électrique}
+	\subsection{Motorisation électrique}
+	L'aviation n'échappe pas à la volonté d'électrification, car ce type de motorisation permet à la fois de réduire le bruit mais également les émissions de $CO_2$. Dans un usage aéronautique, ce type de motorisation reste cependant pénalisé par la masse des batteries, qui limite fortement l'autonomie.
+	
+	\histoire{Malgré ces contraintes, la société Pipistrel parvient à réaliser une première mondiale dans ce domaine, en faisant certifier par l'EASA son avion électrique : le Velis Electro. Cet avion biplace offre environ 1h d'autonomie et est adapté pour la formation initiale au pilotage ou les courts vols d'agrément.\begin{figure}[H]
+  		\centering
+    		\includegraphics[width=0.30\textwidth]{01-EtudeAeronefs/img/Velis.jpg}
+  		\legende{Pipistrel Velis Electro SW128}{img:Velis}
+	\end{figure}}
+	
+	Sur un aéronef électrique, on remplace les réservoirs de carburant par des batteries, l'ensemble manette des gaz - carburateur - système d'injection par un variateur et le moteur à explosion par un moteur électrique, généralement de type \textit{brushless}.
 	
 	
 	\subsection{Hélices}
@@ -510,6 +519,43 @@
 			\item fiabilité : les turbomachines sont très fiables. Cela permet d'augmenter les périodicités d'entretien et la fiabilité est un paramètre majeur dans un usage aéronautique\footnote{Par exemple, la turbine PT6 dispose d'un taux d'arrêt en vol de 1 pour 300\,000 heures, ce qui est exceptionnel}
 			\item utilisation de kérosène, carburant aisément disponible partout dans le monde et qui présente des caractéristiques qui le rendent très sûr (carburant difficilement inflammable).
 		\end{itemize}
-	
 		
 	\subsection{Contraintes liées au développement durable}
+	On ne peut pas clôturer ce chapitre sans évoquer les contraintes de développement durable qui guident désormais les développement de toutes les motorisations aéronautiques.
+	
+	Du côté des turbomoteurs, les fabricants de réacteurs sont tous passés à la conception de réacteurs à double flux à partir de la fin des années 1950. Cette évolution offrait à la fois des réacteurs moins bruyants, mais aussi plus économes en carburant et avec une meilleure combustion (réduction des émissions de particules). 
+	
+	L'aspect bruit est un facteur dont l'importance s'accentue avec l'augmentation du trafic et l'agrandissement des aires urbaines qui sont devenues riverains des aéroports, augmentant l'exposition au bruit des habitants riverains des aéroports. L'avènement des réacteurs double flux à permis de faire passer l'empreinte sonore des réacteurs de 115-120 dB (réacteur simple flux Pratt \& Whitney JT3C), soit des niveaux proches du seuil de la douleur, à des niveaux entre 85 et 90 dB (réacteur CFM56 de l'A320 ou GE90 du B777), soit des niveaux sonores comparables à ceux d'un sèche-cheveux.
+	
+	\subsubsection{Carburants}
+	L'aéronautique reste fortement dépendante des carburants liquides (essence et kérosène), de part leur forte densité énergétique, leur facilité de transport ainsi que la sécurité offerte par leur faible inflammabilité pour le kérosène. Si des études ont été menées autour de l'hydrogène, à ce jour, rien ne remplace le kérosène tant sur les aspects de densité énergétique que de sécurité.
+	
+	\paragraph{Substituts au kérosène}
+	Depuis le milieu des années 2000, les industriels tentent donc de produire des carburants liquide de substitution à ceux d'origine pétrolière, les \acrlong{cad}  dits \acrshort{cad} \anglais{\acrshort{saf} - \acrlong{saf}}.
+	
+	Ces carburants, produits à partir d'huiles végétale, de biomasse (fermentation ou gazéification) ou encore d'huiles synthétiques ont pour ambition de remplacer le kérosène, en offrant des caractéristiques proches de ce dernier, afin de limiter les impacts sur les motorisations et les système carburant des avions. Le SAF permet de réduire d'environ 65\% les émissions de $CO_2$.
+	
+	Aujourd'hui, les grands avionneurs mondiaux ambitionnent de certifier leurs appareils pour fonctionner avec 100\% de SAF autour de 2030, tandis que certains appareils sont déjà en mesure de fonctionner avec un mélange kérosène conventionnel/SAF atteignant 50\%.
+	
+	\paragraph{Substituts à l'essence plombée}
+	L'essence aviation 100LL (LL signifiant \textbf{Low Lead} - faiblement plombé) est l'une des dernières essences contenant du plomb disponible sur le marché. En effet, face à l'impact du plomb sur la santé (saturnisme) et l'environnement, il a été définitivement interdit dans les essences automobiles au début des années 2000 en Europe.
+	
+	Le plomb est utilisé dans les carburants pour augmenter l'indice d'octane afin de limiter le cliquetis (provoqués par l'explosion spontané du mélange dans le cycle de compression, avant son inflammation commandée par la bougie). \\
+	
+	Le plomb à subsisté jusqu'à nos jours dans les carburants aviation compte tenu des contraintes de ce secteur (faible vitesse de remplacement du parc d'avions existants, peu d'offre de motorisations compatibles avec du carburant sans plomb). 
+	
+	Cependant, les autorités prévoient l'interdiction de cet additif dans les carburants aviation pour l'horizon 2030, les industriels ont donc commencé à proposer des alternatives à ce carburant au plomb et les motoristes à adapter les moteurs à ces nouveaux carburants. Ces nouveaux carburants portent le nom de G100UL ou encore UL91/UL94 (UL signifiant \textit{Unleaded} - sans plomb).
+	
+	\subsection{L'électricité dans l'aviation}
+	L'électrification de la propulsion des aéronefs, et notamment pour ceux de grandes tailles, demeure un défi pour les constructeurs. La faible densité énergétique des batteries pénalise en effet grandement l'autonomie. \\
+	
+	Cependant, les systèmes des avions de ligne sont désormais fortement électrifiés, ce qui permet de gains de masse et donc de réduire la consommation de carburant. Le Boeing 787, par exemple, est équipé de génératrices capable de délivrer près de 1500 kW (soit de quoi alimenter 1000 à 2000 grilles pain) Cette puissance est nécessaire car de nombreux systèmes sont actionnés électriquement sur cet avion.
+	
+	Boeing a par exemple arrêté de prélever de l'air dans les compresseurs de réacteurs pour assurer la pressurisation, le chauffage et le dégivrage de l'appareil, et fait reposer ces tâches sur ces systèmes électrique. Ce choix permet d'augmenter l'efficacité des réacteurs, et donc de réduire la consommation de carburant.
+	
+	\subsection{Recylage}
+	L'un des autre levier pour la réduction de l'empreinte carbone du secteur aéronautique est l'optimisation du recyclage et du ré-usage de pièces. Quand un aéronef arrive en fin de vie, certaines pièces restent réutilisables, à conditions de les démonter correctement puis d'assurer la traçabilité de ces composants d'occasion.
+	
+	Des société spécialisés dans le recyclage d'avion sont apparues, et on estime que 85 à 90\% de la masse d'un avion est recyclable.
+	
+	

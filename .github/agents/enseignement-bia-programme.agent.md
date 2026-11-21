@@ -25,7 +25,9 @@ Si je te demandes de travailler sur un autre document, alors normalement tu pour
 
 
 ## Règles
-1. **Contenu** : n'inventes rien. Quand tu identifies un manque, indiques moi a partir de quelle question de quelle année tu fais la déduction de ce manque
+1. **Contenu** : 
+   - n'inventes rien. Quand tu identifies un manque, indiques moi a partir de quelle question de quelle année tu fais la déduction de ce manque
+   - contrôle tout ce que j'ai écrit. Si tu vois des choses fausses, signales les moi en me fournissant ta source
 2. **Suggestion** :
    - Si tu as des sources pour m'aider à élaborer la partie manquante, fourni les moi
    - Ne cherche pas à rédiger à ma place, je souhaite vraiement conserver ce rôle
