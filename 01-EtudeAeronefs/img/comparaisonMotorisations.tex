@@ -3,31 +3,6 @@
 \tikzset{
     iconLine/.style={draw=black!75, line width=0.8pt, line cap=round,
         line join=round},
-    pics/fuelstation/.style={code={
-        \draw[iconLine, fill=white, rounded corners=1pt]
-            (-0.38,-0.42) rectangle (0.25,0.42);
-        \draw[iconLine] (-0.30,0.22) rectangle (0.17,0.34);
-        \draw[iconLine] (-0.20,-0.04) -- (0.08,-0.04);
-        \draw[iconLine] (0.25,0.25) -- (0.48,0.25) -- (0.53,0.02)
-            -- (0.40,-0.18);
-        \draw[iconLine] (0.40,-0.18) -- (0.34,-0.30);
-    }},
-    pics/reservoir/.style={code={
-        \draw[iconLine, fill=white, rounded corners=2pt]
-            (-0.62,-0.28) rectangle (0.62,0.28);
-        \draw[iconLine] (-0.28,0.28) -- (-0.28,0.42) -- (0.02,0.42)
-            -- (0.02,0.28);
-        \draw[iconLine] (-0.48,-0.05) -- (0.45,-0.05);
-        \draw[iconLine] (0.38,0.28) -- (0.38,0.42);
-    }},
-    pics/fuelpump/.style={code={
-        \draw[iconLine, fill=white] (0,0) circle (0.31);
-        \draw[iconLine] (-0.60,0) -- (-0.31,0);
-        \draw[iconLine] (0.31,0) -- (0.60,0);
-        \draw[iconLine] (0,-0.31) -- (0,-0.45);
-        \draw[iconLine] (-0.12,0.08) -- (0,0.20) -- (0.12,0.08)
-            -- (0,-0.12) -- (-0.12,-0.12) -- cycle;
-    }},
     pics/carburetor/.style={code={
         \draw[iconLine]
             (-0.62,0.28) -- (-0.32,0.28)
@@ -48,6 +23,53 @@
         \draw[iconLine] (-0.48,-0.28) -- (-0.48,-0.46)
             -- (-0.22,-0.46);
         \draw[iconLine] (0.48,0.28) -- (0.48,0.43);
+    }}
+}
+
+\ifluatex
+\newcommand{\iconeMDI}[1]{{\fontsize{17}{17}\selectfont\texticon{\char"#1}}}
+\tikzset{
+    pics/fuelstation/.style={code={\node[inner sep=0pt] {\iconeMDI{F0298}};}},
+    pics/reservoir/.style={code={\node[inner sep=0pt] {\iconeMDI{F1A76}};}},
+    pics/fuelpump/.style={code={\node[inner sep=0pt] {\iconeMDI{F1402}};}},
+    pics/engine/.style={code={\node[inner sep=0pt] {\iconeMDI{F01FA}};}},
+    pics/propeller/.style={code={\node[inner sep=0pt] {\iconeMDI{F0210}};}},
+    pics/gauge/.style={code={\node[inner sep=0pt] {\iconeMDI{F029A}};}},
+    pics/control/.style={code={\node[inner sep=0pt] {\iconeMDI{F066A}};}},
+    pics/battery/.style={code={\node[inner sep=0pt] {\iconeMDI{F010C}};}},
+    pics/controller/.style={code={\node[inner sep=0pt] {\iconeMDI{F061A}};}},
+    pics/electricmotor/.style={code={
+        \node[inner sep=0pt] {\iconeMDI{F01FA}};
+        \node[fill=white, inner sep=0.3pt, rounded corners=1pt]
+            at (0.48,-0.35) {{\fontsize{8}{8}\selectfont\texticon{\char"F140B}}};
+    }},
+    pics/charger/.style={code={\node[inner sep=0pt] {\iconeMDI{F05F1}};}}
+}
+\else
+\tikzset{
+    pics/fuelstation/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.38,-0.42) rectangle (0.25,0.42);
+        \draw[iconLine] (-0.30,0.22) rectangle (0.17,0.34);
+        \draw[iconLine] (-0.20,-0.04) -- (0.08,-0.04);
+        \draw[iconLine] (0.25,0.25) -- (0.48,0.25) -- (0.53,0.02)
+            -- (0.40,-0.18) -- (0.34,-0.30);
+    }},
+    pics/reservoir/.style={code={
+        \draw[iconLine, fill=white, rounded corners=2pt]
+            (-0.62,-0.28) rectangle (0.62,0.28);
+        \draw[iconLine] (-0.28,0.28) -- (-0.28,0.42) -- (0.02,0.42)
+            -- (0.02,0.28);
+        \draw[iconLine] (-0.48,-0.05) -- (0.45,-0.05);
+        \draw[iconLine] (0.38,0.28) -- (0.38,0.42);
+    }},
+    pics/fuelpump/.style={code={
+        \draw[iconLine, fill=white] (0,0) circle (0.31);
+        \draw[iconLine] (-0.60,0) -- (-0.31,0);
+        \draw[iconLine] (0.31,0) -- (0.60,0);
+        \draw[iconLine] (0,-0.31) -- (0,-0.45);
+        \draw[iconLine] (-0.12,0.08) -- (0,0.20) -- (0.12,0.08)
+            -- (0,-0.12) -- (-0.12,-0.12) -- cycle;
     }},
     pics/engine/.style={code={
         \draw[iconLine, fill=white, rounded corners=1pt]
@@ -120,6 +142,7 @@
         \draw[iconLine] (-0.30,0) -- (0.15,0);
     }}
 }
+\fi
 
 \newcommand{\boiteMotopropulseur}[5]{%
     \node[#1] (#2) at #3 {};
