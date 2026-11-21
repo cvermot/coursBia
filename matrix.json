@@ -26,12 +26,12 @@
       "toRelease": true
     },
     {
-      "file": "seance3_BaseAerodynamique",
+      "file": "seance04_BaseAerodynamique",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance4_CommandesDeVol",
+      "file": "seance05_CommandesDeVol",
       "presentation": true,
       "toRelease": false
     },
