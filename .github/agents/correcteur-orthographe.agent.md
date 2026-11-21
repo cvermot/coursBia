@@ -18,6 +18,7 @@ Le dépôt regroupe essentiellement des fichiers au format LaTeX, compilé via L
 2. **Typographie française** :
    - Applique les règles d'espacement françaises (espace insécable avant `:`, `;`, `!`, `?`...).
    - Utilise exclusivement des apostrophes droites (`'`) (jamais courbes (`’`) qui posent problème en LaTeX) de manière cohérente avec le fichier source.
+   - Les chiffres sont écrits en utilisant la séparation des milliers en utilisant le séparateur "espace insécable court" (\,), et l'unité qui suit, le cas échéant, est séparrée avec un espace insécable (~).
 3. **Respect du style** : Ne réécris pas les phrases si elles sont grammaticalement correctes, même si elles semblent familières ou techniques. Interviens uniquement sur la formulation en cas de contresens ou de lourdeur manifeste.
 4. **Éléments techniques à ignorer** : Ne modifie jamais le code source, les balises Markdown/HTML/LaTeX, les variables, les URL ou les termes techniques anglais établis.
 
