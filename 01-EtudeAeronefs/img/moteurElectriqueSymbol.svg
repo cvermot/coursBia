@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24mm"
+   height="24mm"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="moteurElectriqueSymbol.svg"
+   inkscape:export-filename="moteurElectriqueSymbol.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="7.2194725"
+     inkscape:cx="38.368454"
+     inkscape:cy="46.748568"
+     inkscape:window-width="2240"
+     inkscape:window-height="1294"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g6"
+       transform="translate(-0.34886448)">
+      <rect
+         style="fill:#000000;stroke:none;stroke-width:1.8;stroke-linecap:round;stroke-dasharray:none"
+         id="rect3"
+         width="4.0313425"
+         height="1.9790226"
+         x="18.764067"
+         y="11.010489"
+         ry="0.036648706" />
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2"
+         width="6.5234451"
+         height="5.3506908"
+         x="14.219645"
+         y="9.3246546"
+         ry="1.9539486" />
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="16.052073"
+         height="12.167325"
+         x="2.0523198"
+         y="5.9163375"
+         ry="1.8806518" />
+      <g
+         id="g4"
+         transform="translate(-0.03805935)">
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.293326;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4"
+           width="1.3993194"
+           height="14.08709"
+           x="3.8081141"
+           y="4.9564552"
+           ry="0.66251171" />
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.293326;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4-1"
+           width="1.3993194"
+           height="14.08709"
+           x="15.025397"
+           y="4.9564552"
+           ry="0.66251171" />
+      </g>
+      <g
+         id="g5"
+         transform="translate(0.03650641)">
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5"
+           width="7.4374475"
+           height="0.95883471"
+           x="6.3231258"
+           y="6.8414149"
+           ry="0.47941735" />
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5-1"
+           width="7.4374475"
+           height="0.95883471"
+           x="6.3231258"
+           y="9.1645851"
+           ry="0.47941735" />
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5-2"
+           width="7.4374475"
+           height="0.95883471"
+           x="6.3231258"
+           y="11.487756"
+           ry="0.47941735" />
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5-7"
+           width="7.4374475"
+           height="0.95883471"
+           x="6.3231258"
+           y="13.810925"
+           ry="0.47941735" />
+        <rect
+           style="fill:#000000;stroke:#ffffff;stroke-width:0.3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5-27"
+           width="7.4374475"
+           height="0.95883471"
+           x="6.3231258"
+           y="16.134096"
+           ry="0.47941735" />
+      </g>
+    </g>
+  </g>
+</svg>
