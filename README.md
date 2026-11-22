@@ -22,6 +22,8 @@ La compilation se fait avec un environnement LaTeX standard, cependant il faut t
 
 A noter : dans certaines configurations, la compilation peut entrainer le dépassement de la mémoire allouée à TeX. Dans ce cas, le recours à LuaTeX permet généralement de contourner le problème.
 
+Avec LuaLaTeX, les icônes des encadrés utilisent la police Font Awesome 7 fournie dans `fonts/`. Avec pdfLaTeX, elles utilisent les icônes Font Awesome 5 du package pour préserver la compatibilité.
+
 ### Compilation
 #### Compilation rapide
 Le projet est fourni avec un fichier de configuration latexmk. On peut compiler l'ensemble en tapant simplement :

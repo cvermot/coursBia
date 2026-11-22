@@ -1,6 +1,7 @@
+\usepackage{iftex}
 %Utilisation de police personalisée => compiler avec LuaLaTeX
 \ifluatex
-\usepackage{fontspec,iftex}
+\usepackage{fontspec}
 \ifdefined\opendys 
 	%Utilisation de la police OpenDyslexic
  	\setmainfont{OpenDyslexic-Regular}[
@@ -48,5 +49,18 @@
 \newcommand{\mdiGreen}{\Huge\ifluatex\mdi{ ^^^^^^0f032a }\else\faLeaf\fi\normalsize}
 \newcommand{\mdiSpaceStation}{\Huge\ifluatex\mdi{ ^^^^^^0f1383 }\else\faQuestion\fi\normalsize}
 
-\newcommand{\fawsomeQuestion}{\Huge\ifluatex\fawsome{ ^^^^^^00f059 }\else\faQuestionCircle\fi\normalsize}
-\newcommand{\fawsomeAlerte}{\Huge\ifluatex\fawsome{ ^^^^^^00f06a }\else\faExclamationCircle\fi\normalsize}
+% Conserver les dimensions des icônes Font Awesome 5 dans les encadrés.
+\newcommand{\fawsomeIcon}[2]{\ifluatex
+  \begingroup
+  \sbox0{#2}%
+  \makebox[\wd0][c]{\raisebox{0pt}[\ht0][\dp0]{\fawsome{\symbol{#1}}}}%
+  \endgroup
+\else#2\fi}
+\newcommand{\fawsomeQuestion}{\fawsomeIcon{"F059}{\faQuestionCircle}}
+\newcommand{\fawsomeAlerte}{\fawsomeIcon{"F06A}{\faExclamationCircle}}
+\newcommand{\fawsomeInfo}{\fawsomeIcon{"F05A}{\faInfoCircle}}
+\newcommand{\fawsomeHistoire}{\fawsomeIcon{"F02D}{\faBook}}
+\newcommand{\fawsomeAstuce}{\fawsomeIcon{"F0EB}{\faLightbulb}}
+\newcommand{\fawsomeExemple}{\fawsomeIcon{"F002}{\faSearch}}
+\newcommand{\fawsomeDefinition}{\fawsomeIcon{"F013}{\faCog}}
+\newcommand{\fawsomeQuestionSimple}{\fawsomeIcon{"F128}{\faQuestion}}
