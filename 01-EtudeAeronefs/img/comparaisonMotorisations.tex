@@ -1,0 +1,221 @@
+\usetikzlibrary{patterns}
+
+\tikzset{
+    iconLine/.style={draw=black!75, line width=0.8pt, line cap=round,
+        line join=round},
+    pics/carburetor/.style={code={
+        \node[inner sep=0pt] {\includegraphics[height=0.6cm]{01-EtudeAeronefs/img/carburateurSymbol.pdf}};
+    }}
+}
+
+\ifluatex
+\newcommand{\iconeMDI}[1]{{\fontsize{17}{17}\selectfont\texticon{\char"#1}}}
+\tikzset{
+    pics/fuelstation/.style={code={\node[inner sep=0pt] {\iconeMDI{F0298}};}},
+    pics/reservoir/.style={code={\node[inner sep=0pt] {\iconeMDI{F1A76}};}},
+    pics/fuelpump/.style={code={\node[inner sep=0pt] {\iconeMDI{F1402}};}},
+    pics/engine/.style={code={\node[inner sep=0pt] {\iconeMDI{F01FA}};}},
+    pics/propeller/.style={code={\node[inner sep=0pt] {\iconeMDI{F0210}};}},
+    pics/gauge/.style={code={\node[inner sep=0pt] {\iconeMDI{F029A}};}},
+    pics/control/.style={code={\node[inner sep=0pt] {\iconeMDI{F066A}};}},
+    pics/battery/.style={code={\node[inner sep=0pt] {\iconeMDI{F010C}};}},
+    pics/controller/.style={code={\node[inner sep=0pt] {\iconeMDI{F061A}};}},
+    pics/electricmotor/.style={code={
+        \node[inner sep=0pt] {\iconeMDI{F01FA}};
+        \node[fill=white, inner sep=0.3pt, rounded corners=1pt]
+            at (0.48,-0.35) {{\fontsize{8}{8}\selectfont\texticon{\char"F140B}}};
+    }},
+    pics/charger/.style={code={\node[inner sep=0pt] {\iconeMDI{F05F1}};}}
+}
+\else
+\tikzset{
+    pics/fuelstation/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.38,-0.42) rectangle (0.25,0.42);
+        \draw[iconLine] (-0.30,0.22) rectangle (0.17,0.34);
+        \draw[iconLine] (-0.20,-0.04) -- (0.08,-0.04);
+        \draw[iconLine] (0.25,0.25) -- (0.48,0.25) -- (0.53,0.02)
+            -- (0.40,-0.18) -- (0.34,-0.30);
+    }},
+    pics/reservoir/.style={code={
+        \draw[iconLine, fill=white, rounded corners=2pt]
+            (-0.62,-0.28) rectangle (0.62,0.28);
+        \draw[iconLine] (-0.28,0.28) -- (-0.28,0.42) -- (0.02,0.42)
+            -- (0.02,0.28);
+        \draw[iconLine] (-0.48,-0.05) -- (0.45,-0.05);
+        \draw[iconLine] (0.38,0.28) -- (0.38,0.42);
+    }},
+    pics/fuelpump/.style={code={
+        \draw[iconLine, fill=white] (0,0) circle (0.31);
+        \draw[iconLine] (-0.60,0) -- (-0.31,0);
+        \draw[iconLine] (0.31,0) -- (0.60,0);
+        \draw[iconLine] (0,-0.31) -- (0,-0.45);
+        \draw[iconLine] (-0.12,0.08) -- (0,0.20) -- (0.12,0.08)
+            -- (0,-0.12) -- (-0.12,-0.12) -- cycle;
+    }},
+    pics/engine/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.52,-0.28) rectangle (0.48,0.24);
+        \draw[iconLine, fill=white] (-0.38,0.24) rectangle (-0.14,0.43);
+        \draw[iconLine, fill=white] (-0.02,0.24) rectangle (0.22,0.43);
+        \draw[iconLine] (-0.34,-0.28) -- (-0.34,-0.43)
+            -- (0.30,-0.43) -- (0.30,-0.28);
+        \draw[iconLine] (0.48,-0.02) -- (0.65,-0.02);
+    }},
+    pics/propeller/.style={code={
+        \draw[iconLine, fill=white, rounded corners=3pt]
+            (-0.11,0.10) .. controls (-0.50,0.32) and (-0.68,0.35)
+            .. (-0.67,0.20) -- (-0.16,-0.07) -- cycle;
+        \draw[iconLine, fill=white, rounded corners=3pt]
+            (0.11,-0.10) .. controls (0.50,-0.32) and (0.68,-0.35)
+            .. (0.67,-0.20) -- (0.16,0.07) -- cycle;
+        \draw[iconLine, fill=white] (0,0) circle (0.13);
+    }},
+    pics/gauge/.style={code={
+        \draw[iconLine, fill=white] (0,0) circle (0.42);
+        \draw[iconLine] (-0.27,0.18) -- (-0.32,0.23);
+        \draw[iconLine] (0,0.31) -- (0,0.38);
+        \draw[iconLine] (0.27,0.18) -- (0.32,0.23);
+        \draw[iconLine] (0,0) -- (0.23,0.20);
+        \draw[iconLine, fill=black!75] (0,0) circle (0.04);
+    }},
+    pics/control/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.42,-0.12) rectangle (0.42,0.02);
+        \draw[iconLine] (0,0.02) -- (0.18,0.40);
+        \draw[iconLine, fill=white] (0.10,0.35) circle (0.09);
+        \draw[iconLine] (-0.28,-0.24) -- (0.28,-0.24);
+    }},
+    pics/battery/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.48,-0.30) rectangle (0.48,0.30);
+        \draw[iconLine] (-0.25,0.30) -- (-0.25,0.42);
+        \draw[iconLine] (0.25,0.30) -- (0.25,0.42);
+        \draw[iconLine] (-0.23,0) -- (-0.01,0);
+        \draw[iconLine] (0.12,0) -- (0.34,0);
+        \draw[iconLine] (0.23,-0.11) -- (0.23,0.11);
+    }},
+    pics/controller/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.48,-0.28) rectangle (0.48,0.28);
+        \draw[iconLine] (-0.28,-0.14) -- (-0.08,0.14)
+            -- (0.08,-0.14) -- (0.28,0.14);
+        \draw[iconLine] (-0.24,0.28) -- (-0.24,0.42);
+        \draw[iconLine] (0,0.28) -- (0,0.42);
+        \draw[iconLine] (0.24,0.28) -- (0.24,0.42);
+    }},
+    pics/electricmotor/.style={code={
+        \draw[iconLine, fill=white] (0,0) circle (0.38);
+        \draw[iconLine] (-0.38,0) -- (-0.55,0);
+        \draw[iconLine] (0.38,0) -- (0.62,0);
+        \draw[iconLine] (0,0) circle (0.15);
+        \draw[iconLine] (0,0.15) -- (0,0.30);
+        \draw[iconLine] (0,-0.15) -- (0,-0.30);
+        \draw[iconLine] (0.15,0) -- (0.30,0);
+        \draw[iconLine] (-0.15,0) -- (-0.30,0);
+    }},
+    pics/charger/.style={code={
+        \draw[iconLine, fill=white, rounded corners=1pt]
+            (-0.45,-0.28) rectangle (0.30,0.28);
+        \draw[iconLine] (-0.22,0.28) -- (-0.22,0.43);
+        \draw[iconLine] (0.02,0.28) -- (0.02,0.43);
+        \draw[iconLine] (0.30,0.08) -- (0.50,0.08)
+            -- (0.50,-0.18) -- (0.62,-0.18);
+        \draw[iconLine] (-0.30,0) -- (0.15,0);
+    }}
+}
+\fi
+
+\newcommand{\boiteMotopropulseur}[5]{%
+    \node[#1] (#2) at #3 {};
+    \pic[scale=0.48] at ([yshift=0.38cm]#2.center) {#4};
+    \node[font=\scriptsize, text width=1.8cm, align=center, inner sep=0pt,
+        anchor=north] at ([yshift=-0.32cm]#2.center) {#5};
+}
+
+\begin{tikzpicture}[
+    font=\small,
+    element/.style={draw, rounded corners=2pt, minimum height=2cm,
+        minimum width=2.05cm, text width=1.9cm, align=center, inner sep=2pt},
+    carburant/.style={draw=orange!75!black, line width=1.4pt, ->},
+    electrique/.style={draw=blue!70!black, line width=1.4pt, ->},
+    mecanique/.style={draw=black!75, line width=1.4pt, ->},
+    commande/.style={draw=black!65, dashed, ->},
+    mesure/.style={draw=black!65, densely dotted},
+    transfertSol/.style={draw=orange!75!black, densely dotted, ->},
+    equipementSol/.style={element, fill=orange!8,
+        pattern=north east lines, pattern color=orange!65!black},
+    instrument/.style={draw, rounded corners=2pt, fill=white,
+        minimum height=2cm, minimum width=2.05cm,
+        text width=1.9cm, align=center, inner sep=2pt}
+]
+    \node[anchor=west, align=left, font=\bfseries] at (-0.85,2.15)
+        {Motorisation thermique\\à carburateur};
+
+    \boiteMotopropulseur{equipementSol}{station}{(0,0)}{fuelstation}
+        {Pompe\\à essence}
+    \boiteMotopropulseur{element, fill=orange!20}{reservoir}{(2.65,0)}
+        {reservoir}{Réservoir\\de carburant}
+    \boiteMotopropulseur{element, fill=orange!10}{pompe}{(5.3,0)}
+        {fuelpump}{Pompe à\\carburant}
+    \boiteMotopropulseur{element, fill=orange!10}{carburateur}{(7.95,0)}
+        {carburetor}{Carburateur}
+    \boiteMotopropulseur{element, fill=orange!20}{thermique}{(10.6,0)}
+        {engine}{Moteur\\thermique}
+    \boiteMotopropulseur{element, fill=gray!10}{heliceT}{(13.25,0)}
+        {propeller}{Hélice}
+
+    \draw[transfertSol] (station.east) -- (reservoir.west);
+    \draw[carburant] (reservoir.east) -- (pompe.west);
+    \draw[carburant] (pompe.east) -- (carburateur.west);
+    \draw[carburant] (carburateur.east) -- (thermique.west);
+    \draw[mecanique] (thermique.east) -- (heliceT.west);
+
+    \boiteMotopropulseur{instrument}{jauge}{(2.65,-2.15)}{gauge}
+        {Jauge de\\carburant}
+    \draw[mesure] (reservoir.south) -- (jauge.north);
+    \boiteMotopropulseur{instrument}{gaz}{(7.95,2.3)}{control}
+        {Manette\\des gaz}
+    \draw[commande] (gaz.south) -- (carburateur.north);
+    \draw[carburant] (7.95,-1.35) node[below, text=black] {Air} -- (carburateur.south);
+
+    \node[anchor=west, font=\bfseries] at (-0.85,-3.55)
+        {Motorisation électrique};
+
+    \boiteMotopropulseur{equipementSol}{chargeur}{(0,-6)}{charger}
+        {Chargeur}
+    \boiteMotopropulseur{element, fill=blue!20}{batterie}{(2.65,-6)}
+        {battery}{Batterie}
+    \boiteMotopropulseur{element, fill=blue!10}{controleur}{(7.95,-6)}
+        {controller}{Contrôleur\\(variateur)}
+    \boiteMotopropulseur{element, fill=blue!20}{moteurE}{(10.6,-6)}
+        {electricmotor}{Moteur\\électrique}
+    \boiteMotopropulseur{element, fill=gray!10}{heliceE}{(13.25,-6)}
+        {propeller}{Hélice}
+
+    \draw[transfertSol] (chargeur.east) -- (batterie.west);
+    \draw[electrique] (batterie.east) -- (controleur.west);
+    \draw[electrique] (controleur.east) -- (moteurE.west);
+    \draw[mecanique] (moteurE.east) -- (heliceE.west);
+
+    \boiteMotopropulseur{instrument}{voltmetre}{(2.65,-8.15)}{gauge}
+        {Voltmètre}
+    \draw[mesure] (batterie.south) -- (voltmetre.north);
+    \boiteMotopropulseur{instrument}{puissance}{(7.95,-3.75)}{control}
+        {Manette de\\puissance}
+    \draw[commande] (puissance.south) -- (controleur.north);
+
+    \draw[carburant] (-0.85,-9.5) -- ++(0.7,0)
+        node[right, text=black] {Durites et tuyaux};
+    \draw[electrique] (3.15,-9.5) -- ++(0.7,0)
+        node[right, text=black] {Câbles électriques};
+    \draw[mecanique] (7.4,-9.5) -- ++(0.7,0)
+        node[right, text=black] {Entraînement mécanique};
+    \draw[commande] (-0.85,-10.2) -- ++(0.7,0)
+        node[right, text=black] {Commande};
+    \draw[mesure] (3.15,-10.2) -- ++(0.7,0)
+        node[right, text=black] {Mesure};
+    \node[draw, fill=orange!8, pattern=north east lines,
+        pattern color=orange!65!black, minimum size=0.25cm] at (7.55,-10.2) {};
+    \node[anchor=west] at (7.8,-10.2) {Équipement au sol};
+\end{tikzpicture}
