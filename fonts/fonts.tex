@@ -27,15 +27,26 @@
   UprightFont = materialdesignicons-webfont,
   Renderer = OpenType
 ]
-\DeclareTextFontCommand{\texticon}{\MaterialDesignIcons}
+\DeclareTextFontCommand{\mdi}{\MaterialDesignIcons}
+
+\newfontfamily\FontAwsome{Font Awsome Icons}[
+  Path = fonts/,
+  Extension = .otf,
+  UprightFont = FontAwesome7Free-Solid-900,
+  Renderer = OpenType
+]
+\DeclareTextFontCommand{\fawsome}{\FontAwsome}
 \fi
 
-\newcommand{\mdiAirBalloon}{\Huge\ifluatex\texticon{ ^^^^^^0f001c }\else\faQuestion\fi\normalsize}
-\newcommand{\mdiParachute}{\Huge\ifluatex\texticon{ ^^^^^^0f0cb4 }\else\faQuestion\fi\normalsize}
-\newcommand{\mdiRocket}{\Huge\ifluatex\texticon{ ^^^^^^0f14de }\else\faRocket\fi\normalsize}
-\newcommand{\mdiBrevet}{\Huge\ifluatex\texticon{ ^^^^^^0f1188 }\else\faCertificate\fi\normalsize}
-\newcommand{\mdiTrophy}{\Huge\ifluatex\texticon{ ^^^^^^0f0538 }\else\faTrophy\fi\normalsize}
-\newcommand{\mdiMilitaire}{\Huge\ifluatex\texticon{ ^^^^^^0f0787 }\else\faShield\fi\normalsize}
-\newcommand{\mdiFemale}{\Huge\ifluatex\texticon{ ^^^^^^0f029c }\else\faFemale\fi\normalsize}
-\newcommand{\mdiGreen}{\Huge\ifluatex\texticon{ ^^^^^^0f032a }\else\faLeaf\fi\normalsize}
-\newcommand{\mdiSpaceStation}{\Huge\ifluatex\texticon{ ^^^^^^0f1383 }\else\faQuestion\fi\normalsize}
+\newcommand{\mdiAirBalloon}{\Huge\ifluatex\mdi{ ^^^^^^0f001c }\else\faQuestion\fi\normalsize}
+\newcommand{\mdiParachute}{\Huge\ifluatex\mdi{ ^^^^^^0f0cb4 }\else\faQuestion\fi\normalsize}
+\newcommand{\mdiRocket}{\Huge\ifluatex\mdi{ ^^^^^^0f14de }\else\faRocket\fi\normalsize}
+\newcommand{\mdiBrevet}{\Huge\ifluatex\mdi{ ^^^^^^0f1188 }\else\faCertificate\fi\normalsize}
+\newcommand{\mdiTrophy}{\Huge\ifluatex\mdi{ ^^^^^^0f0538 }\else\faTrophy\fi\normalsize}
+\newcommand{\mdiMilitaire}{\Huge\ifluatex\mdi{ ^^^^^^0f0787 }\else\faShield\fi\normalsize}
+\newcommand{\mdiFemale}{\Huge\ifluatex\mdi{ ^^^^^^0f029c }\else\faFemale\fi\normalsize}
+\newcommand{\mdiGreen}{\Huge\ifluatex\mdi{ ^^^^^^0f032a }\else\faLeaf\fi\normalsize}
+\newcommand{\mdiSpaceStation}{\Huge\ifluatex\mdi{ ^^^^^^0f1383 }\else\faQuestion\fi\normalsize}
+
+\newcommand{\fawsomeQuestion}{\Huge\ifluatex\fawsome{ ^^^^^^00f059 }\else\faQuestionCircle\fi\normalsize}
+\newcommand{\fawsomeAlerte}{\Huge\ifluatex\fawsome{ ^^^^^^00f06a }\else\faExclamationCircle\fi\normalsize}

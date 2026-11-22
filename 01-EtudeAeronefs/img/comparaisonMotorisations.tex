@@ -10,7 +10,7 @@
 }
 
 %\ifluatex
-\newcommand{\iconeMDI}[1]{{\fontsize{32}{32}\selectfont\texticon{\char"#1}}}
+\newcommand{\iconeMDI}[1]{{\fontsize{32}{32}\selectfont\mdi{\char"#1}}}
 \tikzset{
     pics/fuelstation/.style={code={\node[inner sep=0pt] {\iconeMDI{F0298}};}},
     pics/reservoir/.style={code={\node[inner sep=0pt] {\iconeMDI{F1A76}};}},
