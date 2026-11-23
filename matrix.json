@@ -36,42 +36,42 @@
       "toRelease": false
     },
     {
-      "file": "seance5_Atmosphere",
+      "file": "seance06_Atmosphere",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance6_InstrumentsDeBord",
+      "file": "seance07_InstrumentsDeBord",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance7_Aerodrome_ReglesDeVol",
+      "file": "seance08_Aerodrome_ReglesDeVol",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance8_CartographieNavigation",
+      "file": "seance09_CartographieNavigation",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance9_EspacesAeriensSecurite",
+      "file": "seance10_EspacesAeriensSecurite",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance10_PreparationVol",
+      "file": "seance11_PreparationVol",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance11_Histoire",
+      "file": "seance12_Histoire",
       "presentation": true,
       "toRelease": false
     },
     {
-      "file": "seance12_EtudeVolStabilise",
+      "file": "seance13_EtudeVolStabilise",
       "presentation": true,
       "toRelease": false
     }
