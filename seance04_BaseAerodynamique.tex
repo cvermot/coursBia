@@ -75,10 +75,21 @@
 	\end{frame}
 	
 	\begin{frame}{Décrochage}
+	\begin{columns}
+ 	\begin{column}{0.5\textwidth}
 		\begin{figure}[H]
-  			\includegraphics[scale=0.42]{04-Aerodynamique/img/portanceDecrochage.pdf}
+  			\includegraphics[scale=0.40]{04-Aerodynamique/img/portanceDecrochage.pdf}
   			\legende{}{img:portanceDecrochage}	
 		\end{figure}
+		\end{column}
+	\begin{column}{0.5\textwidth}	
+		\begin{itemize}
+			\item A faible incidence, le flux d'air est \textbf{laminaire} sur toute l'aile \pause
+			\item Quand l'incidence augmente, les filets d'air vont avoir tendance à se décoller sur l'arrière de l'aile, l'écoulement devient \textbf{turbulent} voir \textbf{tourbillonnaire}
+		\end{itemize}
+	\end{column}
+	\end{columns}
+		
 	\end{frame}
 	
 	\begin{frame}{Les équations}
@@ -124,6 +135,20 @@
 	\end{figure}
 
 	\pause
+	\end{frame}
+	
+	\begin{frame}{Tourbillons marginaux}
+	\begin{columns}
+ 	\begin{column}{0.4\textwidth}
+		\begin{figure}[H]
+  			\includegraphics[width=1.0\textwidth]{04-Aerodynamique/img/vortexBoutDAile.pdf}
+  			\legende{Création de vortex}{img:vortexSchema}	
+		\end{figure}
+	\end{column}	
+ 	\begin{column}{0.6\textwidth}
+	Les tourbillons marginaux sont créés par "l'aspiration" de l'air en surpression de l'intrados vers l'air en dépression sur l'extrados
+ 	\end{column}
+ 	\end{columns}
 	\end{frame}
 	
 	\begin{frame}{Tourbillons marginaux}
@@ -347,6 +372,14 @@
 {A2, B4, C1, D3}
 {A4, B5, C2, D1}
 {A4, B2, C3, D5} 
+{}
+
+\qmcBia{Étude des aéronefs}
+{4}{Dans un écoulement d'air, lorsque les particules d'air sont animées de la même vitesse et suivent des trajectoires rectilignes et parallèles entre elles, on dit que l'écoulement est :}
+{tourbillonnant}
+{de couche limite}
+{turbulent}
+{laminaire} 
 {}
  
 \input{commun/beamerSlidesBiblio.tex} 
