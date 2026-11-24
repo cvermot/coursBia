@@ -2,15 +2,15 @@
 
 \subsection{Pré-requis}
 \subsubsection{Les 4 forces}
-Un aéronef, et par extension une aile, subissent, en vol, 4 forces, appairée 2 à 2 :
+Un aéronef, et par extension une aile, subissent, en vol, quatre forces, appariées deux à deux :
 \begin{itemize}
 	\item le \textbf{poids}, qui est une force verticale orientée vers le bas. Elle tend à faire descendre l'aéronef,
 	\item la \textbf{portance}, force verticale, orientée vers le haut, opposée au poids. C'est elle qui permet de faire monter l'aéronef,
 	\item la \textbf{traction} (ou propulsion), force horizontale et orientée vers l'avant, c'est elle qui fait avancer l'aéronef. Cette force est produite par un moteur,
-	\item la \textbf{trainée}, force horizontal, orientée vers l'arrière et opposée à la traction. Cette force à provoque le ralentissement de l'aéronef.
+	\item la \textbf{traînée}, force horizontale, orientée vers l'arrière et opposée à la traction. Cette force provoque le ralentissement de l'aéronef.
 \end{itemize}
 
-Ces forces sont exprimées en Newton (N).
+Ces forces sont exprimées en newtons (N).
 \begin{figure}[H]
 		\centering
   		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/forces.pdf}
@@ -48,9 +48,9 @@ Toute aile est composée de plusieurs parties distinctes :
 	\astuce{Pour se souvenir où sont situés l'intrados et l'extrados : quand l'avion vole à plat, l'extrados fait face à l'extérieur de la planète, l'intrados regarde vers l'intérieur de la planète.} 
 	
 	\subsubsection{Répartition des pressions autour d'une aile}
-	Lorsqu'une aile se déplace dans une masse d'air, sa forme impose à l'air qui se déplace autour d'elle à accélérer sur la partie supérieure. Il en résulte que l'extrados de l'aile est le siège d'une dépression. Celle ci aspire littéralement l'aile vers le haut.
+	Lorsqu'une aile se déplace dans une masse d'air, sa forme impose à l'air qui se déplace autour d'elle d'accélérer sur la partie supérieure. Il en résulte que l'extrados de l'aile est le siège d'une dépression. Celle-ci aspire littéralement l'aile vers le haut.
 	
-	L'intrados, est, quand à lui, le siège d'une surpression : l'air qu'il rencontre se retrouve en quelque sortes piégé, et est ralenti.
+	L'intrados est, quant à lui, le siège d'une surpression : l'air qu'il rencontre se retrouve en quelque sorte piégé et est ralenti.
 	
 	\begin{figure}[H]
 		\centering
@@ -63,9 +63,9 @@ Toute aile est composée de plusieurs parties distinctes :
 	\paragraph{Types d'écoulements}
 	Le long d'un objet, l'écoulement peut être de plusieurs types :
 	\begin{itemize}
-		\item \textbf{laminaire} : les particules du fluide suivent des trajectoires parallèles, de même direction. Un ruisseau dont l'eau apparait transparente et sans remous est un exemple d'écoulement laminaire.
-		\item \textbf{turbulent} : les particules du fluide ont un mouvement chaotique, désordonné, voir de sens opposé. L'eau d'un ruisseau avec des remous a un écoulement turbulent.
-		\item \textbf{tourbillonnaire} : les particules suivent un mouvement circulaire. De l'eau sans un siphon a un écoulement tourbillonnaire.
+		\item \textbf{laminaire} : les particules du fluide suivent des trajectoires parallèles, de même direction. Un ruisseau dont l'eau apparaît transparente et sans remous est un exemple d'écoulement laminaire.
+		\item \textbf{turbulent} : les particules du fluide ont un mouvement chaotique, désordonné, voire de sens opposé. L'eau d'un ruisseau avec des remous a un écoulement turbulent.
+		\item \textbf{tourbillonnaire} : les particules suivent un mouvement circulaire. De l'eau dans un siphon a un écoulement tourbillonnaire.
 	\end{itemize}
 	
 	\begin{figure}[H]
@@ -112,9 +112,9 @@ Toute aile est composée de plusieurs parties distinctes :
 	\alert{Les tourbillons marginaux constituent une menace : un aéronef léger qui traverserait les tourbillons d'un aéronef plus lourd pourrait être retourné ou se casser en raison de la violence de ces phénomènes. Pour cette raison, le contrôle aérien assure une séparation entre 2 aéronefs qui se suivent lorsque le suivant est d'une catégorie de masse inférieure.}
 	
 	\subsubsection{Allongement d'une aile}
-	On a vu que les tourbillons marginaux se formaient en bout d'aile. Si l'on imagine une aile (fictive) infinie, il n'y aurait pas de saumon pour faire l'interface entre l'intrados et l'extrados, et donc pas de formation de tourbillon marginal !
+	On a vu que les tourbillons marginaux se formaient en bout d'aile. Si l'on imagine une aile (fictive) infinie, il n'y aurait pas de saumon pour faire l'interface entre l'intrados et l'extrados, et donc pas de formation de tourbillons marginaux !
 	
-	Pour réduire les tourbillons marginaux, on peut donc augmenter l'allongement d'une aile, c'est-à-dire le rapport entre la corde de profil moyenne et la longueur de l'aile. Plus une aile est allongée, moins elle génère de tourbillons marginaux et donc de traînée liée à ce phénomène. Cela explique pourquoi les planeurs performants, mais aussi les avions de ligne (pour lesquels on veut minimiser les sources de traînée) ont des ailes très longues.
+	Pour réduire les tourbillons marginaux, on peut donc augmenter l'allongement d'une aile, c'est-à-dire le rapport entre l'envergure au carré et la surface portante. Plus une aile est allongée, moins elle génère de tourbillons marginaux et donc de traînée liée à ce phénomène. Cela explique pourquoi les planeurs performants, mais aussi les avions de ligne (pour lesquels on veut minimiser les sources de traînée) ont des ailes très longues.
 	
 	L'allongement d'une aile $\lambda$ (sans unité) se calcule avec la formule suivante :
 	
@@ -124,8 +124,8 @@ Toute aile est composée de plusieurs parties distinctes :
 	
 	avec :
 	\begin{itemize}
-		\item $b$ : l'envergure de l'aile en $m$
-		\item $S$ : la surface portante en $m^2$
+		\item $b$ : l'envergure de l'aile en $\mathrm{m}$ ;
+		\item $S$ : la surface portante en $\mathrm{m}^2$.
 	\end{itemize}
 	
 
