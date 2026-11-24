@@ -152,7 +152,7 @@ Les ressources suivantes permettent de compléter le cours et de préparer l'exa
 - [Initiation à l'aéronautique](https://www.cepadues.com/livres/pilotage-aeronautique/avion/bia-brevet-d-initiation-aeronautique/1721-initiation-a-l-aeronautique-preparer-le-bia-12e-edition-9782383951445.html?srsltid=AfmBOor7odukzI1SP7E6B2-rc32NbJ-0qAEPxxO2yUrpKywYNZjcuvMD), éditions Cépaduès : le livre de référence qui couvre l'ensemble du programme. Disponible en commande dans toutes les librairies.
 - [Manuel du BIA proposé par l'académie de Toulouse](https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/ressources/pedagogiques/11286/11286-bia-2021-vf1-copie.pdf)
 - [Carte de navigation VFR à l'échelle 1/500000](https://www.geoportail.gouv.fr/carte?c=-0.17893881194542527,44.77643877845679&z=10&l0=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-OACI::GEOPORTAIL:OGC:WMTS(1)&permalink=yes)
--[Chaine YouTube AeroJeune BIA](https://www.youtube.com/@AeroJeune_BIA/) : chaque jour un ou 2 shorts pour apprendre sans même s'en rendre compte.
+- [Chaine YouTube AeroJeune BIA](https://www.youtube.com/@AeroJeune_BIA/) : chaque jour un ou 2 shorts pour apprendre sans même s'en rendre compte.
 
 ### Cours de l'aéroclub de Montendre
 L'aéroclub de Montendre met à disposition ses cours BIA très bien conçus :
