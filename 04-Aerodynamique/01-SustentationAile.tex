@@ -1,11 +1,31 @@
 \section{La sustentation et l'aile}
 
-\subsection{Les axes}
+\subsection{Pré-requis}
 \subsubsection{Les 4 forces}
+Un aéronef, et par extension une aile, subissent, en vol, 4 forces, appairée 2 à 2 :
+\begin{itemize}
+	\item le \textbf{poids}, qui est une force verticale orientée vers le bas. Elle tend à faire descendre l'aéronef,
+	\item la \textbf{portance}, force verticale, orientée vers le haut, opposée au poids. C'est elle qui permet de faire monter l'aéronef,
+	\item la \textbf{traction} (ou propulsion), force horizontale et orientée vers l'avant, c'est elle qui fait avancer l'aéronef. Cette force est produite par un moteur,
+	\item la \textbf{trainée}, force horizontal, orientée vers l'arrière et opposée à la traction. Cette force à provoque le ralentissement de l'aéronef.
+\end{itemize}
+
+Ces forces sont exprimées en Newton (N).
 \begin{figure}[H]
 		\centering
   		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/forces.pdf}
   		\legende{Les 4 forces}{img:forces}	
+\end{figure}
+
+\info{Un planeur n'a pas de moteur, et donc pas de traction à proprement parler. Un aérodyne qui vole sans moteur produit sa traction grâce à la composante de son poids dirigée vers l'avant, lui permettant de transformer son altitude (énergie potentielle) en vitesse (énergie cinétique).}
+
+\subsection{Effet venturi}
+L'effet Venturi est un phénomène de dynamique des fluides où la vitesse d'un fluide augmente et sa pression diminue lorsqu'il traverse un rétrécissement de conduit.
+
+\begin{figure}[H]
+		\centering
+  		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/tubeVenturi.pdf}
+  		\legende{Illustration des variations de pressions et de vitesse d'un fluide dans un tube présentant un rétrécissement : l'effet Venturi}{img:tubeVenturi}	
 \end{figure}
 
 \subsection{L'aile}
@@ -13,8 +33,8 @@
 \subsubsection{Description générale}
 Toute aile est composée de plusieurs parties distinctes :
 \begin{itemize}
-	\item L'\gls{intrados} est la partie inférieure de l'aile. Lorsque l'aile se déplace dans une masse d'air, l'intrados est le siège d'une surpression.
-	\item L'\gls{extrados} est la partie supérieure de l'aile. Lorsque l'aile se déplace dans une masse d'air, l'extrados est le siège d'une dépression (l'aile est aspirée vers le haut).
+	\item L'\gls{intrados} \anglais{lower surface} est la partie inférieure de l'aile. Lorsque l'aile se déplace dans une masse d'air, l'intrados est le siège d'une surpression.
+	\item L'\gls{extrados} \anglais{upper surface} est la partie supérieure de l'aile. Lorsque l'aile se déplace dans une masse d'air, l'extrados est le siège d'une dépression (l'aile est aspirée vers le haut).
 	\item Le \gls{bord d'attaque} \anglais{leading edge} est le point le plus en avant d'un profil d'aile. C'est à ce point que l'air entrera en contact en premier avec l'aile. Il s'agit généralement d'une surface courbe.
 	\item Le \gls{bord de fuite} \anglais{trailing edge} est le point le plus en arrière d'un profil d'aile. Il s'agit généralement d'une pointe.
 \end{itemize}
@@ -27,18 +47,38 @@ Toute aile est composée de plusieurs parties distinctes :
 	
 	\astuce{Pour se souvenir où sont situés l'intrados et l'extrados : quand l'avion vole à plat, l'extrados fait face à l'extérieur de la planète, l'intrados regarde vers l'intérieur de la planète.} 
 	
-\subsubsection{Répartition des pressions autour d'une aile}
+	\subsubsection{Répartition des pressions autour d'une aile}
+	Lorsqu'une aile se déplace dans une masse d'air, sa forme impose à l'air qui se déplace autour d'elle à accélérer sur la partie supérieure. Il en résulte que l'extrados de l'aile est le siège d'une dépression. Celle ci aspire littéralement l'aile vers le haut.
+	
+	L'intrados, est, quand à lui, le siège d'une surpression : l'air qu'il rencontre se retrouve en quelque sortes piégé, et est ralenti.
+	
 	\begin{figure}[H]
 		\centering
   		\includegraphics[width=0.8\textwidth]{04-Aerodynamique/img/pressionProfilSelonAngleAttaque4deg.pdf}
   		\legende{La pression autour d'une aile}{img:pressionProfilSelonAngleAttaque}
 	\end{figure}	
 	
+	\info{On dit souvent que l'aile "porte", alors qu'en réalité, environ 70\% de la portance est liée à la dépression présente sur l'extrados. Une aile est donc plus aspirée que portée.}
+	
+	\paragraph{Types d'écoulements}
+	Le long d'un objet, l'écoulement peut être de plusieurs types :
+	\begin{itemize}
+		\item \textbf{laminaire} : les particules du fluide suivent des trajectoires parallèles, de même direction. Un ruisseau dont l'eau apparait transparente et sans remous est un exemple d'écoulement laminaire.
+		\item \textbf{turbulent} : les particules du fluide ont un mouvement chaotique, désordonné, voir de sens opposé. L'eau d'un ruisseau avec des remous a un écoulement turbulent.
+		\item \textbf{tourbillonnaire} : les particules suivent un mouvement circulaire. De l'eau sans un siphon a un écoulement tourbillonnaire.
+	\end{itemize}
+	
+	\begin{figure}[H]
+		\centering
+  		\includegraphics[width=0.9\textwidth]{04-Aerodynamique/img/ecoulementLaminaireTurbulent.pdf}
+  		\legende{Écoulements laminaires et turbulents}{img:ecoulementLaminaireTurbulent}
+	\end{figure}
+	
 	\subsubsection{Tourbillons marginaux}
 	On a vu que l'extrados était le siège d'une dépression tandis que l'on retrouve une surpression sur l'intrados. Le saumon se trouve donc être l'interface entre une zone de surpression et une zone de dépression. Naturellement, l'air va chercher à rejoindre la zone de moindre pression, en contournant le saumon. Cela provoque un phénomène appelé tourbillon marginal ou vortex.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.95\linewidth]{04-Aerodynamique/img/vortexBoutDAile.pdf}
+		\includegraphics[width=0.5\linewidth]{04-Aerodynamique/img/vortexBoutDAile.pdf}
 		\legende{Répartition des pressions et passage de l'air en bout d'aile}{img:vortexBoutDAile}	
 	\end{figure}
 	
@@ -132,7 +172,7 @@ On s'intéresse dans le graphique ci-dessous à la valeur de la portance en fonc
 	
 	À faible incidence, les filets d'air n'ont pas de difficultés à "coller" au profil de l'aile : l'écoulement est dit \textbf{laminaire.}
 	
-	Lorsqu'on augmente l'incidence d'une aile, les filets d'air vont avoir tendance à se décoller sur l'arrière de l'aile, où l'écoulement devient turbulent, voire tourbillonnaire : ces filets décollés ne participent plus à la génération de la portance. Par ailleurs, plus l'incidence augmente, plus les filets se décollent tôt sur l'aile, et plus l'écoulement devient turbulent sur la partie arrière de l'aile.
+	Lorsqu'on augmente l'incidence d'une aile, les filets d'air vont avoir tendance à se décoller sur l'arrière de l'aile, où l'écoulement devient \textbf{turbulent}, voire tourbillonnaire : ces filets décollés ne participent plus à la génération de la portance. Par ailleurs, plus l'incidence augmente, plus les filets se décollent tôt sur l'aile, et plus l'écoulement devient turbulent sur la partie arrière de l'aile : l'aile décroche et cesse de porter efficace l'aérodyne.
 	
 	\begin{figure}[H]
 		\centering
