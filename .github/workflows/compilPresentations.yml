@@ -19,7 +19,7 @@ jobs:
           matrix=$(cat matrix.json | jq -c '{include: [.files[] | select(.presentation == true)]}')
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
 
-  Produce_LaTeX_document:
+  compile:
     needs: load_matrix
     runs-on: ubuntu-latest
     strategy:
