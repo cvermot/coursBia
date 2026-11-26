@@ -9,6 +9,42 @@
     doi=true,
     eprint=true
 ]{biblatex}
+
+% Le titre et la référence du livre du chapitre restent accessibles à l'image.
+\DeclareDataInheritance{inbook}{misc}{%
+    \inherit{title}{usera}
+    \inherit{crossref}{userb}
+}
+
+% Conserver le pilote du style courant pour les autres entrées @misc.
+\csletcs{blx@bbx@miscstandard}{blx@bbx@misc}
+\DeclareBibliographyDriver{misc}{%
+    \iffieldequalstr{entrysubtype}{imageextrait}
+        {%
+            \iffieldundef{usera}
+                {\PackageError{biblio}{Titre du chapitre absent pour \thefield{entrykey}}{Vérifier le crossref vers une entrée inbook avec un titre.}}
+                {}%
+            \iffieldundef{userb}
+                {\PackageError{biblio}{Référence du livre absente pour \thefield{entrykey}}{Vérifier le crossref du chapitre vers le livre.}}
+                {}%
+            \usebibmacro{bibindex}%
+            \usebibmacro{begentry}%
+            \printnames{author}%
+            \setunit{\addcomma\space}%
+            \printfield{title}%
+            \setunit{\addcomma\space}%
+            \printtext{extrait de \cite{\thefield{userb}}}%
+            \setunit{\addcomma\space}%
+            \printfield{usera}%
+            \setunit{\addcomma\space}%
+            \printfield{pages}%
+            \newunit\newblock
+            \usebibmacro{bytranslator+others}%
+            \usebibmacro{finentry}%
+        }
+        {\csuse{blx@bbx@miscstandard}}%
+}
+
 	\addbibresource{commun/biblio.bib}
 	\addbibresource{01-EtudeAeronefs/biblio.bib}
 	\addbibresource{02-Navigation/biblio.bib}
