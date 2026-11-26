@@ -28,7 +28,7 @@
     {
       "file": "seance04_BaseAerodynamique",
       "presentation": true,
-      "toRelease": false
+      "toRelease": true
     },
     {
       "file": "seance05_CommandesDeVol",

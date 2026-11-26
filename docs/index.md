@@ -36,14 +36,15 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 - [Vidéo : le turbopropulseur](https://www.youtube.com/watch?v=NpeY0435iGs&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=55&pp=iAQB)
 - [Vidéo : statoréacteur, pulsoréacteur](https://www.youtube.com/watch?v=6Q-0b2OnQZ8&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=5&pp=iAQB0gcJCYcKAYcqIYzv)
 
-<!--
-## Séance 3 : Bases d'aérodynamique
+## Séance 4 : Bases d'aérodynamique
 - Portance
 - Traînée
 - Polaire d'une aile
   
-[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance3_BaseAerodynamique_handout.pdf
+[Télécharger le diaporama présenté](https://github.com/cvermot/coursBia/releases/latest/download/seance04_BaseAerodynamique_handout.pdf
 )
+
+[Cours BIA](https://github.com/cvermot/coursBia/releases/latest/download/CoursBIA_complet.pdf) chapitre 3.1.1 à 3.1.8 <small class="maj-cours"></small>
 
 - [Simulation : la polaire](./polaireAile.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-polaire-dun-avion))
 - [Simulation : construction de la polaire à partir du Cx et du Cz](./polaireCxCz.html) ([Source](https://pedagogie.ac-montpellier.fr/activite-geogebra-comprendre-la-construction-de-la-polaire))
@@ -55,6 +56,7 @@ Pour chaque séance, le support projeté est disponible, auquel s'ajoute quelque
 - [Vidéo : la polaire](https://www.youtube.com/watch?v=jVIlY4SFK40&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=46&pp=iAQB)
 - [Vidéo : dispositifs hypersustentateurs](https://www.youtube.com/watch?v=xT2zrV2BQuA&list=PLciYMfFOTAZanbBTH7-rBnbS-0kov6lWK&index=45&pp=iAQB)
 
+<!--
 ## Séance 4 : Commandes de vol
 - Les axes (roulis, tangage, lacet)
 - Les commandes vol (ailerons, profondeur, gouverne de direction)
