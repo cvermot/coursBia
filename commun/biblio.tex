@@ -27,13 +27,20 @@
             \iffieldundef{userb}
                 {\PackageError{biblio}{Référence du livre absente pour \thefield{entrykey}}{Vérifier le crossref du chapitre vers le livre.}}
                 {}%
+            \iffieldundef{booktitle}
+                {\PackageError{biblio}{Titre du livre absent pour \thefield{entrykey}}{Vérifier le crossref du chapitre vers un livre avec un titre.}}
+                {}%
             \usebibmacro{bibindex}%
             \usebibmacro{begentry}%
             \printnames{author}%
             \setunit{\addcomma\space}%
             \printfield{title}%
             \setunit{\addcomma\space}%
-            \printtext{extrait de \cite{\thefield{userb}}}%
+            \printtext{extrait de}%
+            \setunit{\addspace}%
+            \usebibmacro{booktitle}%
+            \setunit{\addspace}%
+            \printtext{\cite{\thefield{userb}}}%
             \setunit{\addcomma\space}%
             \printfield{usera}%
             \setunit{\addcomma\space}%

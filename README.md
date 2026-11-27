@@ -49,9 +49,10 @@ Pour une image issue d'un chapitre, utiliser une entrée `@misc` de sous-type `i
 }
 ```
 
-Le champ `xdata` est facultatif ; `tradCvd` indique une traduction par Clément Vermot-Desroches. La notice de l'image renvoie par un numéro à la notice du livre, où figurent notamment la licence, l'URL et la date de consultation. Si seule l'image est citée, cette citation du livre est découverte à l'impression de la bibliographie : un passage supplémentaire de Biber et de LaTeX peut être nécessaire. `latexmk` effectue les passages nécessaires.
+Le champ `xdata` est facultatif ; `tradCvd` indique une traduction par Clément Vermot-Desroches. La notice de l'image affiche le titre du livre et renvoie par un numéro à sa notice, où figurent notamment la licence, l'URL et la date de consultation. Si seule l'image est citée, cette citation du livre est découverte à l'impression de la bibliographie : un passage supplémentaire de Biber et de LaTeX peut être nécessaire. `latexmk` effectue les passages nécessaires.
 
 Les exemples de vérification se compilent depuis la racine avec `latexmk -pdf tests/bibliographie-extraits.tex` et `latexmk -pdf tests/bibliographie-extraits-beamer.tex`.
+Le test de leur rendu nécessite également Python et `pdftotext` : `python tests/test_bibliographie_extraits.py`.
 
 ### Compilation
 #### Compilation rapide
