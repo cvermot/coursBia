@@ -15,20 +15,22 @@
     \inherit{title}{usera}
     \inherit{crossref}{userb}
 }
+\DeclareDataInheritance{book}{misc}{%
+    \inherit{title}{booktitle}
+}
 
 % Conserver le pilote du style courant pour les autres entrées @misc.
 \csletcs{blx@bbx@miscstandard}{blx@bbx@misc}
 \DeclareBibliographyDriver{misc}{%
     \iffieldequalstr{entrysubtype}{imageextrait}
         {%
-            \iffieldundef{usera}
-                {\PackageError{biblio}{Titre du chapitre absent pour \thefield{entrykey}}{Vérifier le crossref vers une entrée inbook avec un titre.}}
-                {}%
-            \iffieldundef{userb}
-                {\PackageError{biblio}{Référence du livre absente pour \thefield{entrykey}}{Vérifier le crossref du chapitre vers le livre.}}
-                {}%
             \iffieldundef{booktitle}
                 {\PackageError{biblio}{Titre du livre absent pour \thefield{entrykey}}{Vérifier le crossref du chapitre vers un livre avec un titre.}}
+                {}%
+            \iffieldundef{userb}
+                {\iffieldundef{crossref}
+                    {\PackageError{biblio}{Référence du document absente pour \thefield{entrykey}}{Ajouter un crossref vers le document source.}}
+                    {}}%
                 {}%
             \usebibmacro{bibindex}%
             \usebibmacro{begentry}%
@@ -40,13 +42,19 @@
             \setunit{\addspace}%
             \usebibmacro{booktitle}%
             \setunit{\addspace}%
-            \printtext{\cite{\thefield{userb}}}%
-            \setunit{\addcomma\space}%
-            \printfield{usera}%
+            \iffieldundef{userb}
+                {\printtext{\cite{\thefield{crossref}}}}
+                {\printtext{\cite{\thefield{userb}}}}%
+            \iffieldundef{usera}
+                {}
+                {\setunit{\addcomma\space}%
+                 \printfield{usera}}%
             \setunit{\addcomma\space}%
             \printfield{pages}%
             \newunit\newblock
             \usebibmacro{bytranslator+others}%
+            \newunit\newblock
+            \usebibmacro{addendum+pubstate}%
             \usebibmacro{finentry}%
         }
         {\csuse{blx@bbx@miscstandard}}%
