@@ -24,6 +24,34 @@ A noter : dans certaines configurations, la compilation peut entrainer le dépas
 
 Avec LuaLaTeX, les icônes des encadrés utilisent la police Font Awesome 7 fournie dans `fonts/`. Avec pdfLaTeX, elles utilisent les icônes Font Awesome 5 du package pour préserver la compatibilité.
 
+### Images extraites d'un livre
+
+Pour une image issue d'un chapitre, utiliser une entrée `@misc` de sous-type `imageextrait`, reliée par `crossref` à une entrée `@inbook`, elle-même reliée au livre. Le chapitre sert uniquement à partager les données de source : `options = {dataonly=true}` évite son affichage et sa numérotation comme notice distincte, y compris avec `\nocite{*}`. Pour une image provenant d'un document sans chapitre (par exemple un numéro de magazine), l'image peut référencer directement l'entrée `@book` avec `crossref` et `userb` réglés sur la clé du livre ; le titre du chapitre est alors omis.
+
+```bibtex
+@book{livre,
+  author = {Auteur, Prénom},
+  title = {Titre du livre},
+  year = {2023},
+  note = {Licence : domaine public}
+}
+@inbook{chapitre,
+  crossref = {livre},
+  title = {Chapitre 1 : Titre du chapitre},
+  options = {dataonly=true}
+}
+@misc{img:exemple,
+  entrysubtype = {imageextrait},
+  crossref = {chapitre},
+  title = {Titre de l'image},
+  pages = {1-7},
+  xdata = {tradCvd}
+}
+```
+
+Le champ `xdata` est facultatif. La notice de l'image affiche le titre du livre et renvoie par un numéro à sa notice, où figurent notamment la licence, l'URL et la date de consultation. Les droits propres à l'image, lorsqu'ils diffèrent de ceux du document, peuvent rester dans son champ `addendum`. Si seule l'image est citée, cette citation du livre est découverte à l'impression de la bibliographie : un passage supplémentaire de Biber et de LaTeX peut être nécessaire. `latexmk` effectue les passages nécessaires.
+
+
 ### Compilation
 #### Compilation rapide
 Le projet est fourni avec un fichier de configuration latexmk. On peut compiler l'ensemble en tapant simplement :

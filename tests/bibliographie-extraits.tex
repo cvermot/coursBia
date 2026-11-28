@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\input{commun/biblio.tex}
+\addbibresource{tests/bibliographie-extraits.bib}
+\usepackage{hyperref}
+
+\begin{document}
+\cite{faaAviationMaintenanceTechnicianHandbookAirframe,img:forcesEtContraintes,img:compteTour,img:carburateur,img:frontChaud,img:nuages,test:imageSansTraduction,img:dr400Plan3Vues}
+\printbibliography[title=Livres,type=book]
+\printbibliography[title=Images,type=misc,notkeyword=icone,notkeyword=police]
+\end{document}
