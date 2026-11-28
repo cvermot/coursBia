@@ -36,6 +36,7 @@ class BibliographieExtraitsTest(unittest.TestCase):
             parent_type, _ = entries[crossref.group(1)]
             self.assertIn(parent_type, {"book", "inbook"}, key)
             self.assertRegex(body, r"pages\s*=", key)
+            self.assertNotRegex(body, r'pages\s*=\s*["{]\d+\.\d+', key)
             if parent_type == "book":
                 self.assertRegex(body, rf"userb\s*=\s*\{{{re.escape(crossref.group(1))}\}}", key)
 
@@ -58,7 +59,7 @@ class BibliographieExtraitsTest(unittest.TestCase):
                 self.assertRegex(
                     notice,
                     r"extrait de Aviation Maintenance Technician Handbook - Airframe"
-                    r"\s+\[\d+\], Chapitre 1\s*: Aircraft Structures, p\. 1\.7",
+                    r"\s+\[\d+\], Chapitre 1\s*: Aircraft Structures, p\. 1-7",
                 )
                 self.assertRegex(notice, r"Vermot-Desroches")
                 self.assertNotRegex(

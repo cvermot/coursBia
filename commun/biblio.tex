@@ -19,6 +19,8 @@
     \inherit{title}{booktitle}
 }
 
+\DeclareFieldFormat{imagepage}{#1}
+
 % Conserver le pilote du style courant pour les autres entrées @misc.
 \csletcs{blx@bbx@miscstandard}{blx@bbx@misc}
 \DeclareBibliographyDriver{misc}{%
@@ -50,7 +52,13 @@
                 {\setunit{\addcomma\space}%
                  \printfield{usera}}%
             \setunit{\addcomma\space}%
-            \printfield{pages}%
+            \iffieldundef{pages}
+                {}
+                {\printtext{\bibstring{page}\ppspace}%
+                 \begingroup
+                 \renewcommand*{\bibrangedash}{\mbox{-}}%
+                 \printfield[imagepage]{pages}%
+                 \endgroup}%
             \newunit\newblock
             \usebibmacro{bytranslator+others}%
             \newunit\newblock

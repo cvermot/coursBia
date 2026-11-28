@@ -44,7 +44,7 @@ Pour une image issue d'un chapitre, utiliser une entrée `@misc` de sous-type `i
   entrysubtype = {imageextrait},
   crossref = {chapitre},
   title = {Titre de l'image},
-  pages = {1.7},
+  pages = {1-7},
   xdata = {tradCvd}
 }
 ```
